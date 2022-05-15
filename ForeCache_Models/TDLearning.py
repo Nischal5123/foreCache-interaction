@@ -27,17 +27,28 @@ class TDlearning:
             A function that takes the observation as an argument and returns
             the probabilities for each action in the form of a numpy array of length nA.
         """
+        #
+        # def policy_fnc(state):
+        #     A = np.ones(nA, dtype=float) * epsilon / nA
+        #     best_action = np.argmax(Q[state])
+        #     A[best_action] += (1.0 - epsilon)
+        #
+        #     return A
+        #
+        # return policy_fnc
 
         def policy_fnc(state):
-            A = np.ones(nA, dtype=float) * epsilon / nA
-            best_action = np.argmax(Q[state])
-            A[best_action] += (1.0 - epsilon)
-            return A
+            prob_t = [0, 0]
+            for a in range(nA):
+                prob_t[a] = np.exp(Q[state][a] / 10)
 
+            prob_t = np.true_divide(prob_t, sum(prob_t))
+            print(prob_t)
+            return prob_t
         return policy_fnc
 
 
-    def q_learning(self, user, env, num_episodes, discount_factor=1.0, alpha=0.5, epsilon=0.5):
+    def q_learning(self, user, env, num_episodes, discount_factor=1.0, alpha=0.5, epsilon=0):
         """
         Q-Learning algorithm: Off-policy TD control. Finds the optimal greedy policy
         while following an epsilon-greedy policy
@@ -101,14 +112,14 @@ class TDlearning:
         # print(policy)
         return Q, stats
 
-    def test(self, env, Q, epsilon=0.1):
+    def test(self, env, Q, epsilon=0):
 
         policy = self.epsilon_greedy_policy(Q, epsilon, len(env.valid_actions))
         discount_factor = 1.0
-        alpha = 0.5
+        alpha = 0.03
         # Reset the environment and pick the first action
         state = env.reset(all = False, test=True)
-
+        valid_actions = ["same", "change"]
         stats = []
         # One step in the environment
         # total_reward = 0.0
@@ -121,6 +132,7 @@ class TDlearning:
             stats.append(prediction)
             # print(prediction)
             best_next_action = np.argmax(Q[next_state])
+            print(valid_actions[best_next_action])
             td_target = reward + discount_factor * Q[next_state][best_next_action]
             td_delta = td_target - Q[state][action]
             Q[state][action] += alpha * td_delta
@@ -134,29 +146,34 @@ class TDlearning:
         for i in stats:
             cnt += i
         cnt /= len(stats)
-        print("Accuracy of State Prediction: {}".format(cnt))
+        print("Accuracy of Action Prediction: {}".format(cnt))
+        # plt.imshow(Q, interpolation='none')
+        # plt.show()
         return cnt
 
 if __name__ == "__main__":
     accuracies = []
-    for thres in [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]:
-        env = environment2.environment2()
-
-        users = env.user_list
-
-        thres = thres #the percent of interactions Q-Learning will be trained on
-        for u in users:
-            print(u)
-            env.process_data(u, thres)
+    plot_list=[]
+    env = environment2.environment2()
+    users = env.user_list
+    for i in range(len(users)):
+        plot_list.append(users[i][28:-10])
+        epoch_user_accuracy=[]
+        for epoch in range(1):
+            #env = environment2.environment2()
+            thres = 0.8 #the percent of interactions Q-Learning will be trained on
+            print('########For user#############',users[i])
+            env.process_data(users[i], thres)
             obj = TDlearning()
-            Q, stats = obj.q_learning(u, env, 500)
-            # plotting.plot_episode_stats(stats)
-            # env.take_step_subtask()
-            # print(Q)
-            accuracies.append(obj.test(env, Q))
-            # print("OK")
+            Q, stats = obj.q_learning(users[i], env, 5000)
+            epoch_user_accuracy.append(obj.test(env, Q)) #get test accuracy
             env.reset(True, False)
-    plt.plot([0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9],accuracies)
+            # print("OK")
+        accuracies.append(np.mean(epoch_user_accuracy))
+    plt.plot(plot_list,accuracies, '-ro', label='Q learning Average Test Accuracy for Users 1-20')
+    plt.xlabel("Users 1 - 20")
+    plt.ylabel("Test Accuracy on action prediction")
+    plt.legend(loc='upper left')
     plt.show()
 
 

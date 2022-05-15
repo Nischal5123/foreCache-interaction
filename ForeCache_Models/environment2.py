@@ -45,15 +45,15 @@ class environment2:
     def process_data(self, filename, thres):
         # df = pd.read_excel(filename, sheet_name= "Sheet1", usecols="B:D")
         df = pd.read_csv(filename)
-        prev_state = None
+        self.prev_state = None
         cnt_inter = 0
         for index, row in df.iterrows():
             # pdb.set_trace()
             # print("here {} end\n".format(cnt_inter))
             cur_state = self.get_state(row['State'])
-            if cur_state not in ('Question', 'Sensemaking'):
+            if cur_state not in ('Foraging','Navigation', 'Sensemaking'):
                 continue
-            if prev_state == cur_state:
+            if self.prev_state == cur_state:
                 action = "same"
             else:
                 action = "change"
@@ -61,6 +61,7 @@ class environment2:
             self.mem_reward.append(row['NDSI'])
             self.mem_action.append(action)
             cnt_inter += 1
+            self.prev_state=cur_state
         self.threshold = int(cnt_inter * thres)
         print("{} {}\n".format(len(self.mem_states), self.threshold))
 
@@ -94,7 +95,8 @@ class environment2:
         _, temp_step = self.peek_next_step()
         next_state, next_reward, next_action = self.cur_inter(temp_step)
         # pdb.set_trace()
-        if self.valid_actions[act_arg] == cur_action:
+        predicted_action=self.valid_actions[act_arg]
+        if predicted_action == cur_action:
             prediction = 1
         else:
             prediction = 0

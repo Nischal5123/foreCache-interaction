@@ -81,6 +81,8 @@ def train(q, q_target, memory, optimizer):
 
 def main():
     env = environment2.environment2()
+    users = env.user_list
+    env.process_data(users[0], 1)
     q = Qnet()
     q_target = Qnet()
     q_target.load_state_dict(q.state_dict())
@@ -92,7 +94,7 @@ def main():
 
     for n_epi in range(10000):
         epsilon = max(0.01, 0.08 - 0.01 * (n_epi / 200))  # Linear annealing from 8% to 1%
-        s = env.reset()
+        s = env.reset(False, False)
         done = False
 
         while not done:
