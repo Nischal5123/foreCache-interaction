@@ -1,14 +1,8 @@
-import os
-import fnmatch
-import pdb
-from collections import defaultdict
 import glob
 import pandas as pd
-import numpy as np
 from gym import Env
 from gym.spaces import Box, Discrete
-import random
-
+import math
 
 
 class environment3(Env):
@@ -20,6 +14,7 @@ class environment3(Env):
         self.user_list = glob.glob('taskname_ndsi-2d-task_*')
         # This variable will be used to track the current position of the user agent.
         self.steps = 0
+        self.len_df=0
 
         # Storing the data into main memory. Focus is now only on action and states for a fixed user's particular subtask
         self.mem_states = []
@@ -39,17 +34,27 @@ class environment3(Env):
 
 
 
-    def step(self, action):
+    def step(self, policy_action):
+        """
+        Not using the action that we get from the policy
+        Next state and reward will be determined from the ground truth
+        Use this action to check if it matches ground action
+        This can then be used to check for prediction accuracy on test
+        """
+
+
         state, reward, action = self.cur_inter(self.steps)
         #here action returned is ground action might use for accuracy later
 
 
         #parsed all of the training data , where data_length is max training data
-        if self.steps == round(self.data_length):
+
+        if self.steps == math.floor(self.data_length):
             done=True
         else:
             done=False
-        info={"Step":self.steps}
+        info={"Step":self.steps,
+              "isPredictionCorrect": (policy_action==action)}# we are using info to store the predicted action
 
         self.steps+=1
         return state , reward, done ,info
@@ -59,8 +64,13 @@ class environment3(Env):
 
     def process_data(self, filename,threshold):
         df = pd.read_csv(filename)
+        self.len_df=len(df)
         self.prev_state = None
-        self.data_length=len(df)*threshold
+
+        #will use these to allocate data for training
+        self.threshold=threshold
+        self.data_length = (self.len_df * self.threshold) - 1
+
         cnt_inter = 0
         for index, row in df.iterrows():
             cur_state =(row['State'])
@@ -78,9 +88,9 @@ class environment3(Env):
             #################################################################
 
             if self.prev_state == cur_state:
-                action = "same"
+                action = 0 #"same"
             else:
-                action = "change"
+                action = 1 #"change"
             self.mem_states.append(cur_state)
             self.mem_reward.append(row['NDSI'])
             self.mem_action.append(action)
@@ -90,8 +100,9 @@ class environment3(Env):
     def reset(self, all=False, test=False):    #all clear per user  #default arguments after each episode
         # Resetting the variables used for tracking position of the agents
         if test:
-            self.steps = self.threshold
-            print("start {}".format(self.steps))
+            self.steps = math.ceil(self.len_df * self.threshold) #start from end of training
+            self.data_length = self.len_df-1#go until end of file
+           # print("start {}".format(self.steps))
             # pdb.set_trace()
         else:
             self.steps = 0
@@ -110,14 +121,14 @@ if __name__ == "__main__":
     users = env.user_list
     threshold=0.8
     env.process_data(users[0],threshold)
-    episodes = 1  # 20 episodes
-    for episode in range(1, episodes + 1):
-        state = env.reset()
-        done = False
-        score = 0
-
-        while not done:
-            action = env.action_space.sample()
-            n_state, reward, done, info = env.step(action)
-            score += reward
-        print('Episode:{} Score:{}'.format(episode, score))
+    # episodes = 1  # 20 episodes
+    # for episode in range(1, episodes + 1):
+    #     state = env.reset()
+    #     done = False
+    #     score = 0
+    #
+    #     while not done:
+    #         action = env.action_space.sample()
+    #         n_state, reward, done, info = env.step(action) # for step action doesn't matter , whatever action we take the state based on ground truth
+    #         score += reward
+    #     print('Episode:{} Score:{}'.format(episode, score))
