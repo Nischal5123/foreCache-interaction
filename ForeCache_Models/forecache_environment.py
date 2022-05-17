@@ -120,7 +120,7 @@ if __name__ == "__main__":
     env = environment3()
     users = env.user_list
     threshold=0.8
-    env.process_data(users[0],threshold)
+    env.process_data(users[1],threshold)
     # episodes = 1  # 20 episodes
     # for episode in range(1, episodes + 1):
     #     state = env.reset()

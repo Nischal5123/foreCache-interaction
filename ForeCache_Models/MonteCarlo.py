@@ -129,13 +129,13 @@ class FiniteMCModel:
         rewards = []
         overall_accuracy =[]
         for sam in range(n_samples):
-            print( "##############################",sam )
+            #print( "##############################",sam )
             observation = env.reset(test=True)  #test environment start from training data
             cum_rewards = 0
             sample_predictions=[]
             while True:
                 action = self.choose_action(policy, observation)
-                print(action)
+               # print(action)
                 #prediction = check in test
                 observation, reward, done, info = env.step(action)
                 sample_predictions.append(info['isPredictionCorrect'])
