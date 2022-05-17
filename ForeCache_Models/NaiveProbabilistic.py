@@ -2,8 +2,10 @@ import numpy as np
 import pandas as pd
 from collections import defaultdict
 import glob
-import matplotlib.pyplot as plt
 
+#for plots
+import matplotlib.pyplot as plt
+from textwrap import wrap
 
 
 class NaiveProbabilistic():
@@ -60,18 +62,26 @@ class NaiveProbabilistic():
 if __name__ == "__main__":
     accuracies = []
     plot_list=[]
+    user_index=[]
     obj=NaiveProbabilistic()
     users = obj.user_list
     for i in range(len(users)):
-        plot_list.append(users[i][17:-5])
+        plot_list.append(i)
+        user_index.append(users[i][29:-4])
         thres = 0.7 #the percent of interactions Naive Probabilistic will be trained on
         print('########For user#############',users[i])
         obj.process_data(users[i], thres)
         obj.probabilistic_learning()
         accuracy=obj.test()
         accuracies.append(accuracy)
-    plt.plot(plot_list,accuracies, '-ro', label='Naive Probabilistic learning Average Test Accuracy for Users 1-20')
+
+    #plotting
+    plt.figure(figsize=[10,10])
+    plt.plot(plot_list,accuracies, '-bo', label='Naive Probabilistic learning Average Test Accuracy for Users 1-20')
+    # plot_list = [l[35:] for l in plot_list]
+    plt.xticks(plot_list, rotation='vertical')
+    plt.margins(0.002)
     plt.xlabel("Users 1 - 20")
     plt.ylabel("Test Accuracy on action prediction")
-    plt.legend(loc='upper left')
+    plt.legend(loc='upper right')
     plt.show()
