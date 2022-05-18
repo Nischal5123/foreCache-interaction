@@ -76,7 +76,7 @@ if __name__ == "__main__":
         accuracies.append(accuracy)
 
     #plotting
-    plt.figure(figsize=[10,10])
+    #plt.figure(figsize=(10,10))
     plt.plot(plot_list,accuracies, '-bo', label='Naive Probabilistic learning Average Test Accuracy for Users 1-20')
     # plot_list = [l[35:] for l in plot_list]
     plt.xticks(plot_list, rotation='vertical')
