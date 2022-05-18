@@ -43,7 +43,7 @@ class environment3(Env):
         """
 
 
-        state, reward, action = self.cur_inter(self.steps)
+        state, reward, action = self.cur_inter()
         #here action returned is ground action might use for accuracy later
 
 
@@ -53,33 +53,34 @@ class environment3(Env):
             done=True
         else:
             done=False
+            self.steps += 1
         info={"Step":self.steps,
               "isPredictionCorrect": (policy_action==action)}# we are using info to store the predicted action
 
-        self.steps+=1
+
         return state , reward, done ,info
 
-    def cur_inter(self, steps):
-        return self.mem_states[steps], self.mem_reward[steps], self.mem_action[steps]
+    def cur_inter(self):
+        return self.mem_states[self.steps], self.mem_reward[self.steps], self.mem_action[self.steps]
 
     def process_data(self, filename,threshold):
         df = pd.read_csv(filename)
-        self.len_df=len(df)
+        self.len_df=len(df)-1
         self.prev_state = None
 
         #will use these to allocate data for training
         self.threshold=threshold
-        self.data_length = (self.len_df * self.threshold) - 1
+        self.data_length = (self.len_df * self.threshold)
 
         cnt_inter = 0
         for index, row in df.iterrows():
             cur_state =(row['State'])
 
-            if cur_state not in ('Foraging', 'Navigation', 'Sensemaking'):
+            if cur_state not in ('Foraging', 'Navigation', 'Sensemaking','Answering'):
                 continue
 
             #assign numbers to state########################################## clean this out later
-            if cur_state == 'Sensemaking':
+            if cur_state in ('Sensemaking','Answering'):
                 cur_state = 0
             if cur_state == 'Foraging':
                 cur_state = 1
@@ -113,7 +114,7 @@ class environment3(Env):
             self.mem_action = []
             return
 
-        s, r, a = self.cur_inter(self.steps)
+        s, r, a = self.cur_inter()
         return s
 
 if __name__ == "__main__":

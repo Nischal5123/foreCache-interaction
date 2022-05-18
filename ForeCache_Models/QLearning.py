@@ -7,7 +7,7 @@ import itertools
 import matplotlib.pyplot as plt
 import sys
 import plotting
-import environment2
+import forecache_environment
 from tqdm import tqdm
 
 class TDlearning:
@@ -28,24 +28,22 @@ class TDlearning:
             the probabilities for each action in the form of a numpy array of length nA.
         """
         #
+        # def policy_fnc(state):
+        #     A = np.ones(nA, dtype=float) * epsilon / nA
+        #     best_action = np.argmax(Q[state])
+        #     A[best_action] += (1.0 - epsilon)
+        #
+        #     return A
+        #
+        # return policy_fnc
+
         def policy_fnc(state):
             A = np.ones(nA, dtype=float) * epsilon / nA
             best_action = np.argmax(Q[state])
             A[best_action] += (1.0 - epsilon)
-
             return A
 
         return policy_fnc
-
-        # def policy_fnc(state):
-        #     prob_t = [0, 0]
-        #     for a in range(nA):
-        #         prob_t[a] = np.exp(Q[state][a] / 10)
-        #
-        #     prob_t = np.true_divide(prob_t, sum(prob_t))
-        #     print(prob_t)
-        #     return prob_t
-        # return policy_fnc
 
 
     def q_learning(self, user, env, num_episodes, discount_factor=1.0, alpha=0.5, epsilon=0):
@@ -94,7 +92,7 @@ class TDlearning:
                 # Take a step
                 action_probs = policy(state)
                 action = np.random.choice(np.arange(len(action_probs)), p=action_probs)
-                next_state, reward, done, _ = env.step(state, action, False)
+                next_state, reward, done, _ = env.step(action)
                 # pdb.set_trace()
                 # Update statistics
                 stats.episode_rewards[i_episode] += reward
@@ -127,9 +125,9 @@ class TDlearning:
             # Take a step
             action_probs = policy(state)
             action = np.random.choice(np.arange(len(action_probs)), p=action_probs)
-            next_state, reward, done, prediction = env.step(state, action, True)
+            next_state, reward, done, info = env.step(action)
 
-            stats.append(prediction)
+            stats.append(info['isPredictionCorrect'])
             # print(prediction)
             best_next_action = np.argmax(Q[next_state])
             print(valid_actions[best_next_action])
@@ -154,12 +152,12 @@ class TDlearning:
 if __name__ == "__main__":
     accuracies = []
     plot_list=[]
-    env = environment2.environment2()
+    env = forecache_environment.environment3()
     users = env.user_list
     for i in range(len(users)):
         plot_list.append(users[i][28:-10])
         epoch_user_accuracy=[]
-        for epoch in range(1):
+        for epoch in range(10):
             #env = environment2.environment2()
             thres = 0.8 #the percent of interactions Q-Learning will be trained on
             print('########For user#############',users[i])
