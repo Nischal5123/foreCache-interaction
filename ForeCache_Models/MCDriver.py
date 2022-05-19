@@ -45,12 +45,19 @@ for i in range(len(users)):
         # Decaying epsilon, reach optimal policy
         m.epsilon = max((eps-i)/eps, 0.1)
     cumulative_test_reward , test_accuracy =m.score(env, m.pi, n_samples=100)# how many times to sample or repeat to get mean of rewards
+    env.reset(True, False)
     print("Final expected returns : {}".format(cumulative_test_reward))
+
     #plt.plot(range(len(test_accuracy)),test_accuracy)
     #plt.show()
-    accuracies.append(np.mean(test_accuracy))
+    mean_acc=np.mean(test_accuracy)
+    accuracies.append(mean_acc)
+    print("Test Accuracy : {}".format(mean_acc * 100))
+plt.figure(figsize=[10,10])
 plt.plot(range(len(plot_list)), accuracies, '-ro', label='Monte Carlo Test Accuracy for Users 0-19')
+plt.xticks(range(len(plot_list)), rotation='vertical')
+plt.margins(0.002)
 plt.xlabel("Users 1 - 20")
 plt.ylabel("Test Accuracy on action prediction")
-plt.legend(loc='upper left')
+plt.legend(loc='upper right')
 plt.show()
