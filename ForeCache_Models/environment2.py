@@ -4,10 +4,13 @@ import pdb
 from collections import defaultdict
 import glob
 import pandas as pd
+import random
 
 class environment2:
     def __init__(self):
-        self.user_list = glob.glob('taskname_ndsi-2d-task_*')
+        self.user_list_2D = glob.glob('taskname_ndsi-2d-task_*')
+        self.user_list_3D = glob.glob('taskname_ndsi-3d-task_*')
+
         # This variable will be used to track the current position of the user agent.
         self.steps = 0
         self.done = False  # Done exploring the current subtask

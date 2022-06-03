@@ -1,87 +1,118 @@
+import environment2
 import numpy as np
-import pandas as pd
 from collections import defaultdict
-import glob
-
-#for plots
+import pdb
+import misc
 import matplotlib.pyplot as plt
-from textwrap import wrap
 
 
-class NaiveProbabilistic():
-
+class NaiveProbabilistic:
     def __init__(self):
-        self.user_list = glob.glob('taskname_ndsi-2d-task_*')
-        self.valid_actions = [0,1]
-        self.mem_states = []
-        self.mem_reward = []
-        self.mem_action = []
-        self.threshold = 0
+        self.freq = defaultdict(lambda: defaultdict(float))
+        self.reward = defaultdict(lambda: defaultdict(float))
 
-    def process_data(self, filename, thres):
-        df = pd.read_csv(filename)
-        self.prev_state = None
-        cnt_inter = 0
-        for index, row in df.iterrows():
-            cur_state = row['State']
-            if cur_state not in ('Foraging', 'Navigation', 'Sensemaking'):
-                continue
-            if self.prev_state == cur_state:
-                action = 0
-            else:
-                action = 1
-            self.mem_states.append(cur_state)
-            self.mem_reward.append(row['NDSI'])
-            self.mem_action.append(action)
-            cnt_inter += 1
-            self.prev_state = cur_state
-        self.threshold = int(cnt_inter * thres)
-        print("{} {}\n".format(len(self.mem_states), self.threshold))
+    def NaiveProbabilistic(self, user, env, thres):
 
+        # for t in itertools.count():
+        # print(u)
+        length = len(env.mem_action)
+        # pdb.set_trace()
+        threshold = int(length * thres)
 
-    def probabilistic_learning(self):
-        self.Naive_Q = defaultdict(lambda: np.zeros(len(self.valid_actions)))
-        train_states=self.mem_states[:self.threshold]
-        train_actions=self.mem_action[:self.threshold]
-        for i in range(len(train_states)) :
-                self.Naive_Q[train_states[i]][train_actions[i]]+=1
-       # Dict = dict({'Sensemakingchange':  Naive_Q['Sensemaking'][1]/len(Naive_Q['Sensemaking']), 2: 'For', 3:'Geeks'})
-        return self.Naive_Q
+        # for i in range(1, length-1):
+        #     print("{} {}".format(env.mem_states[i-1], env.mem_action[i]))
 
-    def test(self):
-        predicted_actions=[]
-        acc=0
-        test_states=self.mem_states[self.threshold:]
-        test_actions=self.mem_action[self.threshold:]
-        for i in range(len(test_states)):
-            predicted_actions.append(np.argmax(self.Naive_Q[test_states[i]]))
-            if test_actions[i]==predicted_actions[i]:
-                acc+=1
-        return acc/len(test_actions) #final accuracy
+        for i in range(1, threshold):
+            self.freq[env.mem_states[i - 1]][env.mem_action[i]] += 1
+            self.reward[env.mem_states[i - 1]][env.mem_action[i]] += env.mem_reward[i]
+
+        # Normalizing to get the probability
+        for states in self.freq:
+            sum = 0
+            for actions in self.freq[states]:
+                sum += self.freq[states][actions]
+            for actions in self.freq[states]:
+                self.freq[states][actions] = self.reward[states][actions] / sum
+                # self.freq[states][actions] /= sum
+
+        # Debugging probablity calculation
+        # for states in self.freq:
+        #     for actions in self.freq[states]:
+        #         print("{} {} {}".format(states, actions, self.freq[states][actions]))
+
+        # Checking accuracy on the remaining data:
+        accuracy = 0
+        denom = 0
+        for i in range(threshold + 1, length - 1):
+            try:
+                _max = max(self.freq[env.mem_states[i - 1]], key=self.freq[env.mem_states[i - 1]].get)
+                if _max == env.mem_action[i] and self.freq[env.mem_states[i - 1]][_max] > 0:
+                    # print(env.mem_states[i-1], _max, self.freq[env.mem_states[i-1]][_max], env.mem_action[i], self.freq[env.mem_states[i-1]])
+                    accuracy += 1
+            except ValueError:
+                pass
+            denom += 1
+        accuracy /= denom
+        # print("Accuracy {} {:.2f}".format(user, accuracy))
+        obj = misc.misc([])
+        print("{}, {:.2f}".format(obj.get_user_name(user), accuracy))
+        self.freq.clear()
+        self.reward.clear()
+        return accuracy
+
 
 if __name__ == "__main__":
-    accuracies = []
-    plot_list=[]
-    user_index=[]
-    obj=NaiveProbabilistic()
-    users = obj.user_list
-    for i in range(len(users)):
-        plot_list.append(i)
-        user_index.append(users[i][29:-4])
-        thres = 0.7 #the percent of interactions Naive Probabilistic will be trained on
-        print('########For user#############',users[i])
-        obj.process_data(users[i], thres)
-        obj.probabilistic_learning()
-        accuracy=obj.test()
-        accuracies.append(accuracy)
 
-    #plotting
-    plt.figure(figsize=[10,10])
-    plt.plot(plot_list,accuracies, '-bo', label='Naive Probabilistic learning Average Test Accuracy for Users 1-20')
-    # plot_list = [l[35:] for l in plot_list]
-    plt.xticks(plot_list, rotation='vertical')
-    plt.margins(0.002)
-    plt.xlabel("Users 1 - 20")
-    plt.ylabel("Test Accuracy on action prediction")
-    plt.legend(loc='upper right')
-    plt.show()
+    env = environment2.environment2()
+    user_list_2D = env.user_list_2D
+    user_list_3D = env.user_list_3D
+
+    total = 0
+    threshold = [0.4, 0.5, 0.6, 0.7, 0.8, 0.9]
+    obj2 = misc.misc([])
+    #
+    # for thres in threshold:
+    #     y_accu = []
+    #     for u in user_list_2D:
+    #         env.process_data(u, 0)
+    #         obj = NaiveProbabilistic()
+    #         accu = obj.NaiveProbabilistic(u, env, thres)
+    #         total += accu
+    #         y_accu.append(accu)
+    #         env.reset(True, False)
+    #     print("Across all user when threshold = : ", thres , "Global Accuracy: ", np.mean(y_accu))
+    #     plt.plot(user_list_2D, y_accu, label=obj2.get_user_name(u))
+    #
+    # plt.legend(loc='center left', bbox_to_anchor=(1, 0))
+    # plt.xlabel('Threshold')
+    # plt.ylabel('Accuracy')
+    # title = "NDSI-3D-3-STATES"
+    # # pdb.set_trace()
+    # plt.title(title)
+    # location = 'figures/' + title
+    # plt.savefig(location, bbox_inches='tight')
+    # plt.close()
+    #
+
+    for thres in threshold:
+        y_accu = []
+        for u in user_list_3D:
+            env.process_data(u, 0)
+            obj = NaiveProbabilistic()
+            accu = obj.NaiveProbabilistic(u, env, thres)
+            total += accu
+            y_accu.append(accu)
+            env.reset(True, False)
+        print("Across all user when threshold = : ", thres, "Global Accuracy: ", np.mean(y_accu))
+        plt.plot(user_list_2D, y_accu, label=obj2.get_user_name(u))
+
+    plt.legend(loc='center left', bbox_to_anchor=(1, 0))
+    plt.xlabel('Threshold')
+    plt.ylabel('Accuracy')
+    title = "NDSI-3D-3-STATES"
+    # pdb.set_trace()
+    plt.title(title)
+    location = 'figures/' + title
+    plt.savefig(location, bbox_inches='tight')
+    plt.close()
+    # # print(total / (len(users_b) + len(users_f)))

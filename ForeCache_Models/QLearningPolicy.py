@@ -6,7 +6,7 @@ import numpy as np
 
 
 class FiniteSarsaModel(FiniteModel):
-    def __init__(self, state_space, action_space, gamma=1.0, epsilon=0.1, alpha=0.01):
+    def __init__(self, state_space, action_space, gamma=1.0, epsilon=0.01, alpha=0.01):
         """SarsaModel takes in state_space and action_space (finite)
         Arguments
         ---------
@@ -58,7 +58,7 @@ class FiniteSarsaModel(FiniteModel):
             cum_rewards = 0
             while True:
                 action = self.choose_action(policy, observation)
-                observation, reward, done, info = env.step(action)
+                observation, reward, done, _ = env.step(action)
                 cum_rewards += reward
                 if done:
                     rewards.append(cum_rewards)
@@ -67,7 +67,7 @@ class FiniteSarsaModel(FiniteModel):
 
 
 class FiniteQLearningModel(FiniteModel):
-    def __init__(self, state_space, action_space, gamma=1.0, epsilon=0.1, alpha=0.01):
+    def __init__(self, state_space, action_space, gamma=1.0, epsilon=0.01, alpha=0.01):
         """FiniteQLearningModel takes in state_space and action_space (finite)
         Arguments
         ---------
@@ -113,25 +113,32 @@ class FiniteQLearningModel(FiniteModel):
                                     (reward + self.gamma * max_q - q)
 
     def score(self, env, policy, n_samples=1000):
-        """Evaluates a specific policy with regards to the env.
-        Arguments
-        ---------
+            """Evaluates a specific policy with regards to the env.
+            Arguments
+            ---------
 
-        env: an openai gym env, or anything that follows the api.
-        policy: a function, could be self.pi, self.b, etc.
-        """
-        rewards = []
-        for _ in range(n_samples):
-            observation = env.reset()
-            cum_rewards = 0
-            while True:
-                action = self.choose_action(policy, observation)
-                observation, reward, done, _ = env.step(action)
-                cum_rewards += reward
-                if done:
-                    rewards.append(cum_rewards)
-                    break
-        return np.mean(rewards)
+            env: an openai gym env, or anything that follows the api.
+            policy: a function, could be self.pi, self.b, etc.
+            """
+            rewards = []
+            overall_accuracy = []
+            for _ in range(n_samples):
+                observation = env.reset(test=True)
+                cum_rewards = 0
+                sample_predictions = []
+                while True:
+                    action = self.choose_action(policy, observation)
+                    #print(action)
+                    observation, reward, done, info = env.step(action)
+                    cum_rewards += reward
+                    sample_predictions.append(info['isPredictionCorrect'])
+                    if done:
+                        rewards.append(cum_rewards)
+                        overall_accuracy.append(
+                            np.mean(
+                                sample_predictions))  # get sample accuracy and add it to overall accuracy per sample
+                        break
+            return np.mean(rewards), overall_accuracy
 
 
 if __name__ == "__main__":
