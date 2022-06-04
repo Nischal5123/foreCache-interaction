@@ -2,7 +2,7 @@
 import pdb
 import random
 
-import TDLearning
+import TDLearning_SingleThreaded
 import TD_SARSA 
 import numpy as np
 from collections import defaultdict
@@ -14,6 +14,7 @@ import plotting
 import environment2
 from tqdm import tqdm
 from random import randint
+import TDLearning
 # import numba
 
 class misc:
