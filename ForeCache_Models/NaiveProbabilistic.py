@@ -70,49 +70,95 @@ if __name__ == "__main__":
     total = 0
     threshold = [0.4, 0.5, 0.6, 0.7, 0.8, 0.9]
     obj2 = misc.misc([])
-
-    for thres in threshold:
+    for u in user_list_3D[:10]:
         y_accu = []
-        for u in user_list_2D:
+        for thres in threshold:
             env.process_data(u, 0)
             obj = NaiveProbabilistic()
             accu = obj.NaiveProbabilistic(u, env, thres)
             total += accu
             y_accu.append(accu)
             env.reset(True, False)
-        print("Across all user when threshold = : ", thres , "Global Accuracy: ", np.mean(y_accu))
-        plt.plot(user_list_2D, y_accu, label=obj2.get_user_name(u))
+        print("User ", obj2.get_user_name(u), " across all thresholds ", "Global Accuracy: ", np.mean(y_accu))
 
+        plt.plot(threshold, y_accu, label=obj2.get_user_name(u))
+    plt.yticks(np.arange(0.0, 1.0, 0.1))
     plt.legend(loc='center left', bbox_to_anchor=(1, 0))
     plt.xlabel('Threshold')
     plt.ylabel('Accuracy')
-    title = "NDSI-2D-3-STATES"
+    title = "NDSI-3D-3-STATES-1"
     # pdb.set_trace()
     plt.title(title)
-    location = 'figures/' + title
+    location = 'figures/Naive/' + title
     plt.savefig(location, bbox_inches='tight')
     plt.close()
 
+    for u in user_list_3D[10:]:
+        y_accu = []
+        for thres in threshold:
+            env.process_data(u, 0)
+            obj = NaiveProbabilistic()
+            accu = obj.NaiveProbabilistic(u, env, thres)
+            total += accu
+            y_accu.append(accu)
+            env.reset(True, False)
+        print("User ", obj2.get_user_name(u), " across all thresholds ", "Global Accuracy: ", np.mean(y_accu))
 
-    # for thres in threshold:
-    #     y_accu = []
-    #     for u in user_list_3D:
-    #         env.process_data(u, 0)
-    #         obj = NaiveProbabilistic()
-    #         accu = obj.NaiveProbabilistic(u, env, thres)
-    #         total += accu
-    #         y_accu.append(accu)
-    #         env.reset(True, False)
-    #     print("Across all user when threshold = : ", thres, "Global Accuracy: ", np.mean(y_accu))
-    #     plt.plot(user_list_2D, y_accu, label=obj2.get_user_name(u))
-    #
-    # plt.legend(loc='center left', bbox_to_anchor=(1, 0))
-    # plt.xlabel('Threshold')
-    # plt.ylabel('Accuracy')
-    # title = "NDSI-3D-3-STATES"
-    # # pdb.set_trace()
-    # plt.title(title)
-    # location = 'figures/' + title
-    # plt.savefig(location, bbox_inches='tight')
-    # plt.close()
+        plt.plot(threshold, y_accu, label=obj2.get_user_name(u))
+    plt.yticks(np.arange(0.0, 1.0, 0.1))
+    plt.legend(loc='center left', bbox_to_anchor=(1, 0))
+    plt.xlabel('Threshold')
+    plt.ylabel('Accuracy')
+    title = "NDSI-3D-3-STATES-2"
+    # pdb.set_trace()
+    plt.title(title)
+    location = 'figures/Naive/' + title
+    plt.savefig(location, bbox_inches='tight')
+    plt.close()
     # # # print(total / (len(users_b) + len(users_f)))
+    for u in user_list_2D[:10]:
+        y_accu = []
+        for thres in threshold:
+            env.process_data(u, 0)
+            obj = NaiveProbabilistic()
+            accu = obj.NaiveProbabilistic(u, env, thres)
+            total += accu
+            y_accu.append(accu)
+            env.reset(True, False)
+        print("User ",obj2.get_user_name(u)," across all thresholds " , "Global Accuracy: ", np.mean(y_accu))
+
+        plt.plot(threshold, y_accu, label=obj2.get_user_name(u))
+    plt.yticks(np.arange(0.0, 1.0, 0.1))
+    plt.legend(loc='center left', bbox_to_anchor=(1, 0))
+    plt.xlabel('Threshold')
+    plt.ylabel('Accuracy')
+    title = "NDSI-2D-3-STATES-1"
+    # pdb.set_trace()
+    plt.title(title)
+    location = 'figures/Naive/' + title
+    plt.savefig(location, bbox_inches='tight')
+    plt.close()
+
+    for u in user_list_2D[10:]:
+        y_accu = []
+        for thres in threshold:
+            env.process_data(u, 0)
+            obj = NaiveProbabilistic()
+            accu = obj.NaiveProbabilistic(u, env, thres)
+            total += accu
+            y_accu.append(accu)
+            env.reset(True, False)
+        print("User ", obj2.get_user_name(u), " across all thresholds ", "Global Accuracy: ", np.mean(y_accu))
+
+        plt.plot(threshold, y_accu, label=obj2.get_user_name(u))
+    plt.yticks(np.arange(0.0, 1.0, 0.1))
+    plt.legend(loc='center left', bbox_to_anchor=(1, 0))
+    plt.xlabel('Threshold')
+    plt.ylabel('Accuracy')
+    title = "NDSI-2D-3-STATES-2"
+    # pdb.set_trace()
+    plt.title(title)
+    location = 'figures/Naive/' + title
+    plt.savefig(location, bbox_inches='tight')
+    plt.close()
+

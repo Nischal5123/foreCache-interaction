@@ -1,0 +1,36 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {"url": "https://gist.githubusercontent.com/Nischal5123/a07935a9d1f62b1ec96245f678d33878/raw/d3dab14a93699b77f19fb9dcfd6bb760dfe040a6/Only1user3d",
+  "format": {"type":"csv"}},
+  "width" :"1200",
+  "height": "400",
+  "layer": [
+  
+    {
+      "mark": "square",
+      "encoding": {
+        "x": {
+          "field": "TimeStamp",
+          "title": ["Interaction"],
+          "type": "nominal",
+           "sort":"ascending"
+
+        },
+        "y": {
+          "field": "ZoomLevel",
+          "type": "nominal",
+          "title": ["Zoom Level"],
+        "axis": {
+            "orient": "left"
+          },
+          "sort":"descending"
+      },
+      "color":{"field":"State", "scale": {
+            
+            "range": ["red", "green", "orange","purple"]
+          }}
+       
+    }
+    }]
+}
+

@@ -57,6 +57,7 @@ class environment2:
             cur_state = self.get_state(row['State'])
             if cur_state not in ('Foraging','Navigation', 'Sensemaking'):
                 continue
+            cur_state = self.get_state(row['State']) + str(row['ZoomLevel'])
             if self.prev_state == cur_state:
                 action = "same"
             else:
@@ -110,7 +111,7 @@ class environment2:
 
 if __name__ == "__main__":
     env = environment2()
-    users = env.user_list
+    users = env.user_list_2D
     print(users)
     # env.get_subtasks(users[0])
     # for idx in range(len(env.mem_states)):

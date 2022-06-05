@@ -1,20 +1,22 @@
-#contains all the miscellaneous functions for running 
+# contains all the miscellaneous functions for running
 import pdb
 import random
 
 import TDLearning_SingleThreaded
-import TD_SARSA 
+import TD_SARSA
 import numpy as np
 from collections import defaultdict
 import pandas as pd
 import itertools
-import matplotlib.pyplot as plt 
+import matplotlib.pyplot as plt
 import sys
 import plotting
-import environment2
+import environment2More as environment2
 from tqdm import tqdm
 from random import randint
-import TDLearning
+import TDLearningMore as TDLearning
+
+
 # import numba
 
 class misc:
@@ -23,8 +25,8 @@ class misc:
         self.alpha_h = [0.01, 0.05, 0.1, 0.2, 0.3, 0.4, 0.5]
         self.epsilon_h = [0.01, 0.05, 0.1]
         self.threshold_h = [0.4, 0.5, 0.6, 0.7, 0.8, 0.9]
-        self.prog = users * len(self.epsilon_h) * len(self.alpha_h) * len(self.discount_h)*len(self.threshold_h)
-    
+        self.prog = users * len(self.epsilon_h) * len(self.alpha_h) * len(self.discount_h) * len(self.threshold_h)
+
     def get_user_name(self, url):
         string = url.split('\\')
         fname = string[len(string) - 1]
@@ -67,11 +69,12 @@ class misc:
                             max_accu_thres = max(max_accu_thres, accu)
                             # pbar.update(1)
                 env.reset(True, False)
-                y_accu.append(round(max_accu_thres/pp, 2))
+                y_accu.append(round(max_accu_thres / pp, 2))
                 max_accu = max(max_accu_thres, max_accu)
             # print(self.threshold_h, y_accu, self.get_user_name(user))
-            plt.plot(self.threshold_h, y_accu, label = self.get_user_name(user))
-            print("{}, {:.2f}, {}, {}, {}".format(self.get_user_name(user), max_accu/pp, best_eps, best_discount, best_alpha))
+            plt.plot(self.threshold_h, y_accu, label=self.get_user_name(user))
+            print("{}, {:.2f}, {}, {}, {}".format(self.get_user_name(user), max_accu / pp, best_eps, best_discount,
+                                                  best_alpha))
             e += best_eps
             d += best_discount
             a += best_alpha
@@ -79,7 +82,7 @@ class misc:
         plt.yticks(np.arange(0.0, 1.0, 0.1))
         plt.xlabel('Threshold')
         plt.ylabel('Accuracy')
-        title = algorithm + "3_STATES" + str(randint(100, 999))
+        title = algorithm + "More_STATES" + str(randint(100, 999))
         # pdb.set_trace()
         plt.title(title)
         location = 'figures/' + title
@@ -87,8 +90,8 @@ class misc:
         plt.close()
 
         # return best_eps, best_discount, best_alpha
-        print("best epsilon ", e , ",best_discount ", d, ",best_alpha ",
-              a )
+        print("best epsilon ", e, ",best_discount ", d, ",best_alpha ",
+              a)
         # print("best epsilon ", e / len(users_hyper), ",best_discount ",d / len(users_hyper),",best_alpha ",a / len(users_hyper))
         # return e / len(users_hyper), d / len(users_hyper), a / len(users_hyper)
 
@@ -103,7 +106,7 @@ class misc:
         plt.xlabel('Users')
         plt.ylabel('Accuracy')
         plt.title(title)
-        location = 'figures/' + title 
+        location = 'figures/' + title
         plt.savefig(location)
         plt.close()
         # plt.show()

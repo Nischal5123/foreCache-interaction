@@ -1,17 +1,18 @@
 import pdb
-import misc
+import miscMore as misc
 import numpy as np
 from collections import defaultdict
 import pandas as pd
 import itertools
-import matplotlib.pyplot as plt 
+import matplotlib.pyplot as plt
 import sys
 import plotting
-import environment2
+import environment2More as environment2
 from tqdm import tqdm
-# from numba import jit, cuda 
+# from numba import jit, cuda
 import multiprocessing
 import time
+
 
 class TDLearning:
     def __init__(self):
@@ -31,7 +32,7 @@ class TDLearning:
             A function that takes the observation as an argument and returns
             the probabilities for each action in the form of a numpy array of length nA.
         """
-        
+
         # @jit(target ="cuda")
         def policy_fnc(state):
             A = np.ones(nA, dtype=float) * epsilon / nA
@@ -112,7 +113,7 @@ class TDLearning:
 
         policy = self.epsilon_greedy_policy(Q, epsilon, len(env.valid_actions))
         # Reset the environment and pick the first action
-        state = env.reset(all = False, test=True)
+        state = env.reset(all=False, test=True)
 
         stats = []
         # One step in the environment
@@ -125,7 +126,7 @@ class TDLearning:
 
             stats.append(prediction)
             # print(prediction)
-            # Turning off the Q-Learning update when testing, the prediction is based on the Learned model from first x% interactions 
+            # Turning off the Q-Learning update when testing, the prediction is based on the Learned model from first x% interactions
             # best_next_action = np.argmax(Q[next_state])
             # td_target = reward + discount_factor * Q[next_state][best_next_action]
             # td_delta = td_target - Q[state][action]
@@ -153,12 +154,14 @@ if __name__ == "__main__":
     obj2 = misc.misc(len(user_list_2D))
     # best_eps, best_discount, best_alpha = obj2.hyper_param(env, users_b, 'sarsa', 1)
     p1 = multiprocessing.Process(target=obj2.hyper_param, args=(env, user_list_2D[:10], 'qlearning', 5,))
-    p3 = multiprocessing.Process(target=obj2.hyper_param, args=(env, user_list_2D[10:len(user_list_2D)], 'qlearning', 5,))
+    p3 = multiprocessing.Process(target=obj2.hyper_param,
+                                 args=(env, user_list_2D[10:len(user_list_2D)], 'qlearning', 5,))
 
     obj2 = misc.misc(len(user_list_3D))
     # best_eps, best_discount, best_alpha = obj2.hyper_param(env, users_f, 'sarsa', 1)
     p2 = multiprocessing.Process(target=obj2.hyper_param, args=(env, user_list_3D[:10], 'qlearning', 5,))
-    p4 = multiprocessing.Process(target=obj2.hyper_param, args=(env, user_list_3D[10:len(user_list_3D)], 'qlearning', 5,))
+    p4 = multiprocessing.Process(target=obj2.hyper_param,
+                                 args=(env, user_list_3D[10:len(user_list_3D)], 'qlearning', 5,))
 
     p1.start()
     p2.start()
