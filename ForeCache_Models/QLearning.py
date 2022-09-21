@@ -7,7 +7,7 @@ import itertools
 import matplotlib.pyplot as plt
 import sys
 import plotting
-import forecache_environment
+import environment2Location as forecache_environment
 from tqdm import tqdm
 
 class TDlearning:
@@ -152,8 +152,8 @@ class TDlearning:
 if __name__ == "__main__":
     accuracies = []
     plot_list=[]
-    env = forecache_environment.environment3()
-    users = env.user_list
+    env = forecache_environment.environment2()
+    users = env.user_list_2D
     for i in range(len(users)):
         plot_list.append(users[i][28:-10])
         epoch_user_accuracy=[]
@@ -163,7 +163,7 @@ if __name__ == "__main__":
             print('########For user#############',users[i])
             env.process_data(users[i], thres)
             obj = TDlearning()
-            Q, stats = obj.q_learning(users[i], env, 5000)
+            Q, stats = obj.q_learning(users[i], env, 50)
             epoch_user_accuracy.append(obj.test(env, Q)) #get test accuracy
             env.reset(True, False)
             # print("OK")

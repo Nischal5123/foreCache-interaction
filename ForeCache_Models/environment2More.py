@@ -50,23 +50,40 @@ class environment2:
         # df = pd.read_excel(filename, sheet_name= "Sheet1", usecols="B:D")
         df = pd.read_csv(filename)
         self.prev_state = None
+        # self.prev_zoom = None
         cnt_inter = 0
         for index, row in df.iterrows():
             # pdb.set_trace()
             # print("here {} end\n".format(cnt_inter))
+            # cur_zoom = row['ZoomLevel']
+            # cur_state = self.get_state(row['State'])
+            # if cur_state not in ('Foraging','Navigation', 'Sensemaking'):
+            #     continue
+            # model_state = self.get_state(row['State']) + str(row['ZoomLevel'])
+            # if (self.prev_state == cur_state) and (self.prev_zoom == cur_zoom):
+            #     action = "samestate_samezoom"
+            # elif (self.prev_state == cur_state) and (self.prev_zoom != cur_zoom):
+            #     action = "samestate_changezoom"
+            # elif (self.prev_state) != cur_state and (self.prev_zoom == cur_zoom):
+            #     action = "changestate_samezoom"
+            # else:
+            #     action = "changestate_changezoom"
+            # self.mem_states.append(model_state)
+
             cur_state = self.get_state(row['State'])
-            if cur_state not in ('Foraging','Navigation', 'Sensemaking'):
+            if cur_state not in ('Foraging', 'Navigation', 'Sensemaking'):
                 continue
             cur_state = self.get_state(row['State']) + str(row['ZoomLevel'])
-            if self.prev_state == cur_state:
+            if (self.prev_state == cur_state):
                 action = "same"
             else:
                 action = "change"
             self.mem_states.append(cur_state)
-            self.mem_reward.append(row['NDSI'])
+            self.mem_reward.append(row['IdleTime']*10)
             self.mem_action.append(action)
             cnt_inter += 1
             self.prev_state=cur_state
+
         self.threshold = int(cnt_inter * thres)
         print("{} {}\n".format(len(self.mem_states), self.threshold))
 
@@ -111,7 +128,7 @@ class environment2:
 
 if __name__ == "__main__":
     env = environment2()
-    users = env.user_list_2D
+    users = env.user_list_3D
     print(users)
     # env.get_subtasks(users[0])
     # for idx in range(len(env.mem_states)):

@@ -20,7 +20,8 @@ import TDLearningMore as TDLearning
 # import numba
 
 class misc:
-    def __init__(self, users):
+    def __init__(self, task, users):
+        self.task=task
         self.discount_h = [0.01, 0.05, 0.1, 0.2, 0.3, 0.4, 0.5]
         self.alpha_h = [0.01, 0.05, 0.1, 0.2, 0.3, 0.4, 0.5]
         self.epsilon_h = [0.01, 0.05, 0.1]
@@ -82,7 +83,7 @@ class misc:
         plt.yticks(np.arange(0.0, 1.0, 0.1))
         plt.xlabel('Threshold')
         plt.ylabel('Accuracy')
-        title = algorithm + "More_STATES" + str(randint(100, 999))
+        title = algorithm + str(self.task) + "More_STATES" + str(randint(100, 999))
         # pdb.set_trace()
         plt.title(title)
         location = 'figures/' + title

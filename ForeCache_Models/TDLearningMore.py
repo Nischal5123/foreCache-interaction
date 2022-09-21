@@ -7,7 +7,7 @@ import itertools
 import matplotlib.pyplot as plt
 import sys
 import plotting
-import environment2More as environment2
+import environment2 as environment2
 from tqdm import tqdm
 # from numba import jit, cuda
 import multiprocessing
@@ -150,28 +150,30 @@ if __name__ == "__main__":
     env = environment2.environment2()
     user_list_2D = env.user_list_2D
     user_list_3D = env.user_list_3D
-
-    obj2 = misc.misc(len(user_list_2D))
+    user_list_2D = ['data/NDSI-2D\\taskname_ndsi-2d-task_userid_3abeecbe-327a-441e-be2a-0dd3763c1d45.csv',
+                   'data/NDSI-2D\\taskname_ndsi-2d-task_userid_44968286-f204-4ad6-a9b5-d95b38e97866.csv',
+                   'data/NDSI-2D\\taskname_ndsi-2d-task_userid_6d49fab8-273b-4a91-948b-ecd14556b049.csv',
+                   'data/NDSI-2D\\taskname_ndsi-2d-task_userid_72a8d170-77ae-400e-b2a5-de9e1d33a714.csv',
+                   'data/NDSI-2D\\taskname_ndsi-2d-task_userid_733a1ac5-0b01-485e-9b29-ac33932aa240.csv']
+    obj2 = misc.misc("NDSI-2D",len(user_list_2D))
     # best_eps, best_discount, best_alpha = obj2.hyper_param(env, users_b, 'sarsa', 1)
-    p1 = multiprocessing.Process(target=obj2.hyper_param, args=(env, user_list_2D[:10], 'qlearning', 5,))
-    p3 = multiprocessing.Process(target=obj2.hyper_param,
-                                 args=(env, user_list_2D[10:len(user_list_2D)], 'qlearning', 5,))
-
-    obj2 = misc.misc(len(user_list_3D))
-    # best_eps, best_discount, best_alpha = obj2.hyper_param(env, users_f, 'sarsa', 1)
-    p2 = multiprocessing.Process(target=obj2.hyper_param, args=(env, user_list_3D[:10], 'qlearning', 5,))
-    p4 = multiprocessing.Process(target=obj2.hyper_param,
-                                 args=(env, user_list_3D[10:len(user_list_3D)], 'qlearning', 5,))
+    p1 = multiprocessing.Process(target=obj2.hyper_param, args=(env, user_list_2D, 'qlearning', 5,))
+    # p3 = multiprocessing.Process(target=obj2.hyper_param,args=(env, user_list_2D[10:], 'qlearning', 5,))
+    #
+    # obj2 = misc.misc("NDSI-3D",len(user_list_3D))
+    # # best_eps, best_discount, best_alpha = obj2.hyper_param(env, users_f, 'sarsa', 1)
+    # p2 = multiprocessing.Process(target=obj2.hyper_param, args=(env, user_list_3D[:5], 'qlearning', 5,))
+    # # p4 = multiprocessing.Process(target=obj2.hyper_param, args=(env, user_list_3D[10:], 'qlearning', 5,))
 
     p1.start()
-    p2.start()
-    p3.start()
-    p4.start()
+    # p2.start()
+    # # p3.start()
+    # # p4.start()
 
     p1.join()
-    p2.join()
-    p3.join()
-    p4.join()
+    # p2.join()
+    # p3.join()
+    # p4.join()
 
 # if __name__ == "__main__":
 #     env = environment2.environment2()
