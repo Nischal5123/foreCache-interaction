@@ -15,7 +15,7 @@ class environment2:
         # This variable will be used to track the current position of the user agent.
         self.steps = 0
         self.done = False  # Done exploring the current subtask
-        self.valid_actions = ['Foraging','Navigation', 'Sensemaking']
+        self.valid_actions = ["Foraging", "Sensemaking","Navigation"]
         # Storing the data into main memory. Focus is now only on action and states for a fixed user's particular subtask
         self.mem_states = []
         self.mem_reward = []
@@ -55,16 +55,19 @@ class environment2:
             # pdb.set_trace()
             # print("here {} end\n".format(cnt_inter))
             cur_state = self.get_state(row['Most_frequent_region'])
-            self.mem_states.append(cur_state)
+            if cur_state in ('Other','None'):
+                cur_state = 'None'
             # if self.prev_state == cur_state:
             #     action = "same"
             # else:
             #     action = "change"
-            cur_action = self.get_state(row['State'])
-            if cur_action not in ('Foraging', 'Navigation', 'Sensemaking'):
-                continue
+            cur_action=row['State']
+            if cur_action == 'Answering':
+                cur_action = 'Sensemaking'
             self.mem_action.append(cur_action)
-            self.mem_reward.append(row['ZoomLevel']*row['NDSI'])
+            self.mem_states.append(cur_state)
+            self.mem_reward.append(row['NDSI'])
+
             cnt_inter += 1
             self.prev_state=cur_state
         self.threshold = int(cnt_inter * thres)
@@ -94,7 +97,19 @@ class environment2:
                 self.done = True
                 self.steps = 0
 
+    def get_threshold(self,filename):
     # act_arg = action argument refers to action number
+        df = pd.read_csv(filename)
+        absolute_threshold=0
+        for index, row in df.iterrows():
+            # pdb.set_trace()
+            if row['Subtask_ROI']==1 :
+                absolute_threshold+=1
+        threshold=round(absolute_threshold/len(df),1)
+        return threshold
+
+
+
     def step(self, cur_state, act_arg, test):
         _, cur_reward, cur_action = self.cur_inter(self.steps)
         _, temp_step = self.peek_next_step()
@@ -105,13 +120,14 @@ class environment2:
             prediction = 1
         else:
             prediction = 0
+
         self.take_step_action(test)
         return next_state, cur_reward, self.done, prediction
 
 
 if __name__ == "__main__":
     env = environment2()
-    users = env.user_list_2D
+    users = env.user_list
     print(users)
     # env.get_subtasks(users[0])
     # for idx in range(len(env.mem_states)):

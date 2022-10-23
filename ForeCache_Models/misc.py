@@ -3,7 +3,7 @@ import pdb
 import random
 
 import TDLearning_SingleThreaded
-import TD_SARSA 
+import SARSA
 import numpy as np
 from collections import defaultdict
 import pandas as pd
@@ -21,8 +21,8 @@ class misc:
     def __init__(self, users):
         self.discount_h = [0.01, 0.05, 0.1, 0.2, 0.3, 0.4, 0.5]
         self.alpha_h = [0.01, 0.05, 0.1, 0.2, 0.3, 0.4, 0.5]
-        self.epsilon_h = [0.01, 0.05, 0.1]
-        self.threshold_h = [0.4, 0.5, 0.6, 0.7, 0.8, 0.9]
+        self.epsilon_h = [0.9,0.01, 0.05, 0.1]
+        self.threshold_h = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]
         self.prog = users * len(self.epsilon_h) * len(self.alpha_h) * len(self.discount_h)*len(self.threshold_h)
     
     def get_user_name(self, url):
@@ -41,6 +41,7 @@ class misc:
             max_accu = -1
             # x_thres = []
             y_accu = []
+         #   self.threshold_h =[env.get_threshold(user)]
             for thres in self.threshold_h:
                 max_accu_thres = -1
                 env.process_data(user, thres)
@@ -54,7 +55,7 @@ class misc:
                                     # pdb.set_trace()
                                     Q, stats = obj.q_learning(user, env, epoch, dis, alp, eps)
                                 else:
-                                    obj = TD_SARSA.TD_SARSA()
+                                    obj = SARSA.TD_SARSA()
                                     Q, stats = obj.sarsa(user, env, epoch, dis, alp, eps)
 
                                 accu += obj.test(env, Q, dis, alp, eps)
