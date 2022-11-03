@@ -15,7 +15,7 @@ class environment2:
         # This variable will be used to track the current position of the user agent.
         self.steps = 0
         self.done = False  # Done exploring the current subtask
-        self.valid_actions = ["change", "same"]
+        self.valid_actions = ['Foraging','Navigation', 'Sensemaking']
         # Storing the data into main memory. Focus is now only on action and states for a fixed user's particular subtask
         self.mem_states = []
         self.mem_reward = []
@@ -61,9 +61,12 @@ class environment2:
                 action = "same"
             else:
                 action = "change"
-            self.mem_states.append(cur_state)
-            self.mem_reward.append(row['ZoomLevel']*row['NDSI'])
-            self.mem_action.append(action)
+            self.mem_states.append(action)
+            if row['ZoomLevel'] in (0,1,2):
+                self.mem_reward.append(0)
+            else:
+                self.mem_reward.append(row['ZoomLevel']*row['NDSI'])
+            self.mem_action.append(cur_state)
             cnt_inter += 1
             self.prev_state=cur_state
         self.threshold = int(cnt_inter * thres)

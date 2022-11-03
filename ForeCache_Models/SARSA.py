@@ -176,9 +176,9 @@ if __name__ == "__main__":
     user_list_3D = env.user_list_3D
     obj2 = misc.misc(len(user_list_2D))
     # best_eps, best_discount, best_alpha = obj2.hyper_param(env, users_b, 'sarsa', 1)
-    p1 = multiprocessing.Process(target=obj2.hyper_param, args=(env, user_list_experienced[:4], 'sarsa', 700,))
+    p1 = multiprocessing.Process(target=obj2.hyper_param, args=(env, user_list_experienced[:4], 'sarsa', 50,))
     p3 = multiprocessing.Process(target=obj2.hyper_param,
-                                 args=(env, user_list_first_time[:4], 'sarsa', 700,))
+                                 args=(env, user_list_first_time[:4], 'sarsa', 50,))
 
     # obj2 = misc.misc(len(user_list_3D))
     # best_eps, best_discount, best_alpha = obj2.hyper_param(env, users_f, 'sarsa', 1)
