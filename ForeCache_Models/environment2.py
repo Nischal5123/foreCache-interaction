@@ -62,10 +62,7 @@ class environment2:
             else:
                 action = "change"
             self.mem_states.append(action)
-            if row['ZoomLevel'] in (0,1,2):
-                self.mem_reward.append(0)
-            else:
-                self.mem_reward.append(row['ZoomLevel']*row['NDSI'])
+            self.mem_reward.append(row['NDSI'])
             self.mem_action.append(cur_state)
             cnt_inter += 1
             self.prev_state=cur_state
@@ -113,7 +110,7 @@ class environment2:
 
 if __name__ == "__main__":
     env = environment2()
-    users = env.user_list
+    users = env.user_list_2D
     print(users)
     # env.get_subtasks(users[0])
     # for idx in range(len(env.mem_states)):

@@ -28,11 +28,11 @@ class NaiveProbabilistic:
 
         # Normalizing to get the probability
         for states in self.freq:
-            sum = 0
+            sum = 1
             for actions in self.freq[states]:
                 sum += self.freq[states][actions]
             for actions in self.freq[states]:
-                self.freq[states][actions] = self.reward[states][actions] / sum
+                self.freq[states][actions] = self.freq[states][actions] / sum
                 # self.freq[states][actions] /= sum
 
         # Debugging probablity calculation

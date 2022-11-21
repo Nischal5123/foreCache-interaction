@@ -20,7 +20,7 @@ import TDLearning
 class misc:
     def __init__(self, users):
         self.discount_h = [0.01, 0.05, 0.1, 0.2, 0.3, 0.4, 0.5]
-        self.alpha_h = [0.01, 0.05, 0.1, 0.2, 0.3, 0.4, 0.5]
+        self.alpha_h = [0.01, 0.05, 0.1, 0.2, 0.3, 0.4, 0.5,0.9]
         self.epsilon_h = [0.9,0.01, 0.05, 0.1]
         self.threshold_h = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]
         self.prog = users * len(self.epsilon_h) * len(self.alpha_h) * len(self.discount_h)*len(self.threshold_h)
@@ -124,7 +124,7 @@ class misc:
                     Q, stats = obj.q_learning(u, env, 50, best_discount, best_alpha, best_eps)
                 else:
                     # print("Q")
-                    obj = TD_SARSA.TD_SARSA()
+                    obj = SARSA.TD_SARSA()
                     Q, stats = obj.sarsa(u, env, 50, best_discount, best_alpha, best_eps)
 
                 accu = obj.test(env, Q, best_discount, best_alpha, best_eps)

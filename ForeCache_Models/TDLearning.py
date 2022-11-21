@@ -172,24 +172,25 @@ if __name__ == "__main__":
 
     obj2 = misc.misc(len(user_list_2D))
     # best_eps, best_discount, best_alpha = obj2.hyper_param(env, users_b, 'sarsa', 1)
-    p1 = multiprocessing.Process(target=obj2.hyper_param, args=(env,user_list_experienced[:4], 'qlearning', 5,))
+    p1 = multiprocessing.Process(target=obj2.hyper_param, args=(env,user_list_experienced[:6], 'qlearning',5,))
     p3 = multiprocessing.Process(target=obj2.hyper_param,
-                                 args=(env, user_list_first_time[:4], 'qlearning', 5,))
+                                 args=(env, user_list_first_time[:6], 'qlearning', 5,))
 
     # obj2 = misc.misc(len(user_list_3D))
     # best_eps, best_discount, best_alpha = obj2.hyper_param(env, users_f, 'sarsa', 1)
-    # p2 = multiprocessing.Process(target=obj2.hyper_param, args=(env, user_list_3D[:10], 'qlearning', 5,))
-    # p4 = multiprocessing.Process(target=obj2.hyper_param, args=(env, user_list_3D[10:len(user_list_3D)], 'qlearning', 5,))
+    p2 = multiprocessing.Process(target=obj2.hyper_param, args=(env, user_list_experienced[:6], 'sarsa', 5,))
+    p4 = multiprocessing.Process(target=obj2.hyper_param,
+                                 args=(env, user_list_first_time[:6], 'sarsa', 5,))
 
     p1.start()
-    # p2.start()
+    p2.start()
     p3.start()
-    # p4.start()
+    p4.start()
 
     p1.join()
-    # p2.join()
+    p2.join()
     p3.join()
-    # p4.join()
+    p4.join()
 
 # if __name__ == "__main__":
 #     env = environment2.environment2()
