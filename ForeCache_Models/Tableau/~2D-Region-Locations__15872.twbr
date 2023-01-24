@@ -1059,19 +1059,17 @@
             <datasource caption='Sheet1 (all_user_NDSI-2D)' name='federated.1fved7m0z09ldd1chqop90quar3a' />
           </datasources>
           <datasource-dependencies datasource='federated.1fved7m0z09ldd1chqop90quar3a'>
-            <column caption='[Ndsi]* [Zoom Level]' datatype='real' name='[Calculation_1789899392522936322]' role='measure' type='quantitative' user:unnamed='Sheet 1 (3)'>
-              <calculation class='tableau' formula='[NDSI]* [ZoomLevel]' />
+            <column caption='[Ndsi]* [Zoom Level]+1' datatype='real' name='[Calculation_1116892751832686592]' role='measure' type='quantitative' user:unnamed='Sheet 1 (4)'>
+              <calculation class='tableau' formula='[NDSI]* [ZoomLevel]+1' />
             </column>
             <column caption='Most frequent region' datatype='string' name='[Most_frequent_region]' role='dimension' type='nominal' />
             <column aggregation='Sum' caption='Ndsi' datatype='real' name='[NDSI]' role='dimension' type='ordinal' />
-            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
             <column aggregation='Sum' datatype='integer' name='[Subtask_ROI]' role='dimension' type='ordinal' />
             <column aggregation='Sum' caption='User Index' datatype='integer' name='[UserIndex]' role='dimension' type='ordinal' />
             <column datatype='string' name='[User]' role='dimension' type='nominal' />
             <column aggregation='Sum' caption='Zoom Level' datatype='integer' name='[ZoomLevel]' role='dimension' type='ordinal' />
-            <column-instance column='[Calculation_1789899392522936322]' derivation='None' name='[none:Calculation_1789899392522936322:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1116892751832686592]' derivation='None' name='[none:Calculation_1116892751832686592:qk]' pivot='key' type='quantitative' />
             <column-instance column='[Most_frequent_region]' derivation='None' name='[none:Most_frequent_region:nk]' pivot='key' type='nominal' />
-            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
             <column-instance column='[Subtask_ROI]' derivation='None' name='[none:Subtask_ROI:ok]' pivot='key' type='ordinal' />
             <column-instance column='[User]' derivation='None' name='[none:User:nk]' pivot='key' type='nominal' />
             <column-instance column='[UserIndex]' derivation='None' name='[none:UserIndex:qk]' pivot='key' type='quantitative' />
@@ -1096,6 +1094,10 @@
           <aggregation value='true' />
         </view>
         <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1fved7m0z09ldd1chqop90quar3a].[none:UserIndex:qk]' field-type='quantitative' max='173' min='-6' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1fved7m0z09ldd1chqop90quar3a].[none:Calculation_1116892751832686592:qk]' field-type='quantitative' max='5.2989267921913177' min='1.0025272748111411' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
           <style-rule element='cell'>
             <format attr='cell-w' value='60' />
             <format attr='cell-h' value='20' />
@@ -1115,7 +1117,6 @@
             <encodings>
               <color column='[federated.1fved7m0z09ldd1chqop90quar3a].[none:Most_frequent_region:nk]' />
               <text column='[federated.1fved7m0z09ldd1chqop90quar3a].[none:Subtask_ROI:ok]' />
-              <text column='[federated.1fved7m0z09ldd1chqop90quar3a].[none:State:nk]' />
             </encodings>
             <style>
               <style-rule element='mark'>
@@ -1130,7 +1131,7 @@
             </style>
           </pane>
         </panes>
-        <rows>([federated.1fved7m0z09ldd1chqop90quar3a].[none:User:nk] * [federated.1fved7m0z09ldd1chqop90quar3a].[none:Calculation_1789899392522936322:qk])</rows>
+        <rows>([federated.1fved7m0z09ldd1chqop90quar3a].[none:User:nk] * [federated.1fved7m0z09ldd1chqop90quar3a].[none:Calculation_1116892751832686592:qk])</rows>
         <cols>[federated.1fved7m0z09ldd1chqop90quar3a].[none:UserIndex:qk]</cols>
       </table>
       <simple-id uuid='{1FCBDDAB-86B0-4D16-9368-81C2785481EC}' />
@@ -1469,7 +1470,7 @@
       </cards>
       <simple-id uuid='{7036DE67-77A8-4DA5-A56D-9414A82A2A4A}' />
     </window>
-    <window class='worksheet' maximized='true' name='Sheet 1 (3)'>
+    <window class='worksheet' name='Sheet 1 (3)'>
       <cards>
         <edge name='left'>
           <strip size='216'>
@@ -1490,17 +1491,17 @@
           </strip>
         </edge>
         <edge name='right'>
-          <strip size='98'>
+          <strip size='99'>
             <card pane-specification-id='1' param='[federated.1fved7m0z09ldd1chqop90quar3a].[none:ZoomLevel:ok]' type='color' />
           </strip>
         </edge>
       </cards>
       <simple-id uuid='{27CE73FE-20C5-402C-A5EE-B4B13D797253}' />
     </window>
-    <window class='worksheet' name='Sheet 1 (4)'>
+    <window class='worksheet' maximized='true' name='Sheet 1 (4)'>
       <cards>
         <edge name='left'>
-          <strip size='216'>
+          <strip size='99'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />

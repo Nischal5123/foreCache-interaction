@@ -15,11 +15,13 @@ class environment2:
         # This variable will be used to track the current position of the user agent.
         self.steps = 0
         self.done = False  # Done exploring the current subtask
-        self.valid_actions = ['Foraging','Navigation', 'Sensemaking']
+        self.valid_actions = ['same','change']
+        self.valid_states = ['Foraging', 'Navigation', 'Sensemaking']
         # Storing the data into main memory. Focus is now only on action and states for a fixed user's particular subtask
         self.mem_states = []
         self.mem_reward = []
         self.mem_action = []
+        self.mem_roi=[]
         self.threshold = 0
         self.prev_state = None
 
@@ -36,6 +38,7 @@ class environment2:
             self.mem_reward = []
             self.mem_states = []
             self.mem_action = []
+            self.mem_roi = []
             return
 
         s, r, a = self.cur_inter(self.steps)
@@ -51,6 +54,8 @@ class environment2:
         df = pd.read_csv(filename)
         self.prev_state = None
         cnt_inter = 0
+        roi_subset = []
+        subset = 1
         for index, row in df.iterrows():
             # pdb.set_trace()
             # print("here {} end\n".format(cnt_inter))
@@ -61,13 +66,22 @@ class environment2:
                 action = "same"
             else:
                 action = "change"
-            self.mem_states.append(action)
+            self.mem_states.append(cur_state)
             self.mem_reward.append(row['NDSI'])
-            self.mem_action.append(cur_state)
+            self.mem_action.append(action)
             cnt_inter += 1
             self.prev_state=cur_state
+            if cur_state == 'Sensemaking':
+                if (index < (len(df) - 1)) and df['State'][index + 1] != 'Sensemaking':
+                    roi_subset.append(subset)
+                    subset = subset + 1
+                else:
+                    roi_subset.append(subset)
+            else:
+                roi_subset.append(subset)
+        self.mem_roi=roi_subset
         self.threshold = int(cnt_inter * thres)
-        print("{} {}\n".format(len(self.mem_states), self.threshold))
+       # print("{} {}\n".format(len(self.mem_states), self.threshold))
 
     def cur_inter(self, steps):
         return self.mem_states[steps], self.mem_reward[steps], self.mem_action[steps]
@@ -112,7 +126,3 @@ if __name__ == "__main__":
     env = environment2()
     users = env.user_list_2D
     print(users)
-    # env.get_subtasks(users[0])
-    # for idx in range(len(env.mem_states)):
-    #     print("{} {}".format(env.mem_states[idx], env.mem_reward[idx]))
-    # print(users)

@@ -120,8 +120,10 @@ class environment2:
         predicted_action=self.valid_actions[act_arg]
         if predicted_action == cur_action:
             prediction = 1
+
         else:
             prediction = 0
+            cur_reward = 0
         self.take_step_action(test)
         return next_state, cur_reward, self.done, prediction
 

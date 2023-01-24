@@ -7,7 +7,7 @@ import itertools
 import matplotlib.pyplot as plt
 import sys
 import plotting
-import environment2Location as environment2
+import environment2 as environment2
 from tqdm import tqdm
 # from numba import jit, cuda 
 import multiprocessing
@@ -126,7 +126,7 @@ class TDLearning:
             action = np.random.choice(np.arange(len(action_probs)), p=action_probs)
             next_state, reward, done, prediction = env.step(state, action, True)
 
-            stats.append(prediction)
+            stats.append(action)
 
             # print(prediction)
             # Turning off the Q-Learning update when testing, the prediction is based on the Learned model from first x% interactions
@@ -144,8 +144,8 @@ class TDLearning:
         for i in stats:
             cnt += i
         cnt /= len(stats)
-        # print("Accuracy of State Prediction: {}".format(cnt))
-        return cnt
+        # print("Actions: {}".format(stats))
+        return cnt,stats
 
 
 if __name__ == "__main__":
@@ -156,7 +156,7 @@ if __name__ == "__main__":
     user_list_experienced=np.array(['data/NDSI-2D\\taskname_ndsi-2d-task_userid_82316e37-1117-4663-84b4-ddb6455c83b2.csv',
 'data/NDSI-2D\\taskname_ndsi-2d-task_userid_ff56863b-0710-4a58-ad22-4bf2889c9bc0.csv',
 'data/NDSI-2D\\taskname_ndsi-2d-task_userid_bda49380-37ad-41c5-a109-7fa198a7691a.csv',
-'data/NDSI-2D\\taskname_ndsi-2d-task_userid_3abeecbe-327a-441e-be2a-0dd3763c1d45.csv',
+# 'data/NDSI-2D\\taskname_ndsi-2d-task_userid_3abeecbe-327a-441e-be2a-0dd3763c1d45.csv',
 'data/NDSI-2D\\taskname_ndsi-2d-task_userid_6d49fab8-273b-4a91-948b-ecd14556b049.csv',
 'data/NDSI-2D\\taskname_ndsi-2d-task_userid_954edb7c-4eae-47ab-9338-5c5c7eccac2d.csv',
 'data/NDSI-2D\\taskname_ndsi-2d-task_userid_a6aab5f5-fdb6-41df-9fc6-221d70f8c6e8.csv',
@@ -192,28 +192,3 @@ if __name__ == "__main__":
     p3.join()
     p4.join()
 
-# if __name__ == "__main__":
-#     env = environment2.environment2()
-#     users_b = env.user_list_bright
-#     users_f = env.user_list_faa
-#     users_hyper = []
-#     for i in range(8):
-#         c = np.random.randint(0, len(users_b))
-#         users_hyper.append(users_b[c])
-#         users_b.remove(users_b[c])
-#
-#     for i in range(8):
-#         c = np.random.randint(0, len(users_f))
-#         users_hyper.append(users_f[c])
-#         users_f.remove(users_f[c])
-#
-#     # thres = 0.75 #the percent of interactions Q-Learning will be trained on
-#     obj2 = misc.misc(len(users_hyper))
-#
-#     # training hyper-parameters
-#     best_eps, best_discount, best_alpha = obj2.hyper_param(env, users_hyper, 'qlearning', 30)
-#
-#     # testing the model
-#     # obj2.run_stuff(env, users_f, 30, 'QLearning_faa', best_eps, best_discount, best_alpha, 'qlearning')
-#     # obj2.run_stuff(env, users_b, 30, 'QLearning_brightkite', best_eps, best_discount, best_alpha, 'qlearning')
-#     # print(env.find_states)
