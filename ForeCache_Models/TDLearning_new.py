@@ -107,7 +107,7 @@ class TDLearning:
                 action = np.random.choice(np.arange(len(action_probs)), p=action_probs)
                 next_state, reward, done, prediction = env.step(state, action, True)
 
-                stats.append(prediction)
+                stats.append(action)
 
                 # Turning off the Q-Learning update when testing, the prediction is based on the Learned model from first x% interactions
                 best_next_action = np.argmax(Q[next_state])
@@ -126,7 +126,7 @@ class TDLearning:
             for i in stats:
                 cnt += i
             cnt /= len(stats)
-        return cnt
+        return cnt, stats
 
 
 if __name__ == "__main__":
@@ -152,11 +152,11 @@ if __name__ == "__main__":
     user_list_3D = env.user_list_3D
 
     obj2 = misc.misc(len(user_list_2D))
-    p1 = multiprocessing.Process(target=obj2.hyper_param, args=(env,user_list_experienced[:6], 'qlearning',150,))
-    p3 = multiprocessing.Process(target=obj2.hyper_param,args=(env, user_list_first_time[:6], 'qlearning', 150,))
+    p1 = multiprocessing.Process(target=obj2.hyper_param, args=(env,user_list_experienced[:6], 'qlearning',50,))
+    p3 = multiprocessing.Process(target=obj2.hyper_param,args=(env, user_list_first_time[:6], 'qlearning', 50,))
     #
-    p2 = multiprocessing.Process(target=obj2.hyper_param, args=(env, user_list_experienced[:6], 'sarsa', 150,))
-    p4 = multiprocessing.Process(target=obj2.hyper_param,args=(env, user_list_first_time[:6], 'sarsa', 150,))
+    p2 = multiprocessing.Process(target=obj2.hyper_param, args=(env, user_list_experienced[:6], 'sarsa', 50,))
+    p4 = multiprocessing.Process(target=obj2.hyper_param,args=(env, user_list_first_time[:6], 'sarsa', 50,))
     #
     p1.start()
     p2.start()

@@ -104,7 +104,7 @@ class TD_SARSA:
                 action_probs = policy(state)
                 action = np.random.choice(np.arange(len(action_probs)), p=action_probs)
                 next_state, reward, done, prediction = env.step(state, action, True)
-                stats.append(prediction)
+                stats.append(action)
 
                 # Pick the next action
                 next_action_probs = policy(next_state)
@@ -127,7 +127,7 @@ class TD_SARSA:
                 cnt += i
             cnt /= len(stats)
 
-        return cnt
+        return cnt,stats
 
 
 if __name__ == "__main__":

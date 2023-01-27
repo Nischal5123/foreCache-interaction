@@ -16,8 +16,8 @@ from collections import Counter
 
 class misc:
     def __init__(self, users):
-        self.discount_h = [0.01, 0.05, 0.1, 0.4, 0.9]
-        self.alpha_h = [0.01, 0.05, 0.1, 0.2, 0.3, 0.5]
+        self.discount_h = [0.01, 0.05, 0.1, 0.2, 0.3, 0.4, 0.5]
+        self.alpha_h = [0.01, 0.05, 0.1, 0.2, 0.3, 0.4, 0.5, 0.9]
         self.epsilon_h = [0.9, 0.01, 0.05, 0.1]
         self.threshold_h = []
         self.prog = users * len(self.epsilon_h) * len(self.alpha_h) * len(self.discount_h) * len(self.threshold_h)
@@ -79,49 +79,49 @@ class misc:
                 env.reset(True, False)
                 y_accu.append(round(max_accu_thres / pp, 2))
                 max_accu = max(max_accu_thres, max_accu)
-            epsilon = [best_eps]
-            alpha = [best_alpha]
-            discount_h = [best_discount]
+
+    ####################################################################################
+
             y_accu = []
             for thres in self.threshold_h:
-                max_accu_thres = -1
+                threshold_accuracy=[]
                 env.process_data(user, thres)
-                for eps in epsilon:
-                    for alp in alpha:
-                        for dis in discount_h:
-                            accu = 0
-                            stats = []
-                            for epiepi in range(pp):
-                                if algorithm == 'qlearning':
-                                    obj = TDLearning.TDLearning()
-                                    # pdb.set_trace()
-                                    Q, stats = obj.q_learning(user, env, epoch, dis, alp, eps)
-                                else:
-                                    obj = SARSA.TD_SARSA()
-                                    Q, stats = obj.sarsa(user, env, epoch, dis, alp, eps)
+                for epiepi in range(pp):
+                    if (algorithm == 'qlearning'):
+                        obj = TDLearning.TDLearning()
+                        # pdb.set_trace()
+                        Q, stats = obj.q_learning(user, env, epoch, best_discount, best_alpha, best_eps)
+                    else:
+                        obj = SARSA.TD_SARSA()
+                        Q, stats = obj.sarsa(user, env, epoch, best_discount, best_alpha, best_eps)
 
-                                test_accuracy,stats= obj.test(env, Q, dis, alp, eps)
-                                accu +=test_accuracy
-                            # print(accu/20)
-                            if max_accu_thres < accu:
-                                max_accu = accu
-                                best_eps = eps
-                                best_alpha = alp
-                                best_discount = dis
-                            max_accu_thres = max(max_accu_thres, accu)
-                            # pbar.update(1)
-                            if epiepi==10:
-                                print("Actions: {}, Algorithm:{}, User{}, Threshold:{}".format(stats, algorithm, user, thres))
+                    test_accuracy,stats= obj.test(env, Q, best_discount, best_alpha, best_eps)
+                    threshold_accuracy.append(test_accuracy)
+                    if epiepi==10:
+                        print("Actions: {}, Algorithm:{}, User{}, Threshold:{}".format(stats, algorithm, user, thres))
                 env.reset(True, False)
-                y_accu.append(round(max_accu_thres / pp, 2))
-                max_accu = max(max_accu_thres, max_accu)
+                y_accu.append(threshold_accuracy)
             # print(self.threshold_h, y_accu, self.get_user_name(user))
-            plt.plot(self.threshold_h, y_accu, label=self.get_user_name(user))
+            y_avgs = [sum(i) / len(i) for i in y_accu]
+            y_flattened = [i for sublist in y_accu for i in sublist]
+
+            # Create the figure and axis
+            fig, axs = plt.subplots(1, 2, figsize=(10, 5))
+
+            # Plot x[i] vs the average of y[i]
+            axs[0].plot(self.threshold_h, y_avgs, color='r', label=self.get_user_name(user))
+            axs[0].legend()
+
+            # Plot the distribution of elements inside y[i]
+            axs[1].bar(np.arange(len(y_flattened)), y_flattened, color='b')
+
             print("{}, {:.2f}, {}, {}, {}".format(self.get_user_name(user), max_accu / pp, best_eps, best_discount,
                                                   best_alpha))
             e += best_eps
             d += best_discount
             a += best_alpha
+        # Assume x and y are your arrays
+
         plt.legend(loc='center left', bbox_to_anchor=(1, 0))
         plt.yticks(np.arange(0.0, 1.0, 0.1))
         plt.xlabel('Threshold')
@@ -136,6 +136,8 @@ class misc:
         # return best_eps, best_discount, best_alpha
         print("best epsilon ", e, ",best_discount ", d, ",best_alpha ",
               a)
+        # print("best epsilon ", e / len(users_hyper), ",best_discount ",d / len(users_hyper),",best_alpha ",a / len(users_hyper))
+        # return e / len(users_hyper), d / len(users_hyper), a / len(users_hyper)
 
     def plot(self, x_labels, y, title):
         x = []

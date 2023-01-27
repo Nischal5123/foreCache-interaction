@@ -1,11 +1,11 @@
-import gym
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
 from torch.distributions import Categorical
-import forecache_environment
+import environment2
 import numpy as np
+import plotting
 
 # Hyperparameters
 learning_rate = 0.0002
@@ -17,8 +17,8 @@ class Policy(nn.Module):
         super(Policy, self).__init__()
         self.data = []
 
-        self.fc1 = nn.Linear(1, 128)
-        self.fc2 = nn.Linear(128, 1)
+        self.fc1 = nn.Linear(3, 128)
+        self.fc2 = nn.Linear(128, 2)
         self.optimizer = optim.Adam(self.parameters(), lr=learning_rate)
 
     def forward(self, x):
@@ -41,24 +41,38 @@ class Policy(nn.Module):
 
 
 def main():
-    env = forecache_environment.environment3()
-    users = env.user_list
-    env.process_data(users[0], 0.8)
+    env = environment2.environment2()
+    users = env.user_list_2D
+    env.process_data(users[0], 0.3)
     pi = Policy()
     score = 0.0
     print_interval = 20
 
-    for n_epi in range(10000):
-        s = np.array(env.reset())
+    for n_epi in range(1000):
+        s = env.reset()
+        if s == 'Sensemaking':
+            s=[1,0,0]
+        elif s== 'Foraging':
+            s=[0,1,0]
+        else:
+            s=[0,0,1]
+        s=np.array(s)
         done = False
 
         while not done:  # CartPole-v1 forced to terminates at 500 step.
             prob = pi(torch.from_numpy(s).float())
             m = Categorical(prob)
             a = m.sample()
-            s_prime, r, done, info = env.step(a.item())
+            s_prime, r, done, info = env.step(s,a.item(),False)
             pi.put_data((r, prob[a]))
             s = s_prime
+            if s == 'Sensemaking':
+                s = [1, 0, 0]
+            elif s == 'Foraging':
+                s = [0, 1, 0]
+            else:
+                s = [0, 0, 1]
+            s = np.array(s)
             score += r
 
         pi.train_net()
@@ -66,8 +80,46 @@ def main():
         if n_epi % print_interval == 0 and n_epi != 0:
             print("# of episode :{}, avg score : {}".format(n_epi, score / print_interval))
             score = 0.0
-    env.close()
 
+
+    test_accuracies=[]
+    for n_epi in range(100):
+        s = env.reset(all=False , test=True)
+        if s == 'Sensemaking':
+            s=[1,0,0]
+        elif s== 'Foraging':
+            s=[0,1,0]
+        else:
+            s=[0,0,1]
+        s=np.array(s)
+        done = False
+        predictions =[]
+        while not done:  # CartPole-v1 forced to terminates at 500 step.
+            prob = pi(torch.from_numpy(s).float())
+            m = Categorical(prob)
+            a = m.sample()
+            s_prime, r, done, info = env.step(s,a.item(),True)
+            #pi.put_data((r, prob[a]))
+            s = s_prime
+            if s == 'Sensemaking':
+                s = [1, 0, 0]
+            elif s == 'Foraging':
+                s = [0, 1, 0]
+            else:
+                s = [0, 0, 1]
+            s = np.array(s)
+            score += r
+            predictions.append(info)
+
+
+
+
+
+        print("# of episode :{}, accuracy : {}".format(n_epi, np.mean(predictions)))
+        score = 0.0
+        test_accuracies.append(np.mean(predictions))
+    return test_accuracies
 
 if __name__ == '__main__':
-    main()
+    accuracies = main()
+    plotting.plot_episode_stats(accuracies, 100, 'reinforce')

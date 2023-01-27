@@ -15,7 +15,7 @@ class environment2:
         # This variable will be used to track the current position of the user agent.
         self.steps = 0
         self.done = False  # Done exploring the current subtask
-        self.valid_actions = ['same','change']
+        self.valid_actions = ['change','same']
         self.valid_states = ['Foraging', 'Navigation', 'Sensemaking']
         # Storing the data into main memory. Focus is now only on action and states for a fixed user's particular subtask
         self.mem_states = []
@@ -116,8 +116,11 @@ class environment2:
         predicted_action=self.valid_actions[act_arg]
         if predicted_action == cur_action:
             prediction = 1
+
         else:
             prediction = 0
+            cur_reward = 0
+
         self.take_step_action(test)
         return next_state, cur_reward, self.done, prediction
 
