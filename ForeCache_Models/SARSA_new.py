@@ -4,6 +4,7 @@ import itertools
 import environment2 as environment2
 import multiprocessing
 import time
+import misc_new as misc
 
 
 class TD_SARSA:
@@ -97,14 +98,15 @@ class TD_SARSA:
             state = env.reset(all=False, test=True)
 
             stats = []
-
+            model_actions=[]
+            # Take a step
+            action_probs = policy(state)
+            action = np.random.choice(np.arange(len(action_probs)), p=action_probs)
             # One step in the environment
             for t in itertools.count():
-                # Take a step
-                action_probs = policy(state)
-                action = np.random.choice(np.arange(len(action_probs)), p=action_probs)
+                model_actions.append(action)
                 next_state, reward, done, prediction = env.step(state, action, True)
-                stats.append(action)
+                stats.append(prediction)
 
                 # Pick the next action
                 next_action_probs = policy(next_state)
@@ -117,7 +119,9 @@ class TD_SARSA:
 
                 if done:
                     break
+                action = next_action
                 state = next_state
+                model_actions.append(action)
 
             if epsilon > step_size:
                 epsilon = max(epsilon - step_size, 0)
@@ -127,7 +131,7 @@ class TD_SARSA:
                 cnt += i
             cnt /= len(stats)
 
-        return cnt,stats
+        return cnt,model_actions
 
 
 if __name__ == "__main__":

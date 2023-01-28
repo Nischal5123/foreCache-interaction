@@ -33,7 +33,7 @@ class TDLearning:
 
         return policy_fnc
 
-    def q_learning(self, user, env, num_episodes, discount_factor=1.0, alpha=0.5, epsilon=0.5):
+    def q_learning(self, user, env, num_episodes, discount_factor=1.0, alpha=0.5, epsilon=0.5,step_size=0.01,decay_rate=0.001):
         """
         Q-Learning algorithm: Off-policy TD control. Finds the optimal greedy policy
         while following an epsilon-greedy policy
@@ -57,18 +57,19 @@ class TDLearning:
         Q = defaultdict(lambda: np.zeros(len(env.valid_actions)))
 
         stats = None
+        step_size = step_size
 
         for i_episode in range(num_episodes):
 
-            # Reset the environment and pick the first state
-            state = env.reset()
-            # Decrease epsilon
-            step_size = 0.001
-            if epsilon > step_size:
-                epsilon = max(epsilon - step_size, 0)
+
             # The policy we're following
             policy = self.epsilon_greedy_policy(Q, epsilon, len(env.valid_actions))
 
+            if epsilon > step_size:
+                epsilon = max(epsilon - step_size, 0)
+
+            # Reset the environment and pick the first state
+            state = env.reset()
             # One step in the environment
             for t in itertools.count():
                 # Take a step
@@ -97,17 +98,18 @@ class TDLearning:
             # Reset the environment and pick the first action
             state = env.reset(all=False, test=True)
             stats = []
+            model_actions=[]
             policy = self.epsilon_greedy_policy(Q, epsilon, len(env.valid_actions))
 
             # One step in the environment
-            # total_reward = 0.0
             for t in itertools.count():
                 # Take a step
                 action_probs = policy(state)
                 action = np.random.choice(np.arange(len(action_probs)), p=action_probs)
+                model_actions.append(action)
                 next_state, reward, done, prediction = env.step(state, action, True)
 
-                stats.append(action)
+                stats.append(prediction)
 
                 # Turning off the Q-Learning update when testing, the prediction is based on the Learned model from first x% interactions
                 best_next_action = np.argmax(Q[next_state])
@@ -126,7 +128,7 @@ class TDLearning:
             for i in stats:
                 cnt += i
             cnt /= len(stats)
-        return cnt, stats
+        return cnt, model_actions
 
 
 if __name__ == "__main__":
@@ -152,12 +154,12 @@ if __name__ == "__main__":
     user_list_3D = env.user_list_3D
 
     obj2 = misc.misc(len(user_list_2D))
-    p1 = multiprocessing.Process(target=obj2.hyper_param, args=(env,user_list_experienced[:6], 'qlearning',50,))
-    p3 = multiprocessing.Process(target=obj2.hyper_param,args=(env, user_list_first_time[:6], 'qlearning', 50,))
+    p1 = multiprocessing.Process(target=obj2.hyper_param, args=(env,user_list_experienced[:6], 'qlearning',5,))
+    p3 = multiprocessing.Process(target=obj2.hyper_param,args=(env, user_list_first_time[:6], 'qlearning', 5,))
     #
-    p2 = multiprocessing.Process(target=obj2.hyper_param, args=(env, user_list_experienced[:6], 'sarsa', 50,))
-    p4 = multiprocessing.Process(target=obj2.hyper_param,args=(env, user_list_first_time[:6], 'sarsa', 50,))
-    #
+    p2 = multiprocessing.Process(target=obj2.hyper_param, args=(env, user_list_experienced[:6], 'sarsa', 5,))
+    p4 = multiprocessing.Process(target=obj2.hyper_param,args=(env, user_list_first_time[:6], 'sarsa', 5,))
+
     p1.start()
     p2.start()
     p3.start()

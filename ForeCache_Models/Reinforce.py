@@ -6,6 +6,7 @@ from torch.distributions import Categorical
 import environment2
 import numpy as np
 import plotting
+from collections import Counter
 
 # Hyperparameters
 learning_rate = 0.0002
@@ -43,7 +44,7 @@ class Policy(nn.Module):
 def main():
     env = environment2.environment2()
     users = env.user_list_2D
-    env.process_data(users[0], 0.3)
+    env.process_data(users[0], 0.8)
     pi = Policy()
     score = 0.0
     print_interval = 20
@@ -58,7 +59,7 @@ def main():
             s=[0,0,1]
         s=np.array(s)
         done = False
-
+        actions =[]
         while not done:  # CartPole-v1 forced to terminates at 500 step.
             prob = pi(torch.from_numpy(s).float())
             m = Categorical(prob)
@@ -74,11 +75,12 @@ def main():
                 s = [0, 0, 1]
             s = np.array(s)
             score += r
+            actions.append(a.item())
 
         pi.train_net()
 
         if n_epi % print_interval == 0 and n_epi != 0:
-            print("# of episode :{}, avg score : {}".format(n_epi, score / print_interval))
+            print("# of episode :{}, avg score : {}, actions :{}".format(n_epi, score / print_interval, Counter(actions)))
             score = 0.0
 
 
@@ -94,6 +96,7 @@ def main():
         s=np.array(s)
         done = False
         predictions =[]
+        actions=[]
         while not done:  # CartPole-v1 forced to terminates at 500 step.
             prob = pi(torch.from_numpy(s).float())
             m = Categorical(prob)
@@ -110,12 +113,13 @@ def main():
             s = np.array(s)
             score += r
             predictions.append(info)
+            actions.append(a.item())
 
 
 
 
 
-        print("# of episode :{}, accuracy : {}".format(n_epi, np.mean(predictions)))
+        print("# of episode :{}, accuracy : {}, actions: {}".format(n_epi, np.mean(predictions),Counter(actions)))
         score = 0.0
         test_accuracies.append(np.mean(predictions))
     return test_accuracies

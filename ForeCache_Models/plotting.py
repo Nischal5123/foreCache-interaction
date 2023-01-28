@@ -8,7 +8,7 @@ def plot_episode_stats(accuracy,num_episodes,source,noshow=False):
     x=range(num_episodes)
     y=accuracy
     fig1 = plt.figure(figsize=(10,5))
-    plt.boxplot(x,y)
+    plt.boxplot(y)
     plt.axhline(np.mean(accuracy))
     plt.xlabel("Episode")
     plt.ylabel("Accuracies")

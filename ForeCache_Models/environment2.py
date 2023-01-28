@@ -15,7 +15,7 @@ class environment2:
         # This variable will be used to track the current position of the user agent.
         self.steps = 0
         self.done = False  # Done exploring the current subtask
-        self.valid_actions = ['change','same']
+        self.valid_actions = ['same','change']
         self.valid_states = ['Foraging', 'Navigation', 'Sensemaking']
         # Storing the data into main memory. Focus is now only on action and states for a fixed user's particular subtask
         self.mem_states = []
@@ -45,6 +45,7 @@ class environment2:
         return s
 
     def get_state(self, state):
+
         return state
 
     # Optimization is not the priority right now
@@ -52,6 +53,7 @@ class environment2:
     def process_data(self, filename, thres):
         # df = pd.read_excel(filename, sheet_name= "Sheet1", usecols="B:D")
         df = pd.read_csv(filename)
+        df = df[:round(0.8*len(df))]
         self.prev_state = None
         cnt_inter = 0
         roi_subset = []
@@ -66,19 +68,22 @@ class environment2:
                 action = "same"
             else:
                 action = "change"
+            if cur_state == 'Sensemaking':
+                if (index < (len(df) - 1)) and df['State'][index + 1] != 'Sensemaking':
+                    roi_subset.append(subset)
+                    subset = subset + 1
+
+                else:
+                    roi_subset.append(subset)
+            else:
+                roi_subset.append(subset)
+
             self.mem_states.append(cur_state)
             self.mem_reward.append(row['NDSI'])
             self.mem_action.append(action)
             cnt_inter += 1
             self.prev_state=cur_state
-            if cur_state == 'Sensemaking':
-                if (index < (len(df) - 1)) and df['State'][index + 1] != 'Sensemaking':
-                    roi_subset.append(subset)
-                    subset = subset + 1
-                else:
-                    roi_subset.append(subset)
-            else:
-                roi_subset.append(subset)
+
         self.mem_roi=roi_subset
         self.threshold = int(cnt_inter * thres)
        # print("{} {}\n".format(len(self.mem_states), self.threshold))
@@ -119,7 +124,8 @@ class environment2:
 
         else:
             prediction = 0
-            cur_reward = 0
+
+
 
         self.take_step_action(test)
         return next_state, cur_reward, self.done, prediction

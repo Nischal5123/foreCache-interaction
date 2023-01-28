@@ -94,7 +94,6 @@ class misc:
                             for epiepi in range(pp):
                                 if algorithm == 'qlearning':
                                     obj = TDLearning.TDLearning()
-                                    # pdb.set_trace()
                                     Q, stats = obj.q_learning(user, env, epoch, dis, alp, eps)
                                 else:
                                     obj = SARSA.TD_SARSA()
@@ -110,7 +109,7 @@ class misc:
                                 best_discount = dis
                             max_accu_thres = max(max_accu_thres, accu)
                             # pbar.update(1)
-                            if epiepi==10:
+                            if epiepi==9:
                                 print("Actions: {}, Algorithm:{}, User{}, Threshold:{}".format(stats, algorithm, user, thres))
                 env.reset(True, False)
                 y_accu.append(round(max_accu_thres / pp, 2))

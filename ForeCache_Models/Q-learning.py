@@ -62,6 +62,7 @@ def Q_test(agent,env) :
         while not done:
             a = test_agent.select_action(s)
             s_prime, r, done, info = env.step(s,a,True)
+            test_agent.update_table((s, a, r, s_prime))
             s = s_prime
             predictions.append(info)
         test_agent.anneal_eps()
@@ -75,7 +76,7 @@ def Q_test(agent,env) :
 def main():
     env = environment2.environment2()
     users = env.user_list_2D
-    env.process_data(users[0], 0.3)
+    env.process_data(users[0], 0.8)
     agent=Q_train(env)
     accuracies=Q_test(agent,env)
     plotting.plot_episode_stats(accuracies, 100,'q-learning')
