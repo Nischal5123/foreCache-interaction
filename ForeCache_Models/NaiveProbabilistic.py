@@ -1,9 +1,10 @@
-import environment2Location as environment2
+import environment2 as environment2
 import numpy as np
 from collections import defaultdict
 import pdb
 import misc
 import matplotlib.pyplot as plt
+from collections import Counter
 
 
 class NaiveProbabilistic:
@@ -32,7 +33,7 @@ class NaiveProbabilistic:
             for actions in self.freq[states]:
                 sum += self.freq[states][actions]
             for actions in self.freq[states]:
-                self.freq[states][actions] = self.reward[states][actions] / sum
+                self.freq[states][actions] = self.freq[states][actions] / sum
                 # self.freq[states][actions] /= sum
 
         # Debugging probablity calculation
@@ -71,7 +72,7 @@ if __name__ == "__main__":
         ['data/NDSI-2D\\taskname_ndsi-2d-task_userid_82316e37-1117-4663-84b4-ddb6455c83b2.csv',
          'data/NDSI-2D\\taskname_ndsi-2d-task_userid_ff56863b-0710-4a58-ad22-4bf2889c9bc0.csv',
          'data/NDSI-2D\\taskname_ndsi-2d-task_userid_bda49380-37ad-41c5-a109-7fa198a7691a.csv',
-         'data/NDSI-2D\\taskname_ndsi-2d-task_userid_3abeecbe-327a-441e-be2a-0dd3763c1d45.csv',
+         # 'data/NDSI-2D\\taskname_ndsi-2d-task_userid_3abeecbe-327a-441e-be2a-0dd3763c1d45.csv',
          'data/NDSI-2D\\taskname_ndsi-2d-task_userid_6d49fab8-273b-4a91-948b-ecd14556b049.csv',
          'data/NDSI-2D\\taskname_ndsi-2d-task_userid_954edb7c-4eae-47ab-9338-5c5c7eccac2d.csv',
          'data/NDSI-2D\\taskname_ndsi-2d-task_userid_a6aab5f5-fdb6-41df-9fc6-221d70f8c6e8.csv',
@@ -84,79 +85,21 @@ if __name__ == "__main__":
     #                 'data/NDSI-2D\\taskname_ndsi-2d-task_userid_733a1ac5-0b01-485e-9b29-ac33932aa240.csv']
     user_list_first_time = np.setdiff1d(user_list_2D, user_list_experienced)
     total = 0
-    threshold = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]
+    threshold = [0.1]
     obj2 = misc.misc([])
-    # for u in user_list_3D[:10]:
-    #     y_accu = []
-    #     for thres in threshold:
-    #         env.process_data(u, 0)
-    #         obj = NaiveProbabilistic()
-    #         accu = obj.NaiveProbabilistic(u, env, thres)
-    #         total += accu
-    #         y_accu.append(accu)
-    #         env.reset(True, False)
-    #     print("User ", obj2.get_user_name(u), " across all thresholds ", "Global Accuracy: ", np.mean(y_accu))
-    #
-    #     plt.plot(threshold, y_accu, label=obj2.get_user_name(u))
-    # plt.yticks(np.arange(0.0, 1.0, 0.1))
-    # plt.legend(loc='center left', bbox_to_anchor=(1, 0))
-    # plt.xlabel('Threshold')
-    # plt.ylabel('Accuracy')
-    # title = "NDSI-3D-3-STATES-1"
-    # # pdb.set_trace()
-    # plt.title(title)
-    # location = 'figures/Naive/' + title
-    # plt.savefig(location, bbox_inches='tight')
-    # plt.close()
-    #
-    # for u in user_list_3D[10:]:
-    #     y_accu = []
-    #     for thres in threshold:
-    #         env.process_data(u, 0)
-    #         obj = NaiveProbabilistic()
-    #         accu = obj.NaiveProbabilistic(u, env, thres)
-    #         total += accu
-    #         y_accu.append(accu)
-    #         env.reset(True, False)
-    #     print("User ", obj2.get_user_name(u), " across all thresholds ", "Global Accuracy: ", np.mean(y_accu))
-    #
-    #     plt.plot(threshold, y_accu, label=obj2.get_user_name(u))
-    # plt.yticks(np.arange(0.0, 1.0, 0.1))
-    # plt.legend(loc='center left', bbox_to_anchor=(1, 0))
-    # plt.xlabel('Threshold')
-    # plt.ylabel('Accuracy')
-    # title = "NDSI-3D-3-STATES-2"
-    # # pdb.set_trace()
-    # plt.title(title)
-    # location = 'figures/Naive/' + title
-    # plt.savefig(location, bbox_inches='tight')
-    # plt.close()
-    # # print(total / (len(users_b) + len(users_f)))
-    for u in user_list_first_time[:4]:
+    y_accu_all=[]
+    for u in user_list_first_time[:6]:
         y_accu = []
-        for thres in threshold:
-            env.process_data(u, 0)
-            obj = NaiveProbabilistic()
-            accu = obj.NaiveProbabilistic(u, env, thres)
-            total += accu
-            y_accu.append(accu)
-            env.reset(True, False)
-        print("User ",obj2.get_user_name(u)," across all thresholds " , "Global Accuracy: ", np.mean(y_accu))
+        env.process_data(u,0)
+        counts = Counter(env.mem_roi)
+        threshold = []
+        total_count = len(env.mem_roi)
+        env.process_data(u, 0)
+        for i in range(1, max(counts.keys()) + 1):
+            current_count = sum(counts[key] for key in range(1, i + 1))
+            threshold.append(current_count / total_count)
+        threshold=threshold[:-1]
 
-        plt.plot(threshold, y_accu, label=obj2.get_user_name(u))
-    plt.yticks(np.arange(0.0, 1.0, 0.1))
-    plt.legend(loc='center left', bbox_to_anchor=(1, 0))
-    plt.xlabel('Threshold')
-    plt.ylabel('Accuracy')
-    title = "NDSI-2D-3-STATES-1"
-    # pdb.set_trace()
-    plt.title(title)
-    location = 'figures/Naive/' + title
-    plt.savefig(location, bbox_inches='tight')
-    plt.close()
-
-    for u in user_list_experienced[:4]:
-        y_accu = []
         for thres in threshold:
             env.process_data(u, 0)
             obj = NaiveProbabilistic()
@@ -166,12 +109,54 @@ if __name__ == "__main__":
             env.reset(True, False)
         print("User ", obj2.get_user_name(u), " across all thresholds ", "Global Accuracy: ", np.mean(y_accu))
 
-        plt.plot(threshold, y_accu, label=obj2.get_user_name(u))
+        plt.plot(threshold, y_accu, label=obj2.get_user_name(u), marker='*')
+        y_accu_all.append(y_accu)
     plt.yticks(np.arange(0.0, 1.0, 0.1))
     plt.legend(loc='center left', bbox_to_anchor=(1, 0))
     plt.xlabel('Threshold')
     plt.ylabel('Accuracy')
-    title = "NDSI-2D-3-STATES-2"
+    title = "naive-probabilistic-first_time"
+    mean_y_accu = np.mean([element for sublist in y_accu_all for element in sublist])
+    plt.axhline(mean_y_accu, color='red', linestyle='--', )
+    plt.title(title)
+    location = 'figures/Naive/' + title
+    plt.savefig(location, bbox_inches='tight')
+    plt.close()
+
+
+    y_accu_all=[]
+    for u in user_list_experienced[:6]:
+        y_accu = []
+        env.process_data(u, 0)
+        counts = Counter(env.mem_roi)
+        threshold = []
+        total_count = len(env.mem_roi)
+        env.process_data(u, 0)
+        for i in range(1, max(counts.keys()) + 1):
+            current_count = sum(counts[key] for key in range(1, i + 1))
+            threshold.append(current_count / total_count)
+        threshold = threshold[:-1]
+
+        for thres in threshold:
+            env.process_data(u, 0)
+            obj = NaiveProbabilistic()
+            accu = obj.NaiveProbabilistic(u, env, thres)
+            total += accu
+            y_accu.append(accu)
+            y_accu_all.append(accu)
+            env.reset(True, False)
+        print("User ", obj2.get_user_name(u), " across all thresholds ", "Global Accuracy: ", np.mean(y_accu))
+
+        plt.plot(threshold, y_accu, label=obj2.get_user_name(u), marker='*')
+
+
+    plt.yticks(np.arange(0.0, 1.0, 0.1))
+    plt.legend(loc='center left', bbox_to_anchor=(1, 0))
+    plt.xlabel('Threshold')
+    plt.ylabel('Accuracy')
+    title = "naive-probabilistic-experienced"
+    mean_y_accu = np.mean(y_accu_all)
+    plt.axhline(mean_y_accu, color='red', linestyle='--', )
     # pdb.set_trace()
     plt.title(title)
     location = 'figures/Naive/' + title

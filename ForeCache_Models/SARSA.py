@@ -8,8 +8,7 @@ import matplotlib.pyplot as plt
 import sys
 import plotting
 import environment2 as environment2
-from tqdm import tqdm
-# from numba import jit, cuda 
+import random
 import multiprocessing
 import time
 
@@ -33,12 +32,13 @@ class TD_SARSA:
             the probabilities for each action in the form of a numpy array of length nA.
         """
 
-        # @jit(target ="cuda")
         def policy_fnc(state):
-            A = np.ones(nA, dtype=float) * epsilon / nA
-            best_action = np.argmax(Q[state])
-            A[best_action] += (1.0 - epsilon)
-            return A
+            coin = random.random()
+            if coin < epsilon:
+                best_action = random.randint(0, 1)
+            else:
+                best_action = np.argmax(Q[state])
+            return best_action
 
         return policy_fnc
 
@@ -71,42 +71,33 @@ class TD_SARSA:
         #     episode_lengths=np.zeros(num_episodes),
         #     episode_rewards=np.zeros(num_episodes))
         stats = None
-        # The policy we're following
-        policy = self.epsilon_greedy_policy(Q, epsilon, len(env.valid_actions))
+
 
         # for i_episode in tqdm(range(num_episodes)):
         for i_episode in range(num_episodes):
-            # Print out which episode we're on, useful for debugging.
-            # if (i_episode + 1) % 100 == 0:
-            #     print("\rEpisode {}/{}.".format(i_episode + 1, num_episodes), end="")
-            #     sys.stdout.flush()
+            # The policy we're following
+            policy = self.epsilon_greedy_policy(Q, epsilon, len(env.valid_actions))
 
             # Reset the environment and pick the first state
             state = env.reset()
-            action_probs = policy(state)
-            action = np.random.choice(np.arange(len(action_probs)), p=action_probs)
-            # One step in the environment
-            # total_reward = 0.0
+            action = policy(state)
+
             # print("episode")
             for t in itertools.count():
                 # Take a step
 
                 next_state, reward, done, _ = env.step(state, action, False)
 
-                next_action_probs = policy(next_state)
-                next_action = np.random.choice(np.arange(len(next_action_probs)), p=next_action_probs)
-                # pdb.set_trace()
-                # Update statistics
-                # stats.episode_rewards[i_episode] += reward
-                # stats.episode_lengths[i_episode] = t
+                next_action = policy(next_state)
+
 
                 # TD Update
 
                 td_target = reward + discount_factor * Q[next_state][next_action]
                 td_delta = td_target - Q[state][action]
                 Q[state][action] += alpha * td_delta
-                # print("########### episode ########### ", i_episode)
-                # print("action, state ", action, state)
+
+
                 # pdb.set_trace()
                 if done:
                     break
@@ -115,41 +106,44 @@ class TD_SARSA:
         # print(policy)
         return Q, stats
 
-    def test(self, env, Q, discount_factor, alpha, epsilon):
+    def test(self, env, Q, discount_factor, alpha, epsilon,num_episodes=10):
+        epsilon = epsilon
 
-        policy = self.epsilon_greedy_policy(Q, epsilon, len(env.valid_actions))
-        # Reset the environment and pick the first action
-        state = env.reset(all=False, test=True)
+        for i_episode in range(num_episodes):
 
-        stats = []
-        # One step in the environment
-        # total_reward = 0.0
-        for t in itertools.count():
+            policy = self.epsilon_greedy_policy(Q, epsilon, len(env.valid_actions))
+            # Reset the environment and pick the first action
+            state = env.reset(all=False, test=True)
+
+            stats = []
+            # One step in the environment
             # Take a step
-            action_probs = policy(state)
-            action = np.random.choice(np.arange(len(action_probs)), p=action_probs)
-            next_state, reward, done, prediction = env.step(state, action, True)
-            stats.append(prediction)
+            action = policy(state)
+            model_actions = []
+            for t in itertools.count():
 
-            # Pick the next action
-            next_action_probs = policy(next_state)
-            next_action = np.random.choice(np.arange(len(next_action_probs)), p=next_action_probs)
+                model_actions.append(action)
+                next_state, reward, done, prediction = env.step(state, action, True)
+                stats.append(prediction)
 
-            # TD Update
-            td_target = reward + discount_factor * Q[next_state][next_action]
-            td_delta = td_target - Q[state][action]
-            Q[state][action] += alpha * td_delta
+                # Pick the next action
+                next_action = policy(next_state)
 
-            if done:
-                break
-            state = next_state
+                # TD Update
+                td_target = reward + discount_factor * Q[next_state][next_action]
+                td_delta = td_target - Q[state][action]
+                Q[state][action] += alpha * td_delta
 
-        cnt = 0
-        for i in stats:
-            cnt += i
-        cnt /= len(stats)
-        # print("Accuracy of State Prediction: {}".format(cnt))
-        return cnt
+                if done:
+                    break
+                state = next_state
+
+            cnt = 0
+            for i in stats:
+                cnt += i
+            cnt /= len(stats)
+            # print("Accuracy of State Prediction: {}".format(cnt))
+        return cnt,model_actions
 
 
 if __name__ == "__main__":
@@ -176,9 +170,9 @@ if __name__ == "__main__":
     user_list_3D = env.user_list_3D
     obj2 = misc.misc(len(user_list_2D))
     # best_eps, best_discount, best_alpha = obj2.hyper_param(env, users_b, 'sarsa', 1)
-    p1 = multiprocessing.Process(target=obj2.hyper_param, args=(env, user_list_experienced[:4], 'sarsa', 700,))
+    p1 = multiprocessing.Process(target=obj2.hyper_param, args=(env, user_list_experienced[:4], 'sarsa', 50,))
     p3 = multiprocessing.Process(target=obj2.hyper_param,
-                                 args=(env, user_list_first_time[:4], 'sarsa', 700,))
+                                 args=(env, user_list_first_time[:4], 'sarsa', 50,))
 
     # obj2 = misc.misc(len(user_list_3D))
     # best_eps, best_discount, best_alpha = obj2.hyper_param(env, users_f, 'sarsa', 1)

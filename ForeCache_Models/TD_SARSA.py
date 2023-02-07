@@ -7,7 +7,7 @@ import itertools
 import matplotlib.pyplot as plt
 import sys
 import plotting
-import environment2Location as environment 2
+import environment2 as environment2
 from tqdm import tqdm
 import time
 import multiprocessing

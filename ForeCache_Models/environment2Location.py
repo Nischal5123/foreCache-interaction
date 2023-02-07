@@ -15,7 +15,7 @@ class environment2:
         # This variable will be used to track the current position of the user agent.
         self.steps = 0
         self.done = False  # Done exploring the current subtask
-        self.valid_actions = ["Foraging", "Sensemaking","Navigation"]
+        self.valid_actions = ["Foraging", "Navigation", "Sensemaking"]
         # Storing the data into main memory. Focus is now only on action and states for a fixed user's particular subtask
         self.mem_states = []
         self.mem_reward = []
@@ -44,6 +44,19 @@ class environment2:
     def get_state(self, state):
         return state
 
+    def reward_learned_chain(self, index, df):
+        reward=0
+
+        if (index < len(df)-3):
+            test_sequence = str(df['State'][index]) + str(df['State'][index + 1]) + str(df['State'][index + 2])
+            if test_sequence in ("SensemakingSensemakingSensemaking","NavigationNavigationNavigation"):
+                reward=10
+            elif test_sequence in ("NavigationForagingNavigation"):
+                reward=-5
+        return reward
+
+
+
     # Optimization is not the priority right now
     # Returns all interactions for a specific user and subtask i.e. user 'P1', subtask '1.txt'
     def process_data(self, filename, thres):
@@ -55,8 +68,10 @@ class environment2:
             # pdb.set_trace()
             # print("here {} end\n".format(cnt_inter))
             cur_state = self.get_state(row['Most_frequent_region'])
-            if cur_state in ('Other','None'):
-                cur_state = 'None'
+            if cur_state in ('NorthernRockiesPlains','Northeast','NorthWest','SouthWest'):
+                cur_state = cur_state
+            else:
+                cur_state = 'Other'
             # if self.prev_state == cur_state:
             #     action = "same"
             # else:
@@ -66,8 +81,13 @@ class environment2:
                 cur_action = 'Sensemaking'
             self.mem_action.append(cur_action)
             self.mem_states.append(cur_state)
-            self.mem_reward.append(row['NDSI'])
 
+            # learning_reward=self.reward_learned_chain(index, df)
+            # if row['ZoomLevel'] in (0,1,2):
+            #     self.mem_reward.append(row['NDSI']+row['Reward']+learning_reward)
+            # else:
+            #     self.mem_reward.append(row['ZoomLevel']*row['NDSI']+row['Reward']+learning_reward)
+            self.mem_reward.append(row['NDSI'])
             cnt_inter += 1
             self.prev_state=cur_state
         self.threshold = int(cnt_inter * thres)
