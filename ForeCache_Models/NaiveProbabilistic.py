@@ -29,7 +29,7 @@ class NaiveProbabilistic:
 
         # Normalizing to get the probability
         for states in self.freq:
-            sum = 1
+            sum = 0
             for actions in self.freq[states]:
                 sum += self.freq[states][actions]
             for actions in self.freq[states]:
@@ -87,8 +87,8 @@ if __name__ == "__main__":
     total = 0
     threshold = [0.1]
     obj2 = misc.misc([])
-
-    for u in user_list_first_time[:4]:
+    y_accu_all=[]
+    for u in user_list_first_time[:6]:
         y_accu = []
         env.process_data(u,0)
         counts = Counter(env.mem_roi)
@@ -109,19 +109,23 @@ if __name__ == "__main__":
             env.reset(True, False)
         print("User ", obj2.get_user_name(u), " across all thresholds ", "Global Accuracy: ", np.mean(y_accu))
 
-        plt.plot(threshold, y_accu, label=obj2.get_user_name(u))
+        plt.plot(threshold, y_accu, label=obj2.get_user_name(u), marker='*')
+        y_accu_all.append(y_accu)
     plt.yticks(np.arange(0.0, 1.0, 0.1))
     plt.legend(loc='center left', bbox_to_anchor=(1, 0))
     plt.xlabel('Threshold')
     plt.ylabel('Accuracy')
-    title = "NDSI-2D-3-STATES-1"
-    # pdb.set_trace()
+    title = "naive-probabilistic-first_time"
+    mean_y_accu = np.mean([element for sublist in y_accu_all for element in sublist])
+    plt.axhline(mean_y_accu, color='red', linestyle='--', )
     plt.title(title)
     location = 'figures/Naive/' + title
     plt.savefig(location, bbox_inches='tight')
     plt.close()
 
-    for u in user_list_experienced[:4]:
+
+    y_accu_all=[]
+    for u in user_list_experienced[:6]:
         y_accu = []
         env.process_data(u, 0)
         counts = Counter(env.mem_roi)
@@ -139,15 +143,20 @@ if __name__ == "__main__":
             accu = obj.NaiveProbabilistic(u, env, thres)
             total += accu
             y_accu.append(accu)
+            y_accu_all.append(accu)
             env.reset(True, False)
         print("User ", obj2.get_user_name(u), " across all thresholds ", "Global Accuracy: ", np.mean(y_accu))
 
-        plt.plot(threshold, y_accu, label=obj2.get_user_name(u))
+        plt.plot(threshold, y_accu, label=obj2.get_user_name(u), marker='*')
+
+
     plt.yticks(np.arange(0.0, 1.0, 0.1))
     plt.legend(loc='center left', bbox_to_anchor=(1, 0))
     plt.xlabel('Threshold')
     plt.ylabel('Accuracy')
-    title = "NDSI-2D-3-STATES-2"
+    title = "naive-probabilistic-experienced"
+    mean_y_accu = np.mean(y_accu_all)
+    plt.axhline(mean_y_accu, color='red', linestyle='--', )
     # pdb.set_trace()
     plt.title(title)
     location = 'figures/Naive/' + title

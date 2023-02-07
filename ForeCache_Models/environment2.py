@@ -6,6 +6,7 @@ import glob
 import pandas as pd
 import numpy as np
 import random
+from collections import deque
 
 class environment2:
     def __init__(self):
@@ -53,8 +54,8 @@ class environment2:
     def process_data(self, filename, thres):
         # df = pd.read_excel(filename, sheet_name= "Sheet1", usecols="B:D")
         df = pd.read_csv(filename)
-        df = df[:round(0.8*len(df))]
-        self.prev_state = None
+
+        self.prev_state = 'Foraging'
         cnt_inter = 0
         roi_subset = []
         subset = 1
@@ -72,6 +73,8 @@ class environment2:
                 if (index < (len(df) - 1)) and df['State'][index + 1] != 'Sensemaking':
                     roi_subset.append(subset)
                     subset = subset + 1
+                    row['NDSI']+=5
+
 
                 else:
                     roi_subset.append(subset)
@@ -79,11 +82,11 @@ class environment2:
                 roi_subset.append(subset)
 
             self.mem_states.append(cur_state)
-            self.mem_reward.append(row['NDSI'])
+            self.mem_reward.append(row['NDSI']*row['ZoomLevel'])
             self.mem_action.append(action)
             cnt_inter += 1
             self.prev_state=cur_state
-
+        self.mem_action = self.mem_action[1:] +['same']
         self.mem_roi=roi_subset
         self.threshold = int(cnt_inter * thres)
        # print("{} {}\n".format(len(self.mem_states), self.threshold))
@@ -124,7 +127,7 @@ class environment2:
 
         else:
             prediction = 0
-
+            cur_reward = 0
 
 
         self.take_step_action(test)
@@ -134,4 +137,5 @@ class environment2:
 if __name__ == "__main__":
     env = environment2()
     users = env.user_list_2D
+    env.process_data(users[0],0.5)
     print(users)

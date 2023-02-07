@@ -6,6 +6,8 @@ import time
 import random
 import plotting
 
+learning_rate = 0.0002
+gamma = 0.99
 
 class Qlearning:
     def __init__(self):
@@ -25,7 +27,7 @@ class Qlearning:
     def update_table(self, transition):
         s, a, r, s_prime = transition
         a_prime = self.select_action(s_prime)  #
-        self.q_table[s][a] += 0.1 * (r + np.argmax(self.q_table[s_prime]) - self.q_table[s][a])
+        self.q_table[s][a] += learning_rate * (r + (gamma * np.argmax(self.q_table[s_prime])) - self.q_table[s][a])
 
     def anneal_eps(self):
         self.eps -= 0.01
@@ -79,7 +81,7 @@ def main():
     env.process_data(users[0], 0.8)
     agent=Q_train(env)
     accuracies=Q_test(agent,env)
-    plotting.plot_episode_stats(accuracies, 100,'q-learning')
+    print(accuracies)
 
 
 if __name__ == '__main__':

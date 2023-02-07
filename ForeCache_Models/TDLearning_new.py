@@ -5,6 +5,7 @@ import itertools
 import environment2 as environment2
 import multiprocessing
 import time
+import random
 
 
 class TDLearning:
@@ -26,10 +27,12 @@ class TDLearning:
         """
 
         def policy_fnc(state):
-            A = np.ones(nA, dtype=float) * epsilon / nA
-            best_action = np.argmax(Q[state])
-            A[best_action] += (1.0 - epsilon)
-            return A
+            coin = random.random()
+            if coin < epsilon:
+                best_action = random.randint(0, 1)
+            else:
+                best_action = np.argmax(Q[state])
+            return best_action
 
         return policy_fnc
 
@@ -73,8 +76,8 @@ class TDLearning:
             # One step in the environment
             for t in itertools.count():
                 # Take a step
-                action_probs = policy(state)
-                action = np.random.choice(np.arange(len(action_probs)), p=action_probs)
+                action = policy(state)
+
                 next_state, reward, done, _ = env.step(state, action, False)
 
                 # TD Update
@@ -89,12 +92,12 @@ class TDLearning:
         return Q, stats
 
     # @jit(target ="cuda")
-    def test(self, env, Q, discount_factor, alpha, epsilon,num_episodes=10,step_size=0.01):
+    def test(self, env, Q, discount_factor, alpha, epsilon,num_episodes=1,step_size=0.01):
         epsilon = epsilon
-        epsilon = 0.1
 
 
-        for i_episode in range(num_episodes):
+
+        for i_episode in range(1):
             # Reset the environment and pick the first action
             state = env.reset(all=False, test=True)
             stats = []
@@ -104,8 +107,7 @@ class TDLearning:
             # One step in the environment
             for t in itertools.count():
                 # Take a step
-                action_probs = policy(state)
-                action = np.random.choice(np.arange(len(action_probs)), p=action_probs)
+                action = policy(state)
                 model_actions.append(action)
                 next_state, reward, done, prediction = env.step(state, action, True)
 
@@ -154,11 +156,11 @@ if __name__ == "__main__":
     user_list_3D = env.user_list_3D
 
     obj2 = misc.misc(len(user_list_2D))
-    p1 = multiprocessing.Process(target=obj2.hyper_param, args=(env,user_list_experienced[:6], 'qlearning',5,))
-    p3 = multiprocessing.Process(target=obj2.hyper_param,args=(env, user_list_first_time[:6], 'qlearning', 5,))
+    p1 = multiprocessing.Process(target=obj2.hyper_param, args=(env,user_list_experienced[:6], 'qlearning',50,))
+    p3 = multiprocessing.Process(target=obj2.hyper_param,args=(env, user_list_first_time[:6], 'qlearning', 50,))
     #
-    p2 = multiprocessing.Process(target=obj2.hyper_param, args=(env, user_list_experienced[:6], 'sarsa', 5,))
-    p4 = multiprocessing.Process(target=obj2.hyper_param,args=(env, user_list_first_time[:6], 'sarsa', 5,))
+    p2 = multiprocessing.Process(target=obj2.hyper_param, args=(env, user_list_experienced[:6], 'sarsa', 50,))
+    p4 = multiprocessing.Process(target=obj2.hyper_param,args=(env, user_list_first_time[:6], 'sarsa', 50,))
 
     p1.start()
     p2.start()

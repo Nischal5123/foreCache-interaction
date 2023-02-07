@@ -16,9 +16,9 @@ from collections import Counter
 
 class misc:
     def __init__(self, users):
-        self.discount_h = [0.01, 0.05, 0.1, 0.4, 0.9]
-        self.alpha_h = [0.01, 0.05, 0.1, 0.2, 0.3, 0.5]
-        self.epsilon_h = [0.9, 0.01, 0.05, 0.1]
+        self.discount_h = [0.05, 0.1, 0.2, 0.5, 0.8, 0.9]
+        self.alpha_h = [0.0001, 0.001, 0.01, 0.1, 0.5]
+        self.epsilon_h = [0.95, 0.5, 0.8, 0.3, 0.05]
         self.threshold_h = []
         self.prog = users * len(self.epsilon_h) * len(self.alpha_h) * len(self.discount_h) * len(self.threshold_h)
 
@@ -44,6 +44,7 @@ class misc:
         e = a = d = 0
         pp = 10
         # with tqdm(total = self.prog) as pbar:
+        y_accu_all=[]
         for user in users_hyper:
             # print(user)
             max_accu = -1
@@ -68,54 +69,24 @@ class misc:
 
                                 test_accuracy, stats = obj.test(env, Q, dis, alp, eps)
                                 accu += test_accuracy
-                            # print(accu/20)
+                                if epiepi == 9:
+                                    print(
+                                        "Actions: {}, Algorithm:{}, User{}, Threshold:{} , Epsilon:{}, Alpha:{}, Discount:{}".format(
+                                            stats, algorithm, user, thres, eps, alp, dis))
                             if max_accu_thres < accu:
                                 max_accu = accu
                                 best_eps = eps
                                 best_alpha = alp
                                 best_discount = dis
                             max_accu_thres = max(max_accu_thres, accu)
-                            # pbar.update(1)
                 env.reset(True, False)
                 y_accu.append(round(max_accu_thres / pp, 2))
                 max_accu = max(max_accu_thres, max_accu)
-            epsilon = [best_eps]
-            alpha = [best_alpha]
-            discount_h = [best_discount]
-            y_accu = []
-            for thres in self.threshold_h:
-                max_accu_thres = -1
-                env.process_data(user, thres)
-                for eps in epsilon:
-                    for alp in alpha:
-                        for dis in discount_h:
-                            accu = 0
-                            stats = []
-                            for epiepi in range(pp):
-                                if algorithm == 'qlearning':
-                                    obj = TDLearning.TDLearning()
-                                    Q, stats = obj.q_learning(user, env, epoch, dis, alp, eps)
-                                else:
-                                    obj = SARSA.TD_SARSA()
-                                    Q, stats = obj.sarsa(user, env, epoch, dis, alp, eps)
-
-                                test_accuracy,stats= obj.test(env, Q, dis, alp, eps)
-                                accu +=test_accuracy
-                            # print(accu/20)
-                            if max_accu_thres < accu:
-                                max_accu = accu
-                                best_eps = eps
-                                best_alpha = alp
-                                best_discount = dis
-                            max_accu_thres = max(max_accu_thres, accu)
-                            # pbar.update(1)
-                            if epiepi==9:
-                                print("Actions: {}, Algorithm:{}, User{}, Threshold:{}".format(stats, algorithm, user, thres))
-                env.reset(True, False)
-                y_accu.append(round(max_accu_thres / pp, 2))
-                max_accu = max(max_accu_thres, max_accu)
+                y_accu_all.append(y_accu)
             # print(self.threshold_h, y_accu, self.get_user_name(user))
-            plt.plot(self.threshold_h, y_accu, label=self.get_user_name(user))
+            plt.plot(self.threshold_h, y_accu, label=self.get_user_name(user),marker='*')
+            mean_y_accu = np.mean([element for sublist in y_accu_all for element in sublist])
+            plt.axhline(mean_y_accu, color='red', linestyle='--', )
             print("{}, {:.2f}, {}, {}, {}".format(self.get_user_name(user), max_accu / pp, best_eps, best_discount,
                                                   best_alpha))
             e += best_eps
@@ -125,7 +96,7 @@ class misc:
         plt.yticks(np.arange(0.0, 1.0, 0.1))
         plt.xlabel('Threshold')
         plt.ylabel('Accuracy')
-        title = algorithm + "3_STATES" + str(randint(100, 999))
+        title = algorithm + "decaying" + str(randint(100, 999))
         # pdb.set_trace()
         plt.title(title)
         location = 'figures/' + title

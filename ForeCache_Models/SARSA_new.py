@@ -5,7 +5,7 @@ import environment2 as environment2
 import multiprocessing
 import time
 import misc_new as misc
-
+import random
 
 class TD_SARSA:
     def __init__(self):
@@ -26,12 +26,13 @@ class TD_SARSA:
             the probabilities for each action in the form of a numpy array of length nA.
         """
 
-        # @jit(target ="cuda")
         def policy_fnc(state):
-            A = np.ones(nA, dtype=float) * epsilon / nA
-            best_action = np.argmax(Q[state])
-            A[best_action] += (1.0 - epsilon)
-            return A
+            coin = random.random()
+            if coin < epsilon:
+                best_action = random.randint(0, 1)
+            else:
+                best_action = np.argmax(Q[state])
+            return best_action
 
         return policy_fnc
 
@@ -65,17 +66,16 @@ class TD_SARSA:
                 epsilon = max(epsilon/(1+i_episode*decay_rate),0)
             # Reset the environment and pick the first state
             state = env.reset()
-            action_probs = policy(state)
-            action = np.random.choice(np.arange(len(action_probs)), p=action_probs)
+            action = policy(state)
+
 
             for t in itertools.count():
                 # Take a step
 
                 next_state, reward, done, _ = env.step(state, action, False)
 
-                next_action_probs = policy(next_state)
-                next_action = np.random.choice(np.arange(len(next_action_probs)), p=next_action_probs)
 
+                next_action = policy(next_state)
 
 
                 td_target = reward + discount_factor * Q[next_state][next_action]
@@ -90,7 +90,7 @@ class TD_SARSA:
 
     def test(self, env, Q, discount_factor, alpha,epsilon,num_episodes=10,step_size=0.01):
         epsilon = epsilon
-        epsilon = 0.1
+
         for i_episode in range(num_episodes):
 
             policy = self.epsilon_greedy_policy(Q, epsilon, len(env.valid_actions))
@@ -100,8 +100,7 @@ class TD_SARSA:
             stats = []
             model_actions=[]
             # Take a step
-            action_probs = policy(state)
-            action = np.random.choice(np.arange(len(action_probs)), p=action_probs)
+            action = policy(state)
             # One step in the environment
             for t in itertools.count():
                 model_actions.append(action)
@@ -109,8 +108,8 @@ class TD_SARSA:
                 stats.append(prediction)
 
                 # Pick the next action
-                next_action_probs = policy(next_state)
-                next_action = np.random.choice(np.arange(len(next_action_probs)), p=next_action_probs)
+                next_action = policy(next_state)
+
 
                 # TD Update
                 td_target = reward + discount_factor * Q[next_state][next_action]

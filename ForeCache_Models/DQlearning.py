@@ -11,8 +11,8 @@ import plotting
 
 
 # Hyperparameters
-learning_rate = 0.0005
-gamma = 0.98
+learning_rate = 6.25e-05
+gamma = 0.99
 buffer_limit = 50000
 batch_size = 32
 
