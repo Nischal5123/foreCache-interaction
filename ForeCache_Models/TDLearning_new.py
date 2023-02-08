@@ -74,11 +74,13 @@ class TDLearning:
             # Reset the environment and pick the first state
             state = env.reset()
             # One step in the environment
+            training_accuracy = []
             for t in itertools.count():
                 # Take a step
                 action = policy(state)
 
-                next_state, reward, done, _ = env.step(state, action, False)
+                next_state, reward, done, info = env.step(state, action, False)
+                training_accuracy.append(info)
 
                 # TD Update
                 best_next_action = np.argmax(Q[next_state])
@@ -89,7 +91,7 @@ class TDLearning:
                 if done:
                     break
                 state = next_state
-        return Q, stats
+        return Q,  np.mean(training_accuracy) #treunr training accuracy from last episode
 
     # @jit(target ="cuda")
     def test(self, env, Q, discount_factor, alpha, epsilon,num_episodes=1,step_size=0.01):

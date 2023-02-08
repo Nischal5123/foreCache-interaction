@@ -56,7 +56,7 @@ class Reinforce():
 
 
 
-    def main(self):
+    def train(self):
         print_interval =10
         score=0.0
         for n_epi in range(50):
@@ -70,11 +70,13 @@ class Reinforce():
             s=np.array(s)
             done = False
             actions =[]
+            train_accuracy=[]
             while not done:  # CartPole-v1 forced to terminates at 500 step.
                 prob = self.pi(torch.from_numpy(s).float())
                 m = Categorical(prob)
                 a = m.sample()
                 s_prime, r, done, info = self.env.step(s,a.item(),False)
+                train_accuracy.append(info)
                 self.pi.put_data((r, prob[a]))
                 s = s_prime
                 if s == 'Sensemaking':
@@ -92,27 +94,30 @@ class Reinforce():
             if n_epi % print_interval == 0 and n_epi != 0:
                 print("# of episode :{}, avg score : {}, actions :{}".format(n_epi, score / print_interval, Counter(actions)))
             score = 0.0
+        return self.pi, (np.mean(train_accuracy)) #return last train_accuracy
 
-        test_print_interval=20
-        test_accuracies=[]
+
+    def test(self,policy):
+        test_print_interval = 20
+        test_accuracies = []
         for n_epi in range(1):
-            s = self.env.reset(all=False , test=True)
+            s = self.env.reset(all=False, test=True)
             if s == 'Sensemaking':
-                s=[1,0,0]
-            elif s== 'Foraging':
-                s=[0,1,0]
+                s = [1, 0, 0]
+            elif s == 'Foraging':
+                s = [0, 1, 0]
             else:
-                s=[0,0,1]
-            s=np.array(s)
+                s = [0, 0, 1]
+            s = np.array(s)
             done = False
-            predictions =[]
-            actions=[]
-            while not done:  # CartPole-v1 forced to terminates at 500 step.
-                prob = self.pi(torch.from_numpy(s).float())
+            predictions = []
+            actions = []
+            while not done:
+                prob = policy(torch.from_numpy(s).float())
                 m = Categorical(prob)
                 a = m.sample()
-                s_prime, r, done, info = self.env.step(s,a.item(),True)
-                #pi.put_data((r, prob[a]))
+                s_prime, r, done, info = self.env.step(s, a.item(), True)
+                # pi.put_data((r, prob[a]))
                 s = s_prime
                 if s == 'Sensemaking':
                     s = [1, 0, 0]
@@ -125,8 +130,8 @@ class Reinforce():
                 predictions.append(info)
                 actions.append(a.item())
 
-
-            print("TEST: # of episode :{}, accuracy : {}, actions: {}".format(n_epi, np.mean(predictions),Counter(actions)))
+            print("TEST: # of episode :{}, accuracy : {}, actions: {}".format(n_epi, np.mean(predictions),
+                                                                              Counter(actions)))
             score = 0.0
             test_accuracies.append(np.mean(predictions))
         return np.mean(test_accuracies)
@@ -169,29 +174,37 @@ def user_set(e,user_list,exp):
             max_accu = -1
             best_learning_rate = 0
             best_gamma = 0
+            best_agent=None
+            best_policy=None
 
             for learning_rate in learning_rates:
                 for gamma in gammas:
                     env = environment2.environment2()
                     env.process_data(u, thres)
                     agent = Reinforce(env,learning_rate,gamma)
-                    accuracies = agent.main()
+                    policy,accuracies = agent.train()
 
                     if accuracies > max_accu:
                         max_accu=accuracies
                         best_learning_rate=learning_rate
                         best_gamma=gamma
+                        best_agent = agent
+                        best_policy = policy
 
-
-            y_accu.append(max_accu)
+            print("#TRAINING: User :{}, Threshold : {:.1f}, Accuracy: {}, LR: {} ,Discount: {}".format(user_name, thres,
+                                                                                                     max_accu,
+                                                                                                     best_learning_rate,
+                                                                                                     best_gamma))
+            test_accuracy = best_agent.test(best_policy)
+            y_accu.append(test_accuracy)
             dataframe_users.append(user_name)
             dataframe_threshold.append(thres)
             dataframe_learningrate.append(best_learning_rate)
             dataframe_discount.append(best_gamma)
-            print(
-                "# User :{}, Threshold : {:.1f}, Accuracy: {}, LR: {} ,Discount: {}".format(user_name, thres, max_accu,
-                                                                                            best_learning_rate,
-                                                                                            best_gamma))
+            print("#TESTING User :{}, Threshold : {:.1f}, Accuracy: {}, LR: {} ,Discount: {}".format(user_name, thres,
+                                                                                                     max_accu,
+                                                                                                     best_learning_rate,
+                                                                                                     best_gamma))
         plotter.plot_main(y_accu, user_name)
         y_accu_all.append(y_accu)
     title = "reinforce" + exp

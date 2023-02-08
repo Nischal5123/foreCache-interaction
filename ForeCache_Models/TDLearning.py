@@ -71,10 +71,11 @@ class TDLearning:
         # stats = plotting.EpisodeStats(
         #     episode_lengths=np.zeros(num_episodes),
         #     episode_rewards=np.zeros(num_episodes))
-        stats = None
+
 
 
         # for i_episode in tqdm(range(num_episodes)):
+
         for i_episode in range(num_episodes):
             # The policy we're following
             policy = self.epsilon_greedy_policy(Q, epsilon, len(env.valid_actions))
@@ -85,16 +86,13 @@ class TDLearning:
 
             # Reset the environment and pick the first state
             state = env.reset()
-
-            # One step in the environment
-            # total_reward = 0.0
-            # print("episode")
+            training_accuracy=[]
             for t in itertools.count():
                 # Take a step
                 action = policy(state)
 
                 next_state, reward, done, info = env.step(state, action, False)
-
+                training_accuracy.append(info)
 
                 # TD Update
                 best_next_action = np.argmax(Q[next_state])
@@ -108,7 +106,7 @@ class TDLearning:
                     break
                 state = next_state
         # print(policy)
-        return Q, stats
+        return Q, np.mean(training_accuracy)
 
 
     def test(self, env, Q, discount_factor, alpha, epsilon, num_episodes=1):

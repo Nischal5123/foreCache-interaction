@@ -81,8 +81,8 @@ class Agent():
         self.env = env
         self.learning_rate, self.gamma, self.n_rollout=learning_rate,gamma,num_rollouts
 
-    def main(self):
-        model = ActorCritic(self.learning_rate,self.gamma)
+    def train(self):
+        model = ActorCritic(self.learning_rate, self.gamma)
         print_interval = 10
         score = 0.0
         all_predictions = []
@@ -95,16 +95,16 @@ class Agent():
                 s = [0, 1, 0]
             else:
                 s = [0, 0, 1]
-            s=np.array(s)
-            predictions=[]
-            actions=[]
+            s = np.array(s)
+            predictions = []
+            actions = []
             while not done:
                 for t in range(self.n_rollout):
                     prob = model.pi(torch.from_numpy(s).float())
                     m = Categorical(prob)
                     a = m.sample().item()
                     actions.append(a)
-                    s_prime, r, done, info = self.env.step(s,a,False)
+                    s_prime, r, done, info = self.env.step(s, a, False)
                     predictions.append(info)
                     ######################
 
@@ -128,17 +128,19 @@ class Agent():
 
                 model.train_net()
 
-            #if n_epi % print_interval == 0 and n_epi != 0:
-             #   print("# of episode :{}, avg score : {:.1f}, accuracy: {:.1f} , actions{}".format(n_epi, score / print_interval,np.mean(predictions),Counter(actions)))
+            # if n_epi % print_interval == 0 and n_epi != 0:
+            #   print("# of episode :{}, avg score : {:.1f}, accuracy: {:.1f} , actions{}".format(n_epi, score / print_interval,np.mean(predictions),Counter(actions)))
             score = 0.0
             all_predictions.append(np.mean(predictions))
         print("############ Train Accuracy :{},".format(np.mean(all_predictions)))
+        return model, np.mean(predictions)  # return last episodes accuracyas training accuracy
 
-        test_print_interval=20
-        test_predictions=[]
+    def test(self,model):
+        test_print_interval = 20
+        test_predictions = []
         for n_epi in range(1):
             done = False
-            s = self.env.reset(all=False , test=True)
+            s = self.env.reset(all=False, test=True)
             if s == 'Sensemaking':
                 s = [1, 0, 0]
             elif s == 'Foraging':
@@ -147,7 +149,8 @@ class Agent():
                 s = [0, 0, 1]
             s = np.array(s)
             predictions = []
-            actions =[]
+            actions = []
+            score=0
             while not done:
                 for t in range(self.n_rollout):
                     prob = model.pi(torch.from_numpy(s).float())
@@ -178,15 +181,16 @@ class Agent():
                         break
                 model.train_net()
 
-
-
-
-            print("#Test of episode :{}, avg score : {:.1f}, accuracy: {:.1f}, actions: {}".format(n_epi, score / print_interval,
-                                                                                      np.mean(predictions),Counter(actions)))
-            score = 0.0
+            print("#Test of episode :{}, avg score : {:.1f}, accuracy: {:.1f}, actions: {}".format(n_epi,
+                                                                                                   score,
+                                                                                                   np.mean(predictions),
+                                                                                                   Counter(actions)))
             test_predictions.append(np.mean(predictions))
             print("############ Test Accuracy :{},".format(np.mean(predictions)))
         return np.mean(test_predictions)
+
+
+
 
 def get_threshold(env, user):
     env.process_data(user, 0)
@@ -227,27 +231,35 @@ def user_set(e,user_list,exp):
             max_accu = -1
             best_learning_rate = 0
             best_gamma = 0
+            best_agent =None
+            best_model =None
             for learning_rate in learning_rates:
                 for gamma in gammas:
                     env = environment2.environment2()
                     env.process_data(u, thres)
                     agent = Agent(env,learning_rate,gamma)
-                    accuracies = agent.main()
+                    model,accuracies = agent.train()
 
 
                     if accuracies > max_accu:
                         max_accu=accuracies
                         best_learning_rate=learning_rate
                         best_gamma=gamma
+                        best_agent=agent
+                        best_model=model
+            print(
+                "#TRAINING: User :{}, Threshold : {:.1f}, Accuracy: {}, LR: {} ,Discount: {}".format(user_name, thres, max_accu,
+                                                                                            best_learning_rate,
+                                                                                            best_gamma))
+            test_accuracy=best_agent.test(best_model)
 
-
-            y_accu.append(max_accu)
+            y_accu.append(test_accuracy)
             dataframe_users.append(user_name)
             dataframe_threshold.append(thres)
             dataframe_learningrate.append(best_learning_rate)
             dataframe_discount.append(best_gamma)
             # dataframe_rollout.append(rollout)
-            print("# User :{}, Threshold : {:.1f}, Accuracy: {}, LR: {} ,Discount: {}".format(user_name, thres, max_accu,best_learning_rate,best_gamma))
+            print("#TESTING User :{}, Threshold : {:.1f}, Accuracy: {}, LR: {} ,Discount: {}".format(user_name, thres, max_accu,best_learning_rate,best_gamma))
         plotter.plot_main(y_accu, user_name)
         y_accu_all.append(y_accu)
     title= "actor-critic" + exp

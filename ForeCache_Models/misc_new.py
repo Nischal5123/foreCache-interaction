@@ -40,11 +40,19 @@ class misc:
         return proportions[:-1]
 
     def hyper_param(self, env, users_hyper, algorithm, epoch):
+
+        result_dataframe = pd.DataFrame(
+            columns=['User', 'Epsilon', 'Threshold', 'LearningRate', 'Discount'])
+
+        dataframe_users = []
+        dataframe_epsilon = []
+        dataframe_threshold = []
+        dataframe_learningrate = []
+        dataframe_discount = []
+
         best_discount = best_alpha = best_eps = -1
-        e = a = d = 0
         pp = 10
-        # with tqdm(total = self.prog) as pbar:
-        y_accu_all=[]
+        y_accu_all = []
         for user in users_hyper:
             # print(user)
             max_accu = -1
@@ -57,55 +65,62 @@ class misc:
                 for eps in self.epsilon_h:
                     for alp in self.alpha_h:
                         for dis in self.discount_h:
-                            accu = 0
                             for epiepi in range(pp):
                                 if algorithm == 'qlearning':
                                     obj = TDLearning.TDLearning()
-                                    # pdb.set_trace()
-                                    Q, stats = obj.q_learning(user, env, epoch, dis, alp, eps)
+                                    Q, train_accuracy = obj.q_learning(user, env, epoch, dis, alp, eps)
                                 else:
                                     obj = SARSA.TD_SARSA()
-                                    Q, stats = obj.sarsa(user, env, epoch, dis, alp, eps)
+                                    Q, train_accuracy = obj.sarsa(user, env, epoch, dis, alp, eps)
 
-                                test_accuracy, stats = obj.test(env, Q, dis, alp, eps)
-                                accu += test_accuracy
-                                if epiepi == 9:
-                                    print(
-                                        "Actions: {}, Algorithm:{}, User{}, Threshold:{} , Epsilon:{}, Alpha:{}, Discount:{}".format(
-                                            stats, algorithm, user, thres, eps, alp, dis))
-                            if max_accu_thres < accu:
-                                max_accu = accu
-                                best_eps = eps
-                                best_alpha = alp
-                                best_discount = dis
-                            max_accu_thres = max(max_accu_thres, accu)
-                env.reset(True, False)
-                y_accu.append(round(max_accu_thres / pp, 2))
-                max_accu = max(max_accu_thres, max_accu)
+                                if max_accu_thres < train_accuracy:
+                                    max_accu = train_accuracy
+                                    best_eps = eps
+                                    best_alpha = alp
+                                    best_discount = dis
+                                    best_Q = Q
+                                    best_obj = obj
+                                max_accu_thres = max(max_accu_thres, train_accuracy)
+                print("Top Training Accuracy: {}, Threshold: {}".format(max_accu_thres, thres))
+                test_accuracy, stats = best_obj.test(env, best_Q, best_discount, best_alpha, best_eps)
+                print(
+                    "Algorithm:{} , User{}, Threshold: {}, Test Accuracy:{},  Epsilon:{}, Alpha:{}, Discount:{}".format(algorithm,
+                        self.get_user_name(user), thres, test_accuracy, best_eps, best_alpha,
+                        best_discount))
+
+                # book-keeping
+                dataframe_users.append(self.get_user_name(user))
+                dataframe_epsilon.append(best_eps)
+                dataframe_threshold.append(thres)
+                dataframe_learningrate.append(best_alpha)
+                dataframe_discount.append(best_discount)
+                # end book-keeping
+
+                y_accu.append(test_accuracy)
                 y_accu_all.append(y_accu)
-            # print(self.threshold_h, y_accu, self.get_user_name(user))
-            plt.plot(self.threshold_h, y_accu, label=self.get_user_name(user),marker='*')
+
+                ###move to new threshold:
+                env.reset(True, False)
+
+            plt.plot(self.threshold_h, y_accu, label=self.get_user_name(user), marker='*')
             mean_y_accu = np.mean([element for sublist in y_accu_all for element in sublist])
             plt.axhline(mean_y_accu, color='red', linestyle='--', )
-            print("{}, {:.2f}, {}, {}, {}".format(self.get_user_name(user), max_accu / pp, best_eps, best_discount,
-                                                  best_alpha))
-            e += best_eps
-            d += best_discount
-            a += best_alpha
+
+        result_dataframe['User'] = dataframe_users
+        result_dataframe['Threshold'] = dataframe_threshold
+        result_dataframe['LearningRate'] = dataframe_learningrate
+        result_dataframe['Discount'] = dataframe_discount
         plt.legend(loc='center left', bbox_to_anchor=(1, 0))
         plt.yticks(np.arange(0.0, 1.0, 0.1))
         plt.xlabel('Threshold')
         plt.ylabel('Accuracy')
-        title = algorithm + "decaying" + str(randint(100, 999))
+        title = algorithm + str(randint(100, 999))
         # pdb.set_trace()
         plt.title(title)
         location = 'figures/' + title
         plt.savefig(location, bbox_inches='tight')
+        result_dataframe.to_csv("data/NDSI-2D\\" + title + ".csv", index=False)
         plt.close()
-
-        # return best_eps, best_discount, best_alpha
-        print("best epsilon ", e, ",best_discount ", d, ",best_alpha ",
-              a)
 
     def plot(self, x_labels, y, title):
         x = []

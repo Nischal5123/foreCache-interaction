@@ -67,12 +67,13 @@ class TD_SARSA:
             # Reset the environment and pick the first state
             state = env.reset()
             action = policy(state)
-
+            training_accuracy = []
 
             for t in itertools.count():
                 # Take a step
 
-                next_state, reward, done, _ = env.step(state, action, False)
+                next_state, reward, done, info = env.step(state, action, False)
+                training_accuracy.append(info)
 
 
                 next_action = policy(next_state)
@@ -86,7 +87,7 @@ class TD_SARSA:
                 action= next_action
                 state = next_state
 
-        return Q, stats
+        return Q, np.mean(training_accuracy)
 
     def test(self, env, Q, discount_factor, alpha,epsilon,num_episodes=10,step_size=0.01):
         epsilon = epsilon
