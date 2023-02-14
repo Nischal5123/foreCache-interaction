@@ -69,7 +69,7 @@ def getMdpDataset(user,episode_size=5):
     return dataset,threshold
 
 
-def algorithm(algo,dataset,user,train_threshold=0.5,epochs=100):
+def algorithm(algo,dataset,user,train_threshold=0.5,epochs=50):
     # split train and test episodes
     train_episodes, test_episodes = train_test_split(dataset, test_size=1-train_threshold)
 
@@ -122,7 +122,7 @@ def get_threshold(roi):
     for i in range(1, max(counts.keys()) + 1):
         current_count = sum(counts[key] for key in range(1, i + 1))
         proportions.append(current_count / total_count)
-    return proportions[1:-2]
+    return proportions[:-1]
 
 
 
@@ -133,26 +133,26 @@ def main(algo):
     aggregate_plotter = plotting.plotter(None)
     user_list_non_exp,user_list_exp=set_user()
     y_accu_all=[]
-    for user in user_list_non_exp[:6]:
+    for user in user_list_exp[:6]:
         user_name=get_user_name(user)
         dataset,threshold= getMdpDataset(user)
         plotter=plotting.plotter(threshold)
         y_accu=[]
         for thres in threshold:
-            accuracy=algorithm(algo,dataset,user_name,train_threshold=thres,epochs=10)
+            accuracy=algorithm(algo,dataset,user_name,train_threshold=thres,epochs=50)
             y_accu.append(accuracy)
             print(
                 "# User :{}, Threshold : {}, Accuracy: {}".format(user_name, thres, accuracy))
         plotter.plot_main(y_accu, user_name[:5])
         y_accu_all.append(y_accu)
-    title = DISCRETE_ALGORITHMS[algo]
+    title = "experienced"+ str(DISCRETE_ALGORITHMS[algo])
     aggregate_plotter.aggregate(y_accu_all, title)
 
 
 
 if __name__ == '__main__':
-    for key in DISCRETE_ALGORITHMS.keys():
-        main(algo=key)
+
+        main(algo='cql')
 
 
 

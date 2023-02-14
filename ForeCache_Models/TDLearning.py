@@ -37,7 +37,10 @@ class TDLearning:
         def policy_fnc(state):
             coin = random.random()
             if coin < epsilon:
-                best_action = random.randint(0, 1)
+                if state=='Navigation':
+                    best_action = random.randint(0, 2)
+                else:
+                    best_action = random.randint(0, 1)
             else:
                 best_action = np.argmax(Q[state])
             return best_action

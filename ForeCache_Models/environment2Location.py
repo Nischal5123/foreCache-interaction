@@ -6,6 +6,8 @@ import glob
 import pandas as pd
 import numpy as np
 import random
+from collections import deque
+
 
 class environment2:
     def __init__(self):
@@ -20,15 +22,16 @@ class environment2:
         self.mem_states = []
         self.mem_reward = []
         self.mem_action = []
+        self.mem_roi = []
         self.threshold = 0
         self.prev_state = None
 
-    def reset(self, all=False, test = False):
+    def reset(self, all=False, test=False):
         # Resetting the variables used for tracking position of the agents
         if test:
             self.steps = self.threshold
-           # print("start {}".format(self.steps))
-            # pdb.set_trace()
+        # print("start {}".format(self.steps))
+        # pdb.set_trace()
         else:
             self.steps = 0
         self.done = False
@@ -36,62 +39,63 @@ class environment2:
             self.mem_reward = []
             self.mem_states = []
             self.mem_action = []
+            self.mem_roi = []
             return
 
         s, r, a = self.cur_inter(self.steps)
         return s
 
     def get_state(self, state):
+
         return state
-
-    def reward_learned_chain(self, index, df):
-        reward=0
-
-        if (index < len(df)-3):
-            test_sequence = str(df['State'][index]) + str(df['State'][index + 1]) + str(df['State'][index + 2])
-            if test_sequence in ("SensemakingSensemakingSensemaking","NavigationNavigationNavigation"):
-                reward=10
-            elif test_sequence in ("NavigationForagingNavigation"):
-                reward=-5
-        return reward
-
-
 
     # Optimization is not the priority right now
     # Returns all interactions for a specific user and subtask i.e. user 'P1', subtask '1.txt'
     def process_data(self, filename, thres):
         # df = pd.read_excel(filename, sheet_name= "Sheet1", usecols="B:D")
         df = pd.read_csv(filename)
-        self.prev_state = None
+
+        self.prev_state = 'Foraging'
         cnt_inter = 0
+        roi_subset = []
+        subset = 1
         for index, row in df.iterrows():
             # pdb.set_trace()
             # print("here {} end\n".format(cnt_inter))
+
             cur_state = self.get_state(row['Most_frequent_region'])
-            if cur_state in ('NorthernRockiesPlains','Northeast','NorthWest','SouthWest'):
+            if cur_state in (
+                    'NorthernRockiesPlains', 'Northeast', 'NorthWest', 'SouthWest', 'UpperMidWest', 'SouthWest'):
                 cur_state = cur_state
             else:
                 cur_state = 'Other'
-            # if self.prev_state == cur_state:
-            #     action = "same"
-            # else:
-            #     action = "change"
-            cur_action=row['State']
-            if cur_action == 'Answering':
-                cur_action = 'Sensemaking'
-            self.mem_action.append(cur_action)
-            self.mem_states.append(cur_state)
 
-            # learning_reward=self.reward_learned_chain(index, df)
-            # if row['ZoomLevel'] in (0,1,2):
-            #     self.mem_reward.append(row['NDSI']+row['Reward']+learning_reward)
-            # else:
-            #     self.mem_reward.append(row['ZoomLevel']*row['NDSI']+row['Reward']+learning_reward)
-            self.mem_reward.append(row['NDSI'])
+            action = self.get_state(row['State'])
+
+            if action == 'Sensemaking':
+                if (index < (len(df) - 1)) and df['State'][index + 1] != 'Sensemaking':
+                    roi_subset.append(subset)
+                    subset = subset + 1
+
+
+
+                else:
+                    roi_subset.append(subset)
+            else:
+                roi_subset.append(subset)
+
+            self.mem_states.append(cur_state)
+            self.mem_reward.append(row['NDSI'] * row['ZoomLevel'])
+            self.mem_action.append(action)
             cnt_inter += 1
-            self.prev_state=cur_state
+            self.prev_state = cur_state
+
+        # replacement_dict = {(1, 2): 1, (3, 4): 2, (5, 6): 3, (7, 8): 4, (9, 10): 5, (11, 12): 6}
+        # combined_roi_subset = [next(v for k, v in replacement_dict.items() if i in k) for i in roi_subset]
+        self.mem_roi = roi_subset
         self.threshold = int(cnt_inter * thres)
-        print("{} {}\n".format(len(self.mem_states), self.threshold))
+
+    # print("{} {}\n".format(len(self.mem_states), self.threshold))
 
     def cur_inter(self, steps):
         return self.mem_states[steps], self.mem_reward[steps], self.mem_action[steps]
@@ -102,7 +106,7 @@ class environment2:
         else:
             return True, 0
 
-    def take_step_action(self, test = False):
+    def take_step_action(self, test=False):
         # pdb.set_trace()
         if test:
             if len(self.mem_states) > self.steps + 1:
@@ -117,27 +121,16 @@ class environment2:
                 self.done = True
                 self.steps = 0
 
-    def get_threshold(self,filename):
     # act_arg = action argument refers to action number
-        df = pd.read_csv(filename)
-        absolute_threshold=0
-        for index, row in df.iterrows():
-            # pdb.set_trace()
-            if row['Subtask_ROI']==1 :
-                absolute_threshold+=1
-        threshold=round(absolute_threshold/len(df),1)
-        return threshold
-
-
-
     def step(self, cur_state, act_arg, test):
         _, cur_reward, cur_action = self.cur_inter(self.steps)
         _, temp_step = self.peek_next_step()
         next_state, next_reward, next_action = self.cur_inter(temp_step)
         # pdb.set_trace()
-        predicted_action=self.valid_actions[act_arg]
+        predicted_action = self.valid_actions[act_arg]
         if predicted_action == cur_action:
             prediction = 1
+
         else:
             prediction = 0
 
@@ -147,9 +140,6 @@ class environment2:
 
 if __name__ == "__main__":
     env = environment2()
-    users = env.user_list
+    users = env.user_list_2D
+    env.process_data(users[0], 0.5)
     print(users)
-    # env.get_subtasks(users[0])
-    # for idx in range(len(env.mem_states)):
-    #     print("{} {}".format(env.mem_states[idx], env.mem_reward[idx]))
-    # print(users)

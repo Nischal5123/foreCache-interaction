@@ -24,7 +24,7 @@ class ActorCritic(nn.Module):
         self.data = []
 
         self.fc1 = nn.Linear(3, 256)
-        self.fc_pi = nn.Linear(256, 2)
+        self.fc_pi = nn.Linear(256, 3)
         self.fc_v = nn.Linear(256, 1)
         self.learning_rate=learning_rate
         self.gamma=gamma
@@ -259,7 +259,7 @@ def user_set(e,user_list,exp):
             dataframe_learningrate.append(best_learning_rate)
             dataframe_discount.append(best_gamma)
             # dataframe_rollout.append(rollout)
-            print("#TESTING User :{}, Threshold : {:.1f}, Accuracy: {}, LR: {} ,Discount: {}".format(user_name, thres, max_accu,best_learning_rate,best_gamma))
+            print("#TESTING User :{}, Threshold : {:.1f}, Accuracy: {}, LR: {} ,Discount: {}".format(user_name, thres, test_accuracy,best_learning_rate,best_gamma))
         plotter.plot_main(y_accu, user_name)
         y_accu_all.append(y_accu)
     title= "actor-critic" + exp

@@ -16,7 +16,7 @@ class environment2:
         # This variable will be used to track the current position of the user agent.
         self.steps = 0
         self.done = False  # Done exploring the current subtask
-        self.valid_actions = ['same','change']
+        self.valid_actions = ['same','change','changeout']
         self.valid_states = ['Foraging', 'Navigation', 'Sensemaking']
         # Storing the data into main memory. Focus is now only on action and states for a fixed user's particular subtask
         self.mem_states = []
@@ -68,12 +68,22 @@ class environment2:
             if self.prev_state == cur_state:
                 action = "same"
             else:
+                # if self.prev_state == 'Navigation':
+                #     if cur_state == 'Sensemaking':
+                #         action = 'change'
+                #     else:
+                #         action = 'changeout'
+                # else:
                 action = "change"
+
+
+
+
             if cur_state == 'Sensemaking':
                 if (index < (len(df) - 1)) and df['State'][index + 1] != 'Sensemaking':
                     roi_subset.append(subset)
                     subset = subset + 1
-                    row['NDSI']+=5
+
 
 
                 else:
@@ -87,6 +97,8 @@ class environment2:
             cnt_inter += 1
             self.prev_state=cur_state
         self.mem_action = self.mem_action[1:] +['same']
+        #replacement_dict = {(1, 2): 1, (3, 4): 2, (5, 6): 3, (7, 8): 4, (9, 10): 5, (11, 12): 6}
+        #combined_roi_subset = [next(v for k, v in replacement_dict.items() if i in k) for i in roi_subset]
         self.mem_roi=roi_subset
         self.threshold = int(cnt_inter * thres)
        # print("{} {}\n".format(len(self.mem_states), self.threshold))
@@ -127,7 +139,8 @@ class environment2:
 
         else:
             prediction = 0
-            cur_reward = 0
+
+
 
 
         self.take_step_action(test)

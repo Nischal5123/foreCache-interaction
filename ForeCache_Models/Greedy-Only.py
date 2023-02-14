@@ -1,4 +1,4 @@
-import environment2Location as environment2
+import environment2 as environment2
 import numpy as np
 from collections import defaultdict
 import pdb
@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 from collections import Counter
 
 
-class NaiveProbabilistic:
+class Greedy:
     def __init__(self):
         self.freq = defaultdict(lambda: defaultdict(float))
         self.reward = defaultdict(lambda: defaultdict(float))
@@ -23,17 +23,17 @@ class NaiveProbabilistic:
         # for i in range(1, length-1):
         #     print("{} {}".format(env.mem_states[i-1], env.mem_action[i]))
 
-        for i in range(1, threshold):
+        for i in range(0, threshold):
             self.freq[env.mem_states[i]][env.mem_action[i]] += 1
-            self.reward[env.mem_states[i - 1]][env.mem_action[i]] += env.mem_reward[i]
+            self.reward[env.mem_states[i]][env.mem_action[i]] += env.mem_reward[i]
 
         # Normalizing to get the probability
-        for states in self.freq:
-            sum = 0
-            for actions in self.freq[states]:
-                sum += self.freq[states][actions]
-            for actions in self.freq[states]:
-                self.freq[states][actions] = self.freq[states][actions] / sum
+        # for states in self.reward:
+        #     sum = 0
+        #     for actions in self.reward[states]:
+        #         sum += self.reward[states][actions]
+        #     for actions in self.reward[states]:
+        #         self.reward[states][actions] = self.reward[states][actions] / sum
                 # self.freq[states][actions] /= sum
 
         # Debugging probablity calculation
@@ -46,8 +46,10 @@ class NaiveProbabilistic:
         denom = 0
         for i in range(threshold + 1, length - 1):
             try:
-                _max = max(self.freq[env.mem_states[i - 1]], key=self.freq[env.mem_states[i - 1]].get)
-                if _max == env.mem_action[i] and self.freq[env.mem_states[i - 1]][_max] > 0:
+                _max = max(self.reward[env.mem_states[i]], key=self.reward[env.mem_states[i]].get)
+                if _max == env.mem_action[i] and self.reward[env.mem_states[i]][_max] > 0:
+                    if _max=='change':
+                        print("Change is max")
                     # print(env.mem_states[i-1], _max, self.freq[env.mem_states[i-1]][_max], env.mem_action[i], self.freq[env.mem_states[i-1]])
                     accuracy += 1
             except ValueError:
@@ -100,10 +102,9 @@ if __name__ == "__main__":
             threshold.append(current_count / total_count)
         threshold=threshold[:-1]
 
-
         for thres in threshold:
             env.process_data(u, 0)
-            obj = NaiveProbabilistic()
+            obj = Greedy()
             accu = obj.NaiveProbabilistic(u, env, thres)
             total += accu
             y_accu.append(accu)
@@ -116,7 +117,7 @@ if __name__ == "__main__":
     plt.legend(loc='center left', bbox_to_anchor=(1, 0))
     plt.xlabel('Threshold')
     plt.ylabel('Accuracy')
-    title = "naive-probabilistic-first_time"
+    title = "Full-Greedy-first_time"
     mean_y_accu = np.mean([element for sublist in y_accu_all for element in sublist])
     plt.axhline(mean_y_accu, color='red', linestyle='--', )
     plt.title(title)
@@ -138,10 +139,9 @@ if __name__ == "__main__":
             threshold.append(current_count / total_count)
         threshold = threshold[:-1]
 
-
         for thres in threshold:
             env.process_data(u, 0)
-            obj = NaiveProbabilistic()
+            obj = Greedy()
             accu = obj.NaiveProbabilistic(u, env, thres)
             total += accu
             y_accu.append(accu)
@@ -156,7 +156,7 @@ if __name__ == "__main__":
     plt.legend(loc='center left', bbox_to_anchor=(1, 0))
     plt.xlabel('Threshold')
     plt.ylabel('Accuracy')
-    title = "naive-probabilistic-experienced"
+    title = "Full-Greedy-experienced"
     mean_y_accu = np.mean(y_accu_all)
     plt.axhline(mean_y_accu, color='red', linestyle='--', )
     # pdb.set_trace()
