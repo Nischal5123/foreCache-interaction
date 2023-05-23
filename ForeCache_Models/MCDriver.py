@@ -1,7 +1,13 @@
 import forecache_environment
 # The typical imports
 import gym
+import os
 import numpy as np
+import matplotlib as mpl
+
+if os.environ.get('DISPLAY','') == '':
+    print('no display found. Using non-interactive Agg backend')
+    mpl.use('Agg')
 import matplotlib.pyplot as plt
 from MonteCarlo import FiniteMCModel as MC
 
@@ -20,7 +26,7 @@ for i in range(len(users)):
 
 
 
-    eps = 10000 #how many episodes to train for
+    eps = 100000 #how many episodes to train for
     # S = [(x, y, z) for x in range(4,22) for y in range(1,11) for z in [True,False]]
     # A = 2
 
@@ -43,14 +49,22 @@ for i in range(len(users)):
 
         m.update_Q(ep)
         # Decaying epsilon, reach optimal policy
-        m.epsilon = max((eps-i)/eps, 0.1)
-    cumulative_test_reward , test_accuracy =m.score(env, m.pi, n_samples=100)# how many times to sample or repeat to get mean of rewards
+        m.epsilon = max((eps-i)/eps, 0)
+    cumulative_test_reward , test_accuracy =m.score(env, m.pi, n_samples=10000)# how many times to sample or repeat to get mean of rewards
+    env.reset(True, False)
     print("Final expected returns : {}".format(cumulative_test_reward))
+
     #plt.plot(range(len(test_accuracy)),test_accuracy)
     #plt.show()
     accuracies.append(np.mean(test_accuracy))
+    print("Test Accuracy : {}".format(np.mean(test_accuracy) * 100))
+print("Average Accuracy across all user", np.mean(np.mean(test_accuracy)))
+# plt.figure(figsize=[10,10])
 plt.plot(range(len(plot_list)), accuracies, '-ro', label='Monte Carlo Test Accuracy for Users 0-19')
+plt.xticks(range(len(plot_list)), rotation='vertical')
+plt.margins(0.002)
 plt.xlabel("Users 1 - 20")
 plt.ylabel("Test Accuracy on action prediction")
-plt.legend(loc='upper left')
+plt.legend(loc='upper right')
 plt.show()
+plt.savefig('MonteCarlo.png')

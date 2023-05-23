@@ -3,7 +3,7 @@ import pandas as pd
 from gym import Env
 from gym.spaces import Box, Discrete
 import math
-
+from sklearn.utils import shuffle
 
 class environment3(Env):
 
@@ -11,7 +11,7 @@ class environment3(Env):
 
     def __init__(self):
         super(environment3, self).__init__()
-        self.user_list = glob.glob('taskname_ndsi-2d-task_*')
+        self.user_list = (glob.glob('taskname_ndsi-2d-task_*'))
         # This variable will be used to track the current position of the user agent.
         self.steps = 0
         self.len_df=0
@@ -119,9 +119,9 @@ class environment3(Env):
 
 if __name__ == "__main__":
     env = environment3()
-    users = env.user_list
-    threshold=0.8
-    env.process_data(users[1],threshold)
+    # users = env.user_list
+    # threshold=0.8
+    # env.process_data(users[1],threshold)
     # episodes = 1  # 20 episodes
     # for episode in range(1, episodes + 1):
     #     state = env.reset()

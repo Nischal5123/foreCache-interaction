@@ -1,87 +1,165 @@
+import environment2 as environment2
 import numpy as np
-import pandas as pd
 from collections import defaultdict
-import glob
-
-#for plots
+import pdb
+import misc
 import matplotlib.pyplot as plt
-from textwrap import wrap
+from collections import Counter
 
 
-class NaiveProbabilistic():
-
+class NaiveProbabilistic:
     def __init__(self):
-        self.user_list = glob.glob('taskname_ndsi-2d-task_*')
-        self.valid_actions = [0,1]
-        self.mem_states = []
-        self.mem_reward = []
-        self.mem_action = []
-        self.threshold = 0
+        self.freq = defaultdict(lambda: defaultdict(float))
+        self.reward = defaultdict(lambda: defaultdict(float))
 
-    def process_data(self, filename, thres):
-        df = pd.read_csv(filename)
-        self.prev_state = None
-        cnt_inter = 0
-        for index, row in df.iterrows():
-            cur_state = row['State']
-            if cur_state not in ('Foraging', 'Navigation', 'Sensemaking'):
-                continue
-            if self.prev_state == cur_state:
-                action = 0
-            else:
-                action = 1
-            self.mem_states.append(cur_state)
-            self.mem_reward.append(row['NDSI'])
-            self.mem_action.append(action)
-            cnt_inter += 1
-            self.prev_state = cur_state
-        self.threshold = int(cnt_inter * thres)
-        print("{} {}\n".format(len(self.mem_states), self.threshold))
+    def NaiveProbabilistic(self, user, env, thres):
 
+        # for t in itertools.count():
+        # print(u)
+        length = len(env.mem_action)
+        # pdb.set_trace()
+        threshold = int(length * thres)
 
-    def probabilistic_learning(self):
-        self.Naive_Q = defaultdict(lambda: np.zeros(len(self.valid_actions)))
-        train_states=self.mem_states[:self.threshold]
-        train_actions=self.mem_action[:self.threshold]
-        for i in range(len(train_states)) :
-                self.Naive_Q[train_states[i]][train_actions[i]]+=1
-       # Dict = dict({'Sensemakingchange':  Naive_Q['Sensemaking'][1]/len(Naive_Q['Sensemaking']), 2: 'For', 3:'Geeks'})
-        return self.Naive_Q
+        # for i in range(1, length-1):
+        #     print("{} {}".format(env.mem_states[i-1], env.mem_action[i]))
 
-    def test(self):
-        predicted_actions=[]
-        acc=0
-        test_states=self.mem_states[self.threshold:]
-        test_actions=self.mem_action[self.threshold:]
-        for i in range(len(test_states)):
-            predicted_actions.append(np.argmax(self.Naive_Q[test_states[i]]))
-            if test_actions[i]==predicted_actions[i]:
-                acc+=1
-        return acc/len(test_actions) #final accuracy
+        for i in range(1, threshold):
+            self.freq[env.mem_states[i]][env.mem_action[i-1]] += 1
+            self.reward[env.mem_states[i - 1]][env.mem_action[i]] += env.mem_reward[i]
+
+        # Normalizing to get the probability
+        for states in self.freq:
+            sum = 0
+            for actions in self.freq[states]:
+                sum += self.freq[states][actions]
+            for actions in self.freq[states]:
+                self.freq[states][actions] = self.freq[states][actions] / sum
+                # self.freq[states][actions] /= sum
+
+        # Debugging probablity calculation
+        # for states in self.freq:
+        #     for actions in self.freq[states]:
+        #         print("{} {} {}".format(states, actions, self.freq[states][actions]))
+
+        # Checking accuracy on the remaining data:
+        accuracy = 0
+        denom = 0
+        for i in range(threshold + 1, length - 1):
+            try:
+                _max = max(self.freq[env.mem_states[i - 1]], key=self.freq[env.mem_states[i - 1]].get)
+                if _max == env.mem_action[i] and self.freq[env.mem_states[i - 1]][_max] > 0:
+                    # print(env.mem_states[i-1], _max, self.freq[env.mem_states[i-1]][_max], env.mem_action[i], self.freq[env.mem_states[i-1]])
+                    accuracy += 1
+            except ValueError:
+                pass
+            denom += 1
+        accuracy /= denom
+        # print("Accuracy {} {:.2f}".format(user, accuracy))
+        obj = misc.misc([])
+        print("{}, {:.2f}".format(obj.get_user_name(user), accuracy))
+        self.freq.clear()
+        self.reward.clear()
+        return accuracy
+
 
 if __name__ == "__main__":
-    accuracies = []
-    plot_list=[]
-    user_index=[]
-    obj=NaiveProbabilistic()
-    users = obj.user_list
-    for i in range(len(users)):
-        plot_list.append(i)
-        user_index.append(users[i][29:-4])
-        thres = 0.7 #the percent of interactions Naive Probabilistic will be trained on
-        print('########For user#############',users[i])
-        obj.process_data(users[i], thres)
-        obj.probabilistic_learning()
-        accuracy=obj.test()
-        accuracies.append(accuracy)
 
-    #plotting
-    plt.figure(figsize=[10,10])
-    plt.plot(plot_list,accuracies, '-bo', label='Naive Probabilistic learning Average Test Accuracy for Users 1-20')
-    # plot_list = [l[35:] for l in plot_list]
-    plt.xticks(plot_list, rotation='vertical')
-    plt.margins(0.002)
-    plt.xlabel("Users 1 - 20")
-    plt.ylabel("Test Accuracy on action prediction")
-    plt.legend(loc='upper right')
-    plt.show()
+    env = environment2.environment2()
+    user_list_2D = env.user_list_2D
+    user_list_3D = env.user_list_3D
+
+    user_list_experienced = np.array(
+        ['data/NDSI-2D\\taskname_ndsi-2d-task_userid_82316e37-1117-4663-84b4-ddb6455c83b2.csv',
+         'data/NDSI-2D\\taskname_ndsi-2d-task_userid_ff56863b-0710-4a58-ad22-4bf2889c9bc0.csv',
+         'data/NDSI-2D\\taskname_ndsi-2d-task_userid_bda49380-37ad-41c5-a109-7fa198a7691a.csv',
+         # 'data/NDSI-2D\\taskname_ndsi-2d-task_userid_3abeecbe-327a-441e-be2a-0dd3763c1d45.csv',
+         'data/NDSI-2D\\taskname_ndsi-2d-task_userid_6d49fab8-273b-4a91-948b-ecd14556b049.csv',
+         'data/NDSI-2D\\taskname_ndsi-2d-task_userid_954edb7c-4eae-47ab-9338-5c5c7eccac2d.csv',
+         'data/NDSI-2D\\taskname_ndsi-2d-task_userid_a6aab5f5-fdb6-41df-9fc6-221d70f8c6e8.csv',
+         'data/NDSI-2D\\taskname_ndsi-2d-task_userid_8b544d24-3274-4bb0-9719-fd2bccc87b02.csv'])
+    # only training users
+    # user_list_2D = ['data/NDSI-2D\\taskname_ndsi-2d-task_userid_44968286-f204-4ad6-a9b5-d95b38e97866.csv',
+    #                 'data/NDSI-2D\\taskname_ndsi-2d-task_userid_3abeecbe-327a-441e-be2a-0dd3763c1d45.csv',
+    #                 'data/NDSI-2D\\taskname_ndsi-2d-task_userid_6d49fab8-273b-4a91-948b-ecd14556b049.csv',
+    #                 'data/NDSI-2D\\taskname_ndsi-2d-task_userid_72a8d170-77ae-400e-b2a5-de9e1d33a714.csv',
+    #                 'data/NDSI-2D\\taskname_ndsi-2d-task_userid_733a1ac5-0b01-485e-9b29-ac33932aa240.csv']
+    user_list_first_time = np.setdiff1d(user_list_2D, user_list_experienced)
+    total = 0
+    threshold = [0.1]
+    obj2 = misc.misc([])
+    y_accu_all=[]
+    for u in user_list_first_time[:6]:
+        y_accu = []
+        env.process_data(u,0)
+        counts = Counter(env.mem_roi)
+        threshold = []
+        total_count = len(env.mem_roi)
+        env.process_data(u, 0)
+        for i in range(1, max(counts.keys()) + 1):
+            current_count = sum(counts[key] for key in range(1, i + 1))
+            threshold.append(current_count / total_count)
+        threshold=threshold[:-1]
+
+        for thres in threshold:
+            env.process_data(u, 0)
+            obj = NaiveProbabilistic()
+            accu = obj.NaiveProbabilistic(u, env, thres)
+            total += accu
+            y_accu.append(accu)
+            env.reset(True, False)
+        print("User ", obj2.get_user_name(u), " across all thresholds ", "Global Accuracy: ", np.mean(y_accu))
+
+        plt.plot(threshold, y_accu, label=obj2.get_user_name(u), marker='*')
+        y_accu_all.append(y_accu)
+    plt.yticks(np.arange(0.0, 1.0, 0.1))
+    plt.legend(loc='center left', bbox_to_anchor=(1, 0))
+    plt.xlabel('Threshold')
+    plt.ylabel('Accuracy')
+    title = "naive-probabilistic-first_time"
+    mean_y_accu = np.mean([element for sublist in y_accu_all for element in sublist])
+    plt.axhline(mean_y_accu, color='red', linestyle='--', )
+    plt.title(title)
+    location = 'figures/Naive/' + title
+    plt.savefig(location, bbox_inches='tight')
+    plt.close()
+
+
+    y_accu_all=[]
+    for u in user_list_experienced[:6]:
+        y_accu = []
+        env.process_data(u, 0)
+        counts = Counter(env.mem_roi)
+        threshold = []
+        total_count = len(env.mem_roi)
+        env.process_data(u, 0)
+        for i in range(1, max(counts.keys()) + 1):
+            current_count = sum(counts[key] for key in range(1, i + 1))
+            threshold.append(current_count / total_count)
+        threshold = threshold[:-1]
+
+        for thres in threshold:
+            env.process_data(u, 0)
+            obj = NaiveProbabilistic()
+            accu = obj.NaiveProbabilistic(u, env, thres)
+            total += accu
+            y_accu.append(accu)
+            y_accu_all.append(accu)
+            env.reset(True, False)
+        print("User ", obj2.get_user_name(u), " across all thresholds ", "Global Accuracy: ", np.mean(y_accu))
+
+        plt.plot(threshold, y_accu, label=obj2.get_user_name(u), marker='*')
+
+
+    plt.yticks(np.arange(0.0, 1.0, 0.1))
+    plt.legend(loc='center left', bbox_to_anchor=(1, 0))
+    plt.xlabel('Threshold')
+    plt.ylabel('Accuracy')
+    title = "naive-probabilistic-experienced"
+    mean_y_accu = np.mean(y_accu_all)
+    plt.axhline(mean_y_accu, color='red', linestyle='--', )
+    # pdb.set_trace()
+    plt.title(title)
+    location = 'figures/Naive/' + title
+    plt.savefig(location, bbox_inches='tight')
+    plt.close()
+
