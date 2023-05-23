@@ -1,0 +1,911 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20214.22.0108.1039                               -->
+<workbook original-version='18.1' source-build='2021.4.3 (20214.22.0108.1039)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='probability_distribution_roi_cycle' inline='true' name='federated.11bgtyt0ocmzdt1c06wa61kattll' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='probability_distribution_roi_cycle' name='textscan.1tkxovi1um5v1519ge0c50dfsc77'>
+            <connection class='textscan' directory='C:/Users/Nischal Aryal/Desktop/Research/foreCache-interaction/ForeCache_Models/data/NDSI-2D' filename='probability_distribution_roi_cycle.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1tkxovi1um5v1519ge0c50dfsc77' name='probability_distribution_roi_cycle.csv' table='[probability_distribution_roi_cycle#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='User' ordinal='0' />
+            <column datatype='integer' name='ROI_Cycle' ordinal='1' />
+            <column datatype='real' name='Foragingchange' ordinal='2' />
+            <column datatype='real' name='Foragingsame' ordinal='3' />
+            <column datatype='real' name='Sensemakingchange' ordinal='4' />
+            <column datatype='real' name='Sensemakingsame' ordinal='5' />
+            <column datatype='real' name='Navigationsame' ordinal='6' />
+            <column datatype='real' name='Navigationchange' ordinal='7' />
+            <column datatype='integer' name='Foraging' ordinal='8' />
+            <column datatype='integer' name='Navigation' ordinal='9' />
+            <column datatype='integer' name='Sensemaking' ordinal='10' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1tkxovi1um5v1519ge0c50dfsc77' name='probability_distribution_roi_cycle.csv' table='[probability_distribution_roi_cycle#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='User' ordinal='0' />
+            <column datatype='integer' name='ROI_Cycle' ordinal='1' />
+            <column datatype='real' name='Foragingchange' ordinal='2' />
+            <column datatype='real' name='Foragingsame' ordinal='3' />
+            <column datatype='real' name='Sensemakingchange' ordinal='4' />
+            <column datatype='real' name='Sensemakingsame' ordinal='5' />
+            <column datatype='real' name='Navigationsame' ordinal='6' />
+            <column datatype='real' name='Navigationchange' ordinal='7' />
+            <column datatype='integer' name='Foraging' ordinal='8' />
+            <column datatype='integer' name='Navigation' ordinal='9' />
+            <column datatype='integer' name='Sensemaking' ordinal='10' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[probability_distribution_roi_cycle.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>User</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[User]</local-name>
+            <parent-name>[probability_distribution_roi_cycle.csv]</parent-name>
+            <remote-alias>User</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[probability_distribution_roi_cycle.csv_A1DFBC31766A40F2AB2C1CE477E48076]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ROI_Cycle</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ROI_Cycle]</local-name>
+            <parent-name>[probability_distribution_roi_cycle.csv]</parent-name>
+            <remote-alias>ROI_Cycle</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[probability_distribution_roi_cycle.csv_A1DFBC31766A40F2AB2C1CE477E48076]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Foragingchange</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Foragingchange]</local-name>
+            <parent-name>[probability_distribution_roi_cycle.csv]</parent-name>
+            <remote-alias>Foragingchange</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[probability_distribution_roi_cycle.csv_A1DFBC31766A40F2AB2C1CE477E48076]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Foragingsame</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Foragingsame]</local-name>
+            <parent-name>[probability_distribution_roi_cycle.csv]</parent-name>
+            <remote-alias>Foragingsame</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[probability_distribution_roi_cycle.csv_A1DFBC31766A40F2AB2C1CE477E48076]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sensemakingchange</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Sensemakingchange]</local-name>
+            <parent-name>[probability_distribution_roi_cycle.csv]</parent-name>
+            <remote-alias>Sensemakingchange</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[probability_distribution_roi_cycle.csv_A1DFBC31766A40F2AB2C1CE477E48076]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sensemakingsame</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Sensemakingsame]</local-name>
+            <parent-name>[probability_distribution_roi_cycle.csv]</parent-name>
+            <remote-alias>Sensemakingsame</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[probability_distribution_roi_cycle.csv_A1DFBC31766A40F2AB2C1CE477E48076]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Navigationsame</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Navigationsame]</local-name>
+            <parent-name>[probability_distribution_roi_cycle.csv]</parent-name>
+            <remote-alias>Navigationsame</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[probability_distribution_roi_cycle.csv_A1DFBC31766A40F2AB2C1CE477E48076]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Navigationchange</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Navigationchange]</local-name>
+            <parent-name>[probability_distribution_roi_cycle.csv]</parent-name>
+            <remote-alias>Navigationchange</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[probability_distribution_roi_cycle.csv_A1DFBC31766A40F2AB2C1CE477E48076]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Foraging</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Foraging]</local-name>
+            <parent-name>[probability_distribution_roi_cycle.csv]</parent-name>
+            <remote-alias>Foraging</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[probability_distribution_roi_cycle.csv_A1DFBC31766A40F2AB2C1CE477E48076]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Navigation</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Navigation]</local-name>
+            <parent-name>[probability_distribution_roi_cycle.csv]</parent-name>
+            <remote-alias>Navigation</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[probability_distribution_roi_cycle.csv_A1DFBC31766A40F2AB2C1CE477E48076]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sensemaking</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sensemaking]</local-name>
+            <parent-name>[probability_distribution_roi_cycle.csv]</parent-name>
+            <remote-alias>Sensemaking</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[probability_distribution_roi_cycle.csv_A1DFBC31766A40F2AB2C1CE477E48076]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='Sum' caption='Foraging1' datatype='integer' name='[Foraging]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='Foragingchange1' datatype='real' name='[Foragingchange]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='Foragingsame1' datatype='real' name='[Foragingsame]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='Navigation1' datatype='integer' name='[Navigation]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='Navigationchange1' datatype='real' name='[Navigationchange]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='Navigationsame1' datatype='real' name='[Navigationsame]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='ROI Cycle' datatype='integer' name='[ROI_Cycle]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='Sensemaking1' datatype='integer' name='[Sensemaking]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='Sensemakingchange1' datatype='real' name='[Sensemakingchange]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='Sensemakingsame1' datatype='real' name='[Sensemakingsame]' role='dimension' type='ordinal' />
+      <column caption='User1' datatype='string' name='[User]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='probability_distribution_roi_cycle.csv' datatype='table' name='[__tableau_internal_object_id__].[probability_distribution_roi_cycle.csv_A1DFBC31766A40F2AB2C1CE477E48076]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='probability_distribution_roi_cycle.csv' id='probability_distribution_roi_cycle.csv_A1DFBC31766A40F2AB2C1CE477E48076'>
+            <properties context=''>
+              <relation connection='textscan.1tkxovi1um5v1519ge0c50dfsc77' name='probability_distribution_roi_cycle.csv' table='[probability_distribution_roi_cycle#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='User' ordinal='0' />
+                  <column datatype='integer' name='ROI_Cycle' ordinal='1' />
+                  <column datatype='real' name='Foragingchange' ordinal='2' />
+                  <column datatype='real' name='Foragingsame' ordinal='3' />
+                  <column datatype='real' name='Sensemakingchange' ordinal='4' />
+                  <column datatype='real' name='Sensemakingsame' ordinal='5' />
+                  <column datatype='real' name='Navigationsame' ordinal='6' />
+                  <column datatype='real' name='Navigationchange' ordinal='7' />
+                  <column datatype='integer' name='Foraging' ordinal='8' />
+                  <column datatype='integer' name='Navigation' ordinal='9' />
+                  <column datatype='integer' name='Sensemaking' ordinal='10' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='probability_distribution_roi_cycle' name='federated.11bgtyt0ocmzdt1c06wa61kattll' />
+          </datasources>
+          <datasource-dependencies datasource='federated.11bgtyt0ocmzdt1c06wa61kattll'>
+            <column aggregation='Sum' caption='Foragingchange1' datatype='real' name='[Foragingchange]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' caption='Foragingsame1' datatype='real' name='[Foragingsame]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' caption='Navigationchange1' datatype='real' name='[Navigationchange]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' caption='Navigationsame1' datatype='real' name='[Navigationsame]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' caption='ROI Cycle' datatype='integer' name='[ROI_Cycle]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' caption='Sensemakingchange1' datatype='real' name='[Sensemakingchange]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' caption='Sensemakingsame1' datatype='real' name='[Sensemakingsame]' role='dimension' type='ordinal' />
+            <column caption='User1' datatype='string' name='[User]' role='dimension' type='nominal' />
+            <column-instance column='[Foragingchange]' derivation='None' name='[none:Foragingchange:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Foragingsame]' derivation='None' name='[none:Foragingsame:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Navigationchange]' derivation='None' name='[none:Navigationchange:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Navigationsame]' derivation='None' name='[none:Navigationsame:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[ROI_Cycle]' derivation='None' name='[none:ROI_Cycle:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Sensemakingchange]' derivation='None' name='[none:Sensemakingchange:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Sensemakingsame]' derivation='None' name='[none:Sensemakingsame:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[User]' derivation='None' name='[none:User:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <alphabetic-sort column='[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:ROI_Cycle:ok]' direction='ASC' />
+          <filter class='categorical' column='[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:User:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:User:nk]' member='&quot;userid_6d49fab8-273b-4a91-948b-ecd14556b049&quot;' />
+              <groupfilter function='member' level='[none:User:nk]' member='&quot;userid_72a8d170-77ae-400e-b2a5-de9e1d33a714&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:User:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:User:nk]' value='152' />
+            <format attr='width' field='[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:ROI_Cycle:ok]' value='68' />
+            <format attr='width' field='[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:Foragingsame:ok]' value='124' />
+            <format attr='width' field='[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:Foragingchange:ok]' value='136' />
+            <format attr='width' field='[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:Navigationchange:ok]' value='160' />
+            <format attr='width' field='[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:Navigationsame:ok]' value='176' />
+            <format attr='width' field='[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:Sensemakingchange:ok]' value='160' />
+            <format attr='width' field='[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:Sensemakingsame:ok]' value='184' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+          </pane>
+        </panes>
+        <rows>([federated.11bgtyt0ocmzdt1c06wa61kattll].[none:User:nk] / ([federated.11bgtyt0ocmzdt1c06wa61kattll].[none:ROI_Cycle:ok] / ([federated.11bgtyt0ocmzdt1c06wa61kattll].[none:Foragingsame:ok] / ([federated.11bgtyt0ocmzdt1c06wa61kattll].[none:Foragingchange:ok] / ([federated.11bgtyt0ocmzdt1c06wa61kattll].[none:Navigationchange:ok] / ([federated.11bgtyt0ocmzdt1c06wa61kattll].[none:Navigationsame:ok] / ([federated.11bgtyt0ocmzdt1c06wa61kattll].[none:Sensemakingchange:ok] / [federated.11bgtyt0ocmzdt1c06wa61kattll].[none:Sensemakingsame:ok])))))))</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{4354491A-38F9-43F5-BF19-66AB3ABB3EB0}' />
+    </worksheet>
+    <worksheet name='Sheet 1 (2)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='probability_distribution_roi_cycle' name='federated.11bgtyt0ocmzdt1c06wa61kattll' />
+          </datasources>
+          <datasource-dependencies datasource='federated.11bgtyt0ocmzdt1c06wa61kattll'>
+            <column aggregation='Sum' caption='ROI Cycle' datatype='integer' name='[ROI_Cycle]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' caption='Sensemakingchange1' datatype='real' name='[Sensemakingchange]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' caption='Sensemakingsame1' datatype='real' name='[Sensemakingsame]' role='dimension' type='ordinal' />
+            <column caption='User1' datatype='string' name='[User]' role='dimension' type='nominal' />
+            <column-instance column='[ROI_Cycle]' derivation='None' name='[none:ROI_Cycle:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Sensemakingchange]' derivation='None' name='[none:Sensemakingchange:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sensemakingsame]' derivation='None' name='[none:Sensemakingsame:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Sensemakingsame]' derivation='None' name='[none:Sensemakingsame:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[User]' derivation='None' name='[none:User:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:User:nk]'>
+            <groupfilter function='level-members' level='[none:User:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:User:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:ROI_Cycle:ok]' />
+              <lod column='[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:Sensemakingsame:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='7' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:Sensemakingsame:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:ROI_Cycle:ok]' />
+              <lod column='[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:Sensemakingsame:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='8' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:Sensemakingchange:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:ROI_Cycle:ok]' />
+              <lod column='[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:Sensemakingsame:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.11bgtyt0ocmzdt1c06wa61kattll].[none:User:nk] / [federated.11bgtyt0ocmzdt1c06wa61kattll].[none:ROI_Cycle:ok])</rows>
+        <cols>([federated.11bgtyt0ocmzdt1c06wa61kattll].[none:Sensemakingsame:qk] + [federated.11bgtyt0ocmzdt1c06wa61kattll].[none:Sensemakingchange:qk])</cols>
+      </table>
+      <simple-id uuid='{9420B69C-4D21-4625-88AB-65B147082FF8}' />
+    </worksheet>
+    <worksheet name='Sheet 1 (3)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Same Distribution</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='probability_distribution_roi_cycle' name='federated.11bgtyt0ocmzdt1c06wa61kattll' />
+          </datasources>
+          <datasource-dependencies datasource='federated.11bgtyt0ocmzdt1c06wa61kattll'>
+            <column aggregation='Sum' caption='Foragingsame1' datatype='real' name='[Foragingsame]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' caption='Navigationsame1' datatype='real' name='[Navigationsame]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' caption='ROI Cycle' datatype='integer' name='[ROI_Cycle]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' caption='Sensemakingsame1' datatype='real' name='[Sensemakingsame]' role='dimension' type='ordinal' />
+            <column caption='User1' datatype='string' name='[User]' role='dimension' type='nominal' />
+            <column-instance column='[Foragingsame]' derivation='None' name='[none:Foragingsame:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Navigationsame]' derivation='None' name='[none:Navigationsame:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[ROI_Cycle]' derivation='None' name='[none:ROI_Cycle:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Sensemakingsame]' derivation='None' name='[none:Sensemakingsame:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Sensemakingsame]' derivation='None' name='[none:Sensemakingsame:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[User]' derivation='None' name='[none:User:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:User:nk]'>
+            <groupfilter function='level-members' level='[none:User:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:User:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:User:nk]' value='178' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='10' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:ROI_Cycle:ok]' />
+              <text column='[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:ROI_Cycle:ok]' />
+              <lod column='[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:Sensemakingsame:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='11' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:Sensemakingsame:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:ROI_Cycle:ok]' />
+              <text column='[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:ROI_Cycle:ok]' />
+              <lod column='[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:Sensemakingsame:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='12' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:Navigationsame:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:ROI_Cycle:ok]' />
+              <text column='[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:ROI_Cycle:ok]' />
+              <lod column='[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:Sensemakingsame:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='13' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:Foragingsame:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:ROI_Cycle:ok]' />
+              <text column='[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:ROI_Cycle:ok]' />
+              <lod column='[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:Sensemakingsame:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.11bgtyt0ocmzdt1c06wa61kattll].[none:Sensemakingsame:qk] + ([federated.11bgtyt0ocmzdt1c06wa61kattll].[none:Navigationsame:qk] + [federated.11bgtyt0ocmzdt1c06wa61kattll].[none:Foragingsame:qk]))</rows>
+        <cols>[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:User:nk]</cols>
+      </table>
+      <simple-id uuid='{D23F14EC-DACD-4ACC-96A4-DF3DACED992F}' />
+    </worksheet>
+    <worksheet name='Sheet 1 (4)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Change Distribution</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='probability_distribution_roi_cycle' name='federated.11bgtyt0ocmzdt1c06wa61kattll' />
+          </datasources>
+          <datasource-dependencies datasource='federated.11bgtyt0ocmzdt1c06wa61kattll'>
+            <column aggregation='Sum' caption='Foragingchange1' datatype='real' name='[Foragingchange]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' caption='Navigationchange1' datatype='real' name='[Navigationchange]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' caption='ROI Cycle' datatype='integer' name='[ROI_Cycle]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' caption='Sensemakingchange1' datatype='real' name='[Sensemakingchange]' role='dimension' type='ordinal' />
+            <column caption='User1' datatype='string' name='[User]' role='dimension' type='nominal' />
+            <column-instance column='[Foragingchange]' derivation='None' name='[none:Foragingchange:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Navigationchange]' derivation='None' name='[none:Navigationchange:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[ROI_Cycle]' derivation='None' name='[none:ROI_Cycle:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Sensemakingchange]' derivation='None' name='[none:Sensemakingchange:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[User]' derivation='None' name='[none:User:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:User:nk]'>
+            <groupfilter function='level-members' level='[none:User:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:User:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:User:nk]' value='183' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='14' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:ROI_Cycle:ok]' />
+              <text column='[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:ROI_Cycle:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='15' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:Sensemakingchange:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:ROI_Cycle:ok]' />
+              <text column='[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:ROI_Cycle:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='16' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:Foragingchange:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:ROI_Cycle:ok]' />
+              <text column='[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:ROI_Cycle:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='17' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:Navigationchange:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:ROI_Cycle:ok]' />
+              <text column='[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:ROI_Cycle:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.11bgtyt0ocmzdt1c06wa61kattll].[none:Navigationchange:qk] + ([federated.11bgtyt0ocmzdt1c06wa61kattll].[none:Sensemakingchange:qk] + [federated.11bgtyt0ocmzdt1c06wa61kattll].[none:Foragingchange:qk]))</rows>
+        <cols>[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:User:nk]</cols>
+      </table>
+      <simple-id uuid='{C5F575EB-FD00-4EB3-9295-F94373DB6E19}' />
+    </worksheet>
+    <worksheet name='Sheet 1 (5)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>State Count</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='probability_distribution_roi_cycle' name='federated.11bgtyt0ocmzdt1c06wa61kattll' />
+          </datasources>
+          <datasource-dependencies datasource='federated.11bgtyt0ocmzdt1c06wa61kattll'>
+            <column aggregation='Sum' caption='Foraging1' datatype='integer' name='[Foraging]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' caption='Navigation1' datatype='integer' name='[Navigation]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' caption='ROI Cycle' datatype='integer' name='[ROI_Cycle]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' caption='Sensemaking1' datatype='integer' name='[Sensemaking]' role='dimension' type='ordinal' />
+            <column caption='User1' datatype='string' name='[User]' role='dimension' type='nominal' />
+            <column-instance column='[Foraging]' derivation='None' name='[none:Foraging:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Navigation]' derivation='None' name='[none:Navigation:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[ROI_Cycle]' derivation='None' name='[none:ROI_Cycle:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Sensemaking]' derivation='None' name='[none:Sensemaking:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[User]' derivation='None' name='[none:User:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:User:nk]'>
+            <groupfilter function='level-members' level='[none:User:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:User:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:User:nk]' value='183' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='16' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:ROI_Cycle:ok]' />
+              <text column='[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:ROI_Cycle:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='17' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:Foraging:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:ROI_Cycle:ok]' />
+              <text column='[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:ROI_Cycle:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='18' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:Sensemaking:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:ROI_Cycle:ok]' />
+              <text column='[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:ROI_Cycle:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='19' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:Navigation:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:ROI_Cycle:ok]' />
+              <text column='[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:ROI_Cycle:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.11bgtyt0ocmzdt1c06wa61kattll].[none:Navigation:qk] + ([federated.11bgtyt0ocmzdt1c06wa61kattll].[none:Sensemaking:qk] + [federated.11bgtyt0ocmzdt1c06wa61kattll].[none:Foraging:qk]))</rows>
+        <cols>[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:User:nk]</cols>
+      </table>
+      <simple-id uuid='{F1326765-0F84-4A44-9072-438E3E4A5EAE}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='32'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='28'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:User:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{967EFE22-DF18-49BD-A0D7-0E072418A5FE}' />
+    </window>
+    <window class='worksheet' name='Sheet 1 (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='27'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:User:nk]' type='filter' />
+            <card pane-specification-id='7' param='[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:ROI_Cycle:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B90501FD-6E54-4639-93D9-EE0B9C2D440B}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 1 (3)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='25'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='11' param='[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:ROI_Cycle:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{CC1F9418-312C-4371-9C36-A4699348E0D9}' />
+    </window>
+    <window class='worksheet' name='Sheet 1 (4)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='25'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:User:nk]' type='filter' />
+            <card pane-specification-id='17' param='[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:ROI_Cycle:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{75CBF4E7-8922-4212-AE7A-2D91D0FCA6E6}' />
+    </window>
+    <window class='worksheet' name='Sheet 1 (5)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='24'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:User:nk]' type='filter' />
+            <card pane-specification-id='19' param='[federated.11bgtyt0ocmzdt1c06wa61kattll].[none:ROI_Cycle:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BCC74F97-CBE5-445C-B1DB-1F994C008871}' />
+    </window>
+  </windows>
+</workbook>

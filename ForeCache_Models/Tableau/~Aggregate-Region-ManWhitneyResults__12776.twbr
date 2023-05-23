@@ -1,0 +1,709 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20214.22.0108.1039                               -->
+<workbook original-version='18.1' source-build='2021.4.3 (20214.22.0108.1039)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.SingleValuePerNestSorting.true...SingleValuePerNestSorting />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='region-aggregated-roi-manwhitneyresults' inline='true' name='federated.0eq2hf319xt2wx1g5h77f14f8cm8' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='region-aggregated-roi-manwhitneyresults' name='textscan.0kcibya1ou5k8m132cdrf1r8cy9v'>
+            <connection class='textscan' directory='C:/Users/Nischal Aryal/Desktop/Research/foreCache-interaction/ForeCache_Models/data/NDSI-2D' filename='region-aggregated-roi-manwhitneyresults.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0kcibya1ou5k8m132cdrf1r8cy9v' name='region-aggregated-roi-manwhitneyresults.csv' table='[region-aggregated-roi-manwhitneyresults#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='User' ordinal='1' />
+            <column datatype='string' name='State' ordinal='2' />
+            <column datatype='string' name='Result' ordinal='3' />
+            <column datatype='real' name='Percentage' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0kcibya1ou5k8m132cdrf1r8cy9v' name='region-aggregated-roi-manwhitneyresults.csv' table='[region-aggregated-roi-manwhitneyresults#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='User' ordinal='1' />
+            <column datatype='string' name='State' ordinal='2' />
+            <column datatype='string' name='Result' ordinal='3' />
+            <column datatype='real' name='Percentage' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[region-aggregated-roi-manwhitneyresults.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[region-aggregated-roi-manwhitneyresults.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[region-aggregated-roi-manwhitneyresults.csv_F083CDE516E2401FB53A617714C715A2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>User</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[User]</local-name>
+            <parent-name>[region-aggregated-roi-manwhitneyresults.csv]</parent-name>
+            <remote-alias>User</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[region-aggregated-roi-manwhitneyresults.csv_F083CDE516E2401FB53A617714C715A2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[region-aggregated-roi-manwhitneyresults.csv]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[region-aggregated-roi-manwhitneyresults.csv_F083CDE516E2401FB53A617714C715A2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Result</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Result]</local-name>
+            <parent-name>[region-aggregated-roi-manwhitneyresults.csv]</parent-name>
+            <remote-alias>Result</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[region-aggregated-roi-manwhitneyresults.csv_F083CDE516E2401FB53A617714C715A2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Percentage</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Percentage]</local-name>
+            <parent-name>[region-aggregated-roi-manwhitneyresults.csv]</parent-name>
+            <remote-alias>Percentage</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[region-aggregated-roi-manwhitneyresults.csv_F083CDE516E2401FB53A617714C715A2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='Sum' datatype='real' name='[Percentage]' role='dimension' type='ordinal' />
+      <column datatype='string' name='[Result]' role='dimension' type='nominal' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='region-aggregated-roi-manwhitneyresults.csv' datatype='table' name='[__tableau_internal_object_id__].[region-aggregated-roi-manwhitneyresults.csv_F083CDE516E2401FB53A617714C715A2]' role='measure' type='quantitative' />
+      <column-instance column='[Result]' derivation='Max' name='[max:Result:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Result]' derivation='None' name='[none:Result:nk]' pivot='key' type='nominal' />
+      <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:State:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Foraging&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Sensemaking&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Navigation&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Result:nk]' type='palette'>
+            <map to='#59a14f'>
+              <bucket>&quot;True&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;NED&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;False&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[max:Result:nk]' type='palette'>
+            <map to='#59a14f'>
+              <bucket>&quot;True&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;NED&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;False&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='region-aggregated-roi-manwhitneyresults.csv' id='region-aggregated-roi-manwhitneyresults.csv_F083CDE516E2401FB53A617714C715A2'>
+            <properties context=''>
+              <relation connection='textscan.0kcibya1ou5k8m132cdrf1r8cy9v' name='region-aggregated-roi-manwhitneyresults.csv' table='[region-aggregated-roi-manwhitneyresults#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='User' ordinal='1' />
+                  <column datatype='string' name='State' ordinal='2' />
+                  <column datatype='string' name='Result' ordinal='3' />
+                  <column datatype='real' name='Percentage' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontname='Tableau Bold' fontsize='16'>Mann-Whitney Test Results for Granular Subtasks</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='region-aggregated-roi-manwhitneyresults' name='federated.0eq2hf319xt2wx1g5h77f14f8cm8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0eq2hf319xt2wx1g5h77f14f8cm8'>
+            <column aggregation='Sum' datatype='real' name='[Percentage]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Result]' role='dimension' type='nominal' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column datatype='string' name='[User]' role='dimension' type='nominal' />
+            <column-instance column='[User]' derivation='CountD' name='[ctd:User:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Percentage]' derivation='None' name='[none:Percentage:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Result]' derivation='None' name='[none:Result:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0eq2hf319xt2wx1g5h77f14f8cm8].[none:Percentage:ok]'>
+            <groupfilter expression='SUM([Percentage]) &gt;= 0.5' function='filter' user:ui-filter-by-field='true' user:ui-marker='filter-by'>
+              <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+                <groupfilter function='member' level='[none:Percentage:ok]' member='0.53333333333333333' />
+                <groupfilter function='member' level='[none:Percentage:ok]' member='0.59999999999999998' />
+                <groupfilter function='member' level='[none:Percentage:ok]' member='0.66666666666666663' />
+                <groupfilter function='member' level='[none:Percentage:ok]' member='0.69999999999999996' />
+                <groupfilter function='member' level='[none:Percentage:ok]' member='0.73333333333333328' />
+                <groupfilter function='member' level='[none:Percentage:ok]' member='0.80000000000000004' />
+                <groupfilter function='member' level='[none:Percentage:ok]' member='0.83333333333333337' />
+                <groupfilter function='member' level='[none:Percentage:ok]' member='1.0' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0eq2hf319xt2wx1g5h77f14f8cm8].[none:Result:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;True&quot;</bucket>
+              <bucket>&quot;False&quot;</bucket>
+              <bucket>&quot;NED&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.0eq2hf319xt2wx1g5h77f14f8cm8].[none:Percentage:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0eq2hf319xt2wx1g5h77f14f8cm8].[ctd:User:qk]' scope='rows' value='Number of Users' />
+            <format attr='width' field='[federated.0eq2hf319xt2wx1g5h77f14f8cm8].[ctd:User:qk]' value='80' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0eq2hf319xt2wx1g5h77f14f8cm8].[none:State:nk]' value='120' />
+            <format attr='height' field='[federated.0eq2hf319xt2wx1g5h77f14f8cm8].[ctd:User:qk]' value='15' />
+            <format attr='border-style' value='solid' />
+            <format attr='font-family' field='[federated.0eq2hf319xt2wx1g5h77f14f8cm8].[ctd:User:qk]' value='Tableau Bold' />
+            <format attr='font-size' field='[federated.0eq2hf319xt2wx1g5h77f14f8cm8].[ctd:User:qk]' value='14' />
+            <format attr='font-weight' field='[federated.0eq2hf319xt2wx1g5h77f14f8cm8].[ctd:User:qk]' value='bold' />
+            <format attr='color' field='[federated.0eq2hf319xt2wx1g5h77f14f8cm8].[ctd:User:qk]' value='#000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0eq2hf319xt2wx1g5h77f14f8cm8].[none:Percentage:ok]' value='248' />
+            <format attr='border-color' value='#000000' />
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+          </style-rule>
+          <style-rule element='field-labels'>
+            <format attr='font-family' value='Tableau Bold' />
+            <format attr='font-size' value='14' />
+            <format attr='color' value='#000000' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-family' field='[federated.0eq2hf319xt2wx1g5h77f14f8cm8].[ctd:User:qk]' value='Tableau Bold' />
+            <format attr='font-size' field='[federated.0eq2hf319xt2wx1g5h77f14f8cm8].[ctd:User:qk]' value='14' />
+            <format attr='font-size' field='[federated.0eq2hf319xt2wx1g5h77f14f8cm8].[none:State:nk]' value='14' />
+            <format attr='font-family' field='[federated.0eq2hf319xt2wx1g5h77f14f8cm8].[none:State:nk]' value='Tableau Bold' />
+            <format attr='color' field='[federated.0eq2hf319xt2wx1g5h77f14f8cm8].[none:State:nk]' value='#000000' />
+            <format attr='color' field='[federated.0eq2hf319xt2wx1g5h77f14f8cm8].[ctd:User:qk]' value='#000000' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+          </style-rule>
+          <style-rule element='header-div'>
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='font-family' value='Tableau Bold' />
+            <format attr='font-weight' value='bold' />
+            <format attr='color' value='#000000' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='font-family' value='Tableau Bold' />
+            <format attr='font-size' value='10' />
+            <format attr='color' value='#000000' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0eq2hf319xt2wx1g5h77f14f8cm8].[none:Result:nk]' />
+              <text column='[federated.0eq2hf319xt2wx1g5h77f14f8cm8].[ctd:User:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='size' value='1' />
+                <format attr='mark-transparency' value='255' />
+                <format attr='has-stroke' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0eq2hf319xt2wx1g5h77f14f8cm8].[ctd:User:qk]</rows>
+        <cols>[federated.0eq2hf319xt2wx1g5h77f14f8cm8].[none:State:nk]</cols>
+      </table>
+      <simple-id uuid='{D3E2E66E-B297-4F78-BF7A-913B9FDF514D}' />
+    </worksheet>
+    <worksheet name='Sheet 1 (2)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>User Filter</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='region-aggregated-roi-manwhitneyresults' name='federated.0eq2hf319xt2wx1g5h77f14f8cm8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0eq2hf319xt2wx1g5h77f14f8cm8'>
+            <column datatype='string' name='[User]' role='dimension' type='nominal' />
+            <column-instance column='[User]' derivation='None' name='[none:User:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0eq2hf319xt2wx1g5h77f14f8cm8].[none:User:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:User:nk]' member='&quot;44968&quot;' />
+              <groupfilter function='member' level='[none:User:nk]' member='&quot;6d49f&quot;' />
+              <groupfilter function='member' level='[none:User:nk]' member='&quot;72a8d&quot;' />
+              <groupfilter function='member' level='[none:User:nk]' member='&quot;733a1&quot;' />
+              <groupfilter function='member' level='[none:User:nk]' member='&quot;7d014&quot;' />
+              <groupfilter function='member' level='[none:User:nk]' member='&quot;8bf5b&quot;' />
+              <groupfilter function='member' level='[none:User:nk]' member='&quot;93be0&quot;' />
+              <groupfilter function='member' level='[none:User:nk]' member='&quot;954ed&quot;' />
+              <groupfilter function='member' level='[none:User:nk]' member='&quot;bda49&quot;' />
+              <groupfilter function='member' level='[none:User:nk]' member='&quot;ff568&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0eq2hf319xt2wx1g5h77f14f8cm8].[none:User:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{9D588BF3-2CB6-4B96-9359-545A41953A11}' />
+    </worksheet>
+    <worksheet name='Sheet 1 (4)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Aggregating Non-stationarity on n-Region-Subsets Comparisons</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='region-aggregated-roi-manwhitneyresults' name='federated.0eq2hf319xt2wx1g5h77f14f8cm8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0eq2hf319xt2wx1g5h77f14f8cm8'>
+            <column aggregation='Sum' datatype='real' name='[Percentage]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Result]' role='dimension' type='nominal' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column datatype='string' name='[User]' role='dimension' type='nominal' />
+            <column-instance column='[Percentage]' derivation='None' name='[none:Percentage:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Result]' derivation='None' name='[none:Result:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[User]' derivation='None' name='[none:User:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0eq2hf319xt2wx1g5h77f14f8cm8].[none:Percentage:ok]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Percentage:ok]' member='0.5' />
+              <groupfilter function='member' level='[none:Percentage:ok]' member='0.53333333333333333' />
+              <groupfilter function='member' level='[none:Percentage:ok]' member='0.59999999999999998' />
+              <groupfilter function='member' level='[none:Percentage:ok]' member='0.66666666666666663' />
+              <groupfilter function='member' level='[none:Percentage:ok]' member='0.69999999999999996' />
+              <groupfilter function='member' level='[none:Percentage:ok]' member='0.73333333333333328' />
+              <groupfilter function='member' level='[none:Percentage:ok]' member='0.80000000000000004' />
+              <groupfilter function='member' level='[none:Percentage:ok]' member='0.83333333333333337' />
+              <groupfilter function='member' level='[none:Percentage:ok]' member='1.0' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0eq2hf319xt2wx1g5h77f14f8cm8].[none:Result:nk]'>
+            <groupfilter function='member' level='[none:Result:nk]' member='&quot;True&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0eq2hf319xt2wx1g5h77f14f8cm8].[none:State:nk]'>
+            <groupfilter function='member' level='[none:State:nk]' member='&quot;Foraging&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0eq2hf319xt2wx1g5h77f14f8cm8].[none:Percentage:ok]</column>
+            <column>[federated.0eq2hf319xt2wx1g5h77f14f8cm8].[none:State:nk]</column>
+            <column>[federated.0eq2hf319xt2wx1g5h77f14f8cm8].[none:Result:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0eq2hf319xt2wx1g5h77f14f8cm8].[none:State:nk]' value='345' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0eq2hf319xt2wx1g5h77f14f8cm8].[none:Percentage:ok]' value='248' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0eq2hf319xt2wx1g5h77f14f8cm8].[none:State:nk]' />
+              <lod column='[federated.0eq2hf319xt2wx1g5h77f14f8cm8].[none:Percentage:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0eq2hf319xt2wx1g5h77f14f8cm8].[none:User:nk] / [federated.0eq2hf319xt2wx1g5h77f14f8cm8].[none:Result:nk])</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{64BA6F21-2DC3-4650-8225-1D1B4C00E080}' />
+    </worksheet>
+    <worksheet name='Sheet 1 (5)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Aggregating Non-stationarity on n-Region-Subsets Comparisons</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='region-aggregated-roi-manwhitneyresults' name='federated.0eq2hf319xt2wx1g5h77f14f8cm8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0eq2hf319xt2wx1g5h77f14f8cm8'>
+            <column aggregation='Sum' datatype='real' name='[Percentage]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Result]' role='dimension' type='nominal' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column datatype='string' name='[User]' role='dimension' type='nominal' />
+            <column-instance column='[Percentage]' derivation='None' name='[none:Percentage:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Result]' derivation='None' name='[none:Result:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[User]' derivation='None' name='[none:User:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0eq2hf319xt2wx1g5h77f14f8cm8].[none:Percentage:ok]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Percentage:ok]' member='0.5' />
+              <groupfilter function='member' level='[none:Percentage:ok]' member='0.53333333333333333' />
+              <groupfilter function='member' level='[none:Percentage:ok]' member='0.59999999999999998' />
+              <groupfilter function='member' level='[none:Percentage:ok]' member='0.66666666666666663' />
+              <groupfilter function='member' level='[none:Percentage:ok]' member='0.69999999999999996' />
+              <groupfilter function='member' level='[none:Percentage:ok]' member='0.73333333333333328' />
+              <groupfilter function='member' level='[none:Percentage:ok]' member='0.80000000000000004' />
+              <groupfilter function='member' level='[none:Percentage:ok]' member='0.83333333333333337' />
+              <groupfilter function='member' level='[none:Percentage:ok]' member='1.0' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0eq2hf319xt2wx1g5h77f14f8cm8].[none:Result:nk]'>
+            <groupfilter function='member' level='[none:Result:nk]' member='&quot;True&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0eq2hf319xt2wx1g5h77f14f8cm8].[none:State:nk]'>
+            <groupfilter function='member' level='[none:State:nk]' member='&quot;Sensemaking&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <_.fcp.SingleValuePerNestSorting.true...single-value-per-nest-shelf-sorts>
+            <single-value-per-nest-shelf-sort dimension-to-sort='[federated.0eq2hf319xt2wx1g5h77f14f8cm8].[none:User:nk]' direction='ASC' measure-to-sort-by='[federated.0eq2hf319xt2wx1g5h77f14f8cm8].[none:User:nk]' shelf='rows' />
+          </_.fcp.SingleValuePerNestSorting.true...single-value-per-nest-shelf-sorts>
+          <slices>
+            <column>[federated.0eq2hf319xt2wx1g5h77f14f8cm8].[none:Percentage:ok]</column>
+            <column>[federated.0eq2hf319xt2wx1g5h77f14f8cm8].[none:State:nk]</column>
+            <column>[federated.0eq2hf319xt2wx1g5h77f14f8cm8].[none:Result:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0eq2hf319xt2wx1g5h77f14f8cm8].[none:State:nk]' value='345' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0eq2hf319xt2wx1g5h77f14f8cm8].[none:Percentage:ok]' value='248' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0eq2hf319xt2wx1g5h77f14f8cm8].[none:State:nk]' />
+              <lod column='[federated.0eq2hf319xt2wx1g5h77f14f8cm8].[none:Percentage:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0eq2hf319xt2wx1g5h77f14f8cm8].[none:User:nk] / [federated.0eq2hf319xt2wx1g5h77f14f8cm8].[none:Result:nk])</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{5E44142E-D114-4455-8CC3-5CB9E0A12989}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='32'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='206'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='134'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0eq2hf319xt2wx1g5h77f14f8cm8].[none:State:nk]' type='highlighter' />
+            <card pane-specification-id='0' param='[federated.0eq2hf319xt2wx1g5h77f14f8cm8].[none:Result:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7CFE22AC-AB34-4293-8301-DF272ED0F021}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 1 (4)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='26'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0eq2hf319xt2wx1g5h77f14f8cm8].[none:State:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{80D75896-D205-47E2-B403-78191A94AC87}' />
+    </window>
+    <window class='worksheet' name='Sheet 1 (5)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='25'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0eq2hf319xt2wx1g5h77f14f8cm8].[none:State:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C8660341-30C4-40B3-9EE2-148CA98ADCAD}' />
+    </window>
+    <window class='worksheet' name='Sheet 1 (2)' tab-color='#f66273'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='25'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{113BA164-8516-4135-92EB-CFC346AEB7FC}' />
+    </window>
+  </windows>
+</workbook>
