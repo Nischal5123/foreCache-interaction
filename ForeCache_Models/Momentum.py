@@ -8,7 +8,7 @@ import pandas as pd
 import random
 import json
 
-class Naive:
+class Momentum:
     def __init__(self):
         """
                Initializes the Naive object.
@@ -35,29 +35,30 @@ class Naive:
             ] = self.take_random_action(state, "")
             for action in self.actions:
                 self.reward[state][action] = 0
+
     def take_random_action(self, state, action):
         """
-        Selects a random action different from the current one.
+        Selects a random action based on specified probabilities.
 
         Args:
         - state (str): the current state of the environment.
         - action (str): the current action taken by the agent.
 
         Returns:
-        - next_action (str): a randomly chosen action different from the current one.
+        - next_action (str): a randomly chosen action based on the specified probabilities.
         """
         if state == "Navigation":
             action_space = ["same", "change", "changeout"]
-            action_space = [f for f in action_space if f != action]
-            next_action = random.choice(action_space)
+            probabilities = [0.9 if f == action else 0.05 for f in action_space]
         else:
             action_space = ["same", "change"]
-            action_space = [f for f in action_space if f != action]
-            next_action = random.choice(action_space)
+            probabilities = [0.9 if f == action else 0.1 for f in action_space]
+
+        next_action = random.choices(action_space, probabilities)[0]
         return next_action
-    def NaiveModel(self, user, env, thres):
+    def MomentumProbabilistic(self, user, env, thres):
         """
-               Implements the Naive algorithm for a given user and environment.
+               Implements the Momentum algorithm for a given user and environment.
 
                Args:
                - user (list): a list containing the data of a given user.
@@ -76,20 +77,27 @@ class Naive:
         result = []
         accuracy = []
         split_accuracy = defaultdict(list)
+
+        #initialize last best action from training data
+        for j in range(0,threshold):
+            self.bestaction[env.mem_states[j]] = env.mem_action[j]
+
+        #testing data
         for i in range(threshold + 1, length - 1):
-            cur_action = self.bestaction[env.mem_states[i]]
-            result.append(env.mem_states[i])
-            result.append(cur_action)
-            if self.bestaction[env.mem_states[i]] == env.mem_action[i]:
+            cur_action=self.bestaction[env.mem_states[i]]
+            if cur_action == env.mem_action[i]:
                 accuracy.append(1)
                 split_accuracy[env.mem_states[i]].append(1)
             else:
                 split_accuracy[env.mem_states[i]].append(0)
                 accuracy.append(0)
             denom += 1
+            self.bestaction[env.mem_states[i]] = self.take_random_action(env.mem_states[i], self.bestaction[env.mem_states[i]])
+            result.append(env.mem_states[i])
+            result.append(cur_action)
 
         obj = misc.misc([])
-        print("{}, {:.2f}, {}".format(obj.get_user_name(user), np.mean(accuracy), result))
+        print("{}, {:.2f}, {}".format(user, np.mean(accuracy), result))
         self.bestaction.clear()
         self.reward.clear()
         return np.mean(accuracy), split_accuracy
@@ -106,7 +114,6 @@ def format_split_accuracy(accuracy_dict):
     return accuracy_per_state
 
 def get_user_name(url):
-    print(url)
     string = url.split('/')
     fname = string[len(string) - 1]
     uname = fname.rstrip('.csv')
@@ -128,8 +135,8 @@ def run_experiment(user_list, algo, hyperparam_file):
         user_name = get_user_name(u)
         for thres in threshold:
             env.process_data(u, 0)
-            obj = Naive()
-            test_accuracy,state_accuracy = obj.NaiveModel(user_name, env, thres)
+            obj = Momentum()
+            test_accuracy,state_accuracy = obj.MomentumProbabilistic(user_name, env, thres)
             accuracy_per_state = format_split_accuracy(state_accuracy)
             y_accu.append(test_accuracy)
             result_dataframe = pd.concat([result_dataframe, pd.DataFrame({
@@ -143,7 +150,7 @@ def run_experiment(user_list, algo, hyperparam_file):
                 'Reward': [0]
             })], ignore_index=True)
             env.reset(True, False)
-        print("User ", user_name, " across all thresholds ", "Global Accuracy: ", np.mean(y_accu))
+        print("User ", get_user_name(u), " across all thresholds ", "Global Accuracy: ", np.mean(y_accu))
 
         plt.plot(threshold, y_accu, label=user_name, marker='*')
         y_accu_all.append(np.mean(y_accu))
@@ -156,4 +163,4 @@ def run_experiment(user_list, algo, hyperparam_file):
 if __name__ == "__main__":
     env = environment2.environment2()
     user_list_2D = env.user_list_2D
-    run_experiment(user_list_2D, 'Naive', 'sampled-hyperparameters-config.json')
+    run_experiment(user_list_2D, 'Momentum', 'sampled-hyperparameters-config.json')
