@@ -203,7 +203,7 @@ if __name__ == "__main__":
     )
     plt.legend(loc="center left", bbox_to_anchor=(1, 0))
     plt.title(title)
-    location = "figures/Naive/" + title
+    location = "TestFigures/" + title
     plt.savefig(location, bbox_inches="tight")
     plt.close()
 

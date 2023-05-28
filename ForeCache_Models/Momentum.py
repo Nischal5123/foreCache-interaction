@@ -150,7 +150,7 @@ def run_experiment(user_list, algo, hyperparam_file):
                 'Reward': [0]
             })], ignore_index=True)
             env.reset(True, False)
-        print("User ", get_user_name(u), " across all thresholds ", "Global Accuracy: ", np.mean(y_accu))
+        print("User ", user_name, " across all thresholds ", "Global Accuracy: ", np.mean(y_accu))
 
         plt.plot(threshold, y_accu, label=user_name, marker='*')
         y_accu_all.append(np.mean(y_accu))

@@ -1,6 +1,5 @@
 #contains all the miscellaneous functions for running 
 import pandas as pd
-import random
 import SARSA
 import numpy as np
 import matplotlib.pyplot as plt 
@@ -11,6 +10,12 @@ from collections import Counter
 
 class misc:
     def __init__(self, users,hyperparam_file='sampled-hyperparameters-config.json'):
+        """
+        Initializes the misc class.
+        Parameters:
+    - users: List of users
+    - hyperparam_file: File path to the hyperparameters JSON file
+    """
         # Load hyperparameters from JSON file
         with open(hyperparam_file) as f:
             hyperparams = json.load(f)
@@ -23,12 +28,30 @@ class misc:
         self.prog = users * len(self.epsilon_h) * len(self.alpha_h) * len(self.discount_h) * len(self.threshold_h)
 
     def get_user_name(self, url):
+        """
+            Extracts the username from the URL.
+
+            Parameters:
+            - url: URL string
+
+            Returns:
+            - uname: Username extracted from the URL
+            """
         string = url.split('\\')
         fname = string[len(string) - 1]
         uname = fname.rstrip('.csv')
         return uname
 
     def format_split_accuracy(self, accuracy_dict):
+        """
+            Formats the accuracy per state.
+
+            Parameters:
+            - accuracy_dict: Dictionary containing accuracy values for each state
+
+            Returns:
+            - accuracy_per_state: List of accuracy values per state
+            """
         accuracy_per_state = []
         for state in self.main_states:
             if accuracy_dict[state]:
@@ -38,6 +61,16 @@ class misc:
         return accuracy_per_state
 
     def get_threshold(self, env, user):
+        """
+            Calculates the threshold.
+
+            Parameters:
+            - env: Environment object
+            - user: User data
+
+            Returns:
+            - proportions: List of threshold proportions
+            """
         env.process_data(user, 0)
         counts = Counter(env.mem_roi)
         proportions = []
@@ -49,7 +82,18 @@ class misc:
         return proportions[:-1]
 
     def hyper_param(self, env, users_hyper, algorithm, epoch):
+        """
+            Performs hyperparameter optimization.
 
+            Parameters:
+            - env: Environment object
+            - users_hyper: List of user data
+            - algorithm: Algorithm name ('QLearn' or 'SARSA')
+            - epoch: Number of epochs
+
+            Returns:
+            None
+            """
         result_dataframe = pd.DataFrame(
             columns=['Algorithm','User','Epsilon', 'Threshold', 'LearningRate', 'Discount','Accuracy','StateAccuracy','Reward'])
         best_discount = best_alpha = best_eps = -1
