@@ -57,7 +57,7 @@ class misc:
             if accuracy_dict[state]:
                 accuracy_per_state.append(np.mean(accuracy_dict[state]))
             else:
-                accuracy_per_state.append(0)
+                accuracy_per_state.append(None) #no data for that state
         return accuracy_per_state
 
     def get_threshold(self, env, user):

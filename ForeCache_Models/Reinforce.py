@@ -9,7 +9,7 @@ import environment2
 import plotting
 from collections import Counter,defaultdict
 import json
-
+eps=1e-35
 class Policy(nn.Module):
     def __init__(self,learning_rate,gamma,tau):
         super(Policy, self).__init__()
@@ -95,8 +95,8 @@ class Reinforce():
     def test(self,policy):
         test_accuracies = []
         split_accuracy = defaultdict(list)
-        reward_accumulated = [0.000000000000000000001]
-        reward_possible = [0.000000000000000000001]
+        reward_accumulated = eps
+        reward_possible = eps
         for n_epi in range(1):
             s = self.env.reset(all=False, test=True)
             s = np.array(self.convert_state_idx(s))
@@ -157,7 +157,7 @@ def format_split_accuracy(accuracy_dict):
         if accuracy_dict[state]:
             accuracy_per_state.append(np.mean(accuracy_dict[state]))
         else:
-            accuracy_per_state.append(0)
+            accuracy_per_state.append(None) #no data for that state
     return accuracy_per_state
 
 

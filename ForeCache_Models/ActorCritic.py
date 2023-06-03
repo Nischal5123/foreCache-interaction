@@ -14,7 +14,7 @@ from collections import defaultdict
 os.environ["KMP_DUPLICATE_LIB_OK"]="TRUE"
 
 
-
+eps=1e-35
 #Class definition for the Actor-Critic model
 class ActorCritic(nn.Module):
     def __init__(self,learning_rate,gamma,tau):
@@ -190,8 +190,8 @@ class Agent():
 
         test_predictions = []
         split_accuracy = defaultdict(list)
-        reward_accumulated = [0.000000000000000000001]
-        reward_possible = [0.000000000000000000001]
+        reward_accumulated = [eps]
+        reward_possible = [eps]
         for n_epi in range(1):
             done = False
             s = self.env.reset(all=False, test=True)
@@ -346,7 +346,7 @@ def format_split_accuracy(accuracy_dict):
         if accuracy_dict[state]:
             accuracy_per_state.append(np.mean(accuracy_dict[state]))
         else:
-            accuracy_per_state.append(0)
+            accuracy_per_state.append(None) #no data for that state
     return accuracy_per_state
 
 if __name__ == '__main__':
