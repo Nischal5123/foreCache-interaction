@@ -17,7 +17,7 @@ class TD_SARSA:
     def __init__(self):
         pass
 
-
+    # @jit(target ="cuda")
     def epsilon_greedy_policy(self, Q, epsilon, nA):
         """
         Creates an epsilon-greedy policy based on a given Q-function and epsilon.
@@ -63,7 +63,12 @@ class TD_SARSA:
                    Q is the optimal action-value function, a dictionary mapping state -> action values.
                    stats is an EpisodeStats object with two numpy arrays for episode_lengths and episode_rewards.
                """
+        # The final action-value function.
+        # A nested dictionary that maps state -> (action -> action-value).
 
+        # The final action-value function.
+        # A nested dictionary that maps state -> (action -> action-value).
+        # Define the valid actions for each state
 
         Q = {
             "Navigation": np.zeros(3),

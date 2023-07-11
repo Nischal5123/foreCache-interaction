@@ -123,7 +123,7 @@ def format_split_accuracy(accuracy_dict):
         if accuracy_dict[state]:
             accuracy_per_state.append(np.mean(accuracy_dict[state]))
         else:
-            accuracy_per_state.append(None) #no data for that state
+            accuracy_per_state.append(0)
     return accuracy_per_state
 
 def get_user_name(url):
@@ -203,7 +203,7 @@ if __name__ == "__main__":
     )
     plt.legend(loc="center left", bbox_to_anchor=(1, 0))
     plt.title(title)
-    location = "TestFigures/" + title
+    location = "figures/Naive/" + title
     plt.savefig(location, bbox_inches="tight")
     plt.close()
 

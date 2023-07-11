@@ -8,17 +8,8 @@ from torch.distributions import Categorical
 import environment2
 import plotting
 from collections import Counter,defaultdict
-import misc
-import multiprocessing
-import os
 import json
-os.environ["KMP_DUPLICATE_LIB_OK"]="TRUE"
-
-# # Hyperparameters
-# learning_rate = 0.0002
-# gamma = 0.99
-
-
+eps=1e-35
 class Policy(nn.Module):
     def __init__(self,learning_rate,gamma,tau):
         super(Policy, self).__init__()
@@ -96,10 +87,6 @@ class Reinforce():
                 score += r
 
             self.pi.train_net()
-
-            # if n_epi % print_interval == 0 and n_epi != 0:
-            #     print("# of episode :{}, avg score : {}, actions :{}".format(n_epi, score / print_interval, Counter(actions)))
-            # score = 0.0
             all_predictions.append(np.mean(predictions))
         print("############ Train Accuracy :{},".format(np.mean(all_predictions)))
         return self.pi, (np.mean(predictions)) #return last train_accuracy
@@ -108,8 +95,8 @@ class Reinforce():
     def test(self,policy):
         test_accuracies = []
         split_accuracy = defaultdict(list)
-        reward_accumulated = [0.000000000000000000001]
-        reward_possible = [0.000000000000000000001]
+        reward_accumulated = eps
+        reward_possible = eps
         for n_epi in range(1):
             s = self.env.reset(all=False, test=True)
             s = np.array(self.convert_state_idx(s))
@@ -170,11 +157,11 @@ def format_split_accuracy(accuracy_dict):
         if accuracy_dict[state]:
             accuracy_per_state.append(np.mean(accuracy_dict[state]))
         else:
-            accuracy_per_state.append(0)
+            accuracy_per_state.append(None) #no data for that state
     return accuracy_per_state
 
 
-def run_experiment(user_list,exp,hyperparam_file):
+def run_experiment(user_list,algo,hyperparam_file):
     # Load hyperparameters from JSON file
     with open(hyperparam_file) as f:
         hyperparams = json.load(f)
@@ -236,7 +223,7 @@ def run_experiment(user_list,exp,hyperparam_file):
                 'Discount': [best_gamma],
                 'Accuracy': [test_accuracy],
                 'StateAccuracy': [accuracy_per_state],
-                'Algorithm': ['Reinforce'],
+                'Algorithm': [algo],
                 'Reward': [reward]
             })], ignore_index=True)
             print("#TESTING User :{}, Threshold : {:.1f}, Accuracy: {}, LR: {} ,Discount: {}, Temperature: {}".format(user_name, thres,
@@ -245,7 +232,7 @@ def run_experiment(user_list,exp,hyperparam_file):
                                                                                                      best_gamma,best_temp))
         plotter.plot_main(y_accu, user_name)
         y_accu_all.append(y_accu)
-    title = exp
+    title = algo
 
     result_dataframe.to_csv("Experiments_Folder\\" + title + ".csv", index=False)
 
