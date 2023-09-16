@@ -1,144 +1,101 @@
-📦ForeCache_Models
- ┣ 📂A_Simplified_Implementation: Implementation of all algorithms: RUN python AlgorithmName.py
- ┃ ┣ 📜ActorCritic.py
- ┃ ┣ 📜NaiveModel.py
- ┃ ┣ 📜QLearning.py
- ┃ ┣ 📜SARSA.py
- ┃ ┣ 📜Win-Stay-Loose-Shift.py
- ┃ ┣ 📜environment2.py
- ┃ ┣ 📜misc.py
- ┃ ┗ 📜plotting.py
- ┣ 📂Experiments_Folder
- ┃ ┣ 📂Gold : Clean results of the experiments- Charts are produced from here
- ┃ ┃ ┣ 📜ActorCritic.csv
- ┃ ┃ ┣ 📜Greedy.csv
- ┃ ┃ ┣ 📜Naive.csv
- ┃ ┃ ┣ 📜QLearn.csv
- ┃ ┃ ┣ 📜Reinforce.csv
- ┃ ┃ ┣ 📜SARSA.csv
- ┃ ┃ ┣ 📜WSLS.csv
- ┃ ┃ ┗ 📜experiments-master-with-reinforce.csv
- ┃ ┣ 📂Results - Other rounds of experiments- Where new experiment data is dumped
- ┃ ┃ ┣ 📜ActorCritic.csv
- ┃ ┃ ┣ 📜Greedy.csv
- ┃ ┃ ┣ 📜Momentum.csv
- ┃ ┃ ┣ 📜Naive.csv
- ┃ ┃ ┣ 📜QLearn.csv
- ┃ ┃ ┣ 📜Random.csv
- ┃ ┃ ┣ 📜Reinforce.csv
- ┃ ┃ ┣ 📜SARSA.csv
- ┃ ┃ ┣ 📜Tamer_Q_Learning.csv
- ┃ ┃ ┣ 📜WSLS.csv
- ┃ ┃ ┗ 📜experiments-master_new.csv
- ┃ ┣ 📜.~Experiment_Visualization__79112.twbr
- ┃ ┣ 📜Experiment_Visualization.twb
- ┃ ┣ 📜Greedy.csv
- ┃ ┣ 📜HyperparameterPerState.csv
- ┃ ┣ 📜Momentum.csv
- ┃ ┣ 📜Naive.csv
- ┃ ┣ 📜experiments-master-original.csv
- ┃ ┣ 📜experiments-master.csv
- ┃ ┣ 📜~Experiment_Visualization__1016.twbr
- ┃ ┣ 📜~Experiment_Visualization__2216.twbr
- ┃ ┣ 📜~Experiment_Visualization__22640.twbr
- ┃ ┣ 📜~Experiment_Visualization__24008.twbr
- ┃ ┗ 📜~Experiment_Visualization__30052.twbr
- ┣ 📂ForeCache_Notebooks
- ┃ ┣ 📂Coallate_Experiment_Results : To combine all Algorithms results
- ┃ ┃ ┣ 📜Accuracy_per_state.ipynb
- ┃ ┃ ┣ 📜Actor-Critic-Correlations.ipynb
- ┃ ┃ ┣ 📜Merge-Experiments.ipynb
- ┃ ┃ ┗ 📜State_Accuracy_Fix.ipynb
- ┃ ┣ 📂Exploratory-N-Grams : Additional Exploration of the Dataset with NGrams
- ┃ ┃ ┣ 📜N-Gram-Context.ipynb
- ┃ ┃ ┣ 📜N-Gram-Longitudinal-Probabilistic.ipynb
- ┃ ┃ ┣ 📜N-Gram-Longitudinal.ipynb
- ┃ ┃ ┣ 📜N-Gram-Tuning.ipynb
- ┃ ┃ ┗ 📜N-Gram.ipynb
- ┃ ┣ 📂Probability_Distribution : Statistical Analysis of Datasets
- ┃ ┃ ┣ 📜Probability_Distribution-Annotated-Subtask.ipynb
- ┃ ┃ ┣ 📜Probability_Distribution-Context.ipynb
- ┃ ┃ ┣ 📜Probability_Distribution.ipynb
- ┃ ┃ ┗ 📜Probability_Reward.ipynb
- ┃ ┗ 📂Statistical_Tests : Statistical Tests- Includes ManKendall and other exploratory tests
- ┃ ┃ ┣ 📜ManKendall-Bandits.ipynb
- ┃ ┃ ┣ 📜ManKendall-trend.ipynb
- ┃ ┃ ┣ 📜ROI-Subtask-Wincoxon-Signed-Rank-Probability_Distribution.ipynb
- ┃ ┃ ┣ 📜Regions-Aggregate-Per-State.ipynb
- ┃ ┃ ┣ 📜Regions-Subtask-Wincoxon-Signed-Rank-Probability_Distribution.ipynb
- ┃ ┃ ┗ 📜Wincoxon-Signed-Rank-Probability_Distribution.ipynb
- ┣ 📂Tableau : Tableau workbooks for visulization 
- ┃ ┣ 📜2D-Region-Locations.twb
- ┃ ┣ 📜Actor-Critic-Hyperparamters-Threshold.twb
- ┃ ┣ 📜Actor_Critic_Experiments.twb
- ┃ ┣ 📜Aggregate-ROI-ManWhitneyResults.twb
- ┃ ┣ 📜Aggregate-Region-ManWhitneyResults.twb
- ┃ ┣ 📜Annotated-Subtasks.twb
- ┃ ┣ 📜Location-3D.twb
- ┃ ┣ 📜Location.twb
- ┃ ┣ 📜ManKendall.twb
- ┃ ┣ 📜ManWhitneyResults.twb
- ┃ ┣ 📜ROI-ManWhitneyResults.twb
- ┃ ┣ 📜Region-ManWhitneyResults.twb
- ┃ ┣ 📜State_Action_Loose_Probability.twb
- ┃ ┣ 📜Tableu-nonstationary.twb
- ┃ ┣ 📜Tableu-results.twb
- ┃ ┣ 📜~2D-Region-Locations__15868.twbr
- ┃ ┣ 📜~2D-Region-Locations__15872.twbr
- ┃ ┣ 📜~2D-Region-Locations__17844.twbr
- ┃ ┣ 📜~2D-Region-Locations__18836.twbr
- ┃ ┣ 📜~2D-Region-Locations__2060.twbr
- ┃ ┣ 📜~2D-Region-Locations__21912.twbr
- ┃ ┣ 📜~2D-Region-Locations__22000.twbr
- ┃ ┣ 📜~2D-Region-Locations__22860.twbr
- ┃ ┣ 📜~2D-Region-Locations__23348.twbr
- ┃ ┣ 📜~2D-Region-Locations__23680.twbr
- ┃ ┣ 📜~2D-Region-Locations__25436.twbr
- ┃ ┣ 📜~2D-Region-Locations__26504.twbr
- ┃ ┣ 📜~2D-Region-Locations__2716.twbr
- ┃ ┣ 📜~2D-Region-Locations__5644.twbr
- ┃ ┣ 📜~2D-Region-Locations__6576.twbr
- ┃ ┣ 📜~2D-Region-Locations__6592.twbr
- ┃ ┣ 📜~2D-Region-Locations__9288.twbr
- ┃ ┣ 📜~Actor-Critic-Hyperparamters-Threshold__12648.twbr
- ┃ ┣ 📜~Aggregate-ROI-ManWhitneyResults__28136.twbr
- ┃ ┣ 📜~Aggregate-Region-ManWhitneyResults__12776.twbr
- ┃ ┣ 📜~Aggregate-Region-ManWhitneyResults__17996.twbr
- ┃ ┣ 📜~Aggregate-Region-ManWhitneyResults__23340.twbr
- ┃ ┣ 📜~Aggregate-Region-ManWhitneyResults__2912.twbr
- ┃ ┣ 📜~Aggregate-Region-ManWhitneyResults__30532.twbr
- ┃ ┣ 📜~Annotated-Subtasks__332.twbr
- ┃ ┣ 📜~ManWhitneyResults__16892.twbr
- ┃ ┣ 📜~ROI-ManWhitneyResults__14924.twbr
- ┃ ┣ 📜~ROI-ManWhitneyResults__18904.twbr
- ┃ ┣ 📜~ROI-ManWhitneyResults__29924.twbr
- ┃ ┣ 📜~Region-ManWhitneyResults__29792.twbr
- ┃ ┣ 📜~Region-ManWhitneyResults__5572.twbr
- ┃ ┣ 📜~State_Action_Loose_Probability__8116.twbr
- ┃ ┗ 📜~Tableu-nonstationary__34204.twbr
- ┣ 📂data
- ┃ ┣ 📂NDSI-2D : All users processed interaction logs: Use Rainbow extension for easier exploration
- ┃ ┃ ┣ 📜Annotated-Probability Distribution -2D.twb
- ┃ ┃ ┣ 📜Probability Distribution.twb
- ┃ ┃ ┣ 📜Sensemaking-region.twb
- ┃ ┃ ┣ 📜U_1.csv
- ┃ ┃ ┣ 📜U_10.csv
- ┃ ┃ ┣ 📜U_11.csv
- ┃ ┃ ┣ 📜U_12.csv
- ┃ ┃ ┣ 📜U_13.csv
- ┃ ┃ ┣ 📜U_14.csv
- ┃ ┃ ┣ 📜U_15.csv
- ┃ ┃ ┣ 📜U_16.csv
- ┃ ┃ ┣ 📜U_17.csv
- ┃ ┃ ┣ 📜U_18.csv
- ┃ ┃ ┣ 📜U_19.csv
- ┃ ┃ ┣ 📜U_2.csv
- ┃ ┃ ┣ 📜U_20.csv
- ┃ ┃ ┣ 📜U_3.csv
- ┃ ┃ ┣ 📜U_4.csv
- ┃ ┃ ┣ 📜U_5.csv
- ┃ ┃ ┣ 📜U_6.csv
- ┃ ┃ ┣ 📜U_7.csv
- ┃ ┃ ┣ 📜U_8.csv
- ┃ ┃ ┣ 📜U_9.csv
- ┗ 📜sampled-hyperparameters-config.json
+# How Does User Behavior Evolve During Exploratory Visual Analysis?
+
+## ForeCache Models
+
+This repository contains implementations of various algorithms for FORECACHE USER STUDY, as well as scripts for experiments, data analysis, and visualization. Below is the folder structure and a brief description of each directory:
+
+## A_Simplified_Implementation
+
+This directory contains the simple implementation of all algorithms.
+- `ActorCritic.py`: Implementation of the Actor-Critic algorithm.
+- `NaiveModel.py`: Implementation of a naive caching model.
+- `QLearning.py`: Implementation of the Q-learning algorithm.
+- `SARSA.py`: Implementation of the SARSA algorithm.
+- `Win-Stay-Loose-Shift.py`: Implementation of the Win-Stay-Loose-Shift algorithm.
+- `environment2.py`: Environment setup for experiments.
+- `misc.py`: Miscellaneous utility functions.
+- `plotting.py`: Plotting functions for visualization.
+
+
+### Experiments_Folder
+
+This directory contains the results of experiments conducted using the implemented algorithms.
+
+### Gold
+
+Clean results of the experiments with charts generated for analysis.
+
+- `ActorCritic.csv`: Results of the Actor-Critic algorithm.
+- `Greedy.csv`: Results of the Greedy algorithm.
+- `Naive.csv`: Results of the Naive caching model.
+- `QLearn.csv`: Results of the Q-learning algorithm.
+- `Reinforce.csv`: Results of the Reinforce algorithm.
+- `SARSA.csv`: Results of the SARSA algorithm.
+- `WSLS.csv`: Results of the Win-Stay-Loose-Shift algorithm.
+- `experiments-master-with-reinforce.csv`: Additional experiment data for visualization
+
+### Results
+
+Other rounds of experiments, where new experiment data is stored.
+- `experiments-master_new.csv`: Additional experiment data.
+
+### Experiment Visualization
+
+Files related to experiment result visualization using Tableau- Paper plots
+
+### ForeCache_Notebooks
+
+Jupyter notebooks for data analysis and exploration.
+
+### Coallate_Experiment_Results
+
+Notebooks for combining results from various algorithms.
+
+- `Accuracy_per_state.ipynb`: Notebook for calculating accuracy per state.
+- `Actor-Critic-Correlations.ipynb`: Notebook for analyzing correlations in Actor-Critic results.
+- `Merge-Experiments.ipynb`: Notebook for merging experiment data.
+
+
+### Exploratory-N-Grams
+
+Additional exploration of the dataset using N-Grams.
+
+### Probability_Distribution
+
+Statistical analysis of datasets.
+
+- `Probability_Distribution-Annotated-Subtask.ipynb`: Notebook for annotated subtask analysis of probability distribution.
+- `Probability_Distribution-Context.ipynb`: Notebook for context analysis of probability distribution.
+- `Probability_Distribution.ipynb`: Notebook for general probability distribution analysis.
+- `Probability_Reward.ipynb`: Notebook for reward analysis.
+
+### Statistical_Tests
+
+Notebooks for conducting various statistical tests.
+
+- `ManKendall-Bandits.ipynb`: Notebook for Mann-Kendall test on bandit data.
+- `ManKendall-trend.ipynb`: Notebook for Mann-Kendall trend analysis.
+- `ROI-Subtask-Wincoxon-Signed-Rank-Probability_Distribution.ipynb`: Notebook for ROI subtask analysis using Wilcoxon signed-rank test.
+- `Regions-Aggregate-Per-State.ipynb`: Notebook for region aggregation per state analysis.
+- `Regions-Subtask-Wincoxon-Signed-Rank-Probability_Distribution.ipynb`: Notebook for region subtask analysis using Wilcoxon signed-rank test.
+- `Wincoxon-Signed-Rank-Probability_Distribution.ipynb`: Notebook for Wilcoxon signed-rank test on probability distribution.
+
+## Tableau
+
+Tableau workbooks for Log and Distribution visualization.
+
+## How to Run Algorithms
+
+In ForeCache Models/
+
+```bash
+python AlgorithmName.py
+```
+
+Example:
+
+To run the Actor-Critic algorithm, execute the following command in your terminal:
+
+```bash
+python ActorCritic.py
+```
