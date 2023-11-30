@@ -169,7 +169,7 @@ class misc:
         # pdb.set_trace()
         plt.title(title)
         location = 'figures/' + title
-        plt.savefig(location, bbox_inches='tight')
+        #plt.savefig(location, bbox_inches='tight')
         result_dataframe.to_csv("Experiments_Folder\\" + title + ".csv", index=False)
         plt.close()
 

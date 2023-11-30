@@ -1,0 +1,665 @@
+Interaction,Value,Time
+study begins,page loaded,1612023853484
+mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Title-nominal-y",1612023857242
+mouseout a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Title-nominal-y",1612023858522
+mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Title-nominal-y",1612023858523
+mouseout a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Title-nominal-y",1612023860022
+mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Title-nominal-y",1612023860022
+mouseout a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Title-nominal-y",1612023860755
+clicked on a field,add Creative_Type,1612023864748
+main chart changed because of clicking a field,"mark:bar;encoding:-quantitative-x<aggregate>count,Creative_Type-nominal-y",1612023865136
+clicked on a field,add Release_Date,1612023869060
+main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Release_Date-nominal-x",1612023869308
+clicked on a field,remove Release_Date,1612023883782
+main chart changed because of clicking a field,"mark:bar;encoding:-quantitative-x<aggregate>count,Creative_Type-nominal-y",1612023884208
+clicked on a field,add Production_Budget,1612023886703
+main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Production_Budget-quantitative-x<bin>",1612023886904
+mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Production_Budget-quantitative-x<bin>",1612023901922
+mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Production_Budget-quantitative-x<bin>",1612023911838
+mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Production_Budget-quantitative-x<bin>",1612023911839
+mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Production_Budget-quantitative-x<bin>",1612023911905
+clicked on a field,add Worldwide_Gross,1612023915141
+main chart changed because of clicking a field,"mark:point;encoding:Creative_Type-nominal-y,Production_Budget-quantitative-size,Worldwide_Gross-quantitative-x<bin>",1612023915491
+clicked on a field,remove Creative_Type,1612023919486
+main chart changed because of clicking a field,"mark:point;encoding:-quantitative-x<aggregate>count,Production_Budget-quantitative-y<aggregate>mean,Worldwide_Gross-quantitative-size<aggregate>mean",1612023919654
+mouseover on the specified chart,"mark:point;encoding:-quantitative-x<aggregate>count,Production_Budget-quantitative-y<aggregate>mean,Worldwide_Gross-quantitative-size<aggregate>mean",1612023923412
+mouseout on the specified chart,"mark:point;encoding:-quantitative-x<aggregate>count,Production_Budget-quantitative-y<aggregate>mean,Worldwide_Gross-quantitative-size<aggregate>mean",1612023928505
+clicked on a field,add Source,1612023930067
+main chart changed because of clicking a field,"mark:point;encoding:Production_Budget-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1612023930438
+mouseover on the specified chart,"mark:point;encoding:Production_Budget-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1612023933606
+mouseout on the specified chart,"mark:point;encoding:Production_Budget-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1612023959505
+mouseover on the specified chart,"mark:point;encoding:Production_Budget-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1612023960388
+mouseout on the specified chart,"mark:point;encoding:Production_Budget-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1612023961888
+mouseover on the specified chart,"mark:point;encoding:Production_Budget-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1612023968988
+mouseout on the specified chart,"mark:point;encoding:Production_Budget-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1612023969021
+mouseover on the specified chart,"mark:point;encoding:Production_Budget-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1612023971639
+mouseout on the specified chart,"mark:point;encoding:Production_Budget-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1612023971672
+mouseover on the specified chart,"mark:point;encoding:Production_Budget-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1612023971672
+mouseout on the specified chart,"mark:point;encoding:Production_Budget-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1612023974972
+mouseover on the specified chart,"mark:point;encoding:Production_Budget-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1612023974972
+mouseout on the specified chart,"mark:point;encoding:Production_Budget-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1612023974988
+clicked on a field,"tried to add IMDB_Rating, but failed because already selected 3 fields",1612023981260
+mouseover on the specified chart,"mark:point;encoding:Production_Budget-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1612023982655
+mouseout on the specified chart,"mark:point;encoding:Production_Budget-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1612023982672
+mouseover on the specified chart,"mark:point;encoding:Production_Budget-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1612023982672
+mouseout on the specified chart,"mark:point;encoding:Production_Budget-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1612023982689
+clicked on a field,remove Production_Budget,1612023984159
+main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1612023984589
+clicked on a field,add IMDB_Rating,1612023986276
+main chart changed because of clicking a field,"mark:point;encoding:IMDB_Rating-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1612023986501
+mouseover on the specified chart,"mark:point;encoding:IMDB_Rating-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1612023994231
+mouseout on the specified chart,"mark:point;encoding:IMDB_Rating-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1612023995816
+mouseover on the specified chart,"mark:point;encoding:IMDB_Rating-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1612023998155
+mouseout on the specified chart,"mark:point;encoding:IMDB_Rating-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1612023998172
+mouseover on the specified chart,"mark:point;encoding:IMDB_Rating-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1612023998172
+mouseout on the specified chart,"mark:point;encoding:IMDB_Rating-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1612023998222
+mouseover on the specified chart,"mark:point;encoding:IMDB_Rating-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1612023999088
+mouseout on the specified chart,"mark:point;encoding:IMDB_Rating-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1612023999122
+mouseover on the specified chart,"mark:point;encoding:IMDB_Rating-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1612023999122
+mouseout on the specified chart,"mark:point;encoding:IMDB_Rating-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1612023999922
+mouseover on the specified chart,"mark:point;encoding:IMDB_Rating-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1612024001022
+mouseout on the specified chart,"mark:point;encoding:IMDB_Rating-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1612024001155
+mouseover on the specified chart,"mark:point;encoding:IMDB_Rating-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1612024001155
+mouseout on the specified chart,"mark:point;encoding:IMDB_Rating-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1612024001388
+added chart to bookmark,"mark:point;encoding:IMDB_Rating-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1612024002260
+typed in answer,O,1612024005602
+typed in answer,Or,1612024005762
+typed in answer,Ori,1612024005874
+typed in answer,Orig,1612024005986
+typed in answer,Origi,1612024006066
+typed in answer,Origim,1612024006242
+typed in answer,Origi,1612024006881
+typed in answer,Origin,1612024007090
+typed in answer,Origina,1612024007186
+typed in answer,Original,1612024007314
+typed in answer,Original ,1612024007426
+typed in answer,Original s,1612024007490
+typed in answer,Original sc,1612024007634
+typed in answer,Original scr,1612024007842
+typed in answer,Original scre,1612024007986
+typed in answer,Original scree,1612024008066
+typed in answer,Original screen,1612024008178
+typed in answer,Original screenp,1612024008674
+typed in answer,Original screenpl,1612024008882
+typed in answer,Original screenpla,1612024008946
+typed in answer,Original screenplay,1612024009170
+typed in answer,Original screenplay ,1612024009298
+typed in answer,Original screenplay s,1612024009410
+typed in answer,Original screenplay se,1612024009586
+typed in answer,Original screenplay see,1612024009682
+typed in answer,Original screenplay seem,1612024009826
+typed in answer,Original screenplay seems,1612024009970
+typed in answer,Original screenplay seems ,1612024010114
+typed in answer,Original screenplay seems t,1612024010226
+typed in answer,Original screenplay seems to,1612024010274
+typed in answer,Original screenplay seems to ,1612024010370
+typed in answer,Original screenplay seems to b,1612024010482
+typed in answer,Original screenplay seems to be,1612024010530
+typed in answer,Original screenplay seems to be ,1612024010626
+typed in answer,Original screenplay seems to be t,1612024010738
+typed in answer,Original screenplay seems to be th,1612024010802
+typed in answer,Original screenplay seems to be the,1612024010914
+typed in answer,Original screenplay seems to be the ,1612024010995
+typed in answer,Original screenplay seems to be the m,1612024011058
+typed in answer,Original screenplay seems to be the mo,1612024011250
+typed in answer,Original screenplay seems to be the mos,1612024011282
+typed in answer,Original screenplay seems to be the most,1612024011458
+typed in answer,Original screenplay seems to be the most ,1612024011538
+typed in answer,Original screenplay seems to be the most c,1612024011682
+typed in answer,Original screenplay seems to be the most co,1612024011746
+typed in answer,Original screenplay seems to be the most com,1612024011970
+typed in answer,Original screenplay seems to be the most comm,1612024012098
+typed in answer,Original screenplay seems to be the most commo,1612024012259
+typed in answer,Original screenplay seems to be the most common,1612024012386
+typed in answer,Original screenplay seems to be the most common ,1612024012594
+typed in answer,Original screenplay seems to be the most common a,1612024014242
+typed in answer,Original screenplay seems to be the most common an,1612024014386
+typed in answer,Original screenplay seems to be the most common and,1612024014738
+typed in answer,Original screenplay seems to be the most common and ,1612024014898
+typed in answer,Original screenplay seems to be the most common and w,1612024015346
+typed in answer,Original screenplay seems to be the most common and wi,1612024015410
+typed in answer,Original screenplay seems to be the most common and wid,1612024015538
+typed in answer,Original screenplay seems to be the most common and wide,1612024015682
+typed in answer,Original screenplay seems to be the most common and widel,1612024015794
+typed in answer,Original screenplay seems to be the most common and widely,1612024015938
+typed in answer,Original screenplay seems to be the most common and widely ,1612024016130
+typed in answer,Original screenplay seems to be the most common and widely,1612024018178
+typed in answer,Original screenplay seems to be the most common and widel,1612024019234
+typed in answer,Original screenplay seems to be the most common and wide,1612024019442
+typed in answer,Original screenplay seems to be the most common and wide ,1612024019858
+typed in answer,Original screenplay seems to be the most common and wide s,1612024020002
+typed in answer,Original screenplay seems to be the most common and wide so,1612024020082
+typed in answer,Original screenplay seems to be the most common and wide sou,1612024020242
+typed in answer,Original screenplay seems to be the most common and wide sour,1612024020307
+typed in answer,Original screenplay seems to be the most common and wide sourc,1612024020466
+typed in answer,Original screenplay seems to be the most common and wide source,1612024020626
+typed in answer,Original screenplay seems to be the most common and wide source ,1612024020737
+typed in answer,Original screenplay seems to be the most common and wide source o,1612024020801
+typed in answer,Original screenplay seems to be the most common and wide source of,1612024020914
+typed in answer,Original screenplay seems to be the most common and wide source of ,1612024021010
+typed in answer,Original screenplay seems to be the most common and wide source of m,1612024022339
+typed in answer,Original screenplay seems to be the most common and wide source of mo,1612024022514
+typed in answer,Original screenplay seems to be the most common and wide source of mov,1612024022610
+typed in answer,Original screenplay seems to be the most common and wide source of movi,1612024022738
+typed in answer,Original screenplay seems to be the most common and wide source of movie,1612024022866
+typed in answer,Original screenplay seems to be the most common and wide source of movies,1612024023058
+mouseover on the specified chart,"mark:point;encoding:IMDB_Rating-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1612024024189
+mouseout on the specified chart,"mark:point;encoding:IMDB_Rating-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1612024024206
+mouseover on the specified chart,"mark:point;encoding:IMDB_Rating-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1612024024206
+mouseout on the specified chart,"mark:point;encoding:IMDB_Rating-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1612024024672
+mouseover on the specified chart,"mark:point;encoding:IMDB_Rating-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1612024024672
+mouseout on the specified chart,"mark:point;encoding:IMDB_Rating-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1612024024689
+mouseover on the specified chart,"mark:point;encoding:IMDB_Rating-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1612024026955
+mouseout on the specified chart,"mark:point;encoding:IMDB_Rating-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1612024027005
+mouseover on the specified chart,"mark:point;encoding:IMDB_Rating-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1612024029606
+mouseout on the specified chart,"mark:point;encoding:IMDB_Rating-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1612024029989
+clicked on a field,remove IMDB_Rating,1612024030984
+main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1612024031427
+clicked on a field,add Production_Budget,1612024038184
+main chart changed because of clicking a field,"mark:point;encoding:Production_Budget-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1612024038355
+mouseover on the specified chart,"mark:point;encoding:Production_Budget-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1612024041282
+mouseout on the specified chart,"mark:point;encoding:Production_Budget-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1612024042260
+mouseover on the specified chart,"mark:point;encoding:Production_Budget-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1612024044533
+mouseout on the specified chart,"mark:point;encoding:Production_Budget-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1612024044879
+mouseover on the specified chart,"mark:point;encoding:Production_Budget-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1612024045889
+mouseout on the specified chart,"mark:point;encoding:Production_Budget-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1612024045989
+mouseover on the specified chart,"mark:point;encoding:Production_Budget-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1612024045989
+mouseout on the specified chart,"mark:point;encoding:Production_Budget-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1612024046006
+mouseover on the specified chart,"mark:point;encoding:Production_Budget-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1612024046172
+mouseout on the specified chart,"mark:point;encoding:Production_Budget-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1612024046623
+mouseover on the specified chart,"mark:point;encoding:Production_Budget-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1612024046623
+mouseout on the specified chart,"mark:point;encoding:Production_Budget-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1612024046672
+added chart to bookmark,"mark:point;encoding:Production_Budget-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1612024047566
+clicked on a field,remove Production_Budget,1612024050986
+main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1612024051348
+clicked on a field,remove undefined,1612024052154
+main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1612024052323
+clicked on a field,add Major_Genre,1612024054263
+main chart changed because of clicking a field,"mark:point;encoding:Major_Genre-nominal-x,Source-nominal-y,Worldwide_Gross-quantitative-size",1612024054453
+clicked on a field,remove Source,1612024055651
+main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Major_Genre-nominal-y,Worldwide_Gross-quantitative-x<bin>",1612024055819
+clicked on a field,remove Worldwide_Gross,1612024060904
+main chart changed because of clicking a field,"mark:bar;encoding:-quantitative-x<aggregate>count,Major_Genre-nominal-y",1612024061084
+clicked on a field,add Production_Budget,1612024062272
+main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Major_Genre-nominal-y,Production_Budget-quantitative-x<bin>",1612024062447
+mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Major_Genre-nominal-y,Production_Budget-quantitative-x<bin>",1612024079372
+mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Major_Genre-nominal-y,Production_Budget-quantitative-x<bin>",1612024079954
+mouseover a related chart,"mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Source-nominal-color",1612024079954
+mouseout a related chart,"mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Source-nominal-color",1612024080607
+mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Major_Genre-nominal-y,Production_Budget-quantitative-x<bin>",1612024084470
+mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Major_Genre-nominal-y,Production_Budget-quantitative-x<bin>",1612024085930
+mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Major_Genre-nominal-y,Production_Budget-quantitative-x<bin>",1612024086207
+mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Major_Genre-nominal-y,Production_Budget-quantitative-x<bin>",1612024097406
+clicked on a field,add Creative_Type,1612024103022
+main chart changed because of clicking a field,"mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Production_Budget-quantitative-size",1612024103357
+clicked on a field,remove Production_Budget,1612024134402
+main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-x,Major_Genre-nominal-y",1612024134770
+clicked on a field,add IMDB_Rating,1612024136684
+main chart changed because of clicking a field,"mark:point;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-size,Major_Genre-nominal-y",1612024136856
+mouseover on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-size,Major_Genre-nominal-y",1612024146436
+mouseout on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-size,Major_Genre-nominal-y",1612024149062
+mouseover on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-size,Major_Genre-nominal-y",1612024149645
+mouseout on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-size,Major_Genre-nominal-y",1612024177789
+typed in answer,"Original screenplay seems to be the most common and wide source of movies,",1612024179474
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, ",1612024179698
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, K",1612024180114
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Ki",1612024180354
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kid",1612024180498
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids",1612024180674
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids ",1612024180786
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids f",1612024180914
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fi",1612024181010
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fic",1612024181138
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fict",1612024181746
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids ficti",1612024181810
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fictio",1612024181874
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction",1612024182066
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction ",1612024182723
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction s",1612024182818
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction se",1612024182978
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction see",1612024183106
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seem",1612024183170
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seem ",1612024183300
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seem s",1612024183301
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seem st",1612024183587
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seem sto",1612024183650
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seem st",1612024184162
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seem s",1612024184306
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seem ",1612024184450
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seem",1612024184594
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems",1612024184706
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems ",1612024184818
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems t",1612024184994
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to",1612024185122
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to ",1612024185218
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to h",1612024185346
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to ha",1612024185410
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to hav",1612024185586
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have",1612024185762
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have ",1612024185826
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a",1612024185954
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a ",1612024186019
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a v",1612024186146
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a ve",1612024186306
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a ver",1612024186434
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very",1612024186626
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very ",1612024186754
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very h",1612024187297
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very hi",1612024187378
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very hig",1612024187474
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high",1612024187554
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high ",1612024187682
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high i",1612024187890
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high im",1612024188098
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high i",1612024188386
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high ",1612024188546
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high I",1612024188914
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IM",1612024189170
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMD",1612024189346
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB",1612024189538
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB ",1612024189698
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB r",1612024189810
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB ra",1612024190002
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rat",1612024190210
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rati",1612024190306
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB ratin",1612024190418
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating",1612024191186
+mouseover on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-size,Major_Genre-nominal-y",1612024191655
+mouseout on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-size,Major_Genre-nominal-y",1612024191672
+mouseover on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-size,Major_Genre-nominal-y",1612024191672
+mouseout on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-size,Major_Genre-nominal-y",1612024191756
+mouseover on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-size,Major_Genre-nominal-y",1612024191756
+mouseout on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-size,Major_Genre-nominal-y",1612024191805
+added chart to bookmark,"mark:point;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-size,Major_Genre-nominal-y",1612024192698
+mouseover on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-size,Major_Genre-nominal-y",1612024193261
+mouseout on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-size,Major_Genre-nominal-y",1612024193427
+clicked on a field,remove IMDB_Rating,1612024195574
+main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-x,Major_Genre-nominal-y",1612024195939
+clicked on a field,add Rotten_Tomatoes_Rating,1612024199336
+main chart changed because of clicking a field,"mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-size",1612024199500
+mouseover on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-size",1612024204881
+mouseout on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-size",1612024215005
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating ",1612024216354
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating b",1612024216721
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating bu",1612024216849
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating but",1612024216962
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating but ",1612024217073
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating but n",1612024218273
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating but no",1612024218338
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating but not",1612024218482
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating but not ",1612024218562
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating but not v",1612024218737
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating but not ve",1612024218913
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating but not ver",1612024219058
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating but not very",1612024219217
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating but not very ",1612024219361
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating but not very g",1612024219457
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating but not very gi",1612024219554
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating but not very git",1612024219698
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating but not very gith",1612024219729
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating but not very git",1612024220322
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating but not very gi",1612024220465
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating but not very g",1612024220594
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating but not very ",1612024220738
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating but not very h",1612024220834
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating but not very hi",1612024220946
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating but not very hig",1612024221041
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating but not very high",1612024221138
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating but not very hight",1612024221234
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating but not very hight ",1612024221458
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating but not very hight R",1612024221906
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating but not very hight RT",1612024222049
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating but not very hight RT ",1612024222177
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating but not very hight RT r",1612024222290
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating but not very hight RT ra",1612024222481
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating but not very hight RT rat",1612024222674
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating but not very hight RT rati",1612024222802
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating but not very hight RT ratin",1612024222882
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating but not very hight RT rating",1612024223041
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating but not very hight RT rating.",1612024223138
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating but not very hight RT rating. ",1612024223873
+mouseover on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-size",1612024224705
+mouseout on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-size",1612024224722
+mouseover on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-size",1612024224722
+mouseout on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-size",1612024242122
+mouseover on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-size",1612024242855
+mouseout on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-size",1612024242872
+mouseover on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-size",1612024242872
+mouseout on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-size",1612024242939
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating ",1612024247250
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating",1612024247441
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB ratin",1612024247585
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rati",1612024247713
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rat",1612024247858
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB ra",1612024247985
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB r",1612024248145
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB ra",1612024248498
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB r",1612024248754
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB ",1612024248881
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB a",1612024248961
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB ad",1612024249201
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB a",1612024249537
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB an",1612024249906
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and",1612024250002
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and ",1612024250113
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and R",1612024250386
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT",1612024250563
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT ",1612024250737
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT r",1612024252082
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT ra",1612024252257
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rat",1612024252482
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rati",1612024252578
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT ratin",1612024252674
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating",1612024252849
+mouseover on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-size",1612024254272
+mouseout on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-size",1612024254855
+mouseover on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-size",1612024254855
+mouseout on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-size",1612024254872
+clicked on a field,remove Rotten_Tomatoes_Rating,1612024255793
+main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-x,Major_Genre-nominal-y",1612024256229
+clicked on a field,add IMDB_Rating,1612024260680
+main chart changed because of clicking a field,"mark:point;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-size,Major_Genre-nominal-y",1612024260884
+mouseover on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-size,Major_Genre-nominal-y",1612024264019
+mouseout on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-size,Major_Genre-nominal-y",1612024265406
+mouseover on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-size,Major_Genre-nominal-y",1612024265561
+mouseout on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-size,Major_Genre-nominal-y",1612024266654
+mouseover on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-size,Major_Genre-nominal-y",1612024267045
+mouseout on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-size,Major_Genre-nominal-y",1612024268217
+clicked on a field,remove IMDB_Rating,1612024269574
+main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-x,Major_Genre-nominal-y",1612024269778
+clicked on a field,add Rotten_Tomatoes_Rating,1612024271081
+main chart changed because of clicking a field,"mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-size",1612024271286
+mouseover on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-size",1612024278233
+mouseout on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-size",1612024278573
+mouseover on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-size",1612024278573
+mouseout on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-size",1612024280388
+added chart to bookmark,"mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-size",1612024281422
+mouseover on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-size",1612024283428
+mouseout on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-size",1612024283597
+clicked on a field,remove Rotten_Tomatoes_Rating,1612024286316
+main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-x,Major_Genre-nominal-y",1612024286730
+clicked on a field,add Running_Time_min,1612024288085
+main chart changed because of clicking a field,"mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Running_Time_min-quantitative-size",1612024288285
+mouseover on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Running_Time_min-quantitative-size",1612024295300
+mouseout on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Running_Time_min-quantitative-size",1612024298436
+mouseover on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Running_Time_min-quantitative-size",1612024299005
+mouseout on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Running_Time_min-quantitative-size",1612024309106
+clicked on a field,remove Major_Genre,1612024311326
+main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Running_Time_min-quantitative-x<bin>",1612024311729
+mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Running_Time_min-quantitative-x<bin>",1612024314497
+mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Running_Time_min-quantitative-x<bin>",1612024331072
+added chart to bookmark,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Running_Time_min-quantitative-x<bin>",1612024333665
+mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Running_Time_min-quantitative-x<bin>",1612024333833
+mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Running_Time_min-quantitative-x<bin>",1612024337272
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating.",1612024339202
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. ",1612024339314
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. C",1612024339569
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cp",1612024339729
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cpm",1612024340289
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cpme",1612024340465
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cpm",1612024340945
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cp",1612024341089
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cpm",1612024341282
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cpmt",1612024341394
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cpmte",1612024341601
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cpmt",1612024342002
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cpm",1612024342161
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cp",1612024342305
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cpn",1612024343025
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cpnt",1612024343332
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cpnte",1612024343505
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cpntem",1612024343937
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cpntemp",1612024344193
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cpntempo",1612024344369
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cpntempor",1612024344593
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cpntempo",1612024344929
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cpntemp",1612024345105
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cpntem",1612024345249
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cpnte",1612024345409
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cpnt",1612024345569
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cpn",1612024345729
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cp",1612024345873
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cpn",1612024346545
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cpnt",1612024346785
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cpnte",1612024346961
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cpntem",1612024347090
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cpntemp",1612024347409
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cpntempo",1612024347585
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cpntempor",1612024347745
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cpntempo",1612024348385
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cpntemp",1612024348561
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cpntem",1612024348721
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cpnte",1612024348881
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cpnt",1612024349041
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cpn",1612024349201
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cp",1612024349361
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. C",1612024351122
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Co",1612024351362
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Con",1612024351553
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cont",1612024351793
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Conte",1612024351969
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contem",1612024352050
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemp",1612024352242
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contempo",1612024352401
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contempor",1612024352593
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contempora",1612024352833
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporar",1612024353057
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary",1612024353233
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary ",1612024353425
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary f",1612024353777
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fi",1612024353873
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fic",1612024353954
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fict",1612024354129
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary ficti",1612024354257
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fictio",1612024354290
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction",1612024354625
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction ",1612024354929
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction t",1612024356593
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction ty",1612024356818
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction typ",1612024356945
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type",1612024357106
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type ",1612024357362
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type m",1612024357473
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type mo",1612024357633
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type mov",1612024357666
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movi",1612024357825
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movie",1612024357889
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies",1612024358049
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies ",1612024358129
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies t",1612024358273
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies ty",1612024358913
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typ",1612024359026
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typi",1612024359185
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typic",1612024359266
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typica",1612024359473
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typical",1612024359554
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typicall",1612024359681
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically",1612024360417
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically ",1612024360530
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically r",1612024360753
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically ru",1612024360818
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run",1612024360993
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run ",1612024361089
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run b",1612024361153
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run be",1612024361233
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run bet",1612024361394
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run betw",1612024361585
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run betwe",1612024361729
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run betwee",1612024361857
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between",1612024361922
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between ",1612024362001
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1",1612024363378
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.",1612024363505
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5",1612024363825
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 ",1612024364161
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 h",1612024364257
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 hr",1612024364386
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 hrs",1612024364593
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 hr",1612024364929
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 h",1612024365089
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 ",1612024365249
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 -",1612024365409
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - ",1612024365905
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2",1612024366561
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 ",1612024366721
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 h",1612024366849
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hr",1612024366977
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs",1612024367185
+mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Running_Time_min-quantitative-x<bin>",1612024368155
+mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Running_Time_min-quantitative-x<bin>",1612024368239
+mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Running_Time_min-quantitative-x<bin>",1612024368239
+mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Running_Time_min-quantitative-x<bin>",1612024368255
+mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Running_Time_min-quantitative-x<bin>",1612024368888
+mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Running_Time_min-quantitative-x<bin>",1612024368905
+mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Running_Time_min-quantitative-x<bin>",1612024368905
+mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Running_Time_min-quantitative-x<bin>",1612024369655
+clicked on a field,remove Running_Time_min,1612024371485
+main chart changed because of clicking a field,"mark:bar;encoding:-quantitative-x<aggregate>count,Creative_Type-nominal-y",1612024371941
+clicked on a field,add Worldwide_Gross,1612024373183
+main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Worldwide_Gross-quantitative-x<bin>",1612024373357
+mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Worldwide_Gross-quantitative-x<bin>",1612024380018
+mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Worldwide_Gross-quantitative-x<bin>",1612024382800
+clicked on a field,remove Worldwide_Gross,1612024383747
+main chart changed because of clicking a field,"mark:bar;encoding:-quantitative-x<aggregate>count,Creative_Type-nominal-y",1612024384136
+clicked on a field,add Release_Date,1612024385667
+main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Release_Date-nominal-x",1612024385862
+mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Release_Date-nominal-x",1612024399466
+mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Release_Date-nominal-x",1612024403105
+mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Release_Date-nominal-x",1612024403739
+mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Release_Date-nominal-x",1612024403755
+mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Release_Date-nominal-x",1612024403756
+mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Release_Date-nominal-x",1612024405855
+mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Release_Date-nominal-x",1612024408789
+mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Release_Date-nominal-x",1612024408822
+mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Release_Date-nominal-x",1612024408822
+mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Release_Date-nominal-x",1612024408839
+mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Release_Date-nominal-x",1612024408839
+mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Release_Date-nominal-x",1612024408889
+added chart to bookmark,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Release_Date-nominal-x",1612024409997
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs ",1612024414690
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs a",1612024415265
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs an",1612024415378
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and",1612024415666
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and ",1612024415841
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and g",1612024415906
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and ge",1612024416066
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and get",1612024416226
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets",1612024416433
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets ",1612024416530
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets r",1612024416625
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets re",1612024416769
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets rel",1612024416850
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets rele",1612024416946
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets relea",1612024417106
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets releas",1612024417250
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets release",1612024417394
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released",1612024417554
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released ",1612024417697
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released a",1612024417985
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released al",1612024418754
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all",1612024418977
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all ",1612024419201
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all t",1612024419313
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all th",1612024419985
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all thr",1612024420450
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all thro",1612024420626
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throu",1612024420817
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throug",1612024420914
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all through",1612024421041
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all througho",1612024421281
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughou",1612024421457
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout",1612024421538
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout ",1612024421681
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout t",1612024421809
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout th",1612024421889
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the",1612024422001
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the ",1612024422097
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the y",1612024422193
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the ye",1612024422258
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the yea",1612024422433
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year",1612024422642
+mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Release_Date-nominal-x",1612024424055
+mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Release_Date-nominal-x",1612024424089
+mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Release_Date-nominal-x",1612024424089
+mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Release_Date-nominal-x",1612024431805
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year.",1612024433506
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. ",1612024433665
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. H",1612024434033
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Ho",1612024434178
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Hos",1612024434290
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Hosp",1612024434401
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Hospt",1612024434530
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Hosp",1612024434897
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Hos",1612024435059
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Ho",1612024435201
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. H",1612024435346
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Hs",1612024435586
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. H",1612024436065
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Hi",1612024436321
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. His",1612024436386
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Hist",1612024436593
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Histo",1612024436978
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Histor",1612024437153
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Histori",1612024437281
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historic",1612024437393
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historica",1612024437601
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical",1612024437617
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical ",1612024437762
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical f",1612024437905
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fi",1612024438081
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fic",1612024438225
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fict",1612024438417
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical ficti",1612024438497
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fictio",1612024438545
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction",1612024438705
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction ",1612024440770
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction i",1612024443906
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction in",1612024444066
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction in ",1612024444225
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction in",1612024444674
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction i",1612024444817
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction is",1612024444897
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction is ",1612024445025
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction is m",1612024445329
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction is mo",1612024445506
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction is mos",1612024445569
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction is most",1612024445746
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction is mostl",1612024445841
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction is mostly",1612024445922
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction is mostly ",1612024446049
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction is mostly a",1612024446178
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction is mostly a ",1612024446257
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction is mostly a y",1612024446402
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction is mostly a ye",1612024446465
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction is mostly a yea",1612024446641
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction is mostly a year",1612024446849
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction is mostly a year ",1612024447009
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction is mostly a year e",1612024447121
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction is mostly a year en",1612024447233
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction is mostly a year end",1612024447346
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction is mostly a year end ",1612024447457
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction is mostly a year end y",1612024447633
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction is mostly a year end ",1612024448018
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction is mostly a year end r",1612024448194
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction is mostly a year end re",1612024448385
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction is mostly a year end rel",1612024448482
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction is mostly a year end rele",1612024448578
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction is mostly a year end relea",1612024448753
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction is mostly a year end releas",1612024448881
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction is mostly a year end release",1612024449057
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction is mostly a year end release.",1612024451410
+typed in answer,"Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction is mostly a year end release",1612024453522
+changed ptask ans of confidence-udata,agree,1612024455806
+changed ptask ans of confidence-ans,agree,1612024457340
+changed ptask ans of efficiency,sagree,1612024459368
+changed ptask ans of ease-of-use,agree,1612024460962
+changed ptask ans of utility,agree,1612024462748
+changed ptask ans of overall,agree,1612024466796
+hit the submit button,,1612024467565
+submission failed,did not bookmark the correct number of charts,1612024470441
+mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Release_Date-nominal-x",1612024471156
+mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Release_Date-nominal-x",1612024471206
+opened window,bookmark popup,1612024471799
+deleted chart from bookmark,"mark:point;encoding:Production_Budget-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1612024511108
+hit the submit button,,1612024513694
+submitted successfully,,1612024513695

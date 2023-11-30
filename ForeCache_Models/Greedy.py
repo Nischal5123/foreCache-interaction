@@ -1,4 +1,4 @@
-import environment2 as environment2
+import environment2_changepoint as environment2
 import numpy as np
 from collections import defaultdict
 import matplotlib.pyplot as plt

@@ -1,0 +1,1115 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20231.23.0806.1229                               -->
+<workbook original-version='18.1' source-build='2023.1.5 (20231.23.0806.1229)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='tableau' inline='true' name='federated.1grengd1tbkprc10puxi800a8640' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='tableau_competing_movies_interactions' name='textscan.11c6vf315fevxa18tpocs1nbfcl9'>
+            <connection class='textscan' directory='/Users/aryal/Desktop/ForeCache/foreCache-interaction/Recommendation_Models/data/zheng' filename='tableau_competing_movies_interactions.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.11c6vf315fevxa18tpocs1nbfcl9' name='tableau_competing_movies_interactions.csv' table='[tableau_competing_movies_interactions#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='index' ordinal='0' />
+            <column datatype='string' name='user' ordinal='1' />
+            <column datatype='integer' name='interaction_session' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.11c6vf315fevxa18tpocs1nbfcl9' name='tableau_competing_movies_interactions.csv' table='[tableau_competing_movies_interactions#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='index' ordinal='0' />
+            <column datatype='string' name='user' ordinal='1' />
+            <column datatype='integer' name='interaction_session' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[tableau_competing_movies_interactions.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>index</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[index]</local-name>
+            <parent-name>[tableau_competing_movies_interactions.csv]</parent-name>
+            <remote-alias>index</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_competing_movies_interactions.csv_C981EC4CE665475F89EF0F7AF4ACAA8C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>user</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[user]</local-name>
+            <parent-name>[tableau_competing_movies_interactions.csv]</parent-name>
+            <remote-alias>user</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_competing_movies_interactions.csv_C981EC4CE665475F89EF0F7AF4ACAA8C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>interaction_session</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[interaction_session]</local-name>
+            <parent-name>[tableau_competing_movies_interactions.csv]</parent-name>
+            <remote-alias>interaction_session</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_competing_movies_interactions.csv_C981EC4CE665475F89EF0F7AF4ACAA8C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='tableau_competing_movies_interactions.csv' datatype='table' name='[__tableau_internal_object_id__].[tableau_competing_movies_interactions.csv_C981EC4CE665475F89EF0F7AF4ACAA8C]' role='measure' type='quantitative' />
+      <column aggregation='Sum' caption='Index' datatype='integer' name='[index]' role='dimension' type='ordinal' />
+      <column caption='Interaction Session - Split 1' datatype='string' hidden='true' name='[interaction_session - Split 1]' role='dimension' type='nominal' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.1grengd1tbkprc10puxi800a8640].[interaction_session]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [interaction_session], &quot;[&quot;, 1 ) )' />
+      </column>
+      <column caption='Interaction Session' datatype='integer' name='[interaction_session]' role='dimension' type='ordinal' />
+      <column caption='User' datatype='string' name='[user]' role='dimension' type='nominal' />
+      <column-instance column='[interaction_session]' derivation='None' name='[none:interaction_session:ok]' pivot='key' type='ordinal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:interaction_session:ok]' type='palette'>
+            <map to='#499894'>
+              <bucket>10</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>39</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>65</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>99</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>148</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>235</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>317</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>349</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>400</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>473</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>620</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>690</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>780</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>1</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>27</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>56</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>91</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>130</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>185</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>308</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>335</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>371</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>438</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>597</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>671</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>743</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>5</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>31</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>60</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>95</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>134</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>202</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>312</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>344</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>387</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>455</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>616</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>675</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>762</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>19</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>43</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>76</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>112</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>164</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>291</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>327</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>362</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>405</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>506</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>625</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>706</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>11</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>40</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>73</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>109</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>150</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>236</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>318</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>350</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>401</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>474</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>621</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>691</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>1155</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>6</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>32</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>61</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>96</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>145</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>217</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>314</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>345</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>388</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>456</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>617</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>676</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>763</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>25</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>49</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>82</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>128</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>183</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>303</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>333</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>368</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>420</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>587</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>656</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>741</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>2</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>28</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>57</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>92</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>131</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>199</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>309</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>336</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>381</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>439</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>600</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>672</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>746</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>23</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>47</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>80</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>116</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>181</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>300</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>331</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>366</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>418</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>542</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>638</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>725</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>8</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>37</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>62</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>97</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>146</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>218</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>315</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>346</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>389</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>470</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>618</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>688</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>777</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>20</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>44</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>77</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>113</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>165</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>293</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>328</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>363</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>406</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>507</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>626</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>707</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>21</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>45</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>78</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>114</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>166</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>294</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>329</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>364</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>416</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>508</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>627</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>723</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>24</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>48</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>81</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>127</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>182</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>302</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>332</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>367</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>419</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>584</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>652</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>729</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>26</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>55</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>83</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>129</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>184</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>304</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>334</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>369</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>436</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>588</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>669</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>742</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>12</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>41</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>74</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>110</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>151</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>253</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>320</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>351</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>402</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>489</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>622</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>692</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>9</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>38</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>64</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>98</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>147</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>219</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>316</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>348</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>398</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>472</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>619</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>689</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>778</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>3</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>29</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>58</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>93</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>132</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>200</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>310</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>337</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>384</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>440</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>601</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>673</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>759</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>22</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>46</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>79</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>115</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>167</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>296</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>330</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>365</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>417</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>524</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>635</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>724</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>13</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>42</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>75</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>111</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>163</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>290</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>326</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>354</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>404</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>490</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>623</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>705</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>4</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>30</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>59</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>94</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>133</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>201</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>311</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>338</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>385</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>453</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>605</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>674</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>760</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='tableau_competing_movies_interactions.csv' id='tableau_competing_movies_interactions.csv_C981EC4CE665475F89EF0F7AF4ACAA8C'>
+            <properties context=''>
+              <relation connection='textscan.11c6vf315fevxa18tpocs1nbfcl9' name='tableau_competing_movies_interactions.csv' table='[tableau_competing_movies_interactions#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='index' ordinal='0' />
+                  <column datatype='string' name='user' ordinal='1' />
+                  <column datatype='integer' name='interaction_session' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Users&apos; changing preferences: attributes and mark </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tableau' name='federated.1grengd1tbkprc10puxi800a8640' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1grengd1tbkprc10puxi800a8640'>
+            <column aggregation='Sum' caption='Index' datatype='integer' name='[index]' role='dimension' type='ordinal' />
+            <column caption='Interaction Session' datatype='integer' name='[interaction_session]' role='dimension' type='ordinal' />
+            <column-instance column='[index]' derivation='None' name='[none:index:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[interaction_session]' derivation='None' name='[none:interaction_session:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[user]' derivation='None' name='[none:user:nk]' pivot='key' type='nominal' />
+            <column caption='User' datatype='string' name='[user]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1grengd1tbkprc10puxi800a8640].[none:user:nk]'>
+            <groupfilter function='member' level='[none:user:nk]' member='&quot;pro23_acf_p3_logs&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1grengd1tbkprc10puxi800a8640].[none:user:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.1grengd1tbkprc10puxi800a8640].[none:user:nk]' value='457' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1grengd1tbkprc10puxi800a8640].[none:interaction_session:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='2' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1grengd1tbkprc10puxi800a8640].[none:user:nk]</rows>
+        <cols>[federated.1grengd1tbkprc10puxi800a8640].[none:index:ok]</cols>
+      </table>
+      <simple-id uuid='{F7A1AE44-0F70-467A-A4C2-618FF06F9848}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1grengd1tbkprc10puxi800a8640].[none:interaction_session:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1grengd1tbkprc10puxi800a8640].[none:index:ok]</field>
+            <field>[federated.1grengd1tbkprc10puxi800a8640].[none:interaction_session:nk]</field>
+            <field>[federated.1grengd1tbkprc10puxi800a8640].[none:interaction_session:ok]</field>
+            <field>[federated.1grengd1tbkprc10puxi800a8640].[none:user:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{65E47B49-F4FF-4503-87D4-DE7BFDA08782}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='384' name='Sheet 1' width='384'>
+      iVBORw0KGgoAAAANSUhEUgAAAYAAAAGACAYAAACkx7W/AAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAY0UlEQVR4nO3deXRUd93H8c9kJgsYCMRACQECyFJAoKAgq4iA9nAEjoVW9qWsLWWXlmJB
+      9JQllFAgJUBqsCxNiyxSdokGyqIUy0FopexLZSkNSUgmy8wkmXn+4DCPeVpUtAEfvu/XX5w7
+      y/1mzuW+7/xuSxyBQCAgAIA5IQ97AADAw0EAAMAoAgAARhEAADCKAACAUQQAAIwiAABgFAEA
+      AKMIAAAYRQAAwCgCAABGEQAAMIoAAIBRBAAAjCIAAGAUAQAAowgAABhFAADAKAIAAEYRAAAw
+      igAAgFEEAACMIgAAYBQBAACjCAAAGOV62AM8CgKBgK5cuaJ3331X3bp1U5s2beT3+3Xo0CHt
+      2LFD2dnZ6ty5swYMGKAtW7bo2LFjwddWrlxZM2bMUGhoqLKyspSQkKAmTZpoxIgRD2TuS5cu
+      KS0tTb1791aLFi1UWlqq999/X7t27VJubq6+973v6Sc/+YnS0tL00UcfBV8bExOjqVOnav36
+      9Tp16pQkqVKlSpo8ebIqV65crnP7/X5duHBB69ev16BBg9SoUSOVlJQoIyNDe/bsUX5+vrp3
+      765+/fopNTVVZ8+eDb42NjZWEydO1PXr17Vq1SpdvXpVLVq00IQJExQWFlbuc585c0ZpaWka
+      NWqU4uPjVVxcrL179yo9PV1FRUX64Q9/qB//+MdKTk7W5cuXg6+Nj49Xq1attHXr1jLvOX36
+      dFWvXr1c5y4oKNDvf/97Xbx4URMnTpTT6dRnn32md955R6dOnVK1atU0ZswYORwOrVixQqWl
+      pcHX9u/fX3FxcfrVr36lTz/9VA0bNtTIkSMVHR1drjNLUn5+vvbs2aPPPvtM48ePl8Ph0LVr
+      15SWlqazZ8+qRo0aGjt2rDwej9588035/f7ga4cOHaqvfe1rSklJUWZmpnr06KF+/frJ5Sr/
+      U2ZeXp527twpt9utMWPGSJI+/fRTvf3227pw4YLi4uL0/PPPq3r16tq7d6927NihQCCgPn36
+      qFu3bsrNzVVycrLOnz+vrl27asCAAQoNDf3SfRGAr8CxY8f06quvyuv1qlWrVpIkj8ejDRs2
+      qE+fPqpatarmzZun5s2bq3Xr1qpVq5YkKT09XTdu3JDT6VQgEFBqaqqysrKCJ9TydvjwYSUm
+      JqqwsFDf/e53Jd05+LZs2aKnnnpKFSpU0Pz589W6dWu1adNG9evXlyTt3LlTn3/+uUJCQpSe
+      nq6nn35acXFxcrlcioiIKPe5MzIytHz5chUUFOhHP/qRJCkrK0vbt29Xv379FBISogULFqht
+      27bq0KGDmjRpIknasmWLsrOzVVpaqp///Ofq2LGjhg8frps3b8rhcJT73Lt27dLq1auVm5ur
+      /v37S5Ju3Lih9PR0PfXUUyotLdXChQvVsWNHde7cWS1btpQkvfPOO8rLy1P9+vXVp08fSdK5
+      c+e0cePGco9WIBDQ1KlTlZubq8jISAUCAUl3joGwsDCNHz9e6enpWrlypWbOnKlevXopEAgo
+      JydHS5cu1bPPPqtVq1YpIiJC06ZN07p167R+/XpNnDixXOf2+XyaNGmS8vPzFRMTE9y+detW
+      RUVF6YUXXtD27du1evVqTZw4Ub1791YgEFBmZqaSk5M1duxYLViwQJ07d1bz5s01d+5cxcfH
+      q3379uU6d0FBgSZOnKjCwkLVrl07uH3jxo2KjY1Vz549tWnTJq1du1bDhg3TsmXL9PLLL8vp
+      dGr+/Plq3LixNm3apMLCQk2ZMkWvvvqq6tWrp86dO3/p/gjAV6B27dp66623lJCQENxWoUIF
+      LVu2TE6nU7m5ucErh0aNGqlRo0byer1asmSJfvrTnyokJEQnTpzQ6dOn1a9fP+3bt++BzP2N
+      b3xDa9as0ezZs4PboqKitHTpUjmdTmVmZsrpdEpS8CSan5+vxMREzZkzJ/gXpk6dOoqPj9fX
+      v/71B3IibdKkidauXatp06YFt1WrVk1LliyR0+nU9evXg3M3a9ZMkpSdna2EhAQlJibq8uXL
+      8ng86ty5s7xer1q3bn3PK6SvUsuWLfXWW2+VOfnVqlVLixcvVkhIiC5fvhz8/Fq0aCFJunnz
+      pq5cuaIXX3xRsbGxio2Nld/v1+7du9W3b19VqVKl3OeeNm2aCgsL9cYbbwS3DRs2TC6XS4FA
+      QMeOHVNWVpYqV66sjh07SpLWrVunli1bqkmTJgoLC1O1atVUo0YNxcTEPJCraKfTqZdfflmZ
+      mZlav359cPvYsWODcx88eFBZWVmqUqWKOnbsqEAgoDfffFPf+c53VL9+fV27dk3dunVTzZo1
+      1atXLx06dEjt2rUr12M8NDRUs2fP1uXLl7Vz587g9kmTJsnlcqm0tFTp6eny+/1yOp2qUKGC
+      atasKZfLpQoVKsjhcOjgwYNasGCBGjdurN69e+vgwYMEoDw99thjX9jmcDiCJ/ZFixapbdu2
+      +uY3vxl8PCMjQ1WrVlWrVq1UUlKilJQUjRw5Uh6P54HNHRsbK0nBqzpJCgkJUSAQ0IcffqjX
+      X39dXbt2VcOGDYOP7927V3FxcWrWrJk8Ho+qVKmiRYsWyePxqF27dpoyZUq5X5XGxcV9Ydvd
+      uf/0pz9p6dKl6tmzp+rUqRN8fPfu3WrUqJEaNGiggwcP6vr163rttddUXFys0NBQJSYmKioq
+      qlznrl27tkpKSr7wefv9fh04cEBJSUnq169fmSWdbdu2qWXLlmV+lgsXLujkyZNlAlheHA6H
+      GjVqpBMnTpTZ7nK5lJeXp1WrVun48eP65S9/GXzM4/Fo8+bNwQuLfv36adKkSdqzZ498Pp+S
+      k5PLfW6n06kGDRooMzPzC3Pfvn1bycnJOnXqlObNmxd8LD8/X9u3b1dCQoJCQkJUv359LV++
+      XG3bttXx48cfyLfbsLAw1a9fv8zy3925s7KylJSUpMuXL2v+/PmKjo5Whw4dNGHCBElS9+7d
+      FRsbq4KCguCxXL16dR0/fvye++MmcDkJBAJ6//339corr+iZZ57RtGnTgifGu8tDAwYMUHh4
+      uDIyMnTx4kV98skn2rdvn65cuaIjR448tLnT09P1i1/8QsOGDdOECROCV2yFhYXavHmzBgwY
+      IJfLpcjISG3cuFFpaWlavny5Dhw4oPPnzz+0uXfs2KH58+dr3LhxGjt2rEJC7hze+fn52rp1
+      qwYOHKiQkBBVrFhRjRs31qpVq5Samiqfz/fAlt2+bO5NmzZp8eLFmjJlikaMGBG8wry7Fjxg
+      wIAyV50bNmxQjx49Hsg6+r3k5uZq+vTpysnJUVJSkho0aBB8bNeuXapVq5aaN28uSUpJSdHA
+      gQOVkpKiHj16aM2aNWUi+CDl5ORo8uTJ8nq9Wr58eZmwbtu2TY0bN1ajRo0kSbNmzVLdunV1
+      8eJFhYWFPdTP+9atW8H7VElJSYqNjdXFixd15MgRJSUlKTk5WUeOHNH58+cVFhYmn88n6c6x
+      HxkZec/3JQBfAa/XK7fbrZKSEhUVFSk/P1+FhYVKTEzU888/rw4dOignJ0der1eS9Mc//lHF
+      xcXq0qWLpDtXtM8++6yioqIUEREhl8tV7lfR0p0Qud1ulZaWqqioSAUFBcrNzdXrr7+uqVOn
+      6lvf+pays7ODB9O+ffsUERGhdu3aSZKuXr2qDz74QLm5uSouLpbD4Xhoc2dmZuqNN97QjBkz
+      1Lx58+DcgUBAe/bs0WOPPaYnnnhC0p2lrxs3buiTTz5RUVGRfD6fKlasWO5z3z02/H6/CgsL
+      VVBQoOvXr2v16tWaOXOmGjdurOzsbBUXFysQCOi9995Tw4YN1bRp0+B7XL16VUeOHFHfvn3L
+      fV7pzo1rt9utwsJClZaWKj8/Xz6fTxs3bpTL5dKkSZMk3QmCdGcNe8OGDRoyZEhwWe369euK
+      iYlRZGSkqlWrphs3bpR7AO7OXVRUpJKSErndbhUXF2vdunWKjo7W+PHjVVJSory8vOD8v/3t
+      bzVkyJAyS1QDBw7U4MGDdfPmTbVp06bclzhLS0uDc9/9c3FxsVJTU1W3bl2NGjVKPp9Pbrdb
+      mZmZcrlcio6OVtWqVeV0OpWTk6OmTZsqPT1dbrdbGRkZwRB/GZaAvgLvvvuudu3apezsbJ0+
+      fVq/+93vNGXKFOXk5GjlypVKSUmRJE2YMEHf//73tWXLFg0aNKjMOvXdter9+/fL4/GodevW
+      5T73mjVrlJGRoaysLP3tb3/Tjh07NG7cOLndbi1dujR4sE+fPl0dOnTQli1bNHjw4ODckrRi
+      xQq53W55vV49+eSTqlu3brnPnZKSosOHD+vWrVtavHix6tWrp6FDh6qgoECvvfZa8HmzZs1S
+      ixYttG3bNj333HPBuatWraqRI0fqZz/7mUJDQ9WsWTM9/vjj5T53UlKSPvzwQ926dUvz5s1T
+      gwYN9PTTT6ugoEDz588PPm/u3LmqV6+edu3apZdeein4TUaStm/fri5duqhmzZrlPq/0v1ee
+      Pp9Pubm5GjNmjEaPHq0LFy7o3LlzGjdunCSpfv36SkxM1NGjR1W5cmV9+9vfDr7H6NGjlZSU
+      pLffflsej0cvvvhimZ+pPFy9elXTp0+Xx+NRfn6+Ro8erfHjx+vSpUs6deqUxo4dK0lq2rSp
+      5s6dq8OHD6tGjRrBey/Snb/Xhw8fls/nU4cOHdShQ4dynVm6s7w3a9YsFRUVqbCwUKNGjdKU
+      KVN0+fJlXbp0KTh369at9dJLLyk+Pl6jR4+WJDVu3FgtW7ZUdHS0Zs2apd27dys2NlY/+MEP
+      7rk/R+BhfRfDIyEQCKigoEBOp1MREREP5CbwV+Xut4cHdfPaMp/Pp5ycHEVHRz+QG+5fBb/f
+      r+zsbIWFhalSpUr/lcdIIBAIfvuKiooKzlhSUqLbt2//02ObAACAUdwDAACj7nkPoLCw8KHd
+      qQcAlL97BuD27dtl/pduAMCjhXsAAGAU9wAAwCgCAABGEQAAMIoAAIBRBAAAjCIAAGAUAQAA
+      owgAABhFAADAKAIAAEYRAAAwigAAgFEEAACMIgAAYBQBAACjCAAAGEUAAMAoAgAARhEAADCK
+      AACAUQQAAIwiAABgFAEAAKMIAAAYRQAAwCgCAABGEQAAMIoAAIBRBAAAjCIAAGAUAQAAowgA
+      ABhFAADAKAIAAEYRAAAwigAAgFEEAACMIgAAYBQBAACjCAAAGEUAAMAoAgAARhEAADCKAACA
+      UQQAAIwiAABgFAEAAKMIAAAYRQAAwCgCAABGEQAAMIoAAIBRBAAAjCIAAGAUAQAAowgAABhF
+      AADAKAIAAEYRAAAwigAAgFEEAACMIgAAYBQBAACjCAAAGEUAAMAoAgAARhEAADCKAACAUQQA
+      AIwiAABgFAEAAKMIAAAYRQAAwCgCAABGEQAAMIoAAIBRBAAAjCIAAGAUAQAAowgAABhFAADA
+      KAIAAEYRAAAwigAAgFEEAACMIgAAYBQBAACjCAAAGEUAAMAoAgAARhEAADCKAACAUQQAAIwi
+      AABgFAEAAKMIAAAYRQAAwCgCAABGEQAAMIoAAIBRBAAAjCIAAGAUAQAAowgAABhFAADAKAIA
+      AEYRAAAwigAAgFEEAACMIgAAYBQBAACjCAAAGEUAAMAoAgAARhEAADCKAACAUQQAAIwiAABg
+      FAEAAKMIAAAYRQAAwCgCAABGEQAAMIoAAIBRBAAAjCIAAGAUAQAAowgAABhFAADAKAIAAEYR
+      AAAwigAAgFEEAACMIgAAYBQBAACjCAAAGEUAAMAoAgAARhEAADCKAACAUQQAAIwiAABgFAEA
+      AKMIAAAYRQAAwCgCAABGEQAAMIoAAIBRBAAAjHI97AH+m/i9Xqm45GGPAQAPBAH4Ozlr1qkg
+      I+NhjwEADwRLQABgFAEAAKMIAAAYRQAAwCgCAABGEQAAMIoAAIBRBAAAjCIAAGAUAQAAowgA
+      ABhFAADAKAIAAEYRAAAwigAAgFEEAACMIgAAYNQjGQCfz6dbt27J7/c/7FEA4L/WA/mVkH6/
+      XwcOHNDevXuVl5en7t27q1evXvr444+1efNm3bp1S7Vr19awYcNUs2bN/2hfV69e1YwZMxQR
+      EaEFCxYoJibmK/opAODR8m99A/B6vf/06jo/P1+lpaWSJLfbrbVr16pTp07q27evVq9erYsX
+      L+rmzZtq3769Ro8eLa/Xq5UrV/5L+w4EAmW2+Xw+lZTc+WXuR48eVe3atbVq1SpO/gDwD9zX
+      N4Dly5fr6NGj8ng88nq9WrBggUJCQrRkyRI1bdpUhw4d0po1azRnzhydPXtWfr9fkydPVqdO
+      nbRq1SqFhoYqMzNTLpdLpaWl6tGjhyQpLy9PkZGRCg0Nvee+z5w5ozlz5sjv9ysQCGjhwoWK
+      jY3V4sWL9ec//1nh4eEaNGiQUlNT5fP5NHr0aC1cuJAIAMA93FcAvF6v2rdvr8GDB2vdunXa
+      sGGDnnnmGZ04cUIxMTGaP3++Dh06pNzcXP3617/WRx99pOTkZHXs2FEul0t/+ctflJCQoC5d
+      uqhBgwZyOBx65ZVXdPLkSUVHR2vRokX33HfNmjWVkJCgiIgILVmyRAcOHFCdOnV0/vx5paam
+      SpLCwsKUlZWla9eu6YUXXlBkZOR/9ukAwCPsvu8BREdHKzIyUk888YTS0tIUCARUo0YNzZ49
+      Wy6XS/v371fz5s1VuXJlNW/eXMXFxcrLy9MHH3yg5ORkTZw4Ud26dVNIyJ3VpwkTJujzzz/X
+      b37zG6WkpGjmzJlfut9r164pMTFRkZGRunHjhurWratLly6pdevWqlq1avB54eHhCgsLU+XK
+      lf/NjwQAbLjvewBer1cej0dHjhxRfHy8HA6HKlWqJJfrTkvi4uJ0+vRpeTwenTt3Tk6nUw6H
+      Q8uWLdPkyZPVtm1bud1uFRcX669//asiIiL0+OOPq3v37jp58uQ99/vee++pY8eOmjdvntq2
+      bStJio+P18mTJ+V2u+V2u+Xz+f6ln+HMmTO6fv26/H6/Pv74Y2VlZd3vxwAA/+/d9zeAtLQ0
+      7dy5U06nUwkJCcrPz5fD4Qg+3rlzZ+3YsUMjRoxQYWGhnnvuOV27dk25ublavHixnE6nJGnW
+      rFnavn27Tp48qcjISN2+fVvjxo37wg3eu1q0aKFly5bp4MGDKioqUteuXdW+fXvt379fw4cP
+      V3h4uObOnSuHwxGc517vtWLFCrVo0UJDhgzRvHnzNHToUD355JP3+1EAwP9rjsC9zpJfYvHi
+      xYqLi1PPnj0VGRlZ5sT/9wKBgDIzM1WpUiVVqFDhH77n3av3mJgYhYWF6Q9/+IMOHDhQ5jnx
+      8fEaPny4cnNzVbFiRYWHh5d5vLCwUE6n8wvbV69erStXrpTZ1qlTp+DN5/8rK+VXKsjI+Ifz
+      AsCj4r6+AcTExCgqKkqVKlX6h89zOByqXr36v/SelSpVKvN+nTp1Ci7x3HV3Genv1/r/XsWK
+      Fb90e//+/YP/KepdYWFh/9JcAPCou68ADB06tLzmCAoPD//Clfy/615hAAA8ov8UBADgnyMA
+      AGAUAQAAowgAABhFAADAKAIAAEYRAAAwigAAgFEEAACMIgAAYBQBAACjCAAAGEUAAMAoAgAA
+      RhEAADCKAACAUff1KyEfdaW3b6vkVpYyExIe9igAUO4IAAAYxRIQABhFAADAKAIAAEYRAAAw
+      igAAgFEEAACMIgAAYBQBAACjCAAAGEUAAMAoAgAARhEAADCKAACAUQQAAIwiAABgFAEAAKMI
+      AAAYRQAAwCgCAABGEQAAMIoAAIBRBAAAjCIAAGAUAQAAowgAABhFAADAKAIAAEYRAAAwigAA
+      gFEEAACMIgAAYBQBAACjCAAAGEUAAMAoAgAARhEAADCKAACAUQQAAIwiAABgFAEAAKMIAAAY
+      RQAAwCgCAABGEQAAMIoAAIBRBAAAjCIAAGAUAQAAowgAABhFAADAKAIAAEYRAAAwigAAgFEE
+      AACMIgAAYBQBAACjCAAAGEUAAMAoAgAARhEAADCKAACAUQQAAIwiAABgFAEAAKMIAAAYRQAA
+      wCgCAABGEQAAMIoAAIBRBAAAjCIAAGAUAQAAowgAABhFAADAKAIAAEYRAAAwigAAgFEEAACM
+      IgAAYBQBAACjCAAAGEUAAMAoAgAARhEAADCKAACAUQQAAIwiAABgFAEAAKMIAAAYRQAAwCgC
+      AABGEQAAMIoAAIBRBAAAjCIAAGAUAQAAowgAABhFAADAKAIAAEYRAAAwigAAgFEEAACMIgAA
+      YBQBAACjCAAAGEUAAMAoAgAARhEAADCKAACAUQQAAIwiAABgFAEAAKMIAAAYRQAAwCgCAABG
+      EQAAMIoAAIBRBAAAjCIAAGAUAQAAowgAABhFAADAKAIAAEYRAAAwigAAgFEEAACMIgAAYBQB
+      AACjCAAAGEUAAMAoAgAARhEAADCKAACAUQQAAIwiAABgFAEAAKMIAAAYRQAAwCgCAABGEQAA
+      MIoAAIBRBAAAjCIAAGAUAQAAowgAABhFAADAKAIAAEYRAAAw6n8ASAaHXdpqF0QAAAAASUVO
+      RK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>

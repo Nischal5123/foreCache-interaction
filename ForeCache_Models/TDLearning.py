@@ -2,7 +2,7 @@ import misc
 import numpy as np
 from collections import defaultdict
 import itertools
-import environment2 as environment2
+import environment2_changepoint as environment2
 import multiprocessing
 import time
 import random
@@ -76,11 +76,17 @@ class TDLearning:
                 # Take a step
                 action = policy(state)
 
-                next_state, reward, done, info,_ = env.step(state, action, False)
+                next_state, reward, done, info,_,cpd = env.step(state, action, False)
 
                 training_accuracy.append(info)
 
                 # TD Update
+                if cpd:
+                    Q = {
+                        'Navigation': np.zeros(3),
+                        'Foraging': np.zeros(2),
+                        'Sensemaking': np.zeros(2)
+                    }
                 best_next_action = np.argmax(Q[next_state])
                 td_target = reward + discount_factor * Q[next_state][best_next_action]
                 td_delta = td_target - Q[state][action]
@@ -112,7 +118,7 @@ class TDLearning:
 
                 action = policy(state)
                 model_actions.append(action)
-                next_state, reward, done, prediction,true_reward = env.step(state, action, True)
+                next_state, reward, done, prediction,true_reward,_ = env.step(state, action, True)
                 reward_accumulated.append(reward)
 
                 split_accuracy[state].append(prediction)
@@ -140,10 +146,10 @@ if __name__ == "__main__":
     user_list_2D = env.user_list_2D
     obj2 = misc.misc(len(user_list_2D))
     p8 = multiprocessing.Process(target=obj2.hyper_param, args=(env,user_list_2D, 'QLearn',50,))
-    p10 = multiprocessing.Process(target=obj2.hyper_param, args=(env, user_list_2D, 'SARSA',50,))
+    #p10 = multiprocessing.Process(target=obj2.hyper_param, args=(env, user_list_2D, 'SARSA',50,))
     p8.start()
-    p10.start()
+    #p10.start()
     p8.join()
-    p10.join()
+    #p10.join()
 
 
