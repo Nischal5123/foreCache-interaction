@@ -5,7 +5,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
 from torch.distributions import Categorical
-import environment2
+import environment_vizrec
 import plotting
 from collections import Counter,defaultdict
 import json
@@ -16,7 +16,7 @@ class Policy(nn.Module):
         self.data = []
 
         self.fc1 = nn.Linear(3, 128)
-        self.fc2 = nn.Linear(128, 3)
+        self.fc2 = nn.Linear(128, 8)
         self.gamma=gamma
         self.temperature = tau
         self.optimizer = optim.Adam(self.parameters(), lr=learning_rate)
@@ -53,12 +53,12 @@ class Reinforce():
         }
 
     def convert_idx_state(self, state_idx):
-        state = next((key for key, value in self.state_encoding.items() if np.array_equal(value, state_idx)), None)
-        return state
+        #state = next((key for key, value in self.state_encoding.items() if np.array_equal(value, state_idx)), None)
+        return state_idx
 
     def convert_state_idx(self, state):
-        state_idx = self.state_encoding[state]
-        return state_idx
+        #state_idx = self.state_encoding[state]
+        return state
 
     def train(self):
         score=0.0
@@ -110,7 +110,7 @@ class Reinforce():
                 actions.append(a)
                 s_prime, r, done, info,true_reward = self.env.step(self.convert_idx_state(s), a, True)
                 predictions.append(info)
-                split_accuracy[self.convert_idx_state(s)].append(info)
+                #split_accuracy[self.convert_idx_state(s)].append(info)
 
 
                 policy.put_data((r, prob[a]))
@@ -194,7 +194,7 @@ def run_experiment(user_list,algo,hyperparam_file):
             for learning_rate in learning_rates:
                 for gamma in gammas:
                     for temp in temperatures:
-                        env = environment2.environment2()
+                        env = environment_vizrec.environment_vizrec()
                         env.process_data(u, thres)
                         agent = Reinforce(env,learning_rate,gamma,temp)
                         policy,accuracies = agent.train()
@@ -232,10 +232,10 @@ def run_experiment(user_list,algo,hyperparam_file):
         y_accu_all.append(y_accu)
     title = algo
 
-    result_dataframe.to_csv("Experiments_Folder\\" + title + ".csv", index=False)
+    result_dataframe.to_csv("Experiments_Folder\VizRec\\" + title + ".csv", index=False)
 
 if __name__ == '__main__':
-    env = environment2.environment2()
+    env = environment_vizrec.environment_vizrec()
     user_list_2D = env.user_list_2D
     run_experiment(user_list_2D, 'Reinforce', 'sampled-hyperparameters-config.json')
 
