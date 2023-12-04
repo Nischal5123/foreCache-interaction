@@ -10,6 +10,7 @@ import plotting
 from collections import Counter,defaultdict
 import json
 import ast
+import concurrent.futures
 eps=1e-35
 class Policy(nn.Module):
     def __init__(self,learning_rate,gamma,tau):
@@ -160,80 +161,89 @@ def format_split_accuracy(accuracy_dict):
     return accuracy_per_state
 
 
-def run_experiment(user_list,algo,hyperparam_file):
-    # Load hyperparameters from JSON file
-    with open(hyperparam_file) as f:
-        hyperparams = json.load(f)
 
-    # Create result DataFrame with columns for relevant statistics
-    result_dataframe = pd.DataFrame(
+
+def run_experiment_for_user(u, algo, hyperparams):
+    result_dataframe_user = pd.DataFrame(
         columns=['Algorithm', 'User', 'Threshold', 'LearningRate', 'Discount', 'Temperature', 'Accuracy',
                  'StateAccuracy', 'Reward'])
 
-    # Extract hyperparameters from JSON file
     learning_rates = hyperparams['learning_rates']
     gammas = hyperparams['gammas']
     temperatures = hyperparams['temperatures']
 
+    threshold_h = hyperparams['threshold']
+    plotter = plotting.plotter(threshold_h)
+    y_accu = []
+    user_name = get_user_name(u)
+
+    for thres in threshold_h:
+        max_accu = -1
+        best_learning_rate = 0
+        best_gamma = 0
+        best_agent = None
+        best_policy = None
+        best_temp = 0
+
+        for learning_rate in learning_rates:
+            for gamma in gammas:
+                for temp in temperatures:
+                    env = environment_vizrec.environment_vizrec()
+                    env.process_data(u, thres)
+                    agent = Reinforce(env, learning_rate, gamma, temp)
+                    policy, accuracies = agent.train()
+
+                    if accuracies > max_accu:
+                        max_accu = accuracies
+                        best_learning_rate = learning_rate
+                        best_gamma = gamma
+                        best_agent = agent
+                        best_policy = policy
+                        best_temp = temp
+
+        print("#TRAINING: User :{}, Threshold : {:.1f}, Accuracy: {}, LR: {} ,Discount: {}, Temperature:{}".format(
+            user_name, thres, max_accu, best_learning_rate, best_gamma, best_temp))
+        test_accuracy, split_accuracy, reward = best_agent.test(best_policy)
+        accuracy_per_state = format_split_accuracy(split_accuracy)
+        y_accu.append(test_accuracy)
+        result_dataframe_user = pd.concat([result_dataframe_user, pd.DataFrame({
+            'User': [user_name],
+            'Threshold': [thres],
+            'LearningRate': [best_learning_rate],
+            'Discount': [best_gamma],
+            'Accuracy': [test_accuracy],
+            'StateAccuracy': [accuracy_per_state],
+            'Algorithm': [algo],
+            'Reward': [reward]
+        })], ignore_index=True)
+        print("#TESTING User :{}, Threshold : {:.1f}, Accuracy: {}, LR: {} ,Discount: {}, Temperature: {}".format(
+            user_name, thres, max_accu, best_learning_rate, best_gamma, best_temp))
+    plotter.plot_main(y_accu, user_name)
+    return result_dataframe_user, y_accu
+
+def run_experiment(user_list, algo, hyperparam_file):
+    with open(hyperparam_file) as f:
+        hyperparams = json.load(f)
+
+    result_dataframe = pd.DataFrame(
+        columns=['Algorithm', 'User', 'Threshold', 'LearningRate', 'Discount', 'Temperature', 'Accuracy',
+                 'StateAccuracy', 'Reward'])
+    title = algo
+
     aggregate_plotter = plotting.plotter(None)
     y_accu_all = []
 
-    for u in user_list:
-        # Extract user-specific threshold values
-        threshold_h = hyperparams['threshold']
-        plotter = plotting.plotter(threshold_h)
-        y_accu = []
-        user_name = get_user_name(u)
-        for thres in threshold_h:
-            max_accu = -1
-            best_learning_rate = 0
-            best_gamma = 0
-            best_agent=None
-            best_policy=None
-            best_temp=0
+    with concurrent.futures.ThreadPoolExecutor() as executor:
+        futures = {executor.submit(run_experiment_for_user, u, algo, hyperparams): u for u in user_list}
 
-            for learning_rate in learning_rates:
-                for gamma in gammas:
-                    for temp in temperatures:
-                        env = environment_vizrec.environment_vizrec()
-                        env.process_data(u, thres)
-                        agent = Reinforce(env,learning_rate,gamma,temp)
-                        policy,accuracies = agent.train()
+        for future in concurrent.futures.as_completed(futures):
+            user_result_dataframe, user_y_accu = future.result()
+            result_dataframe = pd.concat([result_dataframe, user_result_dataframe], ignore_index=True)
+            y_accu_all.append(user_y_accu)
 
-                        if accuracies > max_accu:
-                            max_accu=accuracies
-                            best_learning_rate=learning_rate
-                            best_gamma=gamma
-                            best_agent = agent
-                            best_policy = policy
-                            best_temp=temp
-
-            print("#TRAINING: User :{}, Threshold : {:.1f}, Accuracy: {}, LR: {} ,Discount: {}, Temperature:{}".format(user_name, thres,
-                                                                                                     max_accu,
-                                                                                                     best_learning_rate,
-                                                                                                     best_gamma,best_temp))
-            test_accuracy, split_accuracy,reward = best_agent.test(best_policy)
-            accuracy_per_state = format_split_accuracy(split_accuracy)
-            y_accu.append(test_accuracy)
-            result_dataframe = pd.concat([result_dataframe, pd.DataFrame({
-                'User': [user_name],
-                'Threshold': [thres],
-                'LearningRate': [best_learning_rate],
-                'Discount': [best_gamma],
-                'Accuracy': [test_accuracy],
-                'StateAccuracy': [accuracy_per_state],
-                'Algorithm': [algo],
-                'Reward': [reward]
-            })], ignore_index=True)
-            print("#TESTING User :{}, Threshold : {:.1f}, Accuracy: {}, LR: {} ,Discount: {}, Temperature: {}".format(user_name, thres,
-                                                                                                     max_accu,
-                                                                                                     best_learning_rate,
-                                                                                                     best_gamma,best_temp))
-        plotter.plot_main(y_accu, user_name)
-        y_accu_all.append(y_accu)
-    title = algo
-
+    aggregate_plotter.aggregate(y_accu_all, title)
     result_dataframe.to_csv("Experiments_Folder\VizRec\\" + title + ".csv", index=False)
+
 
 if __name__ == '__main__':
     env = environment_vizrec.environment_vizrec()

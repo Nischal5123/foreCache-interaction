@@ -40,8 +40,10 @@ class Greedy:
             denom += 1
             try:
              _max = max(self.reward[env.mem_states[i - 1]], key=self.reward[env.mem_states[i - 1]].get)
+            #if state is not observed in training data then take a random action
             except ValueError:
-                    _max = random.choice(['same','modify-x','modify-y','modify-z','modify-x-y','modify-y-z','modify-x-z','modify-x-y-z'])
+                print('{} Not observed before'.format(env.mem_states[i-1]))
+                _max = random.choice(['same','modify-x','modify-y','modify-z','modify-x-y','modify-y-z','modify-x-z','modify-x-y-z'])
             y_pred.append(_max)
             y_true.append(env.mem_action[i])
 
@@ -121,7 +123,8 @@ def run_experiment(user_list, algo, hyperparam_file):
 
 if __name__ == "__main__":
     env = environment_vizrec.environment_vizrec()
-    user_list_2D = env.user_list_2D[:3]
+    user_list_2D = env.user_list_2D[:5]
+    print(user_list_2D)
     run_experiment(user_list_2D, 'Greedy', 'sampled-hyperparameters-config.json')
 
 

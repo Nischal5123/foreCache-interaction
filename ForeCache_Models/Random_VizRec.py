@@ -41,7 +41,7 @@ class Random:
         action_space = ['same','modify-x','modify-y','modify-z','modify-x-y','modify-y-z','modify-x-z','modify-x-y-z']
         action_space = [f for f in action_space if f != action]
         next_action = random.choice(action_space)
-        return next_action
+        return 'same'
     def RandomProbabilistic(self, user, env, thres):
         """
                Implements the Momentum algorithm for a given user and environment.
@@ -142,5 +142,5 @@ def run_experiment(user_list, algo, hyperparam_file):
 
 if __name__ == "__main__":
     env = environment_vizrec.environment_vizrec()
-    user_list_2D = env.user_list_2D[:3]
-    run_experiment(user_list_2D, 'Random', 'sampled-hyperparameters-config.json')
+    user_list_2D = env.user_list_2D[:5]
+    run_experiment(user_list_2D, 'Naive', 'sampled-hyperparameters-config.json')

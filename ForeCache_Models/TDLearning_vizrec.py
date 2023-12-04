@@ -130,12 +130,16 @@ if __name__ == "__main__":
     start_time = time.time()
     env = environment_vizrec.environment_vizrec()
     user_list_2D = env.user_list_2D[:3]
+    print(user_list_2D[0])
     obj2 = misc_vizrec.misc(len(user_list_2D))
-    p8 = multiprocessing.Process(target=obj2.hyper_param, args=(env,user_list_2D, 'QLearn',50))
-    p10 = multiprocessing.Process(target=obj2.hyper_param, args=(env, user_list_2D, 'SARSA',50))
+    p8 = multiprocessing.Process(target=obj2.hyper_param, args=(env,[user_list_2D[0]], 'QLearn',50))
+    p10 = multiprocessing.Process(target=obj2.hyper_param, args=(env, [user_list_2D[1]], 'Qlearn',50))
+    p11 = multiprocessing.Process(target=obj2.hyper_param, args=(env, [user_list_2D[2]], 'Qlearn', 50))
     p8.start()
     p10.start()
+    p11.start()
     p8.join()
     p10.join()
+    p11.join()
 
 

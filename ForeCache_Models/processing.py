@@ -4,9 +4,10 @@ import pandas as pd
 from collections import Counter
 
 class InteractionProcessor:
-    def __init__(self, user_interactions_path, processed_interactions_path):
+    def __init__(self, user_interactions_path, processed_interactions_path,master_data_path):
         self.user_interactions_path = user_interactions_path
         self.processed_interactions_path = processed_interactions_path
+        self.master_data_path = master_data_path
         self.fieldnames = ['Title', 'US_Gross', 'Worldwide_Gross', 'US_DVD_Sales', 'Production_Budget', 'Release_Date',
                            'MPAA_Rating', 'Running_Time_min', 'Distributor', 'Source', 'Major_Genre', 'Creative_Type',
                            'Director', 'Rotten_Tomatoes_Rating', 'IMDB_Rating', 'IMDB_Votes', 'None']
@@ -219,19 +220,25 @@ class InteractionProcessor:
 
         # Save the modified DataFrame
         df.to_csv(os.path.join(self.processed_interactions_path, csv_filename), index=False)
+
     def create_master_file(self, csvfiles):
-        master_csv_filename='combined-interactions'
+        master_csv_filename = 'combined-interactions.csv'
         dfs = []  # List to store individual DataFrames
 
         for csv_filename in csvfiles:
             if csv_filename.endswith('p4_logs.csv'):
                 # print("Converting '{}'...".format(csv_filename))
                 df = pd.read_csv(os.path.join(self.processed_interactions_path, csv_filename))
+
                 # Add a new column 'User' and populate it with the original name of the small file
                 df['User'] = os.path.splitext(os.path.basename(csv_filename))[0]
 
-                # Reset the index for each individual file
-                df.reset_index(drop=True, inplace=True)
+                # Drop the column named 'User_Index'
+                df.drop('User_Index', axis=1, inplace=True)
+
+                # Reset the index for each individual file and create a new index column 'U_Index'
+                df.reset_index(inplace=True)
+                df.rename(columns={'index': 'U_Index'}, inplace=True)
 
                 dfs.append(df)
 
@@ -239,19 +246,39 @@ class InteractionProcessor:
         master_df = pd.concat(dfs, ignore_index=True)
 
         # Save the master DataFrame to a CSV file
-        master_csv_path = os.path.join(self.processed_interactions_path, master_csv_filename)
+        master_csv_path = os.path.join(self.master_data_path, master_csv_filename)
         master_df.to_csv(master_csv_path, index=False)
 
+    def remove_invalid_rows(self, csv_filename):
+        df = pd.read_csv(os.path.join(self.processed_interactions_path, csv_filename))
+
+        # Sort DataFrame by 'Time' column
+        df.sort_values(by='Time', inplace=True)
+
+        # Calculate the time difference between consecutive rows
+        df['Time_Diff'] = df['Time'].diff()
+
+        # Keep rows where the time difference is greater than or equal to 0.5 second
+        df = df[df['Time_Diff'] >= 500]
+
+        # Drop the 'Time_Diff' column as it is no longer needed
+        df.drop(columns=['Time_Diff'], inplace=True)
+
+        # Save the modified DataFrame
+        df.to_csv(os.path.join(self.processed_interactions_path, csv_filename), index=False)
 
 if __name__ == '__main__':
     user_interactions_path = './data/zheng/processed_csv/'
     processed_interactions_path = './data/zheng/processed_interactions/'
+    master_data_path ='./data/zheng/'
     csv_files = os.listdir(user_interactions_path)
 
-    interaction_processor = InteractionProcessor(user_interactions_path, processed_interactions_path)
+    interaction_processor = InteractionProcessor(user_interactions_path, processed_interactions_path,master_data_path)
 
     for csv_filename in csv_files:
         if csv_filename.endswith('p4_logs.csv'):
-            interaction_processor.process_interaction_logs(csv_filename)
-            interaction_processor.process_actions(csv_filename)
+             interaction_processor.process_interaction_logs(csv_filename)
+             interaction_processor.remove_invalid_rows(csv_filename)
+             interaction_processor.process_actions(csv_filename)
+             print(csv_filename)
     interaction_processor.create_master_file(csv_files)
