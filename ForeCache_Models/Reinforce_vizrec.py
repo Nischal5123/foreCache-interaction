@@ -9,6 +9,7 @@ import environment_vizrec
 import plotting
 from collections import Counter,defaultdict
 import json
+import ast
 eps=1e-35
 class Policy(nn.Module):
     def __init__(self,learning_rate,gamma,tau):
@@ -54,11 +55,11 @@ class Reinforce():
 
     def convert_idx_state(self, state_idx):
         #state = next((key for key, value in self.state_encoding.items() if np.array_equal(value, state_idx)), None)
-        return state_idx
+        return str(state_idx)
 
     def convert_state_idx(self, state):
         #state_idx = self.state_encoding[state]
-        return state
+        return ast.literal_eval(state)
 
     def train(self):
         score=0.0
@@ -236,7 +237,7 @@ def run_experiment(user_list,algo,hyperparam_file):
 
 if __name__ == '__main__':
     env = environment_vizrec.environment_vizrec()
-    user_list_2D = env.user_list_2D
+    user_list_2D = env.user_list_2D[:5]
     run_experiment(user_list_2D, 'Reinforce', 'sampled-hyperparameters-config.json')
 
 

@@ -73,7 +73,7 @@ class environment_vizrec:
         df = pd.read_csv(filename)
         cnt_inter = 0
         for index, row in df.iterrows():
-            cur_state = ast.literal_eval(row['State'])
+            cur_state = row['State']
             action = row['Action']
             reward = row['Reward']
             self.mem_states.append(cur_state)

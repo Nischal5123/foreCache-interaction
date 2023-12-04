@@ -9,6 +9,7 @@ import environment2
 import plotting
 from collections import Counter,defaultdict
 import json
+import concurrent.futures
 eps=1e-35
 class Policy(nn.Module):
     def __init__(self,learning_rate,gamma,tau):
@@ -236,7 +237,7 @@ def run_experiment(user_list,algo,hyperparam_file):
 
 if __name__ == '__main__':
     env = environment2.environment2()
-    user_list_2D = env.user_list_2D
+    user_list_2D = env.user_list_2D[:3]
     run_experiment(user_list_2D, 'Reinforce', 'sampled-hyperparameters-config.json')
 
 
