@@ -158,20 +158,8 @@ class misc:
                 ###move to new threshold:
                 env.reset(True, False)
 
-            plt.plot(self.threshold_h, y_accu, label=self.get_user_name(user), marker='*')
-        mean_y_accu = np.mean([element for sublist in y_accu_all for element in sublist])
-        plt.axhline(mean_y_accu, color='red', linestyle='--',label="Average: "+ "{:.2%}".format(mean_y_accu) )
-        plt.legend(loc='center left', bbox_to_anchor=(1, 0.5))
-        plt.yticks(np.arange(0.0, 1.0, 0.1))
-        plt.xlabel('Threshold')
-        plt.ylabel('Accuracy')
-        title = algorithm  + "all_3_actions"
-        # pdb.set_trace()
-        plt.title(title)
-        location = 'figures/' + title
-        #plt.savefig(location, bbox_inches='tight')
-        result_dataframe.to_csv("Experiments_Folder\VizRec\\" + title + ".csv", index=False)
-        plt.close()
+        result_dataframe.to_csv("Experiments_Folder\VizRec\\" + algorithm + ".csv", index=False)
+
 
 
 

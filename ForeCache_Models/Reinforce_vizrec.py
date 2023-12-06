@@ -144,9 +144,9 @@ def get_threshold(env, user):
 
 
 def get_user_name(url):
-    string = url.split('\\')
-    fname = string[len(string) - 1]
-    uname = fname.rstrip('.csv')
+    parts = url.split('/')
+    fname = parts[-1]
+    uname = fname.rstrip('_log.csv')
     return uname
 
 
@@ -182,7 +182,7 @@ def run_experiment_for_user(u, algo, hyperparams):
         best_learning_rate = 0
         best_gamma = 0
         best_agent = None
-        best_policy = None
+        best_model = None
         best_temp = 0
 
         for learning_rate in learning_rates:
@@ -191,19 +191,27 @@ def run_experiment_for_user(u, algo, hyperparams):
                     env = environment_vizrec.environment_vizrec()
                     env.process_data(u, thres)
                     agent = Reinforce(env, learning_rate, gamma, temp)
-                    policy, accuracies = agent.train()
+                    model, accuracies = agent.train()
 
                     if accuracies > max_accu:
                         max_accu = accuracies
                         best_learning_rate = learning_rate
                         best_gamma = gamma
                         best_agent = agent
-                        best_policy = policy
+                        best_model = model
                         best_temp = temp
 
         print("#TRAINING: User :{}, Threshold : {:.1f}, Accuracy: {}, LR: {} ,Discount: {}, Temperature:{}".format(
             user_name, thres, max_accu, best_learning_rate, best_gamma, best_temp))
-        test_accuracy, split_accuracy, reward = best_agent.test(best_policy)
+
+        test_accs = []
+        for i in range(5):
+            test_agent = best_agent
+            test_model = best_model
+            test_accuracy, split_accuracy, reward = test_agent.test(test_model)
+            test_accs.append(test_accuracy)
+        test_accuracy = np.mean(test_accs)
+
         accuracy_per_state = format_split_accuracy(split_accuracy)
         y_accu.append(test_accuracy)
         result_dataframe_user = pd.concat([result_dataframe_user, pd.DataFrame({
@@ -230,10 +238,10 @@ def run_experiment(user_list, algo, hyperparam_file):
                  'StateAccuracy', 'Reward'])
     title = algo
 
-    aggregate_plotter = plotting.plotter(None)
+
     y_accu_all = []
 
-    with concurrent.futures.ThreadPoolExecutor() as executor:
+    with concurrent.futures.ProcessPoolExecutor() as executor:
         futures = {executor.submit(run_experiment_for_user, u, algo, hyperparams): u for u in user_list}
 
         for future in concurrent.futures.as_completed(futures):
@@ -241,13 +249,12 @@ def run_experiment(user_list, algo, hyperparam_file):
             result_dataframe = pd.concat([result_dataframe, user_result_dataframe], ignore_index=True)
             y_accu_all.append(user_y_accu)
 
-    aggregate_plotter.aggregate(y_accu_all, title)
-    result_dataframe.to_csv("Experiments_Folder\VizRec\\" + title + ".csv", index=False)
+    result_dataframe.to_csv("Experiments_Folder/VizRec/{}.csv".format(title), index=False)
 
 
 if __name__ == '__main__':
     env = environment_vizrec.environment_vizrec()
-    user_list_2D = env.user_list_2D[:5]
+    user_list_2D = env.user_list_2D
     run_experiment(user_list_2D, 'Reinforce', 'sampled-hyperparameters-config.json')
 
 

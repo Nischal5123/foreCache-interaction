@@ -182,7 +182,7 @@ class Agent():
             #   print("# of episode :{}, avg score : {:.1f}, accuracy: {:.1f} , actions{}".format(n_epi, score / print_interval,np.mean(predictions),Counter(actions)))
             score = 0.0
             all_predictions.append(np.mean(predictions))
-        print("############ Train Accuracy :{},".format(np.mean(all_predictions)))
+        #print("############ Train Accuracy :{},".format(np.mean(all_predictions)))
         return model, np.mean(predictions)  # return last episodes accuracyas training accuracy
 
 
@@ -232,7 +232,7 @@ class Agent():
                                                                                                    np.mean(predictions),
                                                                                                    Counter(actions)))
             test_predictions.append(np.mean(predictions))
-            print("############ Test Accuracy :{},".format(np.mean(predictions)))
+            #print("############ Test Accuracy :{},".format(np.mean(predictions)))
         return np.mean(test_predictions),split_accuracy,0
 
 
@@ -251,7 +251,7 @@ def get_threshold(env, user):
 
 
 def run_experiment_for_user(u, algo, hyperparams):
-    result_dataframe_user = pd.DataFrame(columns=['Algorithm', 'User', 'Threshold', 'LearningRate', 'Discount', 'Temperature', 'Accuracy', 'StateAccuracy', 'Reward'])
+    result_dataframe_user = pd.DataFrame(columns=['Algorithm', 'User', 'Threshold', 'LearningRate', 'Discount', 'Temperature', 'Accuracy', 'StateAccuracy', 'Reward','Epsilon'])
 
     learning_rates = hyperparams['learning_rates']
     gammas = hyperparams['gammas']
@@ -288,7 +288,14 @@ def run_experiment_for_user(u, algo, hyperparams):
 
         print("#TRAINING: User: {}, Threshold: {:.1f}, Accuracy: {}, LR: {}, Discount: {}, Temperature: {}".format(user_name, thres, max_accu, best_learning_rate, best_gamma, best_temp))
 
-        test_accuracy, split_accuracy, reward = best_agent.test(best_model)
+        test_accs=[]
+        for i in range(5):
+            test_agent=best_agent
+            test_model=best_model
+            test_accuracy, split_accuracy, reward = test_agent.test(test_model)
+            test_accs.append(test_accuracy)
+        test_accuracy=np.mean(test_accs)
+
         accuracy_per_state = format_split_accuracy(split_accuracy)
         y_accu.append(test_accuracy)
         result_dataframe_user = pd.concat([result_dataframe_user, pd.DataFrame({
@@ -299,7 +306,9 @@ def run_experiment_for_user(u, algo, hyperparams):
             'Accuracy': [test_accuracy],
             'StateAccuracy': [accuracy_per_state],
             'Algorithm': [algo],
-            'Reward': [reward]
+            'Reward': [reward],
+            'Temperature': [best_temp],
+            'Epsilon':[0]
         })], ignore_index=True)
 
         print("#TESTING: User: {}, Threshold: {:.1f}, Accuracy: {}, LR: {}, Discount: {}, Temperature: {}, Split_Accuracy: {}".format(user_name, thres, test_accuracy, best_learning_rate, best_gamma, best_temp, accuracy_per_state))
@@ -311,10 +320,14 @@ def run_experiment(user_list, algo, hyperparam_file):
     with open(hyperparam_file) as f:
         hyperparams = json.load(f)
 
-    result_dataframe = pd.DataFrame(columns=['Algorithm', 'User', 'Threshold', 'LearningRate', 'Discount', 'Temperature', 'Accuracy', 'StateAccuracy', 'Reward'])
+    result_dataframe = pd.DataFrame(
+        columns=['Algorithm', 'User', 'Threshold', 'LearningRate', 'Discount', 'Temperature', 'Accuracy',
+                 'StateAccuracy', 'Reward', 'Epsilon'])
+
+
     title = algo
 
-    aggregate_plotter = plotting.plotter(None)
+
     y_accu_all = []
 
     with concurrent.futures.ProcessPoolExecutor() as executor:
@@ -325,14 +338,14 @@ def run_experiment(user_list, algo, hyperparam_file):
             result_dataframe = pd.concat([result_dataframe, user_result_dataframe], ignore_index=True)
             y_accu_all.append(user_y_accu)
 
-    aggregate_plotter.aggregate(y_accu_all, title)
+
     result_dataframe.to_csv("Experiments_Folder/VizRec/{}.csv".format(title), index=False)
 
 
 def get_user_name(url):
-    string = url.split('\\')
-    fname = string[len(string) - 1]
-    uname = fname.rstrip('.csv')
+    parts = url.split('/')
+    fname = parts[-1]
+    uname = fname.rstrip('_log.csv')
     return uname
 
 def format_split_accuracy(accuracy_dict):
@@ -347,6 +360,6 @@ def format_split_accuracy(accuracy_dict):
 
 if __name__ == '__main__':
     env = environment_vizrec.environment_vizrec()
-    user_list_2D = env.user_list_2D[:5]
+    user_list_2D = env.user_list_2D
     run_experiment(user_list_2D, 'Actor_Critic', 'sampled-hyperparameters-config.json')
 

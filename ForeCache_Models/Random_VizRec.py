@@ -41,7 +41,7 @@ class Random:
         action_space = ['same','modify-x','modify-y','modify-z','modify-x-y','modify-y-z','modify-x-z','modify-x-y-z']
         action_space = [f for f in action_space if f != action]
         next_action = random.choice(action_space)
-        return 'same'
+        return next_action
     def RandomProbabilistic(self, user, env, thres):
         """
                Implements the Momentum algorithm for a given user and environment.
@@ -93,9 +93,9 @@ def format_split_accuracy(accuracy_dict):
     return accuracy_per_state
 
 def get_user_name(url):
-    string = url.split('/')
-    fname = string[len(string) - 1]
-    uname = fname.rstrip('.csv')
+    parts = url.split('/')
+    fname = parts[-1]
+    uname = fname.rstrip('_log.csv')
     return uname
 
 
@@ -113,10 +113,14 @@ def run_experiment(user_list, algo, hyperparam_file):
         threshold=hyperparams['threshold']
         user_name = get_user_name(u)
         for thres in threshold:
-            env=environment_vizrec.environment_vizrec()
-            env.process_data(u, 0)
-            obj = Random()
-            test_accuracy,state_accuracy = obj.RandomProbabilistic(user_name, env, thres)
+            test_accs = []
+            for i in range(5):
+                env = environment_vizrec.environment_vizrec()
+                env.process_data(u, 0)
+                obj = Random()
+                test_accuracy, state_accuracy = obj.RandomProbabilistic(user_name, env, thres)
+                test_accs.append(test_accuracy)
+            test_accuracy = np.mean(test_accs)
             #accuracy_per_state = format_split_accuracy(state_accuracy)
             y_accu.append(test_accuracy)
             result_dataframe = pd.concat([result_dataframe, pd.DataFrame({
@@ -142,5 +146,5 @@ def run_experiment(user_list, algo, hyperparam_file):
 
 if __name__ == "__main__":
     env = environment_vizrec.environment_vizrec()
-    user_list_2D = env.user_list_2D[:5]
-    run_experiment(user_list_2D, 'Naive', 'sampled-hyperparameters-config.json')
+    user_list_2D = env.user_list_2D
+    run_experiment(user_list_2D, 'Random', 'sampled-hyperparameters-config.json')

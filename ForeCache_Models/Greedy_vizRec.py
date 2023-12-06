@@ -74,11 +74,10 @@ def format_split_accuracy(accuracy_dict):
     return accuracy_per_state
 
 def get_user_name(url):
-    string = url.split('/')
-    fname = string[len(string) - 1]
-    uname = fname.rstrip('.csv')
+    parts = url.split('/')
+    fname = parts[-1]
+    uname = fname.rstrip('_log.csv')
     return uname
-
 def run_experiment(user_list, algo, hyperparam_file):
     # Load hyperparameters from JSON file
     with open(hyperparam_file) as f:
@@ -123,7 +122,7 @@ def run_experiment(user_list, algo, hyperparam_file):
 
 if __name__ == "__main__":
     env = environment_vizrec.environment_vizrec()
-    user_list_2D = env.user_list_2D[:5]
+    user_list_2D = env.user_list_2D
     print(user_list_2D)
     run_experiment(user_list_2D, 'Greedy', 'sampled-hyperparameters-config.json')
 

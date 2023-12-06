@@ -278,7 +278,7 @@ if __name__ == '__main__':
     for csv_filename in csv_files:
         if csv_filename.endswith('p4_logs.csv'):
              interaction_processor.process_interaction_logs(csv_filename)
-             interaction_processor.remove_invalid_rows(csv_filename)
+             #interaction_processor.remove_invalid_rows(csv_filename)
              interaction_processor.process_actions(csv_filename)
              print(csv_filename)
     interaction_processor.create_master_file(csv_files)
