@@ -1,0 +1,98 @@
+{
+  "markbarencodingquantitativeyaggregatecountRelease_Datenominalx": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/movies/movies.json"
+    },
+    "encoding": {
+      "x": {
+        "field": "Release_Date",
+        "timeUnit": "month",
+        "type": "nominal"
+      },
+      "y": {
+        "aggregate": "count",
+        "type": "quantitative"
+      }
+    },
+    "mark": "bar"
+  },
+  "markbarencodingquantitativexaggregatecountMPAA_Ratingnominaly": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/movies/movies.json"
+    },
+    "encoding": {
+      "x": {
+        "aggregate": "count",
+        "type": "quantitative"
+      },
+      "y": {
+        "field": "MPAA_Rating",
+        "type": "nominal"
+      }
+    },
+    "mark": "bar"
+  },
+  "markbarencodingquantitativexaggregatecountDistributornominaly": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/movies/movies.json"
+    },
+    "encoding": {
+      "x": {
+        "aggregate": "count",
+        "type": "quantitative"
+      },
+      "y": {
+        "field": "Distributor",
+        "type": "nominal"
+      }
+    },
+    "mark": "bar"
+  },
+  "markpointencodingRelease_DatenominalxRotten_Tomatoes_RatingquantitativesizeUS_Grossquantitativeybin": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/movies/movies.json"
+    },
+    "encoding": {
+      "size": {
+        "field": "Rotten_Tomatoes_Rating",
+        "type": "quantitative"
+      },
+      "x": {
+        "field": "Release_Date",
+        "timeUnit": "month",
+        "type": "nominal"
+      },
+      "y": {
+        "bin": true,
+        "field": "US_Gross",
+        "type": "quantitative"
+      }
+    },
+    "mark": "point"
+  },
+  "markpointencodingMajor_GenrenominalxSourcenominalyUS_DVD_Salesquantitativesize": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/movies/movies.json"
+    },
+    "encoding": {
+      "size": {
+        "field": "US_DVD_Sales",
+        "type": "quantitative"
+      },
+      "x": {
+        "field": "Major_Genre",
+        "type": "nominal"
+      },
+      "y": {
+        "field": "Source",
+        "type": "nominal"
+      }
+    },
+    "mark": "point"
+  }
+}

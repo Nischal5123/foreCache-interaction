@@ -1,0 +1,108 @@
+{
+  "markpointencodingquantitativesizeaggregatecountOrigin_StatenominalxWildlife_Speciesnominaly": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/birdstrikes/birdstrikes.json"
+    },
+    "encoding": {
+      "size": {
+        "aggregate": "count",
+        "type": "quantitative"
+      },
+      "x": {
+        "field": "Origin_State",
+        "type": "nominal"
+      },
+      "y": {
+        "field": "Wildlife_Species",
+        "type": "nominal"
+      }
+    },
+    "mark": "point"
+  },
+  "markpointencodingquantitativesizeaggregatecountFlight_DatenominalxOrigin_Statenominaly": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/birdstrikes/birdstrikes.json"
+    },
+    "encoding": {
+      "size": {
+        "aggregate": "count",
+        "type": "quantitative"
+      },
+      "x": {
+        "field": "Flight_Date",
+        "timeUnit": "month",
+        "type": "nominal"
+      },
+      "y": {
+        "field": "Origin_State",
+        "type": "nominal"
+      }
+    },
+    "mark": "point"
+  },
+  "markpointencodingquantitativesizeaggregatecountAircraft_Airline_OperatornominalxEffect_Amount_of_damagenominaly": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/birdstrikes/birdstrikes.json"
+    },
+    "encoding": {
+      "size": {
+        "aggregate": "count",
+        "type": "quantitative"
+      },
+      "x": {
+        "field": "Aircraft_Airline_Operator",
+        "type": "nominal"
+      },
+      "y": {
+        "field": "Effect_Amount_of_damage",
+        "type": "nominal"
+      }
+    },
+    "mark": "point"
+  },
+  "markpointencodingAircraft_Airline_OperatornominalxAircraft_Make_ModelnominalyEffect_Amount_of_damagenominalcolor": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/birdstrikes/birdstrikes.json"
+    },
+    "encoding": {
+      "color": {
+        "field": "Effect_Amount_of_damage",
+        "type": "nominal"
+      },
+      "x": {
+        "field": "Aircraft_Airline_Operator",
+        "type": "nominal"
+      },
+      "y": {
+        "field": "Aircraft_Make_Model",
+        "type": "nominal"
+      }
+    },
+    "mark": "point"
+  },
+  "markpointencodingquantitativesizeaggregatecountAirport_NamenominalxWildlife_Sizenominaly": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/birdstrikes/birdstrikes.json"
+    },
+    "encoding": {
+      "size": {
+        "aggregate": "count",
+        "type": "quantitative"
+      },
+      "x": {
+        "field": "Airport_Name",
+        "type": "nominal"
+      },
+      "y": {
+        "field": "Wildlife_Size",
+        "type": "nominal"
+      }
+    },
+    "mark": "point"
+  }
+}

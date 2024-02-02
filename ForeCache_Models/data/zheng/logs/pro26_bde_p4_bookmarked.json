@@ -1,0 +1,97 @@
+{
+  "markpointencodingCost_RepairquantitativexCost_Totalquantitativey": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/birdstrikes/birdstrikes.json"
+    },
+    "encoding": {
+      "x": {
+        "field": "Cost_Repair",
+        "type": "quantitative"
+      },
+      "y": {
+        "field": "Cost_Total",
+        "type": "quantitative"
+      }
+    },
+    "mark": "point"
+  },
+  "markpointencodingCost_RepairquantitativesizeCost_TotalquantitativexSpeed_IAS_in_knotsquantitativey": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/birdstrikes/birdstrikes.json"
+    },
+    "encoding": {
+      "size": {
+        "field": "Cost_Repair",
+        "type": "quantitative"
+      },
+      "x": {
+        "field": "Cost_Total",
+        "type": "quantitative"
+      },
+      "y": {
+        "field": "Speed_IAS_in_knots",
+        "type": "quantitative"
+      }
+    },
+    "mark": "point"
+  },
+  "marktickencodingCost_RepairquantitativexWildlife_Speciesnominaly": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/birdstrikes/birdstrikes.json"
+    },
+    "encoding": {
+      "x": {
+        "field": "Cost_Repair",
+        "type": "quantitative"
+      },
+      "y": {
+        "field": "Wildlife_Species",
+        "type": "nominal"
+      }
+    },
+    "mark": "tick"
+  },
+  "markpointencodingCost_RepairquantitativesizeaggregatemeanOrigin_StatenominalxWildlife_Speciesnominaly": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/birdstrikes/birdstrikes.json"
+    },
+    "encoding": {
+      "size": {
+        "aggregate": "mean",
+        "field": "Cost_Repair",
+        "type": "quantitative"
+      },
+      "x": {
+        "field": "Origin_State",
+        "type": "nominal"
+      },
+      "y": {
+        "field": "Wildlife_Species",
+        "type": "nominal"
+      }
+    },
+    "mark": "point"
+  },
+  "markbarencodingCost_RepairquantitativeyaggregatemeanOrigin_Statenominalx": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/birdstrikes/birdstrikes.json"
+    },
+    "encoding": {
+      "x": {
+        "field": "Origin_State",
+        "type": "nominal"
+      },
+      "y": {
+        "aggregate": "mean",
+        "field": "Cost_Repair",
+        "type": "quantitative"
+      }
+    },
+    "mark": "bar"
+  }
+}

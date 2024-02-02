@@ -1,0 +1,140 @@
+{
+  "markpointencodingIMDB_RatingquantitativesizeaggregatemeanSourcenominalxUS_DVD_Salesquantitativeybin": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/movies/movies.json"
+    },
+    "encoding": {
+      "size": {
+        "aggregate": "mean",
+        "field": "IMDB_Rating",
+        "type": "quantitative"
+      },
+      "x": {
+        "field": "Source",
+        "type": "nominal"
+      },
+      "y": {
+        "bin": true,
+        "field": "US_DVD_Sales",
+        "type": "quantitative"
+      }
+    },
+    "mark": "point"
+  },
+  "markpointencodingIMDB_RatingquantitativesizeaggregatemeanSourcenominalxWorldwide_Grossquantitativeybin": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/movies/movies.json"
+    },
+    "encoding": {
+      "size": {
+        "aggregate": "mean",
+        "field": "IMDB_Rating",
+        "type": "quantitative"
+      },
+      "x": {
+        "field": "Source",
+        "type": "nominal"
+      },
+      "y": {
+        "bin": true,
+        "field": "Worldwide_Gross",
+        "type": "quantitative"
+      }
+    },
+    "mark": "point"
+  },
+  "markpointencodingRotten_Tomatoes_RatingquantitativesizeaggregatemeanSourcenominalxWorldwide_Grossquantitativeybin": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/movies/movies.json"
+    },
+    "encoding": {
+      "size": {
+        "aggregate": "mean",
+        "field": "Rotten_Tomatoes_Rating",
+        "type": "quantitative"
+      },
+      "x": {
+        "field": "Source",
+        "type": "nominal"
+      },
+      "y": {
+        "bin": true,
+        "field": "Worldwide_Gross",
+        "type": "quantitative"
+      }
+    },
+    "mark": "point"
+  },
+  "markpointencodingRotten_Tomatoes_RatingquantitativesizeaggregatemeanSourcenominalxUS_DVD_Salesquantitativeybin": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/movies/movies.json"
+    },
+    "encoding": {
+      "size": {
+        "aggregate": "mean",
+        "field": "Rotten_Tomatoes_Rating",
+        "type": "quantitative"
+      },
+      "x": {
+        "field": "Source",
+        "type": "nominal"
+      },
+      "y": {
+        "bin": true,
+        "field": "US_DVD_Sales",
+        "type": "quantitative"
+      }
+    },
+    "mark": "point"
+  },
+  "markpointencodingRotten_Tomatoes_RatingquantitativesizeaggregatemeanSourcenominalxUS_Grossquantitativeybin": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/movies/movies.json"
+    },
+    "encoding": {
+      "size": {
+        "aggregate": "mean",
+        "field": "Rotten_Tomatoes_Rating",
+        "type": "quantitative"
+      },
+      "x": {
+        "field": "Source",
+        "type": "nominal"
+      },
+      "y": {
+        "bin": true,
+        "field": "US_Gross",
+        "type": "quantitative"
+      }
+    },
+    "mark": "point"
+  },
+  "markpointencodingIMDB_RatingquantitativesizeaggregatemeanSourcenominalxUS_Grossquantitativeybin": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/movies/movies.json"
+    },
+    "encoding": {
+      "size": {
+        "aggregate": "mean",
+        "field": "IMDB_Rating",
+        "type": "quantitative"
+      },
+      "x": {
+        "field": "Source",
+        "type": "nominal"
+      },
+      "y": {
+        "bin": true,
+        "field": "US_Gross",
+        "type": "quantitative"
+      }
+    },
+    "mark": "point"
+  }
+}

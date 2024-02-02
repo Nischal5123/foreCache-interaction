@@ -48,14 +48,16 @@ class Greedy:
             y_pred.append(_max)
             y_true.append(env.mem_action[i])
 
-            if _max == env.mem_action[i] and self.reward[env.mem_states[i - 1]][_max] > 0:
-                 split_accuracy[env.mem_states[i - 1]].append(1)
-                 accuracy += 1
+            # if state never observed before then take a random action
+            if _max == env.mem_action[i]:  # can also get lucky with random action
+                split_accuracy[env.mem_states[i - 1]].append(1)
+                accuracy += 1
             else:
                 split_accuracy[env.mem_states[i - 1]].append(0)
 
-
-
+            # still learning during testing
+            if _max == env.mem_action[i]:
+                self.reward[env.mem_states[i - 1]][_max] += env.mem_reward[i - 1]
 
         accuracy /= denom
         print("{}, {:.2f}".format(user, accuracy))

@@ -1,0 +1,116 @@
+{
+  "markpointencodingMajor_GenrenominalxRotten_Tomatoes_RatingquantitativeybinUS_DVD_Salesquantitativesizeaggregatemean": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/movies/movies.json"
+    },
+    "encoding": {
+      "size": {
+        "aggregate": "mean",
+        "field": "US_DVD_Sales",
+        "type": "quantitative"
+      },
+      "x": {
+        "field": "Major_Genre",
+        "type": "nominal"
+      },
+      "y": {
+        "bin": true,
+        "field": "Rotten_Tomatoes_Rating",
+        "type": "quantitative"
+      }
+    },
+    "mark": "point"
+  },
+  "marktickencodingMajor_GenrenominalyUS_Grossquantitativex": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/movies/movies.json"
+    },
+    "encoding": {
+      "x": {
+        "field": "US_Gross",
+        "type": "quantitative"
+      },
+      "y": {
+        "field": "Major_Genre",
+        "type": "nominal"
+      }
+    },
+    "mark": "tick"
+  },
+  "marktickencodingMajor_GenrenominalyRotten_Tomatoes_Ratingquantitativex": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/movies/movies.json"
+    },
+    "encoding": {
+      "x": {
+        "field": "Rotten_Tomatoes_Rating",
+        "type": "quantitative"
+      },
+      "y": {
+        "field": "Major_Genre",
+        "type": "nominal"
+      }
+    },
+    "mark": "tick"
+  },
+  "markpointencodingMajor_GenrenominalxUS_DVD_SalesquantitativesizeaggregatemeanUS_Grossquantitativeybin": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/movies/movies.json"
+    },
+    "encoding": {
+      "size": {
+        "aggregate": "mean",
+        "field": "US_DVD_Sales",
+        "type": "quantitative"
+      },
+      "x": {
+        "field": "Major_Genre",
+        "type": "nominal"
+      },
+      "y": {
+        "bin": true,
+        "field": "US_Gross",
+        "type": "quantitative"
+      }
+    },
+    "mark": "point"
+  },
+  "marktickencodingMajor_GenrenominalyWorldwide_Grossquantitativex": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/movies/movies.json"
+    },
+    "encoding": {
+      "x": {
+        "field": "Worldwide_Gross",
+        "type": "quantitative"
+      },
+      "y": {
+        "field": "Major_Genre",
+        "type": "nominal"
+      }
+    },
+    "mark": "tick"
+  },
+  "marktickencodingIMDB_RatingquantitativexMajor_Genrenominaly": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/movies/movies.json"
+    },
+    "encoding": {
+      "x": {
+        "field": "IMDB_Rating",
+        "type": "quantitative"
+      },
+      "y": {
+        "field": "Major_Genre",
+        "type": "nominal"
+      }
+    },
+    "mark": "tick"
+  }
+}

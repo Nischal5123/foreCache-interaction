@@ -1,0 +1,3322 @@
+[
+  {
+    "Interaction": "study begins",
+    "Value": "page loaded",
+    "Time": 1612023853484
+  },
+  {
+    "Interaction": "mouseover a related chart",
+    "Value": "mark:bar;encoding:-quantitative-x<aggregate>count,Title-nominal-y",
+    "Time": 1612023857242
+  },
+  {
+    "Interaction": "mouseout a related chart",
+    "Value": "mark:bar;encoding:-quantitative-x<aggregate>count,Title-nominal-y",
+    "Time": 1612023858522
+  },
+  {
+    "Interaction": "mouseover a related chart",
+    "Value": "mark:bar;encoding:-quantitative-x<aggregate>count,Title-nominal-y",
+    "Time": 1612023858523
+  },
+  {
+    "Interaction": "mouseout a related chart",
+    "Value": "mark:bar;encoding:-quantitative-x<aggregate>count,Title-nominal-y",
+    "Time": 1612023860022
+  },
+  {
+    "Interaction": "mouseover a related chart",
+    "Value": "mark:bar;encoding:-quantitative-x<aggregate>count,Title-nominal-y",
+    "Time": 1612023860022
+  },
+  {
+    "Interaction": "mouseout a related chart",
+    "Value": "mark:bar;encoding:-quantitative-x<aggregate>count,Title-nominal-y",
+    "Time": 1612023860755
+  },
+  {
+    "Interaction": "clicked on a field",
+    "Value": "add Creative_Type",
+    "Time": 1612023864748
+  },
+  {
+    "Interaction": "main chart changed because of clicking a field",
+    "Value": "mark:bar;encoding:-quantitative-x<aggregate>count,Creative_Type-nominal-y",
+    "Time": 1612023865136
+  },
+  {
+    "Interaction": "clicked on a field",
+    "Value": "add Release_Date",
+    "Time": 1612023869060
+  },
+  {
+    "Interaction": "main chart changed because of clicking a field",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Release_Date-nominal-x",
+    "Time": 1612023869308
+  },
+  {
+    "Interaction": "clicked on a field",
+    "Value": "remove Release_Date",
+    "Time": 1612023883782
+  },
+  {
+    "Interaction": "main chart changed because of clicking a field",
+    "Value": "mark:bar;encoding:-quantitative-x<aggregate>count,Creative_Type-nominal-y",
+    "Time": 1612023884208
+  },
+  {
+    "Interaction": "clicked on a field",
+    "Value": "add Production_Budget",
+    "Time": 1612023886703
+  },
+  {
+    "Interaction": "main chart changed because of clicking a field",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Production_Budget-quantitative-x<bin>",
+    "Time": 1612023886904
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Production_Budget-quantitative-x<bin>",
+    "Time": 1612023901922
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Production_Budget-quantitative-x<bin>",
+    "Time": 1612023911838
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Production_Budget-quantitative-x<bin>",
+    "Time": 1612023911839
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Production_Budget-quantitative-x<bin>",
+    "Time": 1612023911905
+  },
+  {
+    "Interaction": "clicked on a field",
+    "Value": "add Worldwide_Gross",
+    "Time": 1612023915141
+  },
+  {
+    "Interaction": "main chart changed because of clicking a field",
+    "Value": "mark:point;encoding:Creative_Type-nominal-y,Production_Budget-quantitative-size,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1612023915491
+  },
+  {
+    "Interaction": "clicked on a field",
+    "Value": "remove Creative_Type",
+    "Time": 1612023919486
+  },
+  {
+    "Interaction": "main chart changed because of clicking a field",
+    "Value": "mark:point;encoding:-quantitative-x<aggregate>count,Production_Budget-quantitative-y<aggregate>mean,Worldwide_Gross-quantitative-size<aggregate>mean",
+    "Time": 1612023919654
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-x<aggregate>count,Production_Budget-quantitative-y<aggregate>mean,Worldwide_Gross-quantitative-size<aggregate>mean",
+    "Time": 1612023923412
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-x<aggregate>count,Production_Budget-quantitative-y<aggregate>mean,Worldwide_Gross-quantitative-size<aggregate>mean",
+    "Time": 1612023928505
+  },
+  {
+    "Interaction": "clicked on a field",
+    "Value": "add Source",
+    "Time": 1612023930067
+  },
+  {
+    "Interaction": "main chart changed because of clicking a field",
+    "Value": "mark:point;encoding:Production_Budget-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1612023930438
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:Production_Budget-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1612023933606
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:Production_Budget-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1612023959505
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:Production_Budget-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1612023960388
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:Production_Budget-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1612023961888
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:Production_Budget-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1612023968988
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:Production_Budget-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1612023969021
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:Production_Budget-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1612023971639
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:Production_Budget-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1612023971672
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:Production_Budget-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1612023971672
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:Production_Budget-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1612023974972
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:Production_Budget-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1612023974972
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:Production_Budget-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1612023974988
+  },
+  {
+    "Interaction": "clicked on a field",
+    "Value": "tried to add IMDB_Rating, but failed because already selected 3 fields",
+    "Time": 1612023981260
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:Production_Budget-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1612023982655
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:Production_Budget-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1612023982672
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:Production_Budget-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1612023982672
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:Production_Budget-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1612023982689
+  },
+  {
+    "Interaction": "clicked on a field",
+    "Value": "remove Production_Budget",
+    "Time": 1612023984159
+  },
+  {
+    "Interaction": "main chart changed because of clicking a field",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1612023984589
+  },
+  {
+    "Interaction": "clicked on a field",
+    "Value": "add IMDB_Rating",
+    "Time": 1612023986276
+  },
+  {
+    "Interaction": "main chart changed because of clicking a field",
+    "Value": "mark:point;encoding:IMDB_Rating-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1612023986501
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:IMDB_Rating-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1612023994231
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:IMDB_Rating-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1612023995816
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:IMDB_Rating-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1612023998155
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:IMDB_Rating-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1612023998172
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:IMDB_Rating-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1612023998172
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:IMDB_Rating-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1612023998222
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:IMDB_Rating-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1612023999088
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:IMDB_Rating-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1612023999122
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:IMDB_Rating-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1612023999122
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:IMDB_Rating-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1612023999922
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:IMDB_Rating-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1612024001022
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:IMDB_Rating-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1612024001155
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:IMDB_Rating-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1612024001155
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:IMDB_Rating-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1612024001388
+  },
+  {
+    "Interaction": "added chart to bookmark",
+    "Value": "mark:point;encoding:IMDB_Rating-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1612024002260
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "O",
+    "Time": 1612024005602
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Or",
+    "Time": 1612024005762
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Ori",
+    "Time": 1612024005874
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Orig",
+    "Time": 1612024005986
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Origi",
+    "Time": 1612024006066
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Origim",
+    "Time": 1612024006242
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Origi",
+    "Time": 1612024006881
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Origin",
+    "Time": 1612024007090
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Origina",
+    "Time": 1612024007186
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original",
+    "Time": 1612024007314
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original ",
+    "Time": 1612024007426
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original s",
+    "Time": 1612024007490
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original sc",
+    "Time": 1612024007634
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original scr",
+    "Time": 1612024007842
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original scre",
+    "Time": 1612024007986
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original scree",
+    "Time": 1612024008066
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screen",
+    "Time": 1612024008178
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenp",
+    "Time": 1612024008674
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenpl",
+    "Time": 1612024008882
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenpla",
+    "Time": 1612024008946
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay",
+    "Time": 1612024009170
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay ",
+    "Time": 1612024009298
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay s",
+    "Time": 1612024009410
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay se",
+    "Time": 1612024009586
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay see",
+    "Time": 1612024009682
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seem",
+    "Time": 1612024009826
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems",
+    "Time": 1612024009970
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems ",
+    "Time": 1612024010114
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems t",
+    "Time": 1612024010226
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to",
+    "Time": 1612024010274
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to ",
+    "Time": 1612024010370
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to b",
+    "Time": 1612024010482
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be",
+    "Time": 1612024010530
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be ",
+    "Time": 1612024010626
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be t",
+    "Time": 1612024010738
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be th",
+    "Time": 1612024010802
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the",
+    "Time": 1612024010914
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the ",
+    "Time": 1612024010995
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the m",
+    "Time": 1612024011058
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the mo",
+    "Time": 1612024011250
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the mos",
+    "Time": 1612024011282
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most",
+    "Time": 1612024011458
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most ",
+    "Time": 1612024011538
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most c",
+    "Time": 1612024011682
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most co",
+    "Time": 1612024011746
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most com",
+    "Time": 1612024011970
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most comm",
+    "Time": 1612024012098
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most commo",
+    "Time": 1612024012259
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common",
+    "Time": 1612024012386
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common ",
+    "Time": 1612024012594
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common a",
+    "Time": 1612024014242
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common an",
+    "Time": 1612024014386
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and",
+    "Time": 1612024014738
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and ",
+    "Time": 1612024014898
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and w",
+    "Time": 1612024015346
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wi",
+    "Time": 1612024015410
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wid",
+    "Time": 1612024015538
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide",
+    "Time": 1612024015682
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and widel",
+    "Time": 1612024015794
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and widely",
+    "Time": 1612024015938
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and widely ",
+    "Time": 1612024016130
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and widely",
+    "Time": 1612024018178
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and widel",
+    "Time": 1612024019234
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide",
+    "Time": 1612024019442
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide ",
+    "Time": 1612024019858
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide s",
+    "Time": 1612024020002
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide so",
+    "Time": 1612024020082
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide sou",
+    "Time": 1612024020242
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide sour",
+    "Time": 1612024020307
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide sourc",
+    "Time": 1612024020466
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source",
+    "Time": 1612024020626
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source ",
+    "Time": 1612024020737
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source o",
+    "Time": 1612024020801
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of",
+    "Time": 1612024020914
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of ",
+    "Time": 1612024021010
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of m",
+    "Time": 1612024022339
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of mo",
+    "Time": 1612024022514
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of mov",
+    "Time": 1612024022610
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movi",
+    "Time": 1612024022738
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movie",
+    "Time": 1612024022866
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies",
+    "Time": 1612024023058
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:IMDB_Rating-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1612024024189
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:IMDB_Rating-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1612024024206
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:IMDB_Rating-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1612024024206
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:IMDB_Rating-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1612024024672
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:IMDB_Rating-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1612024024672
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:IMDB_Rating-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1612024024689
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:IMDB_Rating-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1612024026955
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:IMDB_Rating-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1612024027005
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:IMDB_Rating-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1612024029606
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:IMDB_Rating-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1612024029989
+  },
+  {
+    "Interaction": "clicked on a field",
+    "Value": "remove IMDB_Rating",
+    "Time": 1612024030984
+  },
+  {
+    "Interaction": "main chart changed because of clicking a field",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1612024031427
+  },
+  {
+    "Interaction": "clicked on a field",
+    "Value": "add Production_Budget",
+    "Time": 1612024038184
+  },
+  {
+    "Interaction": "main chart changed because of clicking a field",
+    "Value": "mark:point;encoding:Production_Budget-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1612024038355
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:Production_Budget-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1612024041282
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:Production_Budget-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1612024042260
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:Production_Budget-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1612024044533
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:Production_Budget-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1612024044879
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:Production_Budget-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1612024045889
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:Production_Budget-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1612024045989
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:Production_Budget-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1612024045989
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:Production_Budget-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1612024046006
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:Production_Budget-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1612024046172
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:Production_Budget-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1612024046623
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:Production_Budget-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1612024046623
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:Production_Budget-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1612024046672
+  },
+  {
+    "Interaction": "added chart to bookmark",
+    "Value": "mark:point;encoding:Production_Budget-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1612024047566
+  },
+  {
+    "Interaction": "clicked on a field",
+    "Value": "remove Production_Budget",
+    "Time": 1612024050986
+  },
+  {
+    "Interaction": "main chart changed because of clicking a field",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1612024051348
+  },
+  {
+    "Interaction": "clicked on a field",
+    "Value": "remove undefined",
+    "Time": 1612024052154
+  },
+  {
+    "Interaction": "main chart changed because of clicking a field",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1612024052323
+  },
+  {
+    "Interaction": "clicked on a field",
+    "Value": "add Major_Genre",
+    "Time": 1612024054263
+  },
+  {
+    "Interaction": "main chart changed because of clicking a field",
+    "Value": "mark:point;encoding:Major_Genre-nominal-x,Source-nominal-y,Worldwide_Gross-quantitative-size",
+    "Time": 1612024054453
+  },
+  {
+    "Interaction": "clicked on a field",
+    "Value": "remove Source",
+    "Time": 1612024055651
+  },
+  {
+    "Interaction": "main chart changed because of clicking a field",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Major_Genre-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1612024055819
+  },
+  {
+    "Interaction": "clicked on a field",
+    "Value": "remove Worldwide_Gross",
+    "Time": 1612024060904
+  },
+  {
+    "Interaction": "main chart changed because of clicking a field",
+    "Value": "mark:bar;encoding:-quantitative-x<aggregate>count,Major_Genre-nominal-y",
+    "Time": 1612024061084
+  },
+  {
+    "Interaction": "clicked on a field",
+    "Value": "add Production_Budget",
+    "Time": 1612024062272
+  },
+  {
+    "Interaction": "main chart changed because of clicking a field",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Major_Genre-nominal-y,Production_Budget-quantitative-x<bin>",
+    "Time": 1612024062447
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Major_Genre-nominal-y,Production_Budget-quantitative-x<bin>",
+    "Time": 1612024079372
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Major_Genre-nominal-y,Production_Budget-quantitative-x<bin>",
+    "Time": 1612024079954
+  },
+  {
+    "Interaction": "mouseover a related chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Source-nominal-color",
+    "Time": 1612024079954
+  },
+  {
+    "Interaction": "mouseout a related chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Source-nominal-color",
+    "Time": 1612024080607
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Major_Genre-nominal-y,Production_Budget-quantitative-x<bin>",
+    "Time": 1612024084470
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Major_Genre-nominal-y,Production_Budget-quantitative-x<bin>",
+    "Time": 1612024085930
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Major_Genre-nominal-y,Production_Budget-quantitative-x<bin>",
+    "Time": 1612024086207
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Major_Genre-nominal-y,Production_Budget-quantitative-x<bin>",
+    "Time": 1612024097406
+  },
+  {
+    "Interaction": "clicked on a field",
+    "Value": "add Creative_Type",
+    "Time": 1612024103022
+  },
+  {
+    "Interaction": "main chart changed because of clicking a field",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Production_Budget-quantitative-size",
+    "Time": 1612024103357
+  },
+  {
+    "Interaction": "clicked on a field",
+    "Value": "remove Production_Budget",
+    "Time": 1612024134402
+  },
+  {
+    "Interaction": "main chart changed because of clicking a field",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-x,Major_Genre-nominal-y",
+    "Time": 1612024134770
+  },
+  {
+    "Interaction": "clicked on a field",
+    "Value": "add IMDB_Rating",
+    "Time": 1612024136684
+  },
+  {
+    "Interaction": "main chart changed because of clicking a field",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-size,Major_Genre-nominal-y",
+    "Time": 1612024136856
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-size,Major_Genre-nominal-y",
+    "Time": 1612024146436
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-size,Major_Genre-nominal-y",
+    "Time": 1612024149062
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-size,Major_Genre-nominal-y",
+    "Time": 1612024149645
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-size,Major_Genre-nominal-y",
+    "Time": 1612024177789
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies,",
+    "Time": 1612024179474
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, ",
+    "Time": 1612024179698
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, K",
+    "Time": 1612024180114
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Ki",
+    "Time": 1612024180354
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kid",
+    "Time": 1612024180498
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids",
+    "Time": 1612024180674
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids ",
+    "Time": 1612024180786
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids f",
+    "Time": 1612024180914
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fi",
+    "Time": 1612024181010
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fic",
+    "Time": 1612024181138
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fict",
+    "Time": 1612024181746
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids ficti",
+    "Time": 1612024181810
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fictio",
+    "Time": 1612024181874
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction",
+    "Time": 1612024182066
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction ",
+    "Time": 1612024182723
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction s",
+    "Time": 1612024182818
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction se",
+    "Time": 1612024182978
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction see",
+    "Time": 1612024183106
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seem",
+    "Time": 1612024183170
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seem ",
+    "Time": 1612024183300
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seem s",
+    "Time": 1612024183301
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seem st",
+    "Time": 1612024183587
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seem sto",
+    "Time": 1612024183650
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seem st",
+    "Time": 1612024184162
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seem s",
+    "Time": 1612024184306
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seem ",
+    "Time": 1612024184450
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seem",
+    "Time": 1612024184594
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems",
+    "Time": 1612024184706
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems ",
+    "Time": 1612024184818
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems t",
+    "Time": 1612024184994
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to",
+    "Time": 1612024185122
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to ",
+    "Time": 1612024185218
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to h",
+    "Time": 1612024185346
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to ha",
+    "Time": 1612024185410
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to hav",
+    "Time": 1612024185586
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have",
+    "Time": 1612024185762
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have ",
+    "Time": 1612024185826
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a",
+    "Time": 1612024185954
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a ",
+    "Time": 1612024186019
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a v",
+    "Time": 1612024186146
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a ve",
+    "Time": 1612024186306
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a ver",
+    "Time": 1612024186434
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very",
+    "Time": 1612024186626
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very ",
+    "Time": 1612024186754
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very h",
+    "Time": 1612024187297
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very hi",
+    "Time": 1612024187378
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very hig",
+    "Time": 1612024187474
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high",
+    "Time": 1612024187554
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high ",
+    "Time": 1612024187682
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high i",
+    "Time": 1612024187890
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high im",
+    "Time": 1612024188098
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high i",
+    "Time": 1612024188386
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high ",
+    "Time": 1612024188546
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high I",
+    "Time": 1612024188914
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IM",
+    "Time": 1612024189170
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMD",
+    "Time": 1612024189346
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB",
+    "Time": 1612024189538
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB ",
+    "Time": 1612024189698
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB r",
+    "Time": 1612024189810
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB ra",
+    "Time": 1612024190002
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rat",
+    "Time": 1612024190210
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rati",
+    "Time": 1612024190306
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB ratin",
+    "Time": 1612024190418
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating",
+    "Time": 1612024191186
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-size,Major_Genre-nominal-y",
+    "Time": 1612024191655
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-size,Major_Genre-nominal-y",
+    "Time": 1612024191672
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-size,Major_Genre-nominal-y",
+    "Time": 1612024191672
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-size,Major_Genre-nominal-y",
+    "Time": 1612024191756
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-size,Major_Genre-nominal-y",
+    "Time": 1612024191756
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-size,Major_Genre-nominal-y",
+    "Time": 1612024191805
+  },
+  {
+    "Interaction": "added chart to bookmark",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-size,Major_Genre-nominal-y",
+    "Time": 1612024192698
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-size,Major_Genre-nominal-y",
+    "Time": 1612024193261
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-size,Major_Genre-nominal-y",
+    "Time": 1612024193427
+  },
+  {
+    "Interaction": "clicked on a field",
+    "Value": "remove IMDB_Rating",
+    "Time": 1612024195574
+  },
+  {
+    "Interaction": "main chart changed because of clicking a field",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-x,Major_Genre-nominal-y",
+    "Time": 1612024195939
+  },
+  {
+    "Interaction": "clicked on a field",
+    "Value": "add Rotten_Tomatoes_Rating",
+    "Time": 1612024199336
+  },
+  {
+    "Interaction": "main chart changed because of clicking a field",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-size",
+    "Time": 1612024199500
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-size",
+    "Time": 1612024204881
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-size",
+    "Time": 1612024215005
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating ",
+    "Time": 1612024216354
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating b",
+    "Time": 1612024216721
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating bu",
+    "Time": 1612024216849
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating but",
+    "Time": 1612024216962
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating but ",
+    "Time": 1612024217073
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating but n",
+    "Time": 1612024218273
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating but no",
+    "Time": 1612024218338
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating but not",
+    "Time": 1612024218482
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating but not ",
+    "Time": 1612024218562
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating but not v",
+    "Time": 1612024218737
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating but not ve",
+    "Time": 1612024218913
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating but not ver",
+    "Time": 1612024219058
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating but not very",
+    "Time": 1612024219217
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating but not very ",
+    "Time": 1612024219361
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating but not very g",
+    "Time": 1612024219457
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating but not very gi",
+    "Time": 1612024219554
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating but not very git",
+    "Time": 1612024219698
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating but not very gith",
+    "Time": 1612024219729
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating but not very git",
+    "Time": 1612024220322
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating but not very gi",
+    "Time": 1612024220465
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating but not very g",
+    "Time": 1612024220594
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating but not very ",
+    "Time": 1612024220738
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating but not very h",
+    "Time": 1612024220834
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating but not very hi",
+    "Time": 1612024220946
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating but not very hig",
+    "Time": 1612024221041
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating but not very high",
+    "Time": 1612024221138
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating but not very hight",
+    "Time": 1612024221234
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating but not very hight ",
+    "Time": 1612024221458
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating but not very hight R",
+    "Time": 1612024221906
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating but not very hight RT",
+    "Time": 1612024222049
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating but not very hight RT ",
+    "Time": 1612024222177
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating but not very hight RT r",
+    "Time": 1612024222290
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating but not very hight RT ra",
+    "Time": 1612024222481
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating but not very hight RT rat",
+    "Time": 1612024222674
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating but not very hight RT rati",
+    "Time": 1612024222802
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating but not very hight RT ratin",
+    "Time": 1612024222882
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating but not very hight RT rating",
+    "Time": 1612024223041
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating but not very hight RT rating.",
+    "Time": 1612024223138
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating but not very hight RT rating. ",
+    "Time": 1612024223873
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-size",
+    "Time": 1612024224705
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-size",
+    "Time": 1612024224722
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-size",
+    "Time": 1612024224722
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-size",
+    "Time": 1612024242122
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-size",
+    "Time": 1612024242855
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-size",
+    "Time": 1612024242872
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-size",
+    "Time": 1612024242872
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-size",
+    "Time": 1612024242939
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating ",
+    "Time": 1612024247250
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rating",
+    "Time": 1612024247441
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB ratin",
+    "Time": 1612024247585
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rati",
+    "Time": 1612024247713
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB rat",
+    "Time": 1612024247858
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB ra",
+    "Time": 1612024247985
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB r",
+    "Time": 1612024248145
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB ra",
+    "Time": 1612024248498
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB r",
+    "Time": 1612024248754
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB ",
+    "Time": 1612024248881
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB a",
+    "Time": 1612024248961
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB ad",
+    "Time": 1612024249201
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB a",
+    "Time": 1612024249537
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB an",
+    "Time": 1612024249906
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and",
+    "Time": 1612024250002
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and ",
+    "Time": 1612024250113
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and R",
+    "Time": 1612024250386
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT",
+    "Time": 1612024250563
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT ",
+    "Time": 1612024250737
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT r",
+    "Time": 1612024252082
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT ra",
+    "Time": 1612024252257
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rat",
+    "Time": 1612024252482
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rati",
+    "Time": 1612024252578
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT ratin",
+    "Time": 1612024252674
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating",
+    "Time": 1612024252849
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-size",
+    "Time": 1612024254272
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-size",
+    "Time": 1612024254855
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-size",
+    "Time": 1612024254855
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-size",
+    "Time": 1612024254872
+  },
+  {
+    "Interaction": "clicked on a field",
+    "Value": "remove Rotten_Tomatoes_Rating",
+    "Time": 1612024255793
+  },
+  {
+    "Interaction": "main chart changed because of clicking a field",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-x,Major_Genre-nominal-y",
+    "Time": 1612024256229
+  },
+  {
+    "Interaction": "clicked on a field",
+    "Value": "add IMDB_Rating",
+    "Time": 1612024260680
+  },
+  {
+    "Interaction": "main chart changed because of clicking a field",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-size,Major_Genre-nominal-y",
+    "Time": 1612024260884
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-size,Major_Genre-nominal-y",
+    "Time": 1612024264019
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-size,Major_Genre-nominal-y",
+    "Time": 1612024265406
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-size,Major_Genre-nominal-y",
+    "Time": 1612024265561
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-size,Major_Genre-nominal-y",
+    "Time": 1612024266654
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-size,Major_Genre-nominal-y",
+    "Time": 1612024267045
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-size,Major_Genre-nominal-y",
+    "Time": 1612024268217
+  },
+  {
+    "Interaction": "clicked on a field",
+    "Value": "remove IMDB_Rating",
+    "Time": 1612024269574
+  },
+  {
+    "Interaction": "main chart changed because of clicking a field",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-x,Major_Genre-nominal-y",
+    "Time": 1612024269778
+  },
+  {
+    "Interaction": "clicked on a field",
+    "Value": "add Rotten_Tomatoes_Rating",
+    "Time": 1612024271081
+  },
+  {
+    "Interaction": "main chart changed because of clicking a field",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-size",
+    "Time": 1612024271286
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-size",
+    "Time": 1612024278233
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-size",
+    "Time": 1612024278573
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-size",
+    "Time": 1612024278573
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-size",
+    "Time": 1612024280388
+  },
+  {
+    "Interaction": "added chart to bookmark",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-size",
+    "Time": 1612024281422
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-size",
+    "Time": 1612024283428
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-size",
+    "Time": 1612024283597
+  },
+  {
+    "Interaction": "clicked on a field",
+    "Value": "remove Rotten_Tomatoes_Rating",
+    "Time": 1612024286316
+  },
+  {
+    "Interaction": "main chart changed because of clicking a field",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-x,Major_Genre-nominal-y",
+    "Time": 1612024286730
+  },
+  {
+    "Interaction": "clicked on a field",
+    "Value": "add Running_Time_min",
+    "Time": 1612024288085
+  },
+  {
+    "Interaction": "main chart changed because of clicking a field",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Running_Time_min-quantitative-size",
+    "Time": 1612024288285
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Running_Time_min-quantitative-size",
+    "Time": 1612024295300
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Running_Time_min-quantitative-size",
+    "Time": 1612024298436
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Running_Time_min-quantitative-size",
+    "Time": 1612024299005
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Running_Time_min-quantitative-size",
+    "Time": 1612024309106
+  },
+  {
+    "Interaction": "clicked on a field",
+    "Value": "remove Major_Genre",
+    "Time": 1612024311326
+  },
+  {
+    "Interaction": "main chart changed because of clicking a field",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Running_Time_min-quantitative-x<bin>",
+    "Time": 1612024311729
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Running_Time_min-quantitative-x<bin>",
+    "Time": 1612024314497
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Running_Time_min-quantitative-x<bin>",
+    "Time": 1612024331072
+  },
+  {
+    "Interaction": "added chart to bookmark",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Running_Time_min-quantitative-x<bin>",
+    "Time": 1612024333665
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Running_Time_min-quantitative-x<bin>",
+    "Time": 1612024333833
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Running_Time_min-quantitative-x<bin>",
+    "Time": 1612024337272
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating.",
+    "Time": 1612024339202
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. ",
+    "Time": 1612024339314
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. C",
+    "Time": 1612024339569
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cp",
+    "Time": 1612024339729
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cpm",
+    "Time": 1612024340289
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cpme",
+    "Time": 1612024340465
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cpm",
+    "Time": 1612024340945
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cp",
+    "Time": 1612024341089
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cpm",
+    "Time": 1612024341282
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cpmt",
+    "Time": 1612024341394
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cpmte",
+    "Time": 1612024341601
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cpmt",
+    "Time": 1612024342002
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cpm",
+    "Time": 1612024342161
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cp",
+    "Time": 1612024342305
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cpn",
+    "Time": 1612024343025
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cpnt",
+    "Time": 1612024343332
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cpnte",
+    "Time": 1612024343505
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cpntem",
+    "Time": 1612024343937
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cpntemp",
+    "Time": 1612024344193
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cpntempo",
+    "Time": 1612024344369
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cpntempor",
+    "Time": 1612024344593
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cpntempo",
+    "Time": 1612024344929
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cpntemp",
+    "Time": 1612024345105
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cpntem",
+    "Time": 1612024345249
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cpnte",
+    "Time": 1612024345409
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cpnt",
+    "Time": 1612024345569
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cpn",
+    "Time": 1612024345729
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cp",
+    "Time": 1612024345873
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cpn",
+    "Time": 1612024346545
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cpnt",
+    "Time": 1612024346785
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cpnte",
+    "Time": 1612024346961
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cpntem",
+    "Time": 1612024347090
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cpntemp",
+    "Time": 1612024347409
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cpntempo",
+    "Time": 1612024347585
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cpntempor",
+    "Time": 1612024347745
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cpntempo",
+    "Time": 1612024348385
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cpntemp",
+    "Time": 1612024348561
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cpntem",
+    "Time": 1612024348721
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cpnte",
+    "Time": 1612024348881
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cpnt",
+    "Time": 1612024349041
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cpn",
+    "Time": 1612024349201
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cp",
+    "Time": 1612024349361
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. C",
+    "Time": 1612024351122
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Co",
+    "Time": 1612024351362
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Con",
+    "Time": 1612024351553
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Cont",
+    "Time": 1612024351793
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Conte",
+    "Time": 1612024351969
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contem",
+    "Time": 1612024352050
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemp",
+    "Time": 1612024352242
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contempo",
+    "Time": 1612024352401
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contempor",
+    "Time": 1612024352593
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contempora",
+    "Time": 1612024352833
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporar",
+    "Time": 1612024353057
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary",
+    "Time": 1612024353233
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary ",
+    "Time": 1612024353425
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary f",
+    "Time": 1612024353777
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fi",
+    "Time": 1612024353873
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fic",
+    "Time": 1612024353954
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fict",
+    "Time": 1612024354129
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary ficti",
+    "Time": 1612024354257
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fictio",
+    "Time": 1612024354290
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction",
+    "Time": 1612024354625
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction ",
+    "Time": 1612024354929
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction t",
+    "Time": 1612024356593
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction ty",
+    "Time": 1612024356818
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction typ",
+    "Time": 1612024356945
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type",
+    "Time": 1612024357106
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type ",
+    "Time": 1612024357362
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type m",
+    "Time": 1612024357473
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type mo",
+    "Time": 1612024357633
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type mov",
+    "Time": 1612024357666
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movi",
+    "Time": 1612024357825
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movie",
+    "Time": 1612024357889
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies",
+    "Time": 1612024358049
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies ",
+    "Time": 1612024358129
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies t",
+    "Time": 1612024358273
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies ty",
+    "Time": 1612024358913
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typ",
+    "Time": 1612024359026
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typi",
+    "Time": 1612024359185
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typic",
+    "Time": 1612024359266
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typica",
+    "Time": 1612024359473
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typical",
+    "Time": 1612024359554
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typicall",
+    "Time": 1612024359681
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically",
+    "Time": 1612024360417
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically ",
+    "Time": 1612024360530
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically r",
+    "Time": 1612024360753
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically ru",
+    "Time": 1612024360818
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run",
+    "Time": 1612024360993
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run ",
+    "Time": 1612024361089
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run b",
+    "Time": 1612024361153
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run be",
+    "Time": 1612024361233
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run bet",
+    "Time": 1612024361394
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run betw",
+    "Time": 1612024361585
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run betwe",
+    "Time": 1612024361729
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run betwee",
+    "Time": 1612024361857
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between",
+    "Time": 1612024361922
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between ",
+    "Time": 1612024362001
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1",
+    "Time": 1612024363378
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.",
+    "Time": 1612024363505
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5",
+    "Time": 1612024363825
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 ",
+    "Time": 1612024364161
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 h",
+    "Time": 1612024364257
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 hr",
+    "Time": 1612024364386
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 hrs",
+    "Time": 1612024364593
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 hr",
+    "Time": 1612024364929
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 h",
+    "Time": 1612024365089
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 ",
+    "Time": 1612024365249
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 -",
+    "Time": 1612024365409
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - ",
+    "Time": 1612024365905
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2",
+    "Time": 1612024366561
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 ",
+    "Time": 1612024366721
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 h",
+    "Time": 1612024366849
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hr",
+    "Time": 1612024366977
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs",
+    "Time": 1612024367185
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Running_Time_min-quantitative-x<bin>",
+    "Time": 1612024368155
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Running_Time_min-quantitative-x<bin>",
+    "Time": 1612024368239
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Running_Time_min-quantitative-x<bin>",
+    "Time": 1612024368239
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Running_Time_min-quantitative-x<bin>",
+    "Time": 1612024368255
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Running_Time_min-quantitative-x<bin>",
+    "Time": 1612024368888
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Running_Time_min-quantitative-x<bin>",
+    "Time": 1612024368905
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Running_Time_min-quantitative-x<bin>",
+    "Time": 1612024368905
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Running_Time_min-quantitative-x<bin>",
+    "Time": 1612024369655
+  },
+  {
+    "Interaction": "clicked on a field",
+    "Value": "remove Running_Time_min",
+    "Time": 1612024371485
+  },
+  {
+    "Interaction": "main chart changed because of clicking a field",
+    "Value": "mark:bar;encoding:-quantitative-x<aggregate>count,Creative_Type-nominal-y",
+    "Time": 1612024371941
+  },
+  {
+    "Interaction": "clicked on a field",
+    "Value": "add Worldwide_Gross",
+    "Time": 1612024373183
+  },
+  {
+    "Interaction": "main chart changed because of clicking a field",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1612024373357
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1612024380018
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1612024382800
+  },
+  {
+    "Interaction": "clicked on a field",
+    "Value": "remove Worldwide_Gross",
+    "Time": 1612024383747
+  },
+  {
+    "Interaction": "main chart changed because of clicking a field",
+    "Value": "mark:bar;encoding:-quantitative-x<aggregate>count,Creative_Type-nominal-y",
+    "Time": 1612024384136
+  },
+  {
+    "Interaction": "clicked on a field",
+    "Value": "add Release_Date",
+    "Time": 1612024385667
+  },
+  {
+    "Interaction": "main chart changed because of clicking a field",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Release_Date-nominal-x",
+    "Time": 1612024385862
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Release_Date-nominal-x",
+    "Time": 1612024399466
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Release_Date-nominal-x",
+    "Time": 1612024403105
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Release_Date-nominal-x",
+    "Time": 1612024403739
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Release_Date-nominal-x",
+    "Time": 1612024403755
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Release_Date-nominal-x",
+    "Time": 1612024403756
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Release_Date-nominal-x",
+    "Time": 1612024405855
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Release_Date-nominal-x",
+    "Time": 1612024408789
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Release_Date-nominal-x",
+    "Time": 1612024408822
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Release_Date-nominal-x",
+    "Time": 1612024408822
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Release_Date-nominal-x",
+    "Time": 1612024408839
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Release_Date-nominal-x",
+    "Time": 1612024408839
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Release_Date-nominal-x",
+    "Time": 1612024408889
+  },
+  {
+    "Interaction": "added chart to bookmark",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Release_Date-nominal-x",
+    "Time": 1612024409997
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs ",
+    "Time": 1612024414690
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs a",
+    "Time": 1612024415265
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs an",
+    "Time": 1612024415378
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and",
+    "Time": 1612024415666
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and ",
+    "Time": 1612024415841
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and g",
+    "Time": 1612024415906
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and ge",
+    "Time": 1612024416066
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and get",
+    "Time": 1612024416226
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets",
+    "Time": 1612024416433
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets ",
+    "Time": 1612024416530
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets r",
+    "Time": 1612024416625
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets re",
+    "Time": 1612024416769
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets rel",
+    "Time": 1612024416850
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets rele",
+    "Time": 1612024416946
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets relea",
+    "Time": 1612024417106
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets releas",
+    "Time": 1612024417250
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets release",
+    "Time": 1612024417394
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released",
+    "Time": 1612024417554
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released ",
+    "Time": 1612024417697
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released a",
+    "Time": 1612024417985
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released al",
+    "Time": 1612024418754
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all",
+    "Time": 1612024418977
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all ",
+    "Time": 1612024419201
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all t",
+    "Time": 1612024419313
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all th",
+    "Time": 1612024419985
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all thr",
+    "Time": 1612024420450
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all thro",
+    "Time": 1612024420626
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throu",
+    "Time": 1612024420817
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throug",
+    "Time": 1612024420914
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all through",
+    "Time": 1612024421041
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all througho",
+    "Time": 1612024421281
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughou",
+    "Time": 1612024421457
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout",
+    "Time": 1612024421538
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout ",
+    "Time": 1612024421681
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout t",
+    "Time": 1612024421809
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout th",
+    "Time": 1612024421889
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the",
+    "Time": 1612024422001
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the ",
+    "Time": 1612024422097
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the y",
+    "Time": 1612024422193
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the ye",
+    "Time": 1612024422258
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the yea",
+    "Time": 1612024422433
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year",
+    "Time": 1612024422642
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Release_Date-nominal-x",
+    "Time": 1612024424055
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Release_Date-nominal-x",
+    "Time": 1612024424089
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Release_Date-nominal-x",
+    "Time": 1612024424089
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Release_Date-nominal-x",
+    "Time": 1612024431805
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year.",
+    "Time": 1612024433506
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. ",
+    "Time": 1612024433665
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. H",
+    "Time": 1612024434033
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Ho",
+    "Time": 1612024434178
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Hos",
+    "Time": 1612024434290
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Hosp",
+    "Time": 1612024434401
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Hospt",
+    "Time": 1612024434530
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Hosp",
+    "Time": 1612024434897
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Hos",
+    "Time": 1612024435059
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Ho",
+    "Time": 1612024435201
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. H",
+    "Time": 1612024435346
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Hs",
+    "Time": 1612024435586
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. H",
+    "Time": 1612024436065
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Hi",
+    "Time": 1612024436321
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. His",
+    "Time": 1612024436386
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Hist",
+    "Time": 1612024436593
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Histo",
+    "Time": 1612024436978
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Histor",
+    "Time": 1612024437153
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Histori",
+    "Time": 1612024437281
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historic",
+    "Time": 1612024437393
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historica",
+    "Time": 1612024437601
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical",
+    "Time": 1612024437617
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical ",
+    "Time": 1612024437762
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical f",
+    "Time": 1612024437905
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fi",
+    "Time": 1612024438081
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fic",
+    "Time": 1612024438225
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fict",
+    "Time": 1612024438417
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical ficti",
+    "Time": 1612024438497
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fictio",
+    "Time": 1612024438545
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction",
+    "Time": 1612024438705
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction ",
+    "Time": 1612024440770
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction i",
+    "Time": 1612024443906
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction in",
+    "Time": 1612024444066
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction in ",
+    "Time": 1612024444225
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction in",
+    "Time": 1612024444674
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction i",
+    "Time": 1612024444817
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction is",
+    "Time": 1612024444897
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction is ",
+    "Time": 1612024445025
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction is m",
+    "Time": 1612024445329
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction is mo",
+    "Time": 1612024445506
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction is mos",
+    "Time": 1612024445569
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction is most",
+    "Time": 1612024445746
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction is mostl",
+    "Time": 1612024445841
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction is mostly",
+    "Time": 1612024445922
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction is mostly ",
+    "Time": 1612024446049
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction is mostly a",
+    "Time": 1612024446178
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction is mostly a ",
+    "Time": 1612024446257
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction is mostly a y",
+    "Time": 1612024446402
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction is mostly a ye",
+    "Time": 1612024446465
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction is mostly a yea",
+    "Time": 1612024446641
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction is mostly a year",
+    "Time": 1612024446849
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction is mostly a year ",
+    "Time": 1612024447009
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction is mostly a year e",
+    "Time": 1612024447121
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction is mostly a year en",
+    "Time": 1612024447233
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction is mostly a year end",
+    "Time": 1612024447346
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction is mostly a year end ",
+    "Time": 1612024447457
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction is mostly a year end y",
+    "Time": 1612024447633
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction is mostly a year end ",
+    "Time": 1612024448018
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction is mostly a year end r",
+    "Time": 1612024448194
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction is mostly a year end re",
+    "Time": 1612024448385
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction is mostly a year end rel",
+    "Time": 1612024448482
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction is mostly a year end rele",
+    "Time": 1612024448578
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction is mostly a year end relea",
+    "Time": 1612024448753
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction is mostly a year end releas",
+    "Time": 1612024448881
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction is mostly a year end release",
+    "Time": 1612024449057
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction is mostly a year end release.",
+    "Time": 1612024451410
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Original screenplay seems to be the most common and wide source of movies, Kids fiction seems to have a very high IMDB and RT rating. Contemporary fiction type movies typically run between 1.5 - 2 hrs and gets released all throughout the year. Historical fiction is mostly a year end release",
+    "Time": 1612024453522
+  },
+  {
+    "Interaction": "changed ptask ans of confidence-udata",
+    "Value": "agree",
+    "Time": 1612024455806
+  },
+  {
+    "Interaction": "changed ptask ans of confidence-ans",
+    "Value": "agree",
+    "Time": 1612024457340
+  },
+  {
+    "Interaction": "changed ptask ans of efficiency",
+    "Value": "sagree",
+    "Time": 1612024459368
+  },
+  {
+    "Interaction": "changed ptask ans of ease-of-use",
+    "Value": "agree",
+    "Time": 1612024460962
+  },
+  {
+    "Interaction": "changed ptask ans of utility",
+    "Value": "agree",
+    "Time": 1612024462748
+  },
+  {
+    "Interaction": "changed ptask ans of overall",
+    "Value": "agree",
+    "Time": 1612024466796
+  },
+  {
+    "Interaction": "hit the submit button",
+    "Value": "",
+    "Time": 1612024467565
+  },
+  {
+    "Interaction": "submission failed",
+    "Value": "did not bookmark the correct number of charts",
+    "Time": 1612024470441
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Release_Date-nominal-x",
+    "Time": 1612024471156
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Release_Date-nominal-x",
+    "Time": 1612024471206
+  },
+  {
+    "Interaction": "opened window",
+    "Value": "bookmark popup",
+    "Time": 1612024471799
+  },
+  {
+    "Interaction": "deleted chart from bookmark",
+    "Value": "mark:point;encoding:Production_Budget-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1612024511108
+  },
+  {
+    "Interaction": "hit the submit button",
+    "Value": "",
+    "Time": 1612024513694
+  },
+  {
+    "Interaction": "submitted successfully",
+    "Value": "",
+    "Time": 1612024513695
+  }
+]

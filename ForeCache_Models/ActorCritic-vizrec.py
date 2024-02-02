@@ -5,7 +5,6 @@ import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
 from torch.distributions import Categorical
-import plotting
 from collections import Counter
 import pandas as pd
 import json
@@ -13,7 +12,6 @@ import os
 import ast
 from collections import defaultdict
 import concurrent.futures
-os.environ["KMP_DUPLICATE_LIB_OK"]="TRUE"
 
 
 eps=1e-35
@@ -29,7 +27,7 @@ class ActorCritic(nn.Module):
 
         # Neural network architecture
         self.fc1 = nn.Linear(3, 128)
-        self.fc_pi = nn.Linear(128, 8)#actor
+        self.fc_pi = nn.Linear(128, 2)#actor
         self.fc_v = nn.Linear(128, 1)#critic
 
         # Optimizer
@@ -97,13 +95,22 @@ class ActorCritic(nn.Module):
             done_mask = 0.0 if done else 1.0
             done_lst.append([done_mask])
 
-        s_batch, a_batch, r_batch, s_prime_batch, done_batch = torch.tensor(s_lst, dtype=torch.float), \
-                                                               torch.tensor(a_lst), \
-                                                               torch.tensor(r_lst, dtype=torch.float), \
-                                                               torch.tensor(s_prime_lst, dtype=torch.float), \
-                                                               torch.tensor(done_lst, dtype=torch.float)
-        self.data = []
-        return s_batch, a_batch, r_batch, s_prime_batch, done_batch
+            # Convert lists to NumPy arrays
+            s_batch_np = np.array(s_lst, dtype=np.float32)
+            a_batch_np = np.array(a_lst)
+            r_batch_np = np.array(r_lst, dtype=np.float32)
+            s_prime_batch_np = np.array(s_prime_lst, dtype=np.float32)
+            done_batch_np = np.array(done_lst, dtype=np.float32)
+
+            # Convert NumPy arrays to PyTorch tensors
+            s_batch = torch.tensor(s_batch_np, dtype=torch.float)
+            a_batch = torch.tensor(a_batch_np)
+            r_batch = torch.tensor(r_batch_np, dtype=torch.float)
+            s_prime_batch = torch.tensor(s_prime_batch_np, dtype=torch.float)
+            done_batch = torch.tensor(done_batch_np, dtype=torch.float)
+
+            self.data = []
+            return s_batch, a_batch, r_batch, s_prime_batch, done_batch
 
     def train_net(self):
         """
@@ -258,7 +265,6 @@ def run_experiment_for_user(u, algo, hyperparams):
     temperatures = hyperparams['temperatures']
 
     threshold_h = hyperparams['threshold']
-    plotter = plotting.plotter(threshold_h)
     y_accu = []
     user_name = get_user_name(u)
 

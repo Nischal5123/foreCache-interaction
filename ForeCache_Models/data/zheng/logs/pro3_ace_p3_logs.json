@@ -1,0 +1,2367 @@
+[
+  {
+    "Interaction": "study begins",
+    "Value": "page loaded",
+    "Time": 1611872132398
+  },
+  {
+    "Interaction": "mouseover a related chart",
+    "Value": "mark:bar;encoding:-quantitative-x<aggregate>count,Title-nominal-y",
+    "Time": 1611872135876
+  },
+  {
+    "Interaction": "mouseout a related chart",
+    "Value": "mark:bar;encoding:-quantitative-x<aggregate>count,Title-nominal-y",
+    "Time": 1611872136860
+  },
+  {
+    "Interaction": "clicked on a field",
+    "Value": "add Worldwide_Gross",
+    "Time": 1611872139558
+  },
+  {
+    "Interaction": "main chart changed because of clicking a field",
+    "Value": "mark:tick;encoding:Worldwide_Gross-quantitative-x",
+    "Time": 1611872139590
+  },
+  {
+    "Interaction": "clicked on a field",
+    "Value": "add Creative_Type",
+    "Time": 1611872143830
+  },
+  {
+    "Interaction": "main chart changed because of clicking a field",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1611872143863
+  },
+  {
+    "Interaction": "clicked on a field",
+    "Value": "remove Creative_Type",
+    "Time": 1611872147068
+  },
+  {
+    "Interaction": "main chart changed because of clicking a field",
+    "Value": "mark:tick;encoding:Worldwide_Gross-quantitative-x",
+    "Time": 1611872147096
+  },
+  {
+    "Interaction": "clicked on a field",
+    "Value": "add Source",
+    "Time": 1611872153888
+  },
+  {
+    "Interaction": "main chart changed because of clicking a field",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1611872153921
+  },
+  {
+    "Interaction": "clicked on a field",
+    "Value": "remove Source",
+    "Time": 1611872159400
+  },
+  {
+    "Interaction": "main chart changed because of clicking a field",
+    "Value": "mark:tick;encoding:Worldwide_Gross-quantitative-x",
+    "Time": 1611872159430
+  },
+  {
+    "Interaction": "clicked on a field",
+    "Value": "add Major_Genre",
+    "Time": 1611872164177
+  },
+  {
+    "Interaction": "main chart changed because of clicking a field",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Major_Genre-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1611872164208
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Major_Genre-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1611872166393
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1611872167922
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1611872167939
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Major_Genre-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1611872167955
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1611872167955
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1611872167971
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1611872167988
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1611872168005
+  },
+  {
+    "Interaction": "mouseover a related chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Worldwide_Gross-quantitative-size",
+    "Time": 1611872168071
+  },
+  {
+    "Interaction": "mouseout a related chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Worldwide_Gross-quantitative-size",
+    "Time": 1611872186336
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1611872186486
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1611872186503
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1611872186519
+  },
+  {
+    "Interaction": "mouseover a related chart",
+    "Value": "mark:point;encoding:Director-nominal-x,Major_Genre-nominal-y,Worldwide_Gross-quantitative-size",
+    "Time": 1611872186536
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1611872186539
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1611872186553
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1611872186569
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1611872186585
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1611872186603
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1611872186619
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1611872186636
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1611872186653
+  },
+  {
+    "Interaction": "mouseout a related chart",
+    "Value": "mark:point;encoding:Director-nominal-x,Major_Genre-nominal-y,Worldwide_Gross-quantitative-size",
+    "Time": 1611872187058
+  },
+  {
+    "Interaction": "mouseover a related chart",
+    "Value": "mark:point;encoding:Distributor-nominal-x,Major_Genre-nominal-y,Worldwide_Gross-quantitative-size",
+    "Time": 1611872187058
+  },
+  {
+    "Interaction": "mouseout a related chart",
+    "Value": "mark:point;encoding:Distributor-nominal-x,Major_Genre-nominal-y,Worldwide_Gross-quantitative-size",
+    "Time": 1611872187303
+  },
+  {
+    "Interaction": "mouseover a related chart",
+    "Value": "mark:point;encoding:Major_Genre-nominal-x,Source-nominal-y,Worldwide_Gross-quantitative-size",
+    "Time": 1611872187419
+  },
+  {
+    "Interaction": "mouseout a related chart",
+    "Value": "mark:point;encoding:Major_Genre-nominal-x,Source-nominal-y,Worldwide_Gross-quantitative-size",
+    "Time": 1611872187470
+  },
+  {
+    "Interaction": "mouseover a related chart",
+    "Value": "mark:point;encoding:Major_Genre-nominal-x,Source-nominal-y,Worldwide_Gross-quantitative-size",
+    "Time": 1611872187470
+  },
+  {
+    "Interaction": "mouseout a related chart",
+    "Value": "mark:point;encoding:Major_Genre-nominal-x,Source-nominal-y,Worldwide_Gross-quantitative-size",
+    "Time": 1611872190885
+  },
+  {
+    "Interaction": "mouseover a related chart",
+    "Value": "mark:point;encoding:MPAA_Rating-nominal-x,Major_Genre-nominal-y,Worldwide_Gross-quantitative-size",
+    "Time": 1611872190918
+  },
+  {
+    "Interaction": "mouseout a related chart",
+    "Value": "mark:point;encoding:MPAA_Rating-nominal-x,Major_Genre-nominal-y,Worldwide_Gross-quantitative-size",
+    "Time": 1611872190952
+  },
+  {
+    "Interaction": "mouseover a related chart",
+    "Value": "mark:point;encoding:MPAA_Rating-nominal-x,Major_Genre-nominal-y,Worldwide_Gross-quantitative-size",
+    "Time": 1611872190952
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1611872202816
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1611872202834
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1611872202850
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1611872202870
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1611872202884
+  },
+  {
+    "Interaction": "mouseout a related chart",
+    "Value": "mark:point;encoding:MPAA_Rating-nominal-x,Major_Genre-nominal-y,Worldwide_Gross-quantitative-size",
+    "Time": 1611872203316
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1611872203553
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1611872203567
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1611872203583
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1611872203600
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1611872203617
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1611872203633
+  },
+  {
+    "Interaction": "mouseover a related chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Worldwide_Gross-quantitative-size",
+    "Time": 1611872208333
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1611872208464
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1611872208467
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1611872208483
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1611872208500
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1611872208516
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1611872208533
+  },
+  {
+    "Interaction": "mouseout a related chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Worldwide_Gross-quantitative-size",
+    "Time": 1611872208944
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Major_Genre-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1611872208944
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Major_Genre-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1611872209183
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Major_Genre-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1611872209184
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Major_Genre-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1611872209199
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Major_Genre-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1611872213061
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Major_Genre-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1611872213116
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Major_Genre-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1611872220131
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Major_Genre-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1611872229297
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "A",
+    "Time": 1611872231249
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Ac",
+    "Time": 1611872231505
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Act",
+    "Time": 1611872232021
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Acti",
+    "Time": 1611872232238
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Actio",
+    "Time": 1611872232341
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action",
+    "Time": 1611872232491
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action ",
+    "Time": 1611872232806
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action M",
+    "Time": 1611872233324
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action Mo",
+    "Time": 1611872233427
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action Mov",
+    "Time": 1611872233614
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action Movi",
+    "Time": 1611872233996
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action Movie",
+    "Time": 1611872234994
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action Movies",
+    "Time": 1611872235159
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action Movies\n",
+    "Time": 1611872239208
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Major_Genre-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1611872241013
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Major_Genre-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1611872241046
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Major_Genre-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1611872241046
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Major_Genre-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1611872242529
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Major_Genre-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1611872242529
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Major_Genre-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1611872243045
+  },
+  {
+    "Interaction": "added chart to bookmark",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Major_Genre-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1611872243318
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Major_Genre-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1611872243495
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Major_Genre-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1611872243512
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Major_Genre-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1611872243512
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Major_Genre-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1611872243896
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Major_Genre-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1611872243896
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Major_Genre-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1611872244245
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Major_Genre-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1611872244246
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Major_Genre-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1611872245412
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Major_Genre-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1611872245412
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Major_Genre-nominal-y,Worldwide_Gross-quantitative-x<bin>",
+    "Time": 1611872245430
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1611872245815
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1611872245828
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1611872245845
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1611872245862
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1611872245879
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1611872245895
+  },
+  {
+    "Interaction": "mouseover a related chart",
+    "Value": "mark:point;encoding:Director-nominal-x,Major_Genre-nominal-y,Worldwide_Gross-quantitative-size",
+    "Time": 1611872246317
+  },
+  {
+    "Interaction": "mouseout a related chart",
+    "Value": "mark:point;encoding:Director-nominal-x,Major_Genre-nominal-y,Worldwide_Gross-quantitative-size",
+    "Time": 1611872247464
+  },
+  {
+    "Interaction": "mouseover a related chart",
+    "Value": "mark:point;encoding:Director-nominal-x,Major_Genre-nominal-y,Worldwide_Gross-quantitative-size",
+    "Time": 1611872247464
+  },
+  {
+    "Interaction": "mouseout a related chart",
+    "Value": "mark:point;encoding:Director-nominal-x,Major_Genre-nominal-y,Worldwide_Gross-quantitative-size",
+    "Time": 1611872247495
+  },
+  {
+    "Interaction": "mouseover a related chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Worldwide_Gross-quantitative-size",
+    "Time": 1611872247614
+  },
+  {
+    "Interaction": "mouseout a related chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Worldwide_Gross-quantitative-size",
+    "Time": 1611872247629
+  },
+  {
+    "Interaction": "mouseover a related chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Worldwide_Gross-quantitative-size",
+    "Time": 1611872247629
+  },
+  {
+    "Interaction": "mouseout a related chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Worldwide_Gross-quantitative-size",
+    "Time": 1611872251994
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Movies\n",
+    "Time": 1611872254860
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/  Movies\n",
+    "Time": 1611872255018
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ s Movies\n",
+    "Time": 1611872255432
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/  Movies\n",
+    "Time": 1611872255748
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ S Movies\n",
+    "Time": 1611872255938
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ SC Movies\n",
+    "Time": 1611872256052
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ SCi Movies\n",
+    "Time": 1611872256352
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ SC Movies\n",
+    "Time": 1611872256687
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ S Movies\n",
+    "Time": 1611872256846
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Sc Movies\n",
+    "Time": 1611872256959
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Sci Movies\n",
+    "Time": 1611872257384
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Scie Movies\n",
+    "Time": 1611872257950
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Scien Movies\n",
+    "Time": 1611872258061
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Scienc Movies\n",
+    "Time": 1611872258213
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Movies\n",
+    "Time": 1611872258298
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science  Movies\n",
+    "Time": 1611872258416
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science F Movies\n",
+    "Time": 1611872258758
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science FI Movies\n",
+    "Time": 1611872258869
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science FIc Movies\n",
+    "Time": 1611872259040
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science FIct Movies\n",
+    "Time": 1611872259315
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science FIctu Movies\n",
+    "Time": 1611872259438
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science FIctu= Movies\n",
+    "Time": 1611872259787
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science FIctu Movies\n",
+    "Time": 1611872260075
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science FIct Movies\n",
+    "Time": 1611872260271
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science FIc Movies\n",
+    "Time": 1611872260481
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science FI Movies\n",
+    "Time": 1611872260864
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science FIi Movies\n",
+    "Time": 1611872261493
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science FIic Movies\n",
+    "Time": 1611872261624
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science FIict Movies\n",
+    "Time": 1611872261856
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science FIicti Movies\n",
+    "Time": 1611872261890
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science FIictio Movies\n",
+    "Time": 1611872261984
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science FIiction Movies\n",
+    "Time": 1611872262079
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science FIiction  Movies\n",
+    "Time": 1611872262260
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science FIiction Movies\n",
+    "Time": 1611872262888
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\n",
+    "Time": 1611872265780
+  },
+  {
+    "Interaction": "mouseover a related chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Worldwide_Gross-quantitative-size",
+    "Time": 1611872267926
+  },
+  {
+    "Interaction": "mouseout a related chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Worldwide_Gross-quantitative-size",
+    "Time": 1611872268126
+  },
+  {
+    "Interaction": "mouseover a related chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Worldwide_Gross-quantitative-size",
+    "Time": 1611872268126
+  },
+  {
+    "Interaction": "mouseout a related chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Worldwide_Gross-quantitative-size",
+    "Time": 1611872268143
+  },
+  {
+    "Interaction": "mouseover a related chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Worldwide_Gross-quantitative-size",
+    "Time": 1611872268143
+  },
+  {
+    "Interaction": "mouseout a related chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Worldwide_Gross-quantitative-size",
+    "Time": 1611872268160
+  },
+  {
+    "Interaction": "added chart to bookmark",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Worldwide_Gross-quantitative-size",
+    "Time": 1611872268674
+  },
+  {
+    "Interaction": "mouseover a related chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Worldwide_Gross-quantitative-size",
+    "Time": 1611872269259
+  },
+  {
+    "Interaction": "mouseout a related chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Worldwide_Gross-quantitative-size",
+    "Time": 1611872269292
+  },
+  {
+    "Interaction": "mouseover a related chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Worldwide_Gross-quantitative-size",
+    "Time": 1611872269294
+  },
+  {
+    "Interaction": "mouseout a related chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Worldwide_Gross-quantitative-size",
+    "Time": 1611872269309
+  },
+  {
+    "Interaction": "mouseover a related chart",
+    "Value": "mark:point;encoding:Director-nominal-x,Major_Genre-nominal-y,Worldwide_Gross-quantitative-size",
+    "Time": 1611872269659
+  },
+  {
+    "Interaction": "mouseout a related chart",
+    "Value": "mark:point;encoding:Director-nominal-x,Major_Genre-nominal-y,Worldwide_Gross-quantitative-size",
+    "Time": 1611872269675
+  },
+  {
+    "Interaction": "mouseover a related chart",
+    "Value": "mark:point;encoding:Director-nominal-x,Major_Genre-nominal-y,Worldwide_Gross-quantitative-size",
+    "Time": 1611872269675
+  },
+  {
+    "Interaction": "scroll on a related chart",
+    "Value": "mark:point;encoding:Director-nominal-x,Major_Genre-nominal-y,Worldwide_Gross-quantitative-size",
+    "Time": 1611872269915
+  },
+  {
+    "Interaction": "scroll on a related chart",
+    "Value": "mark:point;encoding:Director-nominal-x,Major_Genre-nominal-y,Worldwide_Gross-quantitative-size",
+    "Time": 1611872269925
+  },
+  {
+    "Interaction": "scroll on a related chart",
+    "Value": "mark:point;encoding:Director-nominal-x,Major_Genre-nominal-y,Worldwide_Gross-quantitative-size",
+    "Time": 1611872269942
+  },
+  {
+    "Interaction": "scroll on a related chart",
+    "Value": "mark:point;encoding:Director-nominal-x,Major_Genre-nominal-y,Worldwide_Gross-quantitative-size",
+    "Time": 1611872269958
+  },
+  {
+    "Interaction": "scroll on a related chart",
+    "Value": "mark:point;encoding:Director-nominal-x,Major_Genre-nominal-y,Worldwide_Gross-quantitative-size",
+    "Time": 1611872269975
+  },
+  {
+    "Interaction": "scroll on a related chart",
+    "Value": "mark:point;encoding:Director-nominal-x,Major_Genre-nominal-y,Worldwide_Gross-quantitative-size",
+    "Time": 1611872269992
+  },
+  {
+    "Interaction": "scroll on a related chart",
+    "Value": "mark:point;encoding:Director-nominal-x,Major_Genre-nominal-y,Worldwide_Gross-quantitative-size",
+    "Time": 1611872270009
+  },
+  {
+    "Interaction": "scroll on a related chart",
+    "Value": "mark:point;encoding:Director-nominal-x,Major_Genre-nominal-y,Worldwide_Gross-quantitative-size",
+    "Time": 1611872270025
+  },
+  {
+    "Interaction": "scroll on a related chart",
+    "Value": "mark:point;encoding:Director-nominal-x,Major_Genre-nominal-y,Worldwide_Gross-quantitative-size",
+    "Time": 1611872270042
+  },
+  {
+    "Interaction": "scroll on a related chart",
+    "Value": "mark:point;encoding:Director-nominal-x,Major_Genre-nominal-y,Worldwide_Gross-quantitative-size",
+    "Time": 1611872270059
+  },
+  {
+    "Interaction": "scroll on a related chart",
+    "Value": "mark:point;encoding:Director-nominal-x,Major_Genre-nominal-y,Worldwide_Gross-quantitative-size",
+    "Time": 1611872270075
+  },
+  {
+    "Interaction": "scroll on a related chart",
+    "Value": "mark:point;encoding:Director-nominal-x,Major_Genre-nominal-y,Worldwide_Gross-quantitative-size",
+    "Time": 1611872270092
+  },
+  {
+    "Interaction": "mouseout a related chart",
+    "Value": "mark:point;encoding:Director-nominal-x,Major_Genre-nominal-y,Worldwide_Gross-quantitative-size",
+    "Time": 1611872270542
+  },
+  {
+    "Interaction": "mouseover a related chart",
+    "Value": "mark:point;encoding:Director-nominal-x,Major_Genre-nominal-y,Worldwide_Gross-quantitative-size",
+    "Time": 1611872271125
+  },
+  {
+    "Interaction": "mouseout a related chart",
+    "Value": "mark:point;encoding:Director-nominal-x,Major_Genre-nominal-y,Worldwide_Gross-quantitative-size",
+    "Time": 1611872271225
+  },
+  {
+    "Interaction": "mouseover a related chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Worldwide_Gross-quantitative-size",
+    "Time": 1611872271625
+  },
+  {
+    "Interaction": "mouseout a related chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Worldwide_Gross-quantitative-size",
+    "Time": 1611872271927
+  },
+  {
+    "Interaction": "clicked on a field",
+    "Value": "remove Worldwide_Gross",
+    "Time": 1611872272979
+  },
+  {
+    "Interaction": "main chart changed because of clicking a field",
+    "Value": "mark:bar;encoding:-quantitative-x<aggregate>count,Major_Genre-nominal-y",
+    "Time": 1611872273068
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1611872273305
+  },
+  {
+    "Interaction": "clicked on a field",
+    "Value": "add Rotten_Tomatoes_Rating",
+    "Time": 1611872275931
+  },
+  {
+    "Interaction": "main chart changed because of clicking a field",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-x<bin>",
+    "Time": 1611872275962
+  },
+  {
+    "Interaction": "clicked on a field",
+    "Value": "remove Rotten_Tomatoes_Rating",
+    "Time": 1611872276216
+  },
+  {
+    "Interaction": "main chart changed because of clicking a field",
+    "Value": "mark:bar;encoding:-quantitative-x<aggregate>count,Major_Genre-nominal-y",
+    "Time": 1611872276241
+  },
+  {
+    "Interaction": "clicked on a field",
+    "Value": "add Rotten_Tomatoes_Rating",
+    "Time": 1611872283765
+  },
+  {
+    "Interaction": "main chart changed because of clicking a field",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-x<bin>",
+    "Time": 1611872283794
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-x<bin>",
+    "Time": 1611872286673
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-x<bin>",
+    "Time": 1611872286707
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-x<bin>",
+    "Time": 1611872286707
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-x<bin>",
+    "Time": 1611872298654
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nD",
+    "Time": 1611872301874
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDr",
+    "Time": 1611872302328
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDra",
+    "Time": 1611872302483
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDram",
+    "Time": 1611872302641
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDrams",
+    "Time": 1611872302797
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDram",
+    "Time": 1611872303844
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDrama",
+    "Time": 1611872303996
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas",
+    "Time": 1611872304235
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\n",
+    "Time": 1611872305489
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1611872311436
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1611872311453
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1611872311469
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1611872311487
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1611872311506
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1611872311519
+  },
+  {
+    "Interaction": "mouseover a related chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-size",
+    "Time": 1611872312119
+  },
+  {
+    "Interaction": "mouseout a related chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-size",
+    "Time": 1611872315452
+  },
+  {
+    "Interaction": "mouseover a related chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-size",
+    "Time": 1611872315453
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1611872315819
+  },
+  {
+    "Interaction": "mouseout a related chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-size",
+    "Time": 1611872315835
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1611872315836
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1611872315853
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1611872315869
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1611872315886
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1611872315904
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-x<bin>",
+    "Time": 1611872316252
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-x<bin>",
+    "Time": 1611872316385
+  },
+  {
+    "Interaction": "added chart to bookmark",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-x<bin>",
+    "Time": 1611872316649
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-x<bin>",
+    "Time": 1611872316746
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-x<bin>",
+    "Time": 1611872316960
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1611872317093
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1611872317100
+  },
+  {
+    "Interaction": "mouseover a related chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-size",
+    "Time": 1611872317194
+  },
+  {
+    "Interaction": "mouseout a related chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-size",
+    "Time": 1611872317535
+  },
+  {
+    "Interaction": "mouseover a related chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-size",
+    "Time": 1611872317535
+  },
+  {
+    "Interaction": "mouseout a related chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-size",
+    "Time": 1611872317835
+  },
+  {
+    "Interaction": "added chart to bookmark",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-size",
+    "Time": 1611872318345
+  },
+  {
+    "Interaction": "mouseover a related chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-size",
+    "Time": 1611872318683
+  },
+  {
+    "Interaction": "mouseout a related chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-size",
+    "Time": 1611872328368
+  },
+  {
+    "Interaction": "mouseover a related chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-size",
+    "Time": 1611872328368
+  },
+  {
+    "Interaction": "mouseout a related chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-size",
+    "Time": 1611872328384
+  },
+  {
+    "Interaction": "clicked on a field",
+    "Value": "remove Rotten_Tomatoes_Rating",
+    "Time": 1611872332741
+  },
+  {
+    "Interaction": "main chart changed because of clicking a field",
+    "Value": "mark:bar;encoding:-quantitative-x<aggregate>count,Major_Genre-nominal-y",
+    "Time": 1611872332809
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1611872333004
+  },
+  {
+    "Interaction": "clicked on a field",
+    "Value": "add IMDB_Rating",
+    "Time": 1611872334755
+  },
+  {
+    "Interaction": "main chart changed because of clicking a field",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,IMDB_Rating-quantitative-x<bin>,Major_Genre-nominal-y",
+    "Time": 1611872334787
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,IMDB_Rating-quantitative-x<bin>,Major_Genre-nominal-y",
+    "Time": 1611872336128
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,IMDB_Rating-quantitative-x<bin>,Major_Genre-nominal-y",
+    "Time": 1611872336328
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,IMDB_Rating-quantitative-x<bin>,Major_Genre-nominal-y",
+    "Time": 1611872336924
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,IMDB_Rating-quantitative-x<bin>,Major_Genre-nominal-y",
+    "Time": 1611872340865
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,IMDB_Rating-quantitative-x<bin>,Major_Genre-nominal-y",
+    "Time": 1611872340865
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,IMDB_Rating-quantitative-x<bin>,Major_Genre-nominal-y",
+    "Time": 1611872340882
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\n\n",
+    "Time": 1611872342629
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nC\n",
+    "Time": 1611872342938
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nCo\n",
+    "Time": 1611872343327
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nCom\n",
+    "Time": 1611872343646
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nCome\n",
+    "Time": 1611872343937
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComed\n",
+    "Time": 1611872344207
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedi\n",
+    "Time": 1611872344645
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedie\n",
+    "Time": 1611872344761
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n",
+    "Time": 1611872344837
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\n",
+    "Time": 1611872346239
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\n\n",
+    "Time": 1611872346634
+  },
+  {
+    "Interaction": "added chart to bookmark",
+    "Value": "mark:point;encoding:-quantitative-size<aggregate>count,IMDB_Rating-quantitative-x<bin>,Major_Genre-nominal-y",
+    "Time": 1611872351095
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI\n",
+    "Time": 1611872354623
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI \n",
+    "Time": 1611872354816
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI t\n",
+    "Time": 1611872355317
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI th\n",
+    "Time": 1611872355408
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI thi\n",
+    "Time": 1611872355512
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI thin\n",
+    "Time": 1611872355601
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think\n",
+    "Time": 1611872355775
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think \n",
+    "Time": 1611872355961
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think s\n",
+    "Time": 1611872361303
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think su\n",
+    "Time": 1611872361434
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think suc\n",
+    "Time": 1611872361666
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think suce\n",
+    "Time": 1611872361898
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think suces\n",
+    "Time": 1611872362303
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think suce\n",
+    "Time": 1611872364014
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think suces\n",
+    "Time": 1611872364732
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think sucess\n",
+    "Time": 1611872364901
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think sucessf\n",
+    "Time": 1611872365502
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think sucessfu\n",
+    "Time": 1611872365669
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think sucessful\n",
+    "Time": 1611872365889
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think sucessful \n",
+    "Time": 1611872366195
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think sucessful m\n",
+    "Time": 1611872366484
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think sucessful mo\n",
+    "Time": 1611872366607
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think sucessful mov\n",
+    "Time": 1611872367489
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think sucessful movi\n",
+    "Time": 1611872367807
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think sucessful movie\n",
+    "Time": 1611872367922
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think sucessful movies\n",
+    "Time": 1611872368131
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think sucessful movies \n",
+    "Time": 1611872368287
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think sucessful movies h\n",
+    "Time": 1611872368585
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think sucessful movies ha\n",
+    "Time": 1611872368678
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think sucessful movies hav\n",
+    "Time": 1611872368802
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think sucessful movies have\n",
+    "Time": 1611872368948
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think sucessful movies have \n",
+    "Time": 1611872369024
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think sucessful movies have a\n",
+    "Time": 1611872369195
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think sucessful movies have a \n",
+    "Time": 1611872369297
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think sucessful movies have a h\n",
+    "Time": 1611872370102
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think sucessful movies have a hi\n",
+    "Time": 1611872370239
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think sucessful movies have a hig\n",
+    "Time": 1611872370523
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think sucessful movies have a high\n",
+    "Time": 1611872370952
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think sucessful movies have a high \n",
+    "Time": 1611872371472
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high \n",
+    "Time": 1611872376437
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high\n",
+    "Time": 1611872379958
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a hig\n",
+    "Time": 1611872380313
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high\n",
+    "Time": 1611872381325
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high \n",
+    "Time": 1611872381478
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high s\n",
+    "Time": 1611872381734
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high sc\n",
+    "Time": 1611872381841
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high sco\n",
+    "Time": 1611872382241
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scor\n",
+    "Time": 1611872382337
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high score\n",
+    "Time": 1611872382496
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores\n",
+    "Time": 1611872382658
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores \n",
+    "Time": 1611872382841
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores i\n",
+    "Time": 1611872383064
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in\n",
+    "Time": 1611872383193
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in \n",
+    "Time": 1611872383336
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in I\n",
+    "Time": 1611872385498
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IM\n",
+    "Time": 1611872385766
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMD\n",
+    "Time": 1611872387184
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB\n",
+    "Time": 1611872387293
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB \n",
+    "Time": 1611872388200
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB M\n",
+    "Time": 1611872388577
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB \n",
+    "Time": 1611872388982
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB R\n",
+    "Time": 1611872389369
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Ra\n",
+    "Time": 1611872389856
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rat\n",
+    "Time": 1611872389999
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rati\n",
+    "Time": 1611872390151
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Ratin\n",
+    "Time": 1611872390279
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating\n",
+    "Time": 1611872390390
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating,\n",
+    "Time": 1611872390638
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, \n",
+    "Time": 1611872390818
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, a\n",
+    "Time": 1611872391106
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, an\n",
+    "Time": 1611872391227
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and\n",
+    "Time": 1611872391413
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and \n",
+    "Time": 1611872391510
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and R\n",
+    "Time": 1611872391818
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Ro\n",
+    "Time": 1611872392183
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rot\n",
+    "Time": 1611872392424
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rott\n",
+    "Time": 1611872392603
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotte\n",
+    "Time": 1611872392790
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten\n",
+    "Time": 1611872392888
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten \n",
+    "Time": 1611872393061
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten T\n",
+    "Time": 1611872393434
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten To\n",
+    "Time": 1611872393520
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tom\n",
+    "Time": 1611872393867
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Toma\n",
+    "Time": 1611872393952
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomat\n",
+    "Time": 1611872394135
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomato\n",
+    "Time": 1611872394890
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoe\n",
+    "Time": 1611872395080
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes\n",
+    "Time": 1611872395204
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes \n",
+    "Time": 1611872395457
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes R\n",
+    "Time": 1611872395987
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes Ra\n",
+    "Time": 1611872396258
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes Rat\n",
+    "Time": 1611872396673
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes Rati\n",
+    "Time": 1611872396910
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes Ratin\n",
+    "Time": 1611872397003
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes Rating\n",
+    "Time": 1611872397149
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes Rating \n",
+    "Time": 1611872397337
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes Rating i\n",
+    "Time": 1611872398338
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes Rating in\n",
+    "Time": 1611872398544
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes Rating in \n",
+    "Time": 1611872398692
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes Rating in c\n",
+    "Time": 1611872399193
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes Rating in co\n",
+    "Time": 1611872399256
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes Rating in con\n",
+    "Time": 1611872399380
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes Rating in conj\n",
+    "Time": 1611872399849
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes Rating in conju\n",
+    "Time": 1611872400043
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes Rating in conjun\n",
+    "Time": 1611872400305
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes Rating in conjunc\n",
+    "Time": 1611872400466
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes Rating in conjunct\n",
+    "Time": 1611872400691
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes Rating in conjuncti\n",
+    "Time": 1611872400767
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes Rating in conjunctio\n",
+    "Time": 1611872400859
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes Rating in conjunction\n",
+    "Time": 1611872400953
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes Rating in conjunction \n",
+    "Time": 1611872401103
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes Rating in conjunction w\n",
+    "Time": 1611872401205
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes Rating in conjunction wi\n",
+    "Time": 1611872401460
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes Rating in conjunction wit\n",
+    "Time": 1611872401609
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes Rating in conjunction with\n",
+    "Time": 1611872401717
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes Rating in conjunction with \n",
+    "Time": 1611872401794
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes Rating in conjunction with a\n",
+    "Time": 1611872402530
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes Rating in conjunction with a \n",
+    "Time": 1611872402775
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes Rating in conjunction with a h\n",
+    "Time": 1611872406163
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes Rating in conjunction with a hi\n",
+    "Time": 1611872406312
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes Rating in conjunction with a hig\n",
+    "Time": 1611872406449
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes Rating in conjunction with a high\n",
+    "Time": 1611872406568
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes Rating in conjunction with a high \n",
+    "Time": 1611872406739
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes Rating in conjunction with a high w\n",
+    "Time": 1611872407376
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes Rating in conjunction with a high wo\n",
+    "Time": 1611872407673
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes Rating in conjunction with a high wor\n",
+    "Time": 1611872408166
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes Rating in conjunction with a high worl\n",
+    "Time": 1611872408771
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes Rating in conjunction with a high world\n",
+    "Time": 1611872409102
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes Rating in conjunction with a high world \n",
+    "Time": 1611872409257
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes Rating in conjunction with a high world\n",
+    "Time": 1611872409727
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes Rating in conjunction with a high worldw\n",
+    "Time": 1611872409854
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes Rating in conjunction with a high worldwi\n",
+    "Time": 1611872410014
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes Rating in conjunction with a high worldwid\n",
+    "Time": 1611872410203
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes Rating in conjunction with a high worldwide\n",
+    "Time": 1611872410442
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes Rating in conjunction with a high worldwide \n",
+    "Time": 1611872410561
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes Rating in conjunction with a high worldwide g\n",
+    "Time": 1611872411878
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes Rating in conjunction with a high worldwide gr\n",
+    "Time": 1611872411976
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes Rating in conjunction with a high worldwide gro\n",
+    "Time": 1611872412160
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes Rating in conjunction with a high worldwide gros\n",
+    "Time": 1611872412359
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes Rating in conjunction with a high worldwide gross\n",
+    "Time": 1611872412559
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes Rating in conjunction with a high worldwide gros\n",
+    "Time": 1611872412952
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes Rating in conjunction with a high worldwide gro\n",
+    "Time": 1611872413441
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes Rating in conjunction with a high worldwide gr\n",
+    "Time": 1611872413470
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes Rating in conjunction with a high worldwide g\n",
+    "Time": 1611872413698
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes Rating in conjunction with a high worldwide \n",
+    "Time": 1611872414188
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes Rating in conjunction with a high worldwide\n",
+    "Time": 1611872414219
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes Rating in conjunction with a high worldwideg\n",
+    "Time": 1611872416320
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes Rating in conjunction with a high worldwidegr\n",
+    "Time": 1611872416410
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes Rating in conjunction with a high worldwideg\n",
+    "Time": 1611872416946
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes Rating in conjunction with a high worldwide\n",
+    "Time": 1611872417113
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes Rating in conjunction with a high worldwide \n",
+    "Time": 1611872417450
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes Rating in conjunction with a high worldwide g\n",
+    "Time": 1611872417565
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes Rating in conjunction with a high worldwide gr\n",
+    "Time": 1611872417666
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes Rating in conjunction with a high worldwide gro\n",
+    "Time": 1611872417849
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes Rating in conjunction with a high worldwide gros\n",
+    "Time": 1611872418008
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes Rating in conjunction with a high worldwide gross\n",
+    "Time": 1611872418158
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes Rating in conjunction with a high worldwide gross \n",
+    "Time": 1611872418263
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes Rating in conjunction with a high worldwide gross t\n",
+    "Time": 1611872418541
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes Rating in conjunction with a high worldwide gross to\n",
+    "Time": 1611872418638
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes Rating in conjunction with a high worldwide gross tot\n",
+    "Time": 1611872418739
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes Rating in conjunction with a high worldwide gross tota\n",
+    "Time": 1611872419243
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes Rating in conjunction with a high worldwide gross total\n",
+    "Time": 1611872419375
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "Action/ Science Fiction Movies\nDramas\nComedies\n\nI think successful movies have a high scores in IMDB Rating, and Rotten Tomatoes Rating in conjunction with a high worldwide gross total.\n",
+    "Time": 1611872419733
+  },
+  {
+    "Interaction": "mouseover a related chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-size,Major_Genre-nominal-y",
+    "Time": 1611872422572
+  },
+  {
+    "Interaction": "scroll on a related chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-size,Major_Genre-nominal-y",
+    "Time": 1611872424556
+  },
+  {
+    "Interaction": "scroll on a related chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-size,Major_Genre-nominal-y",
+    "Time": 1611872424572
+  },
+  {
+    "Interaction": "scroll on a related chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-size,Major_Genre-nominal-y",
+    "Time": 1611872424588
+  },
+  {
+    "Interaction": "scroll on a related chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-size,Major_Genre-nominal-y",
+    "Time": 1611872424605
+  },
+  {
+    "Interaction": "scroll on a related chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-size,Major_Genre-nominal-y",
+    "Time": 1611872424621
+  },
+  {
+    "Interaction": "scroll on a related chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-size,Major_Genre-nominal-y",
+    "Time": 1611872424638
+  },
+  {
+    "Interaction": "scroll on a related chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-size,Major_Genre-nominal-y",
+    "Time": 1611872424655
+  },
+  {
+    "Interaction": "scroll on a related chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-size,Major_Genre-nominal-y",
+    "Time": 1611872424671
+  },
+  {
+    "Interaction": "scroll on a related chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-size,Major_Genre-nominal-y",
+    "Time": 1611872424688
+  },
+  {
+    "Interaction": "scroll on a related chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-size,Major_Genre-nominal-y",
+    "Time": 1611872424705
+  },
+  {
+    "Interaction": "scroll on a related chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-size,Major_Genre-nominal-y",
+    "Time": 1611872424722
+  },
+  {
+    "Interaction": "mouseout a related chart",
+    "Value": "mark:point;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-size,Major_Genre-nominal-y",
+    "Time": 1611872425072
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1611872426755
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1611872426771
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1611872426788
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1611872426805
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1611872426821
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1611872426838
+  },
+  {
+    "Interaction": "mouseover a related chart",
+    "Value": "mark:point;encoding:Director-nominal-x,IMDB_Rating-quantitative-size,Major_Genre-nominal-y",
+    "Time": 1611872427121
+  },
+  {
+    "Interaction": "mouseout a related chart",
+    "Value": "mark:point;encoding:Director-nominal-x,IMDB_Rating-quantitative-size,Major_Genre-nominal-y",
+    "Time": 1611872427171
+  },
+  {
+    "Interaction": "mouseover a related chart",
+    "Value": "mark:point;encoding:Director-nominal-x,IMDB_Rating-quantitative-size,Major_Genre-nominal-y",
+    "Time": 1611872427488
+  },
+  {
+    "Interaction": "mouseout a related chart",
+    "Value": "mark:point;encoding:Director-nominal-x,IMDB_Rating-quantitative-size,Major_Genre-nominal-y",
+    "Time": 1611872427521
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1611872427688
+  },
+  {
+    "Interaction": "mouseover a related chart",
+    "Value": "mark:point;encoding:Director-nominal-x,IMDB_Rating-quantitative-size,Major_Genre-nominal-y",
+    "Time": 1611872427705
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1611872427707
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1611872427724
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1611872427738
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1611872427754
+  },
+  {
+    "Interaction": "mouseout a related chart",
+    "Value": "mark:point;encoding:Director-nominal-x,IMDB_Rating-quantitative-size,Major_Genre-nominal-y",
+    "Time": 1611872427771
+  },
+  {
+    "Interaction": "mouseover a related chart",
+    "Value": "mark:point;encoding:Distributor-nominal-x,IMDB_Rating-quantitative-size,Major_Genre-nominal-y",
+    "Time": 1611872427772
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1611872427773
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1611872427788
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1611872427805
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1611872427821
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1611872427838
+  },
+  {
+    "Interaction": "mouseout a related chart",
+    "Value": "mark:point;encoding:Distributor-nominal-x,IMDB_Rating-quantitative-size,Major_Genre-nominal-y",
+    "Time": 1611872427878
+  },
+  {
+    "Interaction": "mouseover a related chart",
+    "Value": "mark:point;encoding:IMDB_Rating-quantitative-size,Major_Genre-nominal-x,Source-nominal-y",
+    "Time": 1611872427878
+  },
+  {
+    "Interaction": "mouseout a related chart",
+    "Value": "mark:point;encoding:IMDB_Rating-quantitative-size,Major_Genre-nominal-x,Source-nominal-y",
+    "Time": 1611872427938
+  },
+  {
+    "Interaction": "changed ptask ans of confidence-udata",
+    "Value": "agree",
+    "Time": 1611872430709
+  },
+  {
+    "Interaction": "changed ptask ans of confidence-ans",
+    "Value": "agree",
+    "Time": 1611872432374
+  },
+  {
+    "Interaction": "changed ptask ans of efficiency",
+    "Value": "sagree",
+    "Time": 1611872433869
+  },
+  {
+    "Interaction": "changed ptask ans of ease-of-use",
+    "Value": "sagree",
+    "Time": 1611872436974
+  },
+  {
+    "Interaction": "changed ptask ans of utility",
+    "Value": "sagree",
+    "Time": 1611872440256
+  },
+  {
+    "Interaction": "changed ptask ans of overall",
+    "Value": "agree",
+    "Time": 1611872442718
+  },
+  {
+    "Interaction": "hit the submit button",
+    "Value": "",
+    "Time": 1611872444475
+  },
+  {
+    "Interaction": "submitted successfully",
+    "Value": "",
+    "Time": 1611872444476
+  }
+]

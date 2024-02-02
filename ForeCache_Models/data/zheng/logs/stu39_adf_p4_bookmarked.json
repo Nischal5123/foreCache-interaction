@@ -1,0 +1,98 @@
+{
+  "markpointencodingIMDB_RatingquantitativexWorldwide_Grossquantitativey": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/movies/movies.json"
+    },
+    "encoding": {
+      "x": {
+        "field": "IMDB_Rating",
+        "type": "quantitative"
+      },
+      "y": {
+        "field": "Worldwide_Gross",
+        "type": "quantitative"
+      }
+    },
+    "mark": "point"
+  },
+  "markpointencodingCreative_TypenominalxRunning_Time_minquantitativeybinWorldwide_Grossquantitativesizeaggregatemean": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/movies/movies.json"
+    },
+    "encoding": {
+      "size": {
+        "aggregate": "mean",
+        "field": "Worldwide_Gross",
+        "type": "quantitative"
+      },
+      "x": {
+        "field": "Creative_Type",
+        "type": "nominal"
+      },
+      "y": {
+        "bin": true,
+        "field": "Running_Time_min",
+        "type": "quantitative"
+      }
+    },
+    "mark": "point"
+  },
+  "marktickencodingCreative_TypenominalyWorldwide_Grossquantitativex": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/movies/movies.json"
+    },
+    "encoding": {
+      "x": {
+        "field": "Worldwide_Gross",
+        "type": "quantitative"
+      },
+      "y": {
+        "field": "Creative_Type",
+        "type": "nominal"
+      }
+    },
+    "mark": "tick"
+  },
+  "markpointencodingDirectornominalyIMDB_RatingquantitativexbinWorldwide_Grossquantitativesize": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/movies/movies.json"
+    },
+    "encoding": {
+      "size": {
+        "field": "Worldwide_Gross",
+        "type": "quantitative"
+      },
+      "x": {
+        "bin": true,
+        "field": "IMDB_Rating",
+        "type": "quantitative"
+      },
+      "y": {
+        "field": "Director",
+        "type": "nominal"
+      }
+    },
+    "mark": "point"
+  },
+  "marktickencodingDistributornominalyProduction_Budgetquantitativex": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/movies/movies.json"
+    },
+    "encoding": {
+      "x": {
+        "field": "Production_Budget",
+        "type": "quantitative"
+      },
+      "y": {
+        "field": "Distributor",
+        "type": "nominal"
+      }
+    },
+    "mark": "tick"
+  }
+}

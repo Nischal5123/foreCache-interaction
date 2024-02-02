@@ -1,0 +1,49 @@
+{
+  "marktickencodingquantitativexaggregatecountCreative_TypenominalyRelease_DatenominalrowSourcenominalcolor": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/movies/movies.json"
+    },
+    "encoding": {
+      "color": {
+        "field": "Source",
+        "type": "nominal"
+      },
+      "size": {
+        "field": "Release_Date",
+        "timeUnit": "month",
+        "type": "nominal"
+      },
+      "x": {
+        "aggregate": "count",
+        "type": "quantitative"
+      },
+      "y": {
+        "field": "Creative_Type",
+        "type": "nominal"
+      }
+    },
+    "mark": "tick"
+  },
+  "markbarencodingquantitativexaggregatecountCreative_TypenominalySourcenominalcolor": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/movies/movies.json"
+    },
+    "encoding": {
+      "color": {
+        "field": "Source",
+        "type": "nominal"
+      },
+      "x": {
+        "aggregate": "count",
+        "type": "quantitative"
+      },
+      "y": {
+        "field": "Creative_Type",
+        "type": "nominal"
+      }
+    },
+    "mark": "bar"
+  }
+}

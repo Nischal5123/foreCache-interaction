@@ -1,0 +1,158 @@
+{
+  "markpointencodingIMDB_RatingquantitativesizeSourcenominalyWorldwide_Grossquantitativexbin": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/movies/movies.json"
+    },
+    "encoding": {
+      "size": {
+        "field": "IMDB_Rating",
+        "type": "quantitative"
+      },
+      "x": {
+        "bin": true,
+        "field": "Worldwide_Gross",
+        "type": "quantitative"
+      },
+      "y": {
+        "field": "Source",
+        "type": "nominal"
+      }
+    },
+    "mark": "point"
+  },
+  "markpointencodingIMDB_RatingquantitativexWorldwide_Grossquantitativey": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/movies/movies.json"
+    },
+    "encoding": {
+      "x": {
+        "field": "IMDB_Rating",
+        "type": "quantitative"
+      },
+      "y": {
+        "field": "Worldwide_Gross",
+        "type": "quantitative"
+      }
+    },
+    "mark": "point"
+  },
+  "markpointencodingRotten_Tomatoes_RatingquantitativexWorldwide_Grossquantitativey": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/movies/movies.json"
+    },
+    "encoding": {
+      "x": {
+        "field": "Rotten_Tomatoes_Rating",
+        "type": "quantitative"
+      },
+      "y": {
+        "field": "Worldwide_Gross",
+        "type": "quantitative"
+      }
+    },
+    "mark": "point"
+  },
+  "markpointencodingRotten_Tomatoes_RatingquantitativesizeSourcenominalyWorldwide_Grossquantitativexbin": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/movies/movies.json"
+    },
+    "encoding": {
+      "size": {
+        "field": "Rotten_Tomatoes_Rating",
+        "type": "quantitative"
+      },
+      "x": {
+        "bin": true,
+        "field": "Worldwide_Gross",
+        "type": "quantitative"
+      },
+      "y": {
+        "field": "Source",
+        "type": "nominal"
+      }
+    },
+    "mark": "point"
+  },
+  "markpointencodingIMDB_RatingquantitativesizeSourcenominalyUS_Grossquantitativexbin": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/movies/movies.json"
+    },
+    "encoding": {
+      "size": {
+        "field": "IMDB_Rating",
+        "type": "quantitative"
+      },
+      "x": {
+        "bin": true,
+        "field": "US_Gross",
+        "type": "quantitative"
+      },
+      "y": {
+        "field": "Source",
+        "type": "nominal"
+      }
+    },
+    "mark": "point"
+  },
+  "markpointencodingIMDB_RatingquantitativexUS_Grossquantitativey": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/movies/movies.json"
+    },
+    "encoding": {
+      "x": {
+        "field": "IMDB_Rating",
+        "type": "quantitative"
+      },
+      "y": {
+        "field": "US_Gross",
+        "type": "quantitative"
+      }
+    },
+    "mark": "point"
+  },
+  "markpointencodingRotten_Tomatoes_RatingquantitativesizeSourcenominalyUS_Grossquantitativexbin": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/movies/movies.json"
+    },
+    "encoding": {
+      "size": {
+        "field": "Rotten_Tomatoes_Rating",
+        "type": "quantitative"
+      },
+      "x": {
+        "bin": true,
+        "field": "US_Gross",
+        "type": "quantitative"
+      },
+      "y": {
+        "field": "Source",
+        "type": "nominal"
+      }
+    },
+    "mark": "point"
+  },
+  "markpointencodingRotten_Tomatoes_RatingquantitativexUS_Grossquantitativey": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/movies/movies.json"
+    },
+    "encoding": {
+      "x": {
+        "field": "Rotten_Tomatoes_Rating",
+        "type": "quantitative"
+      },
+      "y": {
+        "field": "US_Gross",
+        "type": "quantitative"
+      }
+    },
+    "mark": "point"
+  }
+}

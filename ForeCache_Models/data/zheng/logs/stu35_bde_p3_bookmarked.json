@@ -1,0 +1,79 @@
+{
+  "marktickencodingCost_Repairquantitativex": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/birdstrikes/birdstrikes.json"
+    },
+    "encoding": {
+      "x": {
+        "field": "Cost_Repair",
+        "type": "quantitative"
+      }
+    },
+    "mark": "tick"
+  },
+  "marktickencodingCost_RepairquantitativexWildlife_Speciesnominaly": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/birdstrikes/birdstrikes.json"
+    },
+    "encoding": {
+      "x": {
+        "field": "Cost_Repair",
+        "type": "quantitative"
+      },
+      "y": {
+        "field": "Wildlife_Species",
+        "type": "nominal"
+      }
+    },
+    "mark": "tick"
+  },
+  "markbarencodingquantitativexaggregatecountWildlife_Speciesnominaly": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/birdstrikes/birdstrikes.json"
+    },
+    "encoding": {
+      "x": {
+        "aggregate": "count",
+        "type": "quantitative"
+      },
+      "y": {
+        "field": "Wildlife_Species",
+        "type": "nominal"
+      }
+    },
+    "mark": "bar"
+  },
+  "markbarencodingquantitativexaggregatecountEffect_Amount_of_damagenominaly": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/birdstrikes/birdstrikes.json"
+    },
+    "encoding": {
+      "x": {
+        "aggregate": "count",
+        "type": "quantitative"
+      },
+      "y": {
+        "field": "Effect_Amount_of_damage",
+        "type": "nominal"
+      }
+    },
+    "mark": "bar"
+  },
+  "marktickencodingCost_Totalquantitativex": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/birdstrikes/birdstrikes.json"
+    },
+    "encoding": {
+      "x": {
+        "field": "Cost_Total",
+        "type": "quantitative"
+      }
+    },
+    "mark": "tick"
+  }
+}

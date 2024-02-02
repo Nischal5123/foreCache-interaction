@@ -1,0 +1,109 @@
+{
+  "markpointencodingCreative_TypenominalxDirectornominalyUS_Grossquantitativesize": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/movies/movies.json"
+    },
+    "encoding": {
+      "size": {
+        "field": "US_Gross",
+        "type": "quantitative"
+      },
+      "x": {
+        "field": "Creative_Type",
+        "type": "nominal"
+      },
+      "y": {
+        "field": "Director",
+        "type": "nominal"
+      }
+    },
+    "mark": "point"
+  },
+  "markpointencodingDirectornominalyRotten_Tomatoes_RatingquantitativesizeWorldwide_Grossquantitativexbin": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/movies/movies.json"
+    },
+    "encoding": {
+      "size": {
+        "field": "Rotten_Tomatoes_Rating",
+        "type": "quantitative"
+      },
+      "x": {
+        "bin": true,
+        "field": "Worldwide_Gross",
+        "type": "quantitative"
+      },
+      "y": {
+        "field": "Director",
+        "type": "nominal"
+      }
+    },
+    "mark": "point"
+  },
+  "markpointencodingDistributornominalxMPAA_RatingnominalyWorldwide_Grossquantitativesize": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/movies/movies.json"
+    },
+    "encoding": {
+      "size": {
+        "field": "Worldwide_Gross",
+        "type": "quantitative"
+      },
+      "x": {
+        "field": "Distributor",
+        "type": "nominal"
+      },
+      "y": {
+        "field": "MPAA_Rating",
+        "type": "nominal"
+      }
+    },
+    "mark": "point",
+    "width": 3200
+  },
+  "markpointencodingMajor_GenrenominalxSourcenominalyWorldwide_Grossquantitativesize": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/movies/movies.json"
+    },
+    "encoding": {
+      "size": {
+        "field": "Worldwide_Gross",
+        "type": "quantitative"
+      },
+      "x": {
+        "field": "Major_Genre",
+        "type": "nominal"
+      },
+      "y": {
+        "field": "Source",
+        "type": "nominal"
+      }
+    },
+    "mark": "point"
+  },
+  "markpointencodingMPAA_RatingnominalxSourcenominalyWorldwide_Grossquantitativesize": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/movies/movies.json"
+    },
+    "encoding": {
+      "size": {
+        "field": "Worldwide_Gross",
+        "type": "quantitative"
+      },
+      "x": {
+        "field": "MPAA_Rating",
+        "type": "nominal"
+      },
+      "y": {
+        "field": "Source",
+        "type": "nominal"
+      }
+    },
+    "mark": "point"
+  }
+}

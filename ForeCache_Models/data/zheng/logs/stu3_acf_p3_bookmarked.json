@@ -1,0 +1,159 @@
+{
+  "markpointencodingRelease_DatenominalxUS_GrossquantitativesizeWorldwide_Grossquantitativeybin": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/movies/movies.json"
+    },
+    "encoding": {
+      "size": {
+        "field": "US_Gross",
+        "type": "quantitative"
+      },
+      "x": {
+        "field": "Release_Date",
+        "timeUnit": "month",
+        "type": "nominal"
+      },
+      "y": {
+        "bin": true,
+        "field": "Worldwide_Gross",
+        "type": "quantitative"
+      }
+    },
+    "mark": "point"
+  },
+  "markpointencodingRelease_DatenominalxRunning_Time_minquantitativesizeWorldwide_Grossquantitativeybin": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/movies/movies.json"
+    },
+    "encoding": {
+      "size": {
+        "field": "Running_Time_min",
+        "type": "quantitative"
+      },
+      "x": {
+        "field": "Release_Date",
+        "timeUnit": "month",
+        "type": "nominal"
+      },
+      "y": {
+        "bin": true,
+        "field": "Worldwide_Gross",
+        "type": "quantitative"
+      }
+    },
+    "mark": "point"
+  },
+  "markpointencodingCreative_TypenominalxDirectornominalyUS_Grossquantitativesize": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/movies/movies.json"
+    },
+    "encoding": {
+      "size": {
+        "field": "US_Gross",
+        "type": "quantitative"
+      },
+      "x": {
+        "field": "Creative_Type",
+        "type": "nominal"
+      },
+      "y": {
+        "field": "Director",
+        "type": "nominal"
+      }
+    },
+    "mark": "point"
+  },
+  "markpointencodingDirectornominalxSourcenominalyUS_Grossquantitativesize": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/movies/movies.json"
+    },
+    "encoding": {
+      "size": {
+        "field": "US_Gross",
+        "type": "quantitative"
+      },
+      "x": {
+        "field": "Director",
+        "type": "nominal"
+      },
+      "y": {
+        "field": "Source",
+        "type": "nominal"
+      }
+    },
+    "mark": "point",
+    "width": 3200
+  },
+  "markpointencodingDistributornominalxMajor_GenrenominalyUS_Grossquantitativesize": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/movies/movies.json"
+    },
+    "encoding": {
+      "size": {
+        "field": "US_Gross",
+        "type": "quantitative"
+      },
+      "x": {
+        "field": "Distributor",
+        "type": "nominal"
+      },
+      "y": {
+        "field": "Major_Genre",
+        "type": "nominal"
+      }
+    },
+    "mark": "point",
+    "width": 3200
+  },
+  "markpointencodingRelease_DatenominalxRotten_Tomatoes_RatingquantitativesizeUS_Grossquantitativeybin": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/movies/movies.json"
+    },
+    "encoding": {
+      "size": {
+        "field": "Rotten_Tomatoes_Rating",
+        "type": "quantitative"
+      },
+      "x": {
+        "field": "Release_Date",
+        "timeUnit": "month",
+        "type": "nominal"
+      },
+      "y": {
+        "bin": true,
+        "field": "US_Gross",
+        "type": "quantitative"
+      }
+    },
+    "mark": "point"
+  },
+  "markpointencodingRelease_DatenominalxUS_DVD_SalesquantitativesizeUS_Grossquantitativeybin": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/movies/movies.json"
+    },
+    "encoding": {
+      "size": {
+        "field": "US_DVD_Sales",
+        "type": "quantitative"
+      },
+      "x": {
+        "field": "Release_Date",
+        "timeUnit": "month",
+        "type": "nominal"
+      },
+      "y": {
+        "bin": true,
+        "field": "US_Gross",
+        "type": "quantitative"
+      }
+    },
+    "mark": "point"
+  }
+}

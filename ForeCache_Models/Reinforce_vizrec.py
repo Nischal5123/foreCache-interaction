@@ -6,19 +6,19 @@ import torch.nn.functional as F
 import torch.optim as optim
 from torch.distributions import Categorical
 import environment_vizrec
-import plotting
 from collections import Counter,defaultdict
 import json
 import ast
 import concurrent.futures
 eps=1e-35
 class Policy(nn.Module):
+
     def __init__(self,learning_rate,gamma,tau):
         super(Policy, self).__init__()
         self.data = []
 
         self.fc1 = nn.Linear(3, 128)
-        self.fc2 = nn.Linear(128, 8)
+        self.fc2 = nn.Linear(128, 2)
         self.gamma=gamma
         self.temperature = tau
         self.optimizer = optim.Adam(self.parameters(), lr=learning_rate)
@@ -48,11 +48,6 @@ class Reinforce():
         self.env = env
         self.learning_rate, self.gamma, self.temperature = learning_rate, gamma, tau
         self.pi = Policy(self.learning_rate, self.gamma,self.temperature)
-        self.state_encoding = {
-            "Sensemaking": [1, 0, 0],
-            "Foraging": [0, 1, 0],
-            "Navigation": [0, 0, 1]
-        }
 
     def convert_idx_state(self, state_idx):
         #state = next((key for key, value in self.state_encoding.items() if np.array_equal(value, state_idx)), None)
@@ -90,7 +85,7 @@ class Reinforce():
 
             self.pi.train_net()
             all_predictions.append(np.mean(predictions))
-        print("############ Train Accuracy :{},".format(np.mean(all_predictions)))
+       # print("############ Train Accuracy :{},".format(np.mean(all_predictions)))
         return self.pi, (np.mean(predictions)) #return last train_accuracy
 
 
@@ -124,8 +119,7 @@ class Reinforce():
 
                 self.pi.train_net()
 
-            print("TEST: # of episode :{}, accuracy : {}, actions: {}".format(n_epi, np.mean(predictions),
-                                                                              Counter(actions)))
+            #print("TEST: # of episode :{}, accuracy : {}, actions: {}".format(n_epi, np.mean(predictions), Counter(actions)))
 
             test_accuracies.append(np.mean(predictions))
         return np.mean(test_accuracies),split_accuracy,0
@@ -173,7 +167,6 @@ def run_experiment_for_user(u, algo, hyperparams):
     temperatures = hyperparams['temperatures']
 
     threshold_h = hyperparams['threshold']
-    plotter = plotting.plotter(threshold_h)
     y_accu = []
     user_name = get_user_name(u)
 
@@ -201,8 +194,7 @@ def run_experiment_for_user(u, algo, hyperparams):
                         best_model = model
                         best_temp = temp
 
-        print("#TRAINING: User :{}, Threshold : {:.1f}, Accuracy: {}, LR: {} ,Discount: {}, Temperature:{}".format(
-            user_name, thres, max_accu, best_learning_rate, best_gamma, best_temp))
+       # print("#TRAINING: User :{}, Threshold : {:.1f}, Accuracy: {}, LR: {} ,Discount: {}, Temperature:{}".format(user_name, thres, max_accu, best_learning_rate, best_gamma, best_temp))
 
         test_accs = []
         for i in range(5):
@@ -226,7 +218,6 @@ def run_experiment_for_user(u, algo, hyperparams):
         })], ignore_index=True)
         print("#TESTING User :{}, Threshold : {:.1f}, Accuracy: {}, LR: {} ,Discount: {}, Temperature: {}".format(
             user_name, thres, max_accu, best_learning_rate, best_gamma, best_temp))
-    plotter.plot_main(y_accu, user_name)
     return result_dataframe_user, y_accu
 
 def run_experiment(user_list, algo, hyperparam_file):

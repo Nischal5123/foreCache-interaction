@@ -1,0 +1,88 @@
+{
+  "marktickencodingTitlenominalyUS_Grossquantitativex": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/movies/movies.json"
+    },
+    "encoding": {
+      "x": {
+        "field": "US_Gross",
+        "type": "quantitative"
+      },
+      "y": {
+        "field": "Title",
+        "type": "nominal"
+      }
+    },
+    "height": 18000,
+    "mark": "tick"
+  },
+  "marktickencodingMajor_GenrenominalyProduction_Budgetquantitativex": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/movies/movies.json"
+    },
+    "encoding": {
+      "x": {
+        "field": "Production_Budget",
+        "type": "quantitative"
+      },
+      "y": {
+        "field": "Major_Genre",
+        "type": "nominal"
+      }
+    },
+    "mark": "tick"
+  },
+  "markpointencodingProduction_BudgetquantitativexWorldwide_Grossquantitativey": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/movies/movies.json"
+    },
+    "encoding": {
+      "x": {
+        "field": "Production_Budget",
+        "type": "quantitative"
+      },
+      "y": {
+        "field": "Worldwide_Gross",
+        "type": "quantitative"
+      }
+    },
+    "mark": "point"
+  },
+  "markpointencodingIMDB_RatingquantitativexUS_DVD_Salesquantitativey": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/movies/movies.json"
+    },
+    "encoding": {
+      "x": {
+        "field": "IMDB_Rating",
+        "type": "quantitative"
+      },
+      "y": {
+        "field": "US_DVD_Sales",
+        "type": "quantitative"
+      }
+    },
+    "mark": "point"
+  },
+  "markbarencodingquantitativexaggregatecountMajor_Genrenominaly": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/movies/movies.json"
+    },
+    "encoding": {
+      "x": {
+        "aggregate": "count",
+        "type": "quantitative"
+      },
+      "y": {
+        "field": "Major_Genre",
+        "type": "nominal"
+      }
+    },
+    "mark": "bar"
+  }
+}

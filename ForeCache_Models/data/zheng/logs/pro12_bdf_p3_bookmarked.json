@@ -1,0 +1,103 @@
+{
+  "marktickencodingCost_RepairquantitativexWhen_Time_of_daynominalcolorWildlife_Sizenominaly": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/birdstrikes/birdstrikes.json"
+    },
+    "encoding": {
+      "color": {
+        "field": "When_Time_of_day",
+        "type": "nominal"
+      },
+      "x": {
+        "field": "Cost_Repair",
+        "type": "quantitative"
+      },
+      "y": {
+        "field": "Wildlife_Size",
+        "type": "nominal"
+      }
+    },
+    "mark": "tick"
+  },
+  "markbarencodingCost_RepairquantitativexWhen_Time_of_daynominalyWildlife_Sizenominalcolor": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/birdstrikes/birdstrikes.json"
+    },
+    "encoding": {
+      "color": {
+        "field": "Wildlife_Size",
+        "type": "nominal"
+      },
+      "x": {
+        "field": "Cost_Repair",
+        "type": "quantitative"
+      },
+      "y": {
+        "field": "When_Time_of_day",
+        "type": "nominal"
+      }
+    },
+    "mark": "bar"
+  },
+  "marktickencodingCost_RepairquantitativexWhen_Time_of_daynominalcolorWildlife_Speciesnominaly": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/birdstrikes/birdstrikes.json"
+    },
+    "encoding": {
+      "color": {
+        "field": "When_Time_of_day",
+        "type": "nominal"
+      },
+      "x": {
+        "field": "Cost_Repair",
+        "type": "quantitative"
+      },
+      "y": {
+        "field": "Wildlife_Species",
+        "type": "nominal"
+      }
+    },
+    "mark": "tick"
+  },
+  "markbarencodingCost_RepairquantitativexWhen_Phase_of_flightnominalcolorWildlife_Speciesnominaly": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/birdstrikes/birdstrikes.json"
+    },
+    "encoding": {
+      "color": {
+        "field": "When_Phase_of_flight",
+        "type": "nominal"
+      },
+      "x": {
+        "field": "Cost_Repair",
+        "type": "quantitative"
+      },
+      "y": {
+        "field": "Wildlife_Species",
+        "type": "nominal"
+      }
+    },
+    "mark": "bar"
+  },
+  "markpointencodingCost_RepairquantitativexSpeed_IAS_in_knotsquantitativey": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/birdstrikes/birdstrikes.json"
+    },
+    "encoding": {
+      "x": {
+        "field": "Cost_Repair",
+        "type": "quantitative"
+      },
+      "y": {
+        "field": "Speed_IAS_in_knots",
+        "type": "quantitative"
+      }
+    },
+    "mark": "point"
+  }
+}

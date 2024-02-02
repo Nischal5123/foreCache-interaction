@@ -1,0 +1,28 @@
+{
+  "markpointencodingquantitativesizeaggregatecountFlight_DatenominalyWhen_Phase_of_flightnominalshapeWildlife_Sizenominalx": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/birdstrikes/birdstrikes.json"
+    },
+    "encoding": {
+      "shape": {
+        "field": "When_Phase_of_flight",
+        "type": "nominal"
+      },
+      "size": {
+        "aggregate": "count",
+        "type": "quantitative"
+      },
+      "x": {
+        "field": "Wildlife_Size",
+        "type": "nominal"
+      },
+      "y": {
+        "field": "Flight_Date",
+        "timeUnit": "month",
+        "type": "nominal"
+      }
+    },
+    "mark": "point"
+  }
+}

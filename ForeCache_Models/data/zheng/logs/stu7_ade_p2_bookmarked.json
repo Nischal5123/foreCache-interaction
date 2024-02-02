@@ -1,0 +1,44 @@
+{
+  "markpointencodingCreative_TypenominalcolorRunning_Time_minquantitativexWorldwide_Grossquantitativey": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/movies/movies.json"
+    },
+    "encoding": {
+      "color": {
+        "field": "Creative_Type",
+        "type": "nominal"
+      },
+      "x": {
+        "field": "Running_Time_min",
+        "type": "quantitative"
+      },
+      "y": {
+        "field": "Worldwide_Gross",
+        "type": "quantitative"
+      }
+    },
+    "mark": "point"
+  },
+  "markpointencodingMPAA_RatingnominalcolorRunning_Time_minquantitativexWorldwide_Grossquantitativey": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/movies/movies.json"
+    },
+    "encoding": {
+      "color": {
+        "field": "MPAA_Rating",
+        "type": "nominal"
+      },
+      "x": {
+        "field": "Running_Time_min",
+        "type": "quantitative"
+      },
+      "y": {
+        "field": "Worldwide_Gross",
+        "type": "quantitative"
+      }
+    },
+    "mark": "point"
+  }
+}

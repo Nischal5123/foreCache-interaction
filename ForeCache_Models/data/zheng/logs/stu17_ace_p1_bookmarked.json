@@ -1,0 +1,19 @@
+{
+  "markpointencodingCreative_TypenominalxSourcenominaly": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/movies/movies.json"
+    },
+    "encoding": {
+      "x": {
+        "field": "Creative_Type",
+        "type": "nominal"
+      },
+      "y": {
+        "field": "Source",
+        "type": "nominal"
+      }
+    },
+    "mark": "point"
+  }
+}

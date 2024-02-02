@@ -1,0 +1,3727 @@
+[
+  {
+    "Interaction": "study begins",
+    "Value": "page loaded",
+    "Time": 1599509047785
+  },
+  {
+    "Interaction": "mouseover a related chart",
+    "Value": "mark:bar;encoding:-quantitative-x<aggregate>count,Aircraft_Airline_Operator-nominal-y",
+    "Time": 1599509048085
+  },
+  {
+    "Interaction": "mouseout a related chart",
+    "Value": "mark:bar;encoding:-quantitative-x<aggregate>count,Aircraft_Airline_Operator-nominal-y",
+    "Time": 1599509048096
+  },
+  {
+    "Interaction": "mouseover a related chart",
+    "Value": "mark:bar;encoding:-quantitative-x<aggregate>count,Wildlife_Species-nominal-y",
+    "Time": 1599509048096
+  },
+  {
+    "Interaction": "mouseout a related chart",
+    "Value": "mark:bar;encoding:-quantitative-x<aggregate>count,Wildlife_Species-nominal-y",
+    "Time": 1599509048170
+  },
+  {
+    "Interaction": "mouseover a related chart",
+    "Value": "mark:bar;encoding:-quantitative-x<aggregate>count,Wildlife_Species-nominal-y",
+    "Time": 1599509048170
+  },
+  {
+    "Interaction": "mouseout a related chart",
+    "Value": "mark:bar;encoding:-quantitative-x<aggregate>count,Wildlife_Species-nominal-y",
+    "Time": 1599509048279
+  },
+  {
+    "Interaction": "mouseover a related chart",
+    "Value": "mark:bar;encoding:-quantitative-x<aggregate>count,Wildlife_Species-nominal-y",
+    "Time": 1599509048280
+  },
+  {
+    "Interaction": "mouseout a related chart",
+    "Value": "mark:bar;encoding:-quantitative-x<aggregate>count,Wildlife_Species-nominal-y",
+    "Time": 1599509048280
+  },
+  {
+    "Interaction": "mouseover a related chart",
+    "Value": "mark:bar;encoding:-quantitative-x<aggregate>count,Airport_Name-nominal-y",
+    "Time": 1599509048620
+  },
+  {
+    "Interaction": "mouseout a related chart",
+    "Value": "mark:bar;encoding:-quantitative-x<aggregate>count,Airport_Name-nominal-y",
+    "Time": 1599509049118
+  },
+  {
+    "Interaction": "mouseover a related chart",
+    "Value": "mark:bar;encoding:-quantitative-x<aggregate>count,Airport_Name-nominal-y",
+    "Time": 1599509053853
+  },
+  {
+    "Interaction": "mouseout a related chart",
+    "Value": "mark:bar;encoding:-quantitative-x<aggregate>count,Airport_Name-nominal-y",
+    "Time": 1599509054119
+  },
+  {
+    "Interaction": "clicked on a field",
+    "Value": "add Speed_IAS_in_knots",
+    "Time": 1599509055333
+  },
+  {
+    "Interaction": "main chart changed because of clicking a field",
+    "Value": "mark:tick;encoding:Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509055401
+  },
+  {
+    "Interaction": "mouseover a related chart",
+    "Value": "mark:tick;encoding:Speed_IAS_in_knots-quantitative-x,When_Phase_of_flight-nominal-color,Wildlife_Species-nominal-y",
+    "Time": 1599509067786
+  },
+  {
+    "Interaction": "mouseout a related chart",
+    "Value": "mark:tick;encoding:Speed_IAS_in_knots-quantitative-x,When_Phase_of_flight-nominal-color,Wildlife_Species-nominal-y",
+    "Time": 1599509067852
+  },
+  {
+    "Interaction": "mouseover a related chart",
+    "Value": "mark:tick;encoding:Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x,Wildlife_Species-nominal-y",
+    "Time": 1599509067869
+  },
+  {
+    "Interaction": "mouseout a related chart",
+    "Value": "mark:tick;encoding:Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x,Wildlife_Species-nominal-y",
+    "Time": 1599509068285
+  },
+  {
+    "Interaction": "clicked on a field",
+    "Value": "add Effect_Amount_of_damage",
+    "Time": 1599509074660
+  },
+  {
+    "Interaction": "main chart changed because of clicking a field",
+    "Value": "mark:tick;encoding:Effect_Amount_of_damage-nominal-y,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509074728
+  },
+  {
+    "Interaction": "clicked on a field",
+    "Value": "add Aircraft_Make_Model",
+    "Time": 1599509091564
+  },
+  {
+    "Interaction": "main chart changed because of clicking a field",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509091637
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509096450
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509096740
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509096741
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509126209
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509126225
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509126242
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509126275
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509126292
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509126308
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509126326
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509126342
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509126359
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509126375
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509126393
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509126425
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509126442
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509126626
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509126642
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509126675
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509126692
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509126708
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509126725
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509126758
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509126775
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509126793
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509126808
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509126826
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509126842
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509126859
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509126876
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509127076
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509127109
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509127125
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509127142
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509127158
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509127176
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509127209
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509127225
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509127249
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509127276
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509127291
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509127309
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509127325
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509127342
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509127575
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509127610
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509127627
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509127641
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509127659
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509127692
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509127726
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509127743
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509127759
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509127775
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509127925
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509127943
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509127977
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509127992
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509128009
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509128042
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509128059
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509128093
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509128127
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509128143
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509128459
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509128460
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509128729
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509129102
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509129356
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509129372
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509129390
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509129406
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509129423
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509129439
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509129457
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509129473
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509129489
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509129506
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509129523
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509129539
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509129556
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509129574
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509129589
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509129606
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509129622
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509129640
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509129656
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509129673
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509129689
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509129706
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509129722
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509129740
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509129755
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509129773
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509129789
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509129806
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509129822
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509129840
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509129856
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509129873
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509129888
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509129906
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509129923
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509129940
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509129955
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509129973
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509129990
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509130005
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509130966
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509130982
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509131000
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509131016
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509131033
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509131050
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509131066
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509131083
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509131100
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509131116
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509131133
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509131149
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509131166
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509131183
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509131200
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509131216
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509131233
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509131250
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509131266
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509131284
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509131299
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509131317
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509131332
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509131366
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509131383
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509131400
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509131433
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509131828
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509131845
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509131862
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509131878
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509132784
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509132784
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509132964
+  },
+  {
+    "Interaction": "clicked on a field",
+    "Value": "remove Effect_Amount_of_damage",
+    "Time": 1599509137389
+  },
+  {
+    "Interaction": "main chart changed because of clicking a field",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509137457
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509140283
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509141263
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509143496
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509143513
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509143513
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509143638
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509145200
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509145214
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509145214
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509146114
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509146114
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509146148
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509146264
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509148037
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509148053
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509148071
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509150458
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509150459
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509150874
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509150874
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509150891
+  },
+  {
+    "Interaction": "clicked on a field",
+    "Value": "add Effect_Amount_of_damage",
+    "Time": 1599509153677
+  },
+  {
+    "Interaction": "main chart changed because of clicking a field",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509153746
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509154514
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509176285
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "2",
+    "Time": 1599509178444
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "23",
+    "Time": 1599509178632
+  },
+  {
+    "Interaction": "typed in answer",
+    "Value": "235",
+    "Time": 1599509179209
+  },
+  {
+    "Interaction": "changed ptask ans of confidence-udata",
+    "Value": "sagree",
+    "Time": 1599509182291
+  },
+  {
+    "Interaction": "changed ptask ans of confidence-udata",
+    "Value": "agree",
+    "Time": 1599509184125
+  },
+  {
+    "Interaction": "changed ptask ans of confidence-ans",
+    "Value": "agree",
+    "Time": 1599509185509
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509187680
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509187846
+  },
+  {
+    "Interaction": "added chart to bookmark",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509189454
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509191536
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509191553
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509191553
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509191586
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509191587
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509191603
+  },
+  {
+    "Interaction": "opened window",
+    "Value": "bookmark popup",
+    "Time": 1599509192378
+  },
+  {
+    "Interaction": "closed window",
+    "Value": "bookmark popup",
+    "Time": 1599509195258
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509195857
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509195873
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509195874
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509196007
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509196658
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509196674
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509196674
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509196962
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509196994
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509197012
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509197029
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509197044
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509197062
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509197078
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509197095
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509197112
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509197129
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509197145
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509197162
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509197180
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509197565
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509197583
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509197598
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509197616
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509197631
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509197649
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509197665
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509197698
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509197716
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509197732
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509197748
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509197765
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509197782
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509197798
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509197816
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509197849
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509197866
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509199338
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509199342
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509199375
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509199392
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509199409
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509199426
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509199459
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509199475
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509199493
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509199508
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509199525
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509199542
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509199558
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509199575
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509199775
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509199809
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509199842
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509199858
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509199875
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509199895
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509199908
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509199924
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509199942
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509199959
+  },
+  {
+    "Interaction": "scroll on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509199976
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509202197
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509202277
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509202279
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509202279
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509202294
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509202294
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509202296
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509202759
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509202774
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509202791
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509202824
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509202857
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509202891
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509202908
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509202925
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509202941
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509202958
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509202991
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509203008
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509203024
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509203125
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509203158
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509203175
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509203191
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509203208
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509203224
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509203242
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509203274
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509203291
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509203308
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509203324
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509203342
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509204861
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509204878
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509204894
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509204911
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509204928
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509204945
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509204960
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509204978
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509204994
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509205011
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509205028
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509205061
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509205078
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509205094
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509205112
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509208102
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509208118
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509208135
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509208151
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509208168
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509208185
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509208203
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509208235
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509208269
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509208302
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509208318
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509208335
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509208351
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509208369
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509208402
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509208419
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509209589
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509209622
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509209639
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509209656
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509209689
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509209706
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509209723
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509209740
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509209756
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509209773
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509209807
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509209822
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509209840
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509209856
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509209872
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509214391
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509214407
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509214424
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509214456
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509214474
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509214490
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509214506
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509214524
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509214540
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509214557
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509214590
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509214624
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509214639
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509214657
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509214673
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509214890
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509214907
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509214923
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509214956
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509214973
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509214989
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509215007
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509215023
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509215041
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509215056
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509215074
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509215090
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509215107
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509215123
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509215140
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509215157
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509215357
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509215390
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509215407
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509215424
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509215440
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509215457
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509215473
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509215490
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509215507
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509215524
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509215557
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509215573
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509215674
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509215690
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509215707
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509215723
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509215740
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509215774
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509215790
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509215806
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509215823
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509215840
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509215857
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509215890
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509215906
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509216090
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509216123
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509216190
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509216423
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509216440
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509216457
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509216474
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509216491
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509216507
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509216523
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509216540
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509216573
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509216591
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509216624
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509216640
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509216657
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509216674
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509216691
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509216857
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509216873
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509216890
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509216906
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509216924
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509216939
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509216973
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509216990
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509217006
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509217041
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509217074
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509217090
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509217108
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509217123
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509217141
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509217157
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509217172
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509217190
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509217206
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509217241
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509217257
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509217274
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509217290
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509217307
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509217323
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509217340
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509217356
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509217373
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509217390
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509217407
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509217423
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509217456
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509217489
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509217591
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509217624
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509217640
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509217673
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509217690
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509217706
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509217723
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509217740
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509217757
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509217773
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509217790
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509217807
+  },
+  {
+    "Interaction": "mouseover a related chart",
+    "Value": "mark:point;encoding:Aircraft_Make_Model-nominal-y,Cost_Repair-quantitative-size,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509218667
+  },
+  {
+    "Interaction": "mouseout a related chart",
+    "Value": "mark:point;encoding:Aircraft_Make_Model-nominal-y,Cost_Repair-quantitative-size,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509218683
+  },
+  {
+    "Interaction": "mouseover a related chart",
+    "Value": "mark:point;encoding:Aircraft_Make_Model-nominal-y,Cost_Repair-quantitative-size,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509218683
+  },
+  {
+    "Interaction": "mouseout a related chart",
+    "Value": "mark:point;encoding:Aircraft_Make_Model-nominal-y,Cost_Repair-quantitative-size,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509218700
+  },
+  {
+    "Interaction": "clicked load more button",
+    "Value": "",
+    "Time": 1599509219743
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509220319
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509220335
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509220351
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509220367
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509220385
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509220401
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509220418
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509220435
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509220468
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509220485
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509220518
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509220536
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509220685
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509220702
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509220718
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509220734
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509220751
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509220768
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509220784
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509220818
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509220835
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509220869
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509220884
+  },
+  {
+    "Interaction": "mouseover a related chart",
+    "Value": "mark:point;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Wildlife_Size-nominal-shape",
+    "Time": 1599509221001
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509221167
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509221198
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509221215
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509221231
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509221249
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509221282
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509221316
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509221349
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509221365
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509221398
+  },
+  {
+    "Interaction": "mouseout a related chart",
+    "Value": "mark:point;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Wildlife_Size-nominal-shape",
+    "Time": 1599509222150
+  },
+  {
+    "Interaction": "mouseover a related chart",
+    "Value": "mark:point;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Wildlife_Size-nominal-shape",
+    "Time": 1599509222151
+  },
+  {
+    "Interaction": "mouseout a related chart",
+    "Value": "mark:point;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Wildlife_Size-nominal-shape",
+    "Time": 1599509222168
+  },
+  {
+    "Interaction": "mouseover a related chart",
+    "Value": "mark:tick;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Flight_Date-nominal-row",
+    "Time": 1599509222185
+  },
+  {
+    "Interaction": "mouseout a related chart",
+    "Value": "mark:tick;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Flight_Date-nominal-row",
+    "Time": 1599509223203
+  },
+  {
+    "Interaction": "mouseover a related chart",
+    "Value": "mark:tick;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Flight_Date-nominal-row",
+    "Time": 1599509223204
+  },
+  {
+    "Interaction": "mouseout a related chart",
+    "Value": "mark:tick;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Flight_Date-nominal-row",
+    "Time": 1599509223219
+  },
+  {
+    "Interaction": "mouseover a related chart",
+    "Value": "mark:tick;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Flight_Date-nominal-row",
+    "Time": 1599509224929
+  },
+  {
+    "Interaction": "mouseout a related chart",
+    "Value": "mark:tick;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Flight_Date-nominal-row",
+    "Time": 1599509224945
+  },
+  {
+    "Interaction": "mouseover a related chart",
+    "Value": "mark:tick;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Flight_Date-nominal-row",
+    "Time": 1599509224945
+  },
+  {
+    "Interaction": "mouseout a related chart",
+    "Value": "mark:tick;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Flight_Date-nominal-row",
+    "Time": 1599509224962
+  },
+  {
+    "Interaction": "mouseover a related chart",
+    "Value": "mark:point;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Wildlife_Size-nominal-shape",
+    "Time": 1599509224962
+  },
+  {
+    "Interaction": "mouseout a related chart",
+    "Value": "mark:point;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Wildlife_Size-nominal-shape",
+    "Time": 1599509225095
+  },
+  {
+    "Interaction": "mouseover a related chart",
+    "Value": "mark:point;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Wildlife_Size-nominal-shape",
+    "Time": 1599509225379
+  },
+  {
+    "Interaction": "scroll on a related chart",
+    "Value": "mark:point;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Wildlife_Size-nominal-shape",
+    "Time": 1599509225662
+  },
+  {
+    "Interaction": "scroll on a related chart",
+    "Value": "mark:point;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Wildlife_Size-nominal-shape",
+    "Time": 1599509225678
+  },
+  {
+    "Interaction": "scroll on a related chart",
+    "Value": "mark:point;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Wildlife_Size-nominal-shape",
+    "Time": 1599509225695
+  },
+  {
+    "Interaction": "scroll on a related chart",
+    "Value": "mark:point;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Wildlife_Size-nominal-shape",
+    "Time": 1599509225712
+  },
+  {
+    "Interaction": "scroll on a related chart",
+    "Value": "mark:point;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Wildlife_Size-nominal-shape",
+    "Time": 1599509225745
+  },
+  {
+    "Interaction": "scroll on a related chart",
+    "Value": "mark:point;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Wildlife_Size-nominal-shape",
+    "Time": 1599509225762
+  },
+  {
+    "Interaction": "scroll on a related chart",
+    "Value": "mark:point;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Wildlife_Size-nominal-shape",
+    "Time": 1599509225779
+  },
+  {
+    "Interaction": "scroll on a related chart",
+    "Value": "mark:point;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Wildlife_Size-nominal-shape",
+    "Time": 1599509225797
+  },
+  {
+    "Interaction": "scroll on a related chart",
+    "Value": "mark:point;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Wildlife_Size-nominal-shape",
+    "Time": 1599509225812
+  },
+  {
+    "Interaction": "scroll on a related chart",
+    "Value": "mark:point;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Wildlife_Size-nominal-shape",
+    "Time": 1599509225829
+  },
+  {
+    "Interaction": "scroll on a related chart",
+    "Value": "mark:point;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Wildlife_Size-nominal-shape",
+    "Time": 1599509225862
+  },
+  {
+    "Interaction": "scroll on a related chart",
+    "Value": "mark:point;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Wildlife_Size-nominal-shape",
+    "Time": 1599509225879
+  },
+  {
+    "Interaction": "scroll on a related chart",
+    "Value": "mark:point;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Wildlife_Size-nominal-shape",
+    "Time": 1599509225896
+  },
+  {
+    "Interaction": "scroll on a related chart",
+    "Value": "mark:point;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Wildlife_Size-nominal-shape",
+    "Time": 1599509225913
+  },
+  {
+    "Interaction": "mouseout a related chart",
+    "Value": "mark:point;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Wildlife_Size-nominal-shape",
+    "Time": 1599509226062
+  },
+  {
+    "Interaction": "mouseover a related chart",
+    "Value": "mark:point;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Wildlife_Size-nominal-shape",
+    "Time": 1599509226062
+  },
+  {
+    "Interaction": "mouseout a related chart",
+    "Value": "mark:point;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Wildlife_Size-nominal-shape",
+    "Time": 1599509226255
+  },
+  {
+    "Interaction": "mouseover a related chart",
+    "Value": "mark:tick;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Flight_Date-nominal-row",
+    "Time": 1599509226272
+  },
+  {
+    "Interaction": "mouseout a related chart",
+    "Value": "mark:tick;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Flight_Date-nominal-row",
+    "Time": 1599509226288
+  },
+  {
+    "Interaction": "mouseover a related chart",
+    "Value": "mark:tick;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Flight_Date-nominal-row",
+    "Time": 1599509226288
+  },
+  {
+    "Interaction": "mouseout a related chart",
+    "Value": "mark:tick;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Flight_Date-nominal-row",
+    "Time": 1599509226305
+  },
+  {
+    "Interaction": "mouseover a related chart",
+    "Value": "mark:tick;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Flight_Date-nominal-row",
+    "Time": 1599509226305
+  },
+  {
+    "Interaction": "mouseout a related chart",
+    "Value": "mark:tick;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Flight_Date-nominal-row",
+    "Time": 1599509226321
+  },
+  {
+    "Interaction": "clicked load more button",
+    "Value": "",
+    "Time": 1599509227030
+  },
+  {
+    "Interaction": "mouseover a related chart",
+    "Value": "mark:point;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Wildlife_Size-nominal-shape",
+    "Time": 1599509227446
+  },
+  {
+    "Interaction": "mouseout a related chart",
+    "Value": "mark:point;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Wildlife_Size-nominal-shape",
+    "Time": 1599509227447
+  },
+  {
+    "Interaction": "mouseover a related chart",
+    "Value": "mark:point;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Wildlife_Size-nominal-shape",
+    "Time": 1599509227448
+  },
+  {
+    "Interaction": "mouseout a related chart",
+    "Value": "mark:point;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Wildlife_Size-nominal-shape",
+    "Time": 1599509227497
+  },
+  {
+    "Interaction": "mouseover a related chart",
+    "Value": "mark:tick;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Flight_Date-nominal-row",
+    "Time": 1599509227512
+  },
+  {
+    "Interaction": "mouseout a related chart",
+    "Value": "mark:tick;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Flight_Date-nominal-row",
+    "Time": 1599509227613
+  },
+  {
+    "Interaction": "mouseover a related chart",
+    "Value": "mark:tick;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Flight_Date-nominal-row",
+    "Time": 1599509227613
+  },
+  {
+    "Interaction": "scroll on a related chart",
+    "Value": "mark:tick;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Flight_Date-nominal-row",
+    "Time": 1599509227679
+  },
+  {
+    "Interaction": "scroll on a related chart",
+    "Value": "mark:tick;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Flight_Date-nominal-row",
+    "Time": 1599509227696
+  },
+  {
+    "Interaction": "scroll on a related chart",
+    "Value": "mark:tick;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Flight_Date-nominal-row",
+    "Time": 1599509227712
+  },
+  {
+    "Interaction": "scroll on a related chart",
+    "Value": "mark:tick;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Flight_Date-nominal-row",
+    "Time": 1599509227729
+  },
+  {
+    "Interaction": "scroll on a related chart",
+    "Value": "mark:tick;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Flight_Date-nominal-row",
+    "Time": 1599509227746
+  },
+  {
+    "Interaction": "scroll on a related chart",
+    "Value": "mark:tick;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Flight_Date-nominal-row",
+    "Time": 1599509227763
+  },
+  {
+    "Interaction": "scroll on a related chart",
+    "Value": "mark:tick;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Flight_Date-nominal-row",
+    "Time": 1599509227778
+  },
+  {
+    "Interaction": "scroll on a related chart",
+    "Value": "mark:tick;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Flight_Date-nominal-row",
+    "Time": 1599509227796
+  },
+  {
+    "Interaction": "scroll on a related chart",
+    "Value": "mark:tick;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Flight_Date-nominal-row",
+    "Time": 1599509227812
+  },
+  {
+    "Interaction": "scroll on a related chart",
+    "Value": "mark:tick;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Flight_Date-nominal-row",
+    "Time": 1599509227829
+  },
+  {
+    "Interaction": "scroll on a related chart",
+    "Value": "mark:tick;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Flight_Date-nominal-row",
+    "Time": 1599509227845
+  },
+  {
+    "Interaction": "scroll on a related chart",
+    "Value": "mark:tick;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Flight_Date-nominal-row",
+    "Time": 1599509227863
+  },
+  {
+    "Interaction": "mouseout a related chart",
+    "Value": "mark:tick;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Flight_Date-nominal-row",
+    "Time": 1599509227995
+  },
+  {
+    "Interaction": "mouseover a related chart",
+    "Value": "mark:tick;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Flight_Date-nominal-row",
+    "Time": 1599509227996
+  },
+  {
+    "Interaction": "mouseout a related chart",
+    "Value": "mark:tick;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Flight_Date-nominal-row",
+    "Time": 1599509228012
+  },
+  {
+    "Interaction": "mouseover a related chart",
+    "Value": "mark:point;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Wildlife_Size-nominal-shape",
+    "Time": 1599509228029
+  },
+  {
+    "Interaction": "mouseout a related chart",
+    "Value": "mark:point;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Wildlife_Size-nominal-shape",
+    "Time": 1599509228202
+  },
+  {
+    "Interaction": "mouseover a related chart",
+    "Value": "mark:point;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Wildlife_Size-nominal-shape",
+    "Time": 1599509228203
+  },
+  {
+    "Interaction": "scroll on a related chart",
+    "Value": "mark:point;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Wildlife_Size-nominal-shape",
+    "Time": 1599509228203
+  },
+  {
+    "Interaction": "scroll on a related chart",
+    "Value": "mark:point;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Wildlife_Size-nominal-shape",
+    "Time": 1599509228218
+  },
+  {
+    "Interaction": "scroll on a related chart",
+    "Value": "mark:point;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Wildlife_Size-nominal-shape",
+    "Time": 1599509228252
+  },
+  {
+    "Interaction": "scroll on a related chart",
+    "Value": "mark:point;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Wildlife_Size-nominal-shape",
+    "Time": 1599509228269
+  },
+  {
+    "Interaction": "scroll on a related chart",
+    "Value": "mark:point;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Wildlife_Size-nominal-shape",
+    "Time": 1599509228284
+  },
+  {
+    "Interaction": "scroll on a related chart",
+    "Value": "mark:point;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Wildlife_Size-nominal-shape",
+    "Time": 1599509228302
+  },
+  {
+    "Interaction": "scroll on a related chart",
+    "Value": "mark:point;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Wildlife_Size-nominal-shape",
+    "Time": 1599509228318
+  },
+  {
+    "Interaction": "scroll on a related chart",
+    "Value": "mark:point;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Wildlife_Size-nominal-shape",
+    "Time": 1599509228335
+  },
+  {
+    "Interaction": "scroll on a related chart",
+    "Value": "mark:point;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Wildlife_Size-nominal-shape",
+    "Time": 1599509228369
+  },
+  {
+    "Interaction": "mouseout a related chart",
+    "Value": "mark:point;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Wildlife_Size-nominal-shape",
+    "Time": 1599509228386
+  },
+  {
+    "Interaction": "scroll on a related chart",
+    "Value": "mark:point;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Wildlife_Size-nominal-shape",
+    "Time": 1599509228387
+  },
+  {
+    "Interaction": "scroll on a related chart",
+    "Value": "mark:point;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Wildlife_Size-nominal-shape",
+    "Time": 1599509228402
+  },
+  {
+    "Interaction": "scroll on a related chart",
+    "Value": "mark:point;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Wildlife_Size-nominal-shape",
+    "Time": 1599509228420
+  },
+  {
+    "Interaction": "scroll on a related chart",
+    "Value": "mark:point;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Wildlife_Size-nominal-shape",
+    "Time": 1599509228435
+  },
+  {
+    "Interaction": "scroll on a related chart",
+    "Value": "mark:point;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Wildlife_Size-nominal-shape",
+    "Time": 1599509228452
+  },
+  {
+    "Interaction": "scroll on a related chart",
+    "Value": "mark:point;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Wildlife_Size-nominal-shape",
+    "Time": 1599509228468
+  },
+  {
+    "Interaction": "scroll on a related chart",
+    "Value": "mark:point;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Wildlife_Size-nominal-shape",
+    "Time": 1599509228486
+  },
+  {
+    "Interaction": "scroll on a related chart",
+    "Value": "mark:point;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Wildlife_Size-nominal-shape",
+    "Time": 1599509228502
+  },
+  {
+    "Interaction": "scroll on a related chart",
+    "Value": "mark:point;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Wildlife_Size-nominal-shape",
+    "Time": 1599509228519
+  },
+  {
+    "Interaction": "scroll on a related chart",
+    "Value": "mark:point;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Wildlife_Size-nominal-shape",
+    "Time": 1599509228535
+  },
+  {
+    "Interaction": "scroll on a related chart",
+    "Value": "mark:point;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Wildlife_Size-nominal-shape",
+    "Time": 1599509228553
+  },
+  {
+    "Interaction": "scroll on a related chart",
+    "Value": "mark:point;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Wildlife_Size-nominal-shape",
+    "Time": 1599509228586
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509228853
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509228868
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509228885
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509228902
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509228935
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509228965
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509228986
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509229002
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509229019
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509229035
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509229068
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509229085
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509229102
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509229319
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509229335
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509229352
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509229369
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509229403
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509229436
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509229453
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509229469
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509229486
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509229502
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509229535
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509231110
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509231126
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509231144
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509231160
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509231178
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509231194
+  },
+  {
+    "Interaction": "mouseover a related chart",
+    "Value": "mark:tick;encoding:Aircraft_Airline_Operator-nominal-x,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-y",
+    "Time": 1599509231210
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509231211
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509231226
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509231244
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509231277
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509231294
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509231310
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509231327
+  },
+  {
+    "Interaction": "scroll down",
+    "Value": "",
+    "Time": 1599509231344
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509243526
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509243543
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509243577
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509243592
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509243610
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509243643
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509243662
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509243679
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509243694
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509243712
+  },
+  {
+    "Interaction": "mouseout a related chart",
+    "Value": "mark:tick;encoding:Aircraft_Airline_Operator-nominal-x,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-y",
+    "Time": 1599509243726
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509243727
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509243761
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509243776
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509243794
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509243810
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509243843
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509243861
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509244010
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509244027
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509244044
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509244060
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509244077
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509244094
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509244111
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509244128
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509244161
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509244177
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509244194
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509244210
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509244227
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509244244
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509244282
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509244310
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509244327
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509244428
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509244460
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509244494
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509244510
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509244527
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509244543
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509244576
+  },
+  {
+    "Interaction": "mouseover a related chart",
+    "Value": "mark:point;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Wildlife_Size-nominal-shape",
+    "Time": 1599509244594
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509244595
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509244611
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509244628
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509244644
+  },
+  {
+    "Interaction": "mouseout a related chart",
+    "Value": "mark:point;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Wildlife_Size-nominal-shape",
+    "Time": 1599509244661
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509244662
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509244677
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509244694
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509245493
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509245511
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509245528
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509245560
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509245578
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509245593
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509245627
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509245644
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509245660
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509245694
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509245711
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509245743
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509245844
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509245877
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509245894
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509245910
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509245927
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509245943
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509245959
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509245976
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509246011
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509246026
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509246044
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509246060
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509246077
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509246110
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509246244
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509246277
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509246294
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509246311
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509246343
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509246376
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509246393
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509246410
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509246427
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509246444
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509246460
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509246610
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509246627
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509246644
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509246660
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509246694
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509246710
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509246727
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509246743
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509246776
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509246793
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509246811
+  },
+  {
+    "Interaction": "scroll up",
+    "Value": "",
+    "Time": 1599509246827
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509247654
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509250457
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509252146
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509252161
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509252161
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509259782
+  },
+  {
+    "Interaction": "mouseover on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509259782
+  },
+  {
+    "Interaction": "mouseout on the specified chart",
+    "Value": "mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",
+    "Time": 1599509259798
+  },
+  {
+    "Interaction": "changed ptask ans of efficiency",
+    "Value": "agree",
+    "Time": 1599509263540
+  },
+  {
+    "Interaction": "changed ptask ans of ease-of-use",
+    "Value": "sagree",
+    "Time": 1599509269048
+  },
+  {
+    "Interaction": "changed ptask ans of utility",
+    "Value": "agree",
+    "Time": 1599509272378
+  },
+  {
+    "Interaction": "changed ptask ans of overall",
+    "Value": "agree",
+    "Time": 1599509282908
+  },
+  {
+    "Interaction": "hit the submit button",
+    "Value": "",
+    "Time": 1599509289107
+  },
+  {
+    "Interaction": "submitted successfully",
+    "Value": "",
+    "Time": 1599509289108
+  }
+]

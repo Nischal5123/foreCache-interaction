@@ -1,0 +1,108 @@
+{
+  "markpointencodingCost_RepairquantitativesizeWildlife_SizenominalxWildlife_Speciesnominaly": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/birdstrikes/birdstrikes.json"
+    },
+    "encoding": {
+      "size": {
+        "field": "Cost_Repair",
+        "type": "quantitative"
+      },
+      "x": {
+        "field": "Wildlife_Size",
+        "type": "nominal"
+      },
+      "y": {
+        "field": "Wildlife_Species",
+        "type": "nominal"
+      }
+    },
+    "mark": "point"
+  },
+  "markpointencodingCost_RepairquantitativesizeWhen_Time_of_daynominalxWildlife_Sizenominaly": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/birdstrikes/birdstrikes.json"
+    },
+    "encoding": {
+      "size": {
+        "field": "Cost_Repair",
+        "type": "quantitative"
+      },
+      "x": {
+        "field": "When_Time_of_day",
+        "type": "nominal"
+      },
+      "y": {
+        "field": "Wildlife_Size",
+        "type": "nominal"
+      }
+    },
+    "mark": "point"
+  },
+  "markpointencodingCost_RepairquantitativesizeSpeed_IAS_in_knotsquantitativexbinWildlife_Sizenominaly": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/birdstrikes/birdstrikes.json"
+    },
+    "encoding": {
+      "size": {
+        "field": "Cost_Repair",
+        "type": "quantitative"
+      },
+      "x": {
+        "bin": true,
+        "field": "Speed_IAS_in_knots",
+        "type": "quantitative"
+      },
+      "y": {
+        "field": "Wildlife_Size",
+        "type": "nominal"
+      }
+    },
+    "mark": "point"
+  },
+  "markpointencodingAirport_NamenominalxWhen_Time_of_daynominalyWildlife_Sizenominalcolor": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/birdstrikes/birdstrikes.json"
+    },
+    "encoding": {
+      "color": {
+        "field": "Wildlife_Size",
+        "type": "nominal"
+      },
+      "x": {
+        "field": "Airport_Name",
+        "type": "nominal"
+      },
+      "y": {
+        "field": "When_Time_of_day",
+        "type": "nominal"
+      }
+    },
+    "mark": "point"
+  },
+  "markpointencodingEffect_Amount_of_damagenominalxWhen_Phase_of_flightnominalyWildlife_Sizenominalcolor": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/birdstrikes/birdstrikes.json"
+    },
+    "encoding": {
+      "color": {
+        "field": "Wildlife_Size",
+        "type": "nominal"
+      },
+      "x": {
+        "field": "Effect_Amount_of_damage",
+        "type": "nominal"
+      },
+      "y": {
+        "field": "When_Phase_of_flight",
+        "type": "nominal"
+      }
+    },
+    "mark": "point"
+  }
+}

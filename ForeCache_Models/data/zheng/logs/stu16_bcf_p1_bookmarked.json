@@ -1,0 +1,24 @@
+{
+  "markpointencodingEffect_Amount_of_damagenominalyFlight_DatenominalxWhen_Phase_of_flightnominalcolor": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/birdstrikes/birdstrikes.json"
+    },
+    "encoding": {
+      "color": {
+        "field": "When_Phase_of_flight",
+        "type": "nominal"
+      },
+      "x": {
+        "field": "Flight_Date",
+        "timeUnit": "month",
+        "type": "nominal"
+      },
+      "y": {
+        "field": "Effect_Amount_of_damage",
+        "type": "nominal"
+      }
+    },
+    "mark": "point"
+  }
+}

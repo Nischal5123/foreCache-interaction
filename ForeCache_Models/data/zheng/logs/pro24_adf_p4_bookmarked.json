@@ -1,0 +1,108 @@
+{
+  "markbarencodingquantitativexaggregatecountDistributornominaly": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/movies/movies.json"
+    },
+    "encoding": {
+      "x": {
+        "aggregate": "count",
+        "type": "quantitative"
+      },
+      "y": {
+        "field": "Distributor",
+        "type": "nominal"
+      }
+    },
+    "mark": "bar"
+  },
+  "markbarencodingquantitativexaggregatecountCreative_TypenominalcolorDistributornominalyRelease_Datenominalrow": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/movies/movies.json"
+    },
+    "encoding": {
+      "color": {
+        "field": "Creative_Type",
+        "type": "nominal"
+      },
+      "size": {
+        "field": "Release_Date",
+        "timeUnit": "month",
+        "type": "nominal"
+      },
+      "x": {
+        "aggregate": "count",
+        "type": "quantitative"
+      },
+      "y": {
+        "field": "Distributor",
+        "type": "nominal"
+      }
+    },
+    "mark": "bar"
+  },
+  "markbarencodingquantitativexaggregatecountDirectornominaly": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/movies/movies.json"
+    },
+    "encoding": {
+      "x": {
+        "aggregate": "count",
+        "type": "quantitative"
+      },
+      "y": {
+        "field": "Director",
+        "type": "nominal"
+      }
+    },
+    "mark": "bar"
+  },
+  "markpointencodingMajor_GenrenominalxUS_GrossquantitativeybinWorldwide_Grossquantitativesizeaggregatemean": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/movies/movies.json"
+    },
+    "encoding": {
+      "size": {
+        "aggregate": "mean",
+        "field": "Worldwide_Gross",
+        "type": "quantitative"
+      },
+      "x": {
+        "field": "Major_Genre",
+        "type": "nominal"
+      },
+      "y": {
+        "bin": true,
+        "field": "US_Gross",
+        "type": "quantitative"
+      }
+    },
+    "mark": "point"
+  },
+  "markbarencodingMajor_GenrenominalxRelease_DatenominalrowWorldwide_Grossquantitativeyaggregatemean": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/movies/movies.json"
+    },
+    "encoding": {
+      "color": {
+        "field": "Release_Date",
+        "timeUnit": "month",
+        "type": "nominal"
+      },
+      "x": {
+        "field": "Major_Genre",
+        "type": "nominal"
+      },
+      "y": {
+        "aggregate": "mean",
+        "field": "Worldwide_Gross",
+        "type": "quantitative"
+      }
+    },
+    "mark": "bar"
+  }
+}

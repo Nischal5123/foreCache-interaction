@@ -1,0 +1,105 @@
+{
+  "markbarencodingquantitativexaggregatecountFlight_DatenominalrowWhen_Phase_of_flightnominaly": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/birdstrikes/birdstrikes.json"
+    },
+    "encoding": {
+      "color": {
+        "field": "Flight_Date",
+        "timeUnit": "month",
+        "type": "nominal"
+      },
+      "x": {
+        "aggregate": "count",
+        "type": "quantitative"
+      },
+      "y": {
+        "field": "When_Phase_of_flight",
+        "type": "nominal"
+      }
+    },
+    "mark": "bar"
+  },
+  "markbarencodingAircraft_Airline_OperatornominalyCost_TotalquantitativexWildlife_Sizenominalcolor": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/birdstrikes/birdstrikes.json"
+    },
+    "encoding": {
+      "color": {
+        "field": "Wildlife_Size",
+        "type": "nominal"
+      },
+      "x": {
+        "field": "Cost_Total",
+        "type": "quantitative"
+      },
+      "y": {
+        "field": "Aircraft_Airline_Operator",
+        "type": "nominal"
+      }
+    },
+    "mark": "bar"
+  },
+  "marktickencodingAirport_NamenominalyCost_Totalquantitativex": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/birdstrikes/birdstrikes.json"
+    },
+    "encoding": {
+      "x": {
+        "field": "Cost_Total",
+        "type": "quantitative"
+      },
+      "y": {
+        "field": "Airport_Name",
+        "type": "nominal"
+      }
+    },
+    "mark": "tick"
+  },
+  "marktickencodingSpeed_IAS_in_knotsquantitativexWhen_Phase_of_flightnominalyWildlife_Sizenominalcolor": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/birdstrikes/birdstrikes.json"
+    },
+    "encoding": {
+      "color": {
+        "field": "Wildlife_Size",
+        "type": "nominal"
+      },
+      "x": {
+        "field": "Speed_IAS_in_knots",
+        "type": "quantitative"
+      },
+      "y": {
+        "field": "When_Phase_of_flight",
+        "type": "nominal"
+      }
+    },
+    "mark": "tick"
+  },
+  "marktickencodingCost_RepairquantitativexFlight_DatenominalrowWildlife_Speciesnominaly": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/birdstrikes/birdstrikes.json"
+    },
+    "encoding": {
+      "color": {
+        "field": "Flight_Date",
+        "timeUnit": "month",
+        "type": "nominal"
+      },
+      "x": {
+        "field": "Cost_Repair",
+        "type": "quantitative"
+      },
+      "y": {
+        "field": "Wildlife_Species",
+        "type": "nominal"
+      }
+    },
+    "mark": "tick"
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "markpointencodingCreative_TypenominalyIMDB_RatingquantitativexIMDB_Votesquantitativesize": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/movies/movies.json"
+    },
+    "encoding": {
+      "size": {
+        "field": "IMDB_Votes",
+        "type": "quantitative"
+      },
+      "x": {
+        "field": "IMDB_Rating",
+        "type": "quantitative"
+      },
+      "y": {
+        "field": "Creative_Type",
+        "type": "nominal"
+      }
+    },
+    "mark": "point"
+  },
+  "markpointencodingCreative_TypenominalyIMDB_RatingquantitativexUS_DVD_Salesquantitativesize": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/movies/movies.json"
+    },
+    "encoding": {
+      "size": {
+        "field": "US_DVD_Sales",
+        "type": "quantitative"
+      },
+      "x": {
+        "field": "IMDB_Rating",
+        "type": "quantitative"
+      },
+      "y": {
+        "field": "Creative_Type",
+        "type": "nominal"
+      }
+    },
+    "mark": "point"
+  },
+  "marktickencodingIMDB_RatingquantitativexMajor_Genrenominaly": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/movies/movies.json"
+    },
+    "encoding": {
+      "x": {
+        "field": "IMDB_Rating",
+        "type": "quantitative"
+      },
+      "y": {
+        "field": "Major_Genre",
+        "type": "nominal"
+      }
+    },
+    "mark": "tick"
+  },
+  "marktickencodingIMDB_VotesquantitativexMajor_Genrenominaly": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/movies/movies.json"
+    },
+    "encoding": {
+      "x": {
+        "field": "IMDB_Votes",
+        "type": "quantitative"
+      },
+      "y": {
+        "field": "Major_Genre",
+        "type": "nominal"
+      }
+    },
+    "mark": "tick"
+  },
+  "marktickencodingCreative_TypenominalcolorIMDB_VotesquantitativexMajor_Genrenominaly": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/movies/movies.json"
+    },
+    "encoding": {
+      "color": {
+        "field": "Creative_Type",
+        "type": "nominal"
+      },
+      "x": {
+        "field": "IMDB_Votes",
+        "type": "quantitative"
+      },
+      "y": {
+        "field": "Major_Genre",
+        "type": "nominal"
+      }
+    },
+    "mark": "tick"
+  }
+}

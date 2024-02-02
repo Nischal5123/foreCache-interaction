@@ -1,4 +1,3 @@
-import misc_vizrec
 import numpy as np
 from collections import defaultdict
 import itertools
@@ -33,7 +32,7 @@ class TD_SARSA:
         def policy_fnc(state):
             coin = random.random()
             if coin < epsilon:
-                    best_action = random.randint(0, 7)
+                    best_action = random.randint(0, 1)
             else:
                 best_action = np.argmax(Q[state])
             return best_action
@@ -59,7 +58,7 @@ class TD_SARSA:
                """
 
 
-        Q = defaultdict(lambda: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0])
+        Q = defaultdict(lambda: [0.0, 0.0])
 
         stats = None
 

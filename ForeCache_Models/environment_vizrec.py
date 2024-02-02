@@ -17,7 +17,7 @@ class environment_vizrec:
 
         Initializes required variables and stores data in memory.
         """
-        self.user_list_2D = np.sort(glob.glob("data/zheng/processed_interactions/*"))
+        self.user_list_2D = np.sort(glob.glob("data/zheng/processed_interactions_p4_bookmarked/*"))
         self.user_list_3D = np.sort(glob.glob("data/NDSI-3D/taskname_ndsi-3d-task_*"))
 
         # This variable will be used to track the current position of the user agent.
@@ -25,7 +25,9 @@ class environment_vizrec:
         self.done = False  # Done exploring the current subtask
 
         # # List of valid actions and states
-        self.valid_actions = ['same','modify-x','modify-y','modify-z','modify-x-y','modify-y-z','modify-x-z','modify-x-y-z']
+        # self.valid_actions = ['same','modify-x','modify-y','modify-z','modify-x-y','modify-y-z','modify-x-z','modify-x-y-z']
+        #self.valid_actions = ['same', 'modify']
+        self.valid_actions = ['same', 'modify-1', 'modify-2','modify-3']
         # self.valid_states = ['Task_Panel','Related_View','Top_Panel','Data_View']
 
 

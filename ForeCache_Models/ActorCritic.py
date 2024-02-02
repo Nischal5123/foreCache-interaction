@@ -302,9 +302,13 @@ def run_experiment(user_list, algo, hyperparam_file):
 
             # Print training results
             print("#TRAINING: User: {}, Threshold: {:.1f}, Accuracy: {}, LR: {}, Discount: {}, Temperature: {}".format(user_name, thres, max_accu, best_learning_rate, best_gamma, best_temp))
-
-            # Test the best agent and store results in DataFrame
-            test_accuracy, split_accuracy, reward = best_agent.test(best_model)
+            test_accs = []
+            for i in range(5):
+                test_agent = best_agent
+                test_model = best_model
+                test_accuracy, split_accuracy, reward = test_agent.test(test_model)
+                test_accs.append(test_accuracy)
+            test_accuracy = np.mean(test_accs)
             accuracy_per_state = format_split_accuracy(split_accuracy)
             y_accu.append(test_accuracy)
             result_dataframe = pd.concat([result_dataframe, pd.DataFrame({

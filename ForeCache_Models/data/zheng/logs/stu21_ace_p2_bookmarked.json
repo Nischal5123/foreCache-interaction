@@ -1,0 +1,23 @@
+{
+  "markpointencodingRunning_Time_minquantitativexUS_GrossquantitativeyWorldwide_Grossquantitativesize": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/movies/movies.json"
+    },
+    "encoding": {
+      "size": {
+        "field": "Worldwide_Gross",
+        "type": "quantitative"
+      },
+      "x": {
+        "field": "Running_Time_min",
+        "type": "quantitative"
+      },
+      "y": {
+        "field": "US_Gross",
+        "type": "quantitative"
+      }
+    },
+    "mark": "point"
+  }
+}

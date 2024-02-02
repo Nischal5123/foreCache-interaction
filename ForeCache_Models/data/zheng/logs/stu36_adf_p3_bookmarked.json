@@ -1,0 +1,88 @@
+{
+  "marktickencodingCreative_TypenominalyWorldwide_Grossquantitativex": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/movies/movies.json"
+    },
+    "encoding": {
+      "x": {
+        "field": "Worldwide_Gross",
+        "type": "quantitative"
+      },
+      "y": {
+        "field": "Creative_Type",
+        "type": "nominal"
+      }
+    },
+    "mark": "tick"
+  },
+  "marktickencodingDistributornominalyWorldwide_Grossquantitativex": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/movies/movies.json"
+    },
+    "encoding": {
+      "x": {
+        "field": "Worldwide_Gross",
+        "type": "quantitative"
+      },
+      "y": {
+        "field": "Distributor",
+        "type": "nominal"
+      }
+    },
+    "mark": "tick"
+  },
+  "marktickencodingDistributornominalyUS_Grossquantitativex": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/movies/movies.json"
+    },
+    "encoding": {
+      "x": {
+        "field": "US_Gross",
+        "type": "quantitative"
+      },
+      "y": {
+        "field": "Distributor",
+        "type": "nominal"
+      }
+    },
+    "mark": "tick"
+  },
+  "marktickencodingRelease_DatenominalyWorldwide_Grossquantitativex": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/movies/movies.json"
+    },
+    "encoding": {
+      "x": {
+        "field": "Worldwide_Gross",
+        "type": "quantitative"
+      },
+      "y": {
+        "field": "Release_Date",
+        "timeUnit": "month",
+        "type": "nominal"
+      }
+    },
+    "mark": "tick"
+  },
+  "marktickencodingMajor_GenrenominalyWorldwide_Grossquantitativex": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/movies/movies.json"
+    },
+    "encoding": {
+      "x": {
+        "field": "Worldwide_Gross",
+        "type": "quantitative"
+      },
+      "y": {
+        "field": "Major_Genre",
+        "type": "nominal"
+      }
+    },
+    "mark": "tick"
+  }
+}

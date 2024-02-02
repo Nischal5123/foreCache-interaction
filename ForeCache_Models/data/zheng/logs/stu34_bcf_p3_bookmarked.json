@@ -1,0 +1,111 @@
+{
+  "markpointencodingCost_OtherquantitativesizeCost_TotalquantitativexbinWildlife_Speciesnominaly": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/birdstrikes/birdstrikes.json"
+    },
+    "encoding": {
+      "size": {
+        "field": "Cost_Other",
+        "type": "quantitative"
+      },
+      "x": {
+        "bin": true,
+        "field": "Cost_Total",
+        "type": "quantitative"
+      },
+      "y": {
+        "field": "Wildlife_Species",
+        "type": "nominal"
+      }
+    },
+    "mark": "point"
+  },
+  "markpointencodingCost_OtherquantitativesizeCost_RepairquantitativexbinWildlife_Speciesnominaly": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/birdstrikes/birdstrikes.json"
+    },
+    "encoding": {
+      "size": {
+        "field": "Cost_Other",
+        "type": "quantitative"
+      },
+      "x": {
+        "bin": true,
+        "field": "Cost_Repair",
+        "type": "quantitative"
+      },
+      "y": {
+        "field": "Wildlife_Species",
+        "type": "nominal"
+      }
+    },
+    "mark": "point"
+  },
+  "markpointencodingCost_OtherquantitativesizeCost_RepairquantitativexbinWildlife_Sizenominaly": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/birdstrikes/birdstrikes.json"
+    },
+    "encoding": {
+      "size": {
+        "field": "Cost_Other",
+        "type": "quantitative"
+      },
+      "x": {
+        "bin": true,
+        "field": "Cost_Repair",
+        "type": "quantitative"
+      },
+      "y": {
+        "field": "Wildlife_Size",
+        "type": "nominal"
+      }
+    },
+    "mark": "point"
+  },
+  "markpointencodingCost_TotalquantitativesizeWildlife_SizenominalxWildlife_Speciesnominaly": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/birdstrikes/birdstrikes.json"
+    },
+    "encoding": {
+      "size": {
+        "field": "Cost_Total",
+        "type": "quantitative"
+      },
+      "x": {
+        "field": "Wildlife_Size",
+        "type": "nominal"
+      },
+      "y": {
+        "field": "Wildlife_Species",
+        "type": "nominal"
+      }
+    },
+    "mark": "point"
+  },
+  "markpointencodingCost_OtherquantitativesizeCost_TotalquantitativexbinOrigin_Statenominaly": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/birdstrikes/birdstrikes.json"
+    },
+    "encoding": {
+      "size": {
+        "field": "Cost_Other",
+        "type": "quantitative"
+      },
+      "x": {
+        "bin": true,
+        "field": "Cost_Total",
+        "type": "quantitative"
+      },
+      "y": {
+        "field": "Origin_State",
+        "type": "nominal"
+      }
+    },
+    "mark": "point"
+  }
+}

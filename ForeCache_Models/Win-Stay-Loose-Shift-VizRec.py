@@ -24,7 +24,8 @@ class WSLS:
             lambda: defaultdict(float)
         )  # Initializes a dictionary with default values
         self.states = []  # Defines the possible states of the environment
-        self.actions =['same', 'modify-1', 'modify-2', 'modify-3'] # Defines the possible actions of the agent
+        self.actions =['same', 'modify'] # Defines the possible actions of the agent
+        #self.actions = ['same', 'modify']  # Defines the possible actions of the agent
         self.bestaction = defaultdict(lambda: self.take_random_action('',''))
         self.reward = defaultdict(lambda: defaultdict(float))
 
@@ -40,8 +41,8 @@ class WSLS:
         - next_action (str): a randomly chosen action different from the current one.
         """
         #action_space = ['same', 'modify-x', 'modify-y', 'modify-z', 'modify-x-y', 'modify-y-z', 'modify-x-z','modify-x-y-z']
-        action_space=['same', 'modify-1', 'modify-2', 'modify-3']
-        action_space = [f for f in action_space if f != action]
+        #action_space=['same', 'modify']
+        action_space = [f for f in self.actions if f != action]
         next_action = random.choice(action_space)
         return next_action
 
@@ -95,7 +96,7 @@ class WSLS:
 
 
         obj = misc.misc([])
-        print("{}, {:.2f}, {}".format(obj.get_user_name(user), np.mean(accuracy), result))
+        print("{}, {:.2f}, {}".format(get_user_name(user), np.mean(accuracy), result))
         self.bestaction.clear()
         self.reward.clear()
         return np.mean(accuracy),split_accuracy
@@ -111,9 +112,9 @@ def format_split_accuracy(accuracy_dict):
     return accuracy_per_state
 
 def get_user_name(url):
-    string = url.split('\\')
-    fname = string[len(string) - 1]
-    uname = fname.rstrip('.csv')
+    parts = url.split('/')
+    fname = parts[-1]
+    uname = fname.rstrip('_log.csv')
     return uname
 
 if __name__ == "__main__":
@@ -168,7 +169,7 @@ if __name__ == "__main__":
 
     plt.xlabel("Threshold")
     plt.ylabel("Accuracy")
-    title = "wsls_all_3_actions"
+    title = "WSLS"
     mean_y_accu = np.mean([element for sublist in y_accu_all for element in sublist])
     plt.axhline(
         mean_y_accu,

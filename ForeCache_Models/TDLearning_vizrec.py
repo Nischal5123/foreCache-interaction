@@ -1,4 +1,3 @@
-import misc_vizrec
 import numpy as np
 from collections import defaultdict
 import itertools
@@ -31,7 +30,7 @@ class TDLearning:
         def policy_fnc(state):
             coin = random.random()
             if coin < epsilon:
-                    best_action = random.randint(0, 7)
+                    best_action = random.randint(0, 1)
             else:
                 best_action = np.argmax(Q[state])
             return best_action
@@ -56,7 +55,7 @@ class TDLearning:
             Q is the optimal action-value function, a dictionary mapping state -> action values.
             stats is an EpisodeStats object with two numpy arrays for episode_lengths and episode_rewards.
         """
-        Q = defaultdict(lambda: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0])
+        Q = defaultdict(lambda: [0.0, 0.0])
 
 
         for i_episode in range(num_episodes):

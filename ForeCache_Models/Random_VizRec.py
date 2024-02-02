@@ -22,7 +22,9 @@ class Random:
             "Foraging",
             "Navigation",
         ]  # Defines the possible states of the environment
-        self.actions = ['same','modify-x','modify-y','modify-z','modify-x-y','modify-y-z','modify-x-z','modify-x-y-z']  # Defines the possible actions of the agent
+        #self.actions = ['same','modify-x','modify-y','modify-z','modify-x-y','modify-y-z','modify-x-z','modify-x-y-z']  # Defines the possible actions of the agent
+        self.valid_actions = ['same', 'modify']
+        #self.valid_actions = ['same', 'modify']
         for state in self.states:
             self.bestaction[
                 state
@@ -38,10 +40,10 @@ class Random:
         Returns:
         - next_action (str): a randomly chosen action different from the current one.
         """
-        action_space = ['same','modify-x','modify-y','modify-z','modify-x-y','modify-y-z','modify-x-z','modify-x-y-z']
-        action_space = [f for f in action_space if f != action]
+        #action_space = ['same','modify-x','modify-y','modify-z','modify-x-y','modify-y-z','modify-x-z','modify-x-y-z']
+        action_space = [f for f in self.valid_actions if f != action]
         next_action = random.choice(action_space)
-        return next_action
+        return 'same'
     def RandomProbabilistic(self, user, env, thres):
         """
                Implements the Momentum algorithm for a given user and environment.
@@ -77,7 +79,7 @@ class Random:
             result.append(env.mem_states[i])
             result.append(cur_action)
 
-        print("{}, {:.2f}, {}".format(user, np.mean(accuracy), result))
+        print("{}, {:.2f}".format(user, np.mean(accuracy)))
         self.bestaction.clear()
         return np.mean(accuracy), split_accuracy
 
@@ -147,4 +149,4 @@ def run_experiment(user_list, algo, hyperparam_file):
 if __name__ == "__main__":
     env = environment_vizrec.environment_vizrec()
     user_list_2D = env.user_list_2D
-    run_experiment(user_list_2D, 'Random', 'sampled-hyperparameters-config.json')
+    run_experiment(user_list_2D, 'Naive', 'sampled-hyperparameters-config.json')

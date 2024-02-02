@@ -1,0 +1,42 @@
+{
+  "markbarencodingquantitativexaggregatecountTitlenominaly": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/movies/movies.json"
+    },
+    "encoding": {
+      "x": {
+        "aggregate": "count",
+        "type": "quantitative"
+      },
+      "y": {
+        "field": "Title",
+        "type": "nominal"
+      }
+    },
+    "height": 18000,
+    "mark": "bar"
+  },
+  "markpointencodingSourcenominalxTitlenominalyWorldwide_Grossquantitativesize": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/movies/movies.json"
+    },
+    "encoding": {
+      "size": {
+        "field": "Worldwide_Gross",
+        "type": "quantitative"
+      },
+      "x": {
+        "field": "Source",
+        "type": "nominal"
+      },
+      "y": {
+        "field": "Title",
+        "type": "nominal"
+      }
+    },
+    "height": 18000,
+    "mark": "point"
+  }
+}

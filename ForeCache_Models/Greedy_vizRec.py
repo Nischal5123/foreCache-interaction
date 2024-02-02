@@ -43,15 +43,22 @@ class Greedy:
             #if state is not observed in training data then take a random action
             except ValueError:
                 print('{} Not observed before'.format(env.mem_states[i-1]))
-                _max = random.choice(['same','modify-x','modify-y','modify-z','modify-x-y','modify-y-z','modify-x-z','modify-x-y-z'])
+                # _max = random.choice(['same','modify-x','modify-y','modify-z','modify-x-y','modify-y-z','modify-x-z','modify-x-y-z'])
+                _max = random.choice(['same', 'modify'])
+                #_max = random.choice(['same', 'modify'])
             y_pred.append(_max)
             y_true.append(env.mem_action[i])
 
-            if _max == env.mem_action[i] and self.reward[env.mem_states[i - 1]][_max] > 0:
+            #if state never observed before then take a random action
+            if _max == env.mem_action[i]: #can also get lucky with random action
                  split_accuracy[env.mem_states[i - 1]].append(1)
                  accuracy += 1
             else:
                 split_accuracy[env.mem_states[i - 1]].append(0)
+
+            #still learning during testing
+            if _max == env.mem_action[i]:
+                self.reward[env.mem_states[i - 1]][_max] += env.mem_reward[i - 1]
 
 
 

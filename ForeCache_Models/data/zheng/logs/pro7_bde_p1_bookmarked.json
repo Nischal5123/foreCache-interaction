@@ -1,0 +1,24 @@
+{
+  "markbarencodingquantitativexaggregatecountFlight_DatenominalrowWhen_Phase_of_flightnominaly": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/birdstrikes/birdstrikes.json"
+    },
+    "encoding": {
+      "color": {
+        "field": "Flight_Date",
+        "timeUnit": "month",
+        "type": "nominal"
+      },
+      "x": {
+        "aggregate": "count",
+        "type": "quantitative"
+      },
+      "y": {
+        "field": "When_Phase_of_flight",
+        "type": "nominal"
+      }
+    },
+    "mark": "bar"
+  }
+}

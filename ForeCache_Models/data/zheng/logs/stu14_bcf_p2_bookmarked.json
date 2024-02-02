@@ -1,0 +1,23 @@
+{
+  "markpointencodingAircraft_Make_ModelnominalxEffect_Amount_of_damagenominalySpeed_IAS_in_knotsquantitativesize": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "data": {
+      "url": "/data/birdstrikes/birdstrikes.json"
+    },
+    "encoding": {
+      "size": {
+        "field": "Speed_IAS_in_knots",
+        "type": "quantitative"
+      },
+      "x": {
+        "field": "Aircraft_Make_Model",
+        "type": "nominal"
+      },
+      "y": {
+        "field": "Effect_Amount_of_damage",
+        "type": "nominal"
+      }
+    },
+    "mark": "point"
+  }
+}
