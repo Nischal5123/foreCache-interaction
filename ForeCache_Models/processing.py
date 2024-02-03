@@ -4,6 +4,7 @@ import pandas as pd
 from collections import Counter, defaultdict
 import csv
 from itertools import product
+import ast
 
 class InteractionProcessor:
     def __init__(self, user_interactions_path, processed_interactions_path,master_data_path,imp_attrs):
@@ -29,36 +30,36 @@ class InteractionProcessor:
             fields.append(field)
         return sorted(fields)
 
-    # def get_fields_from_vglstr_updated(self, vglstr):
-    #     encoding_str = vglstr.split(';')[1]
-    #     encoding_str = encoding_str.split(':')[1]
-    #     encodings = encoding_str.split(',')
-    #     fields = ['None'] * 3
-    #     for encode in encodings:
-    #         field = encode.split('-')[0]
-    #         if field == '':
-    #             continue
-    #         else:
-    #             if "-x" in encode:
-    #                 fields[0] = field
-    #             elif "-y" in encode:
-    #                 fields[1] = field
-    #             else:
-    #                 fields[2] = field
-    #     return sorted(fields)
-
     def get_fields_from_vglstr_updated(self, vglstr):
         encoding_str = vglstr.split(';')[1]
         encoding_str = encoding_str.split(':')[1]
         encodings = encoding_str.split(',')
-        fields = []
+        fields = ['None'] * 3
         for encode in encodings:
             field = encode.split('-')[0]
             if field == '':
                 continue
             else:
-                    fields.append(field)
+                if "-x" in encode:
+                    fields[0] = field
+                elif "-y" in encode:
+                    fields[1] = field
+                else:
+                    fields[2] = field
         return sorted(fields)
+
+    # def get_fields_from_vglstr_updated(self, vglstr):
+    #     encoding_str = vglstr.split(';')[1]
+    #     encoding_str = encoding_str.split(':')[1]
+    #     encodings = encoding_str.split(',')
+    #     fields = []
+    #     for encode in encodings:
+    #         field = encode.split('-')[0]
+    #         if field == '':
+    #             continue
+    #         else:
+    #                 fields.append(field)
+    #     return sorted(fields)
 
     def get_action_reward(self, interaction):
         if interaction == "main chart changed because of clicking a field":
@@ -100,14 +101,25 @@ class InteractionProcessor:
             state = 'Navigation'
         return state
 
+    # def one_hot_encode_state(self, attributes):
+    #     # Initialize a list of zeros with the length of fieldnames
+    #     one_hot = [0] * self.max_len
+    #
+    #     # Set index corresponding to each attribute in the fieldnames
+    #     for idx in range(len(attributes)):
+    #         index = self.fieldnames.index(attributes[idx])
+    #         one_hot[index] = 1
+    #
+    #     return one_hot
+
     def one_hot_encode_state(self, attributes):
         # Initialize a list of zeros with the length of fieldnames
-        one_hot = [0] * self.max_len
+        one_hot = [0] * 3
 
         # Set index corresponding to each attribute in the fieldnames
         for idx in range(len(attributes)):
             index = self.fieldnames.index(attributes[idx])
-            one_hot[index] = 1
+            one_hot[idx] = index
 
         return one_hot
 
@@ -229,33 +241,6 @@ class InteractionProcessor:
         processed_csv_path = os.path.join(self.processed_interactions_path, csv_filename)
         df.to_csv(processed_csv_path, index=False)  # Use index=False to avoid the "Unnamed: 0" column
 
-    # def process_actions(self, csv_filename):
-    #    # print("Converting '{}'...".format(csv_filename))
-    #
-    #     df = pd.read_csv(os.path.join(self.processed_interactions_path, csv_filename))
-    #     actions = []
-    #
-    #     for index in range(len(df) - 1):
-    #         current_state = sorted(np.array(eval(df['State'][index])))  # Convert string representation to list
-    #         next_state = sorted(np.array(eval(df['State'][index + 1])))  # Convert string representation to list
-    #         action = ''
-    #
-    #         num_different_elements = sum(c1 != c2 for c1, c2 in zip(current_state, next_state))
-    #
-    #         if num_different_elements == 0:
-    #             action = 'same'
-    #         else:
-    #             action = f'modify-{num_different_elements}'
-    #             print('Reset')
-    #
-    #         actions.append(action)
-    #
-    #     actions.append('same')
-    #     df['Action'] = actions
-    #
-    #     # Save the modified DataFrame
-    #     df.to_csv(os.path.join(self.processed_interactions_path, csv_filename), index=False)
-
     def process_actions(self, csv_filename):
        # print("Converting '{}'...".format(csv_filename))
 
@@ -263,8 +248,8 @@ class InteractionProcessor:
         actions = []
 
         for index in range(len(df) - 1):
-            current_state = sorted(df['State'][index]) # Convert string representation to list
-            next_state = sorted(df['State'][index + 1]) # Convert string representation to list
+            current_state = sorted(np.array(eval(df['State'][index])))  # Convert string representation to list
+            next_state = sorted(np.array(eval(df['State'][index + 1])))  # Convert string representation to list
             action = ''
 
             num_different_elements = sum(c1 != c2 for c1, c2 in zip(current_state, next_state))
@@ -282,6 +267,39 @@ class InteractionProcessor:
 
         # Save the modified DataFrame
         df.to_csv(os.path.join(self.processed_interactions_path, csv_filename), index=False)
+
+    # def process_actions(self, csv_filename):
+    #     df = pd.read_csv(os.path.join(self.processed_interactions_path, csv_filename))
+    #     actions = []
+    #
+    #     consecutive_count = 1
+    #
+    #     for index in range(len(df) - 1):
+    #         current_state = sorted(ast.literal_eval(df['State'][index]))
+    #         next_state = sorted(ast.literal_eval(df['State'][index + 1]))
+    #
+    #         num_different_elements = sum(c1 != c2 for c1, c2 in zip(current_state, next_state))
+    #
+    #         if num_different_elements == 0:
+    #             consecutive_count += 1
+    #             if consecutive_count <= 3:
+    #                 action = 'same'
+    #             else:
+    #                 action = None  # Do not append 'same' to the actions list
+    #         else:
+    #             action = f'modify-{num_different_elements}'
+    #             consecutive_count = 1  # Reset consecutive count
+    #
+    #         actions.append(action)
+    #
+    #     actions.append('same')
+    #     df['Action'] = actions
+    #
+    #     # Drop rows with 'None' in the 'Action' column
+    #     df = df[df['Action'].notna()]
+    #
+    #     # Save the modified DataFrame
+    #     df.to_csv(os.path.join(self.processed_interactions_path, csv_filename), index=False)
     def get_user_name(self,url):
         parts = url.split('/')
         fname = parts[-1]
@@ -326,7 +344,7 @@ class InteractionProcessor:
         df['Time_Diff'] = df['Time'].diff()
 
         # Keep rows where the time difference is greater than or equal to 0.5 second
-        df = df[df['Time_Diff'] >= 1]
+        df = df[df['Time_Diff'] >= 0.5]
 
         # Drop the 'Time_Diff' column as it is no longer needed
         df.drop(columns=['Time_Diff'], inplace=True)

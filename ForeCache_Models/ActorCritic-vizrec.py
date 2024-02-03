@@ -368,4 +368,3 @@ if __name__ == '__main__':
     env = environment_vizrec.environment_vizrec()
     user_list_2D = env.user_list_2D
     run_experiment(user_list_2D, 'Actor_Critic', 'sampled-hyperparameters-config.json')
-

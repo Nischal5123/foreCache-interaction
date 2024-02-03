@@ -18,12 +18,9 @@ class Random:
             lambda: defaultdict(float)
         )  # Initializes a dictionary with default values
         self.states = [
-            "Sensemaking",
-            "Foraging",
-            "Navigation",
         ]  # Defines the possible states of the environment
         #self.actions = ['same','modify-x','modify-y','modify-z','modify-x-y','modify-y-z','modify-x-z','modify-x-y-z']  # Defines the possible actions of the agent
-        self.valid_actions = ['same', 'modify']
+        self.valid_actions = ['same', 'modify-1', 'modify-2','modify-3']
         #self.valid_actions = ['same', 'modify']
         for state in self.states:
             self.bestaction[
@@ -43,7 +40,7 @@ class Random:
         #action_space = ['same','modify-x','modify-y','modify-z','modify-x-y','modify-y-z','modify-x-z','modify-x-y-z']
         action_space = [f for f in self.valid_actions if f != action]
         next_action = random.choice(action_space)
-        return 'same'
+        return next_action
     def RandomProbabilistic(self, user, env, thres):
         """
                Implements the Momentum algorithm for a given user and environment.
@@ -149,4 +146,4 @@ def run_experiment(user_list, algo, hyperparam_file):
 if __name__ == "__main__":
     env = environment_vizrec.environment_vizrec()
     user_list_2D = env.user_list_2D
-    run_experiment(user_list_2D, 'Naive', 'sampled-hyperparameters-config.json')
+    run_experiment(user_list_2D, 'Random', 'sampled-hyperparameters-config.json')
