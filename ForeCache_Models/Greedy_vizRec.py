@@ -30,21 +30,21 @@ class Greedy:
             for actions in self.reward[states]:
                 self.reward[states][actions] = self.reward[states][actions] / sum
         # Checking accuracy on the remaining data:
-        accuracy = 0
+        accuracy = []
         denom = 0
         y_true=[]
         y_pred=[]
         split_accuracy = defaultdict(list)
         print("threshold",threshold, "length",length-1)
         for i in range(threshold + 1, length - 1):
-            denom += 1
+
             try:
              _max = max(self.reward[env.mem_states[i - 1]], key=self.reward[env.mem_states[i - 1]].get)
             #if state is not observed in training data then take a random action
             except ValueError:
                 print('{} Not observed before'.format(env.mem_states[i-1]))
                 # _max = random.choice(['same','modify-x','modify-y','modify-z','modify-x-y','modify-y-z','modify-x-z','modify-x-y-z'])
-                _max = random.choice(['same', 'modify'])
+                _max = random.choice(['same', 'modify-1','modify-2','modify-3'])
                 #_max = random.choice(['same', 'modify'])
             y_pred.append(_max)
             y_true.append(env.mem_action[i])
@@ -52,18 +52,21 @@ class Greedy:
             #if state never observed before then take a random action
             if _max == env.mem_action[i]: #can also get lucky with random action
                  split_accuracy[env.mem_states[i - 1]].append(1)
-                 accuracy += 1
+                 accuracy.append(1)
             else:
                 split_accuracy[env.mem_states[i - 1]].append(0)
+                accuracy.append(0)
 
             #still learning during testing
             if _max == env.mem_action[i]:
                 self.reward[env.mem_states[i - 1]][_max] += env.mem_reward[i - 1]
 
+            denom += 1
 
 
 
-        accuracy /= denom
+
+        accuracy = np.nanmean(accuracy)
         print("{}, {:.2f}".format(user, accuracy))
         self.freq.clear()
         self.reward.clear()
@@ -75,7 +78,7 @@ def format_split_accuracy(accuracy_dict):
     accuracy_per_state=[]
     for state in main_states:
         if accuracy_dict[state]:
-            accuracy_per_state.append(np.mean(accuracy_dict[state]))
+            accuracy_per_state.append(np.nanmean(accuracy_dict[state]))
         else:
             accuracy_per_state.append(None) #no data for that state
     return accuracy_per_state
@@ -85,7 +88,7 @@ def get_user_name(url):
     fname = parts[-1]
     uname = fname.rstrip('_log.csv')
     return uname
-def run_experiment(user_list, algo, hyperparam_file):
+def run_experiment(user_list, algo, hyperparam_file,task='p2'):
     # Load hyperparameters from JSON file
     with open(hyperparam_file) as f:
         hyperparams = json.load(f)
@@ -117,21 +120,22 @@ def run_experiment(user_list, algo, hyperparam_file):
                 'Reward': [0]
             })], ignore_index=True)
             env.reset(True, False)
-        print("User ", user_name, " across all thresholds ", "Global Accuracy: ", np.mean(y_accu))
+        print("User ", user_name, " across all thresholds ", "Global Accuracy: ", np.nanmean(y_accu))
 
         plt.plot(threshold, y_accu, label=user_name, marker='*')
         y_accu_all.append(y_accu)
 
-    print("Greedy Model Performace: ", "Global Accuracy: ", np.mean(y_accu_all))
+    print("Greedy Model Performace: ", "Global Accuracy: ", np.nanmean(y_accu_all))
     # Save result DataFrame to CSV file
-    result_dataframe.to_csv("Experiments_Folder/VizRec/{}.csv".format(title), index=False)
+    result_dataframe.to_csv("Experiments_Folder/VizRec/{}/{}.csv".format(task,title), index=False)
 
 
 if __name__ == "__main__":
+    task = 'p4'
     env = environment_vizrec.environment_vizrec()
     user_list_2D = env.user_list_2D
     print(user_list_2D)
-    run_experiment(user_list_2D, 'Greedy', 'sampled-hyperparameters-config.json')
+    run_experiment(user_list_2D, 'Greedy', 'sampled-hyperparameters-config.json',task)
 
 
 

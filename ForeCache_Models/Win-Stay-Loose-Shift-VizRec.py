@@ -24,7 +24,7 @@ class WSLS:
             lambda: defaultdict(float)
         )  # Initializes a dictionary with default values
         self.states = []  # Defines the possible states of the environment
-        self.actions =['same', 'modify'] # Defines the possible actions of the agent
+        self.actions =['same', 'modify-1', 'modify-2','modify-3'] # Defines the possible actions of the agent
         #self.actions = ['same', 'modify']  # Defines the possible actions of the agent
         self.bestaction = defaultdict(lambda: self.take_random_action('',''))
         self.reward = defaultdict(lambda: defaultdict(float))
@@ -61,7 +61,6 @@ class WSLS:
         length = len(env.mem_action)
         threshold = int(length * thres)
 
-        accuracy = 0
         denom = 0
 
         result = []
@@ -99,7 +98,7 @@ class WSLS:
         print("{}, {:.2f}, {}".format(get_user_name(user), np.mean(accuracy), result))
         self.bestaction.clear()
         self.reward.clear()
-        return np.mean(accuracy),split_accuracy
+        return np.nanmean(accuracy),split_accuracy
 
 def format_split_accuracy(accuracy_dict):
     main_states=['Foraging', 'Navigation', 'Sensemaking']
@@ -118,7 +117,7 @@ def get_user_name(url):
     return uname
 
 if __name__ == "__main__":
-
+    task = "p4"
     result_dataframe = pd.DataFrame(
         columns=['User', 'Accuracy', 'Threshold', 'LearningRate', 'Discount', 'Algorithm', 'StateAccuracy'])
 
@@ -170,7 +169,7 @@ if __name__ == "__main__":
     plt.xlabel("Threshold")
     plt.ylabel("Accuracy")
     title = "WSLS"
-    mean_y_accu = np.mean([element for sublist in y_accu_all for element in sublist])
+    mean_y_accu = np.nanmean([element for sublist in y_accu_all for element in sublist])
     plt.axhline(
         mean_y_accu,
         color="red",
@@ -190,4 +189,4 @@ if __name__ == "__main__":
     result_dataframe['Accuracy'] = dataframe_accuracy
     result_dataframe['Algorithm'] = dataframe_algorithm
     result_dataframe['StateAccuracy'] = dataframe_accuracy_per_state
-    result_dataframe.to_csv("Experiments_Folder/VizRec/{}.csv".format(title), index=False)
+    result_dataframe.to_csv("Experiments_Folder/VizRec/{}/{}.csv".format(task,title), index=False)

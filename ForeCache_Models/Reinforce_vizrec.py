@@ -17,8 +17,8 @@ class Policy(nn.Module):
         super(Policy, self).__init__()
         self.data = []
 
-        self.fc1 = nn.Linear(3, 128)
-        self.fc2 = nn.Linear(128, 2)
+        self.fc1 = nn.Linear(3, 256)
+        self.fc2 = nn.Linear(256, 4)
         self.gamma=gamma
         self.temperature = tau
         self.optimizer = optim.Adam(self.parameters(), lr=learning_rate)
@@ -220,7 +220,7 @@ def run_experiment_for_user(u, algo, hyperparams):
             user_name, thres, max_accu, best_learning_rate, best_gamma, best_temp))
     return result_dataframe_user, y_accu
 
-def run_experiment(user_list, algo, hyperparam_file):
+def run_experiment(user_list, algo, hyperparam_file,task='p2'):
     with open(hyperparam_file) as f:
         hyperparams = json.load(f)
 
@@ -240,12 +240,13 @@ def run_experiment(user_list, algo, hyperparam_file):
             result_dataframe = pd.concat([result_dataframe, user_result_dataframe], ignore_index=True)
             y_accu_all.append(user_y_accu)
 
-    result_dataframe.to_csv("Experiments_Folder/VizRec/{}.csv".format(title), index=False)
+    result_dataframe.to_csv("Experiments_Folder/VizRec/{}/{}.csv".format(task,title), index=False)
 
 
 if __name__ == '__main__':
+    task = 'p4'
     env = environment_vizrec.environment_vizrec()
     user_list_2D = env.user_list_2D
-    run_experiment(user_list_2D, 'Reinforce', 'sampled-hyperparameters-config.json')
+    run_experiment(user_list_2D, 'Reinforce', 'sampled-hyperparameters-config.json',task)
 
 

@@ -30,7 +30,7 @@ class TDLearning:
         def policy_fnc(state):
             coin = random.random()
             if coin < epsilon:
-                    best_action = random.randint(0, 1)
+                    best_action = random.randint(0, 3)
             else:
                 best_action = np.argmax(Q[state])
             return best_action
@@ -55,7 +55,7 @@ class TDLearning:
             Q is the optimal action-value function, a dictionary mapping state -> action values.
             stats is an EpisodeStats object with two numpy arrays for episode_lengths and episode_rewards.
         """
-        Q = defaultdict(lambda: [0.0, 0.0])
+        Q = defaultdict(lambda: [0.0, 0.0, 0.0 , 0.0])
 
 
         for i_episode in range(num_episodes):
@@ -209,7 +209,7 @@ def run_experiment_for_user(u, algo, hyperparams):
                 user_name, thres, test_accuracy, best_learning_rate, best_gamma, best_eps, accuracy_per_state))
     return result_dataframe_user, y_accu
 
-def run_experiment(user_list, algo, hyperparam_file):
+def run_experiment(user_list, algo, hyperparam_file,task='p2'):
     with open(hyperparam_file) as f:
         hyperparams = json.load(f)
 
@@ -232,11 +232,12 @@ def run_experiment(user_list, algo, hyperparam_file):
             y_accu_all.append(user_y_accu)
 
 
-    result_dataframe.to_csv("Experiments_Folder/VizRec/{}.csv".format(title), index=False)
+    result_dataframe.to_csv("Experiments_Folder/VizRec/{}/{}.csv".format(task,title), index=False)
 
 if __name__ == '__main__':
+    task = 'p4'
     env = environment_vizrec.environment_vizrec()
     user_list_2D = env.user_list_2D
-    run_experiment(user_list_2D, 'QLearn', 'sampled-hyperparameters-config.json')
+    run_experiment(user_list_2D, 'QLearn', 'sampled-hyperparameters-config.json',task)
 
 

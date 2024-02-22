@@ -1,0 +1,114 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+The [R plugin](https://www.jetbrains.com/help/pycharm/r-plugin-support.html) for IntelliJ-based IDEs provides
+handy capabilities to work with the [R Markdown](https://www.jetbrains.com/help/pycharm/r-markdown.html) files.
+To [add](https://www.jetbrains.com/help/pycharm/r-markdown.html#add-code-chunk) a new R chunk,
+position the caret at any line or the code chunk, then click "+".
+
+The code chunk appears:
+```{r}
+library(lme4)
+#> Loading required package: Matrix
+library(dplyr)
+library(tibble)
+
+data_p4 <- read.csv("/Users/aryal/Desktop/ForeCache/foreCache-interaction/ForeCache_Models/zheng_p4.csv")
+# Convert Trial to a factor with ordered levels
+
+# data_p4$Trial <- as.factor(data_p4$Trial)
+# Convert u to a factor
+data_p4$u <- as.factor(data_p4$u)
+data_p4
+```
+
+Type any R code in the chunk, for example:
+```{r}
+library(ggplot2)
+
+xlab <- "Phase of Exploration"
+ylab <- "Probability of Action Same"
+
+ggplot(data_p4) +
+  aes(x = Trial, y = probabsame) +
+  stat_smooth(method = "lm", se = FALSE) +
+  # Put the points on top of lines
+  geom_point() +
+  facet_wrap("u") +
+  labs(x = xlab, y = ylab) +
+  # We also need to help the x-axis, so it doesn't
+  # create gridlines/ticks on 2.5 days
+  scale_x_continuous(breaks = 0:4 * 2)
+#> `geom_smooth()` using formula 'y ~ x'
+```
+
+Each one of these panels plotted above shows an independently estimated regression line. This approach to fitting a separate line for each participant is sometimes called the no pooling model because none of the information from different participants is combined or pooled together.
+```{r}
+df_no_pooling <- lmList(probabsame ~ Trial | u, data_p4) %>%
+  coef() %>%
+  # Subject IDs are stored as row-names. Make them an explicit column
+  rownames_to_column("u") %>%
+  rename(Intercept = `(Intercept)`, Slope_Days = Trial) %>%
+  add_column(Model = "No pooling")
+
+head(df_no_pooling)
+```
+```{r}
+m_pooled <- lm(probabsame ~ Trial, data_p4)
+
+# Repeat the intercept and slope terms for each participant
+df_pooled <- tibble(
+  Model = "Complete pooling",
+  u = unique(data_p4$u),
+  Intercept = coef(m_pooled)[1],
+  Slope_Days = coef(m_pooled)[2]
+)
+
+head(df_pooled)
+```
+```{r}
+# Join the raw data so we can use plot the points and the lines.
+df_models <- bind_rows(df_pooled, df_no_pooling) %>%
+  left_join(data_p4, by = "u")
+
+p_model_comparison <- ggplot(df_models) +
+  aes(x = Trial, y = probabsame) +
+  # Set the color mapping in this layer so the points don't get a color
+  geom_abline(
+    aes(intercept = Intercept, slope = Slope_Days, color = Model),
+    size = .75
+  ) +
+  geom_point() +
+  facet_wrap("u") +
+  labs(x = xlab, y = ylab) +
+  scale_x_continuous(breaks = 0:4 * 2) +
+  # Fix the color palette
+  scale_color_brewer(palette = "Dark2") +
+  theme(legend.position = "top", legend.justification = "left")
+
+p_model_comparison
+```
+```{r}
+m <- lmer(probabsame ~ 1 + Trial + (0 + Trial | u), data_p4)
+summary(m)
+```
+```{r}
+
+# Make a dataframe with the fitted effects
+df_partial_pooling <- coef(m)[["u"]] %>%
+  rownames_to_column("u") %>%
+  as_tibble() %>%
+  rename(Intercept = `(Intercept)`, Slope_Days = Trial) %>%
+  add_column(Model = "Partial pooling")
+
+head(df_partial_pooling)
+```
+```{r}
+df_models <- bind_rows(df_pooled, df_no_pooling, df_partial_pooling) %>%
+  left_join(data_p4, by = "u")
+
+# Replace the data-set of the last plot
+p_model_comparison %+% df_models
+```

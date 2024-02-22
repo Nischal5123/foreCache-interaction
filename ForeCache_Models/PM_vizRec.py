@@ -23,8 +23,8 @@ class ProbabilityMatching:
             self.reward[env.mem_states[i - 1]][env.mem_action[i]] += env.mem_reward[i]+eps
 
         # Checking accuracy on the remaining data:
-        accuracy = 0
-        denom = 0
+        accuracy = eps
+        denom = 1
         y_true=[]
         y_pred=[]
         split_accuracy = defaultdict(list)
@@ -49,7 +49,7 @@ class ProbabilityMatching:
             except  IndexError:
                 print('{} Not observed before'.format(env.mem_states[i-1]))
                 # _max = random.choice(['same','modify-x','modify-y','modify-z','modify-x-y','modify-y-z','modify-x-z','modify-x-y-z'])
-                _matched_action = random.choice(['same', 'modify'])
+                _matched_action = random.choice(['same', 'modify-1', 'modify-2','modify-3'])
                 #_max = random.choice(['same', 'modify'])
             y_pred.append(_matched_action)
             y_true.append(env.mem_action[i])
@@ -89,7 +89,7 @@ def get_user_name(url):
     fname = parts[-1]
     uname = fname.rstrip('_log.csv')
     return uname
-def run_experiment(user_list, algo, hyperparam_file):
+def run_experiment(user_list, algo, hyperparam_file,task='p2'):
     # Load hyperparameters from JSON file
     with open(hyperparam_file) as f:
         hyperparams = json.load(f)
@@ -128,14 +128,15 @@ def run_experiment(user_list, algo, hyperparam_file):
 
     print("Probability Matching Model Performace: ", "Global Accuracy: ", np.mean(y_accu_all))
     # Save result DataFrame to CSV file
-    result_dataframe.to_csv("Experiments_Folder/VizRec/{}.csv".format(title), index=False)
+    result_dataframe.to_csv("Experiments_Folder/VizRec/{}/{}.csv".format(task,title), index=False)
 
 
 if __name__ == "__main__":
+    task='p4'
     env = environment_vizrec.environment_vizrec()
     user_list_2D = env.user_list_2D
     print(user_list_2D)
-    run_experiment(user_list_2D, 'PM', 'sampled-hyperparameters-config.json')
+    run_experiment(user_list_2D, 'PM', 'sampled-hyperparameters-config.json',task)
 
 
 

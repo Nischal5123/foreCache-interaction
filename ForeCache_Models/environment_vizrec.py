@@ -17,7 +17,7 @@ class environment_vizrec:
 
         Initializes required variables and stores data in memory.
         """
-        self.user_list_2D = np.sort(glob.glob("data/zheng/processed_interactions_p4_bookmarked/*"))
+        self.user_list_2D = np.sort(glob.glob("data/zheng/processed_interactions_p4/*"))
         self.user_list_3D = np.sort(glob.glob("data/NDSI-3D/taskname_ndsi-3d-task_*"))
 
         # This variable will be used to track the current position of the user agent.
@@ -96,7 +96,7 @@ class environment_vizrec:
         - (float): current reward.
         - (str): current action.
         """
-        return self.mem_states[steps], self.mem_reward[steps], self.mem_action[steps]
+        return self.mem_states[steps], self.mem_reward[steps]*10, self.mem_action[steps]
 
     def peek_next_step(self):
         """

@@ -178,61 +178,112 @@ class InteractionProcessor:
 
     def process_interaction_logs(self, csv_filename):
         print("Converting '{}'...".format(csv_filename))
-        df = pd.read_csv(os.path.join(self.user_interactions_path, csv_filename))
-        print('Total size of interaction log', len(df))
-
+        original_df = pd.read_csv(os.path.join(self.user_interactions_path, csv_filename))
+        print('Total size of interaction log', len(original_df))
+        df = pd.DataFrame(columns=[['User_Index', 'Interaction', 'Value', 'Time', 'Reward', 'Action', 'Attribute', 'State',
+                 'High-Level-State']])
         df_attributes = []
         df_user_index = []
         df_reward = []
         df_action = []
         df_state = []
         df_high_state = []
-        for index, row in df.iterrows():
-            df_user_index.append(index)
+        df_time = []
+        df_interaction =[]
+        df_value = []
+        prev_time_hover = 0
+        prev_time_scroll = 0
+        if_mouseover = False
+        if_scroll = False
+        for index, row in original_df.iterrows():
+
             value = row['Value']
             interaction = row['Interaction']
-            if type(value)==float: #handle nulls
-                pass
+            attributes = []
+            if pd.isna(value): #handle nulls
+                continue
             else:
-                try:
-                    attributes = self.get_fields_from_vglstr_updated(value)
-                except IndexError as a:
-                    print(a)
-                    attributes = ['None', 'None', 'None']
-            df_attributes.append(attributes)
+                if 'added chart to bookmark' in interaction or 'main chart changed' in interaction:
+                    try:
+                        attributes = self.get_fields_from_vglstr_updated(value)
+                    except IndexError as a:
+                        attributes=[]
+                        print(a)
+                        for attrs in self.fieldnames:
+                            if attrs in value:
+                                attributes.append(attrs)
+                                #make sure final length is 3 else append with None
+                        while len(attributes) < 3:
+                            attributes.append('None')
 
-            # Calculate reward based on common attributes between 'attributes' and 'important_attributes'
-            reward = 0.1
-            for attribute in attributes:
-                try:
-                    reward += self.important_attributes_counter[attribute]
-                except KeyError as e:
-                    print(e)
-                    reward +=0
-            action, _, _ = self.get_action_reward(interaction)
-            df_action.append(action)
-            df_reward.append(reward)
-            df_state.append(self.one_hot_encode_state(df_attributes[-1]))
-            df_high_state.append(self.get_state(interaction))
+                # if 'scroll' in interaction:
+                #     prev_time_scroll = row['Time']
+                #     if_scroll = True
+                #     pass
+                #
+                # if 'mouseover' in interaction:
+                #     prev_time_hover = row['Time']
+                #     if_mouseover = True
+                #     pass
+
+                if 'mouse' in interaction:
+                    time_period = (row['Time'] - prev_time_hover) / 1000
+                    if time_period > 0.5 and value:
+                        attributes = self.get_fields_from_vglstr_updated(value)
+                    prev_time_hover = row['Time']
+
+
+
+                if 'scroll' in interaction:
+                    time_period = (row['Time'] - prev_time_scroll) / 1000
+                    if time_period > 0.5 and value:
+                        attributes = self.get_fields_from_vglstr_updated(value)
+                    prev_time_scroll = row['Time']
+
+
+
+                if len(attributes) != 0:
+                    df_attributes.append(sorted(attributes))
+
+                    # Calculate reward based on common attributes between 'attributes' and 'important_attributes'
+                    reward = 0.1
+                    for attribute in attributes:
+                        try:
+                            reward += self.important_attributes_counter[attribute]
+                        except KeyError as e:
+                            print(e)
+                            reward +=0
+                    action, _, _ = self.get_action_reward(interaction)
+                    df_action.append(action)
+                    df_reward.append(reward)
+                    df_state.append(self.one_hot_encode_state(df_attributes[-1]))
+                    df_high_state.append(self.get_state(interaction))
+                    df_user_index.append(index)
+                    df_time.append(row['Time'])
+                    df_interaction.append(interaction)
+                    df_value.append(value)
 
         df['Attribute'] = df_attributes
         df['Reward'] = df_reward
         df['Action'] = df_action
         df['State'] = df_state
         df['High-Level-State'] = df_high_state
+        df['Time']=df_time
+        df['Interaction']=df_interaction
+        df['Value']=df_value
         df['User_Index'] = df_user_index  # Use the existing DataFrame index as User_Index
         #df.set_index('User_Index', inplace=True)  # Set 'User_Index' as the index
 
         # Drop rows where 'Value' is empty
-        df = df[df['Value'].notna()]
-        # Drop rows where 'Interaction' contains 'typed in answer'
-        df = df[~df['Interaction'].str.contains('typed in answer')]
-        # Drop rows where 'Interaction' contains 'changed ptask ans'
-        df = df[~df['Interaction'].str.contains('changed ptask ans')]
-        df = df[~df['Interaction'].str.contains('main chart changed')]
-        df = df[~df['Interaction'].str.contains('clicked on a field')]
-        df = df[~df['Interaction'].str.contains('window')]
-        df = df[~df['Interaction'].str.contains('study begins')]
+
+        # # Drop rows where 'Interaction' contains 'typed in answer'
+        # df = df[~df['Interaction'].str.contains('typed in answer')]
+        # # Drop rows where 'Interaction' contains 'changed ptask ans'
+        # df = df[~df['Interaction'].str.contains('changed ptask ans')]
+        # # df = df[~df['Interaction'].str.contains('main chart changed')]
+        # # df = df[~df['Interaction'].str.contains('clicked on a field')]
+        # df = df[~df['Interaction'].str.contains('window')]
+        # df = df[~df['Interaction'].str.contains('study begins')]
 
         # Reorder columns
         df = df[['User_Index', 'Interaction', 'Value', 'Time', 'Reward', 'Action', 'Attribute', 'State',
@@ -252,7 +303,7 @@ class InteractionProcessor:
             next_state = sorted(np.array(eval(df['State'][index + 1])))  # Convert string representation to list
             action = ''
 
-            num_different_elements = sum(c1 != c2 for c1, c2 in zip(current_state, next_state))
+            num_different_elements = sum(c1 != c2 for c1, c2 in zip(sorted(current_state), sorted(next_state)))
 
             if num_different_elements == 0:
                 action = 'same'
@@ -282,10 +333,10 @@ class InteractionProcessor:
     #
     #         if num_different_elements == 0:
     #             consecutive_count += 1
-    #             if consecutive_count <= 3:
-    #                 action = 'same'
-    #             else:
+    #             if consecutive_count <= 5:
     #                 action = None  # Do not append 'same' to the actions list
+    #             else:
+    #                 action = 'same'  # Append 'same' to the actions list
     #         else:
     #             action = f'modify-{num_different_elements}'
     #             consecutive_count = 1  # Reset consecutive count
@@ -306,12 +357,13 @@ class InteractionProcessor:
         uname = fname.rstrip('_log.csv')
         return uname
 
-    def create_master_file(self, csvfiles):
-        master_csv_filename = 'combined-interactions.csv'
+    def create_master_file(self, csvfiles,task):
+        master_csv_filename = task +'-combined-interactions.csv'
         dfs = []  # List to store individual DataFrames
 
         for csv_filename in csvfiles:
-            if csv_filename.endswith('p4_logs.csv'):
+            end = task + '_logs.csv'
+            if csv_filename.endswith(end):
                 # print("Converting '{}'...".format(csv_filename))
                 df = pd.read_csv(os.path.join(self.processed_interactions_path, csv_filename))
 
@@ -324,6 +376,11 @@ class InteractionProcessor:
                 # Reset the index for each individual file and create a new index column 'U_Index'
                 df.reset_index(inplace=True)
                 df.rename(columns={'index': 'U_Index'}, inplace=True)
+                # Calculate the mean time for this DataFrame
+                mean_time = df['Time'].mean()
+
+                # Create the 'Trial' column based on the condition for this DataFrame
+                df['Trial'] = df['Time'].apply(lambda x: 1 if x < mean_time else 2)
 
                 dfs.append(df)
 
@@ -344,7 +401,7 @@ class InteractionProcessor:
         df['Time_Diff'] = df['Time'].diff()
 
         # Keep rows where the time difference is greater than or equal to 0.5 second
-        df = df[df['Time_Diff'] >= 0.5]
+        df = df[df['Time_Diff'] >= 500]
 
         # Drop the 'Time_Diff' column as it is no longer needed
         df.drop(columns=['Time_Diff'], inplace=True)
@@ -365,15 +422,16 @@ def get_fields_from_vglstr(vglstr):
             continue
         fields.append(field)
     return fields
-def get_important_attributes(csv_files,path):
+def get_important_attributes(csv_files,path,t='p2'):
     # Initialize a default dictionary with 0 values for each field name
     important_attributes_counter = defaultdict(lambda: 0)
 
     important_attributes = []
     important_attributes_exact = []
+    task= t+ '_logs.csv'
 
     for csv_filename in csv_files:
-        if csv_filename.endswith('p4_logs.csv'):
+        if csv_filename.endswith(task):
             print("Converting '{}'...".format(csv_filename))
             user_name = csv_filename.split('.')[0]
 
@@ -383,13 +441,24 @@ def get_important_attributes(csv_files,path):
             for index, row in df.iterrows():
                 value = row['Value']
                 interaction = row['Interaction']
-                if 'bookmark' in interaction:
+                if t=='p4'or t=='p3':
+                    if 'bookmark' in interaction:
+                        try:
+                            attrs = get_fields_from_vglstr(value)
+                            for a in attrs:
+                                important_attributes_counter[a] += 1
+                        except:
+                            pass
+                elif t=='p2'or t=='p1':
                     try:
                         attrs = get_fields_from_vglstr(value)
                         for a in attrs:
                             important_attributes_counter[a] += 1
                     except:
                         pass
+                else:
+                    print('Invalid task')
+
 
     # Calculate the sum of all values
     total_count = sum(important_attributes_counter.values())
@@ -400,18 +469,21 @@ def get_important_attributes(csv_files,path):
     return normalized_important_attributes
 
 if __name__ == '__main__':
+    task = 'p4'
     user_interactions_path = './data/zheng/processed_csv/'
-    processed_interactions_path = './data/zheng/processed_interactions_p4_bookmarked/'
+    processed_interactions_path = './data/zheng/processed_interactions_'+task
     master_data_path ='./data/zheng/'
     csv_files = os.listdir(user_interactions_path)
-    important_attrs=get_important_attributes(csv_files,user_interactions_path)
+    important_attrs=get_important_attributes(csv_files,user_interactions_path,task)
     interaction_processor = InteractionProcessor(user_interactions_path, processed_interactions_path,master_data_path,important_attrs)
     interaction_processor.create_combination_file()
     for csv_filename in csv_files:
-        if csv_filename.endswith('p4_logs.csv'):
+        end=task+'_logs.csv'
+        if csv_filename.endswith(end):
              interaction_processor.process_interaction_logs(csv_filename)
-             interaction_processor.remove_invalid_rows(csv_filename)
+             # interaction_processor.remove_invalid_rows(csv_filename)
              interaction_processor.process_actions(csv_filename)
              print(csv_filename)
-    interaction_processor.create_master_file(csv_files)
+    interaction_processor.create_master_file(csv_files,task)
     print(interaction_processor.important_attributes_counter)
+

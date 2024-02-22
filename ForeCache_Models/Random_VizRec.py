@@ -61,6 +61,7 @@ class Random:
         accuracy = []
         split_accuracy = defaultdict(list)
 
+        print("threshold", threshold, "length", length - 1)
         #testing data: no training required
         for i in range(threshold + 1, length - 1):
             #always take random action
@@ -98,7 +99,7 @@ def get_user_name(url):
     return uname
 
 
-def run_experiment(user_list, algo, hyperparam_file):
+def run_experiment(user_list, algo, hyperparam_file,task='p2'):
     # Load hyperparameters from JSON file
     with open(hyperparam_file) as f:
         hyperparams = json.load(f)
@@ -140,10 +141,12 @@ def run_experiment(user_list, algo, hyperparam_file):
 
     print("Random Model Performace: ", "Global Accuracy: ", np.mean(y_accu_all))
     # Save result DataFrame to CSV file
-    result_dataframe.to_csv("Experiments_Folder/VizRec/{}.csv".format(title), index=False)
+    result_dataframe.to_csv("Experiments_Folder/VizRec/{}/{}.csv".format(task,title), index=False)
+
 
 
 if __name__ == "__main__":
+    task = 'p4'
     env = environment_vizrec.environment_vizrec()
     user_list_2D = env.user_list_2D
-    run_experiment(user_list_2D, 'Random', 'sampled-hyperparameters-config.json')
+    run_experiment(user_list_2D, 'Random', 'sampled-hyperparameters-config.json',task)

@@ -1,67 +1,77 @@
 User_Index,Interaction,Value,Time,Reward,Action,Attribute,State,High-Level-State
-9,mouseover a related chart,mark:tick;encoding:Production_Budget-quantitative-x,1604967540098,0.1804863925883034,modify,"['None', 'None', 'Production_Budget']","[4, 16, 16]",Foraging
-11,mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Release_Date-nominal-y",1604967549987,0.1490456018447973,modify,"['None', 'None', 'Release_Date']","[5, 16, 16]",Foraging
-17,mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Title-nominal-y",1604967565183,0.14322473816272,same,"['None', 'None', 'Title']","[0, 16, 16]",Foraging
-18,scroll on a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Title-nominal-y",1604967565918,0.14322473816272,same,"['None', 'None', 'Title']","[0, 16, 16]",Foraging
-38,scroll on a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Title-nominal-y",1604967567185,0.14322473816272,same,"['None', 'None', 'Title']","[0, 16, 16]",Foraging
-65,mouseout a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Title-nominal-y",1604967569572,0.14322473816272,modify,"['None', 'None', 'Title']","[0, 16, 16]",Foraging
-66,mouseover a related chart,mark:tick;encoding:Worldwide_Gross-quantitative-x,1604967572859,0.210383079876878,same,"['None', 'None', 'Worldwide_Gross']","[2, 16, 16]",Foraging
-69,mouseout a related chart,mark:tick;encoding:Worldwide_Gross-quantitative-x,1604967573809,0.210383079876878,same,"['None', 'None', 'Worldwide_Gross']","[2, 16, 16]",Foraging
-71,mouseout a related chart,mark:tick;encoding:Worldwide_Gross-quantitative-x,1604967577797,0.210383079876878,modify,"['None', 'None', 'Worldwide_Gross']","[2, 16, 16]",Foraging
-84,mouseover a related chart,mark:tick;encoding:Running_Time_min-quantitative-x,1604967583870,0.1275398978047318,modify,"['None', 'None', 'Running_Time_min']","[7, 16, 16]",Foraging
-104,mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,MPAA_Rating-nominal-y",1604967593597,0.1385111591950344,modify,"['MPAA_Rating', 'None', 'None']","[6, 16, 16]",Foraging
-253,mouseover a related chart,mark:tick;encoding:Running_Time_min-quantitative-x,1604967622729,0.1275398978047318,modify,"['None', 'None', 'Running_Time_min']","[7, 16, 16]",Foraging
-267,mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,MPAA_Rating-nominal-y",1604967629536,0.1385111591950344,modify,"['MPAA_Rating', 'None', 'None']","[6, 16, 16]",Foraging
-295,mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Major_Genre-nominal-y",1604967635093,0.1524487245908634,modify,"['Major_Genre', 'None', 'None']","[10, 16, 16]",Foraging
-304,scroll on a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Source-nominal-y",1604967636427,0.1603927305234714,same,"['None', 'None', 'Source']","[9, 16, 16]",Foraging
-334,scroll on a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Source-nominal-y",1604967638246,0.1603927305234714,same,"['None', 'None', 'Source']","[9, 16, 16]",Foraging
-357,mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Source-nominal-y",1604967639547,0.1603927305234714,modify,"['None', 'None', 'Source']","[9, 16, 16]",Foraging
-360,scroll on a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Distributor-nominal-y",1604967640449,0.2820721462022166,same,"['Distributor', 'None', 'None']","[8, 16, 16]",Foraging
-375,scroll on a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Distributor-nominal-y",1604967641932,0.2820721462022166,same,"['Distributor', 'None', 'None']","[8, 16, 16]",Foraging
-471,scroll on a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Distributor-nominal-y",1604967646127,0.2820721462022166,same,"['Distributor', 'None', 'None']","[8, 16, 16]",Foraging
-503,mouseout a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Distributor-nominal-y",1604967650542,0.2820721462022166,same,"['Distributor', 'None', 'None']","[8, 16, 16]",Foraging
-506,mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Distributor-nominal-y",1604967651260,0.2820721462022166,same,"['Distributor', 'None', 'None']","[8, 16, 16]",Foraging
-507,scroll on a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Distributor-nominal-y",1604967652795,0.2820721462022166,same,"['Distributor', 'None', 'None']","[8, 16, 16]",Foraging
-546,mouseout a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Distributor-nominal-y",1604967654630,0.2820721462022166,same,"['Distributor', 'None', 'None']","[8, 16, 16]",Foraging
-547,mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Distributor-nominal-y",1604967655661,0.2820721462022166,modify,"['Distributor', 'None', 'None']","[8, 16, 16]",Foraging
-562,mouseout a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Major_Genre-nominal-y",1604967659518,0.1524487245908634,same,"['Major_Genre', 'None', 'None']","[10, 16, 16]",Foraging
-612,mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Major_Genre-nominal-y",1604967666910,0.1524487245908634,modify,"['Major_Genre', 'None', 'None']","[10, 16, 16]",Foraging
-622,mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Distributor-nominal-y",1604967667628,0.2820721462022166,same,"['Distributor', 'None', 'None']","[8, 16, 16]",Foraging
-628,added chart to bookmark,"mark:bar;encoding:-quantitative-x<aggregate>count,Distributor-nominal-y",1604967668974,0.2820721462022166,modify,"['Distributor', 'None', 'None']","[8, 16, 16]",Sensemaking
-716,mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Major_Genre-nominal-y",1604967685647,0.1524487245908634,modify,"['Major_Genre', 'None', 'None']","[10, 16, 16]",Foraging
-726,added chart to bookmark,"mark:bar;encoding:-quantitative-x<aggregate>count,Director-nominal-y",1604967687135,0.2285974054998527,modify,"['Director', 'None', 'None']","[12, 16, 16]",Sensemaking
-733,mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Major_Genre-nominal-y",1604967689484,0.1524487245908634,modify,"['Major_Genre', 'None', 'None']","[10, 16, 16]",Foraging
-741,mouseover a related chart,mark:tick;encoding:Rotten_Tomatoes_Rating-quantitative-x,1604967692304,0.1356870752445677,modify,"['None', 'None', 'Rotten_Tomatoes_Rating']","[13, 16, 16]",Foraging
-1236,mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Major_Genre-nominal-y",1604967779181,0.1524487245908634,modify,"['Major_Genre', 'None', 'None']","[10, 16, 16]",Foraging
-1242,mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Release_Date-nominal-y",1604967780583,0.1490456018447973,modify,"['None', 'None', 'Release_Date']","[5, 16, 16]",Foraging
-1410,mouseover a related chart,mark:tick;encoding:Rotten_Tomatoes_Rating-quantitative-x,1604967818457,0.1356870752445677,modify,"['None', 'None', 'Rotten_Tomatoes_Rating']","[13, 16, 16]",Foraging
-1429,mouseout a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Director-nominal-y",1604967823730,0.2285974054998527,modify,"['Director', 'None', 'None']","[12, 16, 16]",Foraging
-1480,mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Major_Genre-nominal-y",1604967842516,0.1524487245908634,modify,"['Major_Genre', 'None', 'None']","[10, 16, 16]",Foraging
-1497,mouseout a related chart,mark:tick;encoding:Rotten_Tomatoes_Rating-quantitative-x,1604967844985,0.1356870752445677,modify,"['None', 'None', 'Rotten_Tomatoes_Rating']","[13, 16, 16]",Foraging
-1587,mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Title-nominal-y",1604967877054,0.14322473816272,modify,"['None', 'None', 'Title']","[0, 16, 16]",Foraging
-1592,mouseout a related chart,mark:tick;encoding:Production_Budget-quantitative-x,1604967879907,0.1804863925883034,modify,"['None', 'None', 'Production_Budget']","[4, 16, 16]",Foraging
-1699,mouseover a related chart,mark:tick;encoding:US_DVD_Sales-quantitative-x,1604967917630,0.1082487631934497,modify,"['None', 'None', 'US_DVD_Sales']","[3, 16, 16]",Foraging
-1721,mouseover a related chart,mark:tick;encoding:US_Gross-quantitative-x,1604967920167,0.1479383171304056,modify,"['None', 'None', 'US_Gross']","[1, 16, 16]",Foraging
-1729,mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Title-nominal-y",1604967927658,0.14322473816272,modify,"['None', 'None', 'Title']","[0, 16, 16]",Foraging
-1736,mouseover a related chart,mark:tick;encoding:US_Gross-quantitative-x,1604967929344,0.1479383171304056,modify,"['None', 'None', 'US_Gross']","[1, 16, 16]",Foraging
-1748,mouseover a related chart,mark:tick;encoding:Running_Time_min-quantitative-x,1604967931195,0.1275398978047318,modify,"['None', 'None', 'Running_Time_min']","[7, 16, 16]",Foraging
-1764,mouseover a related chart,mark:tick;encoding:US_DVD_Sales-quantitative-x,1604967933047,0.1082487631934497,same,"['None', 'None', 'US_DVD_Sales']","[3, 16, 16]",Foraging
-1770,mouseover a related chart,mark:tick;encoding:US_DVD_Sales-quantitative-x,1604967934031,0.1082487631934497,same,"['None', 'None', 'US_DVD_Sales']","[3, 16, 16]",Foraging
-1776,mouseout a related chart,mark:tick;encoding:US_DVD_Sales-quantitative-x,1604967934696,0.1082487631934497,same,"['None', 'None', 'US_DVD_Sales']","[3, 16, 16]",Foraging
-1787,mouseover a related chart,mark:tick;encoding:US_DVD_Sales-quantitative-x,1604967936365,0.1082487631934497,modify,"['None', 'None', 'US_DVD_Sales']","[3, 16, 16]",Foraging
-1833,mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Major_Genre-nominal-y",1604967938113,0.1524487245908634,same,"['Major_Genre', 'None', 'None']","[10, 16, 16]",Foraging
-1869,mouseout a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Major_Genre-nominal-y",1604967940839,0.1524487245908634,modify,"['Major_Genre', 'None', 'None']","[10, 16, 16]",Foraging
-1888,mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Source-nominal-y",1604967941973,0.1603927305234714,modify,"['None', 'None', 'Source']","[9, 16, 16]",Foraging
-1913,mouseover a related chart,mark:tick;encoding:Running_Time_min-quantitative-x,1604967943859,0.1275398978047318,modify,"['None', 'None', 'Running_Time_min']","[7, 16, 16]",Foraging
-1922,mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Title-nominal-y",1604967947246,0.14322473816272,modify,"['None', 'None', 'Title']","[0, 16, 16]",Foraging
-1931,mouseout a related chart,mark:tick;encoding:Running_Time_min-quantitative-x,1604967948341,0.1275398978047318,modify,"['None', 'None', 'Running_Time_min']","[7, 16, 16]",Foraging
-1946,mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Release_Date-nominal-y",1604967949582,0.1490456018447973,modify,"['None', 'None', 'Release_Date']","[5, 16, 16]",Foraging
-1990,mouseover a related chart,mark:tick;encoding:Rotten_Tomatoes_Rating-quantitative-x,1604967954787,0.1356870752445677,modify,"['None', 'None', 'Rotten_Tomatoes_Rating']","[13, 16, 16]",Foraging
-2006,mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Director-nominal-y",1604967956289,0.2285974054998527,modify,"['Director', 'None', 'None']","[12, 16, 16]",Foraging
-2037,added chart to bookmark,mark:tick;encoding:Rotten_Tomatoes_Rating-quantitative-x,1604967958293,0.1356870752445677,modify,"['None', 'None', 'Rotten_Tomatoes_Rating']","[13, 16, 16]",Sensemaking
-2040,mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Distributor-nominal-y",1604967961811,0.2820721462022166,modify,"['Distributor', 'None', 'None']","[8, 16, 16]",Foraging
-2051,scroll on a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Director-nominal-y",1604967980191,0.2285974054998527,modify,"['Director', 'None', 'None']","[12, 16, 16]",Foraging
-2057,mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Distributor-nominal-y",1604967982150,0.2820721462022166,modify,"['Distributor', 'None', 'None']","[8, 16, 16]",Foraging
-2147,mouseover a related chart,mark:tick;encoding:US_Gross-quantitative-x,1604967987589,0.1479383171304056,same,"['None', 'None', 'US_Gross']","[1, 16, 16]",Foraging
-2149,mouseover a related chart,mark:tick;encoding:US_Gross-quantitative-x,1604968138170,0.1479383171304056,modify,"['None', 'None', 'US_Gross']","[1, 16, 16]",Foraging
-2153,mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Title-nominal-y",1604968209929,0.14322473816272,same,"['None', 'None', 'Title']","[0, 16, 16]",Foraging
+1,mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Title-nominal-y",1604967538204,0.1059171597633136,modify-1,"['None', 'None', 'Title']","[16, 16, 0]",Foraging
+9,mouseover a related chart,mark:tick;encoding:Production_Budget-quantitative-x,1604967540098,0.1927021696252465,modify-1,"['None', 'None', 'Production_Budget']","[16, 16, 4]",Foraging
+11,mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Release_Date-nominal-y",1604967549987,0.1927021696252465,modify-1,"['None', 'None', 'Release_Date']","[16, 16, 5]",Foraging
+17,mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Title-nominal-y",1604967565183,0.1059171597633136,same,"['None', 'None', 'Title']","[16, 16, 0]",Foraging
+18,scroll on a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Title-nominal-y",1604967565918,0.1059171597633136,same,"['None', 'None', 'Title']","[16, 16, 0]",Foraging
+38,scroll on a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Title-nominal-y",1604967567185,0.1059171597633136,same,"['None', 'None', 'Title']","[16, 16, 0]",Foraging
+65,mouseout a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Title-nominal-y",1604967569572,0.1059171597633136,modify-1,"['None', 'None', 'Title']","[16, 16, 0]",Foraging
+66,mouseover a related chart,mark:tick;encoding:Worldwide_Gross-quantitative-x,1604967572859,0.226232741617357,same,"['None', 'None', 'Worldwide_Gross']","[16, 16, 2]",Foraging
+69,mouseout a related chart,mark:tick;encoding:Worldwide_Gross-quantitative-x,1604967573809,0.226232741617357,same,"['None', 'None', 'Worldwide_Gross']","[16, 16, 2]",Foraging
+71,mouseout a related chart,mark:tick;encoding:Worldwide_Gross-quantitative-x,1604967577797,0.226232741617357,modify-1,"['None', 'None', 'Worldwide_Gross']","[16, 16, 2]",Foraging
+84,mouseover a related chart,mark:tick;encoding:Running_Time_min-quantitative-x,1604967583870,0.1355029585798816,modify-1,"['None', 'None', 'Running_Time_min']","[16, 16, 7]",Foraging
+104,mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,MPAA_Rating-nominal-y",1604967593597,0.1591715976331361,same,"['MPAA_Rating', 'None', 'None']","[6, 16, 16]",Foraging
+108,added chart to bookmark,"mark:bar;encoding:-quantitative-x<aggregate>count,MPAA_Rating-nominal-y",1604967594355,0.1591715976331361,modify-1,"['MPAA_Rating', 'None', 'None']","[6, 16, 16]",Sensemaking
+253,mouseover a related chart,mark:tick;encoding:Running_Time_min-quantitative-x,1604967622729,0.1355029585798816,modify-1,"['None', 'None', 'Running_Time_min']","[16, 16, 7]",Foraging
+267,mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,MPAA_Rating-nominal-y",1604967629536,0.1591715976331361,modify-1,"['MPAA_Rating', 'None', 'None']","[6, 16, 16]",Foraging
+295,mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Major_Genre-nominal-y",1604967635093,0.2282051282051282,modify-1,"['Major_Genre', 'None', 'None']","[10, 16, 16]",Foraging
+304,scroll on a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Source-nominal-y",1604967636427,0.1591715976331361,same,"['None', 'None', 'Source']","[16, 16, 9]",Foraging
+334,scroll on a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Source-nominal-y",1604967638246,0.1591715976331361,same,"['None', 'None', 'Source']","[16, 16, 9]",Foraging
+352,mouseout a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Source-nominal-y",1604967638944,0.1591715976331361,same,"['None', 'None', 'Source']","[16, 16, 9]",Foraging
+356,mouseout a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Source-nominal-y",1604967639547,0.1591715976331361,modify-1,"['None', 'None', 'Source']","[16, 16, 9]",Foraging
+360,scroll on a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Distributor-nominal-y",1604967640449,0.1453648915187377,same,"['Distributor', 'None', 'None']","[8, 16, 16]",Foraging
+375,scroll on a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Distributor-nominal-y",1604967641932,0.1453648915187377,same,"['Distributor', 'None', 'None']","[8, 16, 16]",Foraging
+445,mouseout a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Distributor-nominal-y",1604967643805,0.1453648915187377,same,"['Distributor', 'None', 'None']","[8, 16, 16]",Foraging
+453,scroll on a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Distributor-nominal-y",1604967644970,0.1453648915187377,same,"['Distributor', 'None', 'None']","[8, 16, 16]",Foraging
+471,scroll on a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Distributor-nominal-y",1604967646127,0.1453648915187377,same,"['Distributor', 'None', 'None']","[8, 16, 16]",Foraging
+499,mouseout a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Distributor-nominal-y",1604967646978,0.1453648915187377,same,"['Distributor', 'None', 'None']","[8, 16, 16]",Foraging
+503,mouseout a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Distributor-nominal-y",1604967650542,0.1453648915187377,same,"['Distributor', 'None', 'None']","[8, 16, 16]",Foraging
+506,mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Distributor-nominal-y",1604967651260,0.1453648915187377,same,"['Distributor', 'None', 'None']","[8, 16, 16]",Foraging
+507,scroll on a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Distributor-nominal-y",1604967652795,0.1453648915187377,same,"['Distributor', 'None', 'None']","[8, 16, 16]",Foraging
+546,mouseout a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Distributor-nominal-y",1604967654630,0.1453648915187377,same,"['Distributor', 'None', 'None']","[8, 16, 16]",Foraging
+547,mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Distributor-nominal-y",1604967655661,0.1453648915187377,modify-1,"['Distributor', 'None', 'None']","[8, 16, 16]",Foraging
+562,mouseout a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Major_Genre-nominal-y",1604967659518,0.2282051282051282,same,"['Major_Genre', 'None', 'None']","[10, 16, 16]",Foraging
+612,mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Major_Genre-nominal-y",1604967666910,0.2282051282051282,modify-1,"['Major_Genre', 'None', 'None']","[10, 16, 16]",Foraging
+622,mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Distributor-nominal-y",1604967667628,0.1453648915187377,same,"['Distributor', 'None', 'None']","[8, 16, 16]",Foraging
+628,added chart to bookmark,"mark:bar;encoding:-quantitative-x<aggregate>count,Distributor-nominal-y",1604967668974,0.1453648915187377,modify-1,"['Distributor', 'None', 'None']","[8, 16, 16]",Sensemaking
+629,mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Source-nominal-y",1604967669101,0.1591715976331361,modify-1,"['None', 'None', 'Source']","[16, 16, 9]",Foraging
+716,mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Major_Genre-nominal-y",1604967685647,0.2282051282051282,modify-1,"['Major_Genre', 'None', 'None']","[10, 16, 16]",Foraging
+726,added chart to bookmark,"mark:bar;encoding:-quantitative-x<aggregate>count,Director-nominal-y",1604967687135,0.1216962524654832,modify-1,"['Director', 'None', 'None']","[12, 16, 16]",Sensemaking
+727,mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Source-nominal-y",1604967687367,0.1591715976331361,modify-1,"['None', 'None', 'Source']","[16, 16, 9]",Foraging
+733,mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Major_Genre-nominal-y",1604967689484,0.2282051282051282,modify-1,"['Major_Genre', 'None', 'None']","[10, 16, 16]",Foraging
+740,mouseout a related chart,mark:tick;encoding:Rotten_Tomatoes_Rating-quantitative-x,1604967692304,0.1571992110453648,modify-1,"['None', 'None', 'Rotten_Tomatoes_Rating']","[16, 16, 13]",Foraging
+1236,mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Major_Genre-nominal-y",1604967779181,0.2282051282051282,modify-1,"['Major_Genre', 'None', 'None']","[10, 16, 16]",Foraging
+1242,mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Release_Date-nominal-y",1604967780583,0.1927021696252465,modify-1,"['None', 'None', 'Release_Date']","[16, 16, 5]",Foraging
+1410,mouseover a related chart,mark:tick;encoding:Rotten_Tomatoes_Rating-quantitative-x,1604967818457,0.1571992110453648,modify-1,"['None', 'None', 'Rotten_Tomatoes_Rating']","[16, 16, 13]",Foraging
+1429,mouseout a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Director-nominal-y",1604967823730,0.1216962524654832,modify-1,"['Director', 'None', 'None']","[12, 16, 16]",Foraging
+1480,mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Major_Genre-nominal-y",1604967842516,0.2282051282051282,modify-1,"['Major_Genre', 'None', 'None']","[10, 16, 16]",Foraging
+1497,mouseout a related chart,mark:tick;encoding:Rotten_Tomatoes_Rating-quantitative-x,1604967844985,0.1571992110453648,modify-1,"['None', 'None', 'Rotten_Tomatoes_Rating']","[16, 16, 13]",Foraging
+1587,mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Title-nominal-y",1604967877054,0.1059171597633136,modify-1,"['None', 'None', 'Title']","[16, 16, 0]",Foraging
+1592,mouseout a related chart,mark:tick;encoding:Production_Budget-quantitative-x,1604967879907,0.1927021696252465,modify-1,"['None', 'None', 'Production_Budget']","[16, 16, 4]",Foraging
+1699,mouseover a related chart,mark:tick;encoding:US_DVD_Sales-quantitative-x,1604967917630,0.1157790927021696,modify-1,"['None', 'None', 'US_DVD_Sales']","[16, 16, 3]",Foraging
+1721,mouseover a related chart,mark:tick;encoding:US_Gross-quantitative-x,1604967920167,0.1729783037475345,modify-1,"['None', 'None', 'US_Gross']","[16, 16, 1]",Foraging
+1729,mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Title-nominal-y",1604967927658,0.1059171597633136,same,"['None', 'None', 'Title']","[16, 16, 0]",Foraging
+1735,added chart to bookmark,"mark:bar;encoding:-quantitative-x<aggregate>count,Title-nominal-y",1604967928789,0.1059171597633136,modify-1,"['None', 'None', 'Title']","[16, 16, 0]",Sensemaking
+1736,mouseover a related chart,mark:tick;encoding:US_Gross-quantitative-x,1604967929344,0.1729783037475345,modify-1,"['None', 'None', 'US_Gross']","[16, 16, 1]",Foraging
+1748,mouseover a related chart,mark:tick;encoding:Running_Time_min-quantitative-x,1604967931195,0.1355029585798816,modify-1,"['None', 'None', 'Running_Time_min']","[16, 16, 7]",Foraging
+1764,mouseover a related chart,mark:tick;encoding:US_DVD_Sales-quantitative-x,1604967933047,0.1157790927021696,same,"['None', 'None', 'US_DVD_Sales']","[16, 16, 3]",Foraging
+1770,mouseover a related chart,mark:tick;encoding:US_DVD_Sales-quantitative-x,1604967934031,0.1157790927021696,same,"['None', 'None', 'US_DVD_Sales']","[16, 16, 3]",Foraging
+1776,mouseout a related chart,mark:tick;encoding:US_DVD_Sales-quantitative-x,1604967934696,0.1157790927021696,same,"['None', 'None', 'US_DVD_Sales']","[16, 16, 3]",Foraging
+1787,mouseover a related chart,mark:tick;encoding:US_DVD_Sales-quantitative-x,1604967936365,0.1157790927021696,modify-1,"['None', 'None', 'US_DVD_Sales']","[16, 16, 3]",Foraging
+1833,mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Major_Genre-nominal-y",1604967938113,0.2282051282051282,same,"['Major_Genre', 'None', 'None']","[10, 16, 16]",Foraging
+1869,mouseout a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Major_Genre-nominal-y",1604967940839,0.2282051282051282,modify-1,"['Major_Genre', 'None', 'None']","[10, 16, 16]",Foraging
+1888,mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Source-nominal-y",1604967941973,0.1591715976331361,modify-1,"['None', 'None', 'Source']","[16, 16, 9]",Foraging
+1913,mouseover a related chart,mark:tick;encoding:Running_Time_min-quantitative-x,1604967943859,0.1355029585798816,modify-1,"['None', 'None', 'Running_Time_min']","[16, 16, 7]",Foraging
+1922,mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Title-nominal-y",1604967947246,0.1059171597633136,modify-1,"['None', 'None', 'Title']","[16, 16, 0]",Foraging
+1931,mouseout a related chart,mark:tick;encoding:Running_Time_min-quantitative-x,1604967948341,0.1355029585798816,modify-1,"['None', 'None', 'Running_Time_min']","[16, 16, 7]",Foraging
+1946,mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Release_Date-nominal-y",1604967949582,0.1927021696252465,modify-1,"['None', 'None', 'Release_Date']","[16, 16, 5]",Foraging
+1990,mouseover a related chart,mark:tick;encoding:Rotten_Tomatoes_Rating-quantitative-x,1604967954787,0.1571992110453648,modify-1,"['None', 'None', 'Rotten_Tomatoes_Rating']","[16, 16, 13]",Foraging
+2006,mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Director-nominal-y",1604967956289,0.1216962524654832,modify-1,"['Director', 'None', 'None']","[12, 16, 16]",Foraging
+2037,added chart to bookmark,mark:tick;encoding:Rotten_Tomatoes_Rating-quantitative-x,1604967958293,0.1571992110453648,modify-1,"['None', 'None', 'Rotten_Tomatoes_Rating']","[16, 16, 13]",Sensemaking
+2040,mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Distributor-nominal-y",1604967961811,0.1453648915187377,modify-1,"['Distributor', 'None', 'None']","[8, 16, 16]",Foraging
+2051,scroll on a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Director-nominal-y",1604967980191,0.1216962524654832,same,"['Director', 'None', 'None']","[12, 16, 16]",Foraging
+2052,mouseout a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Director-nominal-y",1604967980649,0.1216962524654832,modify-1,"['Director', 'None', 'None']","[12, 16, 16]",Foraging
+2057,mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Distributor-nominal-y",1604967982150,0.1453648915187377,modify-1,"['Distributor', 'None', 'None']","[8, 16, 16]",Foraging
+2147,mouseover a related chart,mark:tick;encoding:US_Gross-quantitative-x,1604967987589,0.1729783037475345,same,"['None', 'None', 'US_Gross']","[16, 16, 1]",Foraging
+2149,mouseover a related chart,mark:tick;encoding:US_Gross-quantitative-x,1604968138170,0.1729783037475345,modify-1,"['None', 'None', 'US_Gross']","[16, 16, 1]",Foraging
+2153,mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Title-nominal-y",1604968209929,0.1059171597633136,same,"['None', 'None', 'Title']","[16, 16, 0]",Foraging
