@@ -12,59 +12,63 @@ library(car)
 # Load required library
 library(dplyr)
 library(DHARMa)
+library(glmmTMB)
 
 # Load data
-data_p4 <- read.csv("/Users/aryal/Desktop/ForeCache/foreCache-interaction/ForeCache_Models/zheng_p4.csv")
-data_p3 <- read.csv("/Users/aryal/Desktop/ForeCache/foreCache-interaction/ForeCache_Models/zheng_p3.csv")
-data_p2 <- read.csv("/Users/aryal/Desktop/ForeCache/foreCache-interaction/ForeCache_Models/zheng_p2.csv")
-data_p1 <- read.csv("/Users/aryal/Desktop/ForeCache/foreCache-interaction/ForeCache_Models/zheng_p1.csv")
+data_movies_p1 <- read.csv("/Users/aryal/Desktop/ForeCache/foreCache-interaction/ForeCache_Models/data/zheng/mixed-model-data/zheng_movies_p1.csv")
+data_movies_p2 <- read.csv("/Users/aryal/Desktop/ForeCache/foreCache-interaction/ForeCache_Models/data/zheng/mixed-model-data/zheng_movies_p2.csv")
+data_movies_p3 <- read.csv("/Users/aryal/Desktop/ForeCache/foreCache-interaction/ForeCache_Models/data/zheng/mixed-model-data/zheng_movies_p3.csv")
+data_movies_p4 <- read.csv("/Users/aryal/Desktop/ForeCache/foreCache-interaction/ForeCache_Models/data/zheng/mixed-model-data/zheng_movies_p4.csv")
 
-# Add a new column "Task" to each dataset
-data_p4$Task <- "p4"
-data_p2$Task <- "p2"
-data_p3$Task <- "p3"
-data_p1$Task <- "p1"
 
+data_birdstrikes_p1 <- read.csv('/Users/aryal/Desktop/ForeCache/foreCache-interaction/ForeCache_Models/data/zheng/mixed-model-data/zheng_birdstrikes_p1.csv')
+data_birdstrikes_p2 <- read.csv('/Users/aryal/Desktop/ForeCache/foreCache-interaction/ForeCache_Models/data/zheng/mixed-model-data/zheng_birdstrikes_p2.csv')
+data_birdstrikes_p3 <- read.csv('/Users/aryal/Desktop/ForeCache/foreCache-interaction/ForeCache_Models/data/zheng/mixed-model-data/zheng_birdstrikes_p3.csv')
+data_birdstrikes_p4 <- read.csv('/Users/aryal/Desktop/ForeCache/foreCache-interaction/ForeCache_Models/data/zheng/mixed-model-data/zheng_birdstrikes_p4.csv')
+
+data_both_pall <- read.csv('/Users/aryal/Desktop/ForeCache/foreCache-interaction/ForeCache_Models/data/zheng/mixed-model-data/zheng_both_datasets.csv', stringsAsFactors = TRUE)
+data_both_pall$u <- as.factor(data_both_pall$u)
+data_both_pall$Task <- as.factor(data_both_pall$Task)
+data_both_pall$Trial <- as.factor(data_both_pall$Trial)
+data_both_pall$Openend <- as.factor(data_both_pall$Openend)
+hist(data_both_pall$probabsame)
+hist(data_both_pall$probabmodify1)
+hist(data_both_pall$probabmodify2)
+hist(data_both_pall$probabmodify3)
+
+#replace 0 with 0.00000000000001 in probabsame
+# data_both_pall$probabsame[data_both_pall$probabsame == 0] <- 0.0000000000000000000001
+# data_both_pall$probabmodify1[data_both_pall$probabmodify1 == 0] <- 0.0000000000000000000001
+# data_both_pall$probabmodify2[data_both_pall$probabmodify2 == 0] <- 0.0000000000000000000001
+# data_both_pall$probabmodify3[data_both_pall$probabmodify3 == 0] <- 0.0000000000000000000001
+hist(log(data_both_pall$probabsame))
+head(data_both_pall)
+hist(data_both_pall$probabmodify3)
 # Combine the datasets on the 'u' column
-combined_data <- bind_rows(data_p4, data_p2, data_p3, data_p1)
+combined_data_birdstrikes <- bind_rows(data_p4, data_p2, data_p3, data_p1)
 
-# Convert Trial and u columns to factors
-combined_data$u <- as.factor(combined_data$u)
-combined_data$Task <- as.factor(combined_data$Task)
-combined_data$Trial <- as.factor(combined_data$Trial)
-# Count the number of unique 'u' values
-num_unique_u <- combined_data %>%
-  summarize(nunique = n_distinct(u))
-print(num_unique_u)
-# Sort the combined dataset by the 'u' column
-combined_data <- combined_data %>%
-  arrange(u)
+action_probabs <- c('probabsame', 'probabmodify1', 'probabmodify2', 'probabmodify3')
+combined_model_full <- lmer(formula = probabsame~ Trial + (1|Openendedness) + (1|Experiment)+ (1+Trial|u), data = data_both_pall, REML = FALSE)
+  # Reduced model: include random effect for u only
+reducedmodel_same <- lmer(formula =  probabsame ~ 1 +  (1|Openendedness) + (1|Experiment) + (1|u), data = data_both_pall, REML = FALSE)
+lrtest(reducedmodel_same, combined_model_full)
 
 
+anova_test(probabsame~ Trial + Error(u), data = data_both_pall, type = 3)
 
-# # log -transformation
-# combined_data$probabsame <- log(combined_data$probabsame)
-# combined_data$probabmodify1 <- log(combined_data$probabmodify1)
-# combined_data$probabmodify2 <- log(combined_data$probabmodify2)
-# combined_data$probabmodify3 <- log(combined_data$probabmodify3)
-#
-# # plot histogram of the probability of each action
-# hist(combined_data$probabsame)
-# hist(combined_data$probabmodify1)
-# hist(combined_data$probabmodify2)
-# hist(combined_data$probabmodify3)
-
-combined_model_full <-glmer(formula = probabmodify3 ~  Trial + Task + (1|u), data = combined_data,family = poisson)
-combined_model_full_REML <- glmer(formula = probabmodify2 ~  1 + Task + (1|u), data = combined_data,family = poisson)
-combined_model_reduced <- glmer(formula = probabmodify3 ~  1 + Task + (1|u), data = combined_data,family = poisson)
-lrtest(combined_model_reduced, combined_model_full)
-simulationOutput <- simulateResiduals(fittedModel = combined_model_full, plot = FALSE)
-plot(simulationOutput)
-#check if resiudals are norma
+combined_model_full_ML <- lmer(formula = probabsame~ Trial  + Openend   + (1|u), data = data_both_pall)
+# shapiro.test(resid(combined_model_full))
 qqnorm(resid(combined_model_full))
 qqline(resid(combined_model_full))
+coef(combined_model_full)
 #check with shapiro test
-shapiro.test(resid(combined_model_full))
+ks.test(resid(combined_model_full_ML), "pnorm")
+
+help('isSingular')
+simulationOutput <- simulateResiduals(fittedModel = fullmodel_same, plot = FALSE)
+plot(simulationOutput)
+#check if resiudals are norma
+
 #check if levene test is significant
 leveneTest(resid(combined_model_full) ~ combined_data$Trial)
 summary(combined_model_full)
