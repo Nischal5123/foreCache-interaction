@@ -16,7 +16,7 @@ class InteractionProcessor:
         self.max_len=len(self.fieldnames)
         self.bookmarks=0
         self.important_attributes_counter=imp_attrs
-        self.important_attributes_counter_per_user=imp_attrs
+
 
     def get_fields_from_vglstr(self, vglstr):
         encoding_str = vglstr.split(';')[1]
@@ -165,9 +165,6 @@ class InteractionProcessor:
 
     def user_specific_reward(self, csv_filename):
         # Initialize counter dictionary if not already initialized
-        if not self.important_attributes_counter_per_user:
-            self.important_attributes_counter_per_user = {field: 0 for field in self.fieldnames}
-
         # Get bookmark reward
         bookmarked_vglstr_strings = self.get_final_bookmark_vglstr(csv_filename)
         print('User:', csv_filename, 'Total charts bookmarked:', len(bookmarked_vglstr_strings))
@@ -176,9 +173,9 @@ class InteractionProcessor:
             for field in self.fieldnames:
                 if field in bookmark_string:
                     print(f'Field "{field}" found in bookmark string: {bookmark_string}')
-                    self.important_attributes_counter_per_user[field] += 1
+                    self.important_attributes_counter[field] += 1
 
-        return self.important_attributes_counter_per_user
+        print('Important attributes counter:', self.important_attributes_counter)
 
 
     def process_interaction_logs(self, csv_filename):
@@ -243,7 +240,7 @@ class InteractionProcessor:
                     reward = 0.1
                     for attribute in attributes:
                         try:
-                            reward += self.important_attributes_counter_per_user[attribute]
+                            reward += self.important_attributes_counter[attribute]
                         except KeyError as e:
                             print(e)
                             reward +=0
@@ -284,9 +281,16 @@ class InteractionProcessor:
         for index in range(len(df) - 1):
             current_state = sorted(np.array(eval(df['State'][index])))  # Convert string representation to list
             next_state = sorted(np.array(eval(df['State'][index + 1])))  # Convert string representation to list
-            action = ''
 
-            num_different_elements = sum(c1 != c2 for c1, c2 in zip(sorted(current_state), sorted(next_state)))
+            # Count occurrences of each element in current_state and next_state
+            current_state_count = Counter(current_state)
+            next_state_count = Counter(next_state)
+
+            # Get the elements that are in next_state but not in current_state
+            difference_elements = list((next_state_count - current_state_count).elements())
+
+            # Get the number of different elements
+            num_different_elements = len(difference_elements)
 
             if num_different_elements == 0:
                 action = 'same'
@@ -296,7 +300,7 @@ class InteractionProcessor:
 
             actions.append(action)
 
-        actions.append('same')
+        actions.append('modify-3') #close the session resets everything to empty
         df['Action'] = actions
 
         # Save the modified DataFrame
@@ -461,11 +465,12 @@ if __name__ == '__main__':
 
     for csv_filename in csv_files:
         end = task + '_logs.csv'
-        if csv_filename.endswith(end):
+        if csv_filename.endswith('pro1_bcf_p1_logs.csv'):
              interaction_processor = InteractionProcessor(user_interactions_path, processed_interactions_path, master_data_path,important_attrs)
              interaction_processor.user_specific_reward(csv_filename)
              interaction_processor.process_interaction_logs(csv_filename)
              interaction_processor.process_actions(csv_filename)
+             del interaction_processor
 
 
 
