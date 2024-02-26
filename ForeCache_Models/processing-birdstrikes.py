@@ -447,7 +447,7 @@ def remove_invalid_rows(user_path, csv_filename):
         df.to_csv(os.path.join(user_path, csv_filename), index=False)
 
 if __name__ == '__main__':
-    task = 'p1'
+    task = 'p4'
     user_interactions_path = './data/zheng/birdstrikes_processed_csv/'
     csv_files = os.listdir(user_interactions_path)
     for csv_filename in csv_files:
@@ -465,8 +465,8 @@ if __name__ == '__main__':
 
     for csv_filename in csv_files:
         end = task + '_logs.csv'
-        if csv_filename.endswith('pro1_bcf_p1_logs.csv'):
-             interaction_processor = InteractionProcessor(user_interactions_path, processed_interactions_path, master_data_path,important_attrs)
+        if csv_filename.endswith(end):
+             interaction_processor = InteractionProcessor(user_interactions_path, processed_interactions_path, master_data_path,important_attrs.copy())
              interaction_processor.user_specific_reward(csv_filename)
              interaction_processor.process_interaction_logs(csv_filename)
              interaction_processor.process_actions(csv_filename)
