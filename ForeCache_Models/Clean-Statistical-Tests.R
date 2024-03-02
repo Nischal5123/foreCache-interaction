@@ -1,4 +1,4 @@
-
+install.packages('rstatix')
 library(car)             # Load the car package for leveneTest
 library(lmerTest)
 library(haven)
@@ -13,6 +13,7 @@ library(car)
 library(dplyr)
 library(DHARMa)
 library(glmmTMB)
+library(rstatix)
 
 # Load data
 data_movies_p1 <- read.csv("/Users/aryal/Desktop/ForeCache/foreCache-interaction/ForeCache_Models/data/zheng/mixed-model-data/zheng_movies_p1.csv")
@@ -31,33 +32,40 @@ data_both_pall$u <- as.factor(data_both_pall$u)
 data_both_pall$Task <- as.factor(data_both_pall$Task)
 data_both_pall$Trial <- as.factor(data_both_pall$Trial)
 data_both_pall$Openend <- as.factor(data_both_pall$Openend)
-hist(data_both_pall$probabsame)
-hist(data_both_pall$probabmodify1)
-hist(data_both_pall$probabmodify2)
-hist(data_both_pall$probabmodify3)
 
-#replace 0 with 0.00000000000001 in probabsame
-# data_both_pall$probabsame[data_both_pall$probabsame == 0] <- 0.0000000000000000000001
-# data_both_pall$probabmodify1[data_both_pall$probabmodify1 == 0] <- 0.0000000000000000000001
-# data_both_pall$probabmodify2[data_both_pall$probabmodify2 == 0] <- 0.0000000000000000000001
-# data_both_pall$probabmodify3[data_both_pall$probabmodify3 == 0] <- 0.0000000000000000000001
-hist(log(data_both_pall$probabsame))
-head(data_both_pall)
-hist(data_both_pall$probabmodify3)
-# Combine the datasets on the 'u' column
-combined_data_birdstrikes <- bind_rows(data_p4, data_p2, data_p3, data_p1)
+# #remove all the rows with 0 probability
+# data_both_pall <- data_both_pall[!data_both_pall$probabsame == 0,]
+# data_both_pall <- data_both_pall[!data_both_pall$probabmodify1 == 0,]
+# data_both_pall <- data_both_pall[!data_both_pall$probabmodify2 == 0,]
+# data_both_pall <- data_both_pall[!data_both_pall$probabmodify3 == 0,]
+#
+# data_both_pall$probabsame <- log(data_both_pall$probabsame)
+# data_both_pall$probabmodify1 <- log(data_both_pall$probabmodify1)
+# data_both_pall$probabmodify2 <- log(data_both_pall$probabmodify2)
+# data_both_pall$probabmodify3 <- log(data_both_pall$probabmodify3)
+
+res.aov <- anova_test(
+  data =data_both_pall  , dv = probabmodify3, wid = u,
+  within = c(Trial, Task)
+  )
+get_anova_table(res.aov)
+
 
 action_probabs <- c('probabsame', 'probabmodify1', 'probabmodify2', 'probabmodify3')
-combined_model_full <- lmer(formula = probabsame~ Trial + (1|Openendedness) + (1|Experiment)+ (1+Trial|u), data = data_both_pall, REML = FALSE)
+combined_model_full <- lmer(formula = probabmodify3~ Trial + (1|Task) + (1|u), data = data_both_pall, REML = FALSE)
   # Reduced model: include random effect for u only
-reducedmodel_same <- lmer(formula =  probabsame ~ 1 +  (1|Openendedness) + (1|Experiment) + (1|u), data = data_both_pall, REML = FALSE)
+reducedmodel_same <- lmer(formula =  probabmodify3 ~ 1 +  (1|Task)  + (1|u), data = data_both_pall, REML = FALSE)
+summary(reducedmodel_same)
 lrtest(reducedmodel_same, combined_model_full)
 
+combined_model_reporting <- lmer(formula = probabmodify3 ~ Trial + (1|Openendedness) + (1|Dataset)+ (1|u), data = data_both_pall)
+summary(combined_model_reporting)
+  # Reduced model: include random effect for u only
 
-anova_test(probabsame~ Trial + Error(u), data = data_both_pall, type = 3)
-
-combined_model_full_ML <- lmer(formula = probabsame~ Trial  + Openend   + (1|u), data = data_both_pall)
-# shapiro.test(resid(combined_model_full))
+# anova_test(probabsame~ Trial + Error(u), data = data_both_pall, type = 3)
+#
+# combined_model_full_ML <- lmer(formula = probabsame~ Trial  + Openend   + (1|u), data = data_both_pall)
+shapiro.test(resid(combined_model_full))
 qqnorm(resid(combined_model_full))
 qqline(resid(combined_model_full))
 coef(combined_model_full)

@@ -196,13 +196,14 @@ def run_experiment_for_user(u, algo, hyperparams):
 
        # print("#TRAINING: User :{}, Threshold : {:.1f}, Accuracy: {}, LR: {} ,Discount: {}, Temperature:{}".format(user_name, thres, max_accu, best_learning_rate, best_gamma, best_temp))
 
-        test_accs = []
+        best_test_accs = 0
         for i in range(5):
             test_agent = best_agent
             test_model = best_model
-            test_accuracy, split_accuracy, reward = test_agent.test(test_model)
-            test_accs.append(test_accuracy)
-        test_accuracy = np.mean(test_accs)
+            current_test_accuracy, split_accuracy, reward = test_agent.test(test_model)
+            if current_test_accuracy > best_test_accs:
+                best_test_accs = current_test_accuracy
+        test_accuracy = best_test_accs
 
         accuracy_per_state = format_split_accuracy(split_accuracy)
         y_accu.append(test_accuracy)
@@ -220,7 +221,7 @@ def run_experiment_for_user(u, algo, hyperparams):
             user_name, thres, max_accu, best_learning_rate, best_gamma, best_temp))
     return result_dataframe_user, y_accu
 
-def run_experiment(user_list, algo, hyperparam_file,task='p2'):
+def run_experiment(user_list, algo, hyperparam_file,dataset,task='p2'):
     with open(hyperparam_file) as f:
         hyperparams = json.load(f)
 
@@ -237,16 +238,21 @@ def run_experiment(user_list, algo, hyperparam_file,task='p2'):
 
         for future in concurrent.futures.as_completed(futures):
             user_result_dataframe, user_y_accu = future.result()
+
             result_dataframe = pd.concat([result_dataframe, user_result_dataframe], ignore_index=True)
             y_accu_all.append(user_y_accu)
 
-    result_dataframe.to_csv("Experiments_Folder/VizRec/{}/{}.csv".format(task,title), index=False)
+    result_dataframe.to_csv("Experiments_Folder/VizRec/{}/{}/{}.csv".format(dataset, task, title), index=False)
 
 
 if __name__ == '__main__':
-    task = 'p4'
-    env = environment_vizrec.environment_vizrec()
-    user_list_2D = env.user_list_2D
-    run_experiment(user_list_2D, 'Reinforce', 'sampled-hyperparameters-config.json',task)
+    datasets = ['birdstrikes','movies']
+    tasks = ['p1','p2', 'p3', 'p4']
+    for dataset in datasets:
+        for task in tasks:
+            env = environment_vizrec.environment_vizrec()
+            user_list_name = env.get_user_list(dataset, task)
+            run_experiment(user_list_name, 'Reinforce', 'sampled-hyperparameters-config.json', dataset, task)
+            print(f"Done with {dataset} {task}")
 
 

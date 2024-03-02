@@ -17,8 +17,15 @@ class environment_vizrec:
 
         Initializes required variables and stores data in memory.
         """
-        self.user_list_2D = np.sort(glob.glob("data/zheng/processed_interactions_p4/*"))
-        self.user_list_3D = np.sort(glob.glob("data/NDSI-3D/taskname_ndsi-3d-task_*"))
+        self.user_list_movies_p1 = np.sort(glob.glob("data/zheng/processed_interactions_p1/*"))
+        self.user_list_movies_p2 = np.sort(glob.glob("data/zheng/processed_interactions_p2/*"))
+        self.user_list_movies_p3 = np.sort(glob.glob("data/zheng/processed_interactions_p3/*"))
+        self.user_list_movies_p4 = np.sort(glob.glob("data/zheng/processed_interactions_p4/*"))
+        self.user_list_birdstrikes_p1 = np.sort(glob.glob("data/zheng/birdstrikes_processed_interactions_p1/*"))
+        self.user_list_birdstrikes_p2 = np.sort(glob.glob("data/zheng/birdstrikes_processed_interactions_p2/*"))
+        self.user_list_birdstrikes_p3 = np.sort(glob.glob("data/zheng/birdstrikes_processed_interactions_p3/*"))
+        self.user_list_birdstrikes_p4 = np.sort(glob.glob("data/zheng/birdstrikes_processed_interactions_p4/*"))
+
 
         # This variable will be used to track the current position of the user agent.
         self.steps = 0
@@ -82,6 +89,9 @@ class environment_vizrec:
             self.mem_reward.append(reward)
             self.mem_action.append(action)
             cnt_inter += 1
+        #scale reward min-max
+        self.mem_reward = (self.mem_reward - np.min(self.mem_reward)) / (np.max(self.mem_reward) - np.min(self.mem_reward))
+
         self.threshold = int(cnt_inter * thres)
 
     def cur_inter(self, steps):
@@ -96,7 +106,7 @@ class environment_vizrec:
         - (float): current reward.
         - (str): current action.
         """
-        return self.mem_states[steps], self.mem_reward[steps]*10, self.mem_action[steps]
+        return self.mem_states[steps], self.mem_reward[steps], self.mem_action[steps]
 
     def peek_next_step(self):
         """
@@ -167,6 +177,25 @@ class environment_vizrec:
         # Return the predicted next state, current reward, done status, prediction, and top reward
         return next_state, cur_reward, self.done, prediction, top_reward
 
+    def get_user_list(self,dataset,task):
+        if dataset == 'movies':
+            if task == 'p1':
+                return self.user_list_movies_p1
+            elif task == 'p2':
+                return self.user_list_movies_p2
+            elif task == 'p3':
+                return self.user_list_movies_p3
+            elif task == 'p4':
+                return self.user_list_movies_p4
+        elif dataset == 'birdstrikes':
+            if task == 'p1':
+                return self.user_list_birdstrikes_p1
+            elif task == 'p2':
+                return self.user_list_birdstrikes_p2
+            elif task == 'p3':
+                return self.user_list_birdstrikes_p3
+            elif task == 'p4':
+                return self.user_list_birdstrikes_p4
 
 if __name__ == "__main__":
     env = environment_vizrec()

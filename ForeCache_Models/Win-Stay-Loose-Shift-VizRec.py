@@ -117,76 +117,81 @@ def get_user_name(url):
     return uname
 
 if __name__ == "__main__":
-    task = "p4"
-    result_dataframe = pd.DataFrame(
-        columns=['User', 'Accuracy', 'Threshold', 'LearningRate', 'Discount', 'Algorithm', 'StateAccuracy'])
 
-    dataframe_users = []
-    dataframe_threshold = []
-    dataframe_learningrate = []
-    dataframe_accuracy = []
-    dataframe_discount = []
-    dataframe_accuracy_per_state = []
-    dataframe_algorithm = []
+    datasets = ['movies','birdstrikes']
+    tasks = ['p1','p2', 'p3', 'p4']
+    for dataset in datasets:
+        for task in tasks:
+            env = environment_vizrec.environment_vizrec()
+            user_list_name = env.get_user_list(dataset, task)
+            result_dataframe = pd.DataFrame(
+                columns=['User', 'Accuracy', 'Threshold', 'LearningRate', 'Discount', 'Algorithm', 'StateAccuracy'])
 
-    env = environment_vizrec.environment_vizrec()
-    user_list_2D = env.user_list_2D
-    total = 0
-    threshold = [0.1]
-    obj2 = misc.misc([])
-    y_accu_all = []
-    for u in user_list_2D:
-        y_accu = []
-        threshold = [0.05, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]
+            dataframe_users = []
+            dataframe_threshold = []
+            dataframe_learningrate = []
+            dataframe_accuracy = []
+            dataframe_discount = []
+            dataframe_accuracy_per_state = []
+            dataframe_algorithm = []
 
-        for thres in threshold:
-            env.process_data(u, 0)
-            obj = WSLS()
-            accu,state_accuracy = obj.wslsDriver(u, env, thres)
-            accuracy_per_state = format_split_accuracy(state_accuracy)
-            total += accu
-            y_accu.append(accu)
-            dataframe_users.append(get_user_name(u))
-            dataframe_threshold.append(thres)
-            dataframe_learningrate.append(0)
-            dataframe_accuracy.append(accu)
-            dataframe_discount.append(0)
-            dataframe_accuracy_per_state.append(accuracy_per_state)
-            dataframe_algorithm.append("WSLS")
-            env.reset(True, False)
-        print(
-            "User ",
-            get_user_name(u),
-            " across all thresholds ",
-            "Global Accuracy: ",
-            np.mean(y_accu),
-        )
+            env = environment_vizrec.environment_vizrec()
+            user_list_2D = user_list_name
+            total = 0
+            obj2 = misc.misc([])
+            y_accu_all = []
+            for u in user_list_2D:
+                y_accu = []
+                threshold = [0.05, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]
 
-        plt.plot(threshold, y_accu, label=get_user_name(u), marker="*")
-        y_accu_all.append(y_accu)
-    plt.yticks(np.arange(0.0, 1.0, 0.1))
+                for thres in threshold:
+                    env.process_data(u, 0)
+                    obj = WSLS()
+                    accu,state_accuracy = obj.wslsDriver(u, env, thres)
+                    accuracy_per_state = format_split_accuracy(state_accuracy)
+                    total += accu
+                    y_accu.append(accu)
+                    dataframe_users.append(get_user_name(u))
+                    dataframe_threshold.append(thres)
+                    dataframe_learningrate.append(0)
+                    dataframe_accuracy.append(accu)
+                    dataframe_discount.append(0)
+                    dataframe_accuracy_per_state.append(accuracy_per_state)
+                    dataframe_algorithm.append("WSLS")
+                    env.reset(True, False)
+                print(
+                    "User ",
+                    get_user_name(u),
+                    " across all thresholds ",
+                    "Global Accuracy: ",
+                    np.mean(y_accu),
+                )
 
-    plt.xlabel("Threshold")
-    plt.ylabel("Accuracy")
-    title = "WSLS"
-    mean_y_accu = np.nanmean([element for sublist in y_accu_all for element in sublist])
-    plt.axhline(
-        mean_y_accu,
-        color="red",
-        linestyle="--",
-        label="Average: " + "{:.2%}".format(mean_y_accu),
-    )
-    plt.legend(loc="center left", bbox_to_anchor=(1, 0))
-    plt.title(title)
-    location = "TestFigures/" + title
-    plt.savefig(location, bbox_inches="tight")
-    plt.close()
+                plt.plot(threshold, y_accu, label=get_user_name(u), marker="*")
+                y_accu_all.append(y_accu)
+            plt.yticks(np.arange(0.0, 1.0, 0.1))
 
-    result_dataframe['User'] = dataframe_users
-    result_dataframe['Threshold'] = dataframe_threshold
-    result_dataframe['LearningRate'] = dataframe_learningrate
-    result_dataframe['Discount'] = dataframe_discount
-    result_dataframe['Accuracy'] = dataframe_accuracy
-    result_dataframe['Algorithm'] = dataframe_algorithm
-    result_dataframe['StateAccuracy'] = dataframe_accuracy_per_state
-    result_dataframe.to_csv("Experiments_Folder/VizRec/{}/{}.csv".format(task,title), index=False)
+            plt.xlabel("Threshold")
+            plt.ylabel("Accuracy")
+            title = "WSLS"
+            mean_y_accu = np.nanmean([element for sublist in y_accu_all for element in sublist])
+            plt.axhline(
+                mean_y_accu,
+                color="red",
+                linestyle="--",
+                label="Average: " + "{:.2%}".format(mean_y_accu),
+            )
+            plt.legend(loc="center left", bbox_to_anchor=(1, 0))
+            plt.title(title)
+            location = "TestFigures/" + title
+            plt.savefig(location, bbox_inches="tight")
+            plt.close()
+
+            result_dataframe['User'] = dataframe_users
+            result_dataframe['Threshold'] = dataframe_threshold
+            result_dataframe['LearningRate'] = dataframe_learningrate
+            result_dataframe['Discount'] = dataframe_discount
+            result_dataframe['Accuracy'] = dataframe_accuracy
+            result_dataframe['Algorithm'] = dataframe_algorithm
+            result_dataframe['StateAccuracy'] = dataframe_accuracy_per_state
+            result_dataframe.to_csv("Experiments_Folder/VizRec/{}/{}/{}.csv".format(dataset,task,title), index=False)

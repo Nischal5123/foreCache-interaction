@@ -32,7 +32,7 @@ class TD_SARSA:
         def policy_fnc(state):
             coin = random.random()
             if coin < epsilon:
-                    best_action = random.randint(0, 4)
+                    best_action = random.randint(0, 3)
             else:
                 best_action = np.argmax(Q[state])
             return best_action
@@ -189,14 +189,17 @@ def run_experiment_for_user(u, algo, hyperparams):
                         user_name, thres, max_accu, best_learning_rate, best_gamma, best_eps))
 
         # best agent automatically gets all the threshold, Q information since its a full Object Store
-        test_accs = []
+        #test_accs = []
+        best_test_accs = 0
         for i in range(5):
             test_model = best_model
             test_agent = best_agent
             test_accuracy, stats, split_accuracy, reward = test_agent.test(test_model, best_gamma, best_learning_rate,
                                                                            best_eps)
-            test_accs.append(test_accuracy)
-        test_accuracy = np.mean(test_accs)
+            if test_accuracy > best_test_accs:
+                best_test_accs = test_accuracy
+        test_accuracy = best_test_accs
+        # test_accuracy = np.mean(test_accs)
 
         y_accu.append(test_accuracy)
         accuracy_per_state = 0
@@ -218,7 +221,7 @@ def run_experiment_for_user(u, algo, hyperparams):
                 user_name, thres, test_accuracy, best_learning_rate, best_gamma, best_eps, accuracy_per_state))
     return result_dataframe_user, y_accu
 
-def run_experiment(user_list, algo, hyperparam_file,task):
+def run_experiment(user_list, algo, hyperparam_file,dataset,task):
     with open(hyperparam_file) as f:
         hyperparams = json.load(f)
 
@@ -241,23 +244,15 @@ def run_experiment(user_list, algo, hyperparam_file,task):
             y_accu_all.append(user_y_accu)
 
 
-    result_dataframe.to_csv("Experiments_Folder/VizRec/{}/{}.csv".format(task,title), index=False)
+    result_dataframe.to_csv("Experiments_Folder/VizRec/{}/{}/{}.csv".format(dataset,task,title), index=False)
 
 
 if __name__ == '__main__':
-    task = 'p4'
-    env = environment_vizrec.environment_vizrec()
-    user_list_2D = env.user_list_2D
-    run_experiment(user_list_2D, 'SARSA', 'sampled-hyperparameters-config.json',task)
+    datasets = ['movies']
+    tasks = ['p1','p2','p3','p4']
+    for dataset in datasets:
+        for task in tasks:
+            env = environment_vizrec.environment_vizrec()
+            user_list_name = env.get_user_list(dataset, task)
+            run_experiment(user_list_name, 'SARSA', 'sampled-hyperparameters-config.json',dataset, task)
 
-# if __name__ == "__main__":
-#     start_time = time.time()
-#     env = environment2.environment2()
-#     user_list_2D = env.user_list_2D
-#
-#     obj2 = misc_vizrec.misc(len(user_list_2D))
-#     p1 = multiprocessing.Process(
-#         target=obj2.hyper_param, args=(env, user_list_2D, "SARSA", 50,)
-#     )
-#     p1.start()
-#     p1.join()

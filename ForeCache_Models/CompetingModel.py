@@ -10,29 +10,64 @@ import numpy as np
 import warnings
 
 warnings.filterwarnings("ignore")
+# def create_underlying_data():
+#     attributes1 = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]
+#     attributes2 = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]
+#     attributes3 = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]
+#     action =['same','modify-1','modify-2','modify-3']
+#     # Open a CSV file for writing
+#     with open('./data/zheng/combinations.csv', 'w', newline='') as csv_file:
+#         writer = csv.writer(csv_file)
+#
+#         # Write the header row
+#         writer.writerow(['id', 'state','action'])
+#
+#         # Initialize an ID counter
+#         id_counter = 0
+#
+#         # # Write all combinations of sorted states and actions to the CSV file. Order doesnt matter
+#         # for combination in itertools.product(attributes1, attributes2, attributes3):
+#         #     id_counter += 1
+#         #     writer.writerow([id_counter] + sorted(list(combination)))
+#
+#         #create all possible sorted combination of attributes. Since sorted order doesn't matter, i.e [1,2,3] and [3,2,1] are same
+#         for combination in itertools.product(attributes1, attributes2, attributes3):
+#             id_counter += 1
+#             writer.writerow([id_counter] + sorted(list(combination)))
+#
+#         #now we have all possible sorted combination of attributes. Now we need to add action to each combination to create the underlying data for instance [1,2,3] + 'same' = [1,2,3,'same'] , [1,2,3] + 'modify-1' = [1,2,3,'modify-1'] and so on
+
 def create_underlying_data():
-    x_attributes = ['Title', 'US_Gross', 'Worldwide_Gross', 'US_DVD_Sales', 'Production_Budget', 'Release_Date', 'MPAA_Rating', 'Running_Time_min', 'Distributor', 'Source', 'Major_Genre', 'Creative_Type', 'Director', 'Rotten_Tomatoes_Rating', 'IMDB_Rating', 'IMDB_Votes', 'None']
+        # Define the attributes and actions
+        attributes = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+        actions = ['same', 'modify-1', 'modify-2', 'modify-3']
 
-    # Use the same list for all three sets of attributes
-    y_attributes = x_attributes
-    z_attributes = x_attributes
 
-    # Open a CSV file for writing
-    with open('./data/zheng/combinations.csv', 'w', newline='') as csv_file:
-        writer = csv.writer(csv_file)
 
-        # Write the header row
-        writer.writerow(['id', 'x_attribute', 'y_attribute', 'z_attribute'])
+        # Generate all combinations of attributes and actions
+        total_state = set()
+        for a in attributes:
+            for b in attributes:
+                for c in attributes:
+                    arr=sorted([a,b,c])
+                    total_state.add(tuple(arr))
 
-        # Initialize an ID counter
-        id_counter = 0
+            # Open a CSV file for writing
+        with open('./data/zheng/combinations.csv', 'w', newline='') as csv_file:
+            writer = csv.writer(csv_file)
+            # Write the header row
+            writer.writerow(['id', 'attribute1', 'attribute2', 'attribute3', 'action'])
 
-        # Write all combinations
-        for combination in itertools.product(x_attributes, repeat=3):
-            writer.writerow([id_counter] + list(combination))
-            id_counter += 1
+            # Initialize an ID counter
+            id_counter = 0
 
-    print("CSV file 'combinations.csv' has been created.")
+            # Write all combinations of sorted states and actions to the CSV file. Order doesnt matter
+            for state in total_state:
+                for action in actions:
+                    id_counter += 1
+                    writer.writerow([id_counter] + list(state) + [action])
+        print("Underlying data created")
+
 
 def get_interaction_id(search_entry):
     search_entry_list = ast.literal_eval(search_entry)

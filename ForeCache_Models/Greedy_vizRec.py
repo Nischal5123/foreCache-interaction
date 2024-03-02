@@ -88,7 +88,7 @@ def get_user_name(url):
     fname = parts[-1]
     uname = fname.rstrip('_log.csv')
     return uname
-def run_experiment(user_list, algo, hyperparam_file,task='p2'):
+def run_experiment(user_list, algo, hyperparam_file,task,dataset):
     # Load hyperparameters from JSON file
     with open(hyperparam_file) as f:
         hyperparams = json.load(f)
@@ -127,15 +127,18 @@ def run_experiment(user_list, algo, hyperparam_file,task='p2'):
 
     print("Greedy Model Performace: ", "Global Accuracy: ", np.nanmean(y_accu_all))
     # Save result DataFrame to CSV file
-    result_dataframe.to_csv("Experiments_Folder/VizRec/{}/{}.csv".format(task,title), index=False)
+    result_dataframe.to_csv("Experiments_Folder/VizRec/{}/{}/{}.csv".format(dataset,task,title), index=False)
 
 
 if __name__ == "__main__":
-    task = 'p4'
-    env = environment_vizrec.environment_vizrec()
-    user_list_2D = env.user_list_2D
-    print(user_list_2D)
-    run_experiment(user_list_2D, 'Greedy', 'sampled-hyperparameters-config.json',task)
+    datasets = ['birdstrikes', 'movies']
+    tasks= ['p1', 'p2', 'p3', 'p4']
+    for dataset in datasets:
+        for task in tasks:
+            env = environment_vizrec.environment_vizrec()
+            user_list_name = env.get_user_list(dataset, task)
+            run_experiment(user_list_name, 'Greedy', 'sampled-hyperparameters-config.json', task, dataset)
+            print(f"Done with {dataset} {task}")
 
 
 

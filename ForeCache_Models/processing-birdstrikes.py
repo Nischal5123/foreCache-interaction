@@ -163,19 +163,21 @@ class InteractionProcessor:
         # Extract the last key
         return all_vglstr
 
-    def user_specific_reward(self, csv_filename):
+    def user_specific_reward(self, csv_filename, task):
         # Initialize counter dictionary if not already initialized
         # Get bookmark reward
-        bookmarked_vglstr_strings = self.get_final_bookmark_vglstr(csv_filename)
-        print('User:', csv_filename, 'Total charts bookmarked:', len(bookmarked_vglstr_strings))
+        if task in ['p3','p4']:
+            bookmarked_vglstr_strings = self.get_final_bookmark_vglstr(csv_filename)
+            print('User:', csv_filename, 'Total charts bookmarked:', len(bookmarked_vglstr_strings))
 
-        for bookmark_string in bookmarked_vglstr_strings:
-            for field in self.fieldnames:
-                if field in bookmark_string:
-                    print(f'Field "{field}" found in bookmark string: {bookmark_string}')
-                    self.important_attributes_counter[field] += 1
+            for bookmark_string in bookmarked_vglstr_strings:
+                for field in self.fieldnames:
+                    if field in bookmark_string:
+                        print(f'Field "{field}" found in bookmark string: {bookmark_string}')
+                        self.important_attributes_counter[field] += 1
 
         print('Important attributes counter:', self.important_attributes_counter)
+        return None
 
 
     def process_interaction_logs(self, csv_filename):
@@ -300,7 +302,7 @@ class InteractionProcessor:
 
             actions.append(action)
 
-        actions.append('modify-3') #close the session resets everything to empty
+        actions.append('same') #close the session resets everything to empty
         df['Action'] = actions
 
         # Save the modified DataFrame
@@ -313,48 +315,13 @@ class InteractionProcessor:
         uname = fname.rstrip('_log.csv')
         return uname
 
-    def create_master_file(self, csvfiles,task,isbirdstrike=False):
-        if isbirdstrike:
-            master_csv_filename = task + '-combined-interactions-birdstrike.csv'
-        else:
-            master_csv_filename = task +'-combined-interactions.csv'
-        dfs = []  # List to store individual DataFrames
-
-        for csv_filename in csvfiles:
-            end = task + '_logs.csv'
-            if csv_filename.endswith(end):
-                # print("Converting '{}'...".format(csv_filename))
-                df = pd.read_csv(os.path.join(self.processed_interactions_path, csv_filename))
-
-                # Add a new column 'User' and populate it with the original name of the small file
-                df['User'] = self.get_user_name(csv_filename)
-
-                # Drop the column named 'User_Index'
-                df.drop('User_Index', axis=1, inplace=True)
-
-                # Reset the index for each individual file and create a new index column 'U_Index'
-                df.reset_index(inplace=True)
-                df.rename(columns={'index': 'U_Index'}, inplace=True)
-                # Calculate the mean time for this DataFrame
-                mean_time = df['Time'].mean()
-
-                # Create the 'Trial' column based on the condition for this DataFrame
-                df['Trial'] = df['Time'].apply(lambda x: 1 if x < mean_time else 2)
-
-                dfs.append(df)
-
-        # Concatenate individual DataFrames into a single master DataFrame
-        master_df = pd.concat(dfs, ignore_index=True)
-
-        # Save the master DataFrame to a CSV file
-        master_csv_path = os.path.join(self.master_data_path, master_csv_filename)
-        master_df.to_csv(master_csv_path, index=False)
 
 
 
 
 
-def get_fields_from_vglstr(vglstr):
+
+def global_get_fields_from_vglstr(vglstr):
     encoding_str = vglstr.split(';')[1]
     encoding_str = encoding_str.split(':')[1]
     encodings = encoding_str.split(',')
@@ -369,7 +336,7 @@ def get_fields_from_vglstr(vglstr):
 
 
 
-def get_base_reward(csv_files,path,t='p2'):
+def global_get_base_reward(csv_files,path,t='p2'):
     # Initialize a default dictionary with 0 values for each field name
     important_attributes_counter_across_user = defaultdict(lambda: 0)
     task= t+ '_logs.csv'
@@ -405,7 +372,7 @@ def get_base_reward(csv_files,path,t='p2'):
     return normalized_important_attributes
 
 
-def remove_invalid_rows(user_path, csv_filename):
+def global_remove_invalid_rows(user_path, csv_filename):
 
         df = pd.read_csv(os.path.join(user_path, csv_filename))
         # Drop rows where 'Interaction' contains 'typed in answer'
@@ -446,16 +413,62 @@ def remove_invalid_rows(user_path, csv_filename):
 
         df.to_csv(os.path.join(user_path, csv_filename), index=False)
 
+def global_get_user_name(url):
+        parts = url.split('/')
+        fname = parts[-1]
+        uname = fname.rstrip('_log.csv')
+        return uname
+
+def global_create_master_file(processed_interactions_path,master_data_path,csvfiles,task,isbirdstrike=False):
+        if isbirdstrike:
+            master_csv_filename = task + '-combined-interactions-birdstrike.csv'
+        else:
+            master_csv_filename = task +'-combined-interactions.csv'
+        dfs = []  # List to store individual DataFrames
+
+        for csv_filename in csvfiles:
+            end = task + '_logs.csv'
+            if csv_filename.endswith(end):
+                # print("Converting '{}'...".format(csv_filename))
+                df = pd.read_csv(os.path.join(processed_interactions_path, csv_filename))
+
+                # Add a new column 'User' and populate it with the original name of the small file
+                df['User'] = global_get_user_name(csv_filename)
+
+                # Drop the column named 'User_Index'
+                df.drop('User_Index', axis=1, inplace=True)
+
+                # Reset the index for each individual file and create a new index column 'U_Index'
+                df.reset_index(inplace=True)
+                df.rename(columns={'index': 'U_Index'}, inplace=True)
+                # Calculate the mean time for this DataFrame
+                mean_time = df['Time'].mean()
+
+                # Create the 'Trial' column based on the condition for this DataFrame
+                df['Trial'] = df['Time'].apply(lambda x: 1 if x < mean_time else 2)
+
+                dfs.append(df)
+
+        # Concatenate individual DataFrames into a single master DataFrame
+        master_df = pd.concat(dfs, ignore_index=True)
+
+        # Save the master DataFrame to a CSV file
+        master_csv_path = os.path.join(master_data_path, master_csv_filename)
+        master_df.to_csv(master_csv_path, index=False)
+
 if __name__ == '__main__':
-    task = 'p4'
+    task = 'p2'
+    dataset= 'birdstrikes'
     user_interactions_path = './data/zheng/birdstrikes_processed_csv/'
     csv_files = os.listdir(user_interactions_path)
+    current_csv_files=[]
     for csv_filename in csv_files:
         end=task+'_logs.csv'
         if csv_filename.endswith(end):
-            remove_invalid_rows(user_interactions_path, csv_filename)
+            current_csv_files.append(csv_filename)
+            global_remove_invalid_rows(user_interactions_path, csv_filename)
 
-    important_attrs = get_base_reward(csv_files,user_interactions_path,task)
+    important_attrs = global_get_base_reward(csv_files,user_interactions_path,task)
     print('Important attributes:', important_attrs, 'for task:', task, 'length:', len(important_attrs))
 
     processed_interactions_path = './data/zheng/birdstrikes_processed_interactions_'+task
@@ -463,14 +476,17 @@ if __name__ == '__main__':
 
 
 
-    for csv_filename in csv_files:
+    for csv_filename in current_csv_files:
         end = task + '_logs.csv'
         if csv_filename.endswith(end):
              interaction_processor = InteractionProcessor(user_interactions_path, processed_interactions_path, master_data_path,important_attrs.copy())
-             interaction_processor.user_specific_reward(csv_filename)
+             interaction_processor.user_specific_reward(csv_filename,task)
              interaction_processor.process_interaction_logs(csv_filename)
              interaction_processor.process_actions(csv_filename)
-             del interaction_processor
+
+    global_create_master_file(processed_interactions_path,master_data_path,current_csv_files,task,isbirdstrike=dataset=='birdstrikes')
+
+
 
 
 
