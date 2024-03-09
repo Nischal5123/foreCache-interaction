@@ -148,7 +148,7 @@ class InteractionProcessor:
         bookmarked_vglstr_strings = self.get_final_bookmark_vglstr(csv_filename)
         print('User:', csv_filename, 'Total charts bookmarked:', len(bookmarked_vglstr_strings))
 
-        if task in ['p3','p4']:
+        if task in ['p3', 'p4']:
             for bookmark_string in bookmarked_vglstr_strings:
                 for field in self.fieldnames:
                     if field in bookmark_string:
@@ -404,7 +404,7 @@ def global_create_master_file(processed_interactions_path,master_data_path,csvfi
         if isbirdstrike:
             master_csv_filename = task + '-combined-interactions-birdstrike.csv'
         else:
-            master_csv_filename = task +'-combined-interactions.csv'
+            master_csv_filename = task +'-combined-interactions-movies.csv'
         dfs = []  # List to store individual DataFrames
 
         for csv_filename in csvfiles:
@@ -453,7 +453,7 @@ def convert_string_action_to_int(action):
 def create_underlying_data():
     # Define the attributes and actions
     attributes = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
-    actions = [0,1,2,3]
+    actions = [0, 1, 2, 3]
 
     # Generate all combinations of attributes and actions
     total_state = set()
@@ -467,16 +467,16 @@ def create_underlying_data():
     with open('./data/zheng/combinations.csv', 'w', newline='') as csv_file:
         writer = csv.writer(csv_file)
         # Write the header row
-        writer.writerow(['id', 'attribute1', 'attribute2', 'attribute3', 'action'])
+        writer.writerow(['id', 'attribute1'])
 
         # Initialize an ID counter
         id_counter = 0
 
         # Write all combinations of sorted states and actions to the CSV file. Order doesnt matter
         for state in total_state:
-            for action in actions:
+            # for action in actions:
                 id_counter += 1
-                writer.writerow([id_counter] + list(state) + [action])
+                writer.writerow([id_counter] + [list(state)] )
     print("Underlying data created")
 
 def get_interaction_id(search_entry):
@@ -491,9 +491,9 @@ def get_interaction_id(search_entry):
 
         # Iterate through the rows
         for row in reader:
-            row_values = row[1:]  # Exclude the 'id' column
-            row_values = [int(x) for x in row_values]
-            if row_values == search_entry_list:
+            row_values = row[1:][0]  # Exclude the 'id' column
+            #row_values = [int(x) for x in row_values]
+            if row_values == str(search_entry_list):
                 found_id = row[0]
                 return found_id
 
@@ -522,34 +522,34 @@ if __name__ == '__main__':
     user_interactions_path = './data/zheng/processed_csv/'
     csv_files = os.listdir(user_interactions_path)
     current_csv_files=[]
-#     for csv_filename in csv_files:
-#         end=task+'_logs.csv'
-#         if csv_filename.endswith(end):
-#             current_csv_files.append(csv_filename)
-#             global_remove_invalid_rows(user_interactions_path, csv_filename)
-#
-#
-#     # average_bookmarked_charts = get_average_bookmarked_charts(current_csv_files)
-#     # print('For Task',task,'Average bookmarked charts:', average_bookmarked_charts)
-#
-#     important_attrs = global_get_base_reward(csv_files,user_interactions_path,task)
-#     print('Important attributes:', important_attrs, 'for task:', task, 'length:', len(important_attrs))
-#
-#     processed_interactions_path = './data/zheng/processed_interactions_'+task
-#     master_data_path ='./data/zheng/'
-#
-#
-#
-#     for csv_filename in current_csv_files:
-#         end = task + '_logs.csv'
-#         if csv_filename.endswith(end):
-#              interaction_processor = InteractionProcessor(user_interactions_path, processed_interactions_path, master_data_path,important_attrs.copy())
-#              interaction_processor.user_specific_reward(task,csv_filename)
-#              interaction_processor.process_interaction_logs(csv_filename)
-#              interaction_processor.process_actions(csv_filename)
-#
-#     global_create_master_file(processed_interactions_path,master_data_path,current_csv_files,task,isbirdstrike=dataset=='birdstrikes')
-#
+    for csv_filename in csv_files:
+        end=task+'_logs.csv'
+        if csv_filename.endswith(end):
+            current_csv_files.append(csv_filename)
+            global_remove_invalid_rows(user_interactions_path, csv_filename)
+
+
+    # average_bookmarked_charts = get_average_bookmarked_charts(current_csv_files)
+    # print('For Task',task,'Average bookmarked charts:', average_bookmarked_charts)
+
+    important_attrs = global_get_base_reward(csv_files,user_interactions_path,task)
+    print('Important attributes:', important_attrs, 'for task:', task, 'length:', len(important_attrs))
+
+    processed_interactions_path = './data/zheng/processed_interactions_'+task
+    master_data_path ='./data/zheng/'
+
+
+
+    for csv_filename in current_csv_files:
+        end = task + '_logs.csv'
+        if csv_filename.endswith(end):
+             interaction_processor = InteractionProcessor(user_interactions_path, processed_interactions_path, master_data_path,important_attrs.copy())
+             interaction_processor.user_specific_reward(task,csv_filename)
+             interaction_processor.process_interaction_logs(csv_filename)
+             interaction_processor.process_actions(csv_filename)
+
+    global_create_master_file(processed_interactions_path,master_data_path,current_csv_files,task,isbirdstrike=dataset=='birdstrikes')
+
 
     combined_user_interactions = pd.DataFrame(columns=['user', 'interaction_session'])
     processed_interactions_path = './data/zheng/processed_interactions_' + task
@@ -561,7 +561,8 @@ if __name__ == '__main__':
             interactions = []
             print('Total size of interaction log', len(user_data))
             for index, row in user_data.iterrows():
-                value = ast.literal_eval(row['State']) + [convert_string_action_to_int(row['Action'])]
+                value = ast.literal_eval(row['State'])
+                #+ [convert_string_action_to_int(row['Action'])]
                 match_to_dataset = int(get_interaction_id(value))
                 interactions.append(match_to_dataset)
             print(csv_filename, len(interactions))

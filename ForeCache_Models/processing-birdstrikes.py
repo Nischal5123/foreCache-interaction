@@ -457,7 +457,7 @@ def global_create_master_file(processed_interactions_path,master_data_path,csvfi
         master_df.to_csv(master_csv_path, index=False)
 
 if __name__ == '__main__':
-    task = 'p2'
+    task = 'p4'
     dataset= 'birdstrikes'
     user_interactions_path = './data/zheng/birdstrikes_processed_csv/'
     csv_files = os.listdir(user_interactions_path)

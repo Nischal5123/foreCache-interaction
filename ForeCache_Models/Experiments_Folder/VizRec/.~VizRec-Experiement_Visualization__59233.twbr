@@ -3,13 +3,18 @@
 <!-- build 20231.23.0806.1229                               -->
 <workbook original-version='18.1' source-build='2023.1.5 (20231.23.0806.1229)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
   <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
     <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
     <_.fcp.MarkAnimation.true...MarkAnimation />
     <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
     <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
     <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
     <SheetIdentifierTracking />
+    <SortTagCleanup />
     <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
   </document-format-change-manifest>
   <preferences>
     <preference name='ui.encoding.shelf.height' value='24' />
@@ -512,28 +517,34 @@
         <style-rule element='mark'>
           <encoding attr='color' field='[none:Algorithm (all_experiments_Movies.csv):nk]' type='palette'>
             <map to='#4e79a7'>
-              <bucket>&quot;Greedy&quot;</bucket>
+              <bucket>&quot;ActorCritic&quot;</bucket>
             </map>
             <map to='#59a14f'>
-              <bucket>&quot;Reinforce&quot;</bucket>
-            </map>
-            <map to='#76b7b2'>
               <bucket>&quot;Random&quot;</bucket>
             </map>
-            <map to='#b07aa1'>
-              <bucket>&quot;WSLS&quot;</bucket>
-            </map>
-            <map to='#e15759'>
+            <map to='#76b7b2'>
               <bucket>&quot;QLearn&quot;</bucket>
             </map>
-            <map to='#edc948'>
-              <bucket>&quot;SARSA&quot;</bucket>
+            <map to='#9c755f'>
+              <bucket>&quot;HMM&quot;</bucket>
             </map>
-            <map to='#f28e2b'>
+            <map to='#a0cbe8'>
               <bucket>&quot;Naive&quot;</bucket>
             </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;SARSA&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Momentum&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Reinforce&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Greedy&quot;</bucket>
+            </map>
             <map to='#ff9da7'>
-              <bucket>&quot;ActorCritic&quot;</bucket>
+              <bucket>&quot;WSLS&quot;</bucket>
             </map>
           </encoding>
           <encoding attr='color' field='[none:Algorithm:nk]' type='palette'>
@@ -546,8 +557,14 @@
             <map to='#76b7b2'>
               <bucket>&quot;QLearn&quot;</bucket>
             </map>
+            <map to='#9c755f'>
+              <bucket>&quot;HMM&quot;</bucket>
+            </map>
             <map to='#b07aa1'>
               <bucket>&quot;SARSA&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Momentum&quot;</bucket>
             </map>
             <map to='#e15759'>
               <bucket>&quot;Naive&quot;</bucket>
@@ -636,13 +653,25 @@
             <column caption='AVG([Accuracy])*100' datatype='real' name='[Calculation_4584383005139959809]' role='measure' type='quantitative' user:unnamed='BirdStrikes'>
               <calculation class='tableau' formula='AVG([Accuracy])*100' />
             </column>
-            <column datatype='string' name='[Task]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Openended]' role='dimension' type='nominal' />
             <column aggregation='Sum' caption='Threshold1' datatype='real' name='[Threshold]' role='dimension' type='ordinal' />
             <column-instance column='[Algorithm]' derivation='None' name='[none:Algorithm:nk]' pivot='key' type='nominal' />
-            <column-instance column='[Task]' derivation='None' name='[none:Task:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Openended]' derivation='None' name='[none:Openended:nk]' pivot='key' type='nominal' />
             <column-instance column='[Threshold]' derivation='None' name='[none:Threshold:qk]' pivot='key' type='quantitative' />
             <column-instance column='[Calculation_4584383005139959809]' derivation='User' name='[usr:Calculation_4584383005139959809:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
+          <filter class='categorical' column='[federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Algorithm:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Algorithm:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:Algorithm:nk]' member='&quot;HMM&quot;' />
+                <groupfilter function='member' level='[none:Algorithm:nk]' member='&quot;Naive&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Algorithm:nk]</column>
+          </slices>
           <aggregation value='true' />
         </view>
         <style>
@@ -677,9 +706,221 @@
           </pane>
         </panes>
         <rows>[federated.0dg10dl15c94fc19cu6uw1hq0os5].[usr:Calculation_4584383005139959809:qk]</rows>
-        <cols>([federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Task:nk] * [federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Threshold:qk])</cols>
+        <cols>([federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Openended:nk] * [federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Threshold:qk])</cols>
       </table>
       <simple-id uuid='{F88579BA-9760-4B23-A4DC-05CCA48A1276}' />
+    </worksheet>
+    <worksheet name='BirdStrikes (2)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>BirdStrikes</run>
+            <run>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='viz-rec-experiments-master' name='federated.0dg10dl15c94fc19cu6uw1hq0os5' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0dg10dl15c94fc19cu6uw1hq0os5'>
+            <column aggregation='Sum' datatype='real' name='[Accuracy]' role='dimension' type='ordinal' />
+            <column caption='Algorithm1' datatype='string' name='[Algorithm]' role='dimension' type='nominal' />
+            <column caption='AVG([Accuracy])*100' datatype='real' name='[Calculation_4584383005139959809]' role='measure' type='quantitative' user:unnamed='BirdStrikes'>
+              <calculation class='tableau' formula='AVG([Accuracy])*100' />
+            </column>
+            <column datatype='string' name='[Task]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Threshold1' datatype='real' name='[Threshold]' role='dimension' type='ordinal' />
+            <column-instance column='[Algorithm]' derivation='None' name='[none:Algorithm:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Task]' derivation='None' name='[none:Task:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Threshold]' derivation='None' name='[none:Threshold:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Threshold]' derivation='None' name='[none:Threshold:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_4584383005139959809]' derivation='User' name='[usr:Calculation_4584383005139959809:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Algorithm:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Algorithm:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:Algorithm:nk]' member='&quot;HMM&quot;' />
+                <groupfilter function='member' level='[none:Algorithm:nk]' member='&quot;Naive&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Threshold:ok]'>
+            <groupfilter from='0.050000000000000003' function='range' level='[none:Threshold:ok]' to='0.80000000000000004' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Algorithm:nk]</column>
+            <column>[federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Threshold:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Threshold:qk]' scope='cols' value='' />
+            <encoding attr='space' class='0' field='[federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Threshold:qk]' field-type='quantitative' major-origin='0.0' major-show='false' major-spacing='0.10000000000000001' scope='cols' type='space' />
+            <format attr='title' class='0' field='[federated.0dg10dl15c94fc19cu6uw1hq0os5].[usr:Calculation_4584383005139959809:qk]' scope='rows' value='Average Accuracy' />
+            <format attr='height' field='[federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Threshold:qk]' value='21' />
+            <encoding attr='space' class='0' field='[federated.0dg10dl15c94fc19cu6uw1hq0os5].[usr:Calculation_4584383005139959809:qk]' field-type='quantitative' max='80.0' min='20.0' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.0dg10dl15c94fc19cu6uw1hq0os5].[usr:Calculation_4584383005139959809:qk]' value='#000000' />
+            <format attr='font-weight' field='[federated.0dg10dl15c94fc19cu6uw1hq0os5].[usr:Calculation_4584383005139959809:qk]' value='bold' />
+            <format attr='font-family' field='[federated.0dg10dl15c94fc19cu6uw1hq0os5].[usr:Calculation_4584383005139959809:qk]' value='Tableau Bold' />
+            <format attr='font-size' field='[federated.0dg10dl15c94fc19cu6uw1hq0os5].[usr:Calculation_4584383005139959809:qk]' value='14' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='line-visibility' id='refline0' value='on' />
+            <format attr='line-pattern-only' id='refline0' value='dashed' />
+            <format attr='stroke-size' id='refline0' value='2' />
+            <format attr='stroke-color' id='refline0' value='#0000004b' />
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+            <format attr='font-family' id='refline0' value='Tableau Bold' />
+            <format attr='font-weight' id='refline0' value='bold' />
+            <format attr='color' id='refline0' value='#000000' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='font-weight' value='bold' />
+            <format attr='color' value='#000000' />
+            <format attr='font-family' value='Tableau Bold' />
+            <format attr='font-size' value='13' />
+            <format attr='col-width' field='[federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Algorithm:nk]' value='140' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='font-family' value='Tableau Bold' />
+            <format attr='color' value='#000000' />
+            <format attr='font-weight' value='bold' />
+            <format attr='font-size' value='10' />
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Algorithm:nk]' value='Algorithms' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Algorithm:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0dg10dl15c94fc19cu6uw1hq0os5].[usr:Calculation_4584383005139959809:qk]</rows>
+        <cols>([federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Task:nk] * [federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Threshold:qk])</cols>
+      </table>
+      <simple-id uuid='{9A06B466-964E-4161-A16D-360D3C10A4A1}' />
+    </worksheet>
+    <worksheet name='BirdStrikes (3)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>BirdStrikes</run>
+            <run>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='viz-rec-experiments-master' name='federated.0dg10dl15c94fc19cu6uw1hq0os5' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0dg10dl15c94fc19cu6uw1hq0os5'>
+            <column aggregation='Sum' datatype='real' name='[Accuracy]' role='dimension' type='ordinal' />
+            <column caption='Algorithm1' datatype='string' name='[Algorithm]' role='dimension' type='nominal' />
+            <column caption='AVG([Accuracy])*100' datatype='real' name='[Calculation_4584383005139959809]' role='measure' type='quantitative' user:unnamed='BirdStrikes'>
+              <calculation class='tableau' formula='AVG([Accuracy])*100' />
+            </column>
+            <column datatype='string' name='[Openended]' role='dimension' type='nominal' />
+            <column-instance column='[Algorithm]' derivation='None' name='[none:Algorithm:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Openended]' derivation='None' name='[none:Openended:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_4584383005139959809]' derivation='User' name='[usr:Calculation_4584383005139959809:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Algorithm:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Algorithm:nk]' />
+              <groupfilter function='member' level='[none:Algorithm:nk]' member='&quot;Naive&quot;' />
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Algorithm:nk]' direction='ASC' using='[federated.0dg10dl15c94fc19cu6uw1hq0os5].[usr:Calculation_4584383005139959809:qk]' />
+          <slices>
+            <column>[federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Algorithm:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0dg10dl15c94fc19cu6uw1hq0os5].[usr:Calculation_4584383005139959809:qk]' scope='rows' value='Average Accuracy' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.0dg10dl15c94fc19cu6uw1hq0os5].[usr:Calculation_4584383005139959809:qk]' value='#000000' />
+            <format attr='font-weight' field='[federated.0dg10dl15c94fc19cu6uw1hq0os5].[usr:Calculation_4584383005139959809:qk]' value='bold' />
+            <format attr='font-family' field='[federated.0dg10dl15c94fc19cu6uw1hq0os5].[usr:Calculation_4584383005139959809:qk]' value='Tableau Bold' />
+            <format attr='font-size' field='[federated.0dg10dl15c94fc19cu6uw1hq0os5].[usr:Calculation_4584383005139959809:qk]' value='14' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='line-visibility' id='refline0' value='on' />
+            <format attr='line-pattern-only' id='refline0' value='dashed' />
+            <format attr='stroke-size' id='refline0' value='2' />
+            <format attr='stroke-color' id='refline0' value='#0000004b' />
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+            <format attr='font-family' id='refline0' value='Tableau Bold' />
+            <format attr='font-weight' id='refline0' value='bold' />
+            <format attr='color' id='refline0' value='#000000' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='font-weight' value='bold' />
+            <format attr='color' value='#000000' />
+            <format attr='font-family' value='Tableau Bold' />
+            <format attr='font-size' value='13' />
+            <format attr='col-width' field='[federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Algorithm:nk]' value='140' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='font-family' value='Tableau Bold' />
+            <format attr='color' value='#000000' />
+            <format attr='font-weight' value='bold' />
+            <format attr='font-size' value='10' />
+            <format attr='text-align' value='center' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Algorithm:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0dg10dl15c94fc19cu6uw1hq0os5].[usr:Calculation_4584383005139959809:qk]</rows>
+        <cols>([federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Openended:nk] / [federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Algorithm:nk])</cols>
+      </table>
+      <simple-id uuid='{FD5D6CD6-95A3-4DE8-842B-2E7C8F99F900}' />
     </worksheet>
     <worksheet name='BirdStrikes-RL only'>
       <table>
@@ -703,18 +944,23 @@
             <column caption='AVG([Accuracy])*100' datatype='real' name='[Calculation_4584383005139959809]' role='measure' type='quantitative' user:unnamed='BirdStrikes'>
               <calculation class='tableau' formula='AVG([Accuracy])*100' />
             </column>
-            <column datatype='string' name='[Task]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Openended]' role='dimension' type='nominal' />
             <column aggregation='Sum' caption='Threshold1' datatype='real' name='[Threshold]' role='dimension' type='ordinal' />
             <column-instance column='[Algorithm]' derivation='None' name='[none:Algorithm:nk]' pivot='key' type='nominal' />
-            <column-instance column='[Task]' derivation='None' name='[none:Task:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Openended]' derivation='None' name='[none:Openended:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Threshold]' derivation='None' name='[none:Threshold:ok]' pivot='key' type='ordinal' />
             <column-instance column='[Threshold]' derivation='None' name='[none:Threshold:qk]' pivot='key' type='quantitative' />
             <column-instance column='[Calculation_4584383005139959809]' derivation='User' name='[usr:Calculation_4584383005139959809:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
           <filter class='categorical' column='[federated.0dg10dl15c94fc19cu6uw1hq0os5].[Algorithm1 (RL)]'>
             <groupfilter function='member' level='[Algorithm1 (RL)]' member='&quot;ActorCritic, QLearn, Reinforce and 1 more&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
           </filter>
+          <filter class='categorical' column='[federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Threshold:ok]'>
+            <groupfilter from='0.10000000000000001' function='range' level='[none:Threshold:ok]' to='0.80000000000000004' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
           <slices>
             <column>[federated.0dg10dl15c94fc19cu6uw1hq0os5].[Algorithm1 (RL)]</column>
+            <column>[federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Threshold:ok]</column>
           </slices>
           <aggregation value='true' />
         </view>
@@ -750,7 +996,7 @@
           </pane>
         </panes>
         <rows>[federated.0dg10dl15c94fc19cu6uw1hq0os5].[usr:Calculation_4584383005139959809:qk]</rows>
-        <cols>([federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Task:nk] * [federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Threshold:qk])</cols>
+        <cols>([federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Openended:nk] * [federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Threshold:qk])</cols>
       </table>
       <simple-id uuid='{9DFB6A15-4B3B-4143-A28A-644FFBEB131F}' />
     </worksheet>
@@ -769,22 +1015,13 @@
             <column caption='AVG([Accuracy (all experiments Movies.csv)])*100' datatype='real' name='[Calculation_4584383005140230146]' role='measure' type='quantitative' user:unnamed='Movies'>
               <calculation class='tableau' formula='AVG([Accuracy (all_experiments_Movies.csv)])*100' />
             </column>
-            <column caption='Task (all experiments Movies.csv)' datatype='string' name='[Task (all_experiments_Movies.csv)]' role='dimension' type='nominal' />
+            <column caption='Openended (all experiments Movies.csv)' datatype='string' name='[Openended (all_experiments_Movies.csv)]' role='dimension' type='nominal' />
             <column aggregation='Sum' caption='Threshold (all experiments Movies.csv)' datatype='real' name='[Threshold (all_experiments_Movies.csv)]' role='dimension' type='ordinal' />
             <column-instance column='[Algorithm (all_experiments_Movies.csv)]' derivation='None' name='[none:Algorithm (all_experiments_Movies.csv):nk]' pivot='key' type='nominal' />
             <column-instance column='[Calculation_4584383005138182144]' derivation='None' name='[none:Calculation_4584383005138182144:qk]' pivot='key' type='quantitative' />
-            <column-instance column='[Task (all_experiments_Movies.csv)]' derivation='None' name='[none:Task (all_experiments_Movies.csv):nk]' pivot='key' type='nominal' />
+            <column-instance column='[Openended (all_experiments_Movies.csv)]' derivation='None' name='[none:Openended (all_experiments_Movies.csv):nk]' pivot='key' type='nominal' />
             <column-instance column='[Calculation_4584383005140230146]' derivation='User' name='[usr:Calculation_4584383005140230146:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
-          <filter class='categorical' column='[federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Algorithm (all_experiments_Movies.csv):nk]'>
-            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
-              <groupfilter function='level-members' level='[none:Algorithm (all_experiments_Movies.csv):nk]' />
-              <groupfilter function='member' level='[none:Algorithm (all_experiments_Movies.csv):nk]' member='&quot;Naive&quot;' />
-            </groupfilter>
-          </filter>
-          <slices>
-            <column>[federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Algorithm (all_experiments_Movies.csv):nk]</column>
-          </slices>
           <aggregation value='true' />
         </view>
         <style>
@@ -819,9 +1056,198 @@
           </pane>
         </panes>
         <rows>[federated.0dg10dl15c94fc19cu6uw1hq0os5].[usr:Calculation_4584383005140230146:qk]</rows>
-        <cols>([federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Task (all_experiments_Movies.csv):nk] * [federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Calculation_4584383005138182144:qk])</cols>
+        <cols>([federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Openended (all_experiments_Movies.csv):nk] * [federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Calculation_4584383005138182144:qk])</cols>
       </table>
       <simple-id uuid='{C777495C-07A9-4FB5-A040-969605B4E5EB}' />
+    </worksheet>
+    <worksheet name='Movies (2)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Movies</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='viz-rec-experiments-master' name='federated.0dg10dl15c94fc19cu6uw1hq0os5' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0dg10dl15c94fc19cu6uw1hq0os5'>
+            <column caption='Accuracy (all experiments Movies.csv)' datatype='real' name='[Accuracy (all_experiments_Movies.csv)]' role='measure' type='quantitative' />
+            <column caption='Algorithm (all experiments Movies.csv)' datatype='string' name='[Algorithm (all_experiments_Movies.csv)]' role='dimension' type='nominal' />
+            <column caption='[Threshold (all experiments Movies.csv)]*100' datatype='real' name='[Calculation_4584383005138182144]' role='measure' type='quantitative' user:unnamed='P1-Movies'>
+              <calculation class='tableau' formula='[Threshold (all_experiments_Movies.csv)]*100' />
+            </column>
+            <column caption='AVG([Accuracy (all experiments Movies.csv)])*100' datatype='real' name='[Calculation_4584383005140230146]' role='measure' type='quantitative' user:unnamed='Movies'>
+              <calculation class='tableau' formula='AVG([Accuracy (all_experiments_Movies.csv)])*100' />
+            </column>
+            <column caption='Openended (all experiments Movies.csv)' datatype='string' name='[Openended (all_experiments_Movies.csv)]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Threshold (all experiments Movies.csv)' datatype='real' name='[Threshold (all_experiments_Movies.csv)]' role='dimension' type='ordinal' />
+            <column-instance column='[Algorithm (all_experiments_Movies.csv)]' derivation='None' name='[none:Algorithm (all_experiments_Movies.csv):nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_4584383005138182144]' derivation='None' name='[none:Calculation_4584383005138182144:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Openended (all_experiments_Movies.csv)]' derivation='None' name='[none:Openended (all_experiments_Movies.csv):nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_4584383005140230146]' derivation='User' name='[usr:Calculation_4584383005140230146:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Algorithm (all_experiments_Movies.csv):nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Algorithm (all_experiments_Movies.csv):nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:Algorithm (all_experiments_Movies.csv):nk]' member='&quot;HMM&quot;' />
+                <groupfilter function='member' level='[none:Algorithm (all_experiments_Movies.csv):nk]' member='&quot;Naive&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Algorithm (all_experiments_Movies.csv):nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Calculation_4584383005138182144:qk]' scope='cols' value='Threshold' />
+            <format attr='title' class='0' field='[federated.0dg10dl15c94fc19cu6uw1hq0os5].[usr:Calculation_4584383005140230146:qk]' scope='rows' value='Average Accuracy' />
+            <encoding attr='space' class='0' field='[federated.0dg10dl15c94fc19cu6uw1hq0os5].[usr:Calculation_4584383005140230146:qk]' field-type='quantitative' max='80.0' min='20.0' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-family' field='[federated.0dg10dl15c94fc19cu6uw1hq0os5].[usr:Calculation_4584383005140230146:qk]' value='Tableau Bold' />
+            <format attr='font-weight' field='[federated.0dg10dl15c94fc19cu6uw1hq0os5].[usr:Calculation_4584383005140230146:qk]' value='bold' />
+            <format attr='color' field='[federated.0dg10dl15c94fc19cu6uw1hq0os5].[usr:Calculation_4584383005140230146:qk]' value='#000000' />
+            <format attr='font-size' field='[federated.0dg10dl15c94fc19cu6uw1hq0os5].[usr:Calculation_4584383005140230146:qk]' value='15' />
+            <format attr='font-size' field='[federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Calculation_4584383005138182144:qk]' value='11' />
+            <format attr='color' field='[federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Calculation_4584383005138182144:qk]' value='#000000' />
+            <format attr='font-weight' field='[federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Calculation_4584383005138182144:qk]' value='bold' />
+            <format attr='font-family' field='[federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Calculation_4584383005138182144:qk]' value='Tableau Bold' />
+            <format attr='display' field='[federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Openended (all_experiments_Movies.csv):nk]' value='false' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline1' value='#00000000' />
+            <format attr='fill-below' id='refline1' value='#00000000' />
+            <format attr='font-family' id='refline0' value='Tableau Bold' />
+            <format attr='font-weight' id='refline0' value='bold' />
+            <format attr='color' id='refline0' value='#000000' />
+            <format attr='line-visibility' id='refline0' value='on' />
+            <format attr='line-pattern-only' id='refline0' value='dashed' />
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Algorithm (all_experiments_Movies.csv):nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0dg10dl15c94fc19cu6uw1hq0os5].[usr:Calculation_4584383005140230146:qk]</rows>
+        <cols>([federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Openended (all_experiments_Movies.csv):nk] * [federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Calculation_4584383005138182144:qk])</cols>
+      </table>
+      <simple-id uuid='{0902A736-ABFB-4E0D-ABB9-2A8BDF846D1B}' />
+    </worksheet>
+    <worksheet name='Movies (3)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Movies</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='viz-rec-experiments-master' name='federated.0dg10dl15c94fc19cu6uw1hq0os5' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0dg10dl15c94fc19cu6uw1hq0os5'>
+            <column caption='Accuracy (all experiments Movies.csv)' datatype='real' name='[Accuracy (all_experiments_Movies.csv)]' role='measure' type='quantitative' />
+            <column caption='Algorithm (all experiments Movies.csv)' datatype='string' name='[Algorithm (all_experiments_Movies.csv)]' role='dimension' type='nominal' />
+            <column caption='AVG([Accuracy (all experiments Movies.csv)])*100' datatype='real' name='[Calculation_4584383005140230146]' role='measure' type='quantitative' user:unnamed='Movies'>
+              <calculation class='tableau' formula='AVG([Accuracy (all_experiments_Movies.csv)])*100' />
+            </column>
+            <column caption='Openended (all experiments Movies.csv)' datatype='string' name='[Openended (all_experiments_Movies.csv)]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Threshold (all experiments Movies.csv)' datatype='real' name='[Threshold (all_experiments_Movies.csv)]' role='dimension' type='ordinal' />
+            <column-instance column='[Algorithm (all_experiments_Movies.csv)]' derivation='None' name='[none:Algorithm (all_experiments_Movies.csv):nk]' pivot='key' type='nominal' />
+            <column-instance column='[Openended (all_experiments_Movies.csv)]' derivation='None' name='[none:Openended (all_experiments_Movies.csv):nk]' pivot='key' type='nominal' />
+            <column-instance column='[Threshold (all_experiments_Movies.csv)]' derivation='None' name='[none:Threshold (all_experiments_Movies.csv):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_4584383005140230146]' derivation='User' name='[usr:Calculation_4584383005140230146:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Algorithm (all_experiments_Movies.csv):nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Algorithm (all_experiments_Movies.csv):nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:Algorithm (all_experiments_Movies.csv):nk]' member='&quot;HMM&quot;' />
+                <groupfilter function='member' level='[none:Algorithm (all_experiments_Movies.csv):nk]' member='&quot;Naive&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Threshold (all_experiments_Movies.csv):ok]'>
+            <groupfilter from='0.10000000000000001' function='range' level='[none:Threshold (all_experiments_Movies.csv):ok]' to='0.80000000000000004' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Algorithm (all_experiments_Movies.csv):nk]</column>
+            <column>[federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Threshold (all_experiments_Movies.csv):ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0dg10dl15c94fc19cu6uw1hq0os5].[usr:Calculation_4584383005140230146:qk]' scope='rows' value='Average Accuracy' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-family' field='[federated.0dg10dl15c94fc19cu6uw1hq0os5].[usr:Calculation_4584383005140230146:qk]' value='Tableau Bold' />
+            <format attr='font-weight' field='[federated.0dg10dl15c94fc19cu6uw1hq0os5].[usr:Calculation_4584383005140230146:qk]' value='bold' />
+            <format attr='color' field='[federated.0dg10dl15c94fc19cu6uw1hq0os5].[usr:Calculation_4584383005140230146:qk]' value='#000000' />
+            <format attr='font-size' field='[federated.0dg10dl15c94fc19cu6uw1hq0os5].[usr:Calculation_4584383005140230146:qk]' value='15' />
+            <format attr='display' field='[federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Openended (all_experiments_Movies.csv):nk]' value='false' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline1' value='#00000000' />
+            <format attr='fill-below' id='refline1' value='#00000000' />
+            <format attr='font-family' id='refline0' value='Tableau Bold' />
+            <format attr='font-weight' id='refline0' value='bold' />
+            <format attr='color' id='refline0' value='#000000' />
+            <format attr='line-visibility' id='refline0' value='on' />
+            <format attr='line-pattern-only' id='refline0' value='dashed' />
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Algorithm (all_experiments_Movies.csv):nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0dg10dl15c94fc19cu6uw1hq0os5].[usr:Calculation_4584383005140230146:qk]</rows>
+        <cols>([federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Openended (all_experiments_Movies.csv):nk] / [federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Algorithm (all_experiments_Movies.csv):nk])</cols>
+      </table>
+      <simple-id uuid='{A845A052-885C-4E16-BB05-18AE515D3633}' />
     </worksheet>
     <worksheet name='Movies-RL only'>
       <table>
@@ -838,6 +1264,7 @@
             <column caption='AVG([Accuracy (all experiments Movies.csv)])*100' datatype='real' name='[Calculation_4584383005140230146]' role='measure' type='quantitative' user:unnamed='Movies'>
               <calculation class='tableau' formula='AVG([Accuracy (all_experiments_Movies.csv)])*100' />
             </column>
+            <column caption='Openended (all experiments Movies.csv)' datatype='string' name='[Openended (all_experiments_Movies.csv)]' role='dimension' type='nominal' />
             <column datatype='string' name='[RL Algorithm (all experiments Movies.csv) ]' role='dimension' type='nominal'>
               <calculation class='categorical-bin' column='[Algorithm (all_experiments_Movies.csv)]' new-bin='true'>
                 <bin default-name='true' value='&quot;QLearn, Reinforce, SARSA&quot;'>
@@ -847,11 +1274,11 @@
                 </bin>
               </calculation>
             </column>
-            <column caption='Task (all experiments Movies.csv)' datatype='string' name='[Task (all_experiments_Movies.csv)]' role='dimension' type='nominal' />
             <column aggregation='Sum' caption='Threshold (all experiments Movies.csv)' datatype='real' name='[Threshold (all_experiments_Movies.csv)]' role='dimension' type='ordinal' />
             <column-instance column='[Algorithm (all_experiments_Movies.csv)]' derivation='None' name='[none:Algorithm (all_experiments_Movies.csv):nk]' pivot='key' type='nominal' />
             <column-instance column='[Calculation_4584383005138182144]' derivation='None' name='[none:Calculation_4584383005138182144:qk]' pivot='key' type='quantitative' />
-            <column-instance column='[Task (all_experiments_Movies.csv)]' derivation='None' name='[none:Task (all_experiments_Movies.csv):nk]' pivot='key' type='nominal' />
+            <column-instance column='[Openended (all_experiments_Movies.csv)]' derivation='None' name='[none:Openended (all_experiments_Movies.csv):nk]' pivot='key' type='nominal' />
+            <column-instance column='[Threshold (all_experiments_Movies.csv)]' derivation='None' name='[none:Threshold (all_experiments_Movies.csv):ok]' pivot='key' type='ordinal' />
             <column-instance column='[Calculation_4584383005140230146]' derivation='User' name='[usr:Calculation_4584383005140230146:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
           <filter class='categorical' column='[federated.0dg10dl15c94fc19cu6uw1hq0os5].[RL Algorithm (all experiments Movies.csv) ]'>
@@ -860,8 +1287,12 @@
               <groupfilter function='member' level='[RL Algorithm (all experiments Movies.csv) ]' member='&quot;QLearn, Reinforce, SARSA&quot;' />
             </groupfilter>
           </filter>
+          <filter class='categorical' column='[federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Threshold (all_experiments_Movies.csv):ok]'>
+            <groupfilter from='0.10000000000000001' function='range' level='[none:Threshold (all_experiments_Movies.csv):ok]' to='0.80000000000000004' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
           <slices>
             <column>[federated.0dg10dl15c94fc19cu6uw1hq0os5].[RL Algorithm (all experiments Movies.csv) ]</column>
+            <column>[federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Threshold (all_experiments_Movies.csv):ok]</column>
           </slices>
           <aggregation value='true' />
         </view>
@@ -897,13 +1328,199 @@
           </pane>
         </panes>
         <rows>[federated.0dg10dl15c94fc19cu6uw1hq0os5].[usr:Calculation_4584383005140230146:qk]</rows>
-        <cols>([federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Task (all_experiments_Movies.csv):nk] * [federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Calculation_4584383005138182144:qk])</cols>
+        <cols>([federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Openended (all_experiments_Movies.csv):nk] * [federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Calculation_4584383005138182144:qk])</cols>
       </table>
       <simple-id uuid='{89066191-3BB5-443B-9C9E-1E2CB5497055}' />
     </worksheet>
   </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style>
+        <style-rule element='dash-title'>
+          <format attr='font-family' value='Tableau Bold' />
+          <format attr='color' value='#000000' />
+          <format attr='font-weight' value='bold' />
+          <format attr='text-align' value='center' />
+        </style-rule>
+        <style-rule element='dash-subtitle'>
+          <format attr='font-family' value='Tableau Bold' />
+          <format attr='color' value='#000000' />
+          <format attr='font-size' value='18' />
+        </style-rule>
+      </style>
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='7' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='5' type-v2='layout-basic' w='98400' x='800' y='1000'>
+              <zone h='47625' id='3' name='BirdStrikes (2)' w='98400' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='50375' id='9' name='Movies (2)' w='98400' x='800' y='48625'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='5250' id='8' leg-item-layout='horz' name='BirdStrikes (2)' pane-specification-id='0' param='[federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Algorithm:nk]' show-title='false' type-v2='color' w='102100' x='7900' y='46000' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='14' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='13' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='47625' id='3' is-fixed='true' name='BirdStrikes (2)' w='98400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5250' id='8' leg-item-layout='horz' name='BirdStrikes (2)' pane-specification-id='0' param='[federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Algorithm:nk]' show-title='false' type-v2='color' w='102100' x='7900' y='46000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='50375' id='9' is-fixed='true' name='Movies (2)' w='98400' x='800' y='48625'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{C4625FCD-92EB-4AAC-BEE8-11B36CA02DB7}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1 (2)'>
+      <style>
+        <style-rule element='dash-title'>
+          <format attr='font-family' value='Tableau Bold' />
+          <format attr='color' value='#000000' />
+          <format attr='font-weight' value='bold' />
+          <format attr='text-align' value='center' />
+        </style-rule>
+        <style-rule element='dash-subtitle'>
+          <format attr='font-family' value='Tableau Bold' />
+          <format attr='color' value='#000000' />
+          <format attr='font-size' value='18' />
+        </style-rule>
+      </style>
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='7' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='5' type-v2='layout-basic' w='98400' x='800' y='1000'>
+              <zone h='47625' id='3' name='BirdStrikes (2)' w='98400' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='50375' id='9' name='Movies (2)' w='98400' x='800' y='48625'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='5250' id='8' leg-item-layout='horz' name='BirdStrikes (2)' pane-specification-id='0' param='[federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Algorithm:nk]' show-title='false' type-v2='color' w='102100' x='7900' y='46000' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='14' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='13' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='47625' id='3' is-fixed='true' name='BirdStrikes (2)' w='98400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5250' id='8' leg-item-layout='horz' name='BirdStrikes (2)' pane-specification-id='0' param='[federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Algorithm:nk]' show-title='false' type-v2='color' w='102100' x='7900' y='46000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='50375' id='9' is-fixed='true' name='Movies (2)' w='98400' x='800' y='48625'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{384F5C89-999D-4BAC-978C-DD16F27C3DA9}' />
+    </dashboard>
+  </dashboards>
   <windows source-height='30'>
-    <window class='worksheet' maximized='true' name='BirdStrikes'>
+    <window class='worksheet' name='BirdStrikes'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -930,6 +1547,62 @@
         </edge>
       </cards>
       <simple-id uuid='{327309B0-6437-4364-A3E6-7CC4D8D5E26A}' />
+    </window>
+    <window class='worksheet' name='BirdStrikes (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Algorithm:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B91D930E-056B-46F9-8A5A-0DAD691C240C}' />
+    </window>
+    <window class='worksheet' name='BirdStrikes (3)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Algorithm:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5356AE45-662F-495A-9EEC-BE40AE8A4703}' />
     </window>
     <window class='worksheet' name='BirdStrikes-RL only'>
       <cards>
@@ -987,6 +1660,62 @@
       </cards>
       <simple-id uuid='{581B526E-89A3-41AD-B7E1-2F1639A20EA2}' />
     </window>
+    <window class='worksheet' maximized='true' name='Movies (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Algorithm (all_experiments_Movies.csv):nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{83BA95AA-274B-4EEA-A223-2EDF6BBB4810}' />
+    </window>
+    <window class='worksheet' name='Movies (3)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Algorithm (all_experiments_Movies.csv):nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{21030763-507D-4355-8D1D-0DD47FBFD426}' />
+    </window>
     <window class='worksheet' name='Movies-RL only'>
       <cards>
         <edge name='left'>
@@ -1014,6 +1743,30 @@
         </edge>
       </cards>
       <simple-id uuid='{279F8BD1-6834-4211-A65E-9E7B3F6F13A3}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='BirdStrikes (2)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Movies (2)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{8CC82BF3-CBFA-47BD-A4C8-6C93E3DBD9CD}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1 (2)'>
+      <viewpoints>
+        <viewpoint name='BirdStrikes (2)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Movies (2)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{ABFDF82B-D37F-4443-AAAA-BE91B9DC55AC}' />
     </window>
   </windows>
 </workbook>

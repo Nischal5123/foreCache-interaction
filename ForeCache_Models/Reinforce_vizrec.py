@@ -13,12 +13,17 @@ import concurrent.futures
 eps=1e-35
 class Policy(nn.Module):
 
-    def __init__(self,learning_rate,gamma,tau):
+    def __init__(self,learning_rate,gamma,tau,dataset):
         super(Policy, self).__init__()
         self.data = []
+        if dataset=='birdstrikes':
+            self.total_length=14
+        else:
+            self.total_length=16
 
-        self.fc1 = nn.Linear(3, 256)
-        self.fc2 = nn.Linear(256, 4)
+
+        self.fc1 = nn.Linear(self.total_length, 128)
+        self.fc2 = nn.Linear(128, 4)
         self.gamma=gamma
         self.temperature = tau
         self.optimizer = optim.Adam(self.parameters(), lr=learning_rate)
@@ -44,18 +49,33 @@ class Policy(nn.Module):
 
 
 class Reinforce():
-    def __init__(self,env,learning_rate,gamma,tau):
+    def __init__(self,env,learning_rate,gamma,tau,dataset):
         self.env = env
+        if dataset == 'birdstrikes':
+            self.total_length = 14
+        else:
+            self.total_length = 16
         self.learning_rate, self.gamma, self.temperature = learning_rate, gamma, tau
-        self.pi = Policy(self.learning_rate, self.gamma,self.temperature)
+        self.pi = Policy(self.learning_rate, self.gamma,self.temperature,dataset)
 
     def convert_idx_state(self, state_idx):
         #state = next((key for key, value in self.state_encoding.items() if np.array_equal(value, state_idx)), None)
-        return str(state_idx)
+        converted_state = np.where(state_idx == 1)[0]
+        return str(converted_state)
 
     def convert_state_idx(self, state):
+
         #state_idx = self.state_encoding[state]
-        return ast.literal_eval(state)
+        state_short=ast.literal_eval(state)
+        # Create a one-hot array
+        one_hot_array = np.zeros(self.total_length)
+
+        # Set the values to 1 at the specified indices
+        for index in state_short:
+            if index < self.total_length:
+                one_hot_array[index] = 1
+
+        return one_hot_array
 
     def train(self):
         score=0.0
@@ -157,7 +177,7 @@ def format_split_accuracy(accuracy_dict):
 
 
 
-def run_experiment_for_user(u, algo, hyperparams):
+def run_experiment_for_user(u, algo, hyperparams,dataset):
     result_dataframe_user = pd.DataFrame(
         columns=['Algorithm', 'User', 'Threshold', 'LearningRate', 'Discount', 'Temperature', 'Accuracy',
                  'StateAccuracy', 'Reward'])
@@ -183,7 +203,7 @@ def run_experiment_for_user(u, algo, hyperparams):
                 for temp in temperatures:
                     env = environment_vizrec.environment_vizrec()
                     env.process_data(u, thres)
-                    agent = Reinforce(env, learning_rate, gamma, temp)
+                    agent = Reinforce(env, learning_rate, gamma, temp, dataset)
                     model, accuracies = agent.train()
 
                     if accuracies > max_accu:
@@ -234,7 +254,7 @@ def run_experiment(user_list, algo, hyperparam_file,dataset,task='p2'):
     y_accu_all = []
 
     with concurrent.futures.ProcessPoolExecutor() as executor:
-        futures = {executor.submit(run_experiment_for_user, u, algo, hyperparams): u for u in user_list}
+        futures = {executor.submit(run_experiment_for_user, u, algo, hyperparams,dataset): u for u in user_list}
 
         for future in concurrent.futures.as_completed(futures):
             user_result_dataframe, user_y_accu = future.result()

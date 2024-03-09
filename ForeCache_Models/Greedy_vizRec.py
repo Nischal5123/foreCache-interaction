@@ -131,8 +131,8 @@ def run_experiment(user_list, algo, hyperparam_file,task,dataset):
 
 
 if __name__ == "__main__":
-    datasets = ['birdstrikes', 'movies']
-    tasks= ['p1', 'p2', 'p3', 'p4']
+    datasets = ['movies']
+    tasks= [ 'p4']
     for dataset in datasets:
         for task in tasks:
             env = environment_vizrec.environment_vizrec()

@@ -26,9 +26,9 @@ class ActorCritic(nn.Module):
         self.temperature = tau
 
         # Neural network architecture
-        self.fc1 = nn.Linear(3, 256)
-        self.fc_pi = nn.Linear(256, 4)#actor
-        self.fc_v = nn.Linear(256, 1)#critic
+        self.fc1 = nn.Linear(3, 128)
+        self.fc_pi = nn.Linear(128, 4)#actor
+        self.fc_v = nn.Linear(128, 1)#critic
 
         # Optimizer
         self.optimizer = optim.Adam(self.parameters(), lr=learning_rate)

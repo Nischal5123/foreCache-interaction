@@ -82,7 +82,7 @@ class TDLearning:
                     break
 
 
-        return Q, np.mean(training_accuracy)
+        return Q, np.nanmean(training_accuracy)
 
 
     def test(self, Q, discount_factor, alpha, epsilon, num_episodes=1):
@@ -123,7 +123,7 @@ class TDLearning:
                 if done:
                     break
 
-        return np.mean(stats),model_actions,split_accuracy, np.mean(reward_accumulated)/np.mean(reward_possible)
+        return np.nanmean(stats),model_actions,split_accuracy, np.nanmean(reward_accumulated)/np.nanmean(reward_possible)
 
 def get_threshold(env, user):
     env.process_data(user, 0)
@@ -237,8 +237,8 @@ def run_experiment(user_list, algo, hyperparam_file,dataset,task):
     result_dataframe.to_csv("Experiments_Folder/VizRec/{}/{}/{}.csv".format(dataset, task, title), index=False)
 
 if __name__ == '__main__':
-    datasets = ['birdstrikes','movies']
-    tasks = ['p1', 'p2', 'p3', 'p4']
+    datasets = ['movies']
+    tasks = [ 'p3','p4']
     for dataset in datasets:
         for task in tasks:
             env = environment_vizrec.environment_vizrec()
