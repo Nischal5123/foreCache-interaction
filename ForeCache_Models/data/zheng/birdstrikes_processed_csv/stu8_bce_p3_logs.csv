@@ -3,15 +3,12 @@ mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Air
 mouseout a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Airport_Name-nominal-y",1602710327906
 mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Airport_Name-nominal-y",1602710327906
 mouseout a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Airport_Name-nominal-y",1602710327923
-clicked on a field,add Cost_Repair,1602710328742
 main chart changed because of clicking a field,mark:tick;encoding:Cost_Repair-quantitative-x,1602710329243
 mouseover on the specified chart,mark:tick;encoding:Cost_Repair-quantitative-x,1602710344139
 mouseout on the specified chart,mark:tick;encoding:Cost_Repair-quantitative-x,1602710344189
 mouseover on the specified chart,mark:tick;encoding:Cost_Repair-quantitative-x,1602710344190
 mouseout on the specified chart,mark:tick;encoding:Cost_Repair-quantitative-x,1602710344722
-clicked on a field,add Effect_Amount_of_damage,1602710348017
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Cost_Repair-quantitative-x<bin>,Effect_Amount_of_damage-nominal-y",1602710348518
-clicked on a field,remove Effect_Amount_of_damage,1602710356080
 main chart changed because of clicking a field,mark:tick;encoding:Cost_Repair-quantitative-x,1602710356261
 mouseover on the specified chart,mark:tick;encoding:Cost_Repair-quantitative-x,1602710370413
 mouseout on the specified chart,mark:tick;encoding:Cost_Repair-quantitative-x,1602710372422
@@ -19,13 +16,11 @@ mouseover a related chart,"mark:tick;encoding:Aircraft_Airline_Operator-nominal-
 mouseout a related chart,"mark:tick;encoding:Aircraft_Airline_Operator-nominal-y,Cost_Repair-quantitative-x",1602710372752
 mouseover on the specified chart,mark:tick;encoding:Cost_Repair-quantitative-x,1602710377471
 mouseout on the specified chart,mark:tick;encoding:Cost_Repair-quantitative-x,1602710377888
-clicked on a field,add Effect_Amount_of_damage,1602710379233
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Cost_Repair-quantitative-x<bin>,Effect_Amount_of_damage-nominal-y",1602710379738
 mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Cost_Repair-quantitative-x<bin>,Effect_Amount_of_damage-nominal-y",1602710395104
 mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Cost_Repair-quantitative-x<bin>,Effect_Amount_of_damage-nominal-y",1602710395120
 mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Cost_Repair-quantitative-x<bin>,Effect_Amount_of_damage-nominal-y",1602710395120
 mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Cost_Repair-quantitative-x<bin>,Effect_Amount_of_damage-nominal-y",1602710396654
-clicked on a field,remove Effect_Amount_of_damage,1602710402616
 main chart changed because of clicking a field,mark:tick;encoding:Cost_Repair-quantitative-x,1602710403118
 mouseover on the specified chart,mark:tick;encoding:Cost_Repair-quantitative-x,1602710425286
 mouseout on the specified chart,mark:tick;encoding:Cost_Repair-quantitative-x,1602710425319
@@ -33,7 +28,6 @@ mouseover on the specified chart,mark:tick;encoding:Cost_Repair-quantitative-x,1
 mouseout on the specified chart,mark:tick;encoding:Cost_Repair-quantitative-x,1602710425987
 mouseover on the specified chart,mark:tick;encoding:Cost_Repair-quantitative-x,1602710426286
 mouseout on the specified chart,mark:tick;encoding:Cost_Repair-quantitative-x,1602710426353
-clicked on a field,add Effect_Amount_of_damage,1602710429411
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Cost_Repair-quantitative-x<bin>,Effect_Amount_of_damage-nominal-y",1602710429912
 mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Cost_Repair-quantitative-x<bin>,Effect_Amount_of_damage-nominal-y",1602710464217
 mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Cost_Repair-quantitative-x<bin>,Effect_Amount_of_damage-nominal-y",1602710464250
@@ -49,9 +43,7 @@ mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggrega
 mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Cost_Repair-quantitative-x<bin>,Effect_Amount_of_damage-nominal-y",1602710471151
 mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Cost_Repair-quantitative-x<bin>,Effect_Amount_of_damage-nominal-y",1602710471152
 mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Cost_Repair-quantitative-x<bin>,Effect_Amount_of_damage-nominal-y",1602710471185
-clicked on a field,add When_Phase_of_flight,1602710474178
 main chart changed because of clicking a field,"mark:point;encoding:Cost_Repair-quantitative-size,Effect_Amount_of_damage-nominal-x,When_Phase_of_flight-nominal-y",1602710474675
-clicked on a field,remove Effect_Amount_of_damage,1602710475466
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Cost_Repair-quantitative-x<bin>,When_Phase_of_flight-nominal-y",1602710475644
 mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Cost_Repair-quantitative-x<bin>,When_Phase_of_flight-nominal-y",1602710505318
 mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Cost_Repair-quantitative-x<bin>,When_Phase_of_flight-nominal-y",1602710505333
@@ -83,9 +75,7 @@ mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggrega
 mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Cost_Repair-quantitative-x<bin>,When_Phase_of_flight-nominal-y",1602710579431
 mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Cost_Repair-quantitative-x<bin>,When_Phase_of_flight-nominal-y",1602710579432
 mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Cost_Repair-quantitative-x<bin>,When_Phase_of_flight-nominal-y",1602710579448
-clicked on a field,remove When_Phase_of_flight,1602710581255
 main chart changed because of clicking a field,mark:tick;encoding:Cost_Repair-quantitative-x,1602710581946
-clicked on a field,add Origin_State,1602710583439
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Cost_Repair-quantitative-x<bin>,Origin_State-nominal-y",1602710583617
 mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Cost_Repair-quantitative-x<bin>,Origin_State-nominal-y",1602710612133
 mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Cost_Repair-quantitative-x<bin>,Origin_State-nominal-y",1602710612147
@@ -163,23 +153,17 @@ mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggrega
 mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Cost_Repair-quantitative-x<bin>,Origin_State-nominal-y",1602710621063
 mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Cost_Repair-quantitative-x<bin>,Origin_State-nominal-y",1602710621064
 mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Cost_Repair-quantitative-x<bin>,Origin_State-nominal-y",1602710621080
-clicked on a field,remove Origin_State,1602710625079
 main chart changed because of clicking a field,mark:tick;encoding:Cost_Repair-quantitative-x,1602710625588
-clicked on a field,add Aircraft_Airline_Operator,1602710626929
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Aircraft_Airline_Operator-nominal-y,Cost_Repair-quantitative-x<bin>",1602710627107
 mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Aircraft_Airline_Operator-nominal-y,Cost_Repair-quantitative-x<bin>",1602710642010
 mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Aircraft_Airline_Operator-nominal-y,Cost_Repair-quantitative-x<bin>",1602710646516
-clicked on a field,remove Aircraft_Airline_Operator,1602710647966
 main chart changed because of clicking a field,mark:tick;encoding:Cost_Repair-quantitative-x,1602710648468
-clicked on a field,add Effect_Amount_of_damage,1602710655408
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Cost_Repair-quantitative-x<bin>,Effect_Amount_of_damage-nominal-y",1602710655587
 mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Cost_Repair-quantitative-x<bin>,Effect_Amount_of_damage-nominal-y",1602710674713
 mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Cost_Repair-quantitative-x<bin>,Effect_Amount_of_damage-nominal-y",1602710674728
 mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Cost_Repair-quantitative-x<bin>,Effect_Amount_of_damage-nominal-y",1602710674728
 mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Cost_Repair-quantitative-x<bin>,Effect_Amount_of_damage-nominal-y",1602710675161
-clicked on a field,add When_Phase_of_flight,1602710678698
 main chart changed because of clicking a field,"mark:point;encoding:Cost_Repair-quantitative-size,Effect_Amount_of_damage-nominal-x,When_Phase_of_flight-nominal-y",1602710679204
-clicked on a field,remove Effect_Amount_of_damage,1602710679961
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Cost_Repair-quantitative-x<bin>,When_Phase_of_flight-nominal-y",1602710680140
 mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Cost_Repair-quantitative-x<bin>,When_Phase_of_flight-nominal-y",1602710685519
 mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Cost_Repair-quantitative-x<bin>,When_Phase_of_flight-nominal-y",1602710691758
@@ -197,9 +181,7 @@ mouseout a related chart,"mark:point;encoding:Aircraft_Airline_Operator-nominal-
 mouseover a related chart,"mark:point;encoding:Aircraft_Airline_Operator-nominal-x,Cost_Repair-quantitative-size,When_Phase_of_flight-nominal-y",1602710757042
 mouseout a related chart,"mark:point;encoding:Aircraft_Airline_Operator-nominal-x,Cost_Repair-quantitative-size,When_Phase_of_flight-nominal-y",1602710757225
 added chart to bookmark,"mark:point;encoding:Aircraft_Airline_Operator-nominal-x,Cost_Repair-quantitative-size,When_Phase_of_flight-nominal-y",1602710758805
-clicked on a field,remove undefined,1602710761313
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Cost_Repair-quantitative-x<bin>,When_Phase_of_flight-nominal-y",1602710761834
-clicked on a field,add Origin_State,1602710773317
 main chart changed because of clicking a field,"mark:point;encoding:Cost_Repair-quantitative-size,Origin_State-nominal-x,When_Phase_of_flight-nominal-y",1602710773810
 mouseover on the specified chart,"mark:point;encoding:Cost_Repair-quantitative-size,Origin_State-nominal-x,When_Phase_of_flight-nominal-y",1602710775136
 mouseout on the specified chart,"mark:point;encoding:Cost_Repair-quantitative-size,Origin_State-nominal-x,When_Phase_of_flight-nominal-y",1602710776621
@@ -216,16 +198,12 @@ mouseover on the specified chart,"mark:point;encoding:Cost_Repair-quantitative-s
 mouseout on the specified chart,"mark:point;encoding:Cost_Repair-quantitative-size,Origin_State-nominal-x,When_Phase_of_flight-nominal-y",1602710786842
 mouseover on the specified chart,"mark:point;encoding:Cost_Repair-quantitative-size,Origin_State-nominal-x,When_Phase_of_flight-nominal-y",1602710786843
 mouseout on the specified chart,"mark:point;encoding:Cost_Repair-quantitative-size,Origin_State-nominal-x,When_Phase_of_flight-nominal-y",1602710786874
-clicked on a field,remove undefined,1602710795096
 main chart changed because of clicking a field,"mark:point;encoding:Cost_Repair-quantitative-size,Origin_State-nominal-x,When_Phase_of_flight-nominal-y",1602710795600
-clicked on a field,"tried to add Effect_Amount_of_damage, but failed because already selected 3 fields",1602710802353
 mouseover on the specified chart,"mark:point;encoding:Cost_Repair-quantitative-size,Origin_State-nominal-x,When_Phase_of_flight-nominal-y",1602710806074
 mouseout on the specified chart,"mark:point;encoding:Cost_Repair-quantitative-size,Origin_State-nominal-x,When_Phase_of_flight-nominal-y",1602710806441
 mouseover on the specified chart,"mark:point;encoding:Cost_Repair-quantitative-size,Origin_State-nominal-x,When_Phase_of_flight-nominal-y",1602710806442
 mouseout on the specified chart,"mark:point;encoding:Cost_Repair-quantitative-size,Origin_State-nominal-x,When_Phase_of_flight-nominal-y",1602710806457
-clicked on a field,remove Origin_State,1602710807794
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Cost_Repair-quantitative-x<bin>,When_Phase_of_flight-nominal-y",1602710808288
-clicked on a field,add Effect_Amount_of_damage,1602710811202
 main chart changed because of clicking a field,"mark:point;encoding:Cost_Repair-quantitative-size,Effect_Amount_of_damage-nominal-x,When_Phase_of_flight-nominal-y",1602710811375
 mouseover a related chart,"mark:tick;encoding:Cost_Repair-quantitative-x,Effect_Amount_of_damage-nominal-y",1602710818804
 mouseout a related chart,"mark:tick;encoding:Cost_Repair-quantitative-x,Effect_Amount_of_damage-nominal-y",1602710821460
@@ -246,9 +224,7 @@ mouseover on the specified chart,"mark:point;encoding:Cost_Repair-quantitative-s
 mouseout on the specified chart,"mark:point;encoding:Cost_Repair-quantitative-size,Effect_Amount_of_damage-nominal-x,When_Phase_of_flight-nominal-y",1602710853855
 mouseover on the specified chart,"mark:point;encoding:Cost_Repair-quantitative-size,Effect_Amount_of_damage-nominal-x,When_Phase_of_flight-nominal-y",1602710853856
 mouseout on the specified chart,"mark:point;encoding:Cost_Repair-quantitative-size,Effect_Amount_of_damage-nominal-x,When_Phase_of_flight-nominal-y",1602710853872
-clicked on a field,remove Effect_Amount_of_damage,1602710860135
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Cost_Repair-quantitative-x<bin>,When_Phase_of_flight-nominal-y",1602710860646
-clicked on a field,add Wildlife_Species,1602710869400
 main chart changed because of clicking a field,"mark:point;encoding:Cost_Repair-quantitative-size,When_Phase_of_flight-nominal-x,Wildlife_Species-nominal-y",1602710869573
 mouseover on the specified chart,"mark:point;encoding:Cost_Repair-quantitative-size,When_Phase_of_flight-nominal-x,Wildlife_Species-nominal-y",1602710876421
 mouseout on the specified chart,"mark:point;encoding:Cost_Repair-quantitative-size,When_Phase_of_flight-nominal-x,Wildlife_Species-nominal-y",1602710876488
@@ -401,12 +377,9 @@ mouseover on the specified chart,"mark:point;encoding:Cost_Repair-quantitative-s
 mouseout on the specified chart,"mark:point;encoding:Cost_Repair-quantitative-size,When_Phase_of_flight-nominal-x,Wildlife_Species-nominal-y",1602710888605
 mouseover on the specified chart,"mark:point;encoding:Cost_Repair-quantitative-size,When_Phase_of_flight-nominal-x,Wildlife_Species-nominal-y",1602710888606
 mouseout on the specified chart,"mark:point;encoding:Cost_Repair-quantitative-size,When_Phase_of_flight-nominal-x,Wildlife_Species-nominal-y",1602710888621
-clicked on a field,"tried to add Wildlife_Size, but failed because already selected 3 fields",1602710889845
 mouseover on the specified chart,"mark:point;encoding:Cost_Repair-quantitative-size,When_Phase_of_flight-nominal-x,Wildlife_Species-nominal-y",1602710892738
 mouseout on the specified chart,"mark:point;encoding:Cost_Repair-quantitative-size,When_Phase_of_flight-nominal-x,Wildlife_Species-nominal-y",1602710893088
-clicked on a field,remove Wildlife_Species,1602710894346
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Cost_Repair-quantitative-x<bin>,When_Phase_of_flight-nominal-y",1602710895009
-clicked on a field,add Wildlife_Size,1602710897199
 main chart changed because of clicking a field,"mark:point;encoding:Cost_Repair-quantitative-size,When_Phase_of_flight-nominal-x,Wildlife_Size-nominal-y",1602710897373
 mouseover on the specified chart,"mark:point;encoding:Cost_Repair-quantitative-size,When_Phase_of_flight-nominal-x,Wildlife_Size-nominal-y",1602710910272
 mouseout on the specified chart,"mark:point;encoding:Cost_Repair-quantitative-size,When_Phase_of_flight-nominal-x,Wildlife_Size-nominal-y",1602710910720
@@ -427,9 +400,7 @@ mouseover on the specified chart,"mark:point;encoding:Cost_Repair-quantitative-s
 mouseout on the specified chart,"mark:point;encoding:Cost_Repair-quantitative-size,When_Phase_of_flight-nominal-x,Wildlife_Size-nominal-y",1602710921370
 mouseover on the specified chart,"mark:point;encoding:Cost_Repair-quantitative-size,When_Phase_of_flight-nominal-x,Wildlife_Size-nominal-y",1602710921971
 mouseout on the specified chart,"mark:point;encoding:Cost_Repair-quantitative-size,When_Phase_of_flight-nominal-x,Wildlife_Size-nominal-y",1602710923637
-clicked on a field,remove Wildlife_Size,1602710927842
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Cost_Repair-quantitative-x<bin>,When_Phase_of_flight-nominal-y",1602710928354
-clicked on a field,add Flight_Date,1602710930828
 main chart changed because of clicking a field,"mark:point;encoding:Cost_Repair-quantitative-size,Flight_Date-nominal-x,When_Phase_of_flight-nominal-y",1602710931001
 mouseover on the specified chart,"mark:point;encoding:Cost_Repair-quantitative-size,Flight_Date-nominal-x,When_Phase_of_flight-nominal-y",1602710943315
 mouseout on the specified chart,"mark:point;encoding:Cost_Repair-quantitative-size,Flight_Date-nominal-x,When_Phase_of_flight-nominal-y",1602710950069

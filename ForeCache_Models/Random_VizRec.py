@@ -63,7 +63,7 @@ class Random:
 
         print("threshold", threshold, "length", length - 1)
         #testing data: no training required
-        for i in range(threshold + 1, length - 1):
+        for i in range(threshold , length):
             #always take random action
             cur_action=self.take_random_action(env.mem_states[i], "")
             if cur_action == env.mem_action[i]:
@@ -79,7 +79,7 @@ class Random:
 
         print("{}, {:.2f}".format(user, np.mean(accuracy)))
         self.bestaction.clear()
-        return np.mean(accuracy), split_accuracy
+        return np.sum(accuracy)/denom, split_accuracy
 
 
 def format_split_accuracy(accuracy_dict):
@@ -120,7 +120,7 @@ def run_experiment(user_list, algo, hyperparam_file,task, dataset):
                 obj = Random()
                 test_accuracy, state_accuracy = obj.RandomProbabilistic(user_name, env, thres)
                 test_accs.append(test_accuracy)
-            test_accuracy = np.mean(test_accs)
+            test_accuracy = np.sum(test_accs)/5
             #accuracy_per_state = format_split_accuracy(state_accuracy)
             y_accu.append(test_accuracy)
             result_dataframe = pd.concat([result_dataframe, pd.DataFrame({

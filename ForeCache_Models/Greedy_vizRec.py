@@ -36,7 +36,7 @@ class Greedy:
         y_pred=[]
         split_accuracy = defaultdict(list)
         print("threshold",threshold, "length",length-1)
-        for i in range(threshold + 1, length - 1):
+        for i in range(threshold , length):
 
             try:
              _max = max(self.reward[env.mem_states[i - 1]], key=self.reward[env.mem_states[i - 1]].get)
@@ -66,7 +66,7 @@ class Greedy:
 
 
 
-        accuracy = np.nanmean(accuracy)
+        accuracy = np.sum(accuracy)/denom
         print("{}, {:.2f}".format(user, accuracy))
         self.freq.clear()
         self.reward.clear()
@@ -125,14 +125,14 @@ def run_experiment(user_list, algo, hyperparam_file,task,dataset):
         plt.plot(threshold, y_accu, label=user_name, marker='*')
         y_accu_all.append(y_accu)
 
-    print("Greedy Model Performace: ", "Global Accuracy: ", np.nanmean(y_accu_all))
+    print("Greedy Model Performace: ", "Global Accuracy: ", np.mean(y_accu_all))
     # Save result DataFrame to CSV file
     result_dataframe.to_csv("Experiments_Folder/VizRec/{}/{}/{}.csv".format(dataset,task,title), index=False)
 
 
 if __name__ == "__main__":
-    datasets = ['movies']
-    tasks= [ 'p4']
+    datasets = ['movies','birdstrikes']
+    tasks = ['p1','p2', 'p3', 'p4']
     for dataset in datasets:
         for task in tasks:
             env = environment_vizrec.environment_vizrec()

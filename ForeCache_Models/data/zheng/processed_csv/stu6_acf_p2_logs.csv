@@ -3,7 +3,6 @@ mouseover a related chart,mark:tick;encoding:US_Gross-quantitative-x,16021707742
 mouseout a related chart,mark:tick;encoding:US_Gross-quantitative-x,1602170774234
 mouseover a related chart,mark:tick;encoding:US_Gross-quantitative-x,1602170774235
 mouseout a related chart,mark:tick;encoding:US_Gross-quantitative-x,1602170774312
-clicked on a field,add Source,1602170781509
 main chart changed because of clicking a field,"mark:bar;encoding:-quantitative-x<aggregate>count,Source-nominal-y",1602170781956
 mouseover on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Source-nominal-y",1602170784170
 scroll on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Source-nominal-y",1602170786250
@@ -70,13 +69,9 @@ scroll on a related chart,"mark:point;encoding:Creative_Type-nominal-color,Distr
 scroll on a related chart,"mark:point;encoding:Creative_Type-nominal-color,Distributor-nominal-x,Title-nominal-y",1602170815850
 scroll on a related chart,"mark:point;encoding:Creative_Type-nominal-color,Distributor-nominal-x,Title-nominal-y",1602170815867
 scroll on a related chart,"mark:point;encoding:Creative_Type-nominal-color,Distributor-nominal-x,Title-nominal-y",1602170815883
-clicked on a field,remove Major_Genre,1602170819251
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-x,Source-nominal-y",1602170819702
-clicked on a field,remove Creative_Type,1602170826987
 main chart changed because of clicking a field,"mark:bar;encoding:-quantitative-x<aggregate>count,Source-nominal-y",1602170827209
-clicked on a field,add Worldwide_Gross,1602170839234
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1602170839670
-clicked on a field,add Running_Time_min,1602170854155
 main chart changed because of clicking a field,"mark:point;encoding:Running_Time_min-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1602170854782
 mouseover a related chart,"mark:point;encoding:Director-nominal-x,Source-nominal-color,Title-nominal-y",1602170857532
 mouseout a related chart,"mark:point;encoding:Director-nominal-x,Source-nominal-color,Title-nominal-y",1602170857606

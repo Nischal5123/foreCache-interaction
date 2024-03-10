@@ -1,13 +1,11 @@
 Interaction,Value,Time
 mouseover a related chart,mark:tick;encoding:US_Gross-quantitative-x,1602519677294
 mouseout a related chart,mark:tick;encoding:US_Gross-quantitative-x,1602519677311
-clicked on a field,add Creative_Type,1602519678520
 main chart changed because of clicking a field,"mark:bar;encoding:-quantitative-x<aggregate>count,Creative_Type-nominal-y",1602519678570
 mouseover on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Creative_Type-nominal-y",1602519688231
 mouseout on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Creative_Type-nominal-y",1602519688247
 mouseover on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Creative_Type-nominal-y",1602519688248
 mouseout on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Creative_Type-nominal-y",1602519698293
-clicked on a field,add Major_Genre,1602519713315
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-x,Major_Genre-nominal-y",1602519713441
 mouseover a related chart,"mark:point;encoding:Creative_Type-nominal-x,Director-nominal-y,Major_Genre-nominal-color",1602519721232
 mouseout a related chart,"mark:point;encoding:Creative_Type-nominal-x,Director-nominal-y,Major_Genre-nominal-color",1602519721249
@@ -252,7 +250,6 @@ mouseover on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,Ma
 mouseout on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Source-nominal-color",1602519754322
 mouseover on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Source-nominal-color",1602519754323
 mouseout on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Source-nominal-color",1602519754355
-clicked on a field,remove Major_Genre,1602519755945
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-x,Source-nominal-y",1602519755992
 mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-x,Source-nominal-y",1602519767048
 mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-x,Source-nominal-y",1602519767222

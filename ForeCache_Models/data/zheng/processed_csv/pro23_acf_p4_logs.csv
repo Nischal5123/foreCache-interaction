@@ -67,13 +67,9 @@ mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,MPA
 mouseout a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,MPAA_Rating-nominal-y",1606228356352
 mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,MPAA_Rating-nominal-y",1606228356352
 mouseout a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,MPAA_Rating-nominal-y",1606228356369
-clicked on a field,add Running_Time_min,1606228358468
 main chart changed because of clicking a field,mark:tick;encoding:Running_Time_min-quantitative-x,1606228358706
-clicked on a field,add Release_Date,1606228361080
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Release_Date-nominal-x,Running_Time_min-quantitative-y<bin>",1606228361207
-clicked on a field,remove Release_Date,1606228361752
 main chart changed because of clicking a field,mark:tick;encoding:Running_Time_min-quantitative-x,1606228361850
-clicked on a field,add Release_Date,1606228363742
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Release_Date-nominal-x,Running_Time_min-quantitative-y<bin>",1606228363927
 mouseover a related chart,"mark:point;encoding:Director-nominal-x,Release_Date-nominal-color,Title-nominal-y",1606228365070
 mouseout a related chart,"mark:point;encoding:Director-nominal-x,Release_Date-nominal-color,Title-nominal-y",1606228365897
@@ -134,9 +130,7 @@ mouseover a related chart,"mark:point;encoding:Release_Date-nominal-x,Source-nom
 mouseout a related chart,"mark:point;encoding:Release_Date-nominal-x,Source-nominal-color,Title-nominal-y",1606228432419
 mouseover a related chart,"mark:point;encoding:Release_Date-nominal-x,Source-nominal-color,Title-nominal-y",1606228432419
 mouseout a related chart,"mark:point;encoding:Release_Date-nominal-x,Source-nominal-color,Title-nominal-y",1606228432452
-clicked on a field,remove Release_Date,1606228438587
 main chart changed because of clicking a field,mark:tick;encoding:Running_Time_min-quantitative-x,1606228438829
-clicked on a field,add Source,1606228442770
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Running_Time_min-quantitative-x<bin>,Source-nominal-y",1606228442882
 mouseover a related chart,"mark:point;encoding:MPAA_Rating-nominal-x,Source-nominal-color,Title-nominal-y",1606228445154
 mouseout a related chart,"mark:point;encoding:MPAA_Rating-nominal-x,Source-nominal-color,Title-nominal-y",1606228445634
@@ -257,9 +251,7 @@ mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggrega
 mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Running_Time_min-quantitative-x<bin>,Source-nominal-y",1606228461393
 mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Running_Time_min-quantitative-x<bin>,Source-nominal-y",1606228461393
 mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Running_Time_min-quantitative-x<bin>,Source-nominal-y",1606228461410
-clicked on a field,remove Running_Time_min,1606228463299
 main chart changed because of clicking a field,"mark:bar;encoding:-quantitative-x<aggregate>count,Source-nominal-y",1606228463510
-clicked on a field,add US_DVD_Sales,1606228468757
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Source-nominal-y,US_DVD_Sales-quantitative-x<bin>",1606228468862
 mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Source-nominal-y,US_DVD_Sales-quantitative-x<bin>",1606228472649
 mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Source-nominal-y,US_DVD_Sales-quantitative-x<bin>",1606228473325
@@ -347,7 +339,6 @@ mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggrega
 mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Source-nominal-y,US_DVD_Sales-quantitative-x<bin>",1606228545669
 mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Source-nominal-y,US_DVD_Sales-quantitative-x<bin>",1606228545669
 mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Source-nominal-y,US_DVD_Sales-quantitative-x<bin>",1606228545686
-clicked on a field,add MPAA_Rating,1606228546803
 main chart changed because of clicking a field,"mark:point;encoding:MPAA_Rating-nominal-x,Source-nominal-y,US_DVD_Sales-quantitative-size",1606228547357
 mouseover on the specified chart,"mark:point;encoding:MPAA_Rating-nominal-x,Source-nominal-y,US_DVD_Sales-quantitative-size",1606228551823
 mouseout on the specified chart,"mark:point;encoding:MPAA_Rating-nominal-x,Source-nominal-y,US_DVD_Sales-quantitative-size",1606228552258
@@ -389,14 +380,11 @@ mouseover on the specified chart,"mark:point;encoding:MPAA_Rating-nominal-x,Sour
 mouseout on the specified chart,"mark:point;encoding:MPAA_Rating-nominal-x,Source-nominal-y,US_DVD_Sales-quantitative-size",1606228558241
 mouseover on the specified chart,"mark:point;encoding:MPAA_Rating-nominal-x,Source-nominal-y,US_DVD_Sales-quantitative-size",1606228558242
 mouseout on the specified chart,"mark:point;encoding:MPAA_Rating-nominal-x,Source-nominal-y,US_DVD_Sales-quantitative-size",1606228558258
-clicked on a field,"tried to add Worldwide_Gross, but failed because already selected 3 fields",1606228559786
 mouseover on the specified chart,"mark:point;encoding:MPAA_Rating-nominal-x,Source-nominal-y,US_DVD_Sales-quantitative-size",1606228561356
 mouseout on the specified chart,"mark:point;encoding:MPAA_Rating-nominal-x,Source-nominal-y,US_DVD_Sales-quantitative-size",1606228561472
 mouseover on the specified chart,"mark:point;encoding:MPAA_Rating-nominal-x,Source-nominal-y,US_DVD_Sales-quantitative-size",1606228561472
 mouseout on the specified chart,"mark:point;encoding:MPAA_Rating-nominal-x,Source-nominal-y,US_DVD_Sales-quantitative-size",1606228561489
-clicked on a field,remove US_DVD_Sales,1606228562538
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,MPAA_Rating-nominal-x,Source-nominal-y",1606228562750
-clicked on a field,add Worldwide_Gross,1606228565936
 main chart changed because of clicking a field,"mark:point;encoding:MPAA_Rating-nominal-x,Source-nominal-y,Worldwide_Gross-quantitative-size",1606228566056
 mouseover on the specified chart,"mark:point;encoding:MPAA_Rating-nominal-x,Source-nominal-y,Worldwide_Gross-quantitative-size",1606228570612
 mouseout on the specified chart,"mark:point;encoding:MPAA_Rating-nominal-x,Source-nominal-y,Worldwide_Gross-quantitative-size",1606228571511

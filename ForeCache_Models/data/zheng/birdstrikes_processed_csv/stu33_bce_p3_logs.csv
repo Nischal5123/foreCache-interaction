@@ -3,11 +3,8 @@ mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Air
 mouseout a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Airport_Name-nominal-y",1605926476724
 mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Airport_Name-nominal-y",1605926476726
 mouseout a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Airport_Name-nominal-y",1605926477323
-clicked on a field,add Wildlife_Species,1605926519644
 main chart changed because of clicking a field,"mark:bar;encoding:-quantitative-x<aggregate>count,Wildlife_Species-nominal-y",1605926519763
-clicked on a field,add Effect_Amount_of_damage,1605926523486
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Effect_Amount_of_damage-nominal-x,Wildlife_Species-nominal-y",1605926523528
-clicked on a field,add Cost_Total,1605926526716
 main chart changed because of clicking a field,"mark:point;encoding:Cost_Total-quantitative-size,Effect_Amount_of_damage-nominal-x,Wildlife_Species-nominal-y",1605926526754
 mouseover on the specified chart,"mark:point;encoding:Cost_Total-quantitative-size,Effect_Amount_of_damage-nominal-x,Wildlife_Species-nominal-y",1605926536530
 mouseout on the specified chart,"mark:point;encoding:Cost_Total-quantitative-size,Effect_Amount_of_damage-nominal-x,Wildlife_Species-nominal-y",1605926539581
@@ -339,14 +336,9 @@ mouseover on the specified chart,"mark:point;encoding:Cost_Total-quantitative-si
 mouseout on the specified chart,"mark:point;encoding:Cost_Total-quantitative-size,Effect_Amount_of_damage-nominal-x,Wildlife_Species-nominal-y",1605926645874
 mouseover on the specified chart,"mark:point;encoding:Cost_Total-quantitative-size,Effect_Amount_of_damage-nominal-x,Wildlife_Species-nominal-y",1605926645874
 mouseout on the specified chart,"mark:point;encoding:Cost_Total-quantitative-size,Effect_Amount_of_damage-nominal-x,Wildlife_Species-nominal-y",1605926645941
-clicked on a field,remove Wildlife_Species,1605926646835
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Cost_Total-quantitative-x<bin>,Effect_Amount_of_damage-nominal-y",1605926646930
-clicked on a field,remove Effect_Amount_of_damage,1605926648022
 main chart changed because of clicking a field,mark:tick;encoding:Cost_Total-quantitative-x,1605926648058
-clicked on a field,remove Cost_Total,1605926650925
-clicked on a field,add Wildlife_Size,1605926653030
 main chart changed because of clicking a field,"mark:bar;encoding:-quantitative-x<aggregate>count,Wildlife_Size-nominal-y",1605926653082
-clicked on a field,add Cost_Total,1605926654136
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Cost_Total-quantitative-x<bin>,Wildlife_Size-nominal-y",1605926654240
 mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Cost_Total-quantitative-x<bin>,Wildlife_Size-nominal-y",1605926655887
 mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Cost_Total-quantitative-x<bin>,Wildlife_Size-nominal-y",1605926656028
@@ -364,12 +356,8 @@ mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggrega
 mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Cost_Total-quantitative-x<bin>,Wildlife_Size-nominal-y",1605926665926
 mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Cost_Total-quantitative-x<bin>,Wildlife_Size-nominal-y",1605926665926
 mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Cost_Total-quantitative-x<bin>,Wildlife_Size-nominal-y",1605926665943
-clicked on a field,remove Wildlife_Size,1605926668329
 main chart changed because of clicking a field,mark:tick;encoding:Cost_Total-quantitative-x,1605926668536
-clicked on a field,remove Cost_Total,1605926669148
-clicked on a field,add Wildlife_Size,1605926670639
 main chart changed because of clicking a field,"mark:bar;encoding:-quantitative-x<aggregate>count,Wildlife_Size-nominal-y",1605926670722
-clicked on a field,add Cost_Total,1605926672196
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Cost_Total-quantitative-x<bin>,Wildlife_Size-nominal-y",1605926672239
 mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Cost_Total-quantitative-x<bin>,Wildlife_Size-nominal-y",1605926679305
 mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Cost_Total-quantitative-x<bin>,Wildlife_Size-nominal-y",1605926679383

@@ -7,16 +7,12 @@ mouseover a related chart,mark:tick;encoding:US_DVD_Sales-quantitative-x,1607347
 mouseout a related chart,mark:tick;encoding:US_DVD_Sales-quantitative-x,1607347359471
 mouseover a related chart,mark:tick;encoding:US_DVD_Sales-quantitative-x,1607347359472
 mouseout a related chart,mark:tick;encoding:US_DVD_Sales-quantitative-x,1607347359488
-clicked on a field,add Creative_Type,1607347393716
 main chart changed because of clicking a field,"mark:bar;encoding:-quantitative-x<aggregate>count,Creative_Type-nominal-y",1607347396702
 mouseover on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Creative_Type-nominal-y",1607347421129
 mouseout on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Creative_Type-nominal-y",1607347421662
 mouseover on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Creative_Type-nominal-y",1607347421662
 mouseout on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Creative_Type-nominal-y",1607347421726
-clicked on a field,remove undefined,1607347422449
 main chart changed because of clicking a field,"mark:bar;encoding:-quantitative-x<aggregate>count,Creative_Type-nominal-y",1607347424994
-clicked on a field,remove Creative_Type,1607347428945
-clicked on a field,add Worldwide_Gross,1607347432773
 main chart changed because of clicking a field,mark:tick;encoding:Worldwide_Gross-quantitative-x,1607347434522
 mouseover a related chart,"mark:tick;encoding:Creative_Type-nominal-y,Worldwide_Gross-quantitative-x",1607347437371
 mouseout a related chart,"mark:tick;encoding:Creative_Type-nominal-y,Worldwide_Gross-quantitative-x",1607347439167
@@ -1105,7 +1101,6 @@ scroll on a related chart,"mark:point;encoding:Distributor-nominal-y,Release_Dat
 scroll on a related chart,"mark:point;encoding:Distributor-nominal-y,Release_Date-nominal-x,Worldwide_Gross-quantitative-size",1607347578223
 scroll on a related chart,"mark:point;encoding:Distributor-nominal-y,Release_Date-nominal-x,Worldwide_Gross-quantitative-size",1607347578240
 mouseout a related chart,"mark:point;encoding:Distributor-nominal-y,Release_Date-nominal-x,Worldwide_Gross-quantitative-size",1607347580040
-clicked on a field,remove Distributor,1607347581359
 main chart changed because of clicking a field,mark:tick;encoding:Worldwide_Gross-quantitative-x,1607347584148
 mouseover a related chart,"mark:tick;encoding:Distributor-nominal-y,Worldwide_Gross-quantitative-x",1607347585652
 mouseout a related chart,"mark:tick;encoding:Distributor-nominal-y,Worldwide_Gross-quantitative-x",1607347585903

@@ -3,7 +3,6 @@ mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Tit
 mouseout a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Title-nominal-y",1600108702202
 mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Title-nominal-y",1600108702202
 mouseout a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Title-nominal-y",1600108702217
-clicked on a field,add Creative_Type,1600108705741
 main chart changed because of clicking a field,"mark:bar;encoding:-quantitative-x<aggregate>count,Creative_Type-nominal-y",1600108705784
 mouseover on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Creative_Type-nominal-y",1600108723866
 mouseout on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Creative_Type-nominal-y",1600108723983
@@ -20,9 +19,7 @@ mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Cre
 mouseout a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Creative_Type-nominal-y,Release_Date-nominal-row",1600108780068
 mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Creative_Type-nominal-y,Release_Date-nominal-row",1600108780068
 mouseout a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Creative_Type-nominal-y,Release_Date-nominal-row",1600108780115
-clicked on a field,add MPAA_Rating,1600108783075
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-x,MPAA_Rating-nominal-y",1600108783156
-clicked on a field,remove Creative_Type,1600108795710
 main chart changed because of clicking a field,"mark:bar;encoding:-quantitative-x<aggregate>count,MPAA_Rating-nominal-y",1600108795780
 mouseover on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,MPAA_Rating-nominal-y",1600108806347
 mouseout on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,MPAA_Rating-nominal-y",1600108806881
@@ -35,7 +32,6 @@ mouseover on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>co
 mouseout on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,MPAA_Rating-nominal-y",1600108819393
 mouseover on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,MPAA_Rating-nominal-y",1600108819394
 mouseout on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,MPAA_Rating-nominal-y",1600108819427
-clicked on a field,add Source,1600108824851
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,MPAA_Rating-nominal-x,Source-nominal-y",1600108824923
 mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,MPAA_Rating-nominal-x,Source-nominal-y",1600108829768
 mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,MPAA_Rating-nominal-x,Source-nominal-y",1600108829784
@@ -111,9 +107,7 @@ scroll on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>
 mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,MPAA_Rating-nominal-x,Source-nominal-y",1600108835619
 mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,MPAA_Rating-nominal-x,Source-nominal-y",1600108835619
 mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,MPAA_Rating-nominal-x,Source-nominal-y",1600108835720
-clicked on a field,add Release_Date,1600108839247
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,MPAA_Rating-nominal-x,Release_Date-nominal-row,Source-nominal-y",1600108839322
-clicked on a field,remove Source,1600108841448
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,MPAA_Rating-nominal-x,Release_Date-nominal-y",1600108841486
 mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,MPAA_Rating-nominal-x,Release_Date-nominal-y",1600108852027
 mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,MPAA_Rating-nominal-x,Release_Date-nominal-y",1600108852060
@@ -122,9 +116,7 @@ mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggrega
 mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,MPAA_Rating-nominal-x,Release_Date-nominal-y",1600108882849
 mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,MPAA_Rating-nominal-x,Release_Date-nominal-y",1600108882850
 mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,MPAA_Rating-nominal-x,Release_Date-nominal-y",1600108882901
-clicked on a field,add Source,1600108883953
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,MPAA_Rating-nominal-x,Release_Date-nominal-row,Source-nominal-y",1600108884021
-clicked on a field,remove MPAA_Rating,1600108884958
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Release_Date-nominal-y,Source-nominal-x",1600108884999
 mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Release_Date-nominal-y,Source-nominal-x",1600108898035
 mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Release_Date-nominal-y,Source-nominal-x",1600108898059
@@ -139,9 +131,7 @@ mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggrega
 mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Release_Date-nominal-y,Source-nominal-x",1600108900132
 mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Release_Date-nominal-y,Source-nominal-x",1600108900132
 mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Release_Date-nominal-y,Source-nominal-x",1600108901481
-clicked on a field,remove Source,1600108955907
 main chart changed because of clicking a field,"mark:bar;encoding:-quantitative-x<aggregate>count,Release_Date-nominal-y",1600108955985
-clicked on a field,add US_Gross,1600108957715
 main chart changed because of clicking a field,"mark:tick;encoding:Release_Date-nominal-y,US_Gross-quantitative-x",1600108957750
 mouseover on the specified chart,"mark:tick;encoding:Release_Date-nominal-y,US_Gross-quantitative-x",1600108963028
 mouseout on the specified chart,"mark:tick;encoding:Release_Date-nominal-y,US_Gross-quantitative-x",1600108963044
@@ -149,7 +139,6 @@ mouseover on the specified chart,"mark:tick;encoding:Release_Date-nominal-y,US_G
 mouseout on the specified chart,"mark:tick;encoding:Release_Date-nominal-y,US_Gross-quantitative-x",1600108963062
 mouseover on the specified chart,"mark:tick;encoding:Release_Date-nominal-y,US_Gross-quantitative-x",1600108972567
 mouseout on the specified chart,"mark:tick;encoding:Release_Date-nominal-y,US_Gross-quantitative-x",1600108972584
-clicked on a field,add MPAA_Rating,1600108975613
 main chart changed because of clicking a field,"mark:point;encoding:MPAA_Rating-nominal-x,Release_Date-nominal-y,US_Gross-quantitative-size",1600108975695
 mouseover on the specified chart,"mark:point;encoding:MPAA_Rating-nominal-x,Release_Date-nominal-y,US_Gross-quantitative-size",1600108984407
 mouseout on the specified chart,"mark:point;encoding:MPAA_Rating-nominal-x,Release_Date-nominal-y,US_Gross-quantitative-size",1600108984440

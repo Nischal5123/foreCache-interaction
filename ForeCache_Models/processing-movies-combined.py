@@ -38,6 +38,7 @@ if __name__ == '__main__':
         print('############################# Total users:##################', len(possible_user_names))
         # fileds :User_Index,Interaction,Value,Time,Reward,Action,Attribute,State,High-Level-State
         # create a combined file per user for all tasks
+
         for user in possible_user_names:
             user_p1 = [csv_file for csv_file in p1_csv_files if user in csv_file]
             user_p2 = [csv_file for csv_file in p2_csv_files if user in csv_file]
@@ -57,8 +58,11 @@ if __name__ == '__main__':
             p2_df['Task'] = 'p2'
             p3_df['Task'] = 'p3'
             p4_df['Task'] = 'p4'
-            combined_df = pd.concat([p1_df, p2_df, p3_df, p4_df])
+            focused_combined_df = pd.concat([p1_df, p2_df])
+            open_combined_df = pd.concat([p3_df, p4_df])
             #sort this by time increasing lower time first
-            combined_df = combined_df.sort_values(by=['Time'])
-            combined_df.to_csv(processed_interactions_path + 'all/' + user + '_combined.csv', index=False)
+            focused_combined_df = focused_combined_df.sort_values(by=['Time'])
+            open_combined_df = open_combined_df.sort_values(by=['Time'])
+            focused_combined_df.to_csv(processed_interactions_path + 'focused/' + user + '_combined.csv', index=False)
+            open_combined_df.to_csv(processed_interactions_path + 'open/' + user + '_combined.csv', index=False)
             print('Combined', user)

@@ -1,13 +1,11 @@
 Interaction,Value,Time
 mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Airport_Name-nominal-y",1605110794876
 mouseout a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Airport_Name-nominal-y",1605110794964
-clicked on a field,add When_Phase_of_flight,1605110812965
 main chart changed because of clicking a field,"mark:bar;encoding:-quantitative-x<aggregate>count,When_Phase_of_flight-nominal-y",1605110812995
 mouseover on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,When_Phase_of_flight-nominal-y",1605110816921
 mouseout on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,When_Phase_of_flight-nominal-y",1605110819379
 mouseover on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,When_Phase_of_flight-nominal-y",1605110819379
 mouseout on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,When_Phase_of_flight-nominal-y",1605110819395
-clicked on a field,add Flight_Date,1605110824942
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Flight_Date-nominal-x,When_Phase_of_flight-nominal-y",1605110824971
 mouseover a related chart,"mark:point;encoding:Aircraft_Airline_Operator-nominal-y,Flight_Date-nominal-x,When_Phase_of_flight-nominal-color",1605110830888
 mouseout a related chart,"mark:point;encoding:Aircraft_Airline_Operator-nominal-y,Flight_Date-nominal-x,When_Phase_of_flight-nominal-color",1605110832277
@@ -166,11 +164,8 @@ mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggrega
 mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Flight_Date-nominal-x,When_Phase_of_flight-nominal-y",1605110890213
 mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Flight_Date-nominal-x,When_Phase_of_flight-nominal-y",1605110890213
 mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Flight_Date-nominal-x,When_Phase_of_flight-nominal-y",1605110890647
-clicked on a field,remove When_Phase_of_flight,1605110892765
 main chart changed because of clicking a field,"mark:bar;encoding:-quantitative-y<aggregate>count,Flight_Date-nominal-x",1605110892797
-clicked on a field,add Aircraft_Airline_Operator,1605110895464
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Aircraft_Airline_Operator-nominal-y,Flight_Date-nominal-x",1605110895480
-clicked on a field,remove Flight_Date,1605110900847
 main chart changed because of clicking a field,"mark:bar;encoding:-quantitative-x<aggregate>count,Aircraft_Airline_Operator-nominal-y",1605110900863
 mouseover on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Aircraft_Airline_Operator-nominal-y",1605110911362
 mouseout on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Aircraft_Airline_Operator-nominal-y",1605110912693
@@ -181,10 +176,7 @@ mouseover on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>co
 mouseout on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Aircraft_Airline_Operator-nominal-y",1605110916273
 mouseover on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Aircraft_Airline_Operator-nominal-y",1605110916273
 mouseout on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Aircraft_Airline_Operator-nominal-y",1605110916289
-clicked on a field,remove Aircraft_Airline_Operator,1605110918129
-clicked on a field,add Aircraft_Make_Model,1605110919394
 main chart changed because of clicking a field,"mark:bar;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y",1605110919411
-clicked on a field,add Aircraft_Airline_Operator,1605110920681
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Aircraft_Airline_Operator-nominal-x,Aircraft_Make_Model-nominal-y",1605110920696
 mouseover a related chart,"mark:point;encoding:Aircraft_Airline_Operator-nominal-x,Aircraft_Make_Model-nominal-y,Flight_Date-nominal-color",1605110929421
 scroll on a related chart,"mark:point;encoding:Aircraft_Airline_Operator-nominal-x,Aircraft_Make_Model-nominal-y,Flight_Date-nominal-color",1605110932440
@@ -225,13 +217,9 @@ mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggrega
 mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Aircraft_Airline_Operator-nominal-x,Aircraft_Make_Model-nominal-y",1605110936836
 mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Aircraft_Airline_Operator-nominal-x,Aircraft_Make_Model-nominal-y",1605110936837
 mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Aircraft_Airline_Operator-nominal-x,Aircraft_Make_Model-nominal-y",1605110936853
-clicked on a field,remove Aircraft_Make_Model,1605110939976
 main chart changed because of clicking a field,"mark:bar;encoding:-quantitative-x<aggregate>count,Aircraft_Airline_Operator-nominal-y",1605110940035
-clicked on a field,add Wildlife_Size,1605110947282
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Aircraft_Airline_Operator-nominal-x,Wildlife_Size-nominal-y",1605110947304
-clicked on a field,remove Aircraft_Airline_Operator,1605110954982
 main chart changed because of clicking a field,"mark:bar;encoding:-quantitative-x<aggregate>count,Wildlife_Size-nominal-y",1605110955004
-clicked on a field,add Wildlife_Species,1605110957548
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Wildlife_Size-nominal-x,Wildlife_Species-nominal-y",1605110957564
 mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Wildlife_Size-nominal-x,Wildlife_Species-nominal-y",1605110962452
 scroll on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Wildlife_Size-nominal-x,Wildlife_Species-nominal-y",1605110965342
@@ -239,7 +227,6 @@ scroll on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>
 scroll on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Wildlife_Size-nominal-x,Wildlife_Species-nominal-y",1605110966873
 scroll on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Wildlife_Size-nominal-x,Wildlife_Species-nominal-y",1605110967920
 mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Wildlife_Size-nominal-x,Wildlife_Species-nominal-y",1605110971854
-clicked on a field,add Speed_IAS_in_knots,1605110976161
 main chart changed because of clicking a field,"mark:point;encoding:Speed_IAS_in_knots-quantitative-size,Wildlife_Size-nominal-x,Wildlife_Species-nominal-y",1605110976186
 mouseover on the specified chart,"mark:point;encoding:Speed_IAS_in_knots-quantitative-size,Wildlife_Size-nominal-x,Wildlife_Species-nominal-y",1605110979513
 scroll on the specified chart,"mark:point;encoding:Speed_IAS_in_knots-quantitative-size,Wildlife_Size-nominal-x,Wildlife_Species-nominal-y",1605110981012
@@ -288,11 +275,8 @@ scroll on the specified chart,"mark:point;encoding:Speed_IAS_in_knots-quantitati
 mouseout on the specified chart,"mark:point;encoding:Speed_IAS_in_knots-quantitative-size,Wildlife_Size-nominal-x,Wildlife_Species-nominal-y",1605110985308
 mouseover on the specified chart,"mark:point;encoding:Speed_IAS_in_knots-quantitative-size,Wildlife_Size-nominal-x,Wildlife_Species-nominal-y",1605110985308
 mouseout on the specified chart,"mark:point;encoding:Speed_IAS_in_knots-quantitative-size,Wildlife_Size-nominal-x,Wildlife_Species-nominal-y",1605110985324
-clicked on a field,remove Wildlife_Species,1605110986863
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Speed_IAS_in_knots-quantitative-x<bin>,Wildlife_Size-nominal-y",1605110986892
-clicked on a field,remove Speed_IAS_in_knots,1605110992293
 main chart changed because of clicking a field,"mark:bar;encoding:-quantitative-x<aggregate>count,Wildlife_Size-nominal-y",1605110992309
-clicked on a field,remove Wildlife_Size,1605110994287
 mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Airport_Name-nominal-y",1605110999205
 mouseout a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Airport_Name-nominal-y",1605110999335
 mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y",1605110999335
@@ -608,7 +592,6 @@ scroll on a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Wil
 mouseout a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Wildlife_Species-nominal-y",1605111070395
 mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Wildlife_Species-nominal-y",1605111070396
 mouseout a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Wildlife_Species-nominal-y",1605111070445
-clicked on a field,add When_Phase_of_flight,1605111075018
 main chart changed because of clicking a field,"mark:bar;encoding:-quantitative-x<aggregate>count,When_Phase_of_flight-nominal-y",1605111075046
 mouseover a related chart,"mark:point;encoding:Aircraft_Make_Model-nominal-x,When_Phase_of_flight-nominal-y",1605111076497
 mouseout a related chart,"mark:point;encoding:Aircraft_Make_Model-nominal-x,When_Phase_of_flight-nominal-y",1605111077012
@@ -616,7 +599,6 @@ mouseover on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>co
 mouseout on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,When_Phase_of_flight-nominal-y",1605111087929
 mouseover on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,When_Phase_of_flight-nominal-y",1605111087929
 mouseout on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,When_Phase_of_flight-nominal-y",1605111087945
-clicked on a field,add Flight_Date,1605111094106
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Flight_Date-nominal-x,When_Phase_of_flight-nominal-y",1605111094145
 mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Flight_Date-nominal-x,When_Phase_of_flight-nominal-y",1605111104363
 mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Flight_Date-nominal-x,When_Phase_of_flight-nominal-y",1605111123012

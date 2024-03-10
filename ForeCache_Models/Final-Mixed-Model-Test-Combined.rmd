@@ -22,14 +22,15 @@ Type any R code in the chunk, for example:
 data_both_pall <- read.csv('/Users/aryal/Desktop/ForeCache/foreCache-interaction/ForeCache_Models/data/zheng/mixed-model-data/zheng_both_datasets_combined.csv', stringsAsFactors = TRUE)
 data_both_pall$u <- as.factor(data_both_pall$u)
 data_both_pall$Dataset <- as.factor(data_both_pall$Dataset)
+data_both_pall$Openended <- as.factor(data_both_pall$Openended)
 ```
 ```{r}
-combined_model_full_same <- lmer(formula = probabsame~ Trial   + (1|Dataset) + (1|u), data = data_both_pall, REML = FALSE)
-reducedmodel_same <- lmer(formula =  probabsame ~ 1   + (1|Dataset)+ (1|u), data = data_both_pall, REML = FALSE)
+combined_model_full_same <- lmer(formula = probabsame~ Trial   + Openended + (1|Dataset)  + (1|u), data = data_both_pall, REML = FALSE)
+reducedmodel_same <- lmer(formula =  probabsame ~ 1  +Openended+ (1|Dataset)+ (1|u), data = data_both_pall, REML = FALSE)
 lrtest(reducedmodel_same, combined_model_full_same)
 ```
 ```{r}
-combined_model_reporting_same <-lmer(formula = probabsame~Trial  + (1|Dataset) + (1|u), data = data_both_pall)
+combined_model_reporting_same <-lmer(formula = probabsame~Trial   + (1|Openended)  + (1|u), data = data_both_pall)
 summary(combined_model_reporting_same)
 ```
 ```{r}
@@ -52,8 +53,8 @@ qqnorm(resid(combined_model_reporting_modify1))
 qqline(resid(combined_model_reporting_modify1))
 ```
 ```{r}
-combined_model_full_modify2 <- lmer(formula = probabmodify2~ Trial  + (1|Experiment) + (1|u), data = data_both_pall, REML = FALSE)
-reducedmodel_modify2 <- lmer(formula =  probabmodify2 ~ 1  + (1|Experiment)  + (1|u), data = data_both_pall, REML = FALSE)
+combined_model_full_modify2 <- lmer(formula = probabmodify2~ Trial  + (1|Dataset) + (1|u), data = data_both_pall, REML = FALSE)
+reducedmodel_modify2 <- lmer(formula =  probabmodify2 ~ 1  + (1|Dataset)  + (1|u), data = data_both_pall, REML = FALSE)
 lrtest(reducedmodel_modify2, combined_model_full_modify2)
 ```
 ```{r}
@@ -67,12 +68,12 @@ qqline(resid(combined_model_reporting_modify2))
 ```
 
 ```{r}
-combined_model_full_modify3 <- lmer(formula = probabmodify3~ Trial + (1|Experiment)+ (1|u), data = data_both_pall, REML = FALSE)
-reducedmodel_modify3 <- lmer(formula =  probabmodify3 ~ 1 +  (1|Experiment)+(1|u), data = data_both_pall, REML = FALSE)
+combined_model_full_modify3 <- lmer(formula = probabmodify3~ Trial + (1|Dataset)+ (1|u), data = data_both_pall, REML = FALSE)
+reducedmodel_modify3 <- lmer(formula =  probabmodify3 ~ 1 +  (1|Dataset)+(1|u), data = data_both_pall, REML = FALSE)
 lrtest(reducedmodel_modify3, combined_model_full_modify3)
 ```
 ```{r}
-combined_model_reporting_modify3 <-lmer(formula = probabmodify3~ Trial  + (1|Experiment) + (1|u), data = data_both_pall)
+combined_model_reporting_modify3 <-lmer(formula = probabmodify3~ Trial  + (1|Dataset) + (1|u), data = data_both_pall)
 summary(combined_model_reporting_modify3)
 ```
 ```{r}

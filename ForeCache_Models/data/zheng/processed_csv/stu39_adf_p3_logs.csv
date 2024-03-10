@@ -25,9 +25,7 @@ mouseover a related chart,mark:tick;encoding:Worldwide_Gross-quantitative-x,1602
 mouseout a related chart,mark:tick;encoding:Worldwide_Gross-quantitative-x,1602170951322
 mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Title-nominal-y",1602170951392
 mouseout a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Title-nominal-y",1602170951754
-clicked on a field,add US_Gross,1602170953897
 main chart changed because of clicking a field,mark:tick;encoding:US_Gross-quantitative-x,1602170954540
-clicked on a field,add Director,1602170963504
 main chart changed because of clicking a field,"mark:tick;encoding:Director-nominal-y,US_Gross-quantitative-x",1602170963769
 mouseover on the specified chart,"mark:tick;encoding:Director-nominal-y,US_Gross-quantitative-x",1602170964978
 mouseout on the specified chart,"mark:tick;encoding:Director-nominal-y,US_Gross-quantitative-x",1602170965147
@@ -144,7 +142,6 @@ scroll on a related chart,"mark:point;encoding:Director-nominal-y,US_Gross-quant
 mouseout a related chart,"mark:point;encoding:Director-nominal-y,US_Gross-quantitative-x,Worldwide_Gross-quantitative-size",1602170979429
 mouseover a related chart,"mark:point;encoding:Director-nominal-y,US_Gross-quantitative-x,Worldwide_Gross-quantitative-size",1602170979430
 mouseout a related chart,"mark:point;encoding:Director-nominal-y,US_Gross-quantitative-x,Worldwide_Gross-quantitative-size",1602170979460
-clicked on a field,remove Director,1602170983477
 main chart changed because of clicking a field,mark:tick;encoding:US_Gross-quantitative-x,1602170984124
 mouseover on the specified chart,mark:tick;encoding:US_Gross-quantitative-x,1602170985657
 mouseout on the specified chart,mark:tick;encoding:US_Gross-quantitative-x,1602170986144
@@ -154,20 +151,15 @@ mouseover on the specified chart,mark:tick;encoding:US_Gross-quantitative-x,1602
 mouseout on the specified chart,mark:tick;encoding:US_Gross-quantitative-x,1602170987107
 mouseover on the specified chart,mark:tick;encoding:US_Gross-quantitative-x,1602170987107
 mouseout on the specified chart,mark:tick;encoding:US_Gross-quantitative-x,1602170987257
-clicked on a field,add Worldwide_Gross,1602170990128
 main chart changed because of clicking a field,"mark:point;encoding:US_Gross-quantitative-x,Worldwide_Gross-quantitative-y",1602170990363
-clicked on a field,remove US_Gross,1602170991566
 main chart changed because of clicking a field,mark:tick;encoding:Worldwide_Gross-quantitative-x,1602170991799
-clicked on a field,add Distributor,1602170999102
 main chart changed because of clicking a field,"mark:tick;encoding:Distributor-nominal-y,Worldwide_Gross-quantitative-x",1602170999369
 mouseover on the specified chart,"mark:tick;encoding:Distributor-nominal-y,Worldwide_Gross-quantitative-x",1602171001949
 scroll on the specified chart,"mark:tick;encoding:Distributor-nominal-y,Worldwide_Gross-quantitative-x",1602171002783
 scroll on the specified chart,"mark:tick;encoding:Distributor-nominal-y,Worldwide_Gross-quantitative-x",1602171004311
 scroll on the specified chart,"mark:tick;encoding:Distributor-nominal-y,Worldwide_Gross-quantitative-x",1602171004827
 mouseout on the specified chart,"mark:tick;encoding:Distributor-nominal-y,Worldwide_Gross-quantitative-x",1602171006678
-clicked on a field,remove Distributor,1602171009105
 main chart changed because of clicking a field,mark:tick;encoding:Worldwide_Gross-quantitative-x,1602171009372
-clicked on a field,add Creative_Type,1602171011497
 main chart changed because of clicking a field,"mark:tick;encoding:Creative_Type-nominal-y,Worldwide_Gross-quantitative-x",1602171011740
 mouseover a related chart,"mark:tick;encoding:Creative_Type-nominal-color,MPAA_Rating-nominal-x,Worldwide_Gross-quantitative-y",1602171018752
 mouseout a related chart,"mark:tick;encoding:Creative_Type-nominal-color,MPAA_Rating-nominal-x,Worldwide_Gross-quantitative-y",1602171019419
@@ -205,7 +197,6 @@ mouseover a related chart,"mark:tick;encoding:Creative_Type-nominal-color,MPAA_R
 mouseout a related chart,"mark:tick;encoding:Creative_Type-nominal-color,MPAA_Rating-nominal-x,Worldwide_Gross-quantitative-y",1602171069019
 mouseover a related chart,"mark:tick;encoding:Creative_Type-nominal-y,MPAA_Rating-nominal-color,Worldwide_Gross-quantitative-x",1602171069053
 mouseout a related chart,"mark:tick;encoding:Creative_Type-nominal-y,MPAA_Rating-nominal-color,Worldwide_Gross-quantitative-x",1602171069453
-clicked on a field,add Release_Date,1602171072419
 main chart changed because of clicking a field,"mark:point;encoding:Creative_Type-nominal-x,Release_Date-nominal-y,Worldwide_Gross-quantitative-size",1602171073059
 mouseover on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,Release_Date-nominal-y,Worldwide_Gross-quantitative-size",1602171074957
 mouseout on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,Release_Date-nominal-y,Worldwide_Gross-quantitative-size",1602171075192
@@ -219,9 +210,7 @@ mouseover on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,Re
 mouseout on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,Release_Date-nominal-y,Worldwide_Gross-quantitative-size",1602171080860
 mouseover on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,Release_Date-nominal-y,Worldwide_Gross-quantitative-size",1602171080860
 mouseout on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,Release_Date-nominal-y,Worldwide_Gross-quantitative-size",1602171084663
-clicked on a field,remove Release_Date,1602171086548
 main chart changed because of clicking a field,"mark:tick;encoding:Creative_Type-nominal-y,Worldwide_Gross-quantitative-x",1602171087172
-clicked on a field,add IMDB_Rating,1602171088433
 main chart changed because of clicking a field,"mark:point;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-size<aggregate>mean,Worldwide_Gross-quantitative-y<bin>",1602171088667
 mouseover on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-size<aggregate>mean,Worldwide_Gross-quantitative-y<bin>",1602171092837
 mouseout on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-size<aggregate>mean,Worldwide_Gross-quantitative-y<bin>",1602171092902
@@ -299,14 +288,10 @@ mouseover a related chart,"mark:tick;encoding:Creative_Type-nominal-x,IMDB_Ratin
 mouseout a related chart,"mark:tick;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-y<aggregate>mean,MPAA_Rating-nominal-color",1602171216630
 mouseover a related chart,"mark:tick;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-y<aggregate>mean,MPAA_Rating-nominal-color",1602171216760
 mouseout a related chart,"mark:tick;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-y<aggregate>mean,MPAA_Rating-nominal-color",1602171217194
-clicked on a field,"tried to add Major_Genre, but failed because already selected 3 fields",1602171219641
 mouseover on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-size<aggregate>mean,Worldwide_Gross-quantitative-y<bin>",1602171222731
 mouseout on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-size<aggregate>mean,Worldwide_Gross-quantitative-y<bin>",1602171222764
-clicked on a field,remove Creative_Type,1602171227786
 main chart changed because of clicking a field,"mark:point;encoding:IMDB_Rating-quantitative-x,Worldwide_Gross-quantitative-y",1602171228432
-clicked on a field,add Major_Genre,1602171230634
 main chart changed because of clicking a field,"mark:point;encoding:IMDB_Rating-quantitative-size<aggregate>mean,Major_Genre-nominal-x,Worldwide_Gross-quantitative-y<bin>",1602171230912
-clicked on a field,remove IMDB_Rating,1602171235439
 main chart changed because of clicking a field,"mark:tick;encoding:Major_Genre-nominal-y,Worldwide_Gross-quantitative-x",1602171235691
 mouseover a related chart,"mark:tick;encoding:MPAA_Rating-nominal-color,Major_Genre-nominal-y,Worldwide_Gross-quantitative-x",1602171237974
 mouseout a related chart,"mark:tick;encoding:MPAA_Rating-nominal-color,Major_Genre-nominal-y,Worldwide_Gross-quantitative-x",1602171239006
@@ -364,13 +349,9 @@ mouseover a related chart,"mark:tick;encoding:Creative_Type-nominal-color,Major_
 mouseout a related chart,"mark:tick;encoding:Creative_Type-nominal-color,Major_Genre-nominal-y,Worldwide_Gross-quantitative-x",1602171334338
 mouseover a related chart,"mark:tick;encoding:Creative_Type-nominal-color,Major_Genre-nominal-y,Worldwide_Gross-quantitative-x",1602171334338
 mouseout a related chart,"mark:tick;encoding:Creative_Type-nominal-color,Major_Genre-nominal-y,Worldwide_Gross-quantitative-x",1602171334703
-clicked on a field,remove undefined,1602171337020
 main chart changed because of clicking a field,"mark:tick;encoding:Major_Genre-nominal-y,Worldwide_Gross-quantitative-x",1602171337672
-clicked on a field,add Creative_Type,1602171338210
 main chart changed because of clicking a field,"mark:bar;encoding:Creative_Type-nominal-color,Major_Genre-nominal-y,Worldwide_Gross-quantitative-x",1602171338443
-clicked on a field,remove Creative_Type,1602171339417
 main chart changed because of clicking a field,"mark:tick;encoding:Major_Genre-nominal-y,Worldwide_Gross-quantitative-x",1602171339657
-clicked on a field,add Creative_Type,1602171341165
 main chart changed because of clicking a field,"mark:bar;encoding:Creative_Type-nominal-color,Major_Genre-nominal-y,Worldwide_Gross-quantitative-x",1602171341409
 mouseover on the specified chart,"mark:bar;encoding:Creative_Type-nominal-color,Major_Genre-nominal-y,Worldwide_Gross-quantitative-x",1602171347484
 mouseout on the specified chart,"mark:bar;encoding:Creative_Type-nominal-color,Major_Genre-nominal-y,Worldwide_Gross-quantitative-x",1602171347939
@@ -378,9 +359,7 @@ mouseover on the specified chart,"mark:bar;encoding:Creative_Type-nominal-color,
 mouseout on the specified chart,"mark:bar;encoding:Creative_Type-nominal-color,Major_Genre-nominal-y,Worldwide_Gross-quantitative-x",1602171354244
 mouseover on the specified chart,"mark:bar;encoding:Creative_Type-nominal-color,Major_Genre-nominal-y,Worldwide_Gross-quantitative-x",1602171354245
 mouseout on the specified chart,"mark:bar;encoding:Creative_Type-nominal-color,Major_Genre-nominal-y,Worldwide_Gross-quantitative-x",1602171363482
-clicked on a field,remove Major_Genre,1602171368036
 main chart changed because of clicking a field,"mark:tick;encoding:Creative_Type-nominal-y,Worldwide_Gross-quantitative-x",1602171368692
-clicked on a field,add IMDB_Rating,1602171371433
 main chart changed because of clicking a field,"mark:point;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-size<aggregate>mean,Worldwide_Gross-quantitative-y<bin>",1602171371673
 mouseover on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-size<aggregate>mean,Worldwide_Gross-quantitative-y<bin>",1602171373778
 mouseout on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-size<aggregate>mean,Worldwide_Gross-quantitative-y<bin>",1602171373937
@@ -452,16 +431,13 @@ mouseover on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,IM
 mouseout on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-size<aggregate>mean,Worldwide_Gross-quantitative-y<bin>",1602171443841
 mouseover on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-size<aggregate>mean,Worldwide_Gross-quantitative-y<bin>",1602171443841
 mouseout on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-size<aggregate>mean,Worldwide_Gross-quantitative-y<bin>",1602171443873
-clicked on a field,"tried to add Major_Genre, but failed because already selected 3 fields",1602171449936
 mouseover on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-size<aggregate>mean,Worldwide_Gross-quantitative-y<bin>",1602171452579
 mouseout on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-size<aggregate>mean,Worldwide_Gross-quantitative-y<bin>",1602171452612
 mouseover on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-size<aggregate>mean,Worldwide_Gross-quantitative-y<bin>",1602171452612
 mouseout on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-size<aggregate>mean,Worldwide_Gross-quantitative-y<bin>",1602171452980
 mouseover on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-size<aggregate>mean,Worldwide_Gross-quantitative-y<bin>",1602171452980
 mouseout on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,IMDB_Rating-quantitative-size<aggregate>mean,Worldwide_Gross-quantitative-y<bin>",1602171453013
-clicked on a field,remove IMDB_Rating,1602171463553
 main chart changed because of clicking a field,"mark:tick;encoding:Creative_Type-nominal-y,Worldwide_Gross-quantitative-x",1602171464186
-clicked on a field,add Production_Budget,1602171467959
 main chart changed because of clicking a field,"mark:point;encoding:Creative_Type-nominal-x,Production_Budget-quantitative-y<bin>,Worldwide_Gross-quantitative-size<aggregate>mean",1602171468203
 mouseover on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,Production_Budget-quantitative-y<bin>,Worldwide_Gross-quantitative-size<aggregate>mean",1602171469304
 mouseout on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,Production_Budget-quantitative-y<bin>,Worldwide_Gross-quantitative-size<aggregate>mean",1602171469479
@@ -517,14 +493,11 @@ mouseover on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,Pr
 mouseout on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,Production_Budget-quantitative-y<bin>,Worldwide_Gross-quantitative-size<aggregate>mean",1602171501811
 mouseover on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,Production_Budget-quantitative-y<bin>,Worldwide_Gross-quantitative-size<aggregate>mean",1602171501812
 mouseout on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,Production_Budget-quantitative-y<bin>,Worldwide_Gross-quantitative-size<aggregate>mean",1602171501878
-clicked on a field,"tried to add US_Gross, but failed because already selected 3 fields",1602171507545
 mouseover on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,Production_Budget-quantitative-y<bin>,Worldwide_Gross-quantitative-size<aggregate>mean",1602171510183
 mouseout on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,Production_Budget-quantitative-y<bin>,Worldwide_Gross-quantitative-size<aggregate>mean",1602171510233
 mouseover on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,Production_Budget-quantitative-y<bin>,Worldwide_Gross-quantitative-size<aggregate>mean",1602171510233
 mouseout on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,Production_Budget-quantitative-y<bin>,Worldwide_Gross-quantitative-size<aggregate>mean",1602171510532
-clicked on a field,remove Worldwide_Gross,1602171512253
 main chart changed because of clicking a field,"mark:tick;encoding:Creative_Type-nominal-y,Production_Budget-quantitative-x",1602171512888
-clicked on a field,add US_Gross,1602171514269
 main chart changed because of clicking a field,"mark:point;encoding:Creative_Type-nominal-x,Production_Budget-quantitative-y<bin>,US_Gross-quantitative-size<aggregate>mean",1602171514502
 mouseover on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,Production_Budget-quantitative-y<bin>,US_Gross-quantitative-size<aggregate>mean",1602171518444
 mouseout on the specified chart,"mark:point;encoding:Creative_Type-nominal-x,Production_Budget-quantitative-y<bin>,US_Gross-quantitative-size<aggregate>mean",1602171522409

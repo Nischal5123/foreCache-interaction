@@ -657,16 +657,13 @@
             <column aggregation='Sum' caption='Threshold1' datatype='real' name='[Threshold]' role='dimension' type='ordinal' />
             <column-instance column='[Algorithm]' derivation='None' name='[none:Algorithm:nk]' pivot='key' type='nominal' />
             <column-instance column='[Openended]' derivation='None' name='[none:Openended:nk]' pivot='key' type='nominal' />
-            <column-instance column='[Threshold]' derivation='None' name='[none:Threshold:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Threshold]' derivation='None' name='[none:Threshold:ok]' pivot='key' type='ordinal' />
             <column-instance column='[Calculation_4584383005139959809]' derivation='User' name='[usr:Calculation_4584383005139959809:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
           <filter class='categorical' column='[federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Algorithm:nk]'>
             <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
               <groupfilter function='level-members' level='[none:Algorithm:nk]' />
-              <groupfilter function='union'>
-                <groupfilter function='member' level='[none:Algorithm:nk]' member='&quot;HMM&quot;' />
-                <groupfilter function='member' level='[none:Algorithm:nk]' member='&quot;Naive&quot;' />
-              </groupfilter>
+              <groupfilter function='member' level='[none:Algorithm:nk]' member='&quot;Naive&quot;' />
             </groupfilter>
           </filter>
           <slices>
@@ -675,6 +672,11 @@
           <aggregation value='true' />
         </view>
         <style>
+          <style-rule element='table'>
+            <format attr='omit-on-special' field='[federated.0dg10dl15c94fc19cu6uw1hq0os5].[usr:Calculation_4584383005139959809:qk]' value='false' />
+            <format attr='break-on-special' field='[federated.0dg10dl15c94fc19cu6uw1hq0os5].[usr:Calculation_4584383005139959809:qk]' value='false' />
+            <format attr='show-null-value-warning' field='[federated.0dg10dl15c94fc19cu6uw1hq0os5].[usr:Calculation_4584383005139959809:qk]' value='false' />
+          </style-rule>
           <style-rule element='refline'>
             <format attr='line-visibility' id='refline0' value='on' />
             <format attr='line-pattern-only' id='refline0' value='dashed' />
@@ -706,7 +708,7 @@
           </pane>
         </panes>
         <rows>[federated.0dg10dl15c94fc19cu6uw1hq0os5].[usr:Calculation_4584383005139959809:qk]</rows>
-        <cols>([federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Openended:nk] * [federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Threshold:qk])</cols>
+        <cols>([federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Openended:nk] / [federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Threshold:ok])</cols>
       </table>
       <simple-id uuid='{F88579BA-9760-4B23-A4DC-05CCA48A1276}' />
     </worksheet>
@@ -730,28 +732,18 @@
             <column caption='AVG([Accuracy])*100' datatype='real' name='[Calculation_4584383005139959809]' role='measure' type='quantitative' user:unnamed='BirdStrikes'>
               <calculation class='tableau' formula='AVG([Accuracy])*100' />
             </column>
-            <column datatype='string' name='[Task]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Openended]' role='dimension' type='nominal' />
             <column aggregation='Sum' caption='Threshold1' datatype='real' name='[Threshold]' role='dimension' type='ordinal' />
             <column-instance column='[Algorithm]' derivation='None' name='[none:Algorithm:nk]' pivot='key' type='nominal' />
-            <column-instance column='[Task]' derivation='None' name='[none:Task:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Openended]' derivation='None' name='[none:Openended:nk]' pivot='key' type='nominal' />
             <column-instance column='[Threshold]' derivation='None' name='[none:Threshold:ok]' pivot='key' type='ordinal' />
             <column-instance column='[Threshold]' derivation='None' name='[none:Threshold:qk]' pivot='key' type='quantitative' />
             <column-instance column='[Calculation_4584383005139959809]' derivation='User' name='[usr:Calculation_4584383005139959809:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
-          <filter class='categorical' column='[federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Algorithm:nk]'>
-            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
-              <groupfilter function='level-members' level='[none:Algorithm:nk]' />
-              <groupfilter function='union'>
-                <groupfilter function='member' level='[none:Algorithm:nk]' member='&quot;HMM&quot;' />
-                <groupfilter function='member' level='[none:Algorithm:nk]' member='&quot;Naive&quot;' />
-              </groupfilter>
-            </groupfilter>
-          </filter>
           <filter class='categorical' column='[federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Threshold:ok]'>
             <groupfilter from='0.050000000000000003' function='range' level='[none:Threshold:ok]' to='0.80000000000000004' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
           </filter>
           <slices>
-            <column>[federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Algorithm:nk]</column>
             <column>[federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Threshold:ok]</column>
           </slices>
           <aggregation value='true' />
@@ -820,7 +812,7 @@
           </pane>
         </panes>
         <rows>[federated.0dg10dl15c94fc19cu6uw1hq0os5].[usr:Calculation_4584383005139959809:qk]</rows>
-        <cols>([federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Task:nk] * [federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Threshold:qk])</cols>
+        <cols>([federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Openended:nk] * [federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Threshold:qk])</cols>
       </table>
       <simple-id uuid='{9A06B466-964E-4161-A16D-360D3C10A4A1}' />
     </worksheet>
@@ -1082,11 +1074,11 @@
             <column caption='AVG([Accuracy (all experiments Movies.csv)])*100' datatype='real' name='[Calculation_4584383005140230146]' role='measure' type='quantitative' user:unnamed='Movies'>
               <calculation class='tableau' formula='AVG([Accuracy (all_experiments_Movies.csv)])*100' />
             </column>
-            <column caption='Openended (all experiments Movies.csv)' datatype='string' name='[Openended (all_experiments_Movies.csv)]' role='dimension' type='nominal' />
+            <column caption='Task (all experiments Movies.csv)' datatype='string' name='[Task (all_experiments_Movies.csv)]' role='dimension' type='nominal' />
             <column aggregation='Sum' caption='Threshold (all experiments Movies.csv)' datatype='real' name='[Threshold (all_experiments_Movies.csv)]' role='dimension' type='ordinal' />
             <column-instance column='[Algorithm (all_experiments_Movies.csv)]' derivation='None' name='[none:Algorithm (all_experiments_Movies.csv):nk]' pivot='key' type='nominal' />
             <column-instance column='[Calculation_4584383005138182144]' derivation='None' name='[none:Calculation_4584383005138182144:qk]' pivot='key' type='quantitative' />
-            <column-instance column='[Openended (all_experiments_Movies.csv)]' derivation='None' name='[none:Openended (all_experiments_Movies.csv):nk]' pivot='key' type='nominal' />
+            <column-instance column='[Task (all_experiments_Movies.csv)]' derivation='None' name='[none:Task (all_experiments_Movies.csv):nk]' pivot='key' type='nominal' />
             <column-instance column='[Calculation_4584383005140230146]' derivation='User' name='[usr:Calculation_4584383005140230146:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
           <filter class='categorical' column='[federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Algorithm (all_experiments_Movies.csv):nk]'>
@@ -1118,7 +1110,6 @@
             <format attr='color' field='[federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Calculation_4584383005138182144:qk]' value='#000000' />
             <format attr='font-weight' field='[federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Calculation_4584383005138182144:qk]' value='bold' />
             <format attr='font-family' field='[federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Calculation_4584383005138182144:qk]' value='Tableau Bold' />
-            <format attr='display' field='[federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Openended (all_experiments_Movies.csv):nk]' value='false' />
           </style-rule>
           <style-rule element='worksheet'>
             <format attr='display-field-labels' scope='cols' value='false' />
@@ -1153,7 +1144,7 @@
           </pane>
         </panes>
         <rows>[federated.0dg10dl15c94fc19cu6uw1hq0os5].[usr:Calculation_4584383005140230146:qk]</rows>
-        <cols>([federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Openended (all_experiments_Movies.csv):nk] * [federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Calculation_4584383005138182144:qk])</cols>
+        <cols>([federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Task (all_experiments_Movies.csv):nk] * [federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Calculation_4584383005138182144:qk])</cols>
       </table>
       <simple-id uuid='{0902A736-ABFB-4E0D-ABB9-2A8BDF846D1B}' />
     </worksheet>
@@ -1632,7 +1623,7 @@
       </cards>
       <simple-id uuid='{A8C1ECCA-6A8B-44DC-B16D-03B13C138739}' />
     </window>
-    <window class='worksheet' name='Movies'>
+    <window class='worksheet' maximized='true' name='Movies'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -1660,7 +1651,7 @@
       </cards>
       <simple-id uuid='{581B526E-89A3-41AD-B7E1-2F1639A20EA2}' />
     </window>
-    <window class='worksheet' maximized='true' name='Movies (2)'>
+    <window class='worksheet' name='Movies (2)'>
       <cards>
         <edge name='left'>
           <strip size='160'>

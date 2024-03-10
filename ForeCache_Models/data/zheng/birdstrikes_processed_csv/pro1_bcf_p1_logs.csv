@@ -7,11 +7,8 @@ mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Air
 mouseout a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Airport_Name-nominal-y",1611249145159
 mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Airport_Name-nominal-y",1611249145159
 mouseout a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Airport_Name-nominal-y",1611249145209
-clicked on a field,add When_Phase_of_flight,1611249151541
 main chart changed because of clicking a field,"mark:bar;encoding:-quantitative-x<aggregate>count,When_Phase_of_flight-nominal-y",1611249151749
-clicked on a field,add Flight_Date,1611249157906
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Flight_Date-nominal-x,When_Phase_of_flight-nominal-y",1611249158099
-clicked on a field,add When_Time_of_day,1611249164345
 main chart changed because of clicking a field,"mark:point;encoding:Flight_Date-nominal-x,When_Phase_of_flight-nominal-y,When_Time_of_day-nominal-color",1611249164538
 mouseover a related chart,"mark:point;encoding:Airport_Name-nominal-x,Flight_Date-nominal-color,Origin_State-nominal-y",1611249187070
 mouseout a related chart,"mark:point;encoding:Airport_Name-nominal-x,Flight_Date-nominal-color,Origin_State-nominal-y",1611249190870
@@ -34,13 +31,9 @@ mouseover on the specified chart,"mark:point;encoding:Airport_Name-nominal-x,Fli
 mouseout on the specified chart,"mark:point;encoding:Airport_Name-nominal-x,Flight_Date-nominal-color,Origin_State-nominal-y",1611249254126
 mouseover on the specified chart,"mark:point;encoding:Airport_Name-nominal-x,Flight_Date-nominal-color,Origin_State-nominal-y",1611249254276
 mouseout on the specified chart,"mark:point;encoding:Airport_Name-nominal-x,Flight_Date-nominal-color,Origin_State-nominal-y",1611249254309
-clicked on a field,remove undefined,1611249254681
 main chart changed because of clicking a field,"mark:point;encoding:Airport_Name-nominal-x,Flight_Date-nominal-color,Origin_State-nominal-y",1611249255077
-clicked on a field,remove Airport_Name,1611249267314
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Flight_Date-nominal-x,Origin_State-nominal-y",1611249267708
-clicked on a field,add When_Phase_of_flight,1611249270602
 main chart changed because of clicking a field,"mark:point;encoding:Flight_Date-nominal-x,Origin_State-nominal-y,When_Phase_of_flight-nominal-color",1611249270813
-clicked on a field,remove Origin_State,1611249274663
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Flight_Date-nominal-x,When_Phase_of_flight-nominal-y",1611249274873
 mouseover a related chart,"mark:point;encoding:Airport_Name-nominal-x,Flight_Date-nominal-color,Origin_State-nominal-y",1611249304339
 mouseout a related chart,"mark:point;encoding:Airport_Name-nominal-x,Flight_Date-nominal-color,Origin_State-nominal-y",1611249305522

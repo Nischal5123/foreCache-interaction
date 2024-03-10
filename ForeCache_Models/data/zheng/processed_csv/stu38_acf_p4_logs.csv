@@ -56,7 +56,6 @@ mouseover on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>co
 mouseout on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,MPAA_Rating-nominal-y",1602961110769
 mouseover on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,MPAA_Rating-nominal-y",1602961110770
 mouseout on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,MPAA_Rating-nominal-y",1602961110887
-clicked on a field,remove MPAA_Rating,1602961111638
 mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Title-nominal-y",1602961113261
 mouseout a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Title-nominal-y",1602961113310
 mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Director-nominal-y",1602961119360
@@ -154,7 +153,6 @@ mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Tit
 mouseout a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Title-nominal-y",1602961150528
 mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Title-nominal-y",1602961150529
 mouseout a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Title-nominal-y",1602961150544
-clicked on a field,add Director,1602961154165
 main chart changed because of clicking a field,"mark:bar;encoding:-quantitative-x<aggregate>count,Director-nominal-y",1602961154351
 mouseover on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Director-nominal-y",1602961171569
 mouseout on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Director-nominal-y",1602961171652
@@ -214,7 +212,6 @@ mouseover a related chart,"mark:point;encoding:Director-nominal-x,Distributor-no
 mouseout a related chart,"mark:point;encoding:Director-nominal-x,Distributor-nominal-y,Release_Date-nominal-color",1602961179539
 mouseover a related chart,"mark:point;encoding:Director-nominal-x,Distributor-nominal-y,Release_Date-nominal-color",1602961179539
 mouseout a related chart,"mark:point;encoding:Director-nominal-x,Distributor-nominal-y,Release_Date-nominal-color",1602961179572
-clicked on a field,remove Director,1602961180528
 mouseover a related chart,"mark:bar;encoding:-quantitative-y<aggregate>count,Release_Date-nominal-x",1602961188080
 mouseout a related chart,"mark:bar;encoding:-quantitative-y<aggregate>count,Release_Date-nominal-x",1602961188089
 mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,MPAA_Rating-nominal-y",1602961188114
@@ -540,8 +537,6 @@ mouseover a related chart,"mark:point;encoding:Creative_Type-nominal-x,Rotten_To
 mouseout a related chart,"mark:point;encoding:Creative_Type-nominal-x,Rotten_Tomatoes_Rating-quantitative-size,Title-nominal-y",1602961366047
 mouseover a related chart,"mark:point;encoding:Release_Date-nominal-x,Rotten_Tomatoes_Rating-quantitative-size,US_Gross-quantitative-y<bin>",1602961366047
 mouseout a related chart,"mark:point;encoding:Release_Date-nominal-x,Rotten_Tomatoes_Rating-quantitative-size,US_Gross-quantitative-y<bin>",1602961366080
-clicked on a field,remove Rotten_Tomatoes_Rating,1602961367735
-clicked on a field,add US_DVD_Sales,1602961369417
 main chart changed because of clicking a field,mark:tick;encoding:US_DVD_Sales-quantitative-x,1602961369517
 mouseover a related chart,"mark:point;encoding:Creative_Type-nominal-x,Distributor-nominal-y,US_DVD_Sales-quantitative-size",1602961372598
 mouseout a related chart,"mark:point;encoding:Creative_Type-nominal-x,Distributor-nominal-y,US_DVD_Sales-quantitative-size",1602961372614

@@ -1,9 +1,7 @@
 Interaction,Value,Time
 mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Airport_Name-nominal-y",1613596684916
 mouseout a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Airport_Name-nominal-y",1613596685436
-clicked on a field,add Aircraft_Make_Model,1613596686504
 main chart changed because of clicking a field,"mark:bar;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y",1613596686614
-clicked on a field,add Speed_IAS_in_knots,1613596693836
 main chart changed because of clicking a field,"mark:tick;encoding:Aircraft_Make_Model-nominal-y,Speed_IAS_in_knots-quantitative-x",1613596693947
 mouseover a related chart,"mark:tick;encoding:Aircraft_Make_Model-nominal-y,Flight_Date-nominal-row,Speed_IAS_in_knots-quantitative-x",1613596694575
 mouseout a related chart,"mark:tick;encoding:Aircraft_Make_Model-nominal-y,Flight_Date-nominal-row,Speed_IAS_in_knots-quantitative-x",1613596694854
@@ -11,7 +9,6 @@ mouseover on the specified chart,"mark:tick;encoding:Aircraft_Make_Model-nominal
 mouseout on the specified chart,"mark:tick;encoding:Aircraft_Make_Model-nominal-y,Speed_IAS_in_knots-quantitative-x",1613596701561
 mouseover on the specified chart,"mark:tick;encoding:Aircraft_Make_Model-nominal-y,Speed_IAS_in_knots-quantitative-x",1613596701561
 mouseout on the specified chart,"mark:tick;encoding:Aircraft_Make_Model-nominal-y,Speed_IAS_in_knots-quantitative-x",1613596701578
-clicked on a field,add Effect_Amount_of_damage,1613596704944
 main chart changed because of clicking a field,"mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",1613596705264
 mouseover on the specified chart,"mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",1613596705682
 scroll on the specified chart,"mark:tick;encoding:Aircraft_Make_Model-nominal-y,Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x",1613596708006

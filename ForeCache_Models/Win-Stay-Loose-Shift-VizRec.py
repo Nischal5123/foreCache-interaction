@@ -66,7 +66,7 @@ class WSLS:
         result = []
         accuracy=[]
         split_accuracy = defaultdict(list)
-        for i in range(threshold + 1, length - 1):
+        for i in range(threshold , length):
             cur_action = self.bestaction[env.mem_states[i]]
             result.append(env.mem_states[i])
             result.append(cur_action)
@@ -95,10 +95,10 @@ class WSLS:
 
 
         obj = misc.misc([])
-        print("{}, {:.2f}, {}".format(get_user_name(user), np.mean(accuracy), result))
+        print("{}, {:.2f}, {}".format(get_user_name(user), np.sum(accuracy)/denom, result))
         self.bestaction.clear()
         self.reward.clear()
-        return np.nanmean(accuracy),split_accuracy
+        return np.sum(accuracy)/denom,split_accuracy
 
 def format_split_accuracy(accuracy_dict):
     main_states=['Foraging', 'Navigation', 'Sensemaking']
@@ -145,6 +145,7 @@ if __name__ == "__main__":
                 threshold = [0.05, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]
 
                 for thres in threshold:
+                    env = environment_vizrec.environment_vizrec()
                     env.process_data(u, 0)
                     obj = WSLS()
                     accu,state_accuracy = obj.wslsDriver(u, env, thres)

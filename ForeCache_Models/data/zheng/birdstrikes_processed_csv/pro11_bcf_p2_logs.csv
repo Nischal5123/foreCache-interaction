@@ -1,13 +1,8 @@
 Interaction,Value,Time
-clicked on a field,add Aircraft_Make_Model,1605312947838
 main chart changed because of clicking a field,"mark:bar;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y",1605312948075
-clicked on a field,remove undefined,1605312949470
 main chart changed because of clicking a field,"mark:bar;encoding:-quantitative-x<aggregate>count,Aircraft_Make_Model-nominal-y",1605312949977
-clicked on a field,add Effect_Amount_of_damage,1605312955067
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Aircraft_Make_Model-nominal-x,Effect_Amount_of_damage-nominal-y",1605312955738
-clicked on a field,remove Aircraft_Make_Model,1605312960076
 main chart changed because of clicking a field,"mark:bar;encoding:-quantitative-x<aggregate>count,Effect_Amount_of_damage-nominal-y",1605312961173
-clicked on a field,add Speed_IAS_in_knots,1605312970456
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Effect_Amount_of_damage-nominal-y,Speed_IAS_in_knots-quantitative-x<bin>",1605312971738
 mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Effect_Amount_of_damage-nominal-y,Speed_IAS_in_knots-quantitative-x<bin>",1605312981891
 mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Effect_Amount_of_damage-nominal-y,Speed_IAS_in_knots-quantitative-x<bin>",1605312982207
@@ -198,7 +193,6 @@ mouseover a related chart,"mark:point;encoding:Airport_Name-nominal-x,Effect_Amo
 mouseout a related chart,"mark:point;encoding:Airport_Name-nominal-x,Effect_Amount_of_damage-nominal-y,When_Phase_of_flight-nominal-color",1605313042867
 mouseover a related chart,"mark:point;encoding:Airport_Name-nominal-x,Effect_Amount_of_damage-nominal-y,When_Phase_of_flight-nominal-color",1605313042867
 mouseout a related chart,"mark:point;encoding:Airport_Name-nominal-x,Effect_Amount_of_damage-nominal-y,When_Phase_of_flight-nominal-color",1605313042869
-clicked on a field,add Aircraft_Make_Model,1605313048878
 main chart changed because of clicking a field,"mark:point;encoding:Aircraft_Make_Model-nominal-x,Effect_Amount_of_damage-nominal-y,Speed_IAS_in_knots-quantitative-size",1605313049365
 mouseover a related chart,"mark:point;encoding:Aircraft_Make_Model-nominal-x,Flight_Date-nominal-color,Wildlife_Species-nominal-y",1605313052115
 mouseout a related chart,"mark:point;encoding:Aircraft_Make_Model-nominal-x,Flight_Date-nominal-color,Wildlife_Species-nominal-y",1605313052632
