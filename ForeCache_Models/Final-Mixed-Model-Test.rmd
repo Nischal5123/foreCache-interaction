@@ -36,7 +36,7 @@ reducedmodel_same <- lmer(formula =  probabsame ~ 1 + Openend+ (1 | u)  +(1 | Da
 lrtest(reducedmodel_same, combined_model_full_same)
 ```
 ```{r}
-combined_model_reporting_same <-lmer(formula = probabsame~ Trial + Openend + (1 | u) + (1 | Dataset), data = data_both_pall)
+combined_model_reporting_same <-lmer(formula = probabsame~ Trial + (1|Openend) + (1 | u) + (1 | Dataset), data = data_both_pall)
 summary(combined_model_reporting_same)
 ```
 ```{r}
@@ -64,7 +64,7 @@ reducedmodel_modify2 <- lmer(formula =  probabmodify2 ~ 1 + Openend + (1 | u) + 
 lrtest(reducedmodel_modify2, combined_model_full_modify2)
 ```
 ```{r}
-combined_model_reporting_modify2 <-lmer(formula = probabmodify2~ Trial + Openend + (1 | u) + (1 | Dataset), data = data_both_pall)
+combined_model_reporting_modify2 <-lmer(formula = probabmodify2~ Trial + (1|Openend) + (1 | u) + (1 | Dataset), data = data_both_pall)
 summary(combined_model_reporting_modify2)
 ```
 ```{r}
