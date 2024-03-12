@@ -5,8 +5,11 @@ mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Tit
 mouseout a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Title-nominal-y",1607029869932
 mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Title-nominal-y",1607029869932
 mouseout a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Title-nominal-y",1607029869949
+clicked on a field,add MPAA_Rating,1607029877430
 main chart changed because of clicking a field,"mark:bar;encoding:-quantitative-x<aggregate>count,MPAA_Rating-nominal-y",1607029877469
+clicked on a field,add Worldwide_Gross,1607029887312
 main chart changed because of clicking a field,"mark:tick;encoding:MPAA_Rating-nominal-y,Worldwide_Gross-quantitative-x",1607029887341
+clicked on a field,add Rotten_Tomatoes_Rating,1607029890527
 main chart changed because of clicking a field,"mark:point;encoding:MPAA_Rating-nominal-x,Rotten_Tomatoes_Rating-quantitative-y<bin>,Worldwide_Gross-quantitative-size<aggregate>mean",1607029890564
 mouseover on the specified chart,"mark:point;encoding:MPAA_Rating-nominal-x,Rotten_Tomatoes_Rating-quantitative-y<bin>,Worldwide_Gross-quantitative-size<aggregate>mean",1607029891623
 mouseout on the specified chart,"mark:point;encoding:MPAA_Rating-nominal-x,Rotten_Tomatoes_Rating-quantitative-y<bin>,Worldwide_Gross-quantitative-size<aggregate>mean",1607029891657
@@ -18,7 +21,9 @@ mouseover a related chart,"mark:bar;encoding:MPAA_Rating-nominal-x,Worldwide_Gro
 mouseout a related chart,"mark:bar;encoding:MPAA_Rating-nominal-x,Worldwide_Gross-quantitative-y<aggregate>mean",1607029896340
 mouseover a related chart,"mark:bar;encoding:MPAA_Rating-nominal-x,Worldwide_Gross-quantitative-y<aggregate>mean",1607029896340
 mouseout a related chart,"mark:bar;encoding:MPAA_Rating-nominal-x,Worldwide_Gross-quantitative-y<aggregate>mean",1607029896358
+clicked on a field,remove MPAA_Rating,1607029897557
 main chart changed because of clicking a field,"mark:point;encoding:Rotten_Tomatoes_Rating-quantitative-x,Worldwide_Gross-quantitative-y",1607029897589
+clicked on a field,add MPAA_Rating,1607029899289
 main chart changed because of clicking a field,"mark:point;encoding:MPAA_Rating-nominal-x,Rotten_Tomatoes_Rating-quantitative-y<bin>,Worldwide_Gross-quantitative-size<aggregate>mean",1607029899323
 mouseover a related chart,"mark:bar;encoding:MPAA_Rating-nominal-x,Worldwide_Gross-quantitative-y<aggregate>mean",1607029902385
 mouseout a related chart,"mark:bar;encoding:MPAA_Rating-nominal-x,Worldwide_Gross-quantitative-y<aggregate>mean",1607029902452
@@ -123,6 +128,7 @@ mouseover a related chart,"mark:point;encoding:-quantitative-size<aggregate>coun
 mouseout a related chart,"mark:point;encoding:-quantitative-size<aggregate>count,IMDB_Votes-quantitative-color<aggregate>mean,MPAA_Rating-nominal-x,Rotten_Tomatoes_Rating-quantitative-y<bin>",1607029955773
 mouseover a related chart,"mark:point;encoding:-quantitative-size<aggregate>count,IMDB_Votes-quantitative-color<aggregate>mean,MPAA_Rating-nominal-x,Rotten_Tomatoes_Rating-quantitative-y<bin>",1607029955773
 mouseout a related chart,"mark:point;encoding:-quantitative-size<aggregate>count,IMDB_Votes-quantitative-color<aggregate>mean,MPAA_Rating-nominal-x,Rotten_Tomatoes_Rating-quantitative-y<bin>",1607029956107
+clicked on a field,add Worldwide_Gross,1607029957051
 main chart changed because of clicking a field,"mark:point;encoding:MPAA_Rating-nominal-x,Rotten_Tomatoes_Rating-quantitative-y<bin>,Worldwide_Gross-quantitative-size<aggregate>mean",1607029957116
 mouseover a related chart,"mark:bar;encoding:Rotten_Tomatoes_Rating-quantitative-y<bin>,Worldwide_Gross-quantitative-x<aggregate>mean",1607029957540
 mouseout a related chart,"mark:bar;encoding:Rotten_Tomatoes_Rating-quantitative-y<bin>,Worldwide_Gross-quantitative-x<aggregate>mean",1607029957556
@@ -150,11 +156,18 @@ mouseover on the specified chart,"mark:point;encoding:MPAA_Rating-nominal-x,Rott
 mouseout on the specified chart,"mark:point;encoding:MPAA_Rating-nominal-x,Rotten_Tomatoes_Rating-quantitative-y<bin>,Worldwide_Gross-quantitative-size<aggregate>mean",1607029973872
 mouseover on the specified chart,"mark:point;encoding:MPAA_Rating-nominal-x,Rotten_Tomatoes_Rating-quantitative-y<bin>,Worldwide_Gross-quantitative-size<aggregate>mean",1607029973872
 mouseout on the specified chart,"mark:point;encoding:MPAA_Rating-nominal-x,Rotten_Tomatoes_Rating-quantitative-y<bin>,Worldwide_Gross-quantitative-size<aggregate>mean",1607029973922
+clicked on a field,remove Rotten_Tomatoes_Rating,1607029975711
 main chart changed because of clicking a field,"mark:tick;encoding:MPAA_Rating-nominal-y,Worldwide_Gross-quantitative-x",1607029975805
+clicked on a field,remove Worldwide_Gross,1607029987367
 main chart changed because of clicking a field,"mark:bar;encoding:-quantitative-x<aggregate>count,MPAA_Rating-nominal-y",1607029987431
+clicked on a field,remove MPAA_Rating,1607029988793
+clicked on a field,add Rotten_Tomatoes_Rating,1607029990854
 main chart changed because of clicking a field,mark:tick;encoding:Rotten_Tomatoes_Rating-quantitative-x,1607029990893
+clicked on a field,add IMDB_Rating,1607029994396
 main chart changed because of clicking a field,"mark:point;encoding:IMDB_Rating-quantitative-x,Rotten_Tomatoes_Rating-quantitative-y",1607029994424
+clicked on a field,remove Rotten_Tomatoes_Rating,1607029996633
 main chart changed because of clicking a field,mark:tick;encoding:IMDB_Rating-quantitative-x,1607029996667
+clicked on a field,add IMDB_Votes,1607029998092
 main chart changed because of clicking a field,"mark:point;encoding:IMDB_Rating-quantitative-x,IMDB_Votes-quantitative-y",1607029998124
 mouseover a related chart,"mark:point;encoding:Creative_Type-nominal-color,IMDB_Rating-quantitative-x,IMDB_Votes-quantitative-y",1607030005232
 mouseout a related chart,"mark:point;encoding:Creative_Type-nominal-color,IMDB_Rating-quantitative-x,IMDB_Votes-quantitative-y",1607030011239
@@ -166,8 +179,12 @@ mouseover a related chart,"mark:point;encoding:IMDB_Rating-quantitative-x,IMDB_V
 mouseout a related chart,"mark:point;encoding:IMDB_Rating-quantitative-x,IMDB_Votes-quantitative-y,MPAA_Rating-nominal-color",1607030021781
 mouseover a related chart,"mark:point;encoding:IMDB_Rating-quantitative-x,IMDB_Votes-quantitative-y,Production_Budget-quantitative-size",1607030033434
 mouseout a related chart,"mark:point;encoding:IMDB_Rating-quantitative-x,IMDB_Votes-quantitative-y,Production_Budget-quantitative-size",1607030033501
+clicked on a field,remove IMDB_Rating,1607030035787
 main chart changed because of clicking a field,mark:tick;encoding:IMDB_Votes-quantitative-x,1607030035850
+clicked on a field,remove IMDB_Votes,1607030037094
+clicked on a field,add Rotten_Tomatoes_Rating,1607030038508
 main chart changed because of clicking a field,mark:tick;encoding:Rotten_Tomatoes_Rating-quantitative-x,1607030038548
+clicked on a field,add IMDB_Votes,1607030040798
 main chart changed because of clicking a field,"mark:point;encoding:IMDB_Votes-quantitative-x,Rotten_Tomatoes_Rating-quantitative-y",1607030040831
 mouseover a related chart,"mark:point;encoding:IMDB_Votes-quantitative-x,Rotten_Tomatoes_Rating-quantitative-y,Running_Time_min-quantitative-size",1607030041489
 mouseout a related chart,"mark:point;encoding:IMDB_Votes-quantitative-x,Rotten_Tomatoes_Rating-quantitative-y,Running_Time_min-quantitative-size",1607030041678
@@ -179,7 +196,9 @@ mouseover a related chart,"mark:point;encoding:IMDB_Votes-quantitative-x,MPAA_Ra
 mouseout a related chart,"mark:point;encoding:IMDB_Votes-quantitative-x,MPAA_Rating-nominal-color,Rotten_Tomatoes_Rating-quantitative-y",1607030050582
 mouseover a related chart,"mark:point;encoding:Creative_Type-nominal-color,IMDB_Votes-quantitative-x,Rotten_Tomatoes_Rating-quantitative-y",1607030050597
 mouseout a related chart,"mark:point;encoding:Creative_Type-nominal-color,IMDB_Votes-quantitative-x,Rotten_Tomatoes_Rating-quantitative-y",1607030050664
+clicked on a field,remove IMDB_Votes,1607030053056
 main chart changed because of clicking a field,mark:tick;encoding:Rotten_Tomatoes_Rating-quantitative-x,1607030053121
+clicked on a field,add MPAA_Rating,1607030054484
 main chart changed because of clicking a field,"mark:tick;encoding:MPAA_Rating-nominal-y,Rotten_Tomatoes_Rating-quantitative-x",1607030054527
 mouseover on the specified chart,"mark:tick;encoding:MPAA_Rating-nominal-y,Rotten_Tomatoes_Rating-quantitative-x",1607030055397
 mouseout on the specified chart,"mark:tick;encoding:MPAA_Rating-nominal-y,Rotten_Tomatoes_Rating-quantitative-x",1607030055447
@@ -207,7 +226,9 @@ mouseover on the specified chart,"mark:tick;encoding:MPAA_Rating-nominal-y,Rotte
 mouseout on the specified chart,"mark:tick;encoding:MPAA_Rating-nominal-y,Rotten_Tomatoes_Rating-quantitative-x",1607030082054
 mouseover on the specified chart,"mark:tick;encoding:MPAA_Rating-nominal-y,Rotten_Tomatoes_Rating-quantitative-x",1607030082055
 mouseout on the specified chart,"mark:tick;encoding:MPAA_Rating-nominal-y,Rotten_Tomatoes_Rating-quantitative-x",1607030082088
+clicked on a field,remove MPAA_Rating,1607030083603
 main chart changed because of clicking a field,mark:tick;encoding:Rotten_Tomatoes_Rating-quantitative-x,1607030083676
+clicked on a field,add IMDB_Rating,1607030086586
 main chart changed because of clicking a field,"mark:point;encoding:IMDB_Rating-quantitative-x,Rotten_Tomatoes_Rating-quantitative-y",1607030086617
 mouseover on the specified chart,"mark:point;encoding:IMDB_Rating-quantitative-x,Rotten_Tomatoes_Rating-quantitative-y",1607030088055
 mouseout on the specified chart,"mark:point;encoding:IMDB_Rating-quantitative-x,Rotten_Tomatoes_Rating-quantitative-y",1607030088072
@@ -221,6 +242,7 @@ mouseover a related chart,"mark:point;encoding:Creative_Type-nominal-color,IMDB_
 mouseout a related chart,"mark:point;encoding:Creative_Type-nominal-color,IMDB_Rating-quantitative-x,Rotten_Tomatoes_Rating-quantitative-y",1607030102004
 mouseover a related chart,"mark:point;encoding:IMDB_Rating-quantitative-x,Rotten_Tomatoes_Rating-quantitative-y,Running_Time_min-quantitative-size",1607030102005
 mouseout a related chart,"mark:point;encoding:IMDB_Rating-quantitative-x,Rotten_Tomatoes_Rating-quantitative-y,Running_Time_min-quantitative-size",1607030104038
+clicked on a field,add Production_Budget,1607030107765
 main chart changed because of clicking a field,"mark:point;encoding:IMDB_Rating-quantitative-x,Production_Budget-quantitative-size,Rotten_Tomatoes_Rating-quantitative-y",1607030107830
 mouseover on the specified chart,"mark:point;encoding:IMDB_Rating-quantitative-x,Production_Budget-quantitative-size,Rotten_Tomatoes_Rating-quantitative-y",1607030109766
 mouseout on the specified chart,"mark:point;encoding:IMDB_Rating-quantitative-x,Production_Budget-quantitative-size,Rotten_Tomatoes_Rating-quantitative-y",1607030111250
@@ -259,9 +281,13 @@ mouseout a related chart,"mark:point;encoding:Production_Budget-quantitative-x,R
 mouseover a related chart,"mark:point;encoding:Production_Budget-quantitative-x,Rotten_Tomatoes_Rating-quantitative-y",1607030194817
 mouseout a related chart,"mark:point;encoding:Production_Budget-quantitative-x,Rotten_Tomatoes_Rating-quantitative-y",1607030194849
 added chart to bookmark,"mark:point;encoding:Production_Budget-quantitative-x,Rotten_Tomatoes_Rating-quantitative-y",1607030195703
+clicked on a field,remove Rotten_Tomatoes_Rating,1607030237123
 main chart changed because of clicking a field,"mark:point;encoding:IMDB_Rating-quantitative-x,Production_Budget-quantitative-y",1607030237187
+clicked on a field,remove IMDB_Rating,1607030238476
 main chart changed because of clicking a field,mark:tick;encoding:Production_Budget-quantitative-x,1607030238543
+clicked on a field,add Worldwide_Gross,1607030241228
 main chart changed because of clicking a field,"mark:point;encoding:Production_Budget-quantitative-x,Worldwide_Gross-quantitative-y",1607030241267
+clicked on a field,add US_Gross,1607030242290
 main chart changed because of clicking a field,"mark:point;encoding:Production_Budget-quantitative-size,US_Gross-quantitative-x,Worldwide_Gross-quantitative-y",1607030242306
 mouseover a related chart,"mark:point;encoding:Production_Budget-quantitative-x,Worldwide_Gross-quantitative-y",1607030251758
 mouseout a related chart,"mark:point;encoding:Production_Budget-quantitative-x,Worldwide_Gross-quantitative-y",1607030251773
@@ -291,8 +317,11 @@ mouseover a related chart,"mark:point;encoding:Production_Budget-quantitative-y,
 mouseout a related chart,"mark:point;encoding:Production_Budget-quantitative-y,US_Gross-quantitative-x",1607030336205
 mouseover a related chart,"mark:point;encoding:Production_Budget-quantitative-y,US_Gross-quantitative-x",1607030336206
 mouseout a related chart,"mark:point;encoding:Production_Budget-quantitative-y,US_Gross-quantitative-x",1607030338922
+clicked on a field,remove Production_Budget,1607030340353
 main chart changed because of clicking a field,"mark:point;encoding:US_Gross-quantitative-x,Worldwide_Gross-quantitative-y",1607030340416
+clicked on a field,add Rotten_Tomatoes_Rating,1607030348056
 main chart changed because of clicking a field,"mark:point;encoding:Rotten_Tomatoes_Rating-quantitative-size,US_Gross-quantitative-x,Worldwide_Gross-quantitative-y",1607030348086
+clicked on a field,"tried to add IMDB_Rating, but failed because already selected 3 fields",1607030349603
 mouseover a related chart,"mark:point;encoding:US_Gross-quantitative-x,Worldwide_Gross-quantitative-y",1607030352018
 mouseout a related chart,"mark:point;encoding:US_Gross-quantitative-x,Worldwide_Gross-quantitative-y",1607030352035
 mouseover a related chart,"mark:point;encoding:Rotten_Tomatoes_Rating-quantitative-x,Worldwide_Gross-quantitative-y",1607030352036
@@ -317,30 +346,49 @@ mouseover a related chart,"mark:point;encoding:Rotten_Tomatoes_Rating-quantitati
 mouseout a related chart,"mark:point;encoding:Rotten_Tomatoes_Rating-quantitative-y,US_Gross-quantitative-x",1607030358704
 mouseover a related chart,"mark:point;encoding:Rotten_Tomatoes_Rating-quantitative-y,US_Gross-quantitative-x",1607030358704
 mouseout a related chart,"mark:point;encoding:Rotten_Tomatoes_Rating-quantitative-y,US_Gross-quantitative-x",1607030358737
+clicked on a field,remove Worldwide_Gross,1607030360104
 main chart changed because of clicking a field,"mark:point;encoding:Rotten_Tomatoes_Rating-quantitative-x,US_Gross-quantitative-y",1607030360171
 mouseover a related chart,"mark:point;encoding:MPAA_Rating-nominal-color,Rotten_Tomatoes_Rating-quantitative-x,US_Gross-quantitative-y",1607030362553
 mouseout a related chart,"mark:point;encoding:MPAA_Rating-nominal-color,Rotten_Tomatoes_Rating-quantitative-x,US_Gross-quantitative-y",1607030362570
 mouseover a related chart,"mark:point;encoding:MPAA_Rating-nominal-color,Rotten_Tomatoes_Rating-quantitative-x,US_Gross-quantitative-y",1607030362570
 mouseout a related chart,"mark:point;encoding:MPAA_Rating-nominal-color,Rotten_Tomatoes_Rating-quantitative-x,US_Gross-quantitative-y",1607030362587
+clicked on a field,remove Rotten_Tomatoes_Rating,1607030370197
 main chart changed because of clicking a field,mark:tick;encoding:US_Gross-quantitative-x,1607030370255
+clicked on a field,add IMDB_Rating,1607030371531
 main chart changed because of clicking a field,"mark:point;encoding:IMDB_Rating-quantitative-x,US_Gross-quantitative-y",1607030371565
+clicked on a field,remove IMDB_Rating,1607030378124
 main chart changed because of clicking a field,mark:tick;encoding:US_Gross-quantitative-x,1607030378153
+clicked on a field,add Rotten_Tomatoes_Rating,1607030379593
 main chart changed because of clicking a field,"mark:point;encoding:Rotten_Tomatoes_Rating-quantitative-x,US_Gross-quantitative-y",1607030379630
+clicked on a field,remove Rotten_Tomatoes_Rating,1607030383319
 main chart changed because of clicking a field,mark:tick;encoding:US_Gross-quantitative-x,1607030383351
+clicked on a field,add Worldwide_Gross,1607030385524
 main chart changed because of clicking a field,"mark:point;encoding:US_Gross-quantitative-x,Worldwide_Gross-quantitative-y",1607030385565
+clicked on a field,remove US_Gross,1607030387355
 main chart changed because of clicking a field,mark:tick;encoding:Worldwide_Gross-quantitative-x,1607030387451
 main chart changed because of clicking a field,mark:tick;encoding:Worldwide_Gross-quantitative-x,1607030388887
+clicked on a field,add Rotten_Tomatoes_Rating,1607030389767
 main chart changed because of clicking a field,"mark:point;encoding:Rotten_Tomatoes_Rating-quantitative-x,Worldwide_Gross-quantitative-y",1607030389803
+clicked on a field,remove Rotten_Tomatoes_Rating,1607030392025
 main chart changed because of clicking a field,mark:tick;encoding:Worldwide_Gross-quantitative-x,1607030392050
+clicked on a field,add IMDB_Rating,1607030394815
 main chart changed because of clicking a field,"mark:point;encoding:IMDB_Rating-quantitative-x,Worldwide_Gross-quantitative-y",1607030394847
+clicked on a field,remove IMDB_Rating,1607030425808
 main chart changed because of clicking a field,mark:tick;encoding:Worldwide_Gross-quantitative-x,1607030425906
+clicked on a field,add Rotten_Tomatoes_Rating,1607030427773
 main chart changed because of clicking a field,"mark:point;encoding:Rotten_Tomatoes_Rating-quantitative-x,Worldwide_Gross-quantitative-y",1607030427809
+clicked on a field,remove Worldwide_Gross,1607030438263
 main chart changed because of clicking a field,mark:tick;encoding:Rotten_Tomatoes_Rating-quantitative-x,1607030438325
+clicked on a field,add US_Gross,1607030440190
 main chart changed because of clicking a field,"mark:point;encoding:Rotten_Tomatoes_Rating-quantitative-x,US_Gross-quantitative-y",1607030440231
+clicked on a field,remove Rotten_Tomatoes_Rating,1607030446890
 main chart changed because of clicking a field,mark:tick;encoding:US_Gross-quantitative-x,1607030446915
+clicked on a field,add IMDB_Rating,1607030448606
 main chart changed because of clicking a field,"mark:point;encoding:IMDB_Rating-quantitative-x,US_Gross-quantitative-y",1607030448631
 main chart changed because of clicking a field,"mark:point;encoding:IMDB_Rating-quantitative-x,US_Gross-quantitative-y",1607030459451
+clicked on a field,add IMDB_Votes,1607030461039
 main chart changed because of clicking a field,"mark:point;encoding:IMDB_Rating-quantitative-x,IMDB_Votes-quantitative-size,US_Gross-quantitative-y",1607030461066
+clicked on a field,remove IMDB_Rating,1607030462627
 main chart changed because of clicking a field,"mark:point;encoding:IMDB_Votes-quantitative-x,US_Gross-quantitative-y",1607030462674
 mouseover a related chart,"mark:point;encoding:Creative_Type-nominal-color,IMDB_Votes-quantitative-x,US_Gross-quantitative-y",1607030469776
 mouseout a related chart,"mark:point;encoding:Creative_Type-nominal-color,IMDB_Votes-quantitative-x,US_Gross-quantitative-y",1607030472193
@@ -356,15 +404,25 @@ mouseover a related chart,"mark:point;encoding:Creative_Type-nominal-color,IMDB_
 mouseout a related chart,"mark:point;encoding:Creative_Type-nominal-color,IMDB_Votes-quantitative-x,US_Gross-quantitative-y",1607030475874
 mouseover a related chart,"mark:point;encoding:Creative_Type-nominal-color,IMDB_Votes-quantitative-x,US_Gross-quantitative-y",1607030475874
 mouseout a related chart,"mark:point;encoding:Creative_Type-nominal-color,IMDB_Votes-quantitative-x,US_Gross-quantitative-y",1607030475891
+clicked on a field,remove IMDB_Votes,1607030477560
 main chart changed because of clicking a field,mark:tick;encoding:US_Gross-quantitative-x,1607030477614
+clicked on a field,add IMDB_Rating,1607030478869
 main chart changed because of clicking a field,"mark:point;encoding:IMDB_Rating-quantitative-x,US_Gross-quantitative-y",1607030478900
+clicked on a field,remove US_Gross,1607030484398
 main chart changed because of clicking a field,mark:tick;encoding:IMDB_Rating-quantitative-x,1607030484432
+clicked on a field,add Worldwide_Gross,1607030485826
 main chart changed because of clicking a field,"mark:point;encoding:IMDB_Rating-quantitative-x,Worldwide_Gross-quantitative-y",1607030485856
+clicked on a field,remove Worldwide_Gross,1607030497094
 main chart changed because of clicking a field,mark:tick;encoding:IMDB_Rating-quantitative-x,1607030497150
+clicked on a field,add US_Gross,1607030500021
 main chart changed because of clicking a field,"mark:point;encoding:IMDB_Rating-quantitative-x,US_Gross-quantitative-y",1607030500053
+clicked on a field,remove IMDB_Rating,1607030513990
 main chart changed because of clicking a field,mark:tick;encoding:US_Gross-quantitative-x,1607030514093
+clicked on a field,add Rotten_Tomatoes_Rating,1607030515466
 main chart changed because of clicking a field,"mark:point;encoding:Rotten_Tomatoes_Rating-quantitative-x,US_Gross-quantitative-y",1607030515641
+clicked on a field,add Worldwide_Gross,1607030527620
 main chart changed because of clicking a field,"mark:point;encoding:Rotten_Tomatoes_Rating-quantitative-size,US_Gross-quantitative-x,Worldwide_Gross-quantitative-y",1607030527683
+clicked on a field,remove US_Gross,1607030528650
 main chart changed because of clicking a field,"mark:point;encoding:Rotten_Tomatoes_Rating-quantitative-x,Worldwide_Gross-quantitative-y",1607030528678
 mouseover a related chart,"mark:point;encoding:Creative_Type-nominal-color,Rotten_Tomatoes_Rating-quantitative-x,Worldwide_Gross-quantitative-y",1607030545451
 mouseout a related chart,"mark:point;encoding:Creative_Type-nominal-color,Rotten_Tomatoes_Rating-quantitative-x,Worldwide_Gross-quantitative-y",1607030545934
@@ -378,6 +436,7 @@ mouseover a related chart,"mark:point;encoding:Rotten_Tomatoes_Rating-quantitati
 mouseout a related chart,"mark:point;encoding:Rotten_Tomatoes_Rating-quantitative-x,US_DVD_Sales-quantitative-size,Worldwide_Gross-quantitative-y",1607030555867
 mouseover a related chart,"mark:point;encoding:Creative_Type-nominal-color,Rotten_Tomatoes_Rating-quantitative-x,Worldwide_Gross-quantitative-y",1607030555868
 mouseout a related chart,"mark:point;encoding:Creative_Type-nominal-color,Rotten_Tomatoes_Rating-quantitative-x,Worldwide_Gross-quantitative-y",1607030556016
+clicked on a field,add IMDB_Rating,1607030560041
 main chart changed because of clicking a field,"mark:point;encoding:IMDB_Rating-quantitative-x,Rotten_Tomatoes_Rating-quantitative-size,Worldwide_Gross-quantitative-y",1607030560100
 mouseover a related chart,"mark:point;encoding:IMDB_Rating-quantitative-x,Rotten_Tomatoes_Rating-quantitative-y",1607030560750
 mouseout a related chart,"mark:point;encoding:IMDB_Rating-quantitative-x,Rotten_Tomatoes_Rating-quantitative-y",1607030560767
@@ -405,10 +464,16 @@ mouseout a related chart,"mark:point;encoding:IMDB_Rating-quantitative-x,Worldwi
 added chart to bookmark,"mark:point;encoding:IMDB_Rating-quantitative-x,Worldwide_Gross-quantitative-y",1607030585409
 mouseover a related chart,"mark:point;encoding:IMDB_Rating-quantitative-x,Worldwide_Gross-quantitative-y",1607030704003
 mouseout a related chart,"mark:point;encoding:IMDB_Rating-quantitative-x,Worldwide_Gross-quantitative-y",1607030704037
+clicked on a field,remove IMDB_Rating,1607030706307
 main chart changed because of clicking a field,"mark:point;encoding:Rotten_Tomatoes_Rating-quantitative-x,Worldwide_Gross-quantitative-y",1607030706368
+clicked on a field,remove Rotten_Tomatoes_Rating,1607030707762
 main chart changed because of clicking a field,mark:tick;encoding:Worldwide_Gross-quantitative-x,1607030707796
+clicked on a field,remove Worldwide_Gross,1607030708960
+clicked on a field,add Director,1607030711891
 main chart changed because of clicking a field,"mark:bar;encoding:-quantitative-x<aggregate>count,Director-nominal-y",1607030711929
+clicked on a field,add Rotten_Tomatoes_Rating,1607030714897
 main chart changed because of clicking a field,"mark:tick;encoding:Director-nominal-y,Rotten_Tomatoes_Rating-quantitative-x",1607030714931
+clicked on a field,add Worldwide_Gross,1607030717300
 main chart changed because of clicking a field,"mark:point;encoding:Director-nominal-y,Rotten_Tomatoes_Rating-quantitative-x<bin>,Worldwide_Gross-quantitative-size",1607030717338
 mouseover a related chart,"mark:tick;encoding:Rotten_Tomatoes_Rating-quantitative-x<bin>,Worldwide_Gross-quantitative-y",1607030723757
 mouseout a related chart,"mark:tick;encoding:Rotten_Tomatoes_Rating-quantitative-x<bin>,Worldwide_Gross-quantitative-y",1607030725663
@@ -659,7 +724,9 @@ mouseover a related chart,"mark:tick;encoding:Director-nominal-y,Worldwide_Gross
 mouseout a related chart,"mark:tick;encoding:Director-nominal-y,Worldwide_Gross-quantitative-x",1607030747248
 mouseover a related chart,"mark:point;encoding:-quantitative-size<aggregate>count,Director-nominal-y,Rotten_Tomatoes_Rating-quantitative-x<bin>",1607030747248
 mouseout a related chart,"mark:point;encoding:-quantitative-size<aggregate>count,Director-nominal-y,Rotten_Tomatoes_Rating-quantitative-x<bin>",1607030747831
+clicked on a field,remove Director,1607030749549
 main chart changed because of clicking a field,"mark:point;encoding:Rotten_Tomatoes_Rating-quantitative-x,Worldwide_Gross-quantitative-y",1607030749633
+clicked on a field,add MPAA_Rating,1607030757274
 main chart changed because of clicking a field,"mark:point;encoding:MPAA_Rating-nominal-x,Rotten_Tomatoes_Rating-quantitative-y<bin>,Worldwide_Gross-quantitative-size<aggregate>mean",1607030757307
 mouseover a related chart,"mark:bar;encoding:MPAA_Rating-nominal-x,Worldwide_Gross-quantitative-y<aggregate>mean",1607030758203
 mouseout a related chart,"mark:bar;encoding:MPAA_Rating-nominal-x,Worldwide_Gross-quantitative-y<aggregate>mean",1607030758254

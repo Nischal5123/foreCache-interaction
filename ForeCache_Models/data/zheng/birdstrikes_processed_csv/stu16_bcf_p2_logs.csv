@@ -1,7 +1,10 @@
 Interaction,Value,Time
 mouseover a related chart,"mark:bar;encoding:-quantitative-y<aggregate>count,Flight_Date-nominal-x",1599596127447
 mouseout a related chart,"mark:bar;encoding:-quantitative-y<aggregate>count,Flight_Date-nominal-x",1599596128661
+clicked on a field,add Speed_IAS_in_knots,1599596139638
 main chart changed because of clicking a field,mark:tick;encoding:Speed_IAS_in_knots-quantitative-x,1599596140114
+clicked on a field,add Effect_Amount_of_damage,1599596149880
+clicked on a field,add Aircraft_Make_Model,1599596150927
 main chart changed because of clicking a field,"mark:point;encoding:Aircraft_Make_Model-nominal-x,Effect_Amount_of_damage-nominal-y,Speed_IAS_in_knots-quantitative-size",1599596151396
 mouseover on the specified chart,"mark:point;encoding:Aircraft_Make_Model-nominal-x,Effect_Amount_of_damage-nominal-y,Speed_IAS_in_knots-quantitative-size",1599596162658
 mouseout on the specified chart,"mark:point;encoding:Aircraft_Make_Model-nominal-x,Effect_Amount_of_damage-nominal-y,Speed_IAS_in_knots-quantitative-size",1599596164574

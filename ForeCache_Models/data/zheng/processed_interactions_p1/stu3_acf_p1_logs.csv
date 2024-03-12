@@ -1,8 +1,10 @@
 User_Index,Interaction,Value,Time,Reward,Action,Attribute,State,High-Level-State
-0,main chart changed because of clicking a field,"mark:bar;encoding:-quantitative-x<aggregate>count,Creative_Type-nominal-y",1605906670722,1.1,same,"['Creative_Type', 'None', 'None']","[11, 16, 16]",Foraging
-1,mouseover on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Creative_Type-nominal-y",1605906672494,1.1,modify-1,"['Creative_Type', 'None', 'None']","[11, 16, 16]",Sensemaking
-3,main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-x,Source-nominal-y",1605906675540,2.0722222222222224,same,"['Creative_Type', 'None', 'Source']","[9, 11, 16]",Foraging
-4,mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-x,Source-nominal-y",1605906687547,2.0722222222222224,same,"['Creative_Type', 'None', 'Source']","[9, 11, 16]",Sensemaking
-5,mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-x,Source-nominal-y",1605906688457,2.0722222222222224,same,"['Creative_Type', 'None', 'Source']","[9, 11, 16]",Sensemaking
-7,mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-x,Source-nominal-y",1605906692203,2.0722222222222224,same,"['Creative_Type', 'None', 'Source']","[9, 11, 16]",Sensemaking
-8,added chart to bookmark,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-x,Source-nominal-y",1605906695732,2.0722222222222224,same,"['Creative_Type', 'None', 'Source']","[9, 11, 16]",Sensemaking
+0,clicked on a field,add Creative_Type,1605906670685,1.1,same,"['Creative_Type', 'None', 'None']","[11, 16, 16]",Foraging
+1,main chart changed because of clicking a field,"mark:bar;encoding:-quantitative-x<aggregate>count,Creative_Type-nominal-y",1605906670722,1.1,same,"['Creative_Type', 'None', 'None']","[11, 16, 16]",Foraging
+2,mouseover on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Creative_Type-nominal-y",1605906672494,1.1,modify-1,"['Creative_Type', 'None', 'None']","[11, 16, 16]",Sensemaking
+4,clicked on a field,add Source,1605906675506,1.0722222222222222,modify-1,"['None', 'None', 'Source']","[9, 16, 16]",Foraging
+5,main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-x,Source-nominal-y",1605906675540,2.0722222222222224,same,"['Creative_Type', 'None', 'Source']","[9, 11, 16]",Foraging
+6,mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-x,Source-nominal-y",1605906687547,2.0722222222222224,same,"['Creative_Type', 'None', 'Source']","[9, 11, 16]",Sensemaking
+7,mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-x,Source-nominal-y",1605906688457,2.0722222222222224,same,"['Creative_Type', 'None', 'Source']","[9, 11, 16]",Sensemaking
+9,mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-x,Source-nominal-y",1605906692203,2.0722222222222224,same,"['Creative_Type', 'None', 'Source']","[9, 11, 16]",Sensemaking
+10,added chart to bookmark,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-x,Source-nominal-y",1605906695732,2.0722222222222224,same,"['Creative_Type', 'None', 'Source']","[9, 11, 16]",Sensemaking

@@ -6,7 +6,7 @@ position the caret at any line or the code chunk, then click "+".
 
 The code chunk appears:
 ```{r}
-library(car)             # Load the car package for leveneTest
+library(car)             # Load he car package for leveneTest
 library(lmerTest)
 library(haven)
 library(tidyverse)
@@ -32,11 +32,11 @@ data_both_pall$OpenDataset <- paste(data_both_pall$Openend, data_both_pall$Datas
 #response ~ Trial + (1 | u) + (1 | Task) + (1 | Dataset) + (1 | Experiment) + (1 | Openendedness)
 
 combined_model_full_same <- lmer(formula = probabsame~ Trial + Openend + (1 | u) + (1 | Dataset)  , data = data_both_pall, REML = FALSE)
-reducedmodel_same <- lmer(formula =  probabsame ~ 1 + Openend+ (1 | u)  +(1 | Dataset), data = data_both_pall, REML = FALSE)
-lrtest(reducedmodel_same, combined_model_full_same)
+reducedmodel_same <- lmer(formula =  probabsame ~ 1 +Openend + (1 | u) + (1 | Dataset), data = data_both_pall, REML = FALSE)
+lrtest(combined_model_full_same, reducedmodel_same)
 ```
 ```{r}
-combined_model_reporting_same <-lmer(formula = probabsame~ Trial + (1|Openend) + (1 | u) + (1 | Dataset), data = data_both_pall)
+combined_model_reporting_same <-lmer(formula = probabsame~ Trial + Openend + (1 | u) + (1 | Dataset), data = data_both_pall)
 summary(combined_model_reporting_same)
 ```
 ```{r}
@@ -59,12 +59,12 @@ qqnorm(resid(combined_model_reporting_modify1))
 qqline(resid(combined_model_reporting_modify1))
 ```
 ```{r}
-combined_model_full_modify2 <- lmer(formula = probabmodify2~ Trial + Openend + (1 | u) + (1 | Dataset), data = data_both_pall, REML = FALSE)
-reducedmodel_modify2 <- lmer(formula =  probabmodify2 ~ 1 + Openend + (1 | u) + (1 | Dataset), data = data_both_pall, REML = FALSE)
+combined_model_full_modify2 <- lmer(formula = probabmodify2~Trial + Openend + (1 | u) + (1 | Dataset), data = data_both_pall, REML = FALSE)
+reducedmodel_modify2 <- lmer(formula =  probabmodify2 ~ 1  + Openend + (1 | u) + (1 | Dataset), data = data_both_pall, REML = FALSE)
 lrtest(reducedmodel_modify2, combined_model_full_modify2)
 ```
 ```{r}
-combined_model_reporting_modify2 <-lmer(formula = probabmodify2~ Trial + (1|Openend) + (1 | u) + (1 | Dataset), data = data_both_pall)
+combined_model_reporting_modify2 <-lmer(formula = probabmodify2~ Trial + Openend + (1 | u) + (1 | Dataset), data = data_both_pall)
 summary(combined_model_reporting_modify2)
 ```
 ```{r}
@@ -79,7 +79,7 @@ reducedmodel_modify3 <- lmer(formula =  probabmodify3 ~ 1 + Openend + (1 | u) + 
 lrtest(reducedmodel_modify3, combined_model_full_modify3)
 ```
 ```{r}
-combined_model_reporting_modify3 <-lmer(formula = probabmodify3~ Trial + (1 | u) + (1 | Dataset), data = data_both_pall)
+combined_model_reporting_modify3 <-lmer(formula = probabmodify3~ Trial + Openend+ (1 | u) + (1 | Dataset), data = data_both_pall)
 summary(combined_model_reporting_modify3)
 ```
 ```{r}

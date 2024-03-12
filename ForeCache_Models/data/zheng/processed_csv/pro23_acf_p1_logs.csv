@@ -5,6 +5,7 @@ mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Tit
 mouseout a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Title-nominal-y",1606226942589
 mouseover a related chart,mark:tick;encoding:US_Gross-quantitative-x,1606226942605
 mouseout a related chart,mark:tick;encoding:US_Gross-quantitative-x,1606226942683
+clicked on a field,add Source,1606226948520
 main chart changed because of clicking a field,"mark:bar;encoding:-quantitative-x<aggregate>count,Source-nominal-y",1606226948632
 mouseover on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Source-nominal-y",1606226955134
 mouseout on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Source-nominal-y",1606226955144
@@ -12,6 +13,7 @@ mouseover on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>co
 mouseout on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Source-nominal-y",1606226955161
 mouseover a related chart,"mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Source-nominal-color",1606226955461
 mouseout a related chart,"mark:point;encoding:Creative_Type-nominal-x,Major_Genre-nominal-y,Source-nominal-color",1606226955611
+clicked on a field,add Creative_Type,1606226959744
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-x,Source-nominal-y",1606226959988
 mouseover a related chart,"mark:point;encoding:Creative_Type-nominal-color,Director-nominal-x,Distributor-nominal-y",1606226967776
 mouseout a related chart,"mark:point;encoding:Creative_Type-nominal-color,Director-nominal-x,Distributor-nominal-y",1606226968078
@@ -21,6 +23,7 @@ mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggrega
 mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-x,Source-nominal-y",1606226969382
 mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-x,Source-nominal-y",1606226969382
 mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-x,Source-nominal-y",1606226969432
+clicked on a field,remove Creative_Type,1606226970224
 main chart changed because of clicking a field,"mark:bar;encoding:-quantitative-x<aggregate>count,Source-nominal-y",1606226970450
 mouseover on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Source-nominal-y",1606226973385
 scroll on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Source-nominal-y",1606226973828
@@ -242,6 +245,7 @@ mouseover on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>co
 mouseout on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Source-nominal-y",1606227039138
 mouseover on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Source-nominal-y",1606227039138
 mouseout on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Source-nominal-y",1606227039238
+clicked on a field,add Creative_Type,1606227040168
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-x,Source-nominal-y",1606227040470
 mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-x,Source-nominal-y",1606227044456
 mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-x,Source-nominal-y",1606227055674

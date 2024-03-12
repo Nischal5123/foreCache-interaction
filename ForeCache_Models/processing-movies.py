@@ -526,7 +526,7 @@ if __name__ == '__main__':
         end=task+'_logs.csv'
         if csv_filename.endswith(end):
             current_csv_files.append(csv_filename)
-            global_remove_invalid_rows(user_interactions_path, csv_filename)
+
 
 
     # average_bookmarked_charts = get_average_bookmarked_charts(current_csv_files)
@@ -548,29 +548,29 @@ if __name__ == '__main__':
              interaction_processor.process_interaction_logs(csv_filename)
              interaction_processor.process_actions(csv_filename)
 
-    global_create_master_file(processed_interactions_path,master_data_path,current_csv_files,task,isbirdstrike=dataset=='birdstrikes')
-
-
-    combined_user_interactions = pd.DataFrame(columns=['user', 'interaction_session'])
-    processed_interactions_path = './data/zheng/processed_interactions_' + task
-    for csv_filename in csv_files:
-        end = task + '_logs.csv'
-        if csv_filename.endswith(end):
-            user_name = global_get_user_name(csv_filename)
-            user_data = pd.read_csv(os.path.join(processed_interactions_path, csv_filename))
-            interactions = []
-            print('Total size of interaction log', len(user_data))
-            for index, row in user_data.iterrows():
-                value = ast.literal_eval(row['State'])
-                #+ [convert_string_action_to_int(row['Action'])]
-                match_to_dataset = int(get_interaction_id(value))
-                interactions.append(match_to_dataset)
-            print(csv_filename, len(interactions))
-            combined_user_interactions = pd.concat([combined_user_interactions, pd.DataFrame(
-                {'user': [user_name], 'interaction_session': [interactions]})], ignore_index=True)
-            interactions = []
-    print("Conversion complete.")
-    combined_user_interactions.to_csv("./data/zheng/competing_movies_interactions.csv", index=False)
+    # #global_create_master_file(processed_interactions_path,master_data_path,current_csv_files,task,isbirdstrike=dataset=='birdstrikes')
+    #
+    #
+    # combined_user_interactions = pd.DataFrame(columns=['user', 'interaction_session'])
+    # processed_interactions_path = './data/zheng/processed_interactions_' + task
+    # for csv_filename in csv_files:
+    #     end = task + '_logs.csv'
+    #     if csv_filename.endswith(end):
+    #         user_name = global_get_user_name(csv_filename)
+    #         user_data = pd.read_csv(os.path.join(processed_interactions_path, csv_filename))
+    #         interactions = []
+    #         print('Total size of interaction log', len(user_data))
+    #         for index, row in user_data.iterrows():
+    #             value = ast.literal_eval(row['State'])
+    #             #+ [convert_string_action_to_int(row['Action'])]
+    #             match_to_dataset = int(get_interaction_id(value))
+    #             interactions.append(match_to_dataset)
+    #         print(csv_filename, len(interactions))
+    #         combined_user_interactions = pd.concat([combined_user_interactions, pd.DataFrame(
+    #             {'user': [user_name], 'interaction_session': [interactions]})], ignore_index=True)
+    #         interactions = []
+    # print("Conversion complete.")
+    # combined_user_interactions.to_csv("./data/zheng/competing_movies_interactions.csv", index=False)
 
 
 

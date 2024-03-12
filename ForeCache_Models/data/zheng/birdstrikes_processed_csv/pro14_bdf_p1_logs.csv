@@ -47,6 +47,7 @@ mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Fli
 mouseout a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Flight_Date-nominal-y",1602685332228
 mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Flight_Date-nominal-y",1602685332228
 mouseout a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Flight_Date-nominal-y",1602685332246
+clicked on a field,add Flight_Date,1602685335023
 main chart changed because of clicking a field,"mark:bar;encoding:-quantitative-x<aggregate>count,Flight_Date-nominal-y",1602685335351
 mouseover a related chart,"mark:point;encoding:-quantitative-x<aggregate>count,Flight_Date-nominal-y,When_Phase_of_flight-nominal-color,When_Time_of_day-nominal-shape",1602685344875
 mouseout a related chart,"mark:point;encoding:-quantitative-x<aggregate>count,Flight_Date-nominal-y,When_Phase_of_flight-nominal-color,When_Time_of_day-nominal-shape",1602685356307
@@ -68,7 +69,9 @@ mouseover a related chart,"mark:point;encoding:-quantitative-x<aggregate>count,F
 mouseout a related chart,"mark:point;encoding:-quantitative-x<aggregate>count,Flight_Date-nominal-y,When_Phase_of_flight-nominal-color,Wildlife_Size-nominal-shape",1602685402642
 mouseover a related chart,"mark:point;encoding:-quantitative-x<aggregate>count,Flight_Date-nominal-y,When_Phase_of_flight-nominal-color,Wildlife_Size-nominal-shape",1602685402642
 mouseout a related chart,"mark:point;encoding:-quantitative-x<aggregate>count,Flight_Date-nominal-y,When_Phase_of_flight-nominal-color,Wildlife_Size-nominal-shape",1602685402653
+clicked on a field,add When_Phase_of_flight,1602685407037
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Flight_Date-nominal-y,When_Phase_of_flight-nominal-x",1602685407367
+clicked on a field,remove When_Phase_of_flight,1602685412409
 main chart changed because of clicking a field,"mark:bar;encoding:-quantitative-x<aggregate>count,Flight_Date-nominal-y",1602685413883
 mouseover on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Flight_Date-nominal-y",1602685421232
 mouseout on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Flight_Date-nominal-y",1602685421604

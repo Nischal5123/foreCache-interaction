@@ -76,7 +76,7 @@ class TDLearning:
                 best_next_action = np.argmax(Q[next_state])
                 td_target = reward + discount_factor * Q[next_state][best_next_action]
                 td_delta = td_target - Q[state][action]
-                Q[state][action] += alpha * (td_delta + info)
+                Q[state][action] += alpha * (td_delta)
                 state = next_state
                 if done:
                     break
@@ -117,7 +117,7 @@ class TDLearning:
                 best_next_action = np.argmax(Q[next_state])
                 td_target = reward + discount_factor * Q[next_state][best_next_action]
                 td_delta = td_target - Q[state][action]
-                Q[state][action] += alpha * (td_delta + prediction)
+                Q[state][action] += alpha * (td_delta)
 
                 state = next_state
                 if done:
@@ -237,8 +237,8 @@ def run_experiment(user_list, algo, hyperparam_file,dataset,task):
     result_dataframe.to_csv("Experiments_Folder/VizRec/{}/{}/{}.csv".format(dataset, task, title), index=False)
 
 if __name__ == '__main__':
-    datasets = ['movies']
-    tasks = [ 'p3','p4']
+    datasets = ['movies','birdstrikes']
+    tasks = [ 'p1','p2','p3','p4']
     for dataset in datasets:
         for task in tasks:
             env = environment_vizrec.environment_vizrec()

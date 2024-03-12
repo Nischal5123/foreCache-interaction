@@ -1,5 +1,7 @@
 Interaction,Value,Time
+clicked on a field,add Flight_Date,1599597550301
 main chart changed because of clicking a field,"mark:bar;encoding:-quantitative-y<aggregate>count,Flight_Date-nominal-x",1599597550802
+clicked on a field,add Origin_State,1599597587582
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Flight_Date-nominal-x,Origin_State-nominal-y",1599597588061
 mouseover a related chart,"mark:point;encoding:Airport_Name-nominal-x,Flight_Date-nominal-color,Origin_State-nominal-y",1599597599727
 scroll on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Flight_Date-nominal-x,Origin_State-nominal-y",1599597599755
@@ -715,6 +717,7 @@ scroll on a related chart,"mark:point;encoding:Aircraft_Make_Model-nominal-x,Fli
 scroll on a related chart,"mark:point;encoding:Aircraft_Make_Model-nominal-x,Flight_Date-nominal-color,Wildlife_Species-nominal-y",1599597628232
 scroll on a related chart,"mark:point;encoding:Aircraft_Make_Model-nominal-x,Flight_Date-nominal-color,Wildlife_Species-nominal-y",1599597628250
 mouseout a related chart,"mark:point;encoding:Aircraft_Make_Model-nominal-x,Flight_Date-nominal-color,Wildlife_Species-nominal-y",1599597628405
+clicked on a field,add Airport_Name,1599597640669
 main chart changed because of clicking a field,"mark:point;encoding:Airport_Name-nominal-x,Flight_Date-nominal-color,Origin_State-nominal-y",1599597641161
 mouseover a related chart,"mark:point;encoding:Aircraft_Airline_Operator-nominal-x,Aircraft_Make_Model-nominal-y,Flight_Date-nominal-color",1599597652577
 mouseout a related chart,"mark:point;encoding:Aircraft_Airline_Operator-nominal-x,Aircraft_Make_Model-nominal-y,Flight_Date-nominal-color",1599597652832
@@ -1450,7 +1453,9 @@ scroll on a related chart,"mark:point;encoding:Aircraft_Airline_Operator-nominal
 scroll on a related chart,"mark:point;encoding:Aircraft_Airline_Operator-nominal-x,Flight_Date-nominal-color,Origin_State-nominal-y",1599597688279
 scroll on a related chart,"mark:point;encoding:Aircraft_Airline_Operator-nominal-x,Flight_Date-nominal-color,Origin_State-nominal-y",1599597688313
 mouseout a related chart,"mark:point;encoding:Aircraft_Airline_Operator-nominal-x,Flight_Date-nominal-color,Origin_State-nominal-y",1599597688423
+clicked on a field,remove Airport_Name,1599597696037
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Flight_Date-nominal-x,Origin_State-nominal-y",1599597696523
+clicked on a field,add Cost_Other,1599597707334
 main chart changed because of clicking a field,"mark:point;encoding:Cost_Other-quantitative-size,Flight_Date-nominal-x,Origin_State-nominal-y",1599597707811
 mouseover a related chart,"mark:point;encoding:Aircraft_Make_Model-nominal-x,Flight_Date-nominal-color,Wildlife_Species-nominal-y",1599597722402
 scroll on a related chart,"mark:point;encoding:Aircraft_Make_Model-nominal-x,Flight_Date-nominal-color,Wildlife_Species-nominal-y",1599597724545
@@ -8745,11 +8750,14 @@ scroll on a related chart,"mark:point;encoding:Aircraft_Make_Model-nominal-x,Fli
 mouseout a related chart,"mark:point;encoding:Aircraft_Make_Model-nominal-x,Flight_Date-nominal-color,Origin_State-nominal-y",1599598150626
 mouseover a related chart,"mark:point;encoding:Aircraft_Make_Model-nominal-x,Flight_Date-nominal-color,Origin_State-nominal-y",1599598150626
 mouseout a related chart,"mark:point;encoding:Aircraft_Make_Model-nominal-x,Flight_Date-nominal-color,Origin_State-nominal-y",1599598150634
+clicked on a field,"tried to add Effect_Amount_of_damage, but failed because already selected 3 fields",1599598154048
 mouseover a related chart,"mark:point;encoding:Aircraft_Airline_Operator-nominal-x,Aircraft_Make_Model-nominal-y,Flight_Date-nominal-color",1599598155612
 mouseout a related chart,"mark:point;encoding:Aircraft_Airline_Operator-nominal-x,Aircraft_Make_Model-nominal-y,Flight_Date-nominal-color",1599598155665
 mouseover a related chart,"mark:point;encoding:Aircraft_Airline_Operator-nominal-x,Aircraft_Make_Model-nominal-y,Flight_Date-nominal-color",1599598155665
 mouseout a related chart,"mark:point;encoding:Aircraft_Airline_Operator-nominal-x,Aircraft_Make_Model-nominal-y,Flight_Date-nominal-color",1599598155689
+clicked on a field,remove Cost_Other,1599598157860
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Flight_Date-nominal-x,Origin_State-nominal-y",1599598158518
+clicked on a field,add Effect_Amount_of_damage,1599598169748
 main chart changed because of clicking a field,"mark:point;encoding:Effect_Amount_of_damage-nominal-color,Flight_Date-nominal-x,Origin_State-nominal-y",1599598170237
 mouseover on the specified chart,"mark:point;encoding:Effect_Amount_of_damage-nominal-color,Flight_Date-nominal-x,Origin_State-nominal-y",1599598193701
 mouseout on the specified chart,"mark:point;encoding:Effect_Amount_of_damage-nominal-color,Flight_Date-nominal-x,Origin_State-nominal-y",1599598193717
@@ -12430,7 +12438,9 @@ mouseover on the specified chart,"mark:point;encoding:Effect_Amount_of_damage-no
 mouseout on the specified chart,"mark:point;encoding:Effect_Amount_of_damage-nominal-color,Flight_Date-nominal-x,Origin_State-nominal-y",1599598395095
 mouseover on the specified chart,"mark:point;encoding:Effect_Amount_of_damage-nominal-color,Flight_Date-nominal-x,Origin_State-nominal-y",1599598395095
 mouseout on the specified chart,"mark:point;encoding:Effect_Amount_of_damage-nominal-color,Flight_Date-nominal-x,Origin_State-nominal-y",1599598395111
+clicked on a field,remove Effect_Amount_of_damage,1599598396747
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Flight_Date-nominal-x,Origin_State-nominal-y",1599598397222
+clicked on a field,add Wildlife_Size,1599598409567
 main chart changed because of clicking a field,"mark:point;encoding:Flight_Date-nominal-x,Origin_State-nominal-y,Wildlife_Size-nominal-color",1599598410092
 mouseover on the specified chart,"mark:point;encoding:Flight_Date-nominal-x,Origin_State-nominal-y,Wildlife_Size-nominal-color",1599598423738
 mouseout on the specified chart,"mark:point;encoding:Flight_Date-nominal-x,Origin_State-nominal-y,Wildlife_Size-nominal-color",1599598424506

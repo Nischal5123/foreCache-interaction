@@ -3,6 +3,7 @@ mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Eff
 mouseout a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Effect_Amount_of_damage-nominal-y",1606070090701
 mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Airport_Name-nominal-y",1606070093956
 mouseout a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Airport_Name-nominal-y",1606070094373
+clicked on a field,add When_Phase_of_flight,1606070095510
 main chart changed because of clicking a field,"mark:bar;encoding:-quantitative-x<aggregate>count,When_Phase_of_flight-nominal-y",1606070095527
 mouseover on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,When_Phase_of_flight-nominal-y",1606070097250
 mouseout on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,When_Phase_of_flight-nominal-y",1606070097267
@@ -43,6 +44,8 @@ mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Fli
 mouseout a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Flight_Date-nominal-row,When_Phase_of_flight-nominal-y",1606070225763
 mouseover on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,When_Phase_of_flight-nominal-y",1606070232403
 mouseout on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,When_Phase_of_flight-nominal-y",1606070232419
+clicked on a field,remove When_Phase_of_flight,1606070234242
+clicked on a field,add Flight_Date,1606070235575
 main chart changed because of clicking a field,"mark:bar;encoding:-quantitative-x<aggregate>count,Flight_Date-nominal-y",1606070235594
 mouseover on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Flight_Date-nominal-y",1606070237798
 mouseout on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Flight_Date-nominal-y",1606070237815

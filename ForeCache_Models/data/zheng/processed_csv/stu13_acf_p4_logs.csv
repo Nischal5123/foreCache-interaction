@@ -1,6 +1,9 @@
 Interaction,Value,Time
+clicked on a field,add Major_Genre,1606703164484
 main chart changed because of clicking a field,"mark:bar;encoding:-quantitative-x<aggregate>count,Major_Genre-nominal-y",1606703164578
+clicked on a field,add Production_Budget,1606703171406
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Major_Genre-nominal-y,Production_Budget-quantitative-x<bin>",1606703171444
+clicked on a field,add Worldwide_Gross,1606703174824
 main chart changed because of clicking a field,"mark:point;encoding:Major_Genre-nominal-y,Production_Budget-quantitative-size,Worldwide_Gross-quantitative-x<bin>",1606703174865
 mouseover on the specified chart,"mark:point;encoding:Major_Genre-nominal-y,Production_Budget-quantitative-size,Worldwide_Gross-quantitative-x<bin>",1606703178260
 mouseout on the specified chart,"mark:point;encoding:Major_Genre-nominal-y,Production_Budget-quantitative-size,Worldwide_Gross-quantitative-x<bin>",1606703178284
@@ -34,7 +37,9 @@ mouseover on the specified chart,"mark:point;encoding:Major_Genre-nominal-y,Prod
 mouseout on the specified chart,"mark:point;encoding:Major_Genre-nominal-y,Production_Budget-quantitative-size,Worldwide_Gross-quantitative-x<bin>",1606703200291
 mouseover on the specified chart,"mark:point;encoding:Major_Genre-nominal-y,Production_Budget-quantitative-size,Worldwide_Gross-quantitative-x<bin>",1606703200291
 mouseout on the specified chart,"mark:point;encoding:Major_Genre-nominal-y,Production_Budget-quantitative-size,Worldwide_Gross-quantitative-x<bin>",1606703204154
+clicked on a field,remove Major_Genre,1606703205162
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-x<aggregate>count,Production_Budget-quantitative-y<aggregate>mean,Worldwide_Gross-quantitative-size<aggregate>mean",1606703205229
+clicked on a field,add Major_Genre,1606703211273
 main chart changed because of clicking a field,"mark:point;encoding:Major_Genre-nominal-y,Production_Budget-quantitative-size,Worldwide_Gross-quantitative-x<bin>",1606703211304
 mouseover on the specified chart,"mark:point;encoding:Major_Genre-nominal-y,Production_Budget-quantitative-size,Worldwide_Gross-quantitative-x<bin>",1606703217255
 mouseout on the specified chart,"mark:point;encoding:Major_Genre-nominal-y,Production_Budget-quantitative-size,Worldwide_Gross-quantitative-x<bin>",1606703217271
@@ -42,6 +47,7 @@ mouseover on the specified chart,"mark:point;encoding:Major_Genre-nominal-y,Prod
 mouseout on the specified chart,"mark:point;encoding:Major_Genre-nominal-y,Production_Budget-quantitative-size,Worldwide_Gross-quantitative-x<bin>",1606703228678
 mouseover on the specified chart,"mark:point;encoding:Major_Genre-nominal-y,Production_Budget-quantitative-size,Worldwide_Gross-quantitative-x<bin>",1606703228678
 mouseout on the specified chart,"mark:point;encoding:Major_Genre-nominal-y,Production_Budget-quantitative-size,Worldwide_Gross-quantitative-x<bin>",1606703228685
+clicked on a field,remove Worldwide_Gross,1606703229982
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Major_Genre-nominal-y,Production_Budget-quantitative-x<bin>",1606703230075
 mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Major_Genre-nominal-y,Production_Budget-quantitative-x<bin>",1606703236681
 mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Major_Genre-nominal-y,Production_Budget-quantitative-x<bin>",1606703244900
@@ -59,6 +65,7 @@ mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggrega
 mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Major_Genre-nominal-y,Production_Budget-quantitative-x<bin>",1606703275526
 mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Major_Genre-nominal-y,Production_Budget-quantitative-x<bin>",1606703275526
 mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Major_Genre-nominal-y,Production_Budget-quantitative-x<bin>",1606703275559
+clicked on a field,add Source,1606703278467
 main chart changed because of clicking a field,"mark:point;encoding:Major_Genre-nominal-x,Production_Budget-quantitative-size,Source-nominal-y",1606703278632
 mouseover on the specified chart,"mark:point;encoding:Major_Genre-nominal-x,Production_Budget-quantitative-size,Source-nominal-y",1606703283661
 mouseout on the specified chart,"mark:point;encoding:Major_Genre-nominal-x,Production_Budget-quantitative-size,Source-nominal-y",1606703283669
@@ -133,14 +140,19 @@ scroll on the specified chart,"mark:point;encoding:Major_Genre-nominal-x,Product
 mouseout on the specified chart,"mark:point;encoding:Major_Genre-nominal-x,Production_Budget-quantitative-size,Source-nominal-y",1606703293810
 mouseover on the specified chart,"mark:point;encoding:Major_Genre-nominal-x,Production_Budget-quantitative-size,Source-nominal-y",1606703293810
 mouseout on the specified chart,"mark:point;encoding:Major_Genre-nominal-x,Production_Budget-quantitative-size,Source-nominal-y",1606703293818
+clicked on a field,remove Major_Genre,1606703296751
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Production_Budget-quantitative-x<bin>,Source-nominal-y",1606703296856
+clicked on a field,add Major_Genre,1606703309708
 main chart changed because of clicking a field,"mark:point;encoding:Major_Genre-nominal-x,Production_Budget-quantitative-size,Source-nominal-y",1606703309778
+clicked on a field,remove Major_Genre,1606703313074
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Production_Budget-quantitative-x<bin>,Source-nominal-y",1606703313119
 mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Production_Budget-quantitative-x<bin>,Source-nominal-y",1606703315139
 mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Production_Budget-quantitative-x<bin>,Source-nominal-y",1606703315149
 mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Production_Budget-quantitative-x<bin>,Source-nominal-y",1606703334642
 mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Production_Budget-quantitative-x<bin>,Source-nominal-y",1606703334926
+clicked on a field,remove Source,1606703336087
 main chart changed because of clicking a field,mark:tick;encoding:Production_Budget-quantitative-x,1606703336190
+clicked on a field,add Source,1606703342751
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Production_Budget-quantitative-x<bin>,Source-nominal-y",1606703342781
 mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Production_Budget-quantitative-x<bin>,Source-nominal-y",1606703347373
 scroll on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Production_Budget-quantitative-x<bin>,Source-nominal-y",1606703348041
@@ -249,6 +261,7 @@ mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggrega
 mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Production_Budget-quantitative-x<bin>,Source-nominal-y",1606703360886
 mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Production_Budget-quantitative-x<bin>,Source-nominal-y",1606703360886
 mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Production_Budget-quantitative-x<bin>,Source-nominal-y",1606703360934
+clicked on a field,add Rotten_Tomatoes_Rating,1606703365792
 main chart changed because of clicking a field,"mark:point;encoding:Production_Budget-quantitative-size,Rotten_Tomatoes_Rating-quantitative-x<bin>,Source-nominal-y",1606703365856
 mouseover on the specified chart,"mark:point;encoding:Production_Budget-quantitative-size,Rotten_Tomatoes_Rating-quantitative-x<bin>,Source-nominal-y",1606703378955
 mouseout on the specified chart,"mark:point;encoding:Production_Budget-quantitative-size,Rotten_Tomatoes_Rating-quantitative-x<bin>,Source-nominal-y",1606703378962
@@ -290,8 +303,11 @@ scroll on the specified chart,"mark:point;encoding:Production_Budget-quantitativ
 mouseout on the specified chart,"mark:point;encoding:Production_Budget-quantitative-size,Rotten_Tomatoes_Rating-quantitative-x<bin>,Source-nominal-y",1606703395407
 mouseover on the specified chart,"mark:point;encoding:Production_Budget-quantitative-size,Rotten_Tomatoes_Rating-quantitative-x<bin>,Source-nominal-y",1606703395407
 mouseout on the specified chart,"mark:point;encoding:Production_Budget-quantitative-size,Rotten_Tomatoes_Rating-quantitative-x<bin>,Source-nominal-y",1606703395415
+clicked on a field,remove Production_Budget,1606703398761
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Rotten_Tomatoes_Rating-quantitative-x<bin>,Source-nominal-y",1606703398860
+clicked on a field,add Major_Genre,1606703403934
 main chart changed because of clicking a field,"mark:point;encoding:Major_Genre-nominal-x,Rotten_Tomatoes_Rating-quantitative-size,Source-nominal-y",1606703403963
+clicked on a field,remove Source,1606703406079
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-x<bin>",1606703406116
 mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-x<bin>",1606703415530
 mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-x<bin>",1606703415539
@@ -306,8 +322,10 @@ mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggrega
 mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-x<bin>",1606703441455
 mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-x<bin>",1606703441456
 mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Major_Genre-nominal-y,Rotten_Tomatoes_Rating-quantitative-x<bin>",1606703441480
+clicked on a field,remove Major_Genre,1606703442910
 main chart changed because of clicking a field,mark:tick;encoding:Rotten_Tomatoes_Rating-quantitative-x,1606703442967
 main chart changed because of clicking a field,mark:tick;encoding:Rotten_Tomatoes_Rating-quantitative-x,1606703453658
+clicked on a field,add Source,1606703457473
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Rotten_Tomatoes_Rating-quantitative-x<bin>,Source-nominal-y",1606703457522
 mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Rotten_Tomatoes_Rating-quantitative-x<bin>,Source-nominal-y",1606703460046
 mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Rotten_Tomatoes_Rating-quantitative-x<bin>,Source-nominal-y",1606703460086
@@ -330,7 +348,9 @@ mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggrega
 mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Rotten_Tomatoes_Rating-quantitative-x<bin>,Source-nominal-y",1606703518493
 mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Rotten_Tomatoes_Rating-quantitative-x<bin>,Source-nominal-y",1606703518493
 mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Rotten_Tomatoes_Rating-quantitative-x<bin>,Source-nominal-y",1606703518516
+clicked on a field,remove Source,1606703519514
 main chart changed because of clicking a field,mark:tick;encoding:Rotten_Tomatoes_Rating-quantitative-x,1606703519585
+clicked on a field,add Source,1606703526765
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Rotten_Tomatoes_Rating-quantitative-x<bin>,Source-nominal-y",1606703526800
 mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Rotten_Tomatoes_Rating-quantitative-x<bin>,Source-nominal-y",1606703533396
 mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Rotten_Tomatoes_Rating-quantitative-x<bin>,Source-nominal-y",1606703533412
@@ -366,13 +386,19 @@ scroll on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>
 mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Rotten_Tomatoes_Rating-quantitative-x<bin>,Source-nominal-y",1606703540304
 mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Rotten_Tomatoes_Rating-quantitative-x<bin>,Source-nominal-y",1606703540304
 mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Rotten_Tomatoes_Rating-quantitative-x<bin>,Source-nominal-y",1606703540340
+clicked on a field,add Worldwide_Gross,1606703544693
 main chart changed because of clicking a field,"mark:point;encoding:Rotten_Tomatoes_Rating-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1606703544792
 main chart changed because of clicking a field,"mark:point;encoding:Rotten_Tomatoes_Rating-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1606703548510
+clicked on a field,remove Rotten_Tomatoes_Rating,1606703550868
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1606703550911
+clicked on a field,add Rotten_Tomatoes_Rating,1606703559227
 main chart changed because of clicking a field,"mark:point;encoding:Rotten_Tomatoes_Rating-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1606703559256
+clicked on a field,"tried to add Major_Genre, but failed because already selected 3 fields",1606703563122
 mouseover on the specified chart,"mark:point;encoding:Rotten_Tomatoes_Rating-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1606703565178
 mouseout on the specified chart,"mark:point;encoding:Rotten_Tomatoes_Rating-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1606703565689
+clicked on a field,remove Rotten_Tomatoes_Rating,1606703568086
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1606703568124
+clicked on a field,add Major_Genre,1606703585073
 main chart changed because of clicking a field,"mark:point;encoding:Major_Genre-nominal-x,Source-nominal-y,Worldwide_Gross-quantitative-size",1606703585139
 mouseover on the specified chart,"mark:point;encoding:Major_Genre-nominal-x,Source-nominal-y,Worldwide_Gross-quantitative-size",1606703587690
 mouseout on the specified chart,"mark:point;encoding:Major_Genre-nominal-x,Source-nominal-y,Worldwide_Gross-quantitative-size",1606703588209

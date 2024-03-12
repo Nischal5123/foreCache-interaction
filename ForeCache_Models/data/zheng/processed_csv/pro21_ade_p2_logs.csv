@@ -1,8 +1,12 @@
 Interaction,Value,Time
 mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Title-nominal-y",1606857906769
 mouseout a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Title-nominal-y",1606857908195
+clicked on a field,add Creative_Type,1606857913850
 main chart changed because of clicking a field,"mark:bar;encoding:-quantitative-x<aggregate>count,Creative_Type-nominal-y",1606857913889
+clicked on a field,remove Creative_Type,1606857918215
+clicked on a field,add Source,1606857921016
 main chart changed because of clicking a field,"mark:bar;encoding:-quantitative-x<aggregate>count,Source-nominal-y",1606857921052
+clicked on a field,add Running_Time_min,1606857926427
 main chart changed because of clicking a field,"mark:tick;encoding:Running_Time_min-quantitative-x,Source-nominal-y",1606857926463
 mouseover on the specified chart,"mark:tick;encoding:Running_Time_min-quantitative-x,Source-nominal-y",1606857942572
 mouseout on the specified chart,"mark:tick;encoding:Running_Time_min-quantitative-x,Source-nominal-y",1606857943339
@@ -12,6 +16,7 @@ mouseover on the specified chart,"mark:tick;encoding:Running_Time_min-quantitati
 mouseout on the specified chart,"mark:tick;encoding:Running_Time_min-quantitative-x,Source-nominal-y",1606857943905
 mouseover on the specified chart,"mark:tick;encoding:Running_Time_min-quantitative-x,Source-nominal-y",1606857943905
 mouseout on the specified chart,"mark:tick;encoding:Running_Time_min-quantitative-x,Source-nominal-y",1606857945605
+clicked on a field,add US_Gross,1606857947398
 main chart changed because of clicking a field,"mark:point;encoding:Running_Time_min-quantitative-size<aggregate>mean,Source-nominal-x,US_Gross-quantitative-y<bin>",1606857947500
 mouseover on the specified chart,"mark:point;encoding:Running_Time_min-quantitative-size<aggregate>mean,Source-nominal-x,US_Gross-quantitative-y<bin>",1606857948222
 mouseout on the specified chart,"mark:point;encoding:Running_Time_min-quantitative-size<aggregate>mean,Source-nominal-x,US_Gross-quantitative-y<bin>",1606857959055
@@ -34,6 +39,7 @@ mouseover on the specified chart,"mark:point;encoding:Running_Time_min-quantitat
 mouseout on the specified chart,"mark:point;encoding:Running_Time_min-quantitative-size<aggregate>mean,Source-nominal-x,US_Gross-quantitative-y<bin>",1606857969854
 mouseover on the specified chart,"mark:point;encoding:Running_Time_min-quantitative-size<aggregate>mean,Source-nominal-x,US_Gross-quantitative-y<bin>",1606857969854
 mouseout on the specified chart,"mark:point;encoding:Running_Time_min-quantitative-size<aggregate>mean,Source-nominal-x,US_Gross-quantitative-y<bin>",1606857970022
+clicked on a field,remove Running_Time_min,1606857977559
 main chart changed because of clicking a field,"mark:tick;encoding:Source-nominal-y,US_Gross-quantitative-x",1606857977658
 mouseover on the specified chart,"mark:tick;encoding:Source-nominal-y,US_Gross-quantitative-x",1606857978042
 mouseout on the specified chart,"mark:tick;encoding:Source-nominal-y,US_Gross-quantitative-x",1606857978150
@@ -47,6 +53,7 @@ mouseover on the specified chart,"mark:tick;encoding:Source-nominal-y,US_Gross-q
 mouseout on the specified chart,"mark:tick;encoding:Source-nominal-y,US_Gross-quantitative-x",1606857979029
 mouseover on the specified chart,"mark:tick;encoding:Source-nominal-y,US_Gross-quantitative-x",1606857979029
 mouseout on the specified chart,"mark:tick;encoding:Source-nominal-y,US_Gross-quantitative-x",1606857979038
+clicked on a field,add Running_Time_min,1606857980169
 main chart changed because of clicking a field,"mark:point;encoding:Running_Time_min-quantitative-size<aggregate>mean,Source-nominal-x,US_Gross-quantitative-y<bin>",1606857980210
 mouseover on the specified chart,"mark:point;encoding:Running_Time_min-quantitative-size<aggregate>mean,Source-nominal-x,US_Gross-quantitative-y<bin>",1606857980376
 scroll on the specified chart,"mark:point;encoding:Running_Time_min-quantitative-size<aggregate>mean,Source-nominal-x,US_Gross-quantitative-y<bin>",1606857980871
@@ -192,6 +199,7 @@ mouseover on the specified chart,"mark:point;encoding:Running_Time_min-quantitat
 mouseout on the specified chart,"mark:point;encoding:Running_Time_min-quantitative-size<aggregate>mean,Source-nominal-x,US_Gross-quantitative-y<bin>",1606858027837
 mouseover on the specified chart,"mark:point;encoding:Running_Time_min-quantitative-size<aggregate>mean,Source-nominal-x,US_Gross-quantitative-y<bin>",1606858027837
 mouseout on the specified chart,"mark:point;encoding:Running_Time_min-quantitative-size<aggregate>mean,Source-nominal-x,US_Gross-quantitative-y<bin>",1606858027854
+clicked on a field,"tried to add Title, but failed because already selected 3 fields",1606858034788
 mouseover on the specified chart,"mark:point;encoding:Running_Time_min-quantitative-size<aggregate>mean,Source-nominal-x,US_Gross-quantitative-y<bin>",1606858036725
 mouseout on the specified chart,"mark:point;encoding:Running_Time_min-quantitative-size<aggregate>mean,Source-nominal-x,US_Gross-quantitative-y<bin>",1606858036903
 mouseover on the specified chart,"mark:point;encoding:Running_Time_min-quantitative-size<aggregate>mean,Source-nominal-x,US_Gross-quantitative-y<bin>",1606858036903

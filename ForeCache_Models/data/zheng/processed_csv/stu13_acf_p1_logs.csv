@@ -1,7 +1,9 @@
 Interaction,Value,Time
 mouseover a related chart,mark:tick;encoding:US_Gross-quantitative-x,1606701985863
 mouseout a related chart,mark:tick;encoding:US_Gross-quantitative-x,1606701985876
+clicked on a field,add Creative_Type,1606701986751
 main chart changed because of clicking a field,"mark:bar;encoding:-quantitative-x<aggregate>count,Creative_Type-nominal-y",1606701986781
+clicked on a field,add Source,1606701994892
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-x,Source-nominal-y",1606701994918
 mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-x,Source-nominal-y",1606701999322
 mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-x,Source-nominal-y",1606701999330

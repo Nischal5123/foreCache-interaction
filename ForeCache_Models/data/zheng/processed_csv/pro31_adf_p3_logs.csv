@@ -44,22 +44,31 @@ scroll on a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Dis
 mouseout a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Distributor-nominal-y",1614014440977
 mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Title-nominal-y",1614014441061
 mouseout a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Title-nominal-y",1614014441144
+clicked on a field,add IMDB_Rating,1614014445780
 main chart changed because of clicking a field,mark:tick;encoding:IMDB_Rating-quantitative-x,1614014446350
+clicked on a field,add US_Gross,1614014462217
 main chart changed because of clicking a field,"mark:point;encoding:IMDB_Rating-quantitative-x,US_Gross-quantitative-y",1614014462808
+clicked on a field,add IMDB_Votes,1614014486022
 main chart changed because of clicking a field,"mark:point;encoding:IMDB_Rating-quantitative-x,IMDB_Votes-quantitative-size,US_Gross-quantitative-y",1614014486605
+clicked on a field,"tried to add Source, but failed because already selected 3 fields",1614014494235
 mouseover on the specified chart,"mark:point;encoding:IMDB_Rating-quantitative-x,IMDB_Votes-quantitative-size,US_Gross-quantitative-y",1614014495893
 mouseout on the specified chart,"mark:point;encoding:IMDB_Rating-quantitative-x,IMDB_Votes-quantitative-size,US_Gross-quantitative-y",1614014495993
 mouseover on the specified chart,"mark:point;encoding:IMDB_Rating-quantitative-x,IMDB_Votes-quantitative-size,US_Gross-quantitative-y",1614014495993
 mouseout on the specified chart,"mark:point;encoding:IMDB_Rating-quantitative-x,IMDB_Votes-quantitative-size,US_Gross-quantitative-y",1614014496027
+clicked on a field,"tried to add Title, but failed because already selected 3 fields",1614014498588
 mouseover on the specified chart,"mark:point;encoding:IMDB_Rating-quantitative-x,IMDB_Votes-quantitative-size,US_Gross-quantitative-y",1614014500709
 mouseout on the specified chart,"mark:point;encoding:IMDB_Rating-quantitative-x,IMDB_Votes-quantitative-size,US_Gross-quantitative-y",1614014500793
+clicked on a field,remove IMDB_Votes,1614014503235
 main chart changed because of clicking a field,"mark:point;encoding:IMDB_Rating-quantitative-x,US_Gross-quantitative-y",1614014503811
+clicked on a field,add Title,1614014504900
 main chart changed because of clicking a field,"mark:point;encoding:IMDB_Rating-quantitative-x<bin>,Title-nominal-y,US_Gross-quantitative-size",1614014505195
+clicked on a field,remove Title,1614014508137
 main chart changed because of clicking a field,"mark:point;encoding:IMDB_Rating-quantitative-x,US_Gross-quantitative-y",1614014508439
 mouseover on the specified chart,"mark:point;encoding:IMDB_Rating-quantitative-x,US_Gross-quantitative-y",1614014509630
 mouseout on the specified chart,"mark:point;encoding:IMDB_Rating-quantitative-x,US_Gross-quantitative-y",1614014509817
 mouseover on the specified chart,"mark:point;encoding:IMDB_Rating-quantitative-x,US_Gross-quantitative-y",1614014511837
 mouseout on the specified chart,"mark:point;encoding:IMDB_Rating-quantitative-x,US_Gross-quantitative-y",1614014511988
+clicked on a field,add Title,1614014514439
 main chart changed because of clicking a field,"mark:point;encoding:IMDB_Rating-quantitative-x<bin>,Title-nominal-y,US_Gross-quantitative-size",1614014514746
 mouseover on the specified chart,"mark:point;encoding:IMDB_Rating-quantitative-x<bin>,Title-nominal-y,US_Gross-quantitative-size",1614014527833
 mouseout on the specified chart,"mark:point;encoding:IMDB_Rating-quantitative-x<bin>,Title-nominal-y,US_Gross-quantitative-size",1614014529629

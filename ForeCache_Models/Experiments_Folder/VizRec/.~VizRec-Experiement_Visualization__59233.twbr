@@ -653,22 +653,13 @@
             <column caption='AVG([Accuracy])*100' datatype='real' name='[Calculation_4584383005139959809]' role='measure' type='quantitative' user:unnamed='BirdStrikes'>
               <calculation class='tableau' formula='AVG([Accuracy])*100' />
             </column>
-            <column datatype='string' name='[Openended]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Task]' role='dimension' type='nominal' />
             <column aggregation='Sum' caption='Threshold1' datatype='real' name='[Threshold]' role='dimension' type='ordinal' />
             <column-instance column='[Algorithm]' derivation='None' name='[none:Algorithm:nk]' pivot='key' type='nominal' />
-            <column-instance column='[Openended]' derivation='None' name='[none:Openended:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Task]' derivation='None' name='[none:Task:nk]' pivot='key' type='nominal' />
             <column-instance column='[Threshold]' derivation='None' name='[none:Threshold:ok]' pivot='key' type='ordinal' />
             <column-instance column='[Calculation_4584383005139959809]' derivation='User' name='[usr:Calculation_4584383005139959809:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
-          <filter class='categorical' column='[federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Algorithm:nk]'>
-            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
-              <groupfilter function='level-members' level='[none:Algorithm:nk]' />
-              <groupfilter function='member' level='[none:Algorithm:nk]' member='&quot;Naive&quot;' />
-            </groupfilter>
-          </filter>
-          <slices>
-            <column>[federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Algorithm:nk]</column>
-          </slices>
           <aggregation value='true' />
         </view>
         <style>
@@ -708,7 +699,7 @@
           </pane>
         </panes>
         <rows>[federated.0dg10dl15c94fc19cu6uw1hq0os5].[usr:Calculation_4584383005139959809:qk]</rows>
-        <cols>([federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Openended:nk] / [federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Threshold:ok])</cols>
+        <cols>([federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Task:nk] / [federated.0dg10dl15c94fc19cu6uw1hq0os5].[none:Threshold:ok])</cols>
       </table>
       <simple-id uuid='{F88579BA-9760-4B23-A4DC-05CCA48A1276}' />
     </worksheet>

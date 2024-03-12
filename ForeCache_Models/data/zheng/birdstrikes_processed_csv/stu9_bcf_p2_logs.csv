@@ -1,6 +1,9 @@
 Interaction,Value,Time
+clicked on a field,add Speed_IAS_in_knots,1599067681250
 main chart changed because of clicking a field,mark:tick;encoding:Speed_IAS_in_knots-quantitative-x,1599067681305
+clicked on a field,add Effect_Amount_of_damage,1599067687574
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Effect_Amount_of_damage-nominal-y,Speed_IAS_in_knots-quantitative-x<bin>",1599067687627
+clicked on a field,add Aircraft_Make_Model,1599067697765
 main chart changed because of clicking a field,"mark:point;encoding:Aircraft_Make_Model-nominal-x,Effect_Amount_of_damage-nominal-y,Speed_IAS_in_knots-quantitative-size",1599067697871
 mouseover on the specified chart,"mark:point;encoding:Aircraft_Make_Model-nominal-x,Effect_Amount_of_damage-nominal-y,Speed_IAS_in_knots-quantitative-size",1599067710690
 mouseout on the specified chart,"mark:point;encoding:Aircraft_Make_Model-nominal-x,Effect_Amount_of_damage-nominal-y,Speed_IAS_in_knots-quantitative-size",1599067728004

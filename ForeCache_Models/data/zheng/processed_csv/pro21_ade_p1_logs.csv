@@ -3,8 +3,11 @@ mouseover a related chart,mark:tick;encoding:US_Gross-quantitative-x,16068576404
 mouseout a related chart,mark:tick;encoding:US_Gross-quantitative-x,1606857640503
 mouseover a related chart,mark:tick;encoding:US_Gross-quantitative-x,1606857640503
 mouseout a related chart,mark:tick;encoding:US_Gross-quantitative-x,1606857640569
+clicked on a field,add Creative_Type,1606857645738
 main chart changed because of clicking a field,"mark:bar;encoding:-quantitative-x<aggregate>count,Creative_Type-nominal-y",1606857645776
+clicked on a field,add Source,1606857647940
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-x,Source-nominal-y",1606857647974
+clicked on a field,add Title,1606857648989
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-x,Source-nominal-color,Title-nominal-y",1606857649026
 mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-x,Source-nominal-color,Title-nominal-y",1606857649553
 mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-x,Source-nominal-color,Title-nominal-y",1606857650756
@@ -287,8 +290,10 @@ mouseout a related chart,"mark:point;encoding:-quantitative-size<aggregate>count
 specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-color,Source-nominal-x,Title-nominal-y",1606857722404
 mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-color,Source-nominal-x,Title-nominal-y",1606857723451
 mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-color,Source-nominal-x,Title-nominal-y",1606857725023
+clicked on a field,remove Title,1606857770186
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-x,Source-nominal-y",1606857770284
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-x,Source-nominal-y",1606857772329
+clicked on a field,add Major_Genre,1606857773359
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-x,Major_Genre-nominal-y,Source-nominal-color",1606857773394
 mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-x,Major_Genre-nominal-y,Source-nominal-color",1606857775350
 mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-x,Major_Genre-nominal-y,Source-nominal-color",1606857775383
@@ -300,6 +305,7 @@ mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggrega
 mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-x,Major_Genre-nominal-y,Source-nominal-color",1606857776550
 mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-x,Major_Genre-nominal-y,Source-nominal-color",1606857776550
 mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-x,Major_Genre-nominal-y,Source-nominal-color",1606857780666
+clicked on a field,remove Major_Genre,1606857783675
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-x,Source-nominal-y",1606857783782
 mouseover on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-x,Source-nominal-y",1606857784384
 mouseout on the specified chart,"mark:point;encoding:-quantitative-size<aggregate>count,Creative_Type-nominal-x,Source-nominal-y",1606857784400

@@ -11,6 +11,7 @@ mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Air
 mouseout a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Airport_Name-nominal-y",1611358605540
 mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Airport_Name-nominal-y",1611358605541
 mouseout a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Airport_Name-nominal-y",1611358605565
+clicked on a field,add Airport_Name,1611358607916
 main chart changed because of clicking a field,"mark:bar;encoding:-quantitative-x<aggregate>count,Airport_Name-nominal-y",1611358607960
 mouseover on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Airport_Name-nominal-y",1611358608944
 mouseout on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Airport_Name-nominal-y",1611358610814
@@ -263,6 +264,8 @@ mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Air
 mouseout a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Airport_Name-nominal-y,Effect_Amount_of_damage-nominal-color",1611358695641
 mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Airport_Name-nominal-y,When_Time_of_day-nominal-color",1611358704744
 mouseout a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Airport_Name-nominal-y,When_Time_of_day-nominal-color",1611358704761
+clicked on a field,remove Airport_Name,1611358706786
+clicked on a field,add When_Time_of_day,1611358710656
 main chart changed because of clicking a field,"mark:bar;encoding:-quantitative-x<aggregate>count,When_Time_of_day-nominal-y",1611358710700
 mouseover on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,When_Time_of_day-nominal-y",1611358711594
 mouseout on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,When_Time_of_day-nominal-y",1611358711701
@@ -270,7 +273,9 @@ mouseover on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>co
 mouseout on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,When_Time_of_day-nominal-y",1611358711920
 mouseover on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,When_Time_of_day-nominal-y",1611358711920
 mouseout on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,When_Time_of_day-nominal-y",1611358711962
+clicked on a field,add Flight_Date,1611358775044
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Flight_Date-nominal-y,When_Time_of_day-nominal-x",1611358775146
+clicked on a field,remove When_Time_of_day,1611358776642
 main chart changed because of clicking a field,"mark:bar;encoding:-quantitative-x<aggregate>count,Flight_Date-nominal-y",1611358776682
 mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Flight_Date-nominal-y,When_Time_of_day-nominal-color",1611358814209
 mouseout a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Flight_Date-nominal-y,When_Time_of_day-nominal-color",1611358814948
@@ -300,6 +305,8 @@ mouseover on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>co
 mouseout on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Flight_Date-nominal-y",1611358910558
 mouseover on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Flight_Date-nominal-y",1611358910559
 mouseout on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Flight_Date-nominal-y",1611358911008
+clicked on a field,remove Flight_Date,1611358912515
+clicked on a field,add When_Time_of_day,1611358914731
 main chart changed because of clicking a field,"mark:bar;encoding:-quantitative-x<aggregate>count,When_Time_of_day-nominal-y",1611358914765
 mouseover on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,When_Time_of_day-nominal-y",1611358915504
 mouseout on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,When_Time_of_day-nominal-y",1611358916128
@@ -310,13 +317,19 @@ mouseover on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>co
 mouseout on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,When_Time_of_day-nominal-y",1611358917208
 mouseover on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,When_Time_of_day-nominal-y",1611358917208
 mouseout on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,When_Time_of_day-nominal-y",1611358917224
+clicked on a field,remove When_Time_of_day,1611358918591
+clicked on a field,add Airport_Name,1611358921111
 main chart changed because of clicking a field,"mark:bar;encoding:-quantitative-x<aggregate>count,Airport_Name-nominal-y",1611358921149
 mouseover on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Airport_Name-nominal-y",1611358922136
 mouseout on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Airport_Name-nominal-y",1611358922550
 submission failed,did not bookmark the correct number of charts,1611358975227
+clicked on a field,add When_Time_of_day,1611358982638
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Airport_Name-nominal-y,When_Time_of_day-nominal-x",1611358982749
+clicked on a field,add Origin_State,1611358991221
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Airport_Name-nominal-x,Origin_State-nominal-y,When_Time_of_day-nominal-color",1611358991278
+clicked on a field,remove Airport_Name,1611358993887
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Origin_State-nominal-y,When_Time_of_day-nominal-x",1611358993928
+clicked on a field,remove When_Time_of_day,1611358996074
 main chart changed because of clicking a field,"mark:bar;encoding:-quantitative-x<aggregate>count,Origin_State-nominal-y",1611358996128
 mouseover on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Origin_State-nominal-y",1611359002134
 mouseout on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Origin_State-nominal-y",1611359002189

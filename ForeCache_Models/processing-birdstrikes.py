@@ -457,7 +457,7 @@ def global_create_master_file(processed_interactions_path,master_data_path,csvfi
         master_df.to_csv(master_csv_path, index=False)
 
 if __name__ == '__main__':
-    task = 'p4'
+    task = 'p1'
     dataset= 'birdstrikes'
     user_interactions_path = './data/zheng/birdstrikes_processed_csv/'
     csv_files = os.listdir(user_interactions_path)
@@ -466,7 +466,7 @@ if __name__ == '__main__':
         end=task+'_logs.csv'
         if csv_filename.endswith(end):
             current_csv_files.append(csv_filename)
-            global_remove_invalid_rows(user_interactions_path, csv_filename)
+            #global_remove_invalid_rows(user_interactions_path, csv_filename)
 
     important_attrs = global_get_base_reward(csv_files,user_interactions_path,task)
     print('Important attributes:', important_attrs, 'for task:', task, 'length:', len(important_attrs))
@@ -484,7 +484,7 @@ if __name__ == '__main__':
              interaction_processor.process_interaction_logs(csv_filename)
              interaction_processor.process_actions(csv_filename)
 
-    global_create_master_file(processed_interactions_path,master_data_path,current_csv_files,task,isbirdstrike=dataset=='birdstrikes')
+    #global_create_master_file(processed_interactions_path,master_data_path,current_csv_files,task,isbirdstrike=dataset=='birdstrikes')
 
 
 

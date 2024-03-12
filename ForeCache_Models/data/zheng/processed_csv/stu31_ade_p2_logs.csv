@@ -1,12 +1,16 @@
 Interaction,Value,Time
+clicked on a field,add Source,1604515396270
 main chart changed because of clicking a field,"mark:bar;encoding:-quantitative-x<aggregate>count,Source-nominal-y",1604515396317
+clicked on a field,add Running_Time_min,1604515400469
 main chart changed because of clicking a field,"mark:tick;encoding:Running_Time_min-quantitative-x,Source-nominal-y",1604515400511
 mouseover on the specified chart,"mark:tick;encoding:Running_Time_min-quantitative-x,Source-nominal-y",1604515402108
 mouseout on the specified chart,"mark:tick;encoding:Running_Time_min-quantitative-x,Source-nominal-y",1604515402125
 mouseover on the specified chart,"mark:tick;encoding:Running_Time_min-quantitative-x,Source-nominal-y",1604515404493
 mouseout on the specified chart,"mark:tick;encoding:Running_Time_min-quantitative-x,Source-nominal-y",1604515404559
 main chart changed because of clicking a field,"mark:tick;encoding:Running_Time_min-quantitative-x,Source-nominal-y",1604515405257
+clicked on a field,remove Source,1604515406476
 main chart changed because of clicking a field,mark:tick;encoding:Running_Time_min-quantitative-x,1604515406519
+clicked on a field,add Source,1604515408097
 main chart changed because of clicking a field,"mark:tick;encoding:Running_Time_min-quantitative-x,Source-nominal-y",1604515408144
 mouseover on the specified chart,"mark:tick;encoding:Running_Time_min-quantitative-x,Source-nominal-y",1604515408811
 mouseout on the specified chart,"mark:tick;encoding:Running_Time_min-quantitative-x,Source-nominal-y",1604515408875
@@ -124,6 +128,7 @@ scroll on a related chart,"mark:point;encoding:Running_Time_min-quantitative-x,S
 scroll on a related chart,"mark:point;encoding:Running_Time_min-quantitative-x,Source-nominal-y,US_Gross-quantitative-size",1604515475167
 scroll on a related chart,"mark:point;encoding:Running_Time_min-quantitative-x,Source-nominal-y,US_Gross-quantitative-size",1604515475233
 mouseout a related chart,"mark:point;encoding:Running_Time_min-quantitative-x,Source-nominal-y,US_Gross-quantitative-size",1604515475731
+clicked on a field,add Worldwide_Gross,1604515476675
 main chart changed because of clicking a field,"mark:point;encoding:Running_Time_min-quantitative-size<aggregate>mean,Source-nominal-x,Worldwide_Gross-quantitative-y<bin>",1604515477066
 mouseover a related chart,"mark:bar;encoding:Running_Time_min-quantitative-x<aggregate>mean,Worldwide_Gross-quantitative-y<bin>",1604515477769
 mouseout a related chart,"mark:bar;encoding:Running_Time_min-quantitative-x<aggregate>mean,Worldwide_Gross-quantitative-y<bin>",1604515477786

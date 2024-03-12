@@ -110,6 +110,7 @@ mouseover on the specified chart,"mark:point;encoding:Aircraft_Airline_Operator-
 mouseout on the specified chart,"mark:point;encoding:Aircraft_Airline_Operator-nominal-x,Airport_Name-nominal-y",1605925894122
 mouseover a related chart,"mark:point;encoding:Aircraft_Airline_Operator-nominal-x,Airport_Name-nominal-y,Effect_Amount_of_damage-nominal-color",1605925896442
 mouseout a related chart,"mark:point;encoding:Aircraft_Airline_Operator-nominal-x,Airport_Name-nominal-y,Effect_Amount_of_damage-nominal-color",1605925896573
+clicked on a field,add Flight_Date,1605925897571
 main chart changed because of clicking a field,"mark:point;encoding:Aircraft_Airline_Operator-nominal-x,Airport_Name-nominal-y,Flight_Date-nominal-color",1605925897833
 mouseover a related chart,"mark:point;encoding:Airport_Name-nominal-y,Flight_Date-nominal-x",1605925898709
 mouseout a related chart,"mark:point;encoding:Airport_Name-nominal-y,Flight_Date-nominal-x",1605925899310
@@ -123,21 +124,36 @@ mouseover on the specified chart,"mark:point;encoding:Aircraft_Airline_Operator-
 mouseout on the specified chart,"mark:point;encoding:Aircraft_Airline_Operator-nominal-x,Airport_Name-nominal-y,Flight_Date-nominal-color",1605925910941
 mouseover on the specified chart,"mark:point;encoding:Aircraft_Airline_Operator-nominal-x,Airport_Name-nominal-y,Flight_Date-nominal-color",1605925910941
 mouseout on the specified chart,"mark:point;encoding:Aircraft_Airline_Operator-nominal-x,Airport_Name-nominal-y,Flight_Date-nominal-color",1605925910957
+clicked on a field,"tried to add When_Phase_of_flight, but failed because already selected 3 fields",1605925913976
 main chart changed because of clicking a field,"mark:point;encoding:Aircraft_Airline_Operator-nominal-x,Airport_Name-nominal-y,Flight_Date-nominal-color",1605925916830
 main chart changed because of clicking a field,"mark:point;encoding:Aircraft_Airline_Operator-nominal-x,Airport_Name-nominal-y,Flight_Date-nominal-color",1605925918341
+clicked on a field,remove Aircraft_Airline_Operator,1605925918955
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Airport_Name-nominal-y,Flight_Date-nominal-x",1605925919016
+clicked on a field,add Aircraft_Airline_Operator,1605925919224
 main chart changed because of clicking a field,"mark:point;encoding:Aircraft_Airline_Operator-nominal-x,Airport_Name-nominal-y,Flight_Date-nominal-color",1605925919261
+clicked on a field,remove Aircraft_Airline_Operator,1605925919840
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Airport_Name-nominal-y,Flight_Date-nominal-x",1605925919883
+clicked on a field,add Aircraft_Airline_Operator,1605925920151
 main chart changed because of clicking a field,"mark:point;encoding:Aircraft_Airline_Operator-nominal-x,Airport_Name-nominal-y,Flight_Date-nominal-color",1605925920200
+clicked on a field,remove Aircraft_Airline_Operator,1605925920255
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Airport_Name-nominal-y,Flight_Date-nominal-x",1605925920291
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Airport_Name-nominal-y,Flight_Date-nominal-x",1605925921489
+clicked on a field,remove Flight_Date,1605925921713
 main chart changed because of clicking a field,"mark:bar;encoding:-quantitative-x<aggregate>count,Airport_Name-nominal-y",1605925921748
+clicked on a field,add Flight_Date,1605925921980
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Airport_Name-nominal-y,Flight_Date-nominal-x",1605925922052
+clicked on a field,remove Airport_Name,1605925923951
 main chart changed because of clicking a field,"mark:bar;encoding:-quantitative-y<aggregate>count,Flight_Date-nominal-x",1605925924008
+clicked on a field,add Airport_Name,1605925924749
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Airport_Name-nominal-y,Flight_Date-nominal-x",1605925924785
+clicked on a field,remove Airport_Name,1605925925018
 main chart changed because of clicking a field,"mark:bar;encoding:-quantitative-y<aggregate>count,Flight_Date-nominal-x",1605925925049
+clicked on a field,add Airport_Name,1605925925195
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Airport_Name-nominal-y,Flight_Date-nominal-x",1605925925225
+clicked on a field,remove Airport_Name,1605925925415
 main chart changed because of clicking a field,"mark:bar;encoding:-quantitative-y<aggregate>count,Flight_Date-nominal-x",1605925925453
+clicked on a field,remove Flight_Date,1605925926752
+clicked on a field,add When_Phase_of_flight,1605925930373
 main chart changed because of clicking a field,"mark:bar;encoding:-quantitative-x<aggregate>count,When_Phase_of_flight-nominal-y",1605925930414
 mouseover on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,When_Phase_of_flight-nominal-y",1605925936403
 mouseout on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,When_Phase_of_flight-nominal-y",1605925937005
@@ -145,8 +161,10 @@ mouseover on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>co
 mouseout on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,When_Phase_of_flight-nominal-y",1605925937970
 mouseover on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,When_Phase_of_flight-nominal-y",1605925937970
 mouseout on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,When_Phase_of_flight-nominal-y",1605925938963
+clicked on a field,add Flight_Date,1605925963266
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Flight_Date-nominal-x,When_Phase_of_flight-nominal-y",1605925963420
 specified chart,"mark:point;encoding:Aircraft_Airline_Operator-nominal-y,Flight_Date-nominal-x,When_Phase_of_flight-nominal-color",1605925992364
+clicked on a field,remove Aircraft_Airline_Operator,1605925999458
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Flight_Date-nominal-x,When_Phase_of_flight-nominal-y",1605925999497
 added chart to bookmark,"mark:point;encoding:-quantitative-size<aggregate>count,Flight_Date-nominal-x,When_Phase_of_flight-nominal-y",1605926003008
 mouseover a related chart,"mark:point;encoding:Aircraft_Airline_Operator-nominal-y,Flight_Date-nominal-x,When_Phase_of_flight-nominal-color",1605926026886

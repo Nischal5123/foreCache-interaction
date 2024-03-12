@@ -93,7 +93,7 @@ class environment_vizrec:
         self.mem_reward = (self.mem_reward - np.min(self.mem_reward)) / (np.max(self.mem_reward) - np.min(self.mem_reward))
 
 
-        self.threshold = round(cnt_inter * thres,0)
+        self.threshold = int(cnt_inter * thres)
 
     def cur_inter(self, steps):
         """

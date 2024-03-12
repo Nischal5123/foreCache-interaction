@@ -78,8 +78,11 @@ mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,MPA
 mouseout a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,MPAA_Rating-nominal-y",1607551973672
 mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,MPAA_Rating-nominal-y",1607551973672
 mouseout a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,MPAA_Rating-nominal-y",1607551973689
+clicked on a field,add Source,1607551978648
 main chart changed because of clicking a field,"mark:bar;encoding:-quantitative-x<aggregate>count,Source-nominal-y",1607551978874
+clicked on a field,add Running_Time_min,1607551989252
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Running_Time_min-quantitative-x<bin>,Source-nominal-y",1607551989554
+clicked on a field,add Worldwide_Gross,1607551992047
 main chart changed because of clicking a field,"mark:point;encoding:Running_Time_min-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1607551992134
 mouseover a related chart,"mark:tick;encoding:Running_Time_min-quantitative-x,Source-nominal-y",1607551997475
 mouseout a related chart,"mark:tick;encoding:Running_Time_min-quantitative-x,Source-nominal-y",1607551999116
@@ -100,6 +103,7 @@ scroll on the specified chart,"mark:point;encoding:Running_Time_min-quantitative
 scroll on the specified chart,"mark:point;encoding:Running_Time_min-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1607552008360
 scroll on the specified chart,"mark:point;encoding:Running_Time_min-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1607552008377
 mouseout on the specified chart,"mark:point;encoding:Running_Time_min-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1607552017869
+clicked on a field,"tried to add Title, but failed because already selected 3 fields",1607552018766
 mouseover on the specified chart,"mark:point;encoding:Running_Time_min-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1607552020883
 mouseout on the specified chart,"mark:point;encoding:Running_Time_min-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1607552020900
 mouseover on the specified chart,"mark:point;encoding:Running_Time_min-quantitative-size,Source-nominal-y,Worldwide_Gross-quantitative-x<bin>",1607552020900

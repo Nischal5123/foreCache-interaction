@@ -1,5 +1,7 @@
 Interaction,Value,Time
+clicked on a field,add Speed_IAS_in_knots,1614035967845
 main chart changed because of clicking a field,mark:tick;encoding:Speed_IAS_in_knots-quantitative-x,1614035968041
+clicked on a field,remove Speed_IAS_in_knots,1614035968286
 mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,When_Phase_of_flight-nominal-y",1614035969098
 mouseout a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,When_Phase_of_flight-nominal-y",1614035969484
 mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,When_Phase_of_flight-nominal-y",1614035969484
@@ -17,7 +19,10 @@ mouseout a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,When
 mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Airport_Name-nominal-y",1614035972084
 scroll on a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Airport_Name-nominal-y",1614035974011
 mouseout a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Airport_Name-nominal-y",1614035975089
+clicked on a field,add Speed_IAS_in_knots,1614035975279
 main chart changed because of clicking a field,mark:tick;encoding:Speed_IAS_in_knots-quantitative-x,1614035975475
+clicked on a field,remove Speed_IAS_in_knots,1614035975958
+clicked on a field,add Speed_IAS_in_knots,1614035976685
 main chart changed because of clicking a field,mark:tick;encoding:Speed_IAS_in_knots-quantitative-x,1614035976876
 mouseover a related chart,"mark:tick;encoding:Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x,Wildlife_Species-nominal-y",1614035977924
 mouseout a related chart,"mark:tick;encoding:Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x,Wildlife_Species-nominal-y",1614035978065
@@ -30,6 +35,8 @@ mouseout a related chart,"mark:tick;encoding:Effect_Amount_of_damage-nominal-col
 mouseover a related chart,"mark:tick;encoding:Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x,Wildlife_Species-nominal-y",1614036005367
 mouseout a related chart,"mark:tick;encoding:Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x,Wildlife_Species-nominal-y",1614036005767
 main chart changed because of clicking a field,mark:tick;encoding:Speed_IAS_in_knots-quantitative-x,1614036017713
+clicked on a field,remove Speed_IAS_in_knots,1614036017954
+clicked on a field,add Effect_Amount_of_damage,1614036020055
 main chart changed because of clicking a field,"mark:bar;encoding:-quantitative-x<aggregate>count,Effect_Amount_of_damage-nominal-y",1614036020246
 mouseover on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Effect_Amount_of_damage-nominal-y",1614036021468
 mouseout on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Effect_Amount_of_damage-nominal-y",1614036022001
@@ -44,7 +51,9 @@ scroll on a related chart,"mark:point;encoding:-quantitative-x<aggregate>count,E
 mouseout a related chart,"mark:point;encoding:-quantitative-x<aggregate>count,Effect_Amount_of_damage-nominal-y,Flight_Date-nominal-row,When_Time_of_day-nominal-shape",1614036031338
 mouseover a related chart,"mark:point;encoding:-quantitative-x<aggregate>count,Effect_Amount_of_damage-nominal-y,Flight_Date-nominal-row,When_Time_of_day-nominal-shape",1614036031338
 mouseout a related chart,"mark:point;encoding:-quantitative-x<aggregate>count,Effect_Amount_of_damage-nominal-y,Flight_Date-nominal-row,When_Time_of_day-nominal-shape",1614036031353
+clicked on a field,add Speed_IAS_in_knots,1614036032148
 main chart changed because of clicking a field,"mark:tick;encoding:Effect_Amount_of_damage-nominal-y,Speed_IAS_in_knots-quantitative-x",1614036032554
+clicked on a field,remove Effect_Amount_of_damage,1614036033530
 main chart changed because of clicking a field,mark:tick;encoding:Speed_IAS_in_knots-quantitative-x,1614036033740
 mouseover a related chart,"mark:tick;encoding:Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x,Wildlife_Species-nominal-y",1614036035236
 mouseout a related chart,"mark:tick;encoding:Effect_Amount_of_damage-nominal-color,Speed_IAS_in_knots-quantitative-x,Wildlife_Species-nominal-y",1614036035383

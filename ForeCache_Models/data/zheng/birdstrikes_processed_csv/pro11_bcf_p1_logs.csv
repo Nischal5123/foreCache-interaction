@@ -15,6 +15,7 @@ mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Ori
 mouseout a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Origin_State-nominal-y",1605312535408
 mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Origin_State-nominal-y",1605312535542
 mouseout a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Origin_State-nominal-y",1605312535642
+clicked on a field,add When_Phase_of_flight,1605312542445
 main chart changed because of clicking a field,"mark:bar;encoding:-quantitative-x<aggregate>count,When_Phase_of_flight-nominal-y",1605312544277
 mouseover on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,When_Phase_of_flight-nominal-y",1605312545874
 mouseout on the specified chart,"mark:bar;encoding:-quantitative-x<aggregate>count,When_Phase_of_flight-nominal-y",1605312546058
@@ -30,6 +31,7 @@ mouseover a related chart,"mark:point;encoding:Airport_Name-nominal-x,When_Phase
 mouseout a related chart,"mark:point;encoding:Airport_Name-nominal-x,When_Phase_of_flight-nominal-y,Wildlife_Size-nominal-color",1605312584657
 mouseover a related chart,"mark:point;encoding:Airport_Name-nominal-x,When_Phase_of_flight-nominal-y,Wildlife_Size-nominal-color",1605312584658
 mouseout a related chart,"mark:point;encoding:Airport_Name-nominal-x,When_Phase_of_flight-nominal-y,Wildlife_Size-nominal-color",1605312584674
+clicked on a field,add Flight_Date,1605312592035
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Flight_Date-nominal-x,When_Phase_of_flight-nominal-y",1605312592499
 mouseover a related chart,"mark:point;encoding:Airport_Name-nominal-x,Flight_Date-nominal-color,Origin_State-nominal-y",1605312594422
 mouseout a related chart,"mark:point;encoding:Airport_Name-nominal-x,Flight_Date-nominal-color,Origin_State-nominal-y",1605312594558
@@ -379,14 +381,19 @@ mouseover a related chart,"mark:point;encoding:Aircraft_Airline_Operator-nominal
 mouseout a related chart,"mark:point;encoding:Aircraft_Airline_Operator-nominal-x,Flight_Date-nominal-color,Origin_State-nominal-y",1605312762756
 mouseover a related chart,"mark:point;encoding:Aircraft_Airline_Operator-nominal-x,Flight_Date-nominal-color,Origin_State-nominal-y",1605312762756
 mouseout a related chart,"mark:point;encoding:Aircraft_Airline_Operator-nominal-x,Flight_Date-nominal-color,Origin_State-nominal-y",1605312762822
+clicked on a field,remove When_Phase_of_flight,1605312777814
 main chart changed because of clicking a field,"mark:bar;encoding:-quantitative-y<aggregate>count,Flight_Date-nominal-x",1605312778319
 main chart changed because of clicking a field,"mark:bar;encoding:-quantitative-y<aggregate>count,Flight_Date-nominal-x",1605312782596
+clicked on a field,add When_Phase_of_flight,1605312788502
 main chart changed because of clicking a field,"mark:point;encoding:-quantitative-size<aggregate>count,Flight_Date-nominal-x,When_Phase_of_flight-nominal-y",1605312788910
+clicked on a field,remove When_Phase_of_flight,1605312793411
 main chart changed because of clicking a field,"mark:bar;encoding:-quantitative-y<aggregate>count,Flight_Date-nominal-x",1605312794408
 mouseover on the specified chart,"mark:bar;encoding:-quantitative-y<aggregate>count,Flight_Date-nominal-x",1605312831055
 mouseout on the specified chart,"mark:bar;encoding:-quantitative-y<aggregate>count,Flight_Date-nominal-x",1605312831099
 mouseover on the specified chart,"mark:bar;encoding:-quantitative-y<aggregate>count,Flight_Date-nominal-x",1605312834638
 mouseout on the specified chart,"mark:bar;encoding:-quantitative-y<aggregate>count,Flight_Date-nominal-x",1605312834671
+clicked on a field,remove Flight_Date,1605312839268
+clicked on a field,add Flight_Date,1605312841372
 main chart changed because of clicking a field,"mark:bar;encoding:-quantitative-y<aggregate>count,Flight_Date-nominal-x",1605312841630
 submission failed,did not bookmark charts,1605312853568
 mouseover a related chart,"mark:point;encoding:Airport_Name-nominal-x,Flight_Date-nominal-color,Origin_State-nominal-y",1605312857779

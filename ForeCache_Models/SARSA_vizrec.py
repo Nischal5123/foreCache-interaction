@@ -132,7 +132,7 @@ class TD_SARSA:
                 if done:
                     break
 
-        return np.mean(stats), model_actions, split_accuracy,np.mean(reward_accumulated)/np.mean(reward_possible)
+        return np.nanmean(stats), model_actions, split_accuracy,np.nanmean(reward_accumulated)/np.nanmean(reward_possible)
 
 def get_threshold(env, user):
     env.process_data(user, 0)
@@ -248,7 +248,7 @@ def run_experiment(user_list, algo, hyperparam_file,dataset,task):
 
 
 if __name__ == '__main__':
-    datasets = ['movies']
+    datasets = ['birdstrikes']
     tasks = ['p1','p2','p3','p4']
     for dataset in datasets:
         for task in tasks:

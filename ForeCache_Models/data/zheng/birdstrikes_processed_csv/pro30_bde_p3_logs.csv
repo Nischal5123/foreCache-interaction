@@ -9,7 +9,9 @@ mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Air
 mouseout a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Airport_Name-nominal-y",1613596766095
 mouseover a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Airport_Name-nominal-y",1613596766095
 mouseout a related chart,"mark:bar;encoding:-quantitative-x<aggregate>count,Airport_Name-nominal-y",1613596766128
+clicked on a field,add Cost_Repair,1613596771780
 main chart changed because of clicking a field,mark:tick;encoding:Cost_Repair-quantitative-x,1613596772078
+clicked on a field,add Wildlife_Species,1613596776383
 main chart changed because of clicking a field,"mark:tick;encoding:Cost_Repair-quantitative-x,Wildlife_Species-nominal-y",1613596776480
 mouseover on the specified chart,"mark:tick;encoding:Cost_Repair-quantitative-x,Wildlife_Species-nominal-y",1613596778270
 mouseout on the specified chart,"mark:tick;encoding:Cost_Repair-quantitative-x,Wildlife_Species-nominal-y",1613596778287
@@ -215,9 +217,12 @@ scroll on the specified chart,"mark:tick;encoding:Cost_Repair-quantitative-x,Eff
 mouseout on the specified chart,"mark:tick;encoding:Cost_Repair-quantitative-x,Effect_Amount_of_damage-nominal-color,Wildlife_Species-nominal-y",1613596877542
 mouseover on the specified chart,"mark:tick;encoding:Cost_Repair-quantitative-x,Effect_Amount_of_damage-nominal-color,Wildlife_Species-nominal-y",1613596877825
 mouseout on the specified chart,"mark:tick;encoding:Cost_Repair-quantitative-x,Effect_Amount_of_damage-nominal-color,Wildlife_Species-nominal-y",1613596877858
+clicked on a field,"tried to add Aircraft_Airline_Operator, but failed because already selected 3 fields",1613596882411
 mouseover on the specified chart,"mark:tick;encoding:Cost_Repair-quantitative-x,Effect_Amount_of_damage-nominal-color,Wildlife_Species-nominal-y",1613596883952
 mouseout on the specified chart,"mark:tick;encoding:Cost_Repair-quantitative-x,Effect_Amount_of_damage-nominal-color,Wildlife_Species-nominal-y",1613596884253
+clicked on a field,remove Effect_Amount_of_damage,1613596886526
 main chart changed because of clicking a field,"mark:tick;encoding:Cost_Repair-quantitative-x,Wildlife_Species-nominal-y",1613596886884
+clicked on a field,add Aircraft_Make_Model,1613596887792
 main chart changed because of clicking a field,"mark:point;encoding:Aircraft_Make_Model-nominal-x,Cost_Repair-quantitative-size<aggregate>mean,Wildlife_Species-nominal-y",1613596887895
 mouseover on the specified chart,"mark:point;encoding:Aircraft_Make_Model-nominal-x,Cost_Repair-quantitative-size<aggregate>mean,Wildlife_Species-nominal-y",1613596888709
 scroll on the specified chart,"mark:point;encoding:Aircraft_Make_Model-nominal-x,Cost_Repair-quantitative-size<aggregate>mean,Wildlife_Species-nominal-y",1613596891504
