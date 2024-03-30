@@ -18,13 +18,21 @@ class environment_vizrec:
         Initializes required variables and stores data in memory.
         """
         self.user_list_movies_p1 = np.sort(glob.glob("data/zheng/processed_interactions_p1/*"))
+        self.user_location_movies_p1 = "data/zheng/processed_interactions_p1/"
         self.user_list_movies_p2 = np.sort(glob.glob("data/zheng/processed_interactions_p2/*"))
+        self.user_location_movies_p2 = "data/zheng/processed_interactions_p2/"
         self.user_list_movies_p3 = np.sort(glob.glob("data/zheng/processed_interactions_p3/*"))
+        self.user_location_movies_p3 = "data/zheng/processed_interactions_p3/"
         self.user_list_movies_p4 = np.sort(glob.glob("data/zheng/processed_interactions_p4/*"))
+        self.user_location_movies_p4 = "data/zheng/processed_interactions_p4/"
         self.user_list_birdstrikes_p1 = np.sort(glob.glob("data/zheng/birdstrikes_processed_interactions_p1/*"))
+        self.user_location_birdstrikes_p1 = "data/zheng/birdstrikes_processed_interactions_p1/"
         self.user_list_birdstrikes_p2 = np.sort(glob.glob("data/zheng/birdstrikes_processed_interactions_p2/*"))
+        self.user_location_birdstrikes_p2 = "data/zheng/birdstrikes_processed_interactions_p2/"
         self.user_list_birdstrikes_p3 = np.sort(glob.glob("data/zheng/birdstrikes_processed_interactions_p3/*"))
+        self.user_location_birdstrikes_p3 = "data/zheng/birdstrikes_processed_interactions_p3/"
         self.user_list_birdstrikes_p4 = np.sort(glob.glob("data/zheng/birdstrikes_processed_interactions_p4/*"))
+        self.user_location_birdstrikes_p4 = "data/zheng/birdstrikes_processed_interactions_p4/"
 
 
         # This variable will be used to track the current position of the user agent.
@@ -197,6 +205,26 @@ class environment_vizrec:
                 return self.user_list_birdstrikes_p3
             elif task == 'p4':
                 return self.user_list_birdstrikes_p4
+
+    def get_user_location(self,dataset,task):
+        if dataset == 'movies':
+            if task == 'p1':
+                return self.user_location_movies_p1
+            elif task == 'p2':
+                return self.user_location_movies_p2
+            elif task == 'p3':
+                return self.user_location_movies_p3
+            elif task == 'p4':
+                return self.user_location_movies_p4
+        elif dataset == 'birdstrikes':
+            if task == 'p1':
+                return self.user_location_birdstrikes_p1
+            elif task == 'p2':
+                return self.user_location_birdstrikes_p2
+            elif task == 'p3':
+                return self.user_location_birdstrikes_p3
+            elif task == 'p4':
+                return self.user_location_birdstrikes_p4
 
 if __name__ == "__main__":
     env = environment_vizrec()

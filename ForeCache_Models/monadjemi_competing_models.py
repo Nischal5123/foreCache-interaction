@@ -6,6 +6,8 @@ import itertools
 from util import flatten_list
 from tqdm import tqdm
 import ast
+import os
+import json
 
 class CompetingModels:
     """
@@ -29,7 +31,7 @@ class CompetingModels:
         } for b in attr_bool_enumeration}
         print(f'{len(self.models_enumerated)} competing models enumerated.')
 
-        self.continuous_model = MultivariateGaussianModel(self.underlying_data, 1, len(flatten_list(continuous_attributes))+1, continuous_attributes)
+        #self.continuous_model = MultivariateGaussianModel(self.underlying_data, 1, len(flatten_list(continuous_attributes))+1, continuous_attributes)
         self.discrete_models = {d_attribute: CategoricalModel(self.underlying_data, d_attribute, 1) for d_attribute in discrete_attributes}
 
         # for null models
@@ -92,7 +94,7 @@ class CompetingModels:
         self.model_posterior.iloc[-1] = self.model_posterior.iloc[-1] / self.model_posterior.iloc[-1].sum()
 
         # update models in light of observation
-        self.continuous_model.update(observation_index)
+        #self.continuous_model.update(observation_index)
         for i, d_attribute in enumerate(self.discrete_attributes):
             self.discrete_models[d_attribute].update(self.underlying_data.iloc[observation_index][d_attribute])
 
@@ -325,31 +327,151 @@ def multivariate_t_pdf(x, df, mu, sigma):
 
     return ans
 
+def get_action_from_next_point(original_data,next_points):
+    real_actions=[]
+    for next_point in next_points:
+        # find that next_point in underlying data and get the last column value
+        selected_rows = original_data.loc[original_data['id'] == next_point]
+        action_for_point = selected_rows.iloc[:, -1].values[0]
+        real_actions.append(action_for_point)
+    return real_actions[0]
+
+
+def plot_results(output_file_path):
+    ks = [1, 5]
+    zeng_map_results = pd.read_pickle(output_file_path)
+    df_temp = zeng_map_results[[f'ncp-{k}' for k in ks]]
+    err = df_temp.std() / np.sqrt(len(df_temp))
+    df_temp.mean().plot.bar(yerr=err, color='#d95f02', alpha=0.5,
+                            title=f'Aggregate Next Action Prediction for Movies Data')
+    plt.show()
+
+
+def create_underlying_and_user_data(user_file,username):
+    # Create underlying data
+    user_interactions_path = './data/zheng/processed_interactions_p4/'
+    df_id=[]
+    df_state=[]
+    user_data_df=pd.read_csv(user_interactions_path+user_file)
+
+    for i in range(len(user_data_df)):
+        df_id.append(i)
+        df_state.append(user_data_df['State'][i])
+    underlying_data = pd.DataFrame({'id': df_id, 'state': df_state})
+    user_interaction_data = pd.DataFrame({'user': [username], 'interaction_session': [df_id]})
+    print("Underlying data created")
+    return underlying_data, user_interaction_data
+
+def user_location():
+    task = 'p4'
+    dataset = 'movies'
+    user_interactions_path = './data/zheng/processed_csv/'
+    csv_files = os.listdir(user_interactions_path)
+    current_csv_files = []
+    for csv_filename in csv_files:
+        end = task + '_logs.csv'
+        if csv_filename.endswith(end):
+            current_csv_files.append(csv_filename)
+
+    return current_csv_files
+
 if __name__ == '__main__':
-    # Loading the STL Crimes underlying data and user interaction data
-    underlying_data = pd.read_csv('../data/stl_crimes/dots.csv')
-    underlying_data.set_index('id', drop=True, inplace=True)
-    output_file_path = '../output/stl/stl_map_results_competing_models.pkl'
-    ks = [1, 5, 10, 20, 50, 100]
-    interaction_data = pd.read_csv('../data/stl_crimes/stl_combined_interactions.csv')
-    interaction_data['interaction_session'] = interaction_data.apply(
-        lambda row: ast.literal_eval(row.interaction_session), axis=1)
-    interaction_data['interaction_type_session'] = interaction_data.apply(
-        lambda row: ast.literal_eval(row.interaction_type_session), axis=1)  # change string 'click' to click
-    interaction_index = 35
+    hyperparam_file='sampled-hyperparameters-config.json'
+    with open(hyperparam_file) as f:
+        hyperparams = json.load(f)
 
-    competing_models = CompetingModels(underlying_data, [['x', 'y']], ['type'])
-    ks = [1, 5, 10, 20, 50, 100]
-    predicted = pd.DataFrame()
-    for i in tqdm(range(len(interaction_data.iloc[interaction_index].interaction_session))):
-        interaction = interaction_data.iloc[interaction_index].interaction_session[i]
-        competing_models.update(interaction)
+    session=1
+    dataset = 'movies'
+    underlying_data_paths = {
+        'movies': './data/zheng/combinations.csv'   }
 
-        if i < len(interaction_data.iloc[interaction_index].interaction_session) - 1:
-            probability_of_next_point = competing_models.predict()
-            next_point = interaction_data.iloc[interaction_index].interaction_session[i + 1]
-            predicted_next_dict = {}
-            for k in ks:
-                predicted_next_dict[k] = (next_point in probability_of_next_point.nlargest(k).index.values)
-            predicted = pd.concat([predicted, pd.DataFrame(predicted_next_dict, index=[0])], ignore_index=True)
+    user_interaction_data_paths = {
+        'movies': './data/zheng/competing_movies_interactions.csv'    }
 
+    continuous_attributes = {
+        'movies': []
+    }
+
+    discrete_attributes = {
+        'movies': ['state']
+    }
+
+    output_file_path = './output/movies/movies_bayesian_results_test_hmm.pkl'
+
+
+    all_user_files= user_location()
+
+    # Not necessary to run if we already have results file for HMM
+    # Running HMM through all user interaction sessions and saving results in file
+    hmm_results = pd.DataFrame()
+    ks= [1]
+    all_threshold = hyperparams['threshold']
+
+    # Create result DataFrame with columns for relevant statistics
+    result_dataframe = pd.DataFrame(
+        columns=['User', 'Accuracy', 'Threshold', 'LearningRate', 'Discount', 'Algorithm', 'StateAccuracy'])
+    results={}
+    for index, value in enumerate([all_user_files[0]]):
+        user_name= value.rstrip('_log.csv')
+        participant_index = 0
+        print(f'Processing user {user_name}')
+        underlying_data , interaction_data = create_underlying_and_user_data(value,user_name)
+
+        user_data= interaction_data.iloc[participant_index].interaction_session
+        results ['participant_id']= user_name
+        length = len(user_data)
+        for thres in all_threshold:
+            threshold = int(length * thres)
+            print("threshold", threshold, "length", length - 1)
+            #uderlying_data is all possible states and actions
+            cm = CompetingModels(underlying_data, continuous_attributes['movies'],discrete_attributes['movies'])
+            predicted = pd.DataFrame()
+            rank_predicted = []
+
+            #training the model
+            for k in range(threshold + 1):
+                interaction = interaction_data.iloc[participant_index].interaction_session[k]
+                cm.update(interaction)
+
+
+            #testing the model
+            for i in tqdm(range(threshold+1 , len(interaction_data.iloc[participant_index].interaction_session))):
+                interaction = interaction_data.iloc[participant_index].interaction_session[i]
+                cm.update(interaction)
+
+                if i < len(interaction_data.iloc[participant_index].interaction_session) - 1:
+                    probability_of_next_point = cm.predict()
+                    next_point = interaction_data.iloc[participant_index].interaction_session[i + 1]
+                    predicted_next_dict = {}
+                    for k in ks:
+                        print('Testing for k:', k)
+                        predicted_next_point=probability_of_next_point.nlargest(k).index.values
+                        #get the action for the next point/s since when k>1 we have multiple next points
+                        action_predicted = get_action_from_next_point(underlying_data.copy(),predicted_next_point)
+                        #get the actual action from the actual next_point
+                        action_true= get_action_from_next_point(underlying_data.copy(),[next_point])
+                        predicted_next_dict[k] = (action_true in action_predicted)
+                    predicted = pd.concat([predicted,pd.DataFrame(predicted_next_dict, index=[0])], ignore_index=True)
+                    sorted_prob = probability_of_next_point.sort_values(ascending=False)
+                    rank, = np.where(sorted_prob.index.values == next_point)
+                    rank_predicted.append(rank[0] + 1)
+
+            # ncp = predicted.sum() / len(predicted)
+            # # for col in ncp.index:
+            # #     results[f'ncp-{col}'] = ncp[col]
+            results['user'] = user_name
+            results['threshold'] = thres
+            results[f'ncp-{1}'] = predicted[1].sum()/len(predicted[1])
+            # results[f'ncp-{5}'] = predicted[5].sum()/len(predicted)
+
+            # we dont care about bias
+
+            #bias = hmm.get_attribute_bias()
+            # for col in bias.columns:
+            #     results[f'bias-{col}'] = bias[col].to_numpy()
+            #
+            # results['bias-mixed'] = results['bias-bias_attribute1___attribute2___attribute3'] * results['bias-bias_action']
+            results['rank'] = rank_predicted
+            hmm_results = pd.concat([hmm_results,pd.DataFrame(results)], ignore_index=True)
+
+    hmm_results.to_pickle(output_file_path)

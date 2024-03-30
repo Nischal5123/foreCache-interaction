@@ -14,6 +14,7 @@ eps = 2 ** -52  # Defined to match Matlab's default eps
 import json
 import copy
 import os
+import environment_vizrec
 
 class HMM:
     """
@@ -21,7 +22,7 @@ class HMM:
 
     Parameters:
         data: A Pandas Dataframe of the underlying data
-        continuous_attributes: An array of all continuous attributes in the underlying data
+        continuous_attributes: An array of all continuous attributes in the underlying data # we only have descrete attribute
         discrete_attributes: An array of all discrete attributes in the underlying data
         num_particles: An integer representing the number of particles used for diffusion
     """
@@ -184,6 +185,11 @@ class HMM:
         return self.bias_over_time
 
 
+def get_user_name(url):
+    parts = url.split('/')
+    fname = parts[-1]
+    uname = fname.rstrip('_log.csv')
+    return uname
 
 def get_action_from_next_point(original_data,next_points):
     real_actions=[]
@@ -205,12 +211,10 @@ def plot_results(output_file_path):
     plt.show()
 
 
-def create_underlying_and_user_data(user_file,username):
-    # Create underlying data
-    user_interactions_path = './data/zheng/processed_interactions_p4/'
+def create_underlying_and_user_data(user_interactions_path,username):
     df_id=[]
     df_state=[]
-    user_data_df=pd.read_csv(user_interactions_path+user_file)
+    user_data_df=pd.read_csv(user_interactions_path)
 
     for i in range(len(user_data_df)):
         df_id.append(i)
@@ -220,11 +224,9 @@ def create_underlying_and_user_data(user_file,username):
     print("Underlying data created")
     return underlying_data, user_interaction_data
 
-def user_location():
-    task = 'p4'
-    dataset = 'movies'
-    user_interactions_path = './data/zheng/processed_csv/'
-    csv_files = os.listdir(user_interactions_path)
+def user_list(task, dataset):
+    env = environment_vizrec.environment_vizrec()
+    csv_files=env.get_user_list(dataset,task)
     current_csv_files = []
     for csv_filename in csv_files:
         end = task + '_logs.csv'
@@ -233,102 +235,89 @@ def user_location():
 
     return current_csv_files
 
+def user_location(task, dataset):
+    env = environment_vizrec.environment_vizrec()
+    location=env.get_user_location(dataset,task)
+    return location
+
 if __name__ == '__main__':
     hyperparam_file='sampled-hyperparameters-config.json'
     with open(hyperparam_file) as f:
         hyperparams = json.load(f)
 
-    session=1
-    dataset = 'movies'
-    underlying_data_paths = {
-        'movies': './data/zheng/combinations.csv'   }
-
-    user_interaction_data_paths = {
-        'movies': './data/zheng/competing_movies_interactions.csv'    }
-
-    continuous_attributes = {
-        'movies': []
-    }
-
-    discrete_attributes = {
-        'movies': ['state']
-    }
-
-    output_file_path = './output/movies/movies_results_test_hmm.pkl'
+    for dataset in ['movies']:
+        for task in ['p1', 'p2', 'p3', 'p4']:
+            all_user_files= user_list(task, dataset)
 
 
-    all_user_files= user_location()
+            # Not necessary to run if we already have results file for HMM
+            # Running HMM through all user interaction sessions and saving results in file
+            hmm_results = pd.DataFrame()
+            ks= [1]
+            all_threshold = hyperparams['threshold']
 
-    # Not necessary to run if we already have results file for HMM
-    # Running HMM through all user interaction sessions and saving results in file
-    hmm_results = pd.DataFrame()
-    ks= [1]
-    all_threshold = hyperparams['threshold']
+            # Create result DataFrame with columns for relevant statistics
+            result_dataframe = pd.DataFrame(
+                columns=['User', 'Accuracy', 'Threshold', 'LearningRate', 'Discount', 'Algorithm', 'StateAccuracy'])
+            results={}
+            for index, value in enumerate(all_user_files):
+                user_name = get_user_name(value)
+                participant_index = 0
+                print(f'Processing user {user_name}')
+                underlying_data , interaction_data = create_underlying_and_user_data(value,user_name)
 
-    # Create result DataFrame with columns for relevant statistics
-    result_dataframe = pd.DataFrame(
-        columns=['User', 'Accuracy', 'Threshold', 'LearningRate', 'Discount', 'Algorithm', 'StateAccuracy'])
-    results={}
-    for index, value in enumerate(all_user_files):
-        user_name= value.rstrip('_log.csv')
-        participant_index = 0
-        print(f'Processing user {user_name}')
-        underlying_data , interaction_data = create_underlying_and_user_data(value,user_name)
-        user_data= interaction_data.iloc[participant_index].interaction_session
-        results ['participant_id']= user_name
-        length = len(user_data)
-        for thres in all_threshold:
-            threshold = int(length * thres)
-            print("threshold", threshold, "length", length - 1)
-            #uderlying_data is all possible states and actions
-            hmm = HMM(underlying_data, continuous_attributes['movies'],discrete_attributes['movies'], 1000)
-            predicted = pd.DataFrame()
-            rank_predicted = []
+                user_data= interaction_data.iloc[participant_index].interaction_session
+                results ['participant_id']= user_name
+                length = len(user_data)
+                for thres in all_threshold:
+                    threshold = int(length * thres)
+                    print("threshold", threshold, "length", length - 1)
+                    #uderlying_data is all possible states and actions
+                    hmm = HMM(underlying_data, [],['state'], 1000)
+                    predicted = pd.DataFrame()
+                    rank_predicted = []
 
-            #training the model
-            for k in range(threshold + 1):
-                interaction = interaction_data.iloc[participant_index].interaction_session[k]
-                hmm.update(interaction)
+                    #training the model
+                    for k in range(threshold + 1):
+                        interaction = interaction_data.iloc[participant_index].interaction_session[k]
+                        hmm.update(interaction)
 
 
-            #testing the model
-            for i in tqdm(range(threshold+1 , len(interaction_data.iloc[participant_index].interaction_session))):
-                interaction = interaction_data.iloc[participant_index].interaction_session[i]
-                hmm.update(interaction)
+                    #testing the model
+                    for i in tqdm(range(threshold+1 , len(interaction_data.iloc[participant_index].interaction_session))):
+                        interaction = interaction_data.iloc[participant_index].interaction_session[i]
+                        hmm.update(interaction)
 
-                if i < len(interaction_data.iloc[participant_index].interaction_session) - 1:
-                    probability_of_next_point = hmm.predict()
-                    next_point = interaction_data.iloc[participant_index].interaction_session[i + 1]
-                    predicted_next_dict = {}
-                    for k in ks:
-                        print('Testing for k:', k)
-                        predicted_next_point=probability_of_next_point.nlargest(k).index.values
-                        #get the action for the next point/s since when k>1 we have multiple next points
-                        action_predicted = get_action_from_next_point(underlying_data.copy(),predicted_next_point)
-                        #get the actual action from the actual next_point
-                        action_true= get_action_from_next_point(underlying_data.copy(),[next_point])
-                        predicted_next_dict[k] = (action_true in action_predicted)
-                    predicted = pd.concat([predicted,pd.DataFrame(predicted_next_dict, index=[0])], ignore_index=True)
-                    sorted_prob = probability_of_next_point.sort_values(ascending=False)
-                    rank, = np.where(sorted_prob.index.values == next_point)
-                    rank_predicted.append(rank[0] + 1)
+                        if i < len(interaction_data.iloc[participant_index].interaction_session) - 1:
+                            probability_of_next_point = hmm.predict()
+                            next_point = interaction_data.iloc[participant_index].interaction_session[i + 1]
+                            predicted_next_dict = {}
+                            for k in ks:
+                                print('Testing for k:', k)
+                                predicted_next_point=probability_of_next_point.nlargest(k).index.values
+                                #get the action for the next point/s since when k>1 we have multiple next points
+                                action_predicted = get_action_from_next_point(underlying_data.copy(),predicted_next_point)
+                                #get the actual action from the actual next_point
+                                action_true= get_action_from_next_point(underlying_data.copy(),[next_point])
+                                predicted_next_dict[k] = (action_true in action_predicted)
+                            predicted = pd.concat([predicted,pd.DataFrame(predicted_next_dict, index=[0])], ignore_index=True)
+                            sorted_prob = probability_of_next_point.sort_values(ascending=False)
+                            rank, = np.where(sorted_prob.index.values == next_point)
+                            rank_predicted.append(rank[0] + 1)
 
-            # ncp = predicted.sum() / len(predicted)
-            # # for col in ncp.index:
-            # #     results[f'ncp-{col}'] = ncp[col]
-            results['user'] = user_name
-            results['threshold'] = thres
-            results[f'ncp-{1}'] = predicted[1].sum()/len(predicted[1])
-            # results[f'ncp-{5}'] = predicted[5].sum()/len(predicted)
+                    results['user'] = user_name
+                    results['threshold'] = thres
+                    if len(predicted) > 0:
+                        results[f'ncp-{1}'] = predicted[1].sum()/len(predicted[1])
+                    else:
+                        results[f'ncp-{1}'] = None
 
-            # we dont care about bias
+                    results['rank'] = rank_predicted
+                    hmm_results = pd.concat([hmm_results,pd.DataFrame(results)], ignore_index=True)
 
-            #bias = hmm.get_attribute_bias()
-            # for col in bias.columns:
-            #     results[f'bias-{col}'] = bias[col].to_numpy()
-            #
-            # results['bias-mixed'] = results['bias-bias_attribute1___attribute2___attribute3'] * results['bias-bias_action']
-            results['rank'] = rank_predicted
-            hmm_results = pd.concat([hmm_results,pd.DataFrame(results)], ignore_index=True)
-
-    hmm_results.to_pickle(output_file_path)
+            hmm_results.drop(columns=['rank'], inplace=True)
+            hmm_results.drop_duplicates(inplace=True)
+            hmm_results['Threshold'] = hmm_results['threshold']
+            hmm_results['Accuracy'] = hmm_results['ncp-1']
+            hmm_results.to_csv("Experiments_Folder/VizRec/{}/{}/{}.csv".format(dataset, task, 'Ottley-HMM'), index=False)
+            print("HMM results saved for task ", task, " and dataset ", dataset)
