@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 import json
 import pandas as pd
 import random
+import os
 
 eps=1e-35
 class Bayesian:
@@ -47,8 +48,8 @@ class Bayesian:
                 #_max = random.choice(['same', 'modify'])
 
             ##############################################
-            y_pred.append(_max)
-            y_true.append(env.mem_action[i])
+            y_pred.append((_max, i, user,thres))
+            y_true.append((env.mem_action[i], i, user,thres))
 
             #if state never observed before then take a random action
             if _max == env.mem_action[i]: #can also get lucky with random action
@@ -71,7 +72,7 @@ class Bayesian:
         accuracy = np.sum(accuracy)/denom
         print("{}, {:.2f}".format(user, accuracy))
         self.freq.clear()
-        return accuracy,split_accuracy
+        return accuracy,split_accuracy,y_pred, y_true
 
 
 def format_split_accuracy(accuracy_dict):
@@ -99,6 +100,8 @@ def run_experiment(user_list, algo, hyperparam_file,task,dataset):
         columns=['User', 'Accuracy', 'Threshold', 'LearningRate', 'Discount', 'Algorithm', 'StateAccuracy'])
     title=algo
     y_accu_all = []
+    y_true_all = []
+    y_pred_all = []
 
     for u in user_list:
         y_accu = []
@@ -106,15 +109,17 @@ def run_experiment(user_list, algo, hyperparam_file,task,dataset):
         user_name = get_user_name(u)
         for thres in threshold:
             average_accuracy = 0
-            for test in range(5):
+            for test in range(1):
                 env.process_data(u, 0)
                 obj = Bayesian()
-                accu, state_accuracy = obj.BayesianDriver(user_name, env, thres)
+                accu, state_accuracy,y_pred,y_true = obj.BayesianDriver(user_name, env, thres)
                 #accuracy_per_state = format_split_accuracy(state_accuracy)
                 average_accuracy += accu
                 env.reset(True, False)
             accu=average_accuracy/5
             y_accu.append(accu)
+            y_true_all.extend(y_true)
+            y_pred_all.extend(y_pred)
             result_dataframe = pd.concat([result_dataframe, pd.DataFrame({
                 'User': [user_name],
                 'Threshold': [thres],
@@ -134,7 +139,59 @@ def run_experiment(user_list, algo, hyperparam_file,task,dataset):
     print("Bayesian Model Performace: ", "Global Accuracy: ", np.mean(y_accu_all))
     # Save result DataFrame to CSV file
     result_dataframe.to_csv("Experiments_Folder/VizRec/{}/{}/{}.csv".format(dataset,task,title), index=False)
+    plot_predictions(y_true_all, y_pred_all, task, dataset)
+    save_data_to_csv(y_true_all, y_pred_all, task, dataset)
 
+def plot_predictions(y_true_all, y_pred_all, task, dataset, algorithm='Bayesian'):
+    colors = {
+        'same': plt.cm.Blues,
+        'modify-1': plt.cm.Greens,
+        'modify-2': plt.cm.Reds,
+        'modify-3': plt.cm.Purples
+    }
+    matches = defaultdict(lambda: defaultdict(int))
+    users = list(set(yt[2] for yt in y_true_all))
+    users.sort()
+
+    # Count matches
+    for yt, yp in zip(y_true_all, y_pred_all):
+        matches[(yt[1], yt[2])][yt[0]] += 1 if yt[0] == yp[0] else 0
+
+    # Prepare data for heatmap
+    max_interaction = max(yt[1] for yt in y_true_all) + 1
+    heatmap_data = np.zeros((len(users), max_interaction, len(colors)))
+
+    for (interaction_point, user), pred_dict in matches.items():
+        user_idx = users.index(user)  # Map user to y-axis
+        for action, count in pred_dict.items():
+            action_idx = list(colors.keys()).index(action)
+            heatmap_data[user_idx, interaction_point, action_idx] = count
+
+    plt.figure(figsize=(12, 8))
+    for action_idx, (action, cmap) in enumerate(colors.items()):
+        plt.imshow(heatmap_data[:, :, action_idx], cmap=cmap, interpolation='nearest', aspect='auto', alpha=0.5)
+
+    plt.colorbar(label='Number of Matches')
+    plt.yticks(range(len(users)), users)
+    plt.xlabel('Interaction Point')
+    plt.ylabel('User')
+    plt.title(f'Prediction Matches Heatmap for Task {task} in Dataset {dataset}')
+
+    directory = f"Experiments_Folder/VizRec/{dataset}/{task}/plots"
+    os.makedirs(directory, exist_ok=True)
+    plt.savefig(f"{directory}/{algorithm}_all_users_y_pred_vs_y_true_heatmap.png")
+    plt.close()
+
+
+def save_data_to_csv(y_true_all, y_pred_all, task, dataset, algorithm='Bayesian'):
+    data = []
+    for yt, yp in zip(y_true_all, y_pred_all):
+        data.append([yt[0], yt[1], yt[2], yp[0], yp[1], yt[3]])
+
+    df = pd.DataFrame(data, columns=['y_true', 'interaction_point', 'user', 'y_pred', 'pred_interaction_point','threshold'])
+    directory = f"Experiments_Folder/VizRec/{dataset}/{task}/data"
+    os.makedirs(directory, exist_ok=True)
+    df.to_csv(f"{directory}/{algorithm}_predictions_data.csv", index=False)
 
 if __name__ == "__main__":
     datasets = ['movies','birdstrikes']

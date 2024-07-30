@@ -6,6 +6,7 @@ import misc
 import matplotlib.pyplot as plt
 from collections import Counter
 import pandas as pd
+import os
 
 
 class Momentum:
@@ -83,6 +84,47 @@ def get_user_name(url):
     fname = parts[-1]
     uname = fname.rstrip('_log.csv')
     return uname
+
+def plot_predictions(y_true_all, y_pred_all, task, dataset, algorithm='Greedy'):
+    colors = {'same': 'blue', 'modify-1': 'green', 'modify-2': 'red', 'modify-3': 'purple'}
+    matches = defaultdict(lambda: defaultdict(int))
+    users = list(set(yt[2] for yt in y_true_all))
+
+    for yt, yp in zip(y_true_all, y_pred_all):
+        if yt[0] == yp[0]:  # If prediction matches true value
+            matches[(yt[1], yt[2])][yt[0]] += 1
+
+    # Prepare data for heatmap
+    heatmap_data = np.zeros((len(users), max(yt[1] for yt in y_true_all) + 1))
+
+    for (interaction_point, user), pred_dict in matches.items():
+        for count in pred_dict.values():
+            user_idx = users.index(user)  # Map user to y-axis
+            heatmap_data[user_idx, interaction_point] = count
+
+    plt.figure(figsize=(12, 8))
+    plt.imshow(heatmap_data, cmap='hot', interpolation='nearest', aspect='auto')
+    plt.colorbar(label='Number of Matches')
+
+    plt.yticks(range(len(users)), users)
+    plt.xlabel('Interaction Point')
+    plt.ylabel('User')
+    plt.title(f'Prediction Matches Heatmap for Task {task} in Dataset {dataset}')
+
+    directory = f"Experiments_Folder/VizRec/{dataset}/{task}/plots"
+    os.makedirs(directory, exist_ok=True)
+    plt.savefig(f"{directory}/{algorithm}_all_users_y_pred_vs_y_true_heatmap.png")
+    plt.close()
+
+def save_data_to_csv(y_true_all, y_pred_all, task, dataset, algorithm='Greedy'):
+    data = []
+    for yt, yp in zip(y_true_all, y_pred_all):
+        data.append([yt[0], yt[1], yt[2], yp[0], yp[1]])
+
+    df = pd.DataFrame(data, columns=['y_true', 'interaction_point', 'user', 'y_pred', 'pred_interaction_point'])
+    directory = f"Experiments_Folder/VizRec/{dataset}/{task}/data"
+    os.makedirs(directory, exist_ok=True)
+    df.to_csv(f"{directory}/{algorithm}_predictions_data.csv", index=False)
 
 if __name__ == "__main__":
 

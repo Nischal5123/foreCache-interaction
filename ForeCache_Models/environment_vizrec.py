@@ -182,9 +182,12 @@ class environment_vizrec:
 
         # Take the step action
         self.take_step_action(test)
-
-        # Return the predicted next state, current reward, done status, prediction, and top reward
-        return next_state, cur_reward, self.done, prediction, top_reward
+        if test:
+            # Return the predicted next state, current reward, done status, prediction, and top reward
+            return next_state, cur_reward, self.done, prediction, top_reward, cur_action, predicted_action, self.steps
+        else:
+            # Return the next state, current reward, done status, prediction, and top reward
+            return next_state, cur_reward, self.done, prediction, top_reward
 
     def get_user_list(self,dataset,task):
         if dataset == 'movies':
