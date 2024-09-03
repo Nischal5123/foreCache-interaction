@@ -193,7 +193,7 @@ def run_experiment_for_user(u, algo, hyperparams):
         best_y_pred=[]
         best_y_true=[]
         # test_accs=[]
-        for i in range(1):
+        for i in range(5):
             test_model=best_model
             test_agent=best_agent
             test_accuracy, stats, split_accuracy, reward, y_true, y_pred = test_agent.test(test_model, best_gamma, best_learning_rate,
@@ -270,8 +270,8 @@ def save_data_to_csv(y_true_all, y_pred_all, task, dataset, algorithm='QLearn'):
 
 
 if __name__ == '__main__':
-    datasets = ['movies']
-    tasks = ['p4']
+    datasets = ['movies', 'birdstrikes']
+    tasks = ['p1', 'p2', 'p3', 'p4']
     for dataset in datasets:
         for task in tasks:
             env = environment_vizrec.environment_vizrec()
