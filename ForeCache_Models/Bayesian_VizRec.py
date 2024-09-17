@@ -16,6 +16,7 @@ class Bayesian:
         self.freq = defaultdict(lambda: defaultdict(float))
 
     def BayesianDriver(self, user, env, thres):
+        print("User: ", user)
         length = len(env.mem_action)
         threshold = int(length * thres)
         for i in range(0, threshold):

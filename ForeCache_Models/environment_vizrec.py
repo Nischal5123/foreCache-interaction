@@ -231,3 +231,4 @@ class environment_vizrec:
 
 if __name__ == "__main__":
     env = environment_vizrec()
+    print( env.get_user_list('movies','p1'))
