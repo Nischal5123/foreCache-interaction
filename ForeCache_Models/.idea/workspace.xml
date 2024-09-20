@@ -5,317 +5,89 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9d6ab004-2bca-4ca4-998f-84d71a9026c2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Bayesian-VizRec-One-Model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Online_SVM_VizRec_One_Model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/What-Model-Learned.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A_Simplified_Implementation/ActorCritic.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A_Simplified_Implementation/NaiveModel.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A_Simplified_Implementation/QLearning.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A_Simplified_Implementation/Reinforce.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A_Simplified_Implementation/SARSA.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A_Simplified_Implementation/Win-Stay-Loose-Shift.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A_Simplified_Implementation/draco_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A_Simplified_Implementation/environment2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A_Simplified_Implementation/misc.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A_Simplified_Implementation/plotting.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ActorCritic-vizrec-full-actions.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ActorCritic-vizrec.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ActorCritic.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Actor_Critic_Single_Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Actor_Critic_Single_Model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChangePoint.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clean-Statistical-Tests.R" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CompetingModel.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Elimination-Tournament.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExperimentAnalyzer.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/Draft/Actor_Critic.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/Draft/Draft-all-users/Actor_Critic.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/Draft/Draft-all-users/Actor_Critic_large_interactions.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/Draft/Draft-all-users/Greedy.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/Draft/Draft-all-users/Naive.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/Draft/Draft-all-users/QLearn.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/Draft/Draft-all-users/Random.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/Draft/Draft-all-users/Reinforce.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/Draft/Draft-all-users/SARSA.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/Draft/Naive.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/Draft/QLearn.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/Draft/Random.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/Draft/Reinforce.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/Draft/SARSA.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/Experiment_Visualization.twb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/Gold/ActorCritic.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/Gold/Greedy.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/Gold/Naive.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/Gold/QLearn.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/Gold/Reinforce.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/Gold/SARSA.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/Gold/WSLS.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/Gold/all_experiments_BirdStrikes.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/Gold/all_experiments_Movies.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/Gold/experiments-master-with-reinforce.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/Greedy.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/HyperparameterPerState.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/Momentum.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/Naive.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/PM.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/Results/ActorCritic.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/Results/Greedy.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/Results/Momentum.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/Results/Naive.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/Results/QLearn.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/Results/QlearnCDP.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/Results/Random.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/Results/Reinforce.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/Results/SARSA.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/Results/Tamer_Q_Learning.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/Results/WSLS.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/Results/experiments-master_new.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec-Experiement_Visualization.twb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/.~VizRec-Experiement_Visualization__59233.twbr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/Actor_Critic.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/Both-Dataset-Experiemnt-Visualization.twb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/Eliminiation-Tournament.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/PM.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/QLearn.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/Random.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/Reinforce.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/SARSA.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/VizRec-Experiement_Visualization.twb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/VizRec_Interaction_Visualization.twb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/WSLS.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/all_experiments_BirdStrikes.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/all_experiments_BirdStrikes_p1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/all_experiments_BirdStrikes_p2.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/all_experiments_BirdStrikes_p3.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/all_experiments_BirdStrikes_p4.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/birdstrikes-focused-all.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/birdstrikes-open-all.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/birdstrikes-plotter.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/birdstrikes_experiment_visualization.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/legend.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/AC-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/AC-Single-Model.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/Greedy_One_Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/Greedy_One_Model.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/Momentum_One_Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/Momentum_One_Model.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/QLearn-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/QLearn-Single-Model.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bayesian_VizRec.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/ActorCritic.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/Bayesian.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/Greedy.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/HMM.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/HMM_leave_one_out.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/HMM_leave_one_out.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/Momentum.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/Naive.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/OnlineSVM.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/Ottley-HMM.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/QLearn-Single-Model" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/QLearn.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/Random.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/Reinforce.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/SARSA-Single-Model" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/SARSA-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/SARSA-Single-Model.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/SARSA.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/SVM.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/SVM_Threshold.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/WSLS.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/Weighted-KNN.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/data/Bayesian_predictions_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/data/Bayesian_predictions_data.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/data/Greedy_one_model_predictions_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/data/Greedy_one_model_predictions_data.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/predictions_plot.png" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/predictions_plot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/AC-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/AC-Single-Model.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/Greedy_One_Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/Greedy_One_Model.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/Momentum_One_Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/Momentum_One_Model.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/QLearn-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/QLearn-Single-Model.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/data/Greedy_predictions_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/data/Greedy_predictions_data.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/data/QLearn_predictions_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/data/QLearn_predictions_data.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/online_svm_results.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/plots/Bayesian_all_users_y_pred_vs_y_true_heatmap.png" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/plots/Bayesian_all_users_y_pred_vs_y_true_heatmap.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/plots/Greedy_all_users_y_pred_vs_y_true_heatmap.png" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/plots/Greedy_all_users_y_pred_vs_y_true_heatmap.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/predictions_plot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/ActorCritic.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/ActorCritic.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/Bayesian.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/Bayesian.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/Bayesian_One_Model_One_Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/Bayesian_One_Model_One_Model.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/Greedy.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/Greedy.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/HMM.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/HMM.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/HMM_leave_one_out.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/HMM_leave_one_out.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/Momentum.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/Momentum.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/Naive.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/Naive.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/Ottley-HMM.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/Ottley-HMM.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/QLearn-Single-Model" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/QLearn-Single-Model" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/QLearn.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/QLearn.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/Random.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/Random.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/Reinforce.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/Reinforce.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/SARSA-Single-Model" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/SARSA-Single-Model" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/SARSA-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/SARSA-Single-Model.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/SARSA.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/SARSA.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/SVM.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/SVM.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/SVM_Threshold.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/SVM_Threshold.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/WSLS.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/WSLS.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/Weighted-KNN.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/Weighted-KNN.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/data/Bayesian_predictions_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/data/Bayesian_predictions_data.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/data/Greedy_one_model_predictions_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/data/Greedy_one_model_predictions_data.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/data/Greedy_predictions_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/data/Greedy_predictions_data.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/data/QLearn_predictions_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/data/QLearn_predictions_data.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/online_svm_results.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/online_svm_results.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/plots/Bayesian_all_users_y_pred_vs_y_true_heatmap.png" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/plots/Bayesian_all_users_y_pred_vs_y_true_heatmap.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/plots/Greedy_all_users_y_pred_vs_y_true_heatmap.png" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/plots/Greedy_all_users_y_pred_vs_y_true_heatmap.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/predictions_plot.png" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/predictions_plot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/AC-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/AC-Single-Model.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/Greedy_One_Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/Greedy_One_Model.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/Momentum_One_Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/Momentum_One_Model.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/QLearn-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/QLearn-Single-Model.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/data/Greedy_one_model_predictions_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/data/Greedy_one_model_predictions_data.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/ActorCritic.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/ActorCritic.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/Bayesian.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/Bayesian.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/Greedy.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/Greedy.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/HMM.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/HMM.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/HMM_leave_one_out.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/HMM_leave_one_out.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/Momentum.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/Momentum.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/Naive.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/Naive.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/Ottley-HMM.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/Ottley-HMM.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/QLearn-Single-Model" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/QLearn-Single-Model" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/QLearn.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/QLearn.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/Random.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/Random.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/Reinforce.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/Reinforce.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/SARSA-Single-Model" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/SARSA-Single-Model" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/SARSA.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/SARSA.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/SVM.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/SVM.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/SVM_Threshold.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/SVM_Threshold.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/WSLS.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/WSLS.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/Weighted-KNN.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/Weighted-KNN.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/online_svm_results.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/online_svm_results.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/predictions_plot.png" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/predictions_plot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p4/AC-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p4/AC-Single-Model.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p4/Greedy_One_Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p4/Greedy_One_Model.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p4/Momentum_One_Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p4/Momentum_One_Model.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p4/QLearn-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p4/QLearn-Single-Model.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p4/data/Greedy_one_model_predictions_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p4/data/Greedy_one_model_predictions_data.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p4/predictions_plot.png" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p4/predictions_plot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p1/AC-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p1/AC-Single-Model.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p1/Greedy_One_Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p1/Greedy_One_Model.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p1/Momentum_One_Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p1/Momentum_One_Model.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p1/QLearn-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p1/QLearn-Single-Model.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p1/data/Greedy_one_model_predictions_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p1/data/Greedy_one_model_predictions_data.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p1/predictions_plot.png" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p1/predictions_plot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p2/AC-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p2/AC-Single-Model.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p2/Greedy_One_Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p2/Greedy_One_Model.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p2/Momentum_One_Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p2/Momentum_One_Model.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p2/QLearn-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p2/QLearn-Single-Model.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p2/data/Greedy_one_model_predictions_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p2/data/Greedy_one_model_predictions_data.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p2/predictions_plot.png" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p2/predictions_plot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p3/AC-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p3/AC-Single-Model.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p3/Greedy_One_Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p3/Greedy_One_Model.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p3/Momentum_One_Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p3/Momentum_One_Model.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p3/QLearn-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p3/QLearn-Single-Model.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p3/data/Greedy_one_model_predictions_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p3/data/Greedy_one_model_predictions_data.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p3/predictions_plot.png" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p3/predictions_plot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p4/AC-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p4/AC-Single-Model.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p4/Greedy_One_Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p4/Greedy_One_Model.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p4/Momentum_One_Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p4/Momentum_One_Model.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p4/QLearn-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p4/QLearn-Single-Model.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p4/data/Greedy_one_model_predictions_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p4/data/Greedy_one_model_predictions_data.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p4/predictions_plot.png" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p4/predictions_plot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/experiments-master-original.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/experiments-master-w-random.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/experiments-master.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/viz-rec-experiments-master-p2.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/viz-rec-experiments-master-p4-boomarks.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/viz-rec-experiments-master-p4.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/viz-rec-experiments-master.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/~Experiment_Visualization__1016.twbr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/~Experiment_Visualization__2216.twbr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/~Experiment_Visualization__22640.twbr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/~Experiment_Visualization__24008.twbr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/~Experiment_Visualization__30052.twbr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Filtered_Viz_Rec_Wilcoxon-Signed-Rank.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Final-Mixed-Model-Test-Combined.rmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Final-Mixed-Model-Test.rmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Greedy-One-Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Greedy-One-Model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Greedy.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HMM.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KPSS_test.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Linear-Mixed-Effect-combined.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Linear-Mixed-Effect.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Linear-Mixed-Models.rmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Momentum-One-Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Momentum-One-Model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Momentum.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NaiveModel.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OfflineSVM.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OnlineSVM_One_Modal.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PM.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PM_vizRec.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Presentable-Statistical-Tests.R" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Qlearning-Single-Model-Bird.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Qlearning-Single-Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Qlearning-Single-Model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROI-Aggregate.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROI-Manwhiteney-Results.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Random.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reinforce-One-Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Reinforce-One-Model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reinforce-cartpole.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reinforce.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SARSA.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SARSA_vizrec.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Simulataneous-TAMER.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stationarity-Tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Statistical-Tests.R" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Supervised_VizRec_One_Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Offline_SVM_VizRec_One_Model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TAMER-TDLearning.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TDLearning-working.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TDLearning.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestFigures/Momentum.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestFigures/OnlineSVM.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestFigures/WSLS.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestFigures/wsls_all_3_actions.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Viz_Rec-Friedman-Test.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Viz_Rec_Chi-Sqaure-Test.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Viz_Rec_Wilcoxon-Signed-Rank.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wilcoxon-Signed-Rank.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Win-Stay-Loose-Shift.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wincoxon-Signed-Rank-Probability_Distribution.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Zheng-Json-To-CSV.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Zheng-Log-Processing.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bayesian_competing.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bayesian_competing_Tableau.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cqn.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-2D/Annotated-Probability Distribution -2D.twb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-2D/ChangePoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-2D/Kpss-results.twb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-2D/Probability Distribution.twb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-2D/Sensemaking-region.twb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-2D/U_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-2D/U_10.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-2D/U_11.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-2D/U_12.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-2D/U_13.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-2D/U_14.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-2D/U_15.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-2D/U_16.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-2D/U_17.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-2D/U_18.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-2D/U_19.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-2D/U_2.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-2D/U_20.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-2D/U_3.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-2D/U_4.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-2D/U_5.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-2D/U_6.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-2D/U_7.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-2D/U_8.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-2D/U_9.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-2D/actor-critic_experienced.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-2D/actor-critic_first_time.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-2D/adjusted_manwhitneyresults.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-2D/aggregated-roi-manwhitneyresults.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-2D/corrected-man-whitney.twb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-2D/experiments-master.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-2D/kpssresults.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-2D/manwhitneyresults.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-2D/probability_distribution_annotated_subtask.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-2D/probability_distribution_roi_cycle.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-2D/region-aggregated-roi-manwhitneyresults.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-2D/region-manwhitneyresults.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-2D/region_new-actions_annotated_subtask.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-2D/region_new-actions_context.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-2D/region_new-actions_roi_cycle.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-2D/reinforce_experienced.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-2D/reinforce_first_time.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-2D/roi-manwhitneyresults.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-2D/roi_df.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-2D/state_action_loose_probabilities.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-2D/state_probabilities.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-2D/taskname_ndsi-2d-task_userid_44968286-f204-4ad6-a9b5-d95b38e97866.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-2D/taskname_ndsi-2d-task_userid_6d49fab8-273b-4a91-948b-ecd14556b049.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-2D/taskname_ndsi-2d-task_userid_72a8d170-77ae-400e-b2a5-de9e1d33a714.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-2D/taskname_ndsi-2d-task_userid_733a1ac5-0b01-485e-9b29-ac33932aa240.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-2D/taskname_ndsi-2d-task_userid_7d014c75-453b-4188-9e4e-fb086984896a.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-2D/taskname_ndsi-2d-task_userid_82316e37-1117-4663-84b4-ddb6455c83b2.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-2D/taskname_ndsi-2d-task_userid_8b544d24-3274-4bb0-9719-fd2bccc87b02.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-2D/taskname_ndsi-2d-task_userid_8bf5b71b-dfd4-403f-8791-06427b26ccaf.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-2D/taskname_ndsi-2d-task_userid_93be0a02-3f7a-46c9-b526-aa956ed00856.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-2D/taskname_ndsi-2d-task_userid_954edb7c-4eae-47ab-9338-5c5c7eccac2d.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-2D/taskname_ndsi-2d-task_userid_a6aab5f5-fdb6-41df-9fc6-221d70f8c6e8.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-2D/taskname_ndsi-2d-task_userid_ac5b65d7-f260-4534-9fae-d998b726ed32.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-2D/taskname_ndsi-2d-task_userid_bc9f9425-e867-4876-a5d9-791229916767.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-2D/taskname_ndsi-2d-task_userid_bda49380-37ad-41c5-a109-7fa198a7691a.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-2D/taskname_ndsi-2d-task_userid_cd3ef507-e3e9-4edb-9222-90a69a9bf272.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-2D/taskname_ndsi-2d-task_userid_d6555293-35c7-4c27-b522-38d67d2d1b1a.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-2D/taskname_ndsi-2d-task_userid_da52acdd-3cea-483c-86e5-2c2740d371aa.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-2D/taskname_ndsi-2d-task_userid_e4221e48-0930-40db-af3c-f4de1ed87582.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-2D/taskname_ndsi-2d-task_userid_ff56863b-0710-4a58-ad22-4bf2889c9bc0.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-2D/zheng.twb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-2D/~Probability Distribution__11412.twbr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-2D/~Probability Distribution__4452.twbr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-2D/~Probability Distribution__5308.twbr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-2D/~Sensemaking-region__14112.twbr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-3D/Probability Distribution -3D.twb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-3D/probability_distribution_roi_cycle.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-3D/probability_distribution_roi_cycle_3d.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-3D/taskname_ndsi-3d-task_userid_3abeecbe-327a-441e-be2a-0dd3763c1d45.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-3D/taskname_ndsi-3d-task_userid_44968286-f204-4ad6-a9b5-d95b38e97866.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-3D/taskname_ndsi-3d-task_userid_6d49fab8-273b-4a91-948b-ecd14556b049.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-3D/taskname_ndsi-3d-task_userid_733a1ac5-0b01-485e-9b29-ac33932aa240.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-3D/taskname_ndsi-3d-task_userid_7d014c75-453b-4188-9e4e-fb086984896a.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-3D/taskname_ndsi-3d-task_userid_82316e37-1117-4663-84b4-ddb6455c83b2.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-3D/taskname_ndsi-3d-task_userid_8b544d24-3274-4bb0-9719-fd2bccc87b02.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-3D/taskname_ndsi-3d-task_userid_8bf5b71b-dfd4-403f-8791-06427b26ccaf.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-3D/taskname_ndsi-3d-task_userid_93be0a02-3f7a-46c9-b526-aa956ed00856.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-3D/taskname_ndsi-3d-task_userid_954edb7c-4eae-47ab-9338-5c5c7eccac2d.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-3D/taskname_ndsi-3d-task_userid_a6aab5f5-fdb6-41df-9fc6-221d70f8c6e8.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-3D/taskname_ndsi-3d-task_userid_ac5b65d7-f260-4534-9fae-d998b726ed32.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-3D/taskname_ndsi-3d-task_userid_bc9f9425-e867-4876-a5d9-791229916767.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-3D/taskname_ndsi-3d-task_userid_bda49380-37ad-41c5-a109-7fa198a7691a.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-3D/taskname_ndsi-3d-task_userid_c7cac3a0-2f18-4359-905e-ce343d6d92f1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-3D/taskname_ndsi-3d-task_userid_cd3ef507-e3e9-4edb-9222-90a69a9bf272.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-3D/taskname_ndsi-3d-task_userid_d6555293-35c7-4c27-b522-38d67d2d1b1a.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-3D/taskname_ndsi-3d-task_userid_da52acdd-3cea-483c-86e5-2c2740d371aa.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-3D/taskname_ndsi-3d-task_userid_e4221e48-0930-40db-af3c-f4de1ed87582.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-3D/taskname_ndsi-3d-task_userid_ff56863b-0710-4a58-ad22-4bf2889c9bc0.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/NDSI-3D/~Probability Distribution -3D__13340.twbr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ensemble_run.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/environment2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/environment2_changepoint.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm-model.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/misc.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/misc_vizrec.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/monadjemi_competing_models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ottley_hidden_markov_model.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ottley_hidden_markov_model_test2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plotting.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/processing-birdstrikes.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/processing-movies-combined.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/processing-movies.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/processing.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rlLib.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/util.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weighted-knn.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zeng_metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Greedy_vizRec.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hidden-Markov-Model-NLTK-Updating.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Hidden-Markov-Model-Single-Model.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hidden-Markov-Model-NLTK.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Momentum-VizRec.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Random_VizRec.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reinforce_vizrec.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -542,7 +314,7 @@
       <workItem from="1725476599585" duration="62320000" />
       <workItem from="1726003911969" duration="11784000" />
       <workItem from="1726183750806" duration="5608000" />
-      <workItem from="1726594397669" duration="9122000" />
+      <workItem from="1726594397669" duration="10120000" />
     </task>
     <servers />
   </component>
@@ -572,41 +344,6 @@
           <url>file://$PROJECT_DIR$/Win-Stay-Loose-Shift-VizRec.py</url>
           <line>153</line>
           <option name="timeStamp" value="57" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Greedy_vizRec.py</url>
-          <line>38</line>
-          <option name="timeStamp" value="58" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Greedy_vizRec.py</url>
-          <line>35</line>
-          <option name="timeStamp" value="59" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Bayesian_VizRec.py</url>
-          <line>37</line>
-          <option name="timeStamp" value="63" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Bayesian_VizRec.py</url>
-          <line>38</line>
-          <option name="timeStamp" value="64" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Bayesian_VizRec.py</url>
-          <line>45</line>
-          <option name="timeStamp" value="65" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Bayesian_VizRec.py</url>
-          <line>41</line>
-          <option name="timeStamp" value="66" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Bayesian_VizRec.py</url>
-          <line>44</line>
-          <option name="timeStamp" value="67" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/TDLearning_vizrec.py</url>
