@@ -44,6 +44,11 @@ class Momentum:
         """
         length = len(env.mem_action)
         correct_predictions = 0
+        ground_truth = []
+        all_predictions = []
+        split_accuracy = defaultdict(list)
+
+
 
         for i in range(length):
             current_state = env.mem_states[i]
@@ -60,10 +65,12 @@ class Momentum:
             # Check if the action matches
             if action_to_take == env.mem_action[i]:
                 correct_predictions += 1
+            ground_truth.append(env.mem_action[i])
+            all_predictions.append(action_to_take)
 
         # Calculate accuracy
         accuracy = correct_predictions / length if length > 0 else 0
-        return accuracy
+        return accuracy,  all_predictions, ground_truth
 
 def get_user_name(url):
     parts = url.split('/')
@@ -71,34 +78,7 @@ def get_user_name(url):
     uname = fname.rstrip('_log.csv')
     return uname
 
-def save_plot_and_csv(y_true_all, y_pred_all, task, dataset, algorithm='Momentum'):
-    """
-    Saves a plot and CSV file of predictions.
 
-    Args:
-    - y_true_all (list): List of true actions.
-    - y_pred_all (list): List of predicted actions.
-    - task (str): The task name.
-    - dataset (str): The dataset name.
-    - algorithm (str): The name of the algorithm.
-    """
-    # Save plot
-    plt.figure(figsize=(10, 6))
-    plt.plot(y_true_all, label='True Actions', marker='o')
-    plt.plot(y_pred_all, label='Predicted Actions', marker='x')
-    plt.legend()
-    plt.title(f"{algorithm} Predictions - Task {task} - Dataset {dataset}")
-    directory = f"Experiments_Folder/VizRec/{dataset}/{task}/plots"
-    os.makedirs(directory, exist_ok=True)
-    plt.savefig(f"{directory}/{algorithm}_predictions.png")
-    plt.close()
-
-    # Save CSV
-    data = list(zip(y_true_all, y_pred_all))
-    df = pd.DataFrame(data, columns=['True Actions', 'Predicted Actions'])
-    directory = f"Experiments_Folder/VizRec/{dataset}/{task}/data"
-    os.makedirs(directory, exist_ok=True)
-    df.to_csv(f"{directory}/{algorithm}_predictions.csv", index=False)
 
 if __name__ == "__main__":
     datasets = ['movies', 'birdstrikes']
@@ -125,7 +105,7 @@ if __name__ == "__main__":
 
                 # Process test user data
                 env.process_data(test_user, 0)  # Load test user data
-                accuracy = obj.MomentumDriver(test_user, env)  # Evaluate on the test user
+                accuracy, ground_truth, all_predictions = obj.MomentumDriver(test_user, env)  # Evaluate on the test user
                 task_accuracy.append(accuracy)
 
                 dataset_acc.append(accuracy)
@@ -134,7 +114,9 @@ if __name__ == "__main__":
                 result_dataframe = pd.concat([result_dataframe, pd.DataFrame([{
                     'User': get_user_name(test_user),
                     'Accuracy': accuracy,
-                    'Algorithm': 'Momentum'
+                    'Algorithm': 'Momentum',
+                    'Predictions': str(all_predictions),
+                    'Ground_Truth': str(ground_truth),
                 }])], ignore_index=True)
 
                 #print(f"User {get_user_name(test_user)} - Accuracy: {accuracy:.2f}")

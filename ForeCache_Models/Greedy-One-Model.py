@@ -42,6 +42,8 @@ class Greedy:
         y_true = []
         y_pred = []
         split_accuracy = defaultdict(list)
+        ground_truth = []
+        all_predictions = []
 
         for i in range(1, length):
             try:
@@ -54,6 +56,11 @@ class Greedy:
             y_pred.append((predicted_action, i, user))
             y_true.append((env.mem_action[i], i, user))
 
+
+            #
+            ground_truth.append(env.mem_action[i])
+            all_predictions.append(predicted_action)
+
             if predicted_action == env.mem_action[i]:
                 split_accuracy[env.mem_states[i - 1]].append(1)
                 accuracy.append(1)
@@ -62,7 +69,7 @@ class Greedy:
                 accuracy.append(0)
 
         overall_accuracy = np.mean(accuracy)
-        return overall_accuracy, split_accuracy, y_pred, y_true
+        return overall_accuracy, split_accuracy, y_pred, y_true, all_predictions, ground_truth
 
 
 def get_user_name(url):
@@ -98,17 +105,20 @@ def run_experiment(user_list, algo, task, dataset):
         # Testing phase: test on the left-out test user
         env=environment_vizrec.environment_vizrec()
         env.process_data(test_user, 0)
-        accuracy, state_accuracy, y_pred, y_true = obj.test(get_user_name(test_user), env)
+        accuracy, state_accuracy, y_pred, y_true,all_predictions, ground_truth  = obj.test(get_user_name(test_user), env)
         accuracy_all.append(accuracy)
 
         # Save results
         y_true_all.extend(y_true)
         y_pred_all.extend(y_pred)
+
         result_dataframe = pd.concat([result_dataframe, pd.DataFrame({
             'User': [get_user_name(test_user)],
             'Accuracy': [accuracy],
             'Algorithm': [algo],
-            'StateAccuracy': [format_split_accuracy(state_accuracy)]
+            'StateAccuracy': [format_split_accuracy(state_accuracy)],
+            'Predictions': str(all_predictions),
+            'GroundTruth': str(ground_truth)
         })], ignore_index=True)
 
         #print(f"User {get_user_name(test_user)} - Accuracy: {accuracy:.2f}")
@@ -162,7 +172,7 @@ if __name__ == "__main__":
         for task in tasks:
             env = environment_vizrec.environment_vizrec()
             user_list_name = sorted(env.get_user_list(dataset, task))
-            accuracy_all=run_experiment(user_list_name, 'Greedy', task, dataset)
+            accuracy_all=run_experiment(user_list_name, 'Greedy_One_Model', task, dataset)
             print(f"Dataset: {dataset} Task: {task}, Accuracy: {np.mean(accuracy_all)}")
             dataset_acc.append(np.mean(accuracy_all))
         print(f"Dataset: {dataset}, Overall Accuracy: {np.mean(dataset_acc)}")

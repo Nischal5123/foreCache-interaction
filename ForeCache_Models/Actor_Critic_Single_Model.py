@@ -171,6 +171,8 @@ class Agent():
     def test(self,model):
 
         test_predictions = []
+        predicted_action = []
+        all_ground_actions = []
         for _ in range(1):
             done = False
             s = self.env.reset(all=False, test=True)
@@ -179,12 +181,15 @@ class Agent():
             score=0
             insight = defaultdict(list)
 
+
             while not done:
                 prob = model.pi(torch.from_numpy(s).float())
                 m = Categorical(prob)
                 a = m.sample().item()
-                s_prime, r, done, pred, _, ground_action,_,_ = self.env.step(s, a, True)
+                s_prime, r, done, pred, _, ground_action,pred_action,_ = self.env.step(s, a, True)
                 predictions.append(pred)
+                predicted_action.append(pred_action)
+                all_ground_actions.append(ground_action)
 
                 insight[ground_action].append(pred)
                 s_prime = np.array(self.convert_state_idx(s_prime))
@@ -205,7 +210,7 @@ class Agent():
         for keys, values in insight.items():
             granular_prediction[keys] = (len(values), np.mean(values))
 
-        return np.mean(test_predictions), granular_prediction
+        return np.mean(test_predictions), granular_prediction, predicted_action, all_ground_actions
 
 def training(train_files, env, dataset, algorithm, epoch):
     # Load hyperparameters from JSON file
@@ -247,10 +252,10 @@ def testing(test_files, env, trained_ac_model, best_lr, best_gamma, dataset, alg
         env.reset(True)
         env.process_data(user, 0)
         agent = Agent(env, 1)
-        accu, granular_acc = agent.test(trained_ac_model)
+        accu, granular_acc, predicted_actions, ground_actions = agent.test(trained_ac_model)
         final_accu.append(accu)
 
-    return np.mean(final_accu), granular_acc
+    return np.mean(final_accu), granular_acc, predicted_actions, ground_actions
 
 
 def process_user(user_data):
@@ -263,13 +268,17 @@ def process_user(user_data):
     test_files = [test_user_log]
     best_accu = -1
     best_granular_acc = {}
+    best_predicted_actions = []
+    best_ground_actions = []
     for _ in range(5):
-        testing_accu, granular_acc = testing(test_files, env, trained_ac_model, best_lr, best_gamma, d, algorithm)
+        testing_accu, granular_acc, predicted_actions, ground_actions = testing(test_files, env, trained_ac_model, best_lr, best_gamma, d, algorithm)
         if testing_accu > best_accu:
             best_accu = testing_accu
             best_granular_acc = granular_acc
+            best_predicted_actions = predicted_actions
+            best_ground_actions = ground_actions
 
-    return [test_user_log, best_accu, best_granular_acc]
+    return [test_user_log, best_accu, best_granular_acc, best_predicted_actions, best_ground_actions]
 
 
 if __name__ == "__main__":
@@ -296,9 +305,9 @@ if __name__ == "__main__":
             with concurrent.futures.ProcessPoolExecutor() as executor:
                 futures = [executor.submit(process_user, user_data) for user_data in user_data_list]
                 for future in concurrent.futures.as_completed(futures):
-                    test_user_log, best_accu, best_granular_acc = future.result()
+                    test_user_log, best_accu, best_granular_acc, best_predicted_actions, best_ground_actions = future.result()
                     accuracies.append(best_accu)
-                    final_output.append([test_user_log, best_accu, best_granular_acc])
+                    final_output.append([test_user_log, best_accu, best_granular_acc,str(best_predicted_actions), str(best_ground_actions)])
 
             # Save dataset and task level data
             final_output = np.array(final_output)

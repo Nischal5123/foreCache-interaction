@@ -134,6 +134,8 @@ class Reinforce():
     def test(self,policy):
         test_accuracies = []
         split_accuracy = defaultdict(list)
+        ground_truth = []
+        all_predictions = []
 
         for n_epi in range(1):
             s = self.env.reset(all=False, test=True)
