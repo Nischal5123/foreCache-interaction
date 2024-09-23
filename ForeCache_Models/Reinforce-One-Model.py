@@ -44,8 +44,8 @@ class Policy(nn.Module):
             self.total_length=16
 
 
-        self.fc1 = nn.Linear(self.total_length, 128)
-        self.fc2 = nn.Linear(128, 4)
+        self.fc1 = nn.Linear(self.total_length, 64)
+        self.fc2 = nn.Linear(64, 4)
         self.gamma=gamma
         self.temperature = tau
         self.optimizer = optim.Adam(self.parameters(), lr=learning_rate)
@@ -246,7 +246,7 @@ def process_user(user_data):
 
 if __name__ == "__main__":
     env = environment5.environment_vizrec()
-    datasets = ['movies', 'birdstrikes']
+    datasets = ['birdstrikes', 'movies']
     tasks = ['p1', 'p2','p3', 'p4']
     overall_accuracy = []
 
@@ -258,7 +258,7 @@ if __name__ == "__main__":
             # Get the user list
             user_list = list(env.get_user_list(d, task))
 
-            user_data_list = [(user_list[i], user_list[:i] + user_list[i + 1:], env, d, 'AC', 5)
+            user_data_list = [(user_list[i], user_list[:i] + user_list[i + 1:], env, d, 'Reinforce', 5)
                               for i in range(len(user_list))]
 
             accuracies = []

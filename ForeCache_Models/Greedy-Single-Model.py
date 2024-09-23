@@ -49,6 +49,7 @@ class Greedy:
             try:
                 # Predict the action with the highest learned reward in the previous state
                 predicted_action = max(self.reward[env.mem_states[i - 1]], key=self.reward[env.mem_states[i - 1]].get)
+
             except ValueError:
                 # If the state has not been seen, randomly choose an action
                 predicted_action = random.choice(['same', 'modify-1', 'modify-2', 'modify-3'])
@@ -57,11 +58,13 @@ class Greedy:
             y_true.append((env.mem_action[i], i, user))
 
 
+
             #
             ground_truth.append(env.mem_action[i])
             all_predictions.append(predicted_action)
 
             if predicted_action == env.mem_action[i]:
+                self.reward[env.mem_states[i]][predicted_action] += env.mem_reward[i]
                 split_accuracy[env.mem_states[i - 1]].append(1)
                 accuracy.append(1)
             else:
@@ -86,12 +89,12 @@ def run_experiment(user_list, algo, task, dataset):
 
     # Initialize environment and algorithm
     env = environment_vizrec.environment_vizrec()
-    obj = Greedy()
+
 
     # Leave-one-out: train on all users except the test user
     for test_user in user_list:
         #print(f"Evaluating for Test User: {get_user_name(test_user)}")
-
+        obj = Greedy()
         # Reset environment
         env.reset(True)
 

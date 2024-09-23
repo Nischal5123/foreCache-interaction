@@ -62,6 +62,7 @@ class Bayesian:
             all_predictions.append(predicted_action)
 
             if predicted_action == env.mem_action[i]:
+                self.freq[env.mem_states[i]][predicted_action] += 1
                 split_accuracy[env.mem_states[i - 1]].append(1)
                 accuracy.append(1)
             else:
@@ -86,10 +87,11 @@ def run_experiment(user_list, algo, task, dataset):
 
     # Initialize environment and algorithm
     env = environment_vizrec.environment_vizrec()
-    obj = Bayesian()
+
 
     # Leave-one-out: train on all users except the test user
     for test_user in user_list:
+        obj = Bayesian()
         #print(f"Evaluating for Test User: {get_user_name(test_user)}")
 
         # Reset environment
@@ -163,7 +165,7 @@ def save_data_to_csv(y_true_all, y_pred_all, task, dataset, algorithm='Greedy'):
 
 
 if __name__ == "__main__":
-    datasets = ['movies', 'birdstrikes']
+    datasets = ['birdstrikes', 'movies']
     tasks = ['p1', 'p2', 'p3', 'p4']
 
     overall_accuracy= []
