@@ -158,6 +158,8 @@ class OfflineSVM:
         for i in range(len(X_train)):
             self.model.partial_fit([X_train[i]], [y_train[i]], classes=['modify-1', 'modify-2', 'modify-3', 'same'])
 
+
+
     def evaluateOffline(self, X_test, y_test):
         """
         Evaluate the model on the test data and return the accuracy.
@@ -220,7 +222,7 @@ def run_experiment(user_list, dataset, task):
         result_dataframe = pd.concat([result_dataframe, pd.DataFrame({
             'User': [user_name],
             'Accuracy': [accuracy],
-            'Algorithm': ['OfflineSVM'],
+            'Algorithm': ['OfflineSVMPartialTrain'],
             'Granular_Predictions': [None],
             'Predictions': str(pred),
             'Ground_Truth': str(ground_truth)

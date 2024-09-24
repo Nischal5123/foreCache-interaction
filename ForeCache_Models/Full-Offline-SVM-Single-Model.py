@@ -150,7 +150,7 @@ class OfflineSVM:
         from sklearn.linear_model import SGDClassifier
         self.model = SGDClassifier(loss='hinge', max_iter=max_iter, tol=1e-3)
 
-    def train(self, X_train, y_train):
+    def trainOffline(self, X_train, y_train):
         """
         Train the model on the provided training data.
         """
@@ -200,7 +200,7 @@ def run_experiment(user_list, dataset, task):
 
         # Initialize and train the OfflineSVM model
         model = OfflineSVM()
-        model.train(X_train, y_train)
+        model.trainOffline(X_train, y_train)
 
         # Test on the left-out user
         user_name = os.path.basename(test_user_log).replace('_log.csv', '')
@@ -218,7 +218,7 @@ def run_experiment(user_list, dataset, task):
         result_dataframe = pd.concat([result_dataframe, pd.DataFrame({
             'User': [user_name],
             'Accuracy': [accuracy],
-            'Algorithm': ['OfflineSVM'],
+            'Algorithm': ['FullOfflineSVM'],
             'Granular_Predictions': [None],
             'Predictions': str(pred),
             'Ground_Truth': str(ground_truth)
@@ -232,7 +232,7 @@ def run_experiment(user_list, dataset, task):
     # Save results to CSV
     result_dataframe.to_csv(f"Experiments_Folder/VizRec/{dataset}/{task}/FullOfflineSVM-Single-Model.csv", index=False)
     plot_predictions(y_true_all, y_pred_all, task, dataset)
-    print(f"Dataset: {dataset} Task: {task} Algorithm: OfflineSVM, Average Accuracy: {result_dataframe['Accuracy'].mean()}")
+    #print(f"Dataset: {dataset} Task: {task} Algorithm: FullOfflineSVM, Average Accuracy: {result_dataframe['Accuracy'].mean()}")
 
 def plot_predictions(y_true_all, y_pred_all, task, dataset):
     """
@@ -270,5 +270,5 @@ if __name__ == "__main__":
             env = environment_vizrec()
             user_list = env.get_user_list(dataset, task)
             run_experiment(user_list, dataset, task)
-            print(f"Done with {dataset} {task}")
+            #print(f"Done with {dataset} {task}")
     get_average_accuracy()

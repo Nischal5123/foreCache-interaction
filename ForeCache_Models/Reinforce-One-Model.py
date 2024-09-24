@@ -44,8 +44,8 @@ class Policy(nn.Module):
             self.total_length=16
 
 
-        self.fc1 = nn.Linear(self.total_length, 64)
-        self.fc2 = nn.Linear(64, 4)
+        self.fc1 = nn.Linear(self.total_length, 128)
+        self.fc2 = nn.Linear(128, 4)
         self.gamma=gamma
         self.temperature = tau
         self.optimizer = optim.Adam(self.parameters(), lr=learning_rate)
@@ -136,9 +136,6 @@ class Reinforce():
 
     def test(self,policy):
         test_accuracies = []
-        split_accuracy = defaultdict(list)
-        ground_truth = []
-        all_predictions = []
 
         for n_epi in range(1):
             s = self.env.reset(all=False, test=True)

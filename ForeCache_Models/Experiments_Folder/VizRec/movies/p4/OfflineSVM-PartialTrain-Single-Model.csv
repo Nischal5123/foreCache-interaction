@@ -1,5 +1,5 @@
 User,Accuracy,Algorithm,Granular_Predictions,Predictions,Ground_Truth
-stu7_ade_p4_logs.csv,0.4266666666666667,OfflineSVM,,"['modify-2' 'modify-2' 'modify-2' 'modify-1' 'modify-1' 'modify-2'
+stu7_ade_p4_logs.csv,0.4266666666666667,OfflineSVMPartialTrain,,"['modify-2' 'modify-2' 'modify-2' 'modify-1' 'modify-1' 'modify-2'
  'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
  'modify-1' 'modify-1' 'modify-1' 'modify-1' 'modify-1' 'modify-1'
  'modify-1' 'same' 'modify-1' 'modify-1' 'same' 'same' 'same' 'same'
@@ -38,7 +38,7 @@ stu7_ade_p4_logs.csv,0.4266666666666667,OfflineSVM,,"['modify-2' 'modify-2' 'mod
  'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
  'modify-2' 'same' 'modify-1' 'modify-1' 'modify-1' 'modify-2' 'same'
  'modify-1' 'same' 'same' 'same' 'modify-1' 'same' 'same' 'same' 'same']"
-pro5_adf_p4_logs.csv,0.5084745762711864,OfflineSVM,,"['modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
+pro5_adf_p4_logs.csv,0.5084745762711864,OfflineSVMPartialTrain,,"['modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
  'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
  'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'same'
  'same' 'same' 'same' 'same' 'same' 'same' 'same' 'same' 'modify-2'
@@ -69,7 +69,7 @@ pro5_adf_p4_logs.csv,0.5084745762711864,OfflineSVM,,"['modify-2' 'modify-2' 'mod
  'same' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'same' 'modify-2'
  'modify-2' 'same' 'same' 'modify-2' 'modify-2' 'same' 'same' 'same'
  'modify-2' 'modify-1' 'modify-2' 'same' 'same' 'same' 'same' 'same']"
-stu30_adf_p4_logs.csv,0.5233160621761658,OfflineSVM,,"['modify-1' 'modify-1' 'modify-1' 'modify-2' 'modify-2' 'modify-2'
+stu30_adf_p4_logs.csv,0.5233160621761658,OfflineSVMPartialTrain,,"['modify-1' 'modify-1' 'modify-1' 'modify-2' 'modify-2' 'modify-2'
  'modify-2' 'modify-2' 'modify-2' 'same' 'same' 'same' 'modify-2' 'same'
  'same' 'same' 'modify-2' 'same' 'modify-1' 'same' 'same' 'same'
  'modify-1' 'same' 'modify-1' 'same' 'same' 'same' 'same' 'same' 'same'
@@ -118,7 +118,7 @@ stu30_adf_p4_logs.csv,0.5233160621761658,OfflineSVM,,"['modify-1' 'modify-1' 'mo
  'modify-1' 'same' 'modify-1' 'modify-1' 'modify-2' 'modify-2' 'same'
  'same' 'same' 'same' 'modify-3' 'modify-3' 'modify-2' 'modify-2'
  'modify-2' 'modify-2' 'same' 'same' 'same' 'same' 'same']"
-stu38_acf_p4_logs.csv,0.3163265306122449,OfflineSVM,,"['modify-1' 'modify-2' 'modify-2' 'modify-2' 'same' 'same' 'same' 'same'
+stu38_acf_p4_logs.csv,0.3163265306122449,OfflineSVMPartialTrain,,"['modify-1' 'modify-2' 'modify-2' 'modify-2' 'same' 'same' 'same' 'same'
  'same' 'same' 'modify-2' 'modify-1' 'modify-2' 'modify-2' 'modify-2'
  'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
  'modify-2' 'modify-2' 'modify-2' 'modify-1' 'modify-1' 'modify-1'
@@ -144,7 +144,7 @@ stu38_acf_p4_logs.csv,0.3163265306122449,OfflineSVM,,"['modify-1' 'modify-2' 'mo
  'modify-2' 'same' 'modify-2' 'same' 'modify-2' 'modify-2' 'modify-1'
  'modify-2' 'modify-1' 'same' 'modify-2' 'same' 'same' 'modify-2' 'same'
  'same' 'same' 'same']"
-stu10_acf_p4_logs.csv,0.2695035460992908,OfflineSVM,,"['modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'same'
+stu10_acf_p4_logs.csv,0.2695035460992908,OfflineSVMPartialTrain,,"['modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'same'
  'same' 'same' 'same' 'same' 'modify-2' 'same' 'same' 'same' 'same'
  'modify-2' 'same' 'same' 'same' 'same' 'modify-2' 'same' 'same' 'same'
  'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
@@ -182,7 +182,7 @@ stu10_acf_p4_logs.csv,0.2695035460992908,OfflineSVM,,"['modify-2' 'modify-2' 'mo
  'same' 'same' 'same' 'same' 'same' 'modify-1' 'modify-1' 'modify-1'
  'modify-1' 'modify-1' 'modify-1' 'modify-1' 'modify-1' 'same' 'same'
  'same' 'same' 'same' 'same' 'same' 'same' 'same' 'same']"
-stu39_adf_p4_logs.csv,0.602803738317757,OfflineSVM,,"['modify-1' 'modify-2' 'modify-2' 'modify-1' 'same' 'same' 'same' 'same'
+stu39_adf_p4_logs.csv,0.602803738317757,OfflineSVMPartialTrain,,"['modify-1' 'modify-2' 'modify-2' 'modify-1' 'same' 'same' 'same' 'same'
  'same' 'same' 'same' 'same' 'same' 'same' 'same' 'same' 'same' 'same'
  'same' 'modify-2' 'modify-1' 'modify-2' 'same' 'same' 'same' 'same'
  'same' 'same' 'same' 'same' 'same' 'same' 'same' 'same' 'same' 'same'
@@ -234,7 +234,7 @@ stu39_adf_p4_logs.csv,0.602803738317757,OfflineSVM,,"['modify-1' 'modify-2' 'mod
  'modify-2' 'modify-2' 'modify-1' 'modify-1' 'modify-1' 'same' 'same'
  'modify-1' 'modify-1' 'same' 'same' 'same' 'same' 'same' 'modify-1'
  'same']"
-stu21_ace_p4_logs.csv,0.0,OfflineSVM,,"['modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
+stu21_ace_p4_logs.csv,0.0,OfflineSVMPartialTrain,,"['modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
  'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
  'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
  'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
@@ -264,7 +264,7 @@ stu21_ace_p4_logs.csv,0.0,OfflineSVM,,"['modify-2' 'modify-2' 'modify-2' 'modify
  'modify-1' 'same' 'modify-1' 'same' 'modify-1' 'same' 'modify-1'
  'modify-1' 'same' 'modify-1' 'modify-1' 'same' 'modify-1' 'same'
  'modify-1' 'modify-1' 'same']"
-pro3_ace_p4_logs.csv,0.26490066225165565,OfflineSVM,,"['modify-1' 'modify-1' 'modify-1' 'modify-2' 'modify-1' 'modify-1'
+pro3_ace_p4_logs.csv,0.26490066225165565,OfflineSVMPartialTrain,,"['modify-1' 'modify-1' 'modify-1' 'modify-2' 'modify-1' 'modify-1'
  'modify-1' 'modify-1' 'modify-1' 'modify-1' 'same' 'same' 'modify-2'
  'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'same' 'same'
  'same' 'modify-2' 'modify-2' 'modify-1' 'modify-1' 'modify-2' 'modify-2'
@@ -305,7 +305,7 @@ pro3_ace_p4_logs.csv,0.26490066225165565,OfflineSVM,,"['modify-1' 'modify-1' 'mo
  'same' 'modify-1' 'modify-1' 'modify-1' 'modify-1' 'same' 'same' 'same'
  'same' 'same' 'same' 'same' 'same' 'same' 'same' 'same' 'same' 'same'
  'same' 'same' 'same' 'same' 'same' 'same' 'same']"
-pro24_adf_p4_logs.csv,0.4818181818181818,OfflineSVM,,"['modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
+pro24_adf_p4_logs.csv,0.4818181818181818,OfflineSVMPartialTrain,,"['modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
  'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
  'modify-2' 'modify-2' 'modify-2' 'modify-2' 'same' 'same' 'same' 'same'
  'same' 'same' 'same' 'same' 'same' 'same' 'same' 'same' 'same' 'same'
@@ -332,7 +332,7 @@ pro24_adf_p4_logs.csv,0.4818181818181818,OfflineSVM,,"['modify-2' 'modify-2' 'mo
  'same' 'same' 'same' 'same' 'modify-1' 'same' 'same' 'same' 'modify-1'
  'modify-1' 'modify-1' 'same' 'same' 'same' 'modify-2' 'same' 'modify-2'
  'same' 'modify-2' 'same' 'same']"
-stu11_adf_p4_logs.csv,0.5210526315789473,OfflineSVM,,"['modify-1' 'modify-2' 'modify-2' 'same' 'modify-1' 'modify-1' 'modify-1'
+stu11_adf_p4_logs.csv,0.5210526315789473,OfflineSVMPartialTrain,,"['modify-1' 'modify-2' 'modify-2' 'same' 'modify-1' 'modify-1' 'modify-1'
  'modify-1' 'modify-1' 'modify-1' 'modify-1' 'modify-1' 'modify-1'
  'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
  'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'same'
@@ -380,7 +380,7 @@ stu11_adf_p4_logs.csv,0.5210526315789473,OfflineSVM,,"['modify-1' 'modify-2' 'mo
  'same' 'same' 'same' 'same' 'same' 'modify-1' 'same' 'same' 'modify-3'
  'modify-2' 'modify-2' 'modify-2' 'same' 'same' 'same' 'same' 'same'
  'same' 'same' 'same' 'same' 'same' 'same' 'same' 'same' 'same']"
-pro25_acf_p4_logs.csv,0.36486486486486486,OfflineSVM,,"['modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
+pro25_acf_p4_logs.csv,0.36486486486486486,OfflineSVMPartialTrain,,"['modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
  'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
  'modify-2' 'modify-2' 'modify-2' 'same' 'modify-2' 'same' 'same' 'same'
  'modify-2' 'same' 'same' 'same' 'same' 'same' 'same' 'same' 'same'
@@ -421,7 +421,7 @@ pro25_acf_p4_logs.csv,0.36486486486486486,OfflineSVM,,"['modify-2' 'modify-2' 'm
  'same' 'modify-1' 'modify-1' 'modify-1' 'modify-1' 'same' 'same'
  'modify-1' 'modify-1' 'modify-1' 'modify-1' 'same' 'same' 'same' 'same'
  'same' 'same' 'same' 'same' 'same' 'same']"
-stu6_acf_p4_logs.csv,0.4675925925925926,OfflineSVM,,"['modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
+stu6_acf_p4_logs.csv,0.4675925925925926,OfflineSVMPartialTrain,,"['modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
  'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
  'modify-2' 'modify-2' 'modify-2' 'same' 'same' 'same' 'same' 'same'
  'same' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'same'
@@ -476,7 +476,7 @@ stu6_acf_p4_logs.csv,0.4675925925925926,OfflineSVM,,"['modify-2' 'modify-2' 'mod
  'modify-2' 'same' 'same' 'modify-1' 'modify-1' 'same' 'modify-1' 'same'
  'modify-2' 'same' 'same' 'same' 'same' 'modify-2' 'modify-2' 'same'
  'same' 'same' 'same' 'same' 'same' 'same' 'same']"
-pro13_ace_p4_logs.csv,0.20353982300884957,OfflineSVM,,"['modify-1' 'modify-1' 'modify-1' 'modify-1' 'modify-2' 'modify-2'
+pro13_ace_p4_logs.csv,0.20353982300884957,OfflineSVMPartialTrain,,"['modify-1' 'modify-1' 'modify-1' 'modify-1' 'modify-2' 'modify-2'
  'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
  'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
  'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
@@ -508,7 +508,7 @@ pro13_ace_p4_logs.csv,0.20353982300884957,OfflineSVM,,"['modify-1' 'modify-1' 'm
  'modify-1' 'same' 'same' 'modify-1' 'modify-1' 'same' 'same' 'same'
  'same' 'same' 'modify-1' 'modify-1' 'modify-1' 'modify-1' 'same' 'same'
  'same' 'same']"
-pro20_ade_p4_logs.csv,0.3252032520325203,OfflineSVM,,"['modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
+pro20_ade_p4_logs.csv,0.3252032520325203,OfflineSVMPartialTrain,,"['modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
  'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'same' 'same'
  'same' 'same' 'same' 'same' 'modify-2' 'modify-2' 'modify-2' 'same'
  'same' 'same' 'same' 'same' 'modify-2' 'modify-2' 'modify-2' 'same'
@@ -570,7 +570,7 @@ pro20_ade_p4_logs.csv,0.3252032520325203,OfflineSVM,,"['modify-2' 'modify-2' 'mo
  'same' 'same' 'same' 'same' 'same' 'same' 'modify-1' 'modify-1' 'same'
  'modify-1' 'same' 'same' 'modify-1' 'modify-1' 'same' 'same' 'modify-1'
  'same' 'same' 'same' 'same' 'same' 'modify-1' 'same' 'same']"
-stu37_adf_p4_logs.csv,0.19548872180451127,OfflineSVM,,"['modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
+stu37_adf_p4_logs.csv,0.19548872180451127,OfflineSVMPartialTrain,,"['modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
  'modify-2' 'modify-2' 'same' 'modify-2' 'same' 'same' 'same' 'same'
  'same' 'same' 'same' 'same' 'same' 'same' 'same' 'modify-2' 'same' 'same'
  'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
@@ -607,7 +607,7 @@ stu37_adf_p4_logs.csv,0.19548872180451127,OfflineSVM,,"['modify-2' 'modify-2' 'm
  'same' 'same' 'modify-1' 'same' 'modify-2' 'modify-1' 'modify-2' 'same'
  'modify-1' 'same' 'modify-1' 'modify-1' 'modify-1' 'modify-1' 'modify-1'
  'modify-1' 'same' 'modify-1' 'same' 'modify-1' 'modify-1' 'same' 'same']"
-pro9_acf_p4_logs.csv,0.32061068702290074,OfflineSVM,,"['modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
+pro9_acf_p4_logs.csv,0.32061068702290074,OfflineSVMPartialTrain,,"['modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
  'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
  'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'same'
  'same' 'same' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
@@ -642,7 +642,7 @@ pro9_acf_p4_logs.csv,0.32061068702290074,OfflineSVM,,"['modify-2' 'modify-2' 'mo
  'modify-1' 'same' 'same' 'same' 'same' 'modify-1' 'modify-1' 'modify-1'
  'modify-1' 'modify-1' 'modify-1' 'modify-1' 'modify-1' 'same' 'same'
  'same' 'same' 'same' 'modify-2' 'modify-2' 'same' 'same' 'same' 'same']"
-stu15_ade_p4_logs.csv,0.18410041841004185,OfflineSVM,,"['modify-2' 'modify-2' 'modify-2' 'modify-2' 'same' 'modify-2' 'same'
+stu15_ade_p4_logs.csv,0.18410041841004185,OfflineSVMPartialTrain,,"['modify-2' 'modify-2' 'modify-2' 'modify-2' 'same' 'modify-2' 'same'
  'same' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'same'
  'same' 'same' 'same' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
  'modify-2' 'modify-2' 'modify-2' 'same' 'same' 'modify-2' 'modify-2'
@@ -713,7 +713,7 @@ stu15_ade_p4_logs.csv,0.18410041841004185,OfflineSVM,,"['modify-2' 'modify-2' 'm
  'modify-1' 'modify-2' 'modify-2' 'modify-1' 'same' 'modify-1' 'same'
  'same' 'modify-1' 'modify-1' 'modify-1' 'modify-2' 'modify-2' 'modify-2'
  'modify-1' 'same' 'same' 'modify-1' 'same']"
-pro21_ade_p4_logs.csv,0.3656957928802589,OfflineSVM,,"['modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
+pro21_ade_p4_logs.csv,0.3656957928802589,OfflineSVMPartialTrain,,"['modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
  'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
  'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
  'modify-2' 'modify-2' 'same' 'modify-2' 'modify-2' 'modify-2' 'same'
@@ -797,7 +797,7 @@ pro21_ade_p4_logs.csv,0.3656957928802589,OfflineSVM,,"['modify-2' 'modify-2' 'mo
  'modify-1' 'same' 'same' 'same' 'same' 'same' 'same' 'same' 'same' 'same'
  'same' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'same' 'same' 'same'
  'same' 'same' 'same' 'same']"
-pro31_adf_p4_logs.csv,0.5424836601307189,OfflineSVM,,"['modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'same' 'modify-2'
+pro31_adf_p4_logs.csv,0.5424836601307189,OfflineSVMPartialTrain,,"['modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'same' 'modify-2'
  'same' 'same' 'same' 'same' 'same' 'same' 'same' 'same' 'same' 'same'
  'same' 'modify-2' 'same' 'same' 'same' 'same' 'same' 'same' 'same' 'same'
  'same' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'same' 'same'
@@ -837,7 +837,7 @@ pro31_adf_p4_logs.csv,0.5424836601307189,OfflineSVM,,"['modify-2' 'modify-2' 'mo
  'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-3'
  'modify-3' 'modify-2' 'modify-2' 'modify-1' 'modify-1' 'same' 'same'
  'modify-1' 'same' 'same' 'same']"
-pro15_ade_p4_logs.csv,0.21929824561403508,OfflineSVM,,"['modify-1' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
+pro15_ade_p4_logs.csv,0.21929824561403508,OfflineSVMPartialTrain,,"['modify-1' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
  'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
  'modify-1' 'modify-1' 'modify-1' 'modify-2' 'modify-2' 'modify-2'
  'modify-2' 'modify-2' 'modify-2' 'modify-1' 'modify-1' 'modify-2'
@@ -870,7 +870,7 @@ pro15_ade_p4_logs.csv,0.21929824561403508,OfflineSVM,,"['modify-1' 'modify-2' 'm
  'modify-1' 'same' 'modify-1' 'modify-1' 'modify-1' 'modify-1' 'same'
  'modify-1' 'same' 'modify-1' 'modify-1' 'modify-1' 'modify-1' 'modify-1'
  'same' 'same' 'same' 'same']"
-stu26_ace_p4_logs.csv,0.34916201117318435,OfflineSVM,,"['modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
+stu26_ace_p4_logs.csv,0.34916201117318435,OfflineSVMPartialTrain,,"['modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
  'modify-2' 'modify-2' 'modify-2' 'same' 'same' 'same' 'same' 'same'
  'same' 'same' 'same' 'same' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
  'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
@@ -962,7 +962,7 @@ stu26_ace_p4_logs.csv,0.34916201117318435,OfflineSVM,,"['modify-2' 'modify-2' 'm
  'modify-1' 'modify-1' 'same' 'same' 'same' 'same' 'same' 'same' 'same'
  'same' 'modify-1' 'modify-1' 'same' 'modify-1' 'modify-1' 'same'
  'modify-1' 'modify-1' 'same' 'same' 'same' 'same' 'same']"
-pro17_ace_p4_logs.csv,0.42857142857142855,OfflineSVM,,"['modify-1' 'modify-1' 'modify-1' 'modify-1' 'modify-1' 'modify-1'
+pro17_ace_p4_logs.csv,0.42857142857142855,OfflineSVMPartialTrain,,"['modify-1' 'modify-1' 'modify-1' 'modify-1' 'modify-1' 'modify-1'
  'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
  'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
  'modify-2' 'modify-2' 'modify-2' 'modify-2' 'same' 'same' 'same' 'same'
@@ -1032,7 +1032,7 @@ pro17_ace_p4_logs.csv,0.42857142857142855,OfflineSVM,,"['modify-1' 'modify-1' 'm
  'modify-1' 'same' 'same' 'modify-1' 'same' 'modify-1' 'modify-1' 'same'
  'same' 'same' 'modify-1' 'same' 'same' 'same' 'same' 'same' 'same' 'same'
  'same' 'same' 'same']"
-stu4_ade_p4_logs.csv,0.4406779661016949,OfflineSVM,,"['modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
+stu4_ade_p4_logs.csv,0.4406779661016949,OfflineSVMPartialTrain,,"['modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
  'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
  'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
  'modify-2' 'modify-2' 'modify-2' 'same' 'same' 'same' 'same' 'same'
@@ -1047,7 +1047,7 @@ stu4_ade_p4_logs.csv,0.4406779661016949,OfflineSVM,,"['modify-2' 'modify-2' 'mod
  'modify-1' 'modify-1' 'modify-1' 'modify-1' 'same' 'same' 'modify-2'
  'modify-2' 'same' 'same' 'modify-1' 'modify-1' 'modify-1' 'modify-1'
  'same' 'same' 'same']"
-pro18_adf_p4_logs.csv,0.0,OfflineSVM,,"['modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
+pro18_adf_p4_logs.csv,0.0,OfflineSVMPartialTrain,,"['modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
  'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
  'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
  'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
@@ -1070,7 +1070,7 @@ pro18_adf_p4_logs.csv,0.0,OfflineSVM,,"['modify-2' 'modify-2' 'modify-2' 'modify
  'modify-1' 'modify-1' 'modify-1' 'modify-1' 'modify-1' 'modify-1'
  'modify-1' 'modify-1' 'modify-1' 'same' 'modify-1' 'modify-1' 'same'
  'modify-1' 'same']"
-stu3_acf_p4_logs.csv,0.2788844621513944,OfflineSVM,,"['modify-1' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
+stu3_acf_p4_logs.csv,0.2788844621513944,OfflineSVMPartialTrain,,"['modify-1' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
  'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
  'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
  'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
@@ -1137,7 +1137,7 @@ stu3_acf_p4_logs.csv,0.2788844621513944,OfflineSVM,,"['modify-1' 'modify-2' 'mod
  'same' 'modify-1' 'modify-1' 'same' 'modify-1' 'same' 'same' 'same'
  'same' 'modify-1' 'same' 'modify-3' 'modify-2' 'same' 'same' 'same'
  'same']"
-stu25_ace_p4_logs.csv,0.4036697247706422,OfflineSVM,,"['modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
+stu25_ace_p4_logs.csv,0.4036697247706422,OfflineSVMPartialTrain,,"['modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
  'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
  'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
  'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
@@ -1167,7 +1167,7 @@ stu25_ace_p4_logs.csv,0.4036697247706422,OfflineSVM,,"['modify-2' 'modify-2' 'mo
  'modify-1' 'modify-1' 'modify-1' 'modify-1' 'modify-1' 'same' 'same'
  'same' 'same' 'modify-1' 'modify-1' 'same' 'same' 'same' 'same'
  'modify-1' 'modify-1' 'modify-1' 'modify-1' 'same']"
-stu31_ade_p4_logs.csv,0.3709677419354839,OfflineSVM,,"['modify-1' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
+stu31_ade_p4_logs.csv,0.3709677419354839,OfflineSVMPartialTrain,,"['modify-1' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
  'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
  'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
  'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
@@ -1231,7 +1231,7 @@ stu31_ade_p4_logs.csv,0.3709677419354839,OfflineSVM,,"['modify-1' 'modify-2' 'mo
  'modify-1' 'modify-1' 'modify-1' 'same' 'modify-1' 'same' 'modify-1'
  'modify-1' 'modify-1' 'modify-1' 'same' 'modify-1' 'same' 'modify-1'
  'modify-1' 'same' 'same' 'same']"
-pro29_ace_p4_logs.csv,0.6234567901234568,OfflineSVM,,"['same' 'same' 'same' 'same' 'same' 'same' 'same' 'same' 'same' 'same'
+pro29_ace_p4_logs.csv,0.6234567901234568,OfflineSVMPartialTrain,,"['same' 'same' 'same' 'same' 'same' 'same' 'same' 'same' 'same' 'same'
  'same' 'same' 'same' 'same' 'same' 'same' 'same' 'same' 'same' 'same'
  'same' 'same' 'same' 'same' 'same' 'same' 'same' 'same' 'same' 'same'
  'same' 'same' 'same' 'same' 'same' 'same' 'same' 'same' 'same' 'same'
@@ -1267,7 +1267,7 @@ pro29_ace_p4_logs.csv,0.6234567901234568,OfflineSVM,,"['same' 'same' 'same' 'sam
  'same' 'same' 'modify-1' 'modify-1' 'same' 'same' 'same' 'same' 'same'
  'modify-1' 'modify-2' 'same' 'modify-1' 'same' 'modify-1' 'modify-1'
  'same' 'same' 'modify-1' 'same' 'same' 'modify-1' 'same']"
-stu24_ace_p4_logs.csv,0.16352201257861634,OfflineSVM,,"['modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
+stu24_ace_p4_logs.csv,0.16352201257861634,OfflineSVMPartialTrain,,"['modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
  'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
  'modify-2' 'modify-2' 'modify-2' 'modify-2' 'same' 'same' 'same' 'same'
  'same' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
@@ -1312,7 +1312,7 @@ stu24_ace_p4_logs.csv,0.16352201257861634,OfflineSVM,,"['modify-2' 'modify-2' 'm
  'modify-2' 'same' 'modify-1' 'same' 'same' 'modify-1' 'same' 'modify-1'
  'modify-1' 'same' 'modify-1' 'same' 'modify-1' 'modify-1' 'modify-1'
  'same']"
-stu13_acf_p4_logs.csv,0.3418803418803419,OfflineSVM,,"['modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'same' 'same'
+stu13_acf_p4_logs.csv,0.3418803418803419,OfflineSVMPartialTrain,,"['modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'same' 'same'
  'same' 'same' 'same' 'same' 'modify-2' 'same' 'modify-2' 'same' 'same'
  'same' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
  'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
@@ -1345,7 +1345,7 @@ stu13_acf_p4_logs.csv,0.3418803418803419,OfflineSVM,,"['modify-2' 'modify-2' 'mo
  'modify-2' 'modify-2' 'modify-3' 'modify-3' 'same' 'modify-2' 'modify-2'
  'modify-2' 'modify-2' 'same' 'same' 'same' 'same' 'same' 'same' 'same'
  'same' 'same' 'same' 'same' 'same' 'same']"
-stu29_ade_p4_logs.csv,0.5282051282051282,OfflineSVM,,"['modify-2' 'modify-2' 'same' 'same' 'modify-1' 'same' 'same' 'same'
+stu29_ade_p4_logs.csv,0.5282051282051282,OfflineSVMPartialTrain,,"['modify-2' 'modify-2' 'same' 'same' 'modify-1' 'same' 'same' 'same'
  'modify-1' 'same' 'modify-1' 'same' 'same' 'same' 'modify-1' 'same'
  'same' 'same' 'same' 'same' 'same' 'same' 'modify-2' 'same' 'modify-1'
  'same' 'same' 'same' 'same' 'same' 'same' 'same' 'same' 'same' 'modify-1'
@@ -1394,7 +1394,7 @@ stu29_ade_p4_logs.csv,0.5282051282051282,OfflineSVM,,"['modify-2' 'modify-2' 'sa
  'modify-1' 'same' 'same' 'same' 'same' 'same' 'same' 'modify-1' 'same'
  'same' 'modify-1' 'modify-1' 'modify-1' 'modify-1' 'same' 'same' 'same'
  'modify-1' 'modify-1' 'same' 'same' 'same' 'same' 'same']"
-pro22_ade_p4_logs.csv,0.25735294117647056,OfflineSVM,,"['modify-1' 'modify-1' 'modify-1' 'modify-1' 'modify-2' 'modify-2'
+pro22_ade_p4_logs.csv,0.25735294117647056,OfflineSVMPartialTrain,,"['modify-1' 'modify-1' 'modify-1' 'modify-1' 'modify-2' 'modify-2'
  'modify-2' 'modify-2' 'modify-2' 'modify-1' 'modify-1' 'modify-1'
  'modify-1' 'modify-1' 'modify-1' 'modify-1' 'modify-2' 'modify-2'
  'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
@@ -1431,7 +1431,7 @@ pro22_ade_p4_logs.csv,0.25735294117647056,OfflineSVM,,"['modify-1' 'modify-1' 'm
  'modify-1' 'modify-1' 'same' 'same' 'same' 'same' 'same' 'modify-2'
  'modify-2' 'same' 'same' 'same' 'same' 'same' 'same' 'same' 'same' 'same'
  'same']"
-stu17_ace_p4_logs.csv,0.2222222222222222,OfflineSVM,,"['modify-2' 'modify-2' 'modify-2' 'same' 'modify-2' 'modify-2' 'modify-2'
+stu17_ace_p4_logs.csv,0.2222222222222222,OfflineSVMPartialTrain,,"['modify-2' 'modify-2' 'modify-2' 'same' 'modify-2' 'modify-2' 'modify-2'
  'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
  'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
  'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
@@ -1452,7 +1452,7 @@ stu17_ace_p4_logs.csv,0.2222222222222222,OfflineSVM,,"['modify-2' 'modify-2' 'mo
  'modify-2' 'modify-1' 'modify-1' 'modify-1' 'modify-1' 'same' 'same'
  'modify-1' 'modify-1' 'modify-1' 'modify-1' 'same' 'modify-1' 'modify-2'
  'modify-1' 'same' 'modify-1' 'modify-1' 'same' 'modify-1' 'same']"
-pro23_acf_p4_logs.csv,0.45454545454545453,OfflineSVM,,"['modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
+pro23_acf_p4_logs.csv,0.45454545454545453,OfflineSVMPartialTrain,,"['modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
  'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
  'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'modify-2'
  'modify-2' 'modify-2' 'same' 'modify-2' 'modify-2' 'modify-2' 'same'
@@ -1480,7 +1480,7 @@ pro23_acf_p4_logs.csv,0.45454545454545453,OfflineSVM,,"['modify-2' 'modify-2' 'm
  'same' 'same' 'same' 'same' 'same' 'same' 'same' 'same' 'same' 'same'
  'same' 'modify-2' 'same' 'same' 'same' 'modify-2' 'same' 'same' 'same'
  'same' 'same' 'same' 'same' 'same']"
-pro8_acf_p4_logs.csv,0.6063829787234043,OfflineSVM,,"['same' 'same' 'same' 'same' 'same' 'modify-2' 'same' 'same' 'same' 'same'
+pro8_acf_p4_logs.csv,0.6063829787234043,OfflineSVMPartialTrain,,"['same' 'same' 'same' 'same' 'same' 'modify-2' 'same' 'same' 'same' 'same'
  'same' 'same' 'same' 'same' 'same' 'same' 'same' 'same' 'same' 'same'
  'same' 'same' 'same' 'same' 'same' 'same' 'same' 'same' 'same' 'same'
  'same' 'same' 'same' 'same' 'same' 'same' 'same' 'same' 'same' 'same'
@@ -1501,7 +1501,7 @@ pro8_acf_p4_logs.csv,0.6063829787234043,OfflineSVM,,"['same' 'same' 'same' 'same
  'modify-1' 'same' 'same' 'same' 'same' 'same' 'same' 'same' 'same'
  'modify-1' 'modify-1' 'modify-1' 'modify-1' 'modify-1' 'modify-1' 'same'
  'same' 'modify-2' 'modify-2' 'modify-2' 'modify-2' 'same']"
-stu36_adf_p4_logs.csv,0.46853146853146854,OfflineSVM,,"['modify-1' 'modify-1' 'modify-2' 'same' 'same' 'same' 'same' 'same'
+stu36_adf_p4_logs.csv,0.46853146853146854,OfflineSVMPartialTrain,,"['modify-1' 'modify-1' 'modify-2' 'same' 'same' 'same' 'same' 'same'
  'modify-1' 'same' 'same' 'same' 'same' 'same' 'same' 'same' 'same'
  'modify-1' 'same' 'modify-2' 'modify-1' 'modify-1' 'modify-2' 'modify-2'
  'modify-2' 'same' 'same' 'same' 'same' 'same' 'same' 'modify-2'

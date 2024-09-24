@@ -275,19 +275,19 @@ def get_average_accuracy():
     results = []
     for dataset in datasets:
         for task in tasks:
-            result_df = pd.read_csv(f"Experiments_Folder/VizRec/{dataset}/{task}/OnlineSVM-Single-Model.csv")
+            result_df = pd.read_csv(f"Experiments_Folder/VizRec/{dataset}/{task}/Online-SVM-Single-Model.csv")
             print(f"Dataset: {dataset}, Task: {task}, Average Accuracy: {result_df['Accuracy'].mean()}")
             results.append(result_df['Accuracy'].mean())
     print(f"Overall Average Accuracy: {np.mean(results)}")
 
 
 if __name__ == "__main__":
-    datasets = ['movies', 'birdstrikes']
-    tasks = ['p1', 'p2','p3', 'p4']
-    for dataset in datasets:
-        for task in tasks:
-            env = environment_vizrec()
-            user_list = env.get_user_list(dataset, task)
-            run_experiment(user_list, dataset, task)
-            print(f"Done with {dataset} {task}")
+    # datasets = ['movies', 'birdstrikes']
+    # tasks = ['p1', 'p2','p3', 'p4']
+    # for dataset in datasets:
+    #     for task in tasks:
+    #         env = environment_vizrec()
+    #         user_list = env.get_user_list(dataset, task)
+    #         run_experiment(user_list, dataset, task)
+    #         print(f"Done with {dataset} {task}")
     get_average_accuracy()
