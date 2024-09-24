@@ -50,11 +50,14 @@ class SARSA:
         policy = self.epsilon_greedy_policy(Q, epsilon, len(env.valid_actions))
         insight = defaultdict(list)
         action = policy(state)
+        ground_truth = []
+        all_predictions = []
         for _ in range(1):
             state = env.reset()
             for t in itertools.count():
 
-                next_state, reward, done, prediction, _, ground_action, _, _ = env.step(state, action, True)
+
+                next_state, reward, done, prediction, _, ground_action, pred_action, _ = env.step(state, action, True)
                 stats.append(prediction)
                 insight[ground_action].append(prediction)
                 next_action = policy(next_state)
@@ -63,13 +66,16 @@ class SARSA:
                 Q[state][action] += alpha * (td_delta)
                 action = next_action
                 state = next_state
+                ground_truth.append(ground_action)
+                all_predictions.append(pred_action)
                 if done:
                     break
+
 
         granular_prediction = defaultdict()
         for keys, values in insight.items():
             granular_prediction[keys] = (len(values), np.mean(values))
-        return np.mean(stats), granular_prediction
+        return np.mean(stats), granular_prediction,  all_predictions, ground_truth
 
 
 def training(train_files, env, algorithm, epoch):
@@ -110,9 +116,9 @@ def testing(test_files, env, trained_Q, alpha, eps, discount, algorithm):
         env.reset(True)
         env.process_data(user, 0)
         model = SARSA()
-        accu, granular_acc = model.test(env, Q, discount, alpha, eps)
+        accu, granular_acc, all_predictions, ground_truth = model.test(env, Q, discount, alpha, eps)
         final_accu.append(accu)
-    return np.mean(final_accu), granular_acc
+    return np.mean(final_accu), granular_acc, all_predictions, ground_truth
 
 
 def process_user(user_data):
@@ -124,12 +130,14 @@ def process_user(user_data):
     best_accu = -1
     best_granular_acc = {}
     for _ in range(5):
-        accu, granular_acc = testing(test_user, env, trained_Q, best_alpha, best_eps, best_discount, algorithm)
+        accu, granular_acc, all_predictions, ground_truth = testing(test_user, env, trained_Q, best_alpha, best_eps, best_discount, algorithm)
         if accu > best_accu:
             best_accu = accu
             best_granular_acc = granular_acc
+            best_all_predictions = all_predictions
+            best_ground_truth = ground_truth
 
-    return [test_user, best_accu, best_granular_acc]
+    return [test_user, best_accu, best_granular_acc, best_all_predictions, best_ground_truth]
 
 
 if __name__ == "__main__":
@@ -154,7 +162,7 @@ if __name__ == "__main__":
             with concurrent.futures.ProcessPoolExecutor() as executor:
                 futures = [executor.submit(process_user, user_data) for user_data in user_data_list]
                 for future in concurrent.futures.as_completed(futures):
-                    test_user, best_accu, best_granular_acc = future.result()
+                    test_user, best_accu, best_granular_acc, best_all_predictions, best_ground_truth = future.result()
                     accuracies.append(best_accu)
                     final_output.append([test_user, best_accu, best_granular_acc])
 
