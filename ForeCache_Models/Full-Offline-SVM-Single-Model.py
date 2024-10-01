@@ -7,6 +7,7 @@ import matplotlib.pyplot as plt
 from sklearn.metrics import accuracy_score
 import glob
 import warnings
+from collections import defaultdict
 warnings.simplefilter(action='ignore', category=FutureWarning)
 
 
@@ -163,9 +164,17 @@ class OfflineSVM:
         #one shot prediction
         y_pred = self.model.predict(X_test)
         all_accuracies = accuracy_score(y_test, y_pred)
+        insight = defaultdict(list)
+        for i in range(len(y_test)):
+            if y_test[i] == y_pred[i]:
+                insight[y_test[i]].append(1)
+            else:
+                insight[y_test[i]].append(0)
 
-
-        return all_accuracies, y_pred, y_test
+        granular_prediction = defaultdict()
+        for keys, values in insight.items():
+            granular_prediction[keys] = (len(values), np.mean(values))
+        return all_accuracies, granular_prediction, y_pred, y_test
 
 def run_experiment(user_list, dataset, task):
     """
@@ -212,16 +221,16 @@ def run_experiment(user_list, dataset, task):
         y_test = np.array(env.mem_action)
 
         # Evaluate the model on the test data for this user
-        accuracy, pred, ground_truth = model.evaluateOffline(X_test, y_test)
+        accuracy, granularPredictions, pred, ground_truth = model.evaluateOffline(X_test, y_test)
 
         # Store results
         result_dataframe = pd.concat([result_dataframe, pd.DataFrame({
             'User': [user_name],
             'Accuracy': [accuracy],
             'Algorithm': ['FullOfflineSVM'],
-            'Granular_Predictions': [None],
+            'GranularPredictions': [str(granularPredictions)],
             'Predictions': str(pred),
-            'Ground_Truth': str(ground_truth)
+            'GroundTruth': str(ground_truth)
 
         })], ignore_index=True)
 
@@ -252,7 +261,7 @@ def get_average_accuracy():
     """
     #for each dataset and task, read the results and calculate the average accuracy
     datasets = ['movies', 'birdstrikes']
-    tasks = [ 'p1', 'p2','p3', 'p4']
+    tasks = ['p1', 'p2','p3', 'p4']
     results = []
     for dataset in datasets:
         for task in tasks:

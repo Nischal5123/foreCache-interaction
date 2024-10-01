@@ -18,7 +18,7 @@ from tqdm import tqdm
 import multiprocessing
 import ast
 import concurrent.futures
-
+import pandas as pd
 
 #Class definition for the Actor-Critic model
 class ActorCritic(nn.Module):
@@ -309,11 +309,22 @@ if __name__ == "__main__":
                     accuracies.append(best_accu)
                     final_output.append([test_user_log, best_accu, best_granular_acc,str(best_predicted_actions), str(best_ground_actions)])
 
-            # Save dataset and task level data
-            final_output = np.array(final_output)
+            # Convert the final output into a DataFrame
+            df = pd.DataFrame(final_output,
+                              columns=['User', 'Accuracy', 'GranularPredictions', 'Predictions', 'GroundTruth'])
+
+            # Convert nested structures (if needed)
+            df['GranularPredictions'] = df['GranularPredictions'].apply(lambda x: str(x))
+            df['Predictions'] = df['Predictions'].apply(lambda x: str(x))
+            df['GroundTruth'] = df['GroundTruth'].apply(lambda x: str(x))
+
+            # Define the output directory and file name
             directory = f"Experiments_Folder/VizRec/{d}/{task}"
             os.makedirs(directory, exist_ok=True)
-            np.savetxt(f"{directory}/AC-Single-Model.csv", final_output, delimiter=",", fmt='%s')
+            output_file = f"{directory}/AC-Single-Model.csv"
+
+            # Save DataFrame to CSV
+            df.to_csv(output_file, index=False)
 
             test_accu = np.mean(accuracies)
             print(f"Dataset: {d}, Task: {task}, ActorCritic, {test_accu}")

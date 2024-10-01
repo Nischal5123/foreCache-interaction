@@ -7,6 +7,7 @@ import matplotlib.pyplot as plt
 from sklearn.metrics import accuracy_score
 import glob
 import warnings
+from collections import defaultdict
 warnings.simplefilter(action='ignore', category=FutureWarning)
 
 
@@ -166,15 +167,27 @@ class OnlineSVM:
         all_accuracies = []
         predictions=[]
         ground_truth=[]
+        insight = defaultdict(list)
         for i in range(len(X_test)):
             y_pred = self.model.predict([X_test[i]])
             predictions.append(y_pred)
             ground_truth.append(y_test[i])
-            accuracy = accuracy_score([y_test[i]], y_pred)
+            #accuracy = accuracy_score([y_test[i]], y_pred)
             self.model.partial_fit([X_test[i]], [y_test[i]])
-            all_accuracies.append(accuracy)
+            #all_accuracies.append(accuracy)
+            if y_test[i] == y_pred:
+                insight[y_test[i]].append(1)
+                all_accuracies.append(1)
+            else:
+                insight[y_test[i]].append(0)
+                all_accuracies.append(0)
 
-        return np.mean(all_accuracies), predictions, ground_truth
+
+        granular_prediction = defaultdict()
+        for keys, values in insight.items():
+            granular_prediction[keys] = (len(values), np.mean(values))
+
+        return np.mean(all_accuracies), granular_prediction, predictions, ground_truth
 
     def evaluate2(self, X_test, y_test):
         """
@@ -231,16 +244,16 @@ def run_experiment(user_list, dataset, task):
         y_test = np.array(env.mem_action)
 
         # Evaluate the model on the test data for this user
-        accuracy, pred, ground_truth = model.evaluate(X_test, y_test)
+        accuracy, granularPredictions, pred, ground_truth = model.evaluate(X_test, y_test)
 
         # Store results
         result_dataframe = pd.concat([result_dataframe, pd.DataFrame({
             'User': [user_name],
             'Accuracy': [accuracy],
             'Algorithm': ['OnlineSVM'],
-            'Granular_Predictions': [None],
+            'GranularPredictions': [granularPredictions],
             'Predictions': str(pred),
-            'Ground_Truth': str(ground_truth)
+            'GroundTruth': str(ground_truth)
 
         })], ignore_index=True)
 
@@ -282,12 +295,12 @@ def get_average_accuracy():
 
 
 if __name__ == "__main__":
-    # datasets = ['movies', 'birdstrikes']
-    # tasks = ['p1', 'p2','p3', 'p4']
-    # for dataset in datasets:
-    #     for task in tasks:
-    #         env = environment_vizrec()
-    #         user_list = env.get_user_list(dataset, task)
-    #         run_experiment(user_list, dataset, task)
-    #         print(f"Done with {dataset} {task}")
+    datasets = ['movies', 'birdstrikes']
+    tasks = ['p1', 'p2','p3', 'p4']
+    for dataset in datasets:
+        for task in tasks:
+            env = environment_vizrec()
+            user_list = env.get_user_list(dataset, task)
+            run_experiment(user_list, dataset, task)
+            print(f"Done with {dataset} {task}")
     get_average_accuracy()

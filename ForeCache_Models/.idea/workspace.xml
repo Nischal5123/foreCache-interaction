@@ -6,15 +6,48 @@
   <component name="ChangeListManager">
     <list default="true" id="9d6ab004-2bca-4ca4-998f-84d71a9026c2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/SARSA-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/SARSA-Single-Model.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/SARSA-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/SARSA-Single-Model.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/SARSA-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/SARSA-Single-Model.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p4/SARSA-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p4/SARSA-Single-Model.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p1/SARSA-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p1/SARSA-Single-Model.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p2/SARSA-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p2/SARSA-Single-Model.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p3/SARSA-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p3/SARSA-Single-Model.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p4/SARSA-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p4/SARSA-Single-Model.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SARSA-Single-Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/SARSA-Single-Model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Actor-Critic-Single-Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Actor-Critic-Single-Model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/AC-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/AC-Single-Model.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/FullOfflineSVM-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/FullOfflineSVM-Single-Model.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/Online-SVM-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/Online-SVM-Single-Model.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/QLearn-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/QLearn-Single-Model.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/AC-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/AC-Single-Model.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/FullOfflineSVM-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/FullOfflineSVM-Single-Model.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/Online-SVM-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/Online-SVM-Single-Model.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/QLearn-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/QLearn-Single-Model.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/AC-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/AC-Single-Model.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/FullOfflineSVM-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/FullOfflineSVM-Single-Model.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/Online-SVM-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/Online-SVM-Single-Model.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/QLearn-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/QLearn-Single-Model.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p4/AC-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p4/AC-Single-Model.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p4/FullOfflineSVM-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p4/FullOfflineSVM-Single-Model.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p4/Online-SVM-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p4/Online-SVM-Single-Model.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p4/QLearn-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p4/QLearn-Single-Model.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p4/Reinforce-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p4/Reinforce-Single-Model.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p1/AC-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p1/AC-Single-Model.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p1/FullOfflineSVM-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p1/FullOfflineSVM-Single-Model.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p1/Online-SVM-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p1/Online-SVM-Single-Model.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p1/QLearn-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p1/QLearn-Single-Model.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p1/Reinforce-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p1/Reinforce-Single-Model.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p2/AC-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p2/AC-Single-Model.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p2/FullOfflineSVM-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p2/FullOfflineSVM-Single-Model.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p2/Online-SVM-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p2/Online-SVM-Single-Model.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p2/QLearn-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p2/QLearn-Single-Model.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p2/Reinforce-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p2/Reinforce-Single-Model.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p3/AC-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p3/AC-Single-Model.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p3/FullOfflineSVM-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p3/FullOfflineSVM-Single-Model.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p3/Online-SVM-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p3/Online-SVM-Single-Model.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p3/QLearn-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p3/QLearn-Single-Model.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p3/Reinforce-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p3/Reinforce-Single-Model.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p4/AC-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p4/AC-Single-Model.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p4/FullOfflineSVM-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p4/FullOfflineSVM-Single-Model.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p4/Online-SVM-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p4/Online-SVM-Single-Model.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p4/QLearn-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p4/QLearn-Single-Model.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p4/Reinforce-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p4/Reinforce-Single-Model.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Full-Offline-SVM-Single-Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Full-Offline-SVM-Single-Model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Online-SVM-Single-Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Online-SVM-Single-Model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Qlearning-Single-Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Qlearning-Single-Model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reinforce-One-Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Reinforce-One-Model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/What-Model-Learned.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/What-Model-Learned.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,22 +74,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
-    "last_opened_file_path": "/Users/aryal/Desktop/ForeCache/foreCache-interaction/ForeCache_Models",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;database.data.extractors.current.export.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/aryal/Desktop/ForeCache/foreCache-interaction/ForeCache_Models&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -73,8 +106,8 @@
       <recent name="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p4" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.SARSA-Single-Model">
-    <configuration name="Offline-SVM-Single-Model" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.Online-SVM-Single-Model">
+    <configuration name="Actor-Critic-Single-Model" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ForeCache_Models" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -87,7 +120,29 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Offline-SVM-Single-Model.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Actor-Critic-Single-Model.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Full-Offline-SVM-Single-Model" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ForeCache_Models" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Full-Offline-SVM-Single-Model.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -118,6 +173,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Qlearning-Single-Model" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ForeCache_Models" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Qlearning-Single-Model.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Reinforce-One-Model" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ForeCache_Models" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -140,57 +217,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="SARSA-Single-Model" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="ForeCache_Models" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SARSA-Single-Model.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="WSLS-Single-Model" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="ForeCache_Models" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/WSLS-Single-Model.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.SARSA-Single-Model" />
-        <item itemvalue="Python.WSLS-Single-Model" />
-        <item itemvalue="Python.Reinforce-One-Model" />
         <item itemvalue="Python.Online-SVM-Single-Model" />
-        <item itemvalue="Python.Offline-SVM-Single-Model" />
+        <item itemvalue="Python.Full-Offline-SVM-Single-Model" />
+        <item itemvalue="Python.Actor-Critic-Single-Model" />
+        <item itemvalue="Python.Reinforce-One-Model" />
+        <item itemvalue="Python.Qlearning-Single-Model" />
       </list>
     </recent_temporary>
   </component>
@@ -333,6 +366,11 @@
           <line>24</line>
           <option name="timeStamp" value="189" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Online-SVM-Single-Model.py</url>
+          <line>177</line>
+          <option name="timeStamp" value="190" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -340,7 +378,7 @@
     <SUITE FILE_PATH="coverage/ForeCache_Models$Random.coverage" NAME="Random Coverage Results" MODIFIED="1710889279738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ForeCache_Models$TDLearning_vizrec.coverage" NAME="TDLearning_vizrec Coverage Results" MODIFIED="1725476524611" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ForeCache_Models$OnlineSVM_One_Modal.coverage" NAME="OnlineSVM_One_Modal Coverage Results" MODIFIED="1726106431938" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/ForeCache_Models$Actor_Critic_Single_Model.coverage" NAME="Actor-Critic-Single-Model Coverage Results" MODIFIED="1726863774299" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ForeCache_Models$Actor_Critic_Single_Model.coverage" NAME="Actor-Critic-Single-Model Coverage Results" MODIFIED="1727803452249" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ForeCache_Models$Random_VizRec.coverage" NAME="Random_VizRec Coverage Results" MODIFIED="1710107052504" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ForeCache_Models$Greedy_vizRec.coverage" NAME="Greedy_vizRec Coverage Results" MODIFIED="1723247929384" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ForeCache_Models$ExperimentAnalyzer.coverage" NAME="ExperimentAnalyzer Coverage Results" MODIFIED="1722194531026" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -359,9 +397,9 @@
     <SUITE FILE_PATH="coverage/ForeCache_Models$SARSA_vizrec.coverage" NAME="SARSA_vizrec Coverage Results" MODIFIED="1710228943328" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ForeCache_Models$ActorCritic.coverage" NAME="ActorCritic Coverage Results" MODIFIED="1702692055486" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ForeCache_Models$monadjemi_competing_models.coverage" NAME="monadjemi_competing_models Coverage Results" MODIFIED="1710298600858" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/ForeCache_Models$Online_SVM_Single_Model.coverage" NAME="Online-SVM-Single-Model Coverage Results" MODIFIED="1727134306399" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ForeCache_Models$Online_SVM_Single_Model.coverage" NAME="Online-SVM-Single-Model Coverage Results" MODIFIED="1727805244455" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ForeCache_Models$Reinforce_vizrec.coverage" NAME="Reinforce_vizrec Coverage Results" MODIFIED="1710110725834" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/ForeCache_Models$Reinforce_One_Model.coverage" NAME="Reinforce-One-Model Coverage Results" MODIFIED="1727141925747" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ForeCache_Models$Reinforce_One_Model.coverage" NAME="Reinforce-One-Model Coverage Results" MODIFIED="1727803431469" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ForeCache_Models$Supervised_VizRec.coverage" NAME="Supervised_VizRec Coverage Results" MODIFIED="1725937310734" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ForeCache_Models$Momentum_VizRec.coverage" NAME="Momentum-VizRec Coverage Results" MODIFIED="1723247956566" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ForeCache_Models$CompetingModel.coverage" NAME="CompetingModel Coverage Results" MODIFIED="1703023302992" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -375,11 +413,11 @@
     <SUITE FILE_PATH="coverage/ForeCache_Models$llm_model.coverage" NAME="llm-model Coverage Results" MODIFIED="1711499278070" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ForeCache_Models$Zheng_Json_To_CSV.coverage" NAME="Zheng-Json-To-CSV Coverage Results" MODIFIED="1710106746357" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ForeCache_Models$Bayesian_VizRec_One_Model.coverage" NAME="Bayesian-Single-Model Coverage Results" MODIFIED="1726863832238" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/ForeCache_Models$environment_vizrec.coverage" NAME="environment_vizrec Coverage Results" MODIFIED="1725478072233" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ForeCache_Models$environment_vizrec.coverage" NAME="environment_vizrec Coverage Results" MODIFIED="1727720288467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ForeCache_Models$processing.coverage" NAME="processing Coverage Results" MODIFIED="1704866346437" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ForeCache_Models$natural_rl.coverage" NAME="natural-rl Coverage Results" MODIFIED="1725920347868" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ForeCache_Models$Random_Single_Model.coverage" NAME="Random-Single-Model Coverage Results" MODIFIED="1726948012307" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/ForeCache_Models$Full_Offline_SVM_Single_Model.coverage" NAME="Full-Offline-SVM-Single-Model Coverage Results" MODIFIED="1727133173420" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ForeCache_Models$Full_Offline_SVM_Single_Model.coverage" NAME="Full-Offline-SVM-Single-Model Coverage Results" MODIFIED="1727804207067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ForeCache_Models$ottley_hidden_markov_model.coverage" NAME="ottley_hidden_markov_model Coverage Results" MODIFIED="1711506433379" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ForeCache_Models$Offline_SVM_VizRec_One_Model.coverage" NAME="Offline_SVM_VizRec_One_Model Coverage Results" MODIFIED="1726601677371" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ForeCache_Models$weighted_knn.coverage" NAME="weighted-knn Coverage Results" MODIFIED="1710375088869" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -387,8 +425,8 @@
     <SUITE FILE_PATH="coverage/ForeCache_Models$qlearning.coverage" NAME="qlearning Coverage Results" MODIFIED="1725478253277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Downloads/single_model" />
     <SUITE FILE_PATH="coverage/ForeCache_Models$Greedy_Single_Model.coverage" NAME="Greedy-Single-Model Coverage Results" MODIFIED="1727132206393" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ForeCache_Models$Greedy_One_Model.coverage" NAME="Greedy-One-Model Coverage Results" MODIFIED="1726600759908" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/ForeCache_Models$Qlearning_Single_Model.coverage" NAME="Qlearning-Single-Model Coverage Results" MODIFIED="1726864044807" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ForeCache_Models$WSLS_Single_Model.coverage" NAME="WSLS-Single-Model Coverage Results" MODIFIED="1727142827073" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ForeCache_Models$Qlearning_Single_Model.coverage" NAME="Qlearning-Single-Model Coverage Results" MODIFIED="1727736822062" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ForeCache_Models$Reinforce.coverage" NAME="Reinforce Coverage Results" MODIFIED="1704072982056" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

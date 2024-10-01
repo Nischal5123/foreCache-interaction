@@ -6,6 +6,7 @@ import concurrent.futures
 import os
 import json
 import random
+import pandas as pd
 
 
 class Qlearning:
@@ -135,6 +136,12 @@ def process_user(user_data):
     return [test_user, best_accu, best_granular_acc, best_all_predictions, best_ground_truth]
 
 
+def get_user_name(url):
+    parts = url.split('/')
+    fname = parts[-1]
+    uname = fname.rstrip('_log.csv')
+    return uname
+
 if __name__ == "__main__":
     env = environment5.environment_vizrec()
     datasets = ['movies','birdstrikes']
@@ -158,12 +165,27 @@ if __name__ == "__main__":
                 for future in concurrent.futures.as_completed(futures):
                     test_user, best_accu, best_granular_acc, best_all_predictions, best_ground_truth = future.result()
                     accuracies.append(best_accu)
-                    final_output.append([test_user, best_accu, best_granular_acc, str(best_all_predictions), str(best_ground_truth)])
+                    user_name = get_user_name(test_user)
+                    # Store results as a list of lists
+                    final_output.append(
+                        [user_name, best_accu, best_granular_acc, best_all_predictions, best_ground_truth])
 
-            final_output = np.array(final_output)
+            # Convert the final output into a DataFrame
+            df = pd.DataFrame(final_output,
+                              columns=['User', 'Accuracy', 'GranularPredictions', 'Predictions', 'GroundTruth'])
+
+            # Convert nested structures (if needed)
+            df['GranularPredictions'] = df['GranularPredictions'].apply(lambda x: str(x))
+            df['Predictions'] = df['Predictions'].apply(lambda x: str(x))
+            df['GroundTruth'] = df['GroundTruth'].apply(lambda x: str(x))
+
+            # Define the output directory and file name
             directory = f"Experiments_Folder/VizRec/{d}/{task}"
             os.makedirs(directory, exist_ok=True)
-            np.savetxt(f"{directory}/QLearn-Single-Model.csv", final_output, delimiter=',', fmt='%s')
+            output_file = f"{directory}/QLearn-Single-Model.csv"
+
+            # Save DataFrame to CSV
+            df.to_csv(output_file, index=False)
 
             accu = np.mean(accuracies)
             print("Dataset: {}, Task: {}, Q-Learning, {}".format(d, task, accu))

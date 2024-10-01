@@ -44,7 +44,7 @@ class Policy(nn.Module):
             self.total_length=16
 
 
-        self.fc1 = nn.Linear(self.total_length, 128)
+        self.fc1 = nn.Linear(3, 128)
         self.fc2 = nn.Linear(128, 4)
         self.gamma=gamma
         self.temperature = tau
@@ -92,15 +92,15 @@ class Reinforce():
 
         #state_idx = self.state_encoding[state]
         state_short=ast.literal_eval(state)
-        # Create a one-hot array
-        one_hot_array = np.zeros(self.total_length)
+        # # Create a one-hot array
+        # one_hot_array = np.zeros(self.total_length)
+        #
+        # # Set the values to 1 at the specified indices
+        # for index in state_short:
+        #     if index < self.total_length:
+        #         one_hot_array[index] = 1
 
-        # Set the values to 1 at the specified indices
-        for index in state_short:
-            if index < self.total_length:
-                one_hot_array[index] = 1
-
-        return one_hot_array
+        return state_short
 
     def train(self):
         score=0.0
@@ -220,6 +220,7 @@ def testing(agent, test_files, env, trained_ac_model, best_lr, best_gamma, datas
     return np.mean(final_accu), granular_acc, predicted_actions, ground_actions
 
 
+
 def process_user(user_data):
     test_user_log, train_files, env, d, algorithm, epoch = user_data
 
@@ -243,8 +244,8 @@ def process_user(user_data):
 
 if __name__ == "__main__":
     env = environment5.environment_vizrec()
-    datasets = ['birdstrikes', 'movies']
-    tasks = ['p1', 'p2','p3', 'p4']
+    datasets = [ 'birdstrikes']
+    tasks = ['p4']
     overall_accuracy = []
 
     for d in datasets:
@@ -270,11 +271,22 @@ if __name__ == "__main__":
                     accuracies.append(best_accu)
                     final_output.append([test_user_log, best_accu, best_granular_acc,str(best_predicted_actions), str(best_ground_actions)])
 
-            # Save dataset and task level data
-            final_output = np.array(final_output)
+            # Convert the final output into a DataFrame
+            df = pd.DataFrame(final_output,
+                              columns=['User', 'Accuracy', 'GranularPredictions', 'Predictions', 'GroundTruth'])
+
+            # Convert nested structures (if needed)
+            df['GranularPredictions'] = df['GranularPredictions'].apply(lambda x: str(x))
+            df['Predictions'] = df['Predictions'].apply(lambda x: str(x))
+            df['GroundTruth'] = df['GroundTruth'].apply(lambda x: str(x))
+
+            # Define the output directory and file name
             directory = f"Experiments_Folder/VizRec/{d}/{task}"
             os.makedirs(directory, exist_ok=True)
-            np.savetxt(f"{directory}/Reinforce-Single-Model.csv", final_output, delimiter=",", fmt='%s')
+            output_file = f"{directory}/Reinforce-Single-Model.csv"
+
+            # Save DataFrame to CSV
+            df.to_csv(output_file, index=False)
 
             test_accu = np.mean(accuracies)
             print(f"Dataset: {d}, Task: {task}, Reinforce, {test_accu}")
