@@ -251,9 +251,9 @@ def run_experiment(user_list, dataset, task):
             'User': [user_name],
             'Accuracy': [accuracy],
             'Algorithm': ['OnlineSVM'],
-            'GranularPredictions': [granularPredictions],
-            'Predictions': str(pred),
-            'GroundTruth': str(ground_truth)
+            'GranularPredictions': [str(granularPredictions)],
+            'Predictions': [str(pred)],
+            'GroundTruth': [str(ground_truth)]
 
         })], ignore_index=True)
 

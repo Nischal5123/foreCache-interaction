@@ -44,6 +44,7 @@ class Bayesian:
         split_accuracy = defaultdict(list)
         ground_truth = []
         all_predictions = []
+        insight = defaultdict(list)
 
         for i in range(1, length):
             try:
@@ -63,14 +64,18 @@ class Bayesian:
 
             if predicted_action == env.mem_action[i]:
                 self.freq[env.mem_states[i]][predicted_action] += 1
-                split_accuracy[env.mem_states[i - 1]].append(1)
+                insight[env.mem_action[i]].append(1)
                 accuracy.append(1)
             else:
-                split_accuracy[env.mem_states[i - 1]].append(0)
+                insight[env.mem_action[i]].append(0)
                 accuracy.append(0)
 
+        granular_prediction = defaultdict()
+        for keys, values in insight.items():
+            granular_prediction[keys] = (len(values), np.mean(values))
+
         overall_accuracy = np.mean(accuracy)
-        return overall_accuracy, split_accuracy, y_pred, y_true, all_predictions, ground_truth
+        return overall_accuracy, granular_prediction, y_pred, y_true, all_predictions, ground_truth
 
 
 def get_user_name(url):
@@ -107,21 +112,21 @@ def run_experiment(user_list, algo, task, dataset):
         # Testing phase: test on the left-out test user
         env=environment_vizrec.environment_vizrec()
         env.process_data(test_user, 0)
-        accuracy, state_accuracy, y_pred, y_true,all_predictions, ground_truth  = obj.test(get_user_name(test_user), env)
+        accuracy, granularPredictions, y_pred, y_true,all_predictions, ground_truth  = obj.test(get_user_name(test_user), env)
         accuracy_all.append(accuracy)
 
         # Save results
         y_true_all.extend(y_true)
         y_pred_all.extend(y_pred)
 
-        result_dataframe = pd.concat([result_dataframe, pd.DataFrame({
-            'User': [get_user_name(test_user)],
-            'Accuracy': [accuracy],
-            'Algorithm': [algo],
-            'StateAccuracy': [format_split_accuracy(state_accuracy)],
+        result_dataframe = pd.concat([result_dataframe, pd.DataFrame([{
+            'User': get_user_name(test_user),
+            'Accuracy': accuracy,
+            'Algorithm': algo,
+            'GranularPredictions': str(granularPredictions),
             'Predictions': str(all_predictions),
-            'GroundTruth': str(ground_truth)
-        })], ignore_index=True)
+            'GroundTruth': str(ground_truth),
+        }])], ignore_index=True)
 
         #print(f"User {get_user_name(test_user)} - Accuracy: {accuracy:.2f}")
 

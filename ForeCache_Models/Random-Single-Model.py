@@ -46,7 +46,7 @@ class Random:
         correct_predictions = 0
         ground_truth = []
         all_predictions = []
-        split_accuracy = defaultdict(list)
+        insight = defaultdict(list)
 
 
 
@@ -58,12 +58,18 @@ class Random:
             # Check if the action matches
             if action_to_take == env.mem_action[i]:
                 correct_predictions += 1
+                insight[env.mem_action[i]].append(1)
+            else:
+                insight[env.mem_action[i]].append(0)
             ground_truth.append(env.mem_action[i])
             all_predictions.append(action_to_take)
 
+        granular_prediction = defaultdict()
+        for keys, values in insight.items():
+            granular_prediction[keys] = (len(values), np.mean(values))
         # Calculate accuracy
         accuracy = correct_predictions / length if length > 0 else 0
-        return accuracy,  all_predictions, ground_truth
+        return accuracy, granular_prediction, all_predictions, ground_truth
 
 def get_user_name(url):
     parts = url.split('/')
@@ -98,7 +104,7 @@ if __name__ == "__main__":
 
                 # Process test user data
                 env.process_data(test_user, 0)  # Load test user data
-                accuracy, ground_truth, all_predictions = obj.RandomDriver(test_user, env)  # Evaluate on the test user
+                accuracy, granularPredictions, all_predictions, ground_truth = obj.RandomDriver(test_user, env)  # Evaluate on the test user
                 task_accuracy.append(accuracy)
 
                 dataset_acc.append(accuracy)
@@ -108,8 +114,9 @@ if __name__ == "__main__":
                     'User': get_user_name(test_user),
                     'Accuracy': accuracy,
                     'Algorithm': 'Random',
+                    'GranularPredictions': str(granularPredictions),
                     'Predictions': str(all_predictions),
-                    'Ground_Truth': str(ground_truth),
+                    'GroundTruth': str(ground_truth),
                 }])], ignore_index=True)
 
                 #print(f"User {get_user_name(test_user)} - Accuracy: {accuracy:.2f}")

@@ -51,12 +51,16 @@ class WSLS:
         correct_predictions = 0
         ground_truth = []
         all_predictions = []
-        split_accuracy = defaultdict(list)
+        insight = defaultdict(list)
         result=[]
 
 
 
         for i in range(length):
+            if self.bestaction[env.mem_states[i]] is None:
+                action = random.choice(self.actions)
+                self.bestaction[env.mem_states[i]] = action
+                result.append("Random")
             cur_action = self.bestaction[env.mem_states[i]]
             result.append(env.mem_states[i])
             result.append(cur_action)
@@ -78,12 +82,21 @@ class WSLS:
                 result.append("Loose")
             # after deciding on statying with current action or switching calculate accuracy
 
-            # performance book-keeping
+        # performance book-keeping
             if cur_action == env.mem_action[i]:
                 correct_predictions += 1
-                split_accuracy[env.mem_states[i]].append(1)
+                insight[env.mem_action[i]].append(1)
             else:
-                split_accuracy[env.mem_states[i]].append(0)
+                insight[env.mem_action[i]].append(0)
+            ground_truth.append(env.mem_action[i])
+            all_predictions.append(cur_action)
+
+        granular_prediction = defaultdict()
+        for keys, values in insight.items():
+            granular_prediction[keys] = (len(values), np.mean(values))
+        # Calculate accuracy
+        accuracy = correct_predictions / length if length > 0 else 0
+        return accuracy, granular_prediction, all_predictions, ground_truth
 
 
 
@@ -124,18 +137,20 @@ if __name__ == "__main__":
 
                 # Process test user data
                 env.process_data(test_user, 0)  # Load test user data
-                accuracy, ground_truth, all_predictions = obj.WSLSDriver(test_user, env)  # Evaluate on the test user
+                accuracy, granularPredictions, all_predictions, ground_truth = obj.WSLSDriver(test_user, env)  # Evaluate on the test user
                 task_accuracy.append(accuracy)
 
                 dataset_acc.append(accuracy)
 
                 # Save results
+                # Save results
                 result_dataframe = pd.concat([result_dataframe, pd.DataFrame([{
                     'User': get_user_name(test_user),
                     'Accuracy': accuracy,
                     'Algorithm': 'WSLS',
+                    'GranularPredictions': str(granularPredictions),
                     'Predictions': str(all_predictions),
-                    'Ground_Truth': str(ground_truth),
+                    'GroundTruth': str(ground_truth),
                 }])], ignore_index=True)
 
                 #print(f"User {get_user_name(test_user)} - Accuracy: {accuracy:.2f}")

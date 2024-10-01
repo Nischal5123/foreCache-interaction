@@ -6,7 +6,7 @@ import concurrent.futures
 import os
 import json
 import random
-
+import pandas as pd
 
 class SARSA:
     def __init__(self):
@@ -138,7 +138,11 @@ def process_user(user_data):
             best_ground_truth = ground_truth
 
     return [test_user, best_accu, best_granular_acc, best_all_predictions, best_ground_truth]
-
+def get_user_name(url):
+    parts = url.split('/')
+    fname = parts[-1]
+    uname = fname.rstrip('_log.csv')
+    return uname
 
 if __name__ == "__main__":
     env = environment5.environment_vizrec()
@@ -164,12 +168,25 @@ if __name__ == "__main__":
                 for future in concurrent.futures.as_completed(futures):
                     test_user, best_accu, best_granular_acc, best_all_predictions, best_ground_truth = future.result()
                     accuracies.append(best_accu)
-                    final_output.append([test_user, best_accu, best_granular_acc])
+                    user_name = get_user_name(test_user)
+                    final_output.append([user_name, best_accu, best_granular_acc, best_all_predictions, best_ground_truth])
 
-            final_output = np.array(final_output)
-            directory = f"Experiments_Folder/VizRec/{d}/{task}"
-            os.makedirs(directory, exist_ok=True)
-            np.savetxt(f"{directory}/SARSA-Single-Model.csv", final_output, delimiter=',', fmt='%s')
+                    # Convert the final output into a DataFrame
+                    df = pd.DataFrame(final_output,
+                                      columns=['User', 'Accuracy', 'GranularPredictions', 'Predictions', 'GroundTruth'])
+
+                    # Convert nested structures (if needed)
+                    df['GranularPredictions'] = df['GranularPredictions'].apply(lambda x: str(x))
+                    df['Predictions'] = df['Predictions'].apply(lambda x: str(x))
+                    df['GroundTruth'] = df['GroundTruth'].apply(lambda x: str(x))
+
+                    # Define the output directory and file name
+                    directory = f"Experiments_Folder/VizRec/{d}/{task}"
+                    os.makedirs(directory, exist_ok=True)
+                    output_file = f"{directory}/SARSA-Single-Model.csv"
+
+                    # Save DataFrame to CSV
+                    df.to_csv(output_file, index=False)
 
             accu = np.mean(accuracies)
             print("Dataset: {}, Task: {}, SARSA, {}".format(d, task, accu))
