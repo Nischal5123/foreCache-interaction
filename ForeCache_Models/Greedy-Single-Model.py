@@ -21,10 +21,8 @@ class Greedy:
         """
         length = len(env.mem_action)
         # Train on the full user data
-        for i in range(length):
-            self.reward[env.mem_states[i]][env.mem_action[i]] += env.mem_reward[i] + eps
-
-
+        for i in range(1,length):
+            self.reward[env.mem_states[i-1]][env.mem_action[i-1]] += env.mem_reward[i] + eps
 
     def test(self, user, env):
         """
@@ -38,37 +36,32 @@ class Greedy:
         ground_truth = []
         all_predictions = []
 
-        for i in range(length):
+        for i in range(1, length):
             try:
                 # Predict the action with the highest learned reward in the previous state
-                predicted_action = max(self.reward[env.mem_states[i]], key=self.reward[env.mem_states[i]].get)
+                predicted_action = max(self.reward[env.mem_states[i - 1]], key=self.reward[env.mem_states[i - 1]].get)
 
             except ValueError:
                 # If the state has not been seen, randomly choose an action
                 predicted_action = random.choice(['same', 'modify-1', 'modify-2', 'modify-3'])
 
             y_pred.append((predicted_action, i, user))
-            y_true.append((env.mem_action[i], i, user))
+            y_true.append((env.mem_action[i], i, user))  # Use env.mem_action[i] for y_true
 
-
-
-            #
             ground_truth.append(env.mem_action[i])
             all_predictions.append(predicted_action)
 
             if predicted_action == env.mem_action[i]:
-                self.reward[env.mem_states[i]][predicted_action] += env.mem_reward[i]
+                self.reward[env.mem_states[i - 1]][predicted_action] += env.mem_reward[i]
                 insight[env.mem_action[i]].append(1)
                 accuracy.append(1)
             else:
-
                 insight[env.mem_action[i]].append(0)
                 accuracy.append(0)
 
         granular_prediction = defaultdict()
         for keys, values in insight.items():
             granular_prediction[keys] = (len(values), np.mean(values))
-
 
         overall_accuracy = np.mean(accuracy)
         return overall_accuracy, granular_prediction, y_pred, y_true, all_predictions, ground_truth

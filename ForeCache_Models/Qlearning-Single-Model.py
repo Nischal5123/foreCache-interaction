@@ -45,7 +45,7 @@ class Qlearning:
     def test(self, env, Q, discount_factor, alpha, epsilon, num_episodes=1):
         epsilon = epsilon
         stats = []
-        policy = self.epsilon_greedy_policy(Q, 0, len(env.valid_actions))
+        policy = self.epsilon_greedy_policy(Q, epsilon, len(env.valid_actions))
         insight = defaultdict(list)
         ground_truth = []
         all_predictions = []
