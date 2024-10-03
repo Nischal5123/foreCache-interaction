@@ -36,9 +36,9 @@ class Greedy:
         ground_truth = []
         all_predictions = []
 
-        for i in range(length):
+        for i in range(length-1):
             try:
-                # Predict the action with the highest learned reward in the previous state
+                # Predict the action with the highest learned reward in the  state
                 predicted_action = max(self.reward[env.mem_states[i]], key=self.reward[env.mem_states[i]].get)
 
             except ValueError:
@@ -89,7 +89,7 @@ def run_experiment(user_list, algo, task, dataset):
         #print(f"Evaluating for Test User: {get_user_name(test_user)}")
         obj = Greedy()
         # Reset environment
-        env.reset(True)
+        env = environment_vizrec.environment_vizrec()
 
         # Training phase: train on all users except the test user
         for train_user in user_list:

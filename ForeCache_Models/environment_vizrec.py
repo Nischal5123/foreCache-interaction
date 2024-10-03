@@ -172,7 +172,7 @@ class environment_vizrec:
         else:
             # Otherwise, set prediction to 0 and cur_reward to 0
             prediction = 0
-            cur_reward = 0
+            #cur_reward = 0
 
         # Set top_reward to cur_reward
         top_reward = cur_reward

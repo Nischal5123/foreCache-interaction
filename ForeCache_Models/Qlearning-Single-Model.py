@@ -85,22 +85,23 @@ def training(train_files, env, algorithm, epoch):
     for eps in epsilon_h:
         for alp in alpha_h:
             for dis in discount_h:
-                accu = []
-                model = Qlearning()
-                Q = defaultdict(lambda: np.zeros(len(env.valid_actions)))
-                for user in train_files:
-                    env.reset(True)
-                    env.process_data(user, 0)
-                    Q, accu_user = model.q_learning(Q, env, epoch, dis, alp, eps)
-                    accu.append(accu_user)
+                for eps in [20,30,50,70,100]:
+                    accu = []
+                    model = Qlearning()
+                    Q = defaultdict(lambda: np.zeros(len(env.valid_actions)))
+                    for user in train_files:
+                        env.reset(True)
+                        env.process_data(user, 0)
+                        Q, accu_user = model.q_learning(Q, env, epoch, dis, alp, eps)
+                        accu.append(accu_user)
 
-                accu_model = np.mean(accu)
-                if accu_model > max_accu:
-                    max_accu = accu_model
-                    best_eps = eps
-                    best_alpha = alp
-                    best_discount = dis
-                    best_q = Q
+                    accu_model = np.mean(accu)
+                    if accu_model > max_accu:
+                        max_accu = accu_model
+                        best_eps = eps
+                        best_alpha = alp
+                        best_discount = dis
+                        best_q = Q
     return best_q, best_alpha, best_eps, best_discount
 
 
@@ -144,7 +145,7 @@ def get_user_name(url):
 
 if __name__ == "__main__":
     env = environment5.environment_vizrec()
-    datasets = ['movies','birdstrikes']
+    datasets = ['movies', 'birdstrikes']
     tasks = ['p1', 'p2', 'p3', 'p4']
     overall_accuracy = []
 

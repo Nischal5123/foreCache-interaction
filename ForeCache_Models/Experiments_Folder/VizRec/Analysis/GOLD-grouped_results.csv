@@ -1,0 +1,57 @@
+Algorithm,Dataset,OpenEndedness,Accuracy
+Actor-Critic,birdstrikes,Focused,63.64974797424244
+Actor-Critic,birdstrikes,OpenEnded,60.53921476658169
+Actor-Critic,movies,Focused,64.71566167420401
+Actor-Critic,movies,OpenEnded,46.8481293462424
+Bayesian,birdstrikes,Focused,52.718358121314324
+Bayesian,birdstrikes,OpenEnded,51.41673375793264
+Bayesian,movies,Focused,59.97717471617318
+Bayesian,movies,OpenEnded,47.42770380612634
+Greedy,birdstrikes,Focused,60.798782320704476
+Greedy,birdstrikes,OpenEnded,59.39814661468631
+Greedy,movies,Focused,66.48755699595058
+Greedy,movies,OpenEnded,50.4527016228948
+HMM,birdstrikes,Focused,58.23980455966174
+HMM,birdstrikes,OpenEnded,42.30075081954223
+HMM,movies,Focused,45.494928455323375
+HMM,movies,OpenEnded,26.742466683893284
+Momentum,birdstrikes,Focused,54.19313795493029
+Momentum,birdstrikes,OpenEnded,56.815850788873405
+Momentum,movies,Focused,56.87422831848735
+Momentum,movies,OpenEnded,54.44312543629105
+OfflineSVM,birdstrikes,Focused,51.606977935481666
+OfflineSVM,birdstrikes,OpenEnded,51.57670231796183
+OfflineSVM,movies,Focused,55.62062478038131
+OfflineSVM,movies,OpenEnded,48.17194860438655
+Online SVM,birdstrikes,Focused,58.21030244544925
+Online SVM,birdstrikes,OpenEnded,61.56415933368261
+Online SVM,movies,Focused,60.50746598107938
+Online SVM,movies,OpenEnded,59.610818559167974
+QLearn,birdstrikes,Focused,61.7517535262523
+QLearn,birdstrikes,OpenEnded,60.017359367991844
+QLearn,movies,Focused,66.89982467688706
+QLearn,movies,OpenEnded,55.66086141105117
+QLearnAligned,birdstrikes,Focused,69.75481724610773
+QLearnAligned,birdstrikes,OpenEnded,68.64333533446899
+QLearnAligned,movies,Focused,68.78083906266863
+QLearnAligned,movies,OpenEnded,69.07616706822736
+Random,birdstrikes,Focused,26.479524279367197
+Random,birdstrikes,OpenEnded,24.234616611433562
+Random,movies,Focused,24.11816445021264
+Random,movies,OpenEnded,24.665041684392687
+Reinforce,birdstrikes,Focused,63.22054246502577
+Reinforce,birdstrikes,OpenEnded,60.40513211029017
+Reinforce,movies,Focused,65.78791342374035
+Reinforce,movies,OpenEnded,42.13339344800536
+SARSA,birdstrikes,Focused,61.47753547811734
+SARSA,birdstrikes,OpenEnded,59.762311077672884
+SARSA,movies,Focused,66.49359146644662
+SARSA,movies,OpenEnded,55.15044815982899
+SARSAAligned,birdstrikes,Focused,62.358532132813984
+SARSAAligned,birdstrikes,OpenEnded,61.01366351075371
+SARSAAligned,movies,Focused,66.41294884896382
+SARSAAligned,movies,OpenEnded,54.732115503690984
+WSLS,birdstrikes,Focused,24.835553164882782
+WSLS,birdstrikes,OpenEnded,24.65165433887429
+WSLS,movies,Focused,24.51033261345996
+WSLS,movies,OpenEnded,24.918880509309396

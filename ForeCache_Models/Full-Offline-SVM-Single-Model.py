@@ -161,12 +161,17 @@ class OfflineSVM:
         """
         Evaluate the model on the test data and return the accuracy.
         """
+        predictions=[]
+        ground_truth=[]
         #one shot prediction
         y_pred = self.model.predict(X_test)
         all_accuracies = accuracy_score(y_test, y_pred)
         insight = defaultdict(list)
         for i in range(len(y_test)):
+            predictions.append(y_pred[i])
+            ground_truth.append(y_test[i])
             if y_test[i] == y_pred[i]:
+
                 insight[y_test[i]].append(1)
             else:
                 insight[y_test[i]].append(0)
@@ -174,7 +179,7 @@ class OfflineSVM:
         granular_prediction = defaultdict()
         for keys, values in insight.items():
             granular_prediction[keys] = (len(values), np.mean(values))
-        return all_accuracies, granular_prediction, y_pred, y_test
+        return all_accuracies, granular_prediction, predictions, ground_truth
 
 def run_experiment(user_list, dataset, task):
     """
@@ -227,7 +232,7 @@ def run_experiment(user_list, dataset, task):
         result_dataframe = pd.concat([result_dataframe, pd.DataFrame({
             'User': [user_name],
             'Accuracy': [accuracy],
-            'Algorithm': ['FullOfflineSVM'],
+            'Algorithm': ['OfflineSVM'],
             'GranularPredictions': [str(granularPredictions)],
             'Predictions': [str(pred)],
             'GroundTruth': [str(ground_truth)]
@@ -239,7 +244,7 @@ def run_experiment(user_list, dataset, task):
         #print(f"User {user_name} - Accuracy: {accuracy:.2f}")
 
     # Save results to CSV
-    result_dataframe.to_csv(f"Experiments_Folder/VizRec/{dataset}/{task}/FullOfflineSVM-Single-Model.csv", index=False)
+    result_dataframe.to_csv(f"Experiments_Folder/VizRec/{dataset}/{task}/OfflineSVM-Single-Model.csv", index=False)
     plot_predictions(y_true_all, y_pred_all, task, dataset)
     #print(f"Dataset: {dataset} Task: {task} Algorithm: FullOfflineSVM, Average Accuracy: {result_dataframe['Accuracy'].mean()}")
 
