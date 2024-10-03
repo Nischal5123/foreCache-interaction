@@ -13,7 +13,6 @@ eps = 1e-35
 class Greedy:
     def __init__(self):
         # Store action frequencies and rewards for each state
-        self.freq = defaultdict(lambda: defaultdict(float))
         self.reward = defaultdict(lambda: defaultdict(float))
 
     def train(self, user, env):
@@ -22,16 +21,10 @@ class Greedy:
         """
         length = len(env.mem_action)
         # Train on the full user data
-        for i in range(1, length):
-            self.freq[env.mem_states[i]][env.mem_action[i]] += 1
-            self.reward[env.mem_states[i - 1]][env.mem_action[i]] += env.mem_reward[i] + eps
+        for i in range(length):
+            self.reward[env.mem_states[i]][env.mem_action[i]] += env.mem_reward[i] + eps
 
-        # Normalize the rewards for each state
-        for states in self.reward:
-            total_reward = sum(self.reward[states].values())
-            if total_reward > 0:
-                for actions in self.reward[states]:
-                    self.reward[states][actions] /= total_reward
+
 
     def test(self, user, env):
         """
@@ -45,10 +38,10 @@ class Greedy:
         ground_truth = []
         all_predictions = []
 
-        for i in range(1, length):
+        for i in range(length):
             try:
                 # Predict the action with the highest learned reward in the previous state
-                predicted_action = max(self.reward[env.mem_states[i - 1]], key=self.reward[env.mem_states[i - 1]].get)
+                predicted_action = max(self.reward[env.mem_states[i]], key=self.reward[env.mem_states[i]].get)
 
             except ValueError:
                 # If the state has not been seen, randomly choose an action
@@ -68,6 +61,7 @@ class Greedy:
                 insight[env.mem_action[i]].append(1)
                 accuracy.append(1)
             else:
+
                 insight[env.mem_action[i]].append(0)
                 accuracy.append(0)
 

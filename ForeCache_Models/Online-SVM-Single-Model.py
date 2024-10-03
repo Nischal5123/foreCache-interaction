@@ -170,7 +170,7 @@ class OnlineSVM:
         insight = defaultdict(list)
         for i in range(len(X_test)):
             y_pred = self.model.predict([X_test[i]])
-            predictions.append(y_pred)
+            predictions.append(y_pred[0])
             ground_truth.append(y_test[i])
             #accuracy = accuracy_score([y_test[i]], y_pred)
             self.model.partial_fit([X_test[i]], [y_test[i]])
@@ -189,15 +189,7 @@ class OnlineSVM:
 
         return np.mean(all_accuracies), granular_prediction, predictions, ground_truth
 
-    def evaluate2(self, X_test, y_test):
-        """
-        Evaluate the model on the test data and return the accuracy.
-        """
-        #one shot prediction
-        y_pred = self.model.predict(X_test)
-        all_accuracies = accuracy_score(y_test, y_pred)
 
-        return all_accuracies, y_pred
 
 def run_experiment(user_list, dataset, task):
     """

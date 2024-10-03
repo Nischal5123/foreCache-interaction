@@ -88,8 +88,7 @@ class WSLS:
                 insight[env.mem_action[i]].append(1)
             else:
                 insight[env.mem_action[i]].append(0)
-            ground_truth.append(env.mem_action[i])
-            all_predictions.append(cur_action)
+
 
         granular_prediction = defaultdict()
         for keys, values in insight.items():

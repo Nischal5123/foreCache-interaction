@@ -5,101 +5,84 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9d6ab004-2bca-4ca4-998f-84d71a9026c2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/dataset-analysis.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Qlearning-Aligned-Single-Model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reinforce-Aligned-One-Model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Accuracy-Plots.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Accuracy-Plots.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Bayesian-Single-Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bayesian-Single-Model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/Analysis/Accuracy_by_Algorithm_and_Task.png" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/Analysis/Accuracy_by_Algorithm_and_Task.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/Analysis/Accuracy_by_Algorithm_Boxplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/Analysis/Accuracy_by_Algorithm_Boxplot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/Analysis/GOLD-combined_results.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/Analysis/GOLD-combined_results.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/Analysis/ttest_results.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/Analysis/ttest_results.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/Bayesian-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/Bayesian-Single-Model.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/FullOfflineSVM-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/FullOfflineSVM-Single-Model.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/Greedy-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/Greedy-Single-Model.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/HMM-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/HMM-Single-Model.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/Momentum-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/Momentum-Single-Model.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/Random-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/Random-Single-Model.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/Online-SVM-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/Online-SVM-Single-Model.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/QLearn-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/QLearn-Single-Model.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/Reinforce-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/Reinforce-Single-Model.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/SARSA-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/SARSA-Single-Model.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/WSLS-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/WSLS-Single-Model.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/data/Greedy_one_model_predictions_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p1/data/Greedy_one_model_predictions_data.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/Bayesian-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/Bayesian-Single-Model.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/FullOfflineSVM-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/FullOfflineSVM-Single-Model.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/Greedy-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/Greedy-Single-Model.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/HMM-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/HMM-Single-Model.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/Momentum-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/Momentum-Single-Model.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/Random-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/Random-Single-Model.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/Online-SVM-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/Online-SVM-Single-Model.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/QLearn-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/QLearn-Single-Model.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/Reinforce-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/Reinforce-Single-Model.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/SARSA-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/SARSA-Single-Model.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/WSLS-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/WSLS-Single-Model.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/data/Greedy_one_model_predictions_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p2/data/Greedy_one_model_predictions_data.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/Bayesian-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/Bayesian-Single-Model.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/FullOfflineSVM-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/FullOfflineSVM-Single-Model.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/Greedy-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/Greedy-Single-Model.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/HMM-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/HMM-Single-Model.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/Momentum-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/Momentum-Single-Model.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/Random-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/Random-Single-Model.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/Online-SVM-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/Online-SVM-Single-Model.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/QLearn-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/QLearn-Single-Model.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/Reinforce-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/Reinforce-Single-Model.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/SARSA-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/SARSA-Single-Model.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/WSLS-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/WSLS-Single-Model.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/data/Greedy_one_model_predictions_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p3/data/Greedy_one_model_predictions_data.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p4/Bayesian-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p4/Bayesian-Single-Model.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p4/FullOfflineSVM-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p4/FullOfflineSVM-Single-Model.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p4/Greedy-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p4/Greedy-Single-Model.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p4/HMM-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p4/HMM-Single-Model.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p4/Momentum-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p4/Momentum-Single-Model.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p4/Random-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p4/Random-Single-Model.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p4/Online-SVM-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p4/Online-SVM-Single-Model.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p4/QLearn-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p4/QLearn-Single-Model.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p4/Reinforce-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p4/Reinforce-Single-Model.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p4/SARSA-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p4/SARSA-Single-Model.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p4/WSLS-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p4/WSLS-Single-Model.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p4/data/Greedy_one_model_predictions_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/birdstrikes/p4/data/Greedy_one_model_predictions_data.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p1/Bayesian-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p1/Bayesian-Single-Model.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p1/FullOfflineSVM-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p1/FullOfflineSVM-Single-Model.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p1/Greedy-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p1/Greedy-Single-Model.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p1/HMM-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p1/HMM-Single-Model.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p1/Momentum-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p1/Momentum-Single-Model.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p1/Random-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p1/Random-Single-Model.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p1/Online-SVM-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p1/Online-SVM-Single-Model.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p1/QLearn-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p1/QLearn-Single-Model.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p1/Reinforce-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p1/Reinforce-Single-Model.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p1/SARSA-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p1/SARSA-Single-Model.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p1/WSLS-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p1/WSLS-Single-Model.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p1/data/Greedy_one_model_predictions_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p1/data/Greedy_one_model_predictions_data.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p2/Bayesian-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p2/Bayesian-Single-Model.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p2/FullOfflineSVM-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p2/FullOfflineSVM-Single-Model.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p2/Greedy-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p2/Greedy-Single-Model.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p2/HMM-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p2/HMM-Single-Model.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p2/Momentum-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p2/Momentum-Single-Model.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p2/Random-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p2/Random-Single-Model.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p2/Online-SVM-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p2/Online-SVM-Single-Model.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p2/QLearn-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p2/QLearn-Single-Model.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p2/Reinforce-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p2/Reinforce-Single-Model.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p2/SARSA-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p2/SARSA-Single-Model.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p2/WSLS-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p2/WSLS-Single-Model.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p2/data/Greedy_one_model_predictions_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p2/data/Greedy_one_model_predictions_data.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p3/Bayesian-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p3/Bayesian-Single-Model.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p3/FullOfflineSVM-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p3/FullOfflineSVM-Single-Model.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p3/Greedy-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p3/Greedy-Single-Model.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p3/HMM-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p3/HMM-Single-Model.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p3/Momentum-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p3/Momentum-Single-Model.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p3/Random-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p3/Random-Single-Model.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p3/Online-SVM-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p3/Online-SVM-Single-Model.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p3/QLearn-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p3/QLearn-Single-Model.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p3/Reinforce-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p3/Reinforce-Single-Model.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p3/SARSA-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p3/SARSA-Single-Model.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p3/WSLS-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p3/WSLS-Single-Model.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p3/data/Greedy_one_model_predictions_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p3/data/Greedy_one_model_predictions_data.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p4/Bayesian-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p4/Bayesian-Single-Model.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p4/FullOfflineSVM-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p4/FullOfflineSVM-Single-Model.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p4/Greedy-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p4/Greedy-Single-Model.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p4/HMM-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p4/HMM-Single-Model.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p4/Momentum-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p4/Momentum-Single-Model.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p4/Random-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p4/Random-Single-Model.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p4/Online-SVM-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p4/Online-SVM-Single-Model.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p4/QLearn-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p4/QLearn-Single-Model.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p4/Reinforce-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p4/Reinforce-Single-Model.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p4/SARSA-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p4/SARSA-Single-Model.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p4/WSLS-Single-Model.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p4/WSLS-Single-Model.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p4/data/Greedy_one_model_predictions_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p4/data/Greedy_one_model_predictions_data.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Full-Offline-SVM-Single-Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Full-Offline-SVM-Single-Model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Greedy-Single-Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Greedy-Single-Model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hidden-Markov-Model-Single-Model.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Hidden-Markov-Model-Single-Model.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Momentum-Single-Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Momentum-Single-Model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Online-SVM-Single-Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Online-SVM-Single-Model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Random-Single-Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Random-Single-Model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Qlearning-Single-Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Qlearning-Single-Model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Reinforce-One-Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Reinforce-One-Model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SARSA-Single-Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/SARSA-Single-Model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WSLS-Single-Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/WSLS-Single-Model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/What-Model-Learned.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/What-Model-Learned.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/environment_vizrec.py" beforeDir="false" afterPath="$PROJECT_DIR$/environment_vizrec.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,7 +140,7 @@
       <recent name="$PROJECT_DIR$/Experiments_Folder/VizRec/movies/p4" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Momentum-Single-Model">
+  <component name="RunManager" selected="Python.Qlearning-Single-Model">
     <configuration name="Bayesian-Single-Model" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ForeCache_Models" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -202,7 +185,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Momentum-Single-Model" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Qlearning-Aligned-Single-Model" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ForeCache_Models" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -215,7 +198,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Momentum-Single-Model.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Qlearning-Aligned-Single-Model.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -224,7 +207,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Random-Single-Model" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Qlearning-Single-Model" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ForeCache_Models" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -237,7 +220,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Random-Single-Model.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Qlearning-Single-Model.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -246,7 +229,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="WSLS-Single-Model" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Reinforce-One-Model" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ForeCache_Models" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -259,7 +242,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/WSLS-Single-Model.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Reinforce-One-Model.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -270,11 +253,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Momentum-Single-Model" />
-        <item itemvalue="Python.WSLS-Single-Model" />
-        <item itemvalue="Python.Bayesian-Single-Model" />
+        <item itemvalue="Python.Qlearning-Single-Model" />
         <item itemvalue="Python.Greedy-Single-Model" />
-        <item itemvalue="Python.Random-Single-Model" />
+        <item itemvalue="Python.Bayesian-Single-Model" />
+        <item itemvalue="Python.Qlearning-Aligned-Single-Model" />
+        <item itemvalue="Python.Reinforce-One-Model" />
       </list>
     </recent_temporary>
   </component>
@@ -327,7 +310,7 @@
       <workItem from="1726003911969" duration="11784000" />
       <workItem from="1726183750806" duration="5608000" />
       <workItem from="1726594397669" duration="26521000" />
-      <workItem from="1727809376220" duration="8388000" />
+      <workItem from="1727809376220" duration="34271000" />
     </task>
     <servers />
   </component>
@@ -365,42 +348,42 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Greedy-Single-Model.py</url>
-          <line>179</line>
+          <line>173</line>
           <option name="timeStamp" value="179" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Greedy-Single-Model.py</url>
-          <line>92</line>
+          <line>86</line>
           <option name="timeStamp" value="180" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Greedy-Single-Model.py</url>
-          <line>93</line>
+          <line>87</line>
           <option name="timeStamp" value="181" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Greedy-Single-Model.py</url>
-          <line>96</line>
+          <line>90</line>
           <option name="timeStamp" value="182" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Greedy-Single-Model.py</url>
-          <line>100</line>
+          <line>94</line>
           <option name="timeStamp" value="183" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Greedy-Single-Model.py</url>
-          <line>103</line>
+          <line>97</line>
           <option name="timeStamp" value="184" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Greedy-Single-Model.py</url>
-          <line>104</line>
+          <line>98</line>
           <option name="timeStamp" value="185" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Greedy-Single-Model.py</url>
-          <line>106</line>
+          <line>100</line>
           <option name="timeStamp" value="186" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -435,7 +418,7 @@
     <SUITE FILE_PATH="coverage/ForeCache_Models$Greedy_vizRec.coverage" NAME="Greedy_vizRec Coverage Results" MODIFIED="1723247929384" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ForeCache_Models$ExperimentAnalyzer.coverage" NAME="ExperimentAnalyzer Coverage Results" MODIFIED="1722194531026" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ForeCache_Models$Supervised_VizRec_One_Model.coverage" NAME="Supervised_VizRec_One_Model Coverage Results" MODIFIED="1726600028086" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/ForeCache_Models$Bayesian_Single_Model.coverage" NAME="Bayesian-Single-Model Coverage Results" MODIFIED="1727814515044" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ForeCache_Models$Bayesian_Single_Model.coverage" NAME="Bayesian-Single-Model Coverage Results" MODIFIED="1727911245172" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ForeCache_Models$processing_movies_combined.coverage" NAME="processing-movies-combined Coverage Results" MODIFIED="1710037224738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ForeCache_Models$Momentum_One_Model.coverage" NAME="Momentum-Single-Model Coverage Results" MODIFIED="1726863930223" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ForeCache_Models$processing_movies.coverage" NAME="processing-movies Coverage Results" MODIFIED="1710106751405" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -449,9 +432,9 @@
     <SUITE FILE_PATH="coverage/ForeCache_Models$SARSA_vizrec.coverage" NAME="SARSA_vizrec Coverage Results" MODIFIED="1710228943328" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ForeCache_Models$ActorCritic.coverage" NAME="ActorCritic Coverage Results" MODIFIED="1702692055486" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ForeCache_Models$monadjemi_competing_models.coverage" NAME="monadjemi_competing_models Coverage Results" MODIFIED="1710298600858" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/ForeCache_Models$Online_SVM_Single_Model.coverage" NAME="Online-SVM-Single-Model Coverage Results" MODIFIED="1727810688143" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ForeCache_Models$Online_SVM_Single_Model.coverage" NAME="Online-SVM-Single-Model Coverage Results" MODIFIED="1727826969312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ForeCache_Models$Reinforce_vizrec.coverage" NAME="Reinforce_vizrec Coverage Results" MODIFIED="1710110725834" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/ForeCache_Models$Reinforce_One_Model.coverage" NAME="Reinforce-One-Model Coverage Results" MODIFIED="1727811135052" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ForeCache_Models$Reinforce_One_Model.coverage" NAME="Reinforce-One-Model Coverage Results" MODIFIED="1727842241588" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ForeCache_Models$Supervised_VizRec.coverage" NAME="Supervised_VizRec Coverage Results" MODIFIED="1725937310734" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ForeCache_Models$Momentum_VizRec.coverage" NAME="Momentum-VizRec Coverage Results" MODIFIED="1723247956566" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ForeCache_Models$CompetingModel.coverage" NAME="CompetingModel Coverage Results" MODIFIED="1703023302992" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -466,20 +449,21 @@
     <SUITE FILE_PATH="coverage/ForeCache_Models$llm_model.coverage" NAME="llm-model Coverage Results" MODIFIED="1711499278070" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ForeCache_Models$Zheng_Json_To_CSV.coverage" NAME="Zheng-Json-To-CSV Coverage Results" MODIFIED="1710106746357" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ForeCache_Models$Bayesian_VizRec_One_Model.coverage" NAME="Bayesian-Single-Model Coverage Results" MODIFIED="1726863832238" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/ForeCache_Models$environment_vizrec.coverage" NAME="environment_vizrec Coverage Results" MODIFIED="1727720288467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ForeCache_Models$environment_vizrec.coverage" NAME="environment_vizrec Coverage Results" MODIFIED="1727828689381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ForeCache_Models$processing.coverage" NAME="processing Coverage Results" MODIFIED="1704866346437" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ForeCache_Models$natural_rl.coverage" NAME="natural-rl Coverage Results" MODIFIED="1725920347868" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/ForeCache_Models$Full_Offline_SVM_Single_Model.coverage" NAME="Full-Offline-SVM-Single-Model Coverage Results" MODIFIED="1727810709240" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ForeCache_Models$Random_Single_Model.coverage" NAME="Random-Single-Model Coverage Results" MODIFIED="1727814420478" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ForeCache_Models$Full_Offline_SVM_Single_Model.coverage" NAME="Full-Offline-SVM-Single-Model Coverage Results" MODIFIED="1727830159796" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ForeCache_Models$ottley_hidden_markov_model.coverage" NAME="ottley_hidden_markov_model Coverage Results" MODIFIED="1711506433379" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ForeCache_Models$Offline_SVM_VizRec_One_Model.coverage" NAME="Offline_SVM_VizRec_One_Model Coverage Results" MODIFIED="1726601677371" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ForeCache_Models$weighted_knn.coverage" NAME="weighted-knn Coverage Results" MODIFIED="1710375088869" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ForeCache_Models$SARSA_Single_Model_bird.coverage" NAME="SARSA-Single-Model-bird Coverage Results" MODIFIED="1725590957070" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ForeCache_Models$qlearning.coverage" NAME="qlearning Coverage Results" MODIFIED="1725478253277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Downloads/single_model" />
-    <SUITE FILE_PATH="coverage/ForeCache_Models$Greedy_Single_Model.coverage" NAME="Greedy-Single-Model Coverage Results" MODIFIED="1727814443471" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ForeCache_Models$Greedy_Single_Model.coverage" NAME="Greedy-Single-Model Coverage Results" MODIFIED="1727911860668" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ForeCache_Models$Greedy_One_Model.coverage" NAME="Greedy-One-Model Coverage Results" MODIFIED="1726600759908" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/ForeCache_Models$Qlearning_Single_Model.coverage" NAME="Qlearning-Single-Model Coverage Results" MODIFIED="1727736822062" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/ForeCache_Models$WSLS_Single_Model.coverage" NAME="WSLS-Single-Model Coverage Results" MODIFIED="1727814858592" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ForeCache_Models$WSLS_Single_Model.coverage" NAME="WSLS-Single-Model Coverage Results" MODIFIED="1727831088447" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ForeCache_Models$Qlearning_Single_Model.coverage" NAME="Qlearning-Single-Model Coverage Results" MODIFIED="1727912695067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ForeCache_Models$Reinforce.coverage" NAME="Reinforce Coverage Results" MODIFIED="1704072982056" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ForeCache_Models$Qlearning_Aligned_Single_Model.coverage" NAME="Qlearning-Aligned-Single-Model Coverage Results" MODIFIED="1727905051859" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

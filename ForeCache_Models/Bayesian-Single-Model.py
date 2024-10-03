@@ -12,9 +12,12 @@ eps = 1e-35
 
 class Bayesian:
     def __init__(self):
-        # Store action frequencies and rewards for each state
+        # Store action frequencies for each state
         self.freq = defaultdict(lambda: defaultdict(float))
-        self.reward = defaultdict(lambda: defaultdict(float))
+
+
+
+
 
     def train(self, user, env):
         """
@@ -24,14 +27,7 @@ class Bayesian:
         # Train on the full user data
         for i in range(1, length):
             self.freq[env.mem_states[i]][env.mem_action[i]] += 1
-            self.reward[env.mem_states[i - 1]][env.mem_action[i]] += env.mem_reward[i] + eps
 
-        # # Normalize the rewards for each state
-        # for states in self.reward:
-        #     total_reward = sum(self.reward[states].values())
-        #     if total_reward > 0:
-        #         for actions in self.reward[states]:
-        #             self.reward[states][actions] /= total_reward
 
     def test(self, user, env):
         """
@@ -41,17 +37,19 @@ class Bayesian:
         accuracy = []
         y_true = []
         y_pred = []
-        split_accuracy = defaultdict(list)
         ground_truth = []
         all_predictions = []
         insight = defaultdict(list)
 
-        for i in range(1, length):
+        for i in range(0, length):
             try:
-                # Predict the action with the highest learned reward in the previous state
-                predicted_action = max(self.freq[env.mem_states[i - 1]], key=self.freq[env.mem_states[i - 1]].get)
-            except ValueError:
-                # If the state has not been seen, randomly choose an action
+                # Sample based on the probability of all actions
+                action_freq = [self.freq[env.mem_states[i]][action] for action in ['same', 'modify-1', 'modify-2', 'modify-3']]
+                action_prob = [x / sum(action_freq) for x in action_freq]
+                predicted_action = np.random.choice(['same', 'modify-1', 'modify-2', 'modify-3'], p=action_prob)
+
+            except ZeroDivisionError:
+                # If the state has not been seen, then it doesnt have action frequency --> randomly choose an action
                 predicted_action = random.choice(['same', 'modify-1', 'modify-2', 'modify-3'])
 
             y_pred.append((predicted_action, i, user))
@@ -67,6 +65,7 @@ class Bayesian:
                 insight[env.mem_action[i]].append(1)
                 accuracy.append(1)
             else:
+                self.freq[env.mem_states[i]][env.mem_action[i]] += 1
                 insight[env.mem_action[i]].append(0)
                 accuracy.append(0)
 

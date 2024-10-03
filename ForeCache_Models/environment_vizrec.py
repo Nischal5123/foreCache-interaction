@@ -166,9 +166,6 @@ class environment_vizrec:
 
         predicted_action = self.valid_actions[act_arg]
 
-        # Initialize top_reward to 0
-        top_reward = 0
-
         # If the predicted action is the same as the current action,
         if predicted_action == cur_action:
             prediction = 1
@@ -187,7 +184,7 @@ class environment_vizrec:
             return next_state, cur_reward, self.done, prediction, top_reward, cur_action, predicted_action, self.steps
         else:
             # Return the next state, current reward, done status, prediction, and top reward
-            return next_state, cur_reward, self.done, prediction, top_reward
+            return next_state, cur_reward, self.done, prediction, cur_action
 
     def get_user_list(self,dataset,task):
         if dataset == 'movies':
@@ -229,6 +226,30 @@ class environment_vizrec:
             elif task == 'p4':
                 return self.user_location_birdstrikes_p4
 
+
 if __name__ == "__main__":
     env = environment_vizrec()
-    print( env.get_user_list('movies','p1'))
+    #get total number of users
+    datasets = ['movies','birdstrikes']
+    tasks = ['p1', 'p2', 'p3', 'p4']
+    total_users = 0
+    for d in datasets:
+        dataset_users = 0
+        for task in tasks:
+            print("# ", d, " Dataset", task, " Task")
+            user_list = list(env.get_user_list(d, task))
+            print(f'Dataset: {d}, Task: {task}, Total Users: {len(user_list)}')
+            total_users += len(user_list)
+            dataset_users += len(user_list)
+        print(f'Dataset: {d}, Total Users: {dataset_users}')
+    print(f'Total Users: {total_users}')
+
+
+    #get files ending with _log.csv in this path: /Users/aryal/Desktop/ForeCache/foreCache-interaction/ForeCache_Models/data/zheng/logs
+    path = "/Users/aryal/Desktop/ForeCache/foreCache-interaction/ForeCache_Models/data/zheng/logs"
+    files = os.listdir(path)
+    log_files = []
+    for file in files:
+        if fnmatch.fnmatch(file, '*_logs.json'):
+            log_files.append(file)
+    print(len(log_files))
