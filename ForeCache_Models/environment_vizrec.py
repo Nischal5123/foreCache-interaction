@@ -17,22 +17,22 @@ class environment_vizrec:
 
         Initializes required variables and stores data in memory.
         """
-        self.user_list_movies_p1 = np.sort(glob.glob("data/zheng/processed_interactions_p1/*"))
-        self.user_location_movies_p1 = "data/zheng/processed_interactions_p1/"
-        self.user_list_movies_p2 = np.sort(glob.glob("data/zheng/processed_interactions_p2/*"))
-        self.user_location_movies_p2 = "data/zheng/processed_interactions_p2/"
-        self.user_list_movies_p3 = np.sort(glob.glob("data/zheng/processed_interactions_p3/*"))
-        self.user_location_movies_p3 = "data/zheng/processed_interactions_p3/"
-        self.user_list_movies_p4 = np.sort(glob.glob("data/zheng/processed_interactions_p4/*"))
-        self.user_location_movies_p4 = "data/zheng/processed_interactions_p4/"
-        self.user_list_birdstrikes_p1 = np.sort(glob.glob("data/zheng/birdstrikes_processed_interactions_p1/*"))
-        self.user_location_birdstrikes_p1 = "data/zheng/birdstrikes_processed_interactions_p1/"
-        self.user_list_birdstrikes_p2 = np.sort(glob.glob("data/zheng/birdstrikes_processed_interactions_p2/*"))
-        self.user_location_birdstrikes_p2 = "data/zheng/birdstrikes_processed_interactions_p2/"
-        self.user_list_birdstrikes_p3 = np.sort(glob.glob("data/zheng/birdstrikes_processed_interactions_p3/*"))
-        self.user_location_birdstrikes_p3 = "data/zheng/birdstrikes_processed_interactions_p3/"
-        self.user_list_birdstrikes_p4 = np.sort(glob.glob("data/zheng/birdstrikes_processed_interactions_p4/*"))
-        self.user_location_birdstrikes_p4 = "data/zheng/birdstrikes_processed_interactions_p4/"
+        self.user_list_movies_p1 = np.sort(glob.glob("/Users/aryal/Desktop/ForeCache/foreCache-interaction/ForeCache_Models/data/zheng/processed_interactions_p1/*"))
+        self.user_location_movies_p1 = "/Users/aryal/Desktop/ForeCache/foreCache-interaction/ForeCache_Models/data/zheng/processed_interactions_p1/"
+        self.user_list_movies_p2 = np.sort(glob.glob("/Users/aryal/Desktop/ForeCache/foreCache-interaction/ForeCache_Models/data/zheng/processed_interactions_p2/*"))
+        self.user_location_movies_p2 = "/Users/aryal/Desktop/ForeCache/foreCache-interaction/ForeCache_Models/data/zheng/processed_interactions_p2/"
+        self.user_list_movies_p3 = np.sort(glob.glob("/Users/aryal/Desktop/ForeCache/foreCache-interaction/ForeCache_Models/data/zheng/processed_interactions_p3/*"))
+        self.user_location_movies_p3 = "/Users/aryal/Desktop/ForeCache/foreCache-interaction/ForeCache_Models/data/zheng/processed_interactions_p3/"
+        self.user_list_movies_p4 = np.sort(glob.glob("/Users/aryal/Desktop/ForeCache/foreCache-interaction/ForeCache_Models/data/zheng/processed_interactions_p4/*"))
+        self.user_location_movies_p4 = "/Users/aryal/Desktop/ForeCache/foreCache-interaction/ForeCache_Models/data/zheng/processed_interactions_p4/"
+        self.user_list_birdstrikes_p1 = np.sort(glob.glob("/Users/aryal/Desktop/ForeCache/foreCache-interaction/ForeCache_Models/data/zheng/birdstrikes_processed_interactions_p1/*"))
+        self.user_location_birdstrikes_p1 = "/Users/aryal/Desktop/ForeCache/foreCache-interaction/ForeCache_Models/data/zheng/birdstrikes_processed_interactions_p1/"
+        self.user_list_birdstrikes_p2 = np.sort(glob.glob("/Users/aryal/Desktop/ForeCache/foreCache-interaction/ForeCache_Models/data/zheng/birdstrikes_processed_interactions_p2/*"))
+        self.user_location_birdstrikes_p2 = "/Users/aryal/Desktop/ForeCache/foreCache-interaction/ForeCache_Models/data/zheng/birdstrikes_processed_interactions_p2/"
+        self.user_list_birdstrikes_p3 = np.sort(glob.glob("/Users/aryal/Desktop/ForeCache/foreCache-interaction/ForeCache_Models/data/zheng/birdstrikes_processed_interactions_p3/*"))
+        self.user_location_birdstrikes_p3 = "/Users/aryal/Desktop/ForeCache/foreCache-interaction/ForeCache_Models/data/zheng/birdstrikes_processed_interactions_p3/"
+        self.user_list_birdstrikes_p4 = np.sort(glob.glob("/Users/aryal/Desktop/ForeCache/foreCache-interaction/ForeCache_Models/data/zheng/birdstrikes_processed_interactions_p4/*"))
+        self.user_location_birdstrikes_p4 = "/Users/aryal/Desktop/ForeCache/foreCache-interaction/ForeCache_Models/data/zheng/birdstrikes_processed_interactions_p4/"
 
 
         # This variable will be used to track the current position of the user agent.
@@ -98,10 +98,38 @@ class environment_vizrec:
             self.mem_action.append(action)
             cnt_inter += 1
         #scale reward min-max
-        self.mem_reward = (self.mem_reward - np.min(self.mem_reward)) / (np.max(self.mem_reward) - np.min(self.mem_reward))
+        #self.mem_reward = (self.mem_reward - np.min(self.mem_reward)) / (np.max(self.mem_reward) - np.min(self.mem_reward))
 
 
         self.threshold = int(cnt_inter * thres)
+
+    def get_test_train_split(self, filename, thres):
+        """
+        Processes the data from the given file and stores it in the object memory.
+
+        Inputs:
+        - filename (str): path of the data file.
+        - thres (float): threshold value to determine the end of the episode.
+
+        Returns: None.
+        """
+
+        df = pd.read_csv(filename)
+        threshold = int(len(df) * thres)
+        mem_states = []
+        mem_reward = []
+        mem_action = []
+        for index, row in df.iterrows():
+            cur_state = row['State']
+            action = row['Action']
+            reward = row['Reward']
+            mem_states.append(cur_state)
+            mem_reward.append(reward)
+            mem_action.append(action)
+
+
+        #return train and data split by threshold states actions and rewards
+        return mem_states[:threshold], mem_action[:threshold], mem_reward[:threshold], mem_states[threshold:], mem_action[threshold:], mem_reward[threshold:]
 
     def cur_inter(self, steps):
         """

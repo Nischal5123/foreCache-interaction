@@ -116,6 +116,8 @@ class ActorCritic(nn.Module):
         pi = self.pi(s, softmax_dim=1)
         pi_a = pi.gather(1, a)
 
+        pi_a = torch.clamp(pi_a, min=1e-16, max=1e+16)
+
         #The first term is the policy loss, which is computed as the negative log probability of the action taken multiplied by the advantage
         # (i.e., the difference between the estimated value and the target value).
         # The second term is the value loss, which is computed as the mean squared error between the estimated value and the target value
@@ -152,11 +154,12 @@ class Agent():
                     m = Categorical(prob)
                     a = m.sample().item()
                     s_prime, r, done, info,ground_action = self.env.step(s, a, False)
+
                     predictions.append(info)
                     s_prime = np.array(self.convert_state_idx(s_prime))
 
-                    model.put_data((s, a, r * info, s_prime, done))
-                    model.put_data((s, self.env.valid_actions.index(ground_action), r, s_prime, done))
+                    model.put_data((s, a, r*info , s_prime, done))
+                    model.put_data((s, int(self.env.valid_actions.index(ground_action)), r, s_prime, done))
 
                     s = s_prime
 
@@ -196,8 +199,8 @@ class Agent():
                 insight[ground_action].append(pred)
                 s_prime = np.array(self.convert_state_idx(s_prime))
 
-                model.put_data((s, a, r * pred, s_prime, done))
-                model.put_data((s, self.env.valid_actions.index(ground_action), r, s_prime, done))
+                model.put_data((s, a, r*pred , s_prime, done))
+                model.put_data((s, int(self.env.valid_actions.index(ground_action)), r, s_prime, done))
 
                 s = s_prime
 

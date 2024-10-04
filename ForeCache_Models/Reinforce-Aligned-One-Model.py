@@ -61,13 +61,29 @@ class Policy(nn.Module):
 
     def train_net(self):
         R = 0
-        self.optimizer.zero_grad()
+        loss_total = 0  # Initialize total loss
+        entropy_term_total = 0  # Initialize total entropy term
+
+        self.optimizer.zero_grad()  # Zero gradients before backward pass
+
         for r, prob in self.data[::-1]:
+            prob = torch.clamp(prob, min=1e-8, max=1e+8)
+
             R = r + self.gamma * R
             loss = -torch.log(prob) * R
-            loss.backward()
-        self.optimizer.step()
-        self.data = []
+            loss_total += loss  # Accumulate loss over time steps
+
+            # Entropy regularization to encourage exploration
+            entropy_term = -(prob * torch.log(prob + 1e-8))
+            entropy_term_total += entropy_term
+
+        # Adding entropy regularization term to the total loss
+        loss_total = loss_total + 0.001 * entropy_term_total.mean()
+
+        loss_total.backward()  # Perform backward pass on total loss
+
+        self.optimizer.step()  # Update network parameters
+        self.data = []  # Clear stored data
 
 
 class Reinforce():
@@ -117,11 +133,11 @@ class Reinforce():
                 m = Categorical(prob)
                 a = m.sample().item()
                 actions.append(a)
-                s_prime, r, done, info,_ = self.env.step(self.convert_idx_state(s),a,False)
+                s_prime, r, done, info,ground_action = self.env.step(self.convert_idx_state(s),a,False)
                 predictions.append(info)
 
-
-                self.pi.put_data((r, prob[a]))
+                self.pi.put_data((r * info, prob[a]))
+                self.pi.put_data((r, prob[int(self.env.valid_actions.index(ground_action))]))
 
                 s_prime = np.array(self.convert_state_idx(s_prime))
                 s = s_prime
@@ -137,6 +153,7 @@ class Reinforce():
     def test(self,policy,env):
         test_accuracies = []
         self.env = env
+        self.pi = policy
 
 
         for n_epi in range(1):
@@ -149,7 +166,7 @@ class Reinforce():
             insight = defaultdict(list)
 
             while not done:
-                prob = policy(torch.from_numpy(s).float())
+                prob = self.pi(torch.from_numpy(s).float())
                 m = Categorical(prob)
                 a = m.sample().item()
                 s_prime, r, done, info,_,ground_action, pred_action,_ = self.env.step(self.convert_idx_state(s), a, True)
@@ -161,7 +178,9 @@ class Reinforce():
                 #split_accuracy[self.convert_idx_state(s)].append(info)
 
 
-                policy.put_data((r, prob[a]))
+                self.pi.put_data((r*info, prob[a]))
+                self.pi.put_data((r, prob[int(self.env.valid_actions.index(ground_action))]))
+
 
                 s_prime = np.array(self.convert_state_idx(s_prime))
                 s = s_prime
@@ -288,7 +307,7 @@ if __name__ == "__main__":
             # Define the output directory and file name
             directory = f"Experiments_Folder/VizRec/{d}/{task}"
             os.makedirs(directory, exist_ok=True)
-            output_file = f"{directory}/Reinforce-Single-Model.csv"
+            output_file = f"{directory}/ReinforceAligned-Single-Model.csv"
 
             # Save DataFrame to CSV
             df.to_csv(output_file, index=False)
