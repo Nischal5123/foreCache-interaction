@@ -16,7 +16,7 @@ class Momentum:
         """
         Initializes the Momentum object.
         """
-        self.bestaction = defaultdict(lambda: None)  # Initializes a dictionary for the best action per state
+        self.bestaction = defaultdict()  # Initializes a dictionary for the best action per state
         self.actions = ['same', 'modify-1', 'modify-2', 'modify-3']  # Available actions
 
     def take_random_action(self, state):
@@ -48,28 +48,33 @@ class Momentum:
         all_predictions = []
         insight = defaultdict(list)
 
+        threshold = int(length * 0.8)
+        for i in range(threshold):
+            self.bestaction[env.mem_states[i]] = env.mem_action[i]
 
 
-        for i in range(length):
+
+
+        for i in range(threshold, length):
             current_state = env.mem_states[i]
 
             # If a best action exists for the state, use it, otherwise take a random action
-            if self.bestaction[current_state] is None:
-                action_to_take = self.take_random_action(current_state)
-            else:
+            try:
                 action_to_take = self.bestaction[current_state]
+            except KeyError:
+                action_to_take = self.take_random_action(current_state)
 
-            # Update the best action based on ground truth for the state
-            self.bestaction[current_state] = env.mem_action[i]
-
+            ground_truth.append(env.mem_action[i])
+            all_predictions.append(action_to_take)
             # Check if the action matches
             if action_to_take == env.mem_action[i]:
                 correct_predictions += 1
                 insight[env.mem_action[i]].append(1)
             else:
                 insight[env.mem_action[i]].append(0)
-            ground_truth.append(env.mem_action[i])
-            all_predictions.append(action_to_take)
+
+            # Update the best action based on ground truth for the state
+            self.bestaction[current_state] = env.mem_action[i]
 
         granular_prediction = defaultdict()
         for keys, values in insight.items():
@@ -85,11 +90,29 @@ def get_user_name(url):
     return uname
 
 
+def get_last_20_actions_accuracy(ground_truth, all_predictions):
+    """
+    Calculates the accuracy of the last 20 actions.
+
+    Args:
+    - ground_truth (list): The list of actual actions.
+    - all_predictions (list): The list of predicted actions.
+
+    Returns:
+    - accuracy (float): The accuracy of the last 20 actions.
+    """
+    twentyPercent = int(len(ground_truth) * 0.2)
+    ground_truth_last_20 = ground_truth[-twentyPercent:]
+    all_predictions_last_20 = all_predictions[-twentyPercent:]
+    correct_predictions = sum(
+        [1 for i in range(twentyPercent) if ground_truth_last_20[i] == all_predictions_last_20[i]])
+    return correct_predictions / twentyPercent if twentyPercent > 0 else 0
 
 if __name__ == "__main__":
     datasets = ['movies', 'birdstrikes']
     tasks = ['p1', 'p2', 'p3', 'p4']
     overall_accuracy = []
+    last_twenty_accuracy = []
     for dataset in datasets:
         dataset_acc = []
         for task in tasks:
@@ -97,7 +120,7 @@ if __name__ == "__main__":
             env = environment_vizrec.environment_vizrec()
             user_list_name = env.get_user_list(dataset, task)
             result_dataframe = pd.DataFrame(
-                columns=['User', 'Accuracy', 'Algorithm']
+                columns=['User', 'Accuracy', 'Algorithm', 'GranularPredictions', 'Predictions', 'GroundTruth']
             )
 
             # Perform leave-one-out cross-validation
@@ -112,6 +135,8 @@ if __name__ == "__main__":
                 # Process test user data
                 env.process_data(test_user, 0)  # Load test user data
                 accuracy, granularPredictions,all_predictions, ground_truth = obj.MomentumDriver(test_user, env)  # Evaluate on the test user
+                #last_twenty_accuracy.append(get_last_20_actions_accuracy(ground_truth, all_predictions))
+
                 task_accuracy.append(accuracy)
 
                 dataset_acc.append(accuracy)
@@ -137,5 +162,8 @@ if __name__ == "__main__":
         print(f"Dataset: {dataset}, Overall Accuracy: {np.mean(dataset_acc)}")
         overall_accuracy.append(np.mean(dataset_acc))
     print(f"Overall Accuracy: {np.mean(overall_accuracy)}")
+    #print(f"Last 20 Actions Accuracy: {np.mean(last_twenty_accuracy)}")
+
+
 
 

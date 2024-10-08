@@ -235,7 +235,8 @@ def run_experiment(user_list, dataset, task):
             'Algorithm': ['OfflineSVM'],
             'GranularPredictions': [str(granularPredictions)],
             'Predictions': [str(pred)],
-            'GroundTruth': [str(ground_truth)]
+            'GroundTruth': [str(ground_truth)],
+
 
         })], ignore_index=True)
 

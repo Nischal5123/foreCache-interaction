@@ -259,7 +259,8 @@ def run_experiment(user_list, dataset, task):
                 'Algorithm': ['OnlineSVM-Individual-Model'],
                 'GranularPredictions': [str(granularPredictions)],
                 'Predictions': [str(pred)],
-                'GroundTruth': [str(ground_truth)]
+                'GroundTruth': [str(ground_truth)],
+                'Threshold': [thres],
 
             })], ignore_index=True)
 

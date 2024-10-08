@@ -1,397 +1,469 @@
-Algorithm,User,Threshold,LearningRate,Discount,Temperature,Accuracy,StateAccuracy,Reward,Epsilon,Openended,Task
-ActorCritic,pro25_acf_p1,0.8,0.0001,0.05,1.0,1.0,"[None, None, None]",0.0,0.0,Focused,p1
-ActorCritic,pro15_ade_p1,0.8,0.0001,0.9,1.0,0.8,"[None, None, None]",0.0,0.0,Focused,p1
-ActorCritic,pro13_ace_p1,0.8,0.0001,0.2,1.0,1.0,"[None, None, None]",0.0,0.0,Focused,p1
-ActorCritic,pro24_adf_p1,0.8,0.0001,0.5,1.0,0.1428571428571428,"[None, None, None]",0.0,0.0,Focused,p1
-ActorCritic,pro20_ade_p1,0.8,0.001,0.9,1.0,0.75,"[None, None, None]",0.0,0.0,Focused,p1
-ActorCritic,pro18_adf_p1,0.8,0.001,0.8,1.0,0.4,"[None, None, None]",0.0,0.0,Focused,p1
-ActorCritic,pro17_ace_p1,0.8,0.001,0.9,1.0,0.8181818181818182,"[None, None, None]",0.0,0.0,Focused,p1
-ActorCritic,pro22_ade_p1,0.8,0.1,0.05,1.0,1.0,"[None, None, None]",0.0,0.0,Focused,p1
-ActorCritic,pro23_acf_p1,0.8,0.0001,0.2,1.0,0.7272727272727273,"[None, None, None]",0.0,0.0,Focused,p1
-ActorCritic,pro31_adf_p1,0.8,0.0001,0.8,1.0,0.7272727272727273,"[None, None, None]",0.0,0.0,Focused,p1
-ActorCritic,pro3_ace_p1,0.8,0.1,0.8,1.0,0.5714285714285714,"[None, None, None]",0.0,0.0,Focused,p1
-ActorCritic,pro21_ade_p1,0.8,0.0001,0.8,1.0,0.9444444444444444,"[None, None, None]",0.0,0.0,Focused,p1
-ActorCritic,pro9_acf_p1,0.8,0.001,0.99,1.0,0.5,"[None, None, None]",0.0,0.0,Focused,p1
-ActorCritic,stu11_adf_p1,0.8,0.001,0.1,1.0,0.6,"[None, None, None]",0.0,0.0,Focused,p1
-ActorCritic,stu17_ace_p1,0.8,0.0001,0.5,1.0,1.0,"[None, None, None]",0.0,0.0,Focused,p1
-ActorCritic,pro5_adf_p1,0.8,0.001,0.5,1.0,0.7142857142857143,"[None, None, None]",0.0,0.0,Focused,p1
-ActorCritic,pro29_ace_p1,0.8,0.0001,0.5,1.0,0.8,"[None, None, None]",0.0,0.0,Focused,p1
-ActorCritic,stu13_acf_p1,0.8,0.0001,0.5,1.0,0.75,"[None, None, None]",0.0,0.0,Focused,p1
-ActorCritic,stu21_ace_p1,0.8,0.0001,0.05,1.0,0.4,"[None, None, None]",0.0,0.0,Focused,p1
-ActorCritic,stu15_ade_p1,0.8,0.001,0.5,1.0,1.0,"[None, None, None]",0.0,0.0,Focused,p1
-ActorCritic,stu24_ace_p1,0.8,0.001,0.05,1.0,1.0,"[None, None, None]",0.0,0.0,Focused,p1
-ActorCritic,stu30_adf_p1,0.8,0.001,0.2,1.0,1.0,"[None, None, None]",0.0,0.0,Focused,p1
-ActorCritic,stu29_ade_p1,0.8,0.0001,0.05,1.0,1.0,"[None, None, None]",0.0,0.0,Focused,p1
-ActorCritic,stu10_acf_p1,0.8,0.001,0.5,1.0,0.3333333333333333,"[None, None, None]",0.0,0.0,Focused,p1
-ActorCritic,stu36_adf_p1,0.8,0.0001,0.05,1.0,1.0,"[None, None, None]",0.0,0.0,Focused,p1
-ActorCritic,stu3_acf_p1,0.8,0.0001,0.99,1.0,1.0,"[None, None, None]",0.0,0.0,Focused,p1
-ActorCritic,stu37_adf_p1,0.8,0.0001,0.1,1.0,1.0,"[None, None, None]",0.0,0.0,Focused,p1
-ActorCritic,stu26_ace_p1,0.8,0.1,0.1,1.0,0.8,"[None, None, None]",0.0,0.0,Focused,p1
-ActorCritic,stu39_adf_p1,0.8,0.0001,0.5,1.0,0.6,"[None, None, None]",0.0,0.0,Focused,p1
-ActorCritic,stu25_ace_p1,0.8,0.0001,0.05,1.0,0.9090909090909092,"[None, None, None]",0.0,0.0,Focused,p1
-ActorCritic,pro8_acf_p1,0.8,0.0001,0.9,1.0,0.6086956521739131,"[None, None, None]",0.0,0.0,Focused,p1
-ActorCritic,stu6_acf_p1,0.8,0.1,0.05,1.0,0.8333333333333334,"[None, None, None]",0.0,0.0,Focused,p1
-ActorCritic,stu31_ade_p1,0.8,0.0001,0.8,1.0,0.7,"[None, None, None]",0.0,0.0,Focused,p1
-ActorCritic,stu4_ade_p1,0.8,0.0001,0.1,1.0,0.7142857142857143,"[None, None, None]",0.0,0.0,Focused,p1
-ActorCritic,stu38_acf_p1,0.8,0.1,0.1,1.0,0.5384615384615384,"[None, None, None]",0.0,0.0,Focused,p1
-ActorCritic,stu7_ade_p1,0.8,0.0001,0.1,1.0,0.4347826086956521,"[None, None, None]",0.0,0.0,Focused,p1
-Bayesian,pro13_ace_p1,0.8,0.0,0.0,,0.2,0,0.0,,Focused,p1
-Bayesian,pro15_ade_p1,0.8,0.0,0.0,,0.08,0,0.0,,Focused,p1
-Bayesian,pro17_ace_p1,0.8,0.0,0.0,,0.1454545454545454,0,0.0,,Focused,p1
-Bayesian,pro18_adf_p1,0.8,0.0,0.0,,0.08,0,0.0,,Focused,p1
-Bayesian,pro20_ade_p1,0.8,0.0,0.0,,0.125,0,0.0,,Focused,p1
-Bayesian,pro21_ade_p1,0.8,0.0,0.0,,0.1555555555555555,0,0.0,,Focused,p1
-Bayesian,pro22_ade_p1,0.8,0.0,0.0,,0.1714285714285714,0,0.0,,Focused,p1
-Bayesian,pro23_acf_p1,0.8,0.0,0.0,,0.0909090909090909,0,0.0,,Focused,p1
-Bayesian,pro24_adf_p1,0.8,0.0,0.0,,0.1142857142857142,0,0.0,,Focused,p1
-Bayesian,pro25_acf_p1,0.8,0.0,0.0,,0.2,0,0.0,,Focused,p1
-Bayesian,pro29_ace_p1,0.8,0.0,0.0,,0.12,0,0.0,,Focused,p1
-Bayesian,pro31_adf_p1,0.8,0.0,0.0,,0.1454545454545454,0,0.0,,Focused,p1
-Bayesian,pro3_ace_p1,0.8,0.0,0.0,,0.0571428571428571,0,0.0,,Focused,p1
-Bayesian,pro5_adf_p1,0.8,0.0,0.0,,0.1428571428571428,0,0.0,,Focused,p1
-Bayesian,pro8_acf_p1,0.8,0.0,0.0,,0.0608695652173913,0,0.0,,Focused,p1
-Bayesian,pro9_acf_p1,0.8,0.0,0.0,,0.1,0,0.0,,Focused,p1
-Bayesian,stu10_acf_p1,0.8,0.0,0.0,,0.0833333333333333,0,0.0,,Focused,p1
-Bayesian,stu11_adf_p1,0.8,0.0,0.0,,0.08,0,0.0,,Focused,p1
-Bayesian,stu13_acf_p1,0.8,0.0,0.0,,0.15,0,0.0,,Focused,p1
-Bayesian,stu15_ade_p1,0.8,0.0,0.0,,0.1714285714285714,0,0.0,,Focused,p1
-Bayesian,stu17_ace_p1,0.8,0.0,0.0,,0.0,0,0.0,,Focused,p1
-Bayesian,stu21_ace_p1,0.8,0.0,0.0,,0.16,0,0.0,,Focused,p1
-Bayesian,stu24_ace_p1,0.8,0.0,0.0,,0.08,0,0.0,,Focused,p1
-Bayesian,stu25_ace_p1,0.8,0.0,0.0,,0.1636363636363636,0,0.0,,Focused,p1
-Bayesian,stu26_ace_p1,0.8,0.0,0.0,,0.18,0,0.0,,Focused,p1
-Bayesian,stu29_ade_p1,0.8,0.0,0.0,,0.2,0,0.0,,Focused,p1
-Bayesian,stu30_adf_p1,0.8,0.0,0.0,,0.2,0,0.0,,Focused,p1
-Bayesian,stu31_ade_p1,0.8,0.0,0.0,,0.12,0,0.0,,Focused,p1
-Bayesian,stu36_adf_p1,0.8,0.0,0.0,,0.2,0,0.0,,Focused,p1
-Bayesian,stu37_adf_p1,0.8,0.0,0.0,,0.1666666666666666,0,0.0,,Focused,p1
-Bayesian,stu38_acf_p1,0.8,0.0,0.0,,0.0923076923076923,0,0.0,,Focused,p1
-Bayesian,stu39_adf_p1,0.8,0.0,0.0,,0.04,0,0.0,,Focused,p1
-Bayesian,stu3_acf_p1,0.8,0.0,0.0,,0.2,0,0.0,,Focused,p1
-Bayesian,stu4_ade_p1,0.8,0.0,0.0,,0.0857142857142857,0,0.0,,Focused,p1
-Bayesian,stu6_acf_p1,0.8,0.0,0.0,,0.1666666666666666,0,0.0,,Focused,p1
-Bayesian,stu7_ade_p1,0.8,0.0,0.0,,0.0869565217391304,0,0.0,,Focused,p1
-Greedy,pro13_ace_p1,0.8,0.0,0.0,,1.0,0,0.0,,Focused,p1
-Greedy,pro15_ade_p1,0.8,0.0,0.0,,0.2,0,0.0,,Focused,p1
-Greedy,pro17_ace_p1,0.8,0.0,0.0,,0.6363636363636364,0,0.0,,Focused,p1
-Greedy,pro18_adf_p1,0.8,0.0,0.0,,0.1,0,0.0,,Focused,p1
-Greedy,pro20_ade_p1,0.8,0.0,0.0,,0.75,0,0.0,,Focused,p1
-Greedy,pro21_ade_p1,0.8,0.0,0.0,,0.7222222222222222,0,0.0,,Focused,p1
-Greedy,pro22_ade_p1,0.8,0.0,0.0,,0.9285714285714286,0,0.0,,Focused,p1
-Greedy,pro23_acf_p1,0.8,0.0,0.0,,0.6363636363636364,0,0.0,,Focused,p1
-Greedy,pro24_adf_p1,0.8,0.0,0.0,,0.5714285714285714,0,0.0,,Focused,p1
-Greedy,pro25_acf_p1,0.8,0.0,0.0,,1.0,0,0.0,,Focused,p1
-Greedy,pro29_ace_p1,0.8,0.0,0.0,,0.75,0,0.0,,Focused,p1
-Greedy,pro31_adf_p1,0.8,0.0,0.0,,0.4545454545454545,0,0.0,,Focused,p1
-Greedy,pro3_ace_p1,0.8,0.0,0.0,,0.4285714285714285,0,0.0,,Focused,p1
-Greedy,pro5_adf_p1,0.8,0.0,0.0,,0.3571428571428571,0,0.0,,Focused,p1
-Greedy,pro8_acf_p1,0.8,0.0,0.0,,0.5652173913043478,0,0.0,,Focused,p1
-Greedy,pro9_acf_p1,0.8,0.0,0.0,,0.5,0,0.0,,Focused,p1
-Greedy,stu10_acf_p1,0.8,0.0,0.0,,0.25,0,0.0,,Focused,p1
-Greedy,stu11_adf_p1,0.8,0.0,0.0,,0.2,0,0.0,,Focused,p1
-Greedy,stu13_acf_p1,0.8,0.0,0.0,,0.25,0,0.0,,Focused,p1
-Greedy,stu15_ade_p1,0.8,0.0,0.0,,0.5714285714285714,0,0.0,,Focused,p1
-Greedy,stu17_ace_p1,0.8,0.0,0.0,,0.0,0,0.0,,Focused,p1
-Greedy,stu21_ace_p1,0.8,0.0,0.0,,0.6,0,0.0,,Focused,p1
-Greedy,stu24_ace_p1,0.8,0.0,0.0,,1.0,0,0.0,,Focused,p1
-Greedy,stu25_ace_p1,0.8,0.0,0.0,,0.9090909090909092,0,0.0,,Focused,p1
-Greedy,stu26_ace_p1,0.8,0.0,0.0,,0.8,0,0.0,,Focused,p1
-Greedy,stu29_ade_p1,0.8,0.0,0.0,,1.0,0,0.0,,Focused,p1
-Greedy,stu30_adf_p1,0.8,0.0,0.0,,1.0,0,0.0,,Focused,p1
-Greedy,stu31_ade_p1,0.8,0.0,0.0,,0.7,0,0.0,,Focused,p1
-Greedy,stu36_adf_p1,0.8,0.0,0.0,,1.0,0,0.0,,Focused,p1
-Greedy,stu37_adf_p1,0.8,0.0,0.0,,1.0,0,0.0,,Focused,p1
-Greedy,stu38_acf_p1,0.8,0.0,0.0,,0.3076923076923077,0,0.0,,Focused,p1
-Greedy,stu39_adf_p1,0.8,0.0,0.0,,0.2,0,0.0,,Focused,p1
-Greedy,stu3_acf_p1,0.8,0.0,0.0,,1.0,0,0.0,,Focused,p1
-Greedy,stu4_ade_p1,0.8,0.0,0.0,,0.4285714285714285,0,0.0,,Focused,p1
-Greedy,stu6_acf_p1,0.8,0.0,0.0,,0.8333333333333334,0,0.0,,Focused,p1
-Greedy,stu7_ade_p1,0.8,0.0,0.0,,0.6086956521739131,0,0.0,,Focused,p1
-HMM,pro13_ace_p1,0.8,0.0,0.0,,1.0,,,,Focused,p1
-HMM,pro15_ade_p1,0.8,0.0,0.0,,0.6,,,,Focused,p1
-HMM,pro17_ace_p1,0.8,0.0,0.0,,0.1818181818181818,,,,Focused,p1
-HMM,pro18_adf_p1,0.8,0.0,0.0,,0.5,,,,Focused,p1
-HMM,pro20_ade_p1,0.8,0.0,0.0,,0.75,,,,Focused,p1
-HMM,pro21_ade_p1,0.8,0.0,0.0,,0.4444444444444444,,,,Focused,p1
-HMM,pro22_ade_p1,0.8,0.0,0.0,,1.0,,,,Focused,p1
-HMM,pro23_acf_p1,0.8,0.0,0.0,,0.0,,,,Focused,p1
-HMM,pro24_adf_p1,0.8,0.0,0.0,,0.0,,,,Focused,p1
-HMM,pro25_acf_p1,0.8,0.0,0.0,,1.0,,,,Focused,p1
-HMM,pro29_ace_p1,0.8,0.0,0.0,,0.8,,,,Focused,p1
-HMM,pro31_adf_p1,0.8,0.0,0.0,,0.7272727272727273,,,,Focused,p1
-HMM,pro3_ace_p1,0.8,0.0,0.0,,0.4285714285714285,,,,Focused,p1
-HMM,pro5_adf_p1,0.8,0.0,0.0,,0.0714285714285714,,,,Focused,p1
-HMM,pro8_acf_p1,0.8,0.0,0.0,,0.1739130434782608,,,,Focused,p1
-HMM,pro9_acf_p1,0.8,0.0,0.0,,0.5,,,,Focused,p1
-HMM,stu10_acf_p1,0.8,0.0,0.0,,0.3333333333333333,,,,Focused,p1
-HMM,stu11_adf_p1,0.8,0.0,0.0,,0.6,,,,Focused,p1
-HMM,stu13_acf_p1,0.8,0.0,0.0,,0.0,,,,Focused,p1
-HMM,stu15_ade_p1,0.8,0.0,0.0,,0.5714285714285714,,,,Focused,p1
-HMM,stu17_ace_p1,0.8,0.0,0.0,,0.5,,,,Focused,p1
-HMM,stu21_ace_p1,0.8,0.0,0.0,,0.8,,,,Focused,p1
-HMM,stu24_ace_p1,0.8,0.0,0.0,,1.0,,,,Focused,p1
-HMM,stu25_ace_p1,0.8,0.0,0.0,,0.9090909090909092,,,,Focused,p1
-HMM,stu26_ace_p1,0.8,0.0,0.0,,0.8,,,,Focused,p1
-HMM,stu29_ade_p1,0.8,0.0,0.0,,1.0,,,,Focused,p1
-HMM,stu30_adf_p1,0.8,0.0,0.0,,1.0,,,,Focused,p1
-HMM,stu31_ade_p1,0.8,0.0,0.0,,0.7,,,,Focused,p1
-HMM,stu36_adf_p1,0.8,0.0,0.0,,0.0,,,,Focused,p1
-HMM,stu37_adf_p1,0.8,0.0,0.0,,0.0,,,,Focused,p1
-HMM,stu38_acf_p1,0.8,0.0,0.0,,0.3846153846153846,,,,Focused,p1
-HMM,stu39_adf_p1,0.8,0.0,0.0,,0.2,,,,Focused,p1
-HMM,stu3_acf_p1,0.8,0.0,0.0,,1.0,,,,Focused,p1
-HMM,stu4_ade_p1,0.8,0.0,0.0,,0.1428571428571428,,,,Focused,p1
-HMM,stu6_acf_p1,0.8,0.0,0.0,,0.5,,,,Focused,p1
-HMM,stu7_ade_p1,0.8,0.0,0.0,,0.391304347826087,,,,Focused,p1
-Momentum,pro13_ace_p1,0.8,0.0,0.0,,1.0,"[0, 0, 0]",,,Focused,p1
-Momentum,pro15_ade_p1,0.8,0.0,0.0,,0.0,"[0, 0, 0]",,,Focused,p1
-Momentum,pro17_ace_p1,0.8,0.0,0.0,,0.0909090909090909,"[0, 0, 0]",,,Focused,p1
-Momentum,pro18_adf_p1,0.8,0.0,0.0,,0.2,"[0, 0, 0]",,,Focused,p1
-Momentum,pro20_ade_p1,0.8,0.0,0.0,,0.625,"[0, 0, 0]",,,Focused,p1
-Momentum,pro21_ade_p1,0.8,0.0,0.0,,0.5555555555555556,"[0, 0, 0]",,,Focused,p1
-Momentum,pro22_ade_p1,0.8,0.0,0.0,,0.0,"[0, 0, 0]",,,Focused,p1
-Momentum,pro23_acf_p1,0.8,0.0,0.0,,0.6363636363636364,"[0, 0, 0]",,,Focused,p1
-Momentum,pro24_adf_p1,0.8,0.0,0.0,,0.0,"[0, 0, 0]",,,Focused,p1
-Momentum,pro25_acf_p1,0.8,0.0,0.0,,1.0,"[0, 0, 0]",,,Focused,p1
-Momentum,pro29_ace_p1,0.8,0.0,0.0,,0.2,"[0, 0, 0]",,,Focused,p1
-Momentum,pro31_adf_p1,0.8,0.0,0.0,,0.5454545454545454,"[0, 0, 0]",,,Focused,p1
-Momentum,pro3_ace_p1,0.8,0.0,0.0,,0.2857142857142857,"[0, 0, 0]",,,Focused,p1
-Momentum,pro5_adf_p1,0.8,0.0,0.0,,0.6428571428571429,"[0, 0, 0]",,,Focused,p1
-Momentum,pro8_acf_p1,0.8,0.0,0.0,,0.2608695652173913,"[0, 0, 0]",,,Focused,p1
-Momentum,pro9_acf_p1,0.8,0.0,0.0,,0.375,"[0, 0, 0]",,,Focused,p1
-Momentum,stu10_acf_p1,0.8,0.0,0.0,,0.25,"[0, 0, 0]",,,Focused,p1
-Momentum,stu11_adf_p1,0.8,0.0,0.0,,0.4,"[0, 0, 0]",,,Focused,p1
-Momentum,stu13_acf_p1,0.8,0.0,0.0,,0.5,"[0, 0, 0]",,,Focused,p1
-Momentum,stu15_ade_p1,0.8,0.0,0.0,,0.0,"[0, 0, 0]",,,Focused,p1
-Momentum,stu17_ace_p1,0.8,0.0,0.0,,0.0,"[0, 0, 0]",,,Focused,p1
-Momentum,stu21_ace_p1,0.8,0.0,0.0,,0.0,"[0, 0, 0]",,,Focused,p1
-Momentum,stu24_ace_p1,0.8,0.0,0.0,,1.0,"[0, 0, 0]",,,Focused,p1
-Momentum,stu25_ace_p1,0.8,0.0,0.0,,0.7272727272727273,"[0, 0, 0]",,,Focused,p1
-Momentum,stu26_ace_p1,0.8,0.0,0.0,,0.5,"[0, 0, 0]",,,Focused,p1
-Momentum,stu29_ade_p1,0.8,0.0,0.0,,1.0,"[0, 0, 0]",,,Focused,p1
-Momentum,stu30_adf_p1,0.8,0.0,0.0,,1.0,"[0, 0, 0]",,,Focused,p1
-Momentum,stu31_ade_p1,0.8,0.0,0.0,,0.3,"[0, 0, 0]",,,Focused,p1
-Momentum,stu36_adf_p1,0.8,0.0,0.0,,1.0,"[0, 0, 0]",,,Focused,p1
-Momentum,stu37_adf_p1,0.8,0.0,0.0,,1.0,"[0, 0, 0]",,,Focused,p1
-Momentum,stu38_acf_p1,0.8,0.0,0.0,,0.2307692307692307,"[0, 0, 0]",,,Focused,p1
-Momentum,stu39_adf_p1,0.8,0.0,0.0,,0.0,"[0, 0, 0]",,,Focused,p1
-Momentum,stu3_acf_p1,0.8,0.0,0.0,,1.0,"[0, 0, 0]",,,Focused,p1
-Momentum,stu4_ade_p1,0.8,0.0,0.0,,0.0,"[0, 0, 0]",,,Focused,p1
-Momentum,stu6_acf_p1,0.8,0.0,0.0,,0.3333333333333333,"[0, 0, 0]",,,Focused,p1
-Momentum,stu7_ade_p1,0.8,0.0,0.0,,0.5217391304347826,"[0, 0, 0]",,,Focused,p1
-OnlineSVM,pro13_ace_p1,0.8,0.0,0.0,,1.0,"defaultdict(None, {'same': (5, 1.0)})",,,Focused,p1
-OnlineSVM,pro15_ade_p1,0.8,0.0,0.0,,0.2,"defaultdict(None, {'modify-1': (2, 0.0), 'same': (3, 0.3333333333333333)})",,,Focused,p1
-OnlineSVM,pro17_ace_p1,0.8,0.0,0.0,,0.6363636363636364,"defaultdict(None, {'same': (9, 0.7777777777777778), 'modify-1': (2, 0.0)})",,,Focused,p1
-OnlineSVM,pro18_adf_p1,0.8,0.0,0.0,,0.1,"defaultdict(None, {'modify-1': (4, 0.25), 'modify-2': (2, 0.0), 'same': (4, 0.0)})",,,Focused,p1
-OnlineSVM,pro20_ade_p1,0.8,0.0,0.0,,0.5,"defaultdict(None, {'same': (6, 0.6666666666666666), 'modify-1': (2, 0.0)})",,,Focused,p1
-OnlineSVM,pro21_ade_p1,0.8,0.0,0.0,,0.8888888888888888,"defaultdict(None, {'same': (17, 0.9411764705882353), 'modify-1': (1, 0.0)})",,,Focused,p1
-OnlineSVM,pro22_ade_p1,0.8,0.0,0.0,,1.0,"defaultdict(None, {'same': (14, 1.0)})",,,Focused,p1
-OnlineSVM,pro23_acf_p1,0.8,0.0,0.0,,0.5454545454545454,"defaultdict(None, {'same': (8, 0.625), 'modify-2': (3, 0.3333333333333333)})",,,Focused,p1
-OnlineSVM,pro24_adf_p1,0.8,0.0,0.0,,0.7142857142857143,"defaultdict(None, {'modify-2': (2, 0.5), 'same': (5, 0.8)})",,,Focused,p1
-OnlineSVM,pro25_acf_p1,0.8,0.0,0.0,,1.0,"defaultdict(None, {'same': (2, 1.0)})",,,Focused,p1
-OnlineSVM,pro29_ace_p1,0.8,0.0,0.0,,0.55,"defaultdict(None, {'same': (16, 0.6875), 'modify-1': (4, 0.0)})",,,Focused,p1
-OnlineSVM,pro31_adf_p1,0.8,0.0,0.0,,0.6363636363636364,"defaultdict(None, {'same': (8, 0.75), 'modify-1': (3, 0.3333333333333333)})",,,Focused,p1
-OnlineSVM,pro3_ace_p1,0.8,0.0,0.0,,0.2857142857142857,"defaultdict(None, {'same': (4, 0.25), 'modify-1': (3, 0.3333333333333333)})",,,Focused,p1
-OnlineSVM,pro5_adf_p1,0.8,0.0,0.0,,0.7142857142857143,"defaultdict(None, {'modify-2': (3, 0.6666666666666666), 'same': (10, 0.8), 'modify-1': (1, 0.0)})",,,Focused,p1
-OnlineSVM,pro8_acf_p1,0.8,0.0,0.0,,0.4782608695652174,"defaultdict(None, {'modify-2': (3, 0.0), 'same': (14, 0.7142857142857143), 'modify-1': (5, 0.2), 'modify-3': (1, 0.0)})",,,Focused,p1
-OnlineSVM,pro9_acf_p1,0.8,0.0,0.0,,0.5,"defaultdict(None, {'same': (4, 0.5), 'modify-2': (3, 0.6666666666666666), 'modify-1': (1, 0.0)})",,,Focused,p1
-OnlineSVM,stu10_acf_p1,0.8,0.0,0.0,,0.5,"defaultdict(None, {'modify-1': (5, 0.8), 'modify-2': (3, 0.3333333333333333), 'same': (4, 0.25)})",,,Focused,p1
-OnlineSVM,stu11_adf_p1,0.8,0.0,0.0,,0.2,"defaultdict(None, {'modify-1': (2, 0.0), 'same': (3, 0.3333333333333333)})",,,Focused,p1
-OnlineSVM,stu13_acf_p1,0.8,0.0,0.0,,0.25,"defaultdict(None, {'same': (3, 0.3333333333333333), 'modify-2': (1, 0.0)})",,,Focused,p1
-OnlineSVM,stu15_ade_p1,0.8,0.0,0.0,,1.0,"defaultdict(None, {'same': (7, 1.0)})",,,Focused,p1
-OnlineSVM,stu17_ace_p1,0.8,0.0,0.0,,0.0,"defaultdict(None, {'modify-1': (1, 0.0), 'same': (1, 0.0)})",,,Focused,p1
-OnlineSVM,stu21_ace_p1,0.8,0.0,0.0,,0.8,"defaultdict(None, {'modify-1': (1, 1.0), 'same': (4, 0.75)})",,,Focused,p1
-OnlineSVM,stu24_ace_p1,0.8,0.0,0.0,,1.0,"defaultdict(None, {'same': (5, 1.0)})",,,Focused,p1
-OnlineSVM,stu25_ace_p1,0.8,0.0,0.0,,0.8181818181818182,"defaultdict(None, {'same': (10, 0.9), 'modify-1': (1, 0.0)})",,,Focused,p1
-OnlineSVM,stu26_ace_p1,0.8,0.0,0.0,,0.8,"defaultdict(None, {'same': (8, 0.875), 'modify-1': (2, 0.5)})",,,Focused,p1
-OnlineSVM,stu29_ade_p1,0.8,0.0,0.0,,1.0,"defaultdict(None, {'same': (4, 1.0)})",,,Focused,p1
-OnlineSVM,stu30_adf_p1,0.8,0.0,0.0,,1.0,"defaultdict(None, {'same': (3, 1.0)})",,,Focused,p1
-OnlineSVM,stu31_ade_p1,0.8,0.0,0.0,,0.6,"defaultdict(None, {'same': (7, 0.7142857142857143), 'modify-1': (3, 0.3333333333333333)})",,,Focused,p1
-OnlineSVM,stu36_adf_p1,0.8,0.0,0.0,,1.0,"defaultdict(None, {'same': (5, 1.0)})",,,Focused,p1
-OnlineSVM,stu37_adf_p1,0.8,0.0,0.0,,1.0,"defaultdict(None, {'same': (6, 1.0)})",,,Focused,p1
-OnlineSVM,stu38_acf_p1,0.8,0.0,0.0,,0.3846153846153846,"defaultdict(None, {'same': (7, 0.42857142857142855), 'modify-2': (3, 0.3333333333333333), 'modify-1': (3, 0.3333333333333333)})",,,Focused,p1
-OnlineSVM,stu39_adf_p1,0.8,0.0,0.0,,0.0,"defaultdict(None, {'modify-1': (1, 0.0), 'same': (2, 0.0), 'modify-2': (2, 0.0)})",,,Focused,p1
-OnlineSVM,stu3_acf_p1,0.8,0.0,0.0,,1.0,"defaultdict(None, {'same': (2, 1.0)})",,,Focused,p1
-OnlineSVM,stu4_ade_p1,0.8,0.0,0.0,,0.4285714285714285,"defaultdict(None, {'modify-1': (2, 0.0), 'same': (5, 0.6)})",,,Focused,p1
-OnlineSVM,stu6_acf_p1,0.8,0.0,0.0,,0.6666666666666666,"defaultdict(None, {'same': (5, 0.8), 'modify-2': (1, 0.0)})",,,Focused,p1
-OnlineSVM,stu7_ade_p1,0.8,0.0,0.0,,0.4782608695652174,"defaultdict(None, {'same': (9, 0.4444444444444444), 'modify-1': (12, 0.5833333333333334), 'modify-2': (2, 0.0)})",,,Focused,p1
-QLearn,pro25_acf_p1,0.8,0.01,0.5,0.0,0.5,0,0.6,1.0,Focused,p1
-QLearn,pro15_ade_p1,0.8,0.0001,0.05,0.0,0.6,0,1.0909090909090908,0.05,Focused,p1
-QLearn,pro13_ace_p1,0.8,0.0001,0.1,0.0,1.0,0,1.090909090909091,0.1,Focused,p1
-QLearn,pro24_adf_p1,0.8,1.0,0.2,0.0,0.8571428571428571,0,1.0666666666666669,0.1,Focused,p1
-QLearn,pro20_ade_p1,0.8,0.5,0.1,0.0,0.75,0,1.0588235294117645,0.05,Focused,p1
-QLearn,pro18_adf_p1,0.8,1.0,0.9,0.0,0.6,0,1.0476190476190477,0.05,Focused,p1
-QLearn,pro17_ace_p1,0.8,0.0001,0.2,0.0,0.8181818181818182,0,1.0434782608695652,0.01,Focused,p1
-QLearn,pro23_acf_p1,0.8,0.001,0.1,0.0,0.6363636363636364,0,1.0434782608695652,0.05,Focused,p1
-QLearn,pro22_ade_p1,0.8,0.0001,0.2,0.0,1.0,0,1.0344827586206895,0.1,Focused,p1
-QLearn,pro3_ace_p1,0.8,0.5,0.1,0.0,0.5714285714285714,0,1.0666666666666669,0.05,Focused,p1
-QLearn,pro21_ade_p1,0.8,0.5,0.05,0.0,0.9444444444444444,0,1.027027027027027,0.05,Focused,p1
-QLearn,pro31_adf_p1,0.8,0.5,0.2,0.0,0.8181818181818182,0,1.0434782608695652,0.05,Focused,p1
-QLearn,stu11_adf_p1,0.8,0.1,0.5,0.0,0.6,0,1.0909090909090908,0.1,Focused,p1
-QLearn,stu13_acf_p1,0.8,0.0001,0.1,0.0,0.75,0,1.111111111111111,0.05,Focused,p1
-QLearn,pro9_acf_p1,0.8,0.0001,0.1,0.0,0.5,0,1.0588235294117647,0.1,Focused,p1
-QLearn,stu17_ace_p1,0.8,0.1,0.2,0.0,0.5,0,1.2000000000000002,0.1,Focused,p1
-QLearn,stu15_ade_p1,0.8,0.5,0.9,0.0,1.0,0,1.0666666666666669,0.1,Focused,p1
-QLearn,pro5_adf_p1,0.8,0.001,0.2,0.0,0.7142857142857143,0,1.0344827586206895,0.05,Focused,p1
-QLearn,pro29_ace_p1,0.8,0.0001,0.5,0.0,0.8,0,1.0243902439024386,0.1,Focused,p1
-QLearn,stu10_acf_p1,0.8,0.5,0.2,0.0,0.5,0,1.04,0.05,Focused,p1
-QLearn,stu21_ace_p1,0.8,0.01,0.8,0.0,0.8,0,1.0909090909090908,0.05,Focused,p1
-QLearn,stu24_ace_p1,0.8,0.5,0.9,0.0,1.0,0,1.090909090909091,0.1,Focused,p1
-QLearn,stu29_ade_p1,0.8,0.0001,0.99,0.0,1.0,0,1.111111111111111,0.05,Focused,p1
-QLearn,stu30_adf_p1,0.8,1.0,0.9,0.0,1.0,0,1.1428571428571428,0.1,Focused,p1
-QLearn,stu36_adf_p1,0.8,0.0001,0.9,0.0,1.0,0,1.0909090909090908,0.1,Focused,p1
-QLearn,stu3_acf_p1,0.8,0.001,0.1,0.0,1.0,0,1.2000000000000002,0.1,Focused,p1
-QLearn,pro8_acf_p1,0.8,0.5,0.5,0.0,0.782608695652174,0,1.0212765957446808,0.1,Focused,p1
-QLearn,stu26_ace_p1,0.8,0.001,0.8,0.0,0.8,0,1.0476190476190472,0.01,Focused,p1
-QLearn,stu37_adf_p1,0.8,1.0,0.2,0.0,1.0,0,1.0769230769230769,0.1,Focused,p1
-QLearn,stu39_adf_p1,0.8,1.0,0.1,0.0,0.8,0,1.090909090909091,0.1,Focused,p1
-QLearn,stu25_ace_p1,0.8,0.001,0.1,0.0,0.9090909090909092,0,1.0434782608695652,0.01,Focused,p1
-QLearn,stu31_ade_p1,0.8,0.01,0.9,0.0,0.7,0,1.047619047619048,0.05,Focused,p1
-QLearn,stu4_ade_p1,0.8,0.01,0.5,0.0,0.7142857142857143,0,1.0666666666666669,0.1,Focused,p1
-QLearn,stu6_acf_p1,0.8,0.0001,0.1,0.0,0.8333333333333334,0,1.0769230769230766,0.1,Focused,p1
-QLearn,stu38_acf_p1,0.8,0.0001,0.05,0.0,0.5384615384615384,0,1.0370370370370372,0.05,Focused,p1
-QLearn,stu7_ade_p1,0.8,0.1,0.2,0.0,0.4782608695652174,0,1.021276595744681,0.1,Focused,p1
-Random,pro13_ace_p1,0.8,,,,0.24,0,,,Focused,p1
-Random,pro15_ade_p1,0.8,,,,0.24,0,,,Focused,p1
-Random,pro17_ace_p1,0.8,,,,0.2909090909090909,0,,,Focused,p1
-Random,pro18_adf_p1,0.8,,,,0.24,0,,,Focused,p1
-Random,pro20_ade_p1,0.8,,,,0.2,0,,,Focused,p1
-Random,pro21_ade_p1,0.8,,,,0.2999999999999999,0,,,Focused,p1
-Random,pro22_ade_p1,0.8,,,,0.2285714285714285,0,,,Focused,p1
-Random,pro23_acf_p1,0.8,,,,0.2363636363636363,0,,,Focused,p1
-Random,pro24_adf_p1,0.8,,,,0.3428571428571428,0,,,Focused,p1
-Random,pro25_acf_p1,0.8,,,,0.6,0,,,Focused,p1
-Random,pro29_ace_p1,0.8,,,,0.21,0,,,Focused,p1
-Random,pro31_adf_p1,0.8,,,,0.2,0,,,Focused,p1
-Random,pro3_ace_p1,0.8,,,,0.2857142857142857,0,,,Focused,p1
-Random,pro5_adf_p1,0.8,,,,0.1714285714285714,0,,,Focused,p1
-Random,pro8_acf_p1,0.8,,,,0.2260869565217391,0,,,Focused,p1
-Random,pro9_acf_p1,0.8,,,,0.125,0,,,Focused,p1
-Random,stu10_acf_p1,0.8,,,,0.2833333333333333,0,,,Focused,p1
-Random,stu11_adf_p1,0.8,,,,0.24,0,,,Focused,p1
-Random,stu13_acf_p1,0.8,,,,0.35,0,,,Focused,p1
-Random,stu15_ade_p1,0.8,,,,0.3142857142857142,0,,,Focused,p1
-Random,stu17_ace_p1,0.8,,,,0.2,0,,,Focused,p1
-Random,stu21_ace_p1,0.8,,,,0.2,0,,,Focused,p1
-Random,stu24_ace_p1,0.8,,,,0.4,0,,,Focused,p1
-Random,stu25_ace_p1,0.8,,,,0.2909090909090909,0,,,Focused,p1
-Random,stu26_ace_p1,0.8,,,,0.26,0,,,Focused,p1
-Random,stu29_ade_p1,0.8,,,,0.3,0,,,Focused,p1
-Random,stu30_adf_p1,0.8,,,,0.2666666666666666,0,,,Focused,p1
-Random,stu31_ade_p1,0.8,,,,0.36,0,,,Focused,p1
-Random,stu36_adf_p1,0.8,,,,0.12,0,,,Focused,p1
-Random,stu37_adf_p1,0.8,,,,0.2666666666666666,0,,,Focused,p1
-Random,stu38_acf_p1,0.8,,,,0.2461538461538462,0,,,Focused,p1
-Random,stu39_adf_p1,0.8,,,,0.2,0,,,Focused,p1
-Random,stu3_acf_p1,0.8,,,,0.4,0,,,Focused,p1
-Random,stu4_ade_p1,0.8,,,,0.2857142857142857,0,,,Focused,p1
-Random,stu6_acf_p1,0.8,,,,0.1333333333333333,0,,,Focused,p1
-Random,stu7_ade_p1,0.8,,,,0.2434782608695652,0,,,Focused,p1
-Reinforce,pro25_acf_p1,0.8,0.01,0.5,,1.0,"[None, None, None]",0.0,,Focused,p1
-Reinforce,pro13_ace_p1,0.8,0.1,0.99,,1.0,"[None, None, None]",0.0,,Focused,p1
-Reinforce,pro15_ade_p1,0.8,0.01,0.05,,0.6,"[None, None, None]",0.0,,Focused,p1
-Reinforce,pro24_adf_p1,0.8,0.01,0.5,,0.7142857142857143,"[None, None, None]",0.0,,Focused,p1
-Reinforce,pro20_ade_p1,0.8,0.01,0.05,,0.75,"[None, None, None]",0.0,,Focused,p1
-Reinforce,pro18_adf_p1,0.8,0.1,0.8,,0.3,"[None, None, None]",0.0,,Focused,p1
-Reinforce,pro17_ace_p1,0.8,0.1,0.5,,0.8181818181818182,"[None, None, None]",0.0,,Focused,p1
-Reinforce,pro23_acf_p1,0.8,0.01,0.05,,0.7272727272727273,"[None, None, None]",0.0,,Focused,p1
-Reinforce,pro3_ace_p1,0.8,0.01,0.1,,0.2857142857142857,"[None, None, None]",0.0,,Focused,p1
-Reinforce,pro22_ade_p1,0.8,0.01,0.5,,1.0,"[None, None, None]",0.0,,Focused,p1
-Reinforce,pro31_adf_p1,0.8,0.01,0.1,,0.7272727272727273,"[None, None, None]",0.0,,Focused,p1
-Reinforce,stu13_acf_p1,0.8,0.001,0.2,,1.0,"[None, None, None]",0.0,,Focused,p1
-Reinforce,stu11_adf_p1,0.8,0.001,0.05,,0.6,"[None, None, None]",0.0,,Focused,p1
-Reinforce,stu17_ace_p1,0.8,1.0,0.99,,0.5,"[None, None, None]",0.0,,Focused,p1
-Reinforce,pro9_acf_p1,0.8,0.1,0.05,,0.5,"[None, None, None]",0.0,,Focused,p1
-Reinforce,pro21_ade_p1,0.8,0.01,0.05,,0.9444444444444444,"[None, None, None]",0.0,,Focused,p1
-Reinforce,stu15_ade_p1,0.8,0.001,0.2,,1.0,"[None, None, None]",0.0,,Focused,p1
-Reinforce,pro5_adf_p1,0.8,0.01,0.2,,0.7142857142857143,"[None, None, None]",0.0,,Focused,p1
-Reinforce,stu21_ace_p1,0.8,0.01,0.05,,0.2,"[None, None, None]",0.0,,Focused,p1
-Reinforce,pro29_ace_p1,0.8,0.1,0.5,,0.8,"[None, None, None]",0.0,,Focused,p1
-Reinforce,stu24_ace_p1,0.8,0.01,0.05,,1.0,"[None, None, None]",0.0,,Focused,p1
-Reinforce,stu29_ade_p1,0.8,0.001,0.2,,1.0,"[None, None, None]",0.0,,Focused,p1
-Reinforce,stu30_adf_p1,0.8,0.01,0.05,,1.0,"[None, None, None]",0.0,,Focused,p1
-Reinforce,stu10_acf_p1,0.8,0.01,0.05,,0.3333333333333333,"[None, None, None]",0.0,,Focused,p1
-Reinforce,stu3_acf_p1,0.8,0.01,0.05,,1.0,"[None, None, None]",0.0,,Focused,p1
-Reinforce,stu36_adf_p1,0.8,0.01,0.2,,1.0,"[None, None, None]",0.0,,Focused,p1
-Reinforce,stu37_adf_p1,0.8,0.01,0.05,,1.0,"[None, None, None]",0.0,,Focused,p1
-Reinforce,stu26_ace_p1,0.8,0.01,0.05,,0.8,"[None, None, None]",0.0,,Focused,p1
-Reinforce,stu39_adf_p1,0.8,0.01,0.05,,0.4,"[None, None, None]",0.0,,Focused,p1
-Reinforce,pro8_acf_p1,0.8,0.01,0.2,,0.5652173913043478,"[None, None, None]",0.0,,Focused,p1
-Reinforce,stu6_acf_p1,0.8,0.01,0.05,,0.8333333333333334,"[None, None, None]",0.0,,Focused,p1
-Reinforce,stu31_ade_p1,0.8,0.01,0.05,,0.7,"[None, None, None]",0.0,,Focused,p1
-Reinforce,stu25_ace_p1,0.8,0.01,0.05,,0.9090909090909092,"[None, None, None]",0.0,,Focused,p1
-Reinforce,stu4_ade_p1,0.8,0.01,0.05,,0.7142857142857143,"[None, None, None]",0.0,,Focused,p1
-Reinforce,stu38_acf_p1,0.8,0.01,0.05,,0.5384615384615384,"[None, None, None]",0.0,,Focused,p1
-Reinforce,stu7_ade_p1,0.8,0.01,0.05,,0.5652173913043478,"[None, None, None]",0.0,,Focused,p1
-SARSA,pro25_acf_p1,0.8,0.001,0.05,0.0,1.0,0,1.0,0.7,Focused,p1
-SARSA,pro15_ade_p1,0.8,0.0001,0.2,0.0,0.6,0,1.0,0.1,Focused,p1
-SARSA,pro13_ace_p1,0.8,0.0001,0.05,0.0,1.0,0,1.0,0.05,Focused,p1
-SARSA,pro24_adf_p1,0.8,0.0001,0.5,0.0,0.7142857142857143,0,1.0,0.1,Focused,p1
-SARSA,pro20_ade_p1,0.8,0.0001,0.2,0.0,0.75,0,1.0,0.05,Focused,p1
-SARSA,pro18_adf_p1,0.8,0.5,0.9,0.0,0.5,0,1.0,0.01,Focused,p1
-SARSA,pro17_ace_p1,0.8,0.001,0.9,0.0,0.8181818181818182,0,1.0,0.01,Focused,p1
-SARSA,pro23_acf_p1,0.8,0.0001,0.1,0.0,0.6363636363636364,0,1.0,0.05,Focused,p1
-SARSA,pro22_ade_p1,0.8,0.0001,0.05,0.0,1.0,0,1.0,0.05,Focused,p1
-SARSA,pro3_ace_p1,0.8,0.5,0.1,0.0,0.5714285714285714,0,1.0,0.1,Focused,p1
-SARSA,pro21_ade_p1,0.8,0.0001,0.05,0.0,0.9444444444444444,0,1.0,0.05,Focused,p1
-SARSA,pro31_adf_p1,0.8,0.0001,0.1,0.0,0.7272727272727273,0,1.0,0.1,Focused,p1
-SARSA,stu11_adf_p1,0.8,0.0001,0.05,0.0,0.6,0,1.0,0.05,Focused,p1
-SARSA,pro9_acf_p1,0.8,0.5,0.1,0.0,0.5,0,1.0,0.1,Focused,p1
-SARSA,stu13_acf_p1,0.8,0.0001,0.1,0.0,0.75,0,1.0,0.1,Focused,p1
-SARSA,stu17_ace_p1,0.8,0.0001,0.05,0.0,0.5,0,1.0,0.01,Focused,p1
-SARSA,stu15_ade_p1,0.8,0.5,0.1,0.0,1.0,0,1.0,0.1,Focused,p1
-SARSA,pro5_adf_p1,0.8,0.5,0.1,0.0,0.7857142857142857,0,1.0,0.05,Focused,p1
-SARSA,pro29_ace_p1,0.8,0.0001,0.5,0.0,0.85,0,1.0,0.1,Focused,p1
-SARSA,stu10_acf_p1,0.8,0.0001,0.05,0.0,0.5,0,1.0,0.1,Focused,p1
-SARSA,stu29_ade_p1,0.8,0.0001,0.05,0.0,1.0,0,1.0,0.05,Focused,p1
-SARSA,stu24_ace_p1,0.8,0.01,0.2,0.0,0.8,0,1.0,0.5,Focused,p1
-SARSA,stu21_ace_p1,0.8,1.0,0.2,0.0,0.8,0,1.0,0.05,Focused,p1
-SARSA,stu30_adf_p1,0.8,0.0001,0.1,0.0,1.0,0,1.0,0.1,Focused,p1
-SARSA,stu37_adf_p1,0.8,1.0,0.2,0.0,1.0,0,1.0,0.05,Focused,p1
-SARSA,stu36_adf_p1,0.8,0.0001,0.05,0.0,1.0,0,1.0,0.05,Focused,p1
-SARSA,stu25_ace_p1,0.8,0.0001,0.1,0.0,0.9090909090909092,0,1.0,0.05,Focused,p1
-SARSA,stu3_acf_p1,0.8,0.0001,0.1,0.0,1.0,0,1.0,0.1,Focused,p1
-SARSA,pro8_acf_p1,0.8,0.01,0.2,0.0,0.6086956521739131,0,1.0,0.05,Focused,p1
-SARSA,stu39_adf_p1,0.8,0.0001,0.1,0.0,0.4,0,1.0,0.1,Focused,p1
-SARSA,stu26_ace_p1,0.8,0.0001,0.05,0.0,0.9,0,1.0,0.01,Focused,p1
-SARSA,stu31_ade_p1,0.8,0.0001,0.05,0.0,0.7,0,1.0,0.05,Focused,p1
-SARSA,stu4_ade_p1,0.8,0.0001,0.2,0.0,0.7142857142857143,0,1.0,0.05,Focused,p1
-SARSA,stu38_acf_p1,0.8,0.0001,0.99,0.0,0.5384615384615384,0,1.0,0.05,Focused,p1
-SARSA,stu6_acf_p1,0.8,0.001,0.05,0.0,0.8333333333333334,0,1.0,0.05,Focused,p1
-SARSA,stu7_ade_p1,0.8,0.1,0.05,0.0,0.4782608695652174,0,1.0,0.05,Focused,p1
-WSLS,pro13_ace_p1,0.8,0.0,0.0,,0.4,"[None, None, None]",,,Focused,p1
-WSLS,pro15_ade_p1,0.8,0.0,0.0,,0.6,"[None, None, None]",,,Focused,p1
-WSLS,pro17_ace_p1,0.8,0.0,0.0,,0.2727272727272727,"[None, None, None]",,,Focused,p1
-WSLS,pro18_adf_p1,0.8,0.0,0.0,,0.4,"[None, None, None]",,,Focused,p1
-WSLS,pro20_ade_p1,0.8,0.0,0.0,,0.125,"[None, None, None]",,,Focused,p1
-WSLS,pro21_ade_p1,0.8,0.0,0.0,,0.1666666666666666,"[None, None, None]",,,Focused,p1
-WSLS,pro22_ade_p1,0.8,0.0,0.0,,0.1428571428571428,"[None, None, None]",,,Focused,p1
-WSLS,pro23_acf_p1,0.8,0.0,0.0,,0.2727272727272727,"[None, None, None]",,,Focused,p1
-WSLS,pro24_adf_p1,0.8,0.0,0.0,,0.1428571428571428,"[None, None, None]",,,Focused,p1
-WSLS,pro25_acf_p1,0.8,0.0,0.0,,0.5,"[None, None, None]",,,Focused,p1
-WSLS,pro29_ace_p1,0.8,0.0,0.0,,0.2,"[None, None, None]",,,Focused,p1
-WSLS,pro31_adf_p1,0.8,0.0,0.0,,0.3636363636363636,"[None, None, None]",,,Focused,p1
-WSLS,pro3_ace_p1,0.8,0.0,0.0,,0.1428571428571428,"[None, None, None]",,,Focused,p1
-WSLS,pro5_adf_p1,0.8,0.0,0.0,,0.2142857142857142,"[None, None, None]",,,Focused,p1
-WSLS,pro8_acf_p1,0.8,0.0,0.0,,0.217391304347826,"[None, None, None]",,,Focused,p1
-WSLS,pro9_acf_p1,0.8,0.0,0.0,,0.125,"[None, None, None]",,,Focused,p1
-WSLS,stu10_acf_p1,0.8,0.0,0.0,,0.3333333333333333,"[None, None, None]",,,Focused,p1
-WSLS,stu11_adf_p1,0.8,0.0,0.0,,0.4,"[None, None, None]",,,Focused,p1
-WSLS,stu13_acf_p1,0.8,0.0,0.0,,0.0,"[None, None, None]",,,Focused,p1
-WSLS,stu15_ade_p1,0.8,0.0,0.0,,0.2857142857142857,"[None, None, None]",,,Focused,p1
-WSLS,stu17_ace_p1,0.8,0.0,0.0,,0.0,"[None, None, None]",,,Focused,p1
-WSLS,stu21_ace_p1,0.8,0.0,0.0,,0.4,"[None, None, None]",,,Focused,p1
-WSLS,stu24_ace_p1,0.8,0.0,0.0,,0.4,"[None, None, None]",,,Focused,p1
-WSLS,stu25_ace_p1,0.8,0.0,0.0,,0.2727272727272727,"[None, None, None]",,,Focused,p1
-WSLS,stu26_ace_p1,0.8,0.0,0.0,,0.1,"[None, None, None]",,,Focused,p1
-WSLS,stu29_ade_p1,0.8,0.0,0.0,,0.5,"[None, None, None]",,,Focused,p1
-WSLS,stu30_adf_p1,0.8,0.0,0.0,,0.3333333333333333,"[None, None, None]",,,Focused,p1
-WSLS,stu31_ade_p1,0.8,0.0,0.0,,0.1,"[None, None, None]",,,Focused,p1
-WSLS,stu36_adf_p1,0.8,0.0,0.0,,0.0,"[None, None, None]",,,Focused,p1
-WSLS,stu37_adf_p1,0.8,0.0,0.0,,0.5,"[None, None, None]",,,Focused,p1
-WSLS,stu38_acf_p1,0.8,0.0,0.0,,0.3076923076923077,"[None, None, None]",,,Focused,p1
-WSLS,stu39_adf_p1,0.8,0.0,0.0,,0.0,"[None, None, None]",,,Focused,p1
-WSLS,stu3_acf_p1,0.8,0.0,0.0,,0.0,"[None, None, None]",,,Focused,p1
-WSLS,stu4_ade_p1,0.8,0.0,0.0,,0.1428571428571428,"[None, None, None]",,,Focused,p1
-WSLS,stu6_acf_p1,0.8,0.0,0.0,,0.1666666666666666,"[None, None, None]",,,Focused,p1
-WSLS,stu7_ade_p1,0.8,0.0,0.0,,0.391304347826087,"[None, None, None]",,,Focused,p1
+Algorithm,User,Threshold,LearningRate,Discount,Temperature,Accuracy,StateAccuracy,Reward,Epsilon,Openended,Task,GranularPredictions,Predictions,GroundTruth
+ActorCritic,pro25_acf_p1,0.8,0.0001,0.05,1.0,1.0,"[None, None, None]",0.0,0.0,Focused,p1,,,
+ActorCritic,pro15_ade_p1,0.8,0.0001,0.9,1.0,0.8,"[None, None, None]",0.0,0.0,Focused,p1,,,
+ActorCritic,pro13_ace_p1,0.8,0.0001,0.2,1.0,1.0,"[None, None, None]",0.0,0.0,Focused,p1,,,
+ActorCritic,pro24_adf_p1,0.8,0.0001,0.5,1.0,0.1428571428571428,"[None, None, None]",0.0,0.0,Focused,p1,,,
+ActorCritic,pro20_ade_p1,0.8,0.001,0.9,1.0,0.75,"[None, None, None]",0.0,0.0,Focused,p1,,,
+ActorCritic,pro18_adf_p1,0.8,0.001,0.8,1.0,0.4,"[None, None, None]",0.0,0.0,Focused,p1,,,
+ActorCritic,pro17_ace_p1,0.8,0.001,0.9,1.0,0.8181818181818182,"[None, None, None]",0.0,0.0,Focused,p1,,,
+ActorCritic,pro22_ade_p1,0.8,0.1,0.05,1.0,1.0,"[None, None, None]",0.0,0.0,Focused,p1,,,
+ActorCritic,pro23_acf_p1,0.8,0.0001,0.2,1.0,0.7272727272727273,"[None, None, None]",0.0,0.0,Focused,p1,,,
+ActorCritic,pro31_adf_p1,0.8,0.0001,0.8,1.0,0.7272727272727273,"[None, None, None]",0.0,0.0,Focused,p1,,,
+ActorCritic,pro3_ace_p1,0.8,0.1,0.8,1.0,0.5714285714285714,"[None, None, None]",0.0,0.0,Focused,p1,,,
+ActorCritic,pro21_ade_p1,0.8,0.0001,0.8,1.0,0.9444444444444444,"[None, None, None]",0.0,0.0,Focused,p1,,,
+ActorCritic,pro9_acf_p1,0.8,0.001,0.99,1.0,0.5,"[None, None, None]",0.0,0.0,Focused,p1,,,
+ActorCritic,stu11_adf_p1,0.8,0.001,0.1,1.0,0.6,"[None, None, None]",0.0,0.0,Focused,p1,,,
+ActorCritic,stu17_ace_p1,0.8,0.0001,0.5,1.0,1.0,"[None, None, None]",0.0,0.0,Focused,p1,,,
+ActorCritic,pro5_adf_p1,0.8,0.001,0.5,1.0,0.7142857142857143,"[None, None, None]",0.0,0.0,Focused,p1,,,
+ActorCritic,pro29_ace_p1,0.8,0.0001,0.5,1.0,0.8,"[None, None, None]",0.0,0.0,Focused,p1,,,
+ActorCritic,stu13_acf_p1,0.8,0.0001,0.5,1.0,0.75,"[None, None, None]",0.0,0.0,Focused,p1,,,
+ActorCritic,stu21_ace_p1,0.8,0.0001,0.05,1.0,0.4,"[None, None, None]",0.0,0.0,Focused,p1,,,
+ActorCritic,stu15_ade_p1,0.8,0.001,0.5,1.0,1.0,"[None, None, None]",0.0,0.0,Focused,p1,,,
+ActorCritic,stu24_ace_p1,0.8,0.001,0.05,1.0,1.0,"[None, None, None]",0.0,0.0,Focused,p1,,,
+ActorCritic,stu30_adf_p1,0.8,0.001,0.2,1.0,1.0,"[None, None, None]",0.0,0.0,Focused,p1,,,
+ActorCritic,stu29_ade_p1,0.8,0.0001,0.05,1.0,1.0,"[None, None, None]",0.0,0.0,Focused,p1,,,
+ActorCritic,stu10_acf_p1,0.8,0.001,0.5,1.0,0.3333333333333333,"[None, None, None]",0.0,0.0,Focused,p1,,,
+ActorCritic,stu36_adf_p1,0.8,0.0001,0.05,1.0,1.0,"[None, None, None]",0.0,0.0,Focused,p1,,,
+ActorCritic,stu3_acf_p1,0.8,0.0001,0.99,1.0,1.0,"[None, None, None]",0.0,0.0,Focused,p1,,,
+ActorCritic,stu37_adf_p1,0.8,0.0001,0.1,1.0,1.0,"[None, None, None]",0.0,0.0,Focused,p1,,,
+ActorCritic,stu26_ace_p1,0.8,0.1,0.1,1.0,0.8,"[None, None, None]",0.0,0.0,Focused,p1,,,
+ActorCritic,stu39_adf_p1,0.8,0.0001,0.5,1.0,0.6,"[None, None, None]",0.0,0.0,Focused,p1,,,
+ActorCritic,stu25_ace_p1,0.8,0.0001,0.05,1.0,0.9090909090909092,"[None, None, None]",0.0,0.0,Focused,p1,,,
+ActorCritic,pro8_acf_p1,0.8,0.0001,0.9,1.0,0.6086956521739131,"[None, None, None]",0.0,0.0,Focused,p1,,,
+ActorCritic,stu6_acf_p1,0.8,0.1,0.05,1.0,0.8333333333333334,"[None, None, None]",0.0,0.0,Focused,p1,,,
+ActorCritic,stu31_ade_p1,0.8,0.0001,0.8,1.0,0.7,"[None, None, None]",0.0,0.0,Focused,p1,,,
+ActorCritic,stu4_ade_p1,0.8,0.0001,0.1,1.0,0.7142857142857143,"[None, None, None]",0.0,0.0,Focused,p1,,,
+ActorCritic,stu38_acf_p1,0.8,0.1,0.1,1.0,0.5384615384615384,"[None, None, None]",0.0,0.0,Focused,p1,,,
+ActorCritic,stu7_ade_p1,0.8,0.0001,0.1,1.0,0.4347826086956521,"[None, None, None]",0.0,0.0,Focused,p1,,,
+Bayesian,pro13_ace_p1,0.8,,,,1.0,,,,Focused,p1,"defaultdict(None, {'same': (5, 1.0)})","['same', 'same', 'same', 'same', 'same']","['same', 'same', 'same', 'same', 'same']"
+Bayesian,pro15_ade_p1,0.8,,,,0.4,,,,Focused,p1,"defaultdict(None, {'modify-1': (2, 0.0), 'same': (3, 0.6666666666666666)})","['modify-3', 'same', 'same', 'modify-2', 'same']","['modify-1', 'same', 'modify-1', 'same', 'same']"
+Bayesian,pro17_ace_p1,0.8,,,,0.6363636363636364,,,,Focused,p1,"defaultdict(None, {'same': (9, 0.7777777777777778), 'modify-1': (2, 0.0)})","['modify-3', 'same', 'modify-1', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same']","['same', 'modify-1', 'same', 'modify-1', 'same', 'same', 'same', 'same', 'same', 'same', 'same']"
+Bayesian,pro18_adf_p1,0.8,,,,0.4,,,,Focused,p1,"defaultdict(None, {'modify-1': (4, 0.25), 'modify-2': (2, 0.0), 'same': (4, 0.75)})","['same', 'modify-1', 'modify-1', 'same', 'modify-2', 'same', 'same', 'same', 'modify-3', 'same']","['modify-1', 'modify-1', 'modify-2', 'modify-2', 'same', 'same', 'same', 'modify-1', 'modify-1', 'same']"
+Bayesian,pro20_ade_p1,0.8,,,,0.625,,,,Focused,p1,"defaultdict(None, {'same': (6, 0.8333333333333334), 'modify-1': (2, 0.0)})","['same', 'same', 'same', 'same', 'same', 'modify-2', 'same', 'same']","['same', 'same', 'same', 'same', 'modify-1', 'same', 'modify-1', 'same']"
+Bayesian,pro21_ade_p1,0.8,,,,0.8333333333333334,,,,Focused,p1,"defaultdict(None, {'same': (17, 0.8823529411764706), 'modify-1': (1, 0.0)})","['same', 'same', 'same', 'modify-2', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'modify-3', 'same', 'same', 'same', 'same', 'same', 'same']","['same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'modify-1', 'same', 'same', 'same', 'same', 'same', 'same', 'same']"
+Bayesian,pro22_ade_p1,0.8,,,,0.8571428571428571,,,,Focused,p1,"defaultdict(None, {'same': (14, 0.8571428571428571)})","['same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'modify-1', 'same', 'modify-1', 'same']","['same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same']"
+Bayesian,pro23_acf_p1,0.8,,,,0.4545454545454545,,,,Focused,p1,"defaultdict(None, {'same': (8, 0.625), 'modify-2': (3, 0.0)})","['modify-2', 'same', 'same', 'same', 'modify-3', 'same', 'same', 'modify-2', 'same', 'same', 'modify-2']","['same', 'same', 'same', 'modify-2', 'modify-2', 'same', 'same', 'same', 'same', 'modify-2', 'same']"
+Bayesian,pro24_adf_p1,0.8,,,,0.7142857142857143,,,,Focused,p1,"defaultdict(None, {'modify-2': (2, 0.5), 'same': (5, 0.8)})","['modify-1', 'modify-2', 'same', 'same', 'same', 'modify-1', 'same']","['modify-2', 'modify-2', 'same', 'same', 'same', 'same', 'same']"
+Bayesian,pro25_acf_p1,0.8,,,,1.0,,,,Focused,p1,"defaultdict(None, {'same': (2, 1.0)})","['same', 'same']","['same', 'same']"
+Bayesian,pro29_ace_p1,0.8,,,,0.8,,,,Focused,p1,"defaultdict(None, {'same': (16, 1.0), 'modify-1': (4, 0.0)})","['same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same']","['same', 'modify-1', 'same', 'modify-1', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'modify-1', 'same', 'same', 'modify-1', 'same', 'same']"
+Bayesian,pro31_adf_p1,0.8,,,,0.7272727272727273,,,,Focused,p1,"defaultdict(None, {'same': (8, 0.875), 'modify-1': (3, 0.3333333333333333)})","['same', 'same', 'same', 'modify-1', 'same', 'same', 'same', 'same', 'modify-3', 'same', 'same']","['same', 'same', 'modify-1', 'modify-1', 'same', 'same', 'same', 'modify-1', 'same', 'same', 'same']"
+Bayesian,pro3_ace_p1,0.8,,,,0.4285714285714285,,,,Focused,p1,"defaultdict(None, {'same': (4, 0.5), 'modify-1': (3, 0.3333333333333333)})","['modify-1', 'modify-1', 'modify-2', 'same', 'modify-2', 'same', 'same']","['same', 'modify-1', 'same', 'modify-1', 'modify-1', 'same', 'same']"
+Bayesian,pro5_adf_p1,0.8,,,,0.4285714285714285,,,,Focused,p1,"defaultdict(None, {'modify-2': (3, 0.0), 'same': (10, 0.6), 'modify-1': (1, 0.0)})","['same', 'same', 'same', 'modify-2', 'modify-2', 'same', 'same', 'same', 'same', 'same', 'modify-2', 'same', 'same', 'modify-1']","['modify-2', 'modify-2', 'modify-2', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'modify-1', 'same']"
+Bayesian,pro8_acf_p1,0.8,,,,0.6086956521739131,,,,Focused,p1,"defaultdict(None, {'modify-2': (3, 0.0), 'same': (14, 0.7857142857142857), 'modify-1': (5, 0.6), 'modify-3': (1, 0.0)})","['same', 'modify-2', 'same', 'modify-2', 'same', 'same', 'same', 'same', 'same', 'modify-1', 'same', 'modify-1', 'modify-2', 'same', 'same', 'modify-1', 'same', 'same', 'same', 'same', 'same', 'same', 'modify-1']","['modify-2', 'same', 'same', 'modify-1', 'modify-2', 'same', 'same', 'modify-1', 'modify-2', 'modify-1', 'same', 'modify-1', 'same', 'same', 'modify-3', 'modify-1', 'same', 'same', 'same', 'same', 'same', 'same', 'same']"
+Bayesian,pro9_acf_p1,0.8,,,,0.5,,,,Focused,p1,"defaultdict(None, {'same': (4, 0.75), 'modify-2': (3, 0.3333333333333333), 'modify-1': (1, 0.0)})","['same', 'same', 'modify-2', 'same', 'same', 'same', 'same', 'modify-2']","['same', 'same', 'modify-2', 'modify-2', 'modify-2', 'same', 'modify-1', 'same']"
+Bayesian,stu10_acf_p1,0.8,,,,0.4166666666666667,,,,Focused,p1,"defaultdict(None, {'modify-1': (5, 0.2), 'modify-2': (3, 0.3333333333333333), 'same': (4, 0.75)})","['modify-3', 'modify-2', 'same', 'modify-1', 'same', 'same', 'modify-2', 'same', 'same', 'modify-2', 'modify-3', 'same']","['modify-1', 'modify-1', 'modify-1', 'modify-1', 'modify-2', 'same', 'same', 'same', 'modify-1', 'modify-2', 'modify-2', 'same']"
+Bayesian,stu11_adf_p1,0.8,,,,0.2,,,,Focused,p1,"defaultdict(None, {'modify-1': (2, 0.0), 'same': (3, 0.3333333333333333)})","['same', 'modify-3', 'same', 'same', 'modify-3']","['modify-1', 'same', 'same', 'modify-1', 'same']"
+Bayesian,stu13_acf_p1,0.8,,,,0.75,,,,Focused,p1,"defaultdict(None, {'same': (3, 1.0), 'modify-2': (1, 0.0)})","['same', 'same', 'same', 'same']","['same', 'same', 'modify-2', 'same']"
+Bayesian,stu15_ade_p1,0.8,,,,0.8571428571428571,,,,Focused,p1,"defaultdict(None, {'same': (7, 0.8571428571428571)})","['modify-1', 'same', 'same', 'same', 'same', 'same', 'same']","['same', 'same', 'same', 'same', 'same', 'same', 'same']"
+Bayesian,stu17_ace_p1,0.8,,,,0.0,,,,Focused,p1,"defaultdict(None, {'modify-1': (1, 0.0), 'same': (1, 0.0)})","['modify-2', 'modify-3']","['modify-1', 'same']"
+Bayesian,stu21_ace_p1,0.8,,,,0.6,,,,Focused,p1,"defaultdict(None, {'modify-1': (1, 0.0), 'same': (4, 0.75)})","['same', 'modify-3', 'same', 'same', 'same']","['modify-1', 'same', 'same', 'same', 'same']"
+Bayesian,stu24_ace_p1,0.8,,,,0.6,,,,Focused,p1,"defaultdict(None, {'same': (5, 0.6)})","['same', 'modify-1', 'modify-1', 'same', 'same']","['same', 'same', 'same', 'same', 'same']"
+Bayesian,stu25_ace_p1,0.8,,,,0.9090909090909092,,,,Focused,p1,"defaultdict(None, {'same': (10, 1.0), 'modify-1': (1, 0.0)})","['same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same']","['same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'modify-1', 'same', 'same']"
+Bayesian,stu26_ace_p1,0.8,,,,0.7,,,,Focused,p1,"defaultdict(None, {'same': (8, 0.875), 'modify-1': (2, 0.0)})","['same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'modify-1', 'same']","['same', 'same', 'same', 'same', 'modify-1', 'modify-1', 'same', 'same', 'same', 'same']"
+Bayesian,stu29_ade_p1,0.8,,,,1.0,,,,Focused,p1,"defaultdict(None, {'same': (4, 1.0)})","['same', 'same', 'same', 'same']","['same', 'same', 'same', 'same']"
+Bayesian,stu30_adf_p1,0.8,,,,1.0,,,,Focused,p1,"defaultdict(None, {'same': (3, 1.0)})","['same', 'same', 'same']","['same', 'same', 'same']"
+Bayesian,stu31_ade_p1,0.8,,,,0.6,,,,Focused,p1,"defaultdict(None, {'same': (7, 0.8571428571428571), 'modify-1': (3, 0.0)})","['modify-2', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same']","['same', 'same', 'same', 'modify-1', 'same', 'same', 'same', 'modify-1', 'modify-1', 'same']"
+Bayesian,stu36_adf_p1,0.8,,,,0.6,,,,Focused,p1,"defaultdict(None, {'same': (5, 0.6)})","['same', 'same', 'modify-1', 'same', 'modify-1']","['same', 'same', 'same', 'same', 'same']"
+Bayesian,stu37_adf_p1,0.8,,,,1.0,,,,Focused,p1,"defaultdict(None, {'same': (6, 1.0)})","['same', 'same', 'same', 'same', 'same', 'same']","['same', 'same', 'same', 'same', 'same', 'same']"
+Bayesian,stu38_acf_p1,0.8,,,,0.5384615384615384,,,,Focused,p1,"defaultdict(None, {'same': (7, 0.8571428571428571), 'modify-2': (3, 0.3333333333333333), 'modify-1': (3, 0.0)})","['same', 'same', 'modify-2', 'same', 'same', 'modify-2', 'modify-2', 'same', 'same', 'same', 'same', 'modify-2', 'same']","['same', 'modify-2', 'modify-2', 'same', 'modify-2', 'same', 'modify-1', 'same', 'same', 'same', 'modify-1', 'modify-1', 'same']"
+Bayesian,stu39_adf_p1,0.8,,,,0.0,,,,Focused,p1,"defaultdict(None, {'modify-1': (1, 0.0), 'same': (2, 0.0), 'modify-2': (2, 0.0)})","['same', 'modify-1', 'same', 'modify-1', 'modify-2']","['modify-1', 'same', 'modify-2', 'modify-2', 'same']"
+Bayesian,stu3_acf_p1,0.8,,,,1.0,,,,Focused,p1,"defaultdict(None, {'same': (2, 1.0)})","['same', 'same']","['same', 'same']"
+Bayesian,stu4_ade_p1,0.8,,,,0.4285714285714285,,,,Focused,p1,"defaultdict(None, {'modify-1': (2, 0.0), 'same': (5, 0.6)})","['same', 'modify-1', 'same', 'same', 'same', 'modify-1', 'same']","['modify-1', 'same', 'same', 'same', 'modify-1', 'same', 'same']"
+Bayesian,stu6_acf_p1,0.8,,,,0.6666666666666666,,,,Focused,p1,"defaultdict(None, {'same': (5, 0.8), 'modify-2': (1, 0.0)})","['same', 'same', 'same', 'same', 'same', 'modify-2']","['same', 'same', 'modify-2', 'same', 'same', 'same']"
+Bayesian,stu7_ade_p1,0.8,,,,0.5217391304347826,,,,Focused,p1,"defaultdict(None, {'same': (9, 0.5555555555555556), 'modify-1': (12, 0.5), 'modify-2': (2, 0.5)})","['same', 'same', 'same', 'same', 'modify-1', 'modify-3', 'same', 'same', 'same', 'modify-1', 'modify-1', 'same', 'same', 'modify-1', 'modify-1', 'modify-1', 'modify-1', 'modify-1', 'modify-1', 'same', 'modify-2', 'modify-1', 'same']","['same', 'same', 'same', 'same', 'modify-1', 'same', 'modify-1', 'modify-1', 'modify-1', 'modify-1', 'same', 'modify-1', 'modify-1', 'modify-1', 'modify-1', 'same', 'modify-2', 'modify-1', 'same', 'modify-1', 'modify-2', 'modify-1', 'same']"
+Greedy,pro13_ace_p1,0.8,0.0,0.0,,1.0,0,0.0,,Focused,p1,,,
+Greedy,pro15_ade_p1,0.8,0.0,0.0,,0.2,0,0.0,,Focused,p1,,,
+Greedy,pro17_ace_p1,0.8,0.0,0.0,,0.6363636363636364,0,0.0,,Focused,p1,,,
+Greedy,pro18_adf_p1,0.8,0.0,0.0,,0.1,0,0.0,,Focused,p1,,,
+Greedy,pro20_ade_p1,0.8,0.0,0.0,,0.75,0,0.0,,Focused,p1,,,
+Greedy,pro21_ade_p1,0.8,0.0,0.0,,0.7222222222222222,0,0.0,,Focused,p1,,,
+Greedy,pro22_ade_p1,0.8,0.0,0.0,,0.9285714285714286,0,0.0,,Focused,p1,,,
+Greedy,pro23_acf_p1,0.8,0.0,0.0,,0.6363636363636364,0,0.0,,Focused,p1,,,
+Greedy,pro24_adf_p1,0.8,0.0,0.0,,0.5714285714285714,0,0.0,,Focused,p1,,,
+Greedy,pro25_acf_p1,0.8,0.0,0.0,,1.0,0,0.0,,Focused,p1,,,
+Greedy,pro29_ace_p1,0.8,0.0,0.0,,0.75,0,0.0,,Focused,p1,,,
+Greedy,pro31_adf_p1,0.8,0.0,0.0,,0.4545454545454545,0,0.0,,Focused,p1,,,
+Greedy,pro3_ace_p1,0.8,0.0,0.0,,0.4285714285714285,0,0.0,,Focused,p1,,,
+Greedy,pro5_adf_p1,0.8,0.0,0.0,,0.3571428571428571,0,0.0,,Focused,p1,,,
+Greedy,pro8_acf_p1,0.8,0.0,0.0,,0.5652173913043478,0,0.0,,Focused,p1,,,
+Greedy,pro9_acf_p1,0.8,0.0,0.0,,0.5,0,0.0,,Focused,p1,,,
+Greedy,stu10_acf_p1,0.8,0.0,0.0,,0.25,0,0.0,,Focused,p1,,,
+Greedy,stu11_adf_p1,0.8,0.0,0.0,,0.2,0,0.0,,Focused,p1,,,
+Greedy,stu13_acf_p1,0.8,0.0,0.0,,0.25,0,0.0,,Focused,p1,,,
+Greedy,stu15_ade_p1,0.8,0.0,0.0,,0.5714285714285714,0,0.0,,Focused,p1,,,
+Greedy,stu17_ace_p1,0.8,0.0,0.0,,0.0,0,0.0,,Focused,p1,,,
+Greedy,stu21_ace_p1,0.8,0.0,0.0,,0.6,0,0.0,,Focused,p1,,,
+Greedy,stu24_ace_p1,0.8,0.0,0.0,,1.0,0,0.0,,Focused,p1,,,
+Greedy,stu25_ace_p1,0.8,0.0,0.0,,0.9090909090909092,0,0.0,,Focused,p1,,,
+Greedy,stu26_ace_p1,0.8,0.0,0.0,,0.8,0,0.0,,Focused,p1,,,
+Greedy,stu29_ade_p1,0.8,0.0,0.0,,1.0,0,0.0,,Focused,p1,,,
+Greedy,stu30_adf_p1,0.8,0.0,0.0,,1.0,0,0.0,,Focused,p1,,,
+Greedy,stu31_ade_p1,0.8,0.0,0.0,,0.7,0,0.0,,Focused,p1,,,
+Greedy,stu36_adf_p1,0.8,0.0,0.0,,1.0,0,0.0,,Focused,p1,,,
+Greedy,stu37_adf_p1,0.8,0.0,0.0,,1.0,0,0.0,,Focused,p1,,,
+Greedy,stu38_acf_p1,0.8,0.0,0.0,,0.3076923076923077,0,0.0,,Focused,p1,,,
+Greedy,stu39_adf_p1,0.8,0.0,0.0,,0.2,0,0.0,,Focused,p1,,,
+Greedy,stu3_acf_p1,0.8,0.0,0.0,,1.0,0,0.0,,Focused,p1,,,
+Greedy,stu4_ade_p1,0.8,0.0,0.0,,0.4285714285714285,0,0.0,,Focused,p1,,,
+Greedy,stu6_acf_p1,0.8,0.0,0.0,,0.8333333333333334,0,0.0,,Focused,p1,,,
+Greedy,stu7_ade_p1,0.8,0.0,0.0,,0.6086956521739131,0,0.0,,Focused,p1,,,
+HMM,pro13_ace_p1,0.8,0.0,0.0,,1.0,,,,Focused,p1,,,
+HMM,pro15_ade_p1,0.8,0.0,0.0,,0.6,,,,Focused,p1,,,
+HMM,pro17_ace_p1,0.8,0.0,0.0,,0.1818181818181818,,,,Focused,p1,,,
+HMM,pro18_adf_p1,0.8,0.0,0.0,,0.5,,,,Focused,p1,,,
+HMM,pro20_ade_p1,0.8,0.0,0.0,,0.75,,,,Focused,p1,,,
+HMM,pro21_ade_p1,0.8,0.0,0.0,,0.4444444444444444,,,,Focused,p1,,,
+HMM,pro22_ade_p1,0.8,0.0,0.0,,1.0,,,,Focused,p1,,,
+HMM,pro23_acf_p1,0.8,0.0,0.0,,0.0,,,,Focused,p1,,,
+HMM,pro24_adf_p1,0.8,0.0,0.0,,0.0,,,,Focused,p1,,,
+HMM,pro25_acf_p1,0.8,0.0,0.0,,1.0,,,,Focused,p1,,,
+HMM,pro29_ace_p1,0.8,0.0,0.0,,0.8,,,,Focused,p1,,,
+HMM,pro31_adf_p1,0.8,0.0,0.0,,0.7272727272727273,,,,Focused,p1,,,
+HMM,pro3_ace_p1,0.8,0.0,0.0,,0.4285714285714285,,,,Focused,p1,,,
+HMM,pro5_adf_p1,0.8,0.0,0.0,,0.0714285714285714,,,,Focused,p1,,,
+HMM,pro8_acf_p1,0.8,0.0,0.0,,0.1739130434782608,,,,Focused,p1,,,
+HMM,pro9_acf_p1,0.8,0.0,0.0,,0.5,,,,Focused,p1,,,
+HMM,stu10_acf_p1,0.8,0.0,0.0,,0.3333333333333333,,,,Focused,p1,,,
+HMM,stu11_adf_p1,0.8,0.0,0.0,,0.6,,,,Focused,p1,,,
+HMM,stu13_acf_p1,0.8,0.0,0.0,,0.0,,,,Focused,p1,,,
+HMM,stu15_ade_p1,0.8,0.0,0.0,,0.5714285714285714,,,,Focused,p1,,,
+HMM,stu17_ace_p1,0.8,0.0,0.0,,0.5,,,,Focused,p1,,,
+HMM,stu21_ace_p1,0.8,0.0,0.0,,0.8,,,,Focused,p1,,,
+HMM,stu24_ace_p1,0.8,0.0,0.0,,1.0,,,,Focused,p1,,,
+HMM,stu25_ace_p1,0.8,0.0,0.0,,0.9090909090909092,,,,Focused,p1,,,
+HMM,stu26_ace_p1,0.8,0.0,0.0,,0.8,,,,Focused,p1,,,
+HMM,stu29_ade_p1,0.8,0.0,0.0,,1.0,,,,Focused,p1,,,
+HMM,stu30_adf_p1,0.8,0.0,0.0,,1.0,,,,Focused,p1,,,
+HMM,stu31_ade_p1,0.8,0.0,0.0,,0.7,,,,Focused,p1,,,
+HMM,stu36_adf_p1,0.8,0.0,0.0,,0.0,,,,Focused,p1,,,
+HMM,stu37_adf_p1,0.8,0.0,0.0,,0.0,,,,Focused,p1,,,
+HMM,stu38_acf_p1,0.8,0.0,0.0,,0.3846153846153846,,,,Focused,p1,,,
+HMM,stu39_adf_p1,0.8,0.0,0.0,,0.2,,,,Focused,p1,,,
+HMM,stu3_acf_p1,0.8,0.0,0.0,,1.0,,,,Focused,p1,,,
+HMM,stu4_ade_p1,0.8,0.0,0.0,,0.1428571428571428,,,,Focused,p1,,,
+HMM,stu6_acf_p1,0.8,0.0,0.0,,0.5,,,,Focused,p1,,,
+HMM,stu7_ade_p1,0.8,0.0,0.0,,0.391304347826087,,,,Focused,p1,,,
+Momentum,pro13_ace_p1,0.8,0.0,0.0,,1.0,"[0, 0, 0]",,,Focused,p1,,,
+Momentum,pro15_ade_p1,0.8,0.0,0.0,,0.0,"[0, 0, 0]",,,Focused,p1,,,
+Momentum,pro17_ace_p1,0.8,0.0,0.0,,0.0909090909090909,"[0, 0, 0]",,,Focused,p1,,,
+Momentum,pro18_adf_p1,0.8,0.0,0.0,,0.2,"[0, 0, 0]",,,Focused,p1,,,
+Momentum,pro20_ade_p1,0.8,0.0,0.0,,0.625,"[0, 0, 0]",,,Focused,p1,,,
+Momentum,pro21_ade_p1,0.8,0.0,0.0,,0.5555555555555556,"[0, 0, 0]",,,Focused,p1,,,
+Momentum,pro22_ade_p1,0.8,0.0,0.0,,0.0,"[0, 0, 0]",,,Focused,p1,,,
+Momentum,pro23_acf_p1,0.8,0.0,0.0,,0.6363636363636364,"[0, 0, 0]",,,Focused,p1,,,
+Momentum,pro24_adf_p1,0.8,0.0,0.0,,0.0,"[0, 0, 0]",,,Focused,p1,,,
+Momentum,pro25_acf_p1,0.8,0.0,0.0,,1.0,"[0, 0, 0]",,,Focused,p1,,,
+Momentum,pro29_ace_p1,0.8,0.0,0.0,,0.2,"[0, 0, 0]",,,Focused,p1,,,
+Momentum,pro31_adf_p1,0.8,0.0,0.0,,0.5454545454545454,"[0, 0, 0]",,,Focused,p1,,,
+Momentum,pro3_ace_p1,0.8,0.0,0.0,,0.2857142857142857,"[0, 0, 0]",,,Focused,p1,,,
+Momentum,pro5_adf_p1,0.8,0.0,0.0,,0.6428571428571429,"[0, 0, 0]",,,Focused,p1,,,
+Momentum,pro8_acf_p1,0.8,0.0,0.0,,0.2608695652173913,"[0, 0, 0]",,,Focused,p1,,,
+Momentum,pro9_acf_p1,0.8,0.0,0.0,,0.375,"[0, 0, 0]",,,Focused,p1,,,
+Momentum,stu10_acf_p1,0.8,0.0,0.0,,0.25,"[0, 0, 0]",,,Focused,p1,,,
+Momentum,stu11_adf_p1,0.8,0.0,0.0,,0.4,"[0, 0, 0]",,,Focused,p1,,,
+Momentum,stu13_acf_p1,0.8,0.0,0.0,,0.5,"[0, 0, 0]",,,Focused,p1,,,
+Momentum,stu15_ade_p1,0.8,0.0,0.0,,0.0,"[0, 0, 0]",,,Focused,p1,,,
+Momentum,stu17_ace_p1,0.8,0.0,0.0,,0.0,"[0, 0, 0]",,,Focused,p1,,,
+Momentum,stu21_ace_p1,0.8,0.0,0.0,,0.0,"[0, 0, 0]",,,Focused,p1,,,
+Momentum,stu24_ace_p1,0.8,0.0,0.0,,1.0,"[0, 0, 0]",,,Focused,p1,,,
+Momentum,stu25_ace_p1,0.8,0.0,0.0,,0.7272727272727273,"[0, 0, 0]",,,Focused,p1,,,
+Momentum,stu26_ace_p1,0.8,0.0,0.0,,0.5,"[0, 0, 0]",,,Focused,p1,,,
+Momentum,stu29_ade_p1,0.8,0.0,0.0,,1.0,"[0, 0, 0]",,,Focused,p1,,,
+Momentum,stu30_adf_p1,0.8,0.0,0.0,,1.0,"[0, 0, 0]",,,Focused,p1,,,
+Momentum,stu31_ade_p1,0.8,0.0,0.0,,0.3,"[0, 0, 0]",,,Focused,p1,,,
+Momentum,stu36_adf_p1,0.8,0.0,0.0,,1.0,"[0, 0, 0]",,,Focused,p1,,,
+Momentum,stu37_adf_p1,0.8,0.0,0.0,,1.0,"[0, 0, 0]",,,Focused,p1,,,
+Momentum,stu38_acf_p1,0.8,0.0,0.0,,0.2307692307692307,"[0, 0, 0]",,,Focused,p1,,,
+Momentum,stu39_adf_p1,0.8,0.0,0.0,,0.0,"[0, 0, 0]",,,Focused,p1,,,
+Momentum,stu3_acf_p1,0.8,0.0,0.0,,1.0,"[0, 0, 0]",,,Focused,p1,,,
+Momentum,stu4_ade_p1,0.8,0.0,0.0,,0.0,"[0, 0, 0]",,,Focused,p1,,,
+Momentum,stu6_acf_p1,0.8,0.0,0.0,,0.3333333333333333,"[0, 0, 0]",,,Focused,p1,,,
+Momentum,stu7_ade_p1,0.8,0.0,0.0,,0.5217391304347826,"[0, 0, 0]",,,Focused,p1,,,
+OfflineSVM-Individual-Model,stu7_ade_p1_logs.csv,0.8,,,,0.5217391304347826,,,,Focused,p1,"defaultdict(None, {'same': (9, 0.0), 'modify-1': (12, 1.0), 'modify-2': (2, 0.0)})","['modify-1', 'modify-1', 'modify-1', 'modify-1', 'modify-1', 'modify-1', 'modify-1', 'modify-1', 'modify-1', 'modify-1', 'modify-1', 'modify-1', 'modify-1', 'modify-1', 'modify-1', 'modify-1', 'modify-1', 'modify-1', 'modify-1', 'modify-1', 'modify-1', 'modify-1', 'modify-1']","['same', 'same', 'same', 'same', 'modify-1', 'same', 'modify-1', 'modify-1', 'modify-1', 'modify-1', 'same', 'modify-1', 'modify-1', 'modify-1', 'modify-1', 'same', 'modify-2', 'modify-1', 'same', 'modify-1', 'modify-2', 'modify-1', 'same']"
+OfflineSVM-Individual-Model,pro5_adf_p1_logs.csv,0.8,,,,0.7142857142857143,,,,Focused,p1,"defaultdict(None, {'modify-2': (3, 0.0), 'same': (10, 1.0), 'modify-1': (1, 0.0)})","['same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same']","['modify-2', 'modify-2', 'modify-2', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'modify-1', 'same']"
+OfflineSVM-Individual-Model,stu30_adf_p1_logs.csv,0.8,,,,1.0,,,,Focused,p1,"defaultdict(None, {'same': (3, 1.0)})","['same', 'same', 'same']","['same', 'same', 'same']"
+OfflineSVM-Individual-Model,stu38_acf_p1_logs.csv,0.8,,,,0.3076923076923077,,,,Focused,p1,"defaultdict(None, {'same': (7, 0.5714285714285714), 'modify-2': (3, 0.0), 'modify-1': (3, 0.0)})","['same', 'same', 'same', 'same', 'same', 'same', 'same', 'modify-3', 'modify-3', 'modify-3', 'modify-3', 'same', 'same']","['same', 'modify-2', 'modify-2', 'same', 'modify-2', 'same', 'modify-1', 'same', 'same', 'same', 'modify-1', 'modify-1', 'same']"
+OfflineSVM-Individual-Model,stu10_acf_p1_logs.csv,0.8,,,,0.1666666666666666,,,,Focused,p1,"defaultdict(None, {'modify-1': (5, 0.2), 'modify-2': (3, 0.0), 'same': (4, 0.25)})","['same', 'same', 'same', 'same', 'same', 'modify-1', 'modify-1', 'modify-1', 'modify-1', 'modify-1', 'same', 'same']","['modify-1', 'modify-1', 'modify-1', 'modify-1', 'modify-2', 'same', 'same', 'same', 'modify-1', 'modify-2', 'modify-2', 'same']"
+OfflineSVM-Individual-Model,stu39_adf_p1_logs.csv,0.8,,,,0.0,,,,Focused,p1,"defaultdict(None, {'modify-1': (1, 0.0), 'same': (2, 0.0), 'modify-2': (2, 0.0)})","['same', 'modify-1', 'modify-1', 'modify-1', 'modify-1']","['modify-1', 'same', 'modify-2', 'modify-2', 'same']"
+OfflineSVM-Individual-Model,stu21_ace_p1_logs.csv,0.8,,,,1.0,,,,Focused,p1,"defaultdict(None, {'modify-1': (1, 1.0), 'same': (4, 1.0)})","['modify-1', 'same', 'same', 'same', 'same']","['modify-1', 'same', 'same', 'same', 'same']"
+OfflineSVM-Individual-Model,pro3_ace_p1_logs.csv,0.8,,,,0.4285714285714285,,,,Focused,p1,"defaultdict(None, {'same': (4, 0.0), 'modify-1': (3, 1.0)})","['modify-1', 'modify-1', 'modify-1', 'modify-1', 'modify-1', 'modify-1', 'modify-1']","['same', 'modify-1', 'same', 'modify-1', 'modify-1', 'same', 'same']"
+OfflineSVM-Individual-Model,pro24_adf_p1_logs.csv,0.8,,,,0.7142857142857143,,,,Focused,p1,"defaultdict(None, {'modify-2': (2, 0.0), 'same': (5, 1.0)})","['same', 'modify-1', 'same', 'same', 'same', 'same', 'same']","['modify-2', 'modify-2', 'same', 'same', 'same', 'same', 'same']"
+OfflineSVM-Individual-Model,stu11_adf_p1_logs.csv,0.8,,,,0.6,,,,Focused,p1,"defaultdict(None, {'modify-1': (2, 0.0), 'same': (3, 1.0)})","['same', 'same', 'same', 'same', 'same']","['modify-1', 'same', 'same', 'modify-1', 'same']"
+OfflineSVM-Individual-Model,pro25_acf_p1_logs.csv,0.8,,,,1.0,,,,Focused,p1,"defaultdict(None, {'same': (2, 1.0)})","['same', 'same']","['same', 'same']"
+OfflineSVM-Individual-Model,stu6_acf_p1_logs.csv,0.8,,,,0.8333333333333334,,,,Focused,p1,"defaultdict(None, {'same': (5, 1.0), 'modify-2': (1, 0.0)})","['same', 'same', 'same', 'same', 'same', 'same']","['same', 'same', 'modify-2', 'same', 'same', 'same']"
+OfflineSVM-Individual-Model,pro13_ace_p1_logs.csv,0.8,,,,1.0,,,,Focused,p1,"defaultdict(None, {'same': (5, 1.0)})","['same', 'same', 'same', 'same', 'same']","['same', 'same', 'same', 'same', 'same']"
+OfflineSVM-Individual-Model,pro20_ade_p1_logs.csv,0.8,,,,0.75,,,,Focused,p1,"defaultdict(None, {'same': (6, 1.0), 'modify-1': (2, 0.0)})","['same', 'same', 'same', 'same', 'same', 'same', 'same', 'same']","['same', 'same', 'same', 'same', 'modify-1', 'same', 'modify-1', 'same']"
+OfflineSVM-Individual-Model,stu37_adf_p1_logs.csv,0.8,,,,1.0,,,,Focused,p1,"defaultdict(None, {'same': (6, 1.0)})","['same', 'same', 'same', 'same', 'same', 'same']","['same', 'same', 'same', 'same', 'same', 'same']"
+OfflineSVM-Individual-Model,pro9_acf_p1_logs.csv,0.8,,,,0.375,,,,Focused,p1,"defaultdict(None, {'same': (4, 0.75), 'modify-2': (3, 0.0), 'modify-1': (1, 0.0)})","['same', 'same', 'same', 'same', 'same', 'same', 'same', 'modify-1']","['same', 'same', 'modify-2', 'modify-2', 'modify-2', 'same', 'modify-1', 'same']"
+OfflineSVM-Individual-Model,stu15_ade_p1_logs.csv,0.8,,,,0.0,,,,Focused,p1,"defaultdict(None, {'same': (7, 0.0)})","['modify-1', 'modify-1', 'modify-1', 'modify-1', 'modify-1', 'modify-1', 'modify-1']","['same', 'same', 'same', 'same', 'same', 'same', 'same']"
+OfflineSVM-Individual-Model,pro21_ade_p1_logs.csv,0.8,,,,0.9444444444444444,,,,Focused,p1,"defaultdict(None, {'same': (17, 1.0), 'modify-1': (1, 0.0)})","['same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same']","['same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'modify-1', 'same', 'same', 'same', 'same', 'same', 'same', 'same']"
+OfflineSVM-Individual-Model,pro31_adf_p1_logs.csv,0.8,,,,0.7272727272727273,,,,Focused,p1,"defaultdict(None, {'same': (8, 1.0), 'modify-1': (3, 0.0)})","['same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same']","['same', 'same', 'modify-1', 'modify-1', 'same', 'same', 'same', 'modify-1', 'same', 'same', 'same']"
+OfflineSVM-Individual-Model,pro15_ade_p1_logs.csv,0.8,,,,0.6,,,,Focused,p1,"defaultdict(None, {'modify-1': (2, 0.0), 'same': (3, 1.0)})","['same', 'same', 'same', 'same', 'same']","['modify-1', 'same', 'modify-1', 'same', 'same']"
+OfflineSVM-Individual-Model,stu26_ace_p1_logs.csv,0.8,,,,0.2,,,,Focused,p1,"defaultdict(None, {'same': (8, 0.0), 'modify-1': (2, 1.0)})","['modify-1', 'modify-1', 'modify-1', 'modify-1', 'modify-1', 'modify-1', 'modify-1', 'modify-1', 'modify-1', 'modify-1']","['same', 'same', 'same', 'same', 'modify-1', 'modify-1', 'same', 'same', 'same', 'same']"
+OfflineSVM-Individual-Model,pro17_ace_p1_logs.csv,0.8,,,,0.0,,,,Focused,p1,"defaultdict(None, {'same': (9, 0.0), 'modify-1': (2, 0.0)})","['modify-2', 'modify-2', 'modify-2', 'modify-2', 'modify-2', 'modify-2', 'modify-2', 'modify-2', 'modify-2', 'modify-2', 'modify-2']","['same', 'modify-1', 'same', 'modify-1', 'same', 'same', 'same', 'same', 'same', 'same', 'same']"
+OfflineSVM-Individual-Model,stu4_ade_p1_logs.csv,0.8,,,,0.4285714285714285,,,,Focused,p1,"defaultdict(None, {'modify-1': (2, 0.5), 'same': (5, 0.4)})","['same', 'modify-1', 'modify-1', 'modify-1', 'modify-1', 'same', 'same']","['modify-1', 'same', 'same', 'same', 'modify-1', 'same', 'same']"
+OfflineSVM-Individual-Model,pro18_adf_p1_logs.csv,0.8,,,,0.2,,,,Focused,p1,"defaultdict(None, {'modify-1': (4, 0.5), 'modify-2': (2, 0.0), 'same': (4, 0.0)})","['same', 'same', 'modify-1', 'modify-1', 'modify-1', 'modify-1', 'modify-1', 'modify-1', 'modify-1', 'modify-1']","['modify-1', 'modify-1', 'modify-2', 'modify-2', 'same', 'same', 'same', 'modify-1', 'modify-1', 'same']"
+OfflineSVM-Individual-Model,stu3_acf_p1_logs.csv,0.8,,,,1.0,,,,Focused,p1,"defaultdict(None, {'same': (2, 1.0)})","['same', 'same']","['same', 'same']"
+OfflineSVM-Individual-Model,stu25_ace_p1_logs.csv,0.8,,,,0.9090909090909092,,,,Focused,p1,"defaultdict(None, {'same': (10, 1.0), 'modify-1': (1, 0.0)})","['same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same']","['same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'modify-1', 'same', 'same']"
+OfflineSVM-Individual-Model,stu31_ade_p1_logs.csv,0.8,,,,0.7,,,,Focused,p1,"defaultdict(None, {'same': (7, 1.0), 'modify-1': (3, 0.0)})","['same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same']","['same', 'same', 'same', 'modify-1', 'same', 'same', 'same', 'modify-1', 'modify-1', 'same']"
+OfflineSVM-Individual-Model,pro29_ace_p1_logs.csv,0.8,,,,0.2,,,,Focused,p1,"defaultdict(None, {'same': (16, 0.0), 'modify-1': (4, 1.0)})","['modify-1', 'modify-1', 'modify-1', 'modify-1', 'modify-1', 'modify-1', 'modify-1', 'modify-1', 'modify-1', 'modify-1', 'modify-1', 'modify-1', 'modify-1', 'modify-1', 'modify-1', 'modify-1', 'modify-1', 'modify-1', 'modify-1', 'modify-1']","['same', 'modify-1', 'same', 'modify-1', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'modify-1', 'same', 'same', 'modify-1', 'same', 'same']"
+OfflineSVM-Individual-Model,stu24_ace_p1_logs.csv,0.8,,,,1.0,,,,Focused,p1,"defaultdict(None, {'same': (5, 1.0)})","['same', 'same', 'same', 'same', 'same']","['same', 'same', 'same', 'same', 'same']"
+OfflineSVM-Individual-Model,stu13_acf_p1_logs.csv,0.8,,,,0.0,,,,Focused,p1,"defaultdict(None, {'same': (3, 0.0), 'modify-2': (1, 0.0)})","['modify-1', 'modify-1', 'modify-1', 'modify-1']","['same', 'same', 'modify-2', 'same']"
+OfflineSVM-Individual-Model,stu29_ade_p1_logs.csv,0.8,,,,1.0,,,,Focused,p1,"defaultdict(None, {'same': (4, 1.0)})","['same', 'same', 'same', 'same']","['same', 'same', 'same', 'same']"
+OfflineSVM-Individual-Model,pro22_ade_p1_logs.csv,0.8,,,,1.0,,,,Focused,p1,"defaultdict(None, {'same': (14, 1.0)})","['same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same']","['same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same']"
+OfflineSVM-Individual-Model,stu17_ace_p1_logs.csv,0.8,,,,0.5,,,,Focused,p1,"defaultdict(None, {'modify-1': (1, 0.0), 'same': (1, 1.0)})","['same', 'same']","['modify-1', 'same']"
+OfflineSVM-Individual-Model,pro23_acf_p1_logs.csv,0.8,,,,0.7272727272727273,,,,Focused,p1,"defaultdict(None, {'same': (8, 1.0), 'modify-2': (3, 0.0)})","['same', 'same', 'same', 'same', 'modify-1', 'same', 'same', 'same', 'same', 'same', 'same']","['same', 'same', 'same', 'modify-2', 'modify-2', 'same', 'same', 'same', 'same', 'modify-2', 'same']"
+OfflineSVM-Individual-Model,pro8_acf_p1_logs.csv,0.8,,,,0.6086956521739131,,,,Focused,p1,"defaultdict(None, {'modify-2': (3, 0.0), 'same': (14, 1.0), 'modify-1': (5, 0.0), 'modify-3': (1, 0.0)})","['same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same']","['modify-2', 'same', 'same', 'modify-1', 'modify-2', 'same', 'same', 'modify-1', 'modify-2', 'modify-1', 'same', 'modify-1', 'same', 'same', 'modify-3', 'modify-1', 'same', 'same', 'same', 'same', 'same', 'same', 'same']"
+OfflineSVM-Individual-Model,stu36_adf_p1_logs.csv,0.8,,,,1.0,,,,Focused,p1,"defaultdict(None, {'same': (5, 1.0)})","['same', 'same', 'same', 'same', 'same']","['same', 'same', 'same', 'same', 'same']"
+OnlineSVM-Individual-Model,stu7_ade_p1_logs.csv,0.8,,,,0.4782608695652174,,,,Focused,p1,"defaultdict(None, {'same': (9, 0.4444444444444444), 'modify-1': (12, 0.5833333333333334), 'modify-2': (2, 0.0)})","['same', 'same', 'same', 'same', 'same', 'modify-1', 'same', 'modify-1', 'modify-1', 'modify-1', 'modify-1', 'same', 'modify-1', 'modify-1', 'modify-1', 'modify-1', 'same', 'modify-2', 'modify-1', 'same', 'modify-1', 'modify-1', 'modify-1']","['same', 'same', 'same', 'same', 'modify-1', 'same', 'modify-1', 'modify-1', 'modify-1', 'modify-1', 'same', 'modify-1', 'modify-1', 'modify-1', 'modify-1', 'same', 'modify-2', 'modify-1', 'same', 'modify-1', 'modify-2', 'modify-1', 'same']"
+OnlineSVM-Individual-Model,pro5_adf_p1_logs.csv,0.8,,,,0.7142857142857143,,,,Focused,p1,"defaultdict(None, {'modify-2': (3, 0.6666666666666666), 'same': (10, 0.8), 'modify-1': (1, 0.0)})","['same', 'modify-2', 'modify-2', 'modify-2', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'modify-1']","['modify-2', 'modify-2', 'modify-2', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'modify-1', 'same']"
+OnlineSVM-Individual-Model,stu30_adf_p1_logs.csv,0.8,,,,1.0,,,,Focused,p1,"defaultdict(None, {'same': (3, 1.0)})","['same', 'same', 'same']","['same', 'same', 'same']"
+OnlineSVM-Individual-Model,stu38_acf_p1_logs.csv,0.8,,,,0.3846153846153846,,,,Focused,p1,"defaultdict(None, {'same': (7, 0.42857142857142855), 'modify-2': (3, 0.3333333333333333), 'modify-1': (3, 0.3333333333333333)})","['same', 'same', 'modify-2', 'modify-2', 'same', 'modify-2', 'same', 'modify-1', 'same', 'same', 'same', 'modify-1', 'modify-1']","['same', 'modify-2', 'modify-2', 'same', 'modify-2', 'same', 'modify-1', 'same', 'same', 'same', 'modify-1', 'modify-1', 'same']"
+OnlineSVM-Individual-Model,stu10_acf_p1_logs.csv,0.8,,,,0.5,,,,Focused,p1,"defaultdict(None, {'modify-1': (5, 0.6), 'modify-2': (3, 0.3333333333333333), 'same': (4, 0.5)})","['modify-2', 'modify-1', 'modify-1', 'modify-1', 'modify-1', 'modify-2', 'same', 'same', 'same', 'modify-1', 'modify-2', 'modify-2']","['modify-1', 'modify-1', 'modify-1', 'modify-1', 'modify-2', 'same', 'same', 'same', 'modify-1', 'modify-2', 'modify-2', 'same']"
+OnlineSVM-Individual-Model,stu39_adf_p1_logs.csv,0.8,,,,0.0,,,,Focused,p1,"defaultdict(None, {'modify-1': (1, 0.0), 'same': (2, 0.0), 'modify-2': (2, 0.0)})","['same', 'modify-1', 'modify-1', 'same', 'modify-2']","['modify-1', 'same', 'modify-2', 'modify-2', 'same']"
+OnlineSVM-Individual-Model,stu21_ace_p1_logs.csv,0.8,,,,1.0,,,,Focused,p1,"defaultdict(None, {'modify-1': (1, 1.0), 'same': (4, 1.0)})","['modify-1', 'same', 'same', 'same', 'same']","['modify-1', 'same', 'same', 'same', 'same']"
+OnlineSVM-Individual-Model,pro3_ace_p1_logs.csv,0.8,,,,0.2857142857142857,,,,Focused,p1,"defaultdict(None, {'same': (4, 0.25), 'modify-1': (3, 0.3333333333333333)})","['modify-1', 'same', 'modify-1', 'same', 'modify-1', 'modify-1', 'same']","['same', 'modify-1', 'same', 'modify-1', 'modify-1', 'same', 'same']"
+OnlineSVM-Individual-Model,pro24_adf_p1_logs.csv,0.8,,,,0.7142857142857143,,,,Focused,p1,"defaultdict(None, {'modify-2': (2, 0.5), 'same': (5, 0.8)})","['modify-1', 'modify-2', 'modify-2', 'same', 'same', 'same', 'same']","['modify-2', 'modify-2', 'same', 'same', 'same', 'same', 'same']"
+OnlineSVM-Individual-Model,stu11_adf_p1_logs.csv,0.8,,,,0.2,,,,Focused,p1,"defaultdict(None, {'modify-1': (2, 0.0), 'same': (3, 0.3333333333333333)})","['same', 'modify-1', 'same', 'same', 'modify-1']","['modify-1', 'same', 'same', 'modify-1', 'same']"
+OnlineSVM-Individual-Model,pro25_acf_p1_logs.csv,0.8,,,,1.0,,,,Focused,p1,"defaultdict(None, {'same': (2, 1.0)})","['same', 'same']","['same', 'same']"
+OnlineSVM-Individual-Model,stu6_acf_p1_logs.csv,0.8,,,,0.6666666666666666,,,,Focused,p1,"defaultdict(None, {'same': (5, 0.8), 'modify-2': (1, 0.0)})","['same', 'same', 'same', 'modify-2', 'same', 'same']","['same', 'same', 'modify-2', 'same', 'same', 'same']"
+OnlineSVM-Individual-Model,pro13_ace_p1_logs.csv,0.8,,,,1.0,,,,Focused,p1,"defaultdict(None, {'same': (5, 1.0)})","['same', 'same', 'same', 'same', 'same']","['same', 'same', 'same', 'same', 'same']"
+OnlineSVM-Individual-Model,pro20_ade_p1_logs.csv,0.8,,,,0.5,,,,Focused,p1,"defaultdict(None, {'same': (6, 0.6666666666666666), 'modify-1': (2, 0.0)})","['same', 'same', 'same', 'same', 'same', 'modify-1', 'same', 'modify-1']","['same', 'same', 'same', 'same', 'modify-1', 'same', 'modify-1', 'same']"
+OnlineSVM-Individual-Model,stu37_adf_p1_logs.csv,0.8,,,,1.0,,,,Focused,p1,"defaultdict(None, {'same': (6, 1.0)})","['same', 'same', 'same', 'same', 'same', 'same']","['same', 'same', 'same', 'same', 'same', 'same']"
+OnlineSVM-Individual-Model,pro9_acf_p1_logs.csv,0.8,,,,0.5,,,,Focused,p1,"defaultdict(None, {'same': (4, 0.5), 'modify-2': (3, 0.6666666666666666), 'modify-1': (1, 0.0)})","['same', 'same', 'same', 'modify-2', 'modify-2', 'modify-2', 'same', 'modify-1']","['same', 'same', 'modify-2', 'modify-2', 'modify-2', 'same', 'modify-1', 'same']"
+OnlineSVM-Individual-Model,stu15_ade_p1_logs.csv,0.8,,,,0.7142857142857143,,,,Focused,p1,"defaultdict(None, {'same': (7, 0.7142857142857143)})","['modify-1', 'modify-1', 'same', 'same', 'same', 'same', 'same']","['same', 'same', 'same', 'same', 'same', 'same', 'same']"
+OnlineSVM-Individual-Model,pro21_ade_p1_logs.csv,0.8,,,,0.8888888888888888,,,,Focused,p1,"defaultdict(None, {'same': (17, 0.9411764705882353), 'modify-1': (1, 0.0)})","['same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'modify-1', 'same', 'same', 'same', 'same', 'same', 'same']","['same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'modify-1', 'same', 'same', 'same', 'same', 'same', 'same', 'same']"
+OnlineSVM-Individual-Model,pro31_adf_p1_logs.csv,0.8,,,,0.6363636363636364,,,,Focused,p1,"defaultdict(None, {'same': (8, 0.75), 'modify-1': (3, 0.3333333333333333)})","['same', 'same', 'same', 'modify-1', 'modify-1', 'same', 'same', 'same', 'modify-1', 'same', 'same']","['same', 'same', 'modify-1', 'modify-1', 'same', 'same', 'same', 'modify-1', 'same', 'same', 'same']"
+OnlineSVM-Individual-Model,pro15_ade_p1_logs.csv,0.8,,,,0.2,,,,Focused,p1,"defaultdict(None, {'modify-1': (2, 0.0), 'same': (3, 0.3333333333333333)})","['modify-2', 'modify-1', 'same', 'modify-1', 'same']","['modify-1', 'same', 'modify-1', 'same', 'same']"
+OnlineSVM-Individual-Model,stu26_ace_p1_logs.csv,0.8,,,,0.8,,,,Focused,p1,"defaultdict(None, {'same': (8, 0.875), 'modify-1': (2, 0.5)})","['same', 'same', 'same', 'same', 'same', 'modify-1', 'modify-1', 'same', 'same', 'same']","['same', 'same', 'same', 'same', 'modify-1', 'modify-1', 'same', 'same', 'same', 'same']"
+OnlineSVM-Individual-Model,pro17_ace_p1_logs.csv,0.8,,,,0.5454545454545454,,,,Focused,p1,"defaultdict(None, {'same': (9, 0.6666666666666666), 'modify-1': (2, 0.0)})","['modify-1', 'same', 'modify-1', 'same', 'modify-1', 'same', 'same', 'same', 'same', 'same', 'same']","['same', 'modify-1', 'same', 'modify-1', 'same', 'same', 'same', 'same', 'same', 'same', 'same']"
+OnlineSVM-Individual-Model,stu4_ade_p1_logs.csv,0.8,,,,0.2857142857142857,,,,Focused,p1,"defaultdict(None, {'modify-1': (2, 0.0), 'same': (5, 0.4)})","['same', 'modify-1', 'modify-1', 'same', 'same', 'modify-1', 'same']","['modify-1', 'same', 'same', 'same', 'modify-1', 'same', 'same']"
+OnlineSVM-Individual-Model,pro18_adf_p1_logs.csv,0.8,,,,0.3,,,,Focused,p1,"defaultdict(None, {'modify-1': (4, 0.75), 'modify-2': (2, 0.0), 'same': (4, 0.0)})","['modify-1', 'modify-1', 'modify-1', 'modify-1', 'modify-2', 'modify-2', 'modify-2', 'same', 'modify-1', 'modify-1']","['modify-1', 'modify-1', 'modify-2', 'modify-2', 'same', 'same', 'same', 'modify-1', 'modify-1', 'same']"
+OnlineSVM-Individual-Model,stu3_acf_p1_logs.csv,0.8,,,,1.0,,,,Focused,p1,"defaultdict(None, {'same': (2, 1.0)})","['same', 'same']","['same', 'same']"
+OnlineSVM-Individual-Model,stu25_ace_p1_logs.csv,0.8,,,,0.9090909090909092,,,,Focused,p1,"defaultdict(None, {'same': (10, 1.0), 'modify-1': (1, 0.0)})","['same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same']","['same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'modify-1', 'same', 'same']"
+OnlineSVM-Individual-Model,stu31_ade_p1_logs.csv,0.8,,,,0.5,,,,Focused,p1,"defaultdict(None, {'same': (7, 0.5714285714285714), 'modify-1': (3, 0.3333333333333333)})","['modify-1', 'same', 'same', 'same', 'modify-1', 'same', 'same', 'same', 'modify-1', 'modify-1']","['same', 'same', 'same', 'modify-1', 'same', 'same', 'same', 'modify-1', 'modify-1', 'same']"
+OnlineSVM-Individual-Model,pro29_ace_p1_logs.csv,0.8,,,,0.6,,,,Focused,p1,"defaultdict(None, {'same': (16, 0.75), 'modify-1': (4, 0.0)})","['same', 'same', 'modify-1', 'same', 'modify-1', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'modify-1', 'same', 'same', 'modify-1', 'same']","['same', 'modify-1', 'same', 'modify-1', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'modify-1', 'same', 'same', 'modify-1', 'same', 'same']"
+OnlineSVM-Individual-Model,stu24_ace_p1_logs.csv,0.8,,,,1.0,,,,Focused,p1,"defaultdict(None, {'same': (5, 1.0)})","['same', 'same', 'same', 'same', 'same']","['same', 'same', 'same', 'same', 'same']"
+OnlineSVM-Individual-Model,stu13_acf_p1_logs.csv,0.8,,,,0.5,,,,Focused,p1,"defaultdict(None, {'same': (3, 0.6666666666666666), 'modify-2': (1, 0.0)})","['same', 'same', 'same', 'modify-2']","['same', 'same', 'modify-2', 'same']"
+OnlineSVM-Individual-Model,stu29_ade_p1_logs.csv,0.8,,,,1.0,,,,Focused,p1,"defaultdict(None, {'same': (4, 1.0)})","['same', 'same', 'same', 'same']","['same', 'same', 'same', 'same']"
+OnlineSVM-Individual-Model,pro22_ade_p1_logs.csv,0.8,,,,0.9285714285714286,,,,Focused,p1,"defaultdict(None, {'same': (14, 0.9285714285714286)})","['modify-1', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same']","['same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same']"
+OnlineSVM-Individual-Model,stu17_ace_p1_logs.csv,0.8,,,,0.0,,,,Focused,p1,"defaultdict(None, {'modify-1': (1, 0.0), 'same': (1, 0.0)})","['same', 'modify-1']","['modify-1', 'same']"
+OnlineSVM-Individual-Model,pro23_acf_p1_logs.csv,0.8,,,,0.6363636363636364,,,,Focused,p1,"defaultdict(None, {'same': (8, 0.75), 'modify-2': (3, 0.3333333333333333)})","['same', 'same', 'same', 'same', 'modify-2', 'modify-2', 'same', 'same', 'same', 'same', 'modify-2']","['same', 'same', 'same', 'modify-2', 'modify-2', 'same', 'same', 'same', 'same', 'modify-2', 'same']"
+OnlineSVM-Individual-Model,pro8_acf_p1_logs.csv,0.8,,,,0.4782608695652174,,,,Focused,p1,"defaultdict(None, {'modify-2': (3, 0.3333333333333333), 'same': (14, 0.6428571428571429), 'modify-1': (5, 0.2), 'modify-3': (1, 0.0)})","['modify-2', 'modify-2', 'same', 'same', 'modify-1', 'modify-2', 'same', 'same', 'modify-1', 'modify-2', 'modify-1', 'same', 'modify-1', 'same', 'same', 'modify-1', 'modify-1', 'same', 'same', 'same', 'same', 'same', 'same']","['modify-2', 'same', 'same', 'modify-1', 'modify-2', 'same', 'same', 'modify-1', 'modify-2', 'modify-1', 'same', 'modify-1', 'same', 'same', 'modify-3', 'modify-1', 'same', 'same', 'same', 'same', 'same', 'same', 'same']"
+OnlineSVM-Individual-Model,stu36_adf_p1_logs.csv,0.8,,,,1.0,,,,Focused,p1,"defaultdict(None, {'same': (5, 1.0)})","['same', 'same', 'same', 'same', 'same']","['same', 'same', 'same', 'same', 'same']"
+QLearn,pro25_acf_p1,0.8,0.01,0.5,0.0,0.5,0,0.6,1.0,Focused,p1,,,
+QLearn,pro15_ade_p1,0.8,0.0001,0.05,0.0,0.6,0,1.0909090909090908,0.05,Focused,p1,,,
+QLearn,pro13_ace_p1,0.8,0.0001,0.1,0.0,1.0,0,1.090909090909091,0.1,Focused,p1,,,
+QLearn,pro24_adf_p1,0.8,1.0,0.2,0.0,0.8571428571428571,0,1.0666666666666669,0.1,Focused,p1,,,
+QLearn,pro20_ade_p1,0.8,0.5,0.1,0.0,0.75,0,1.0588235294117645,0.05,Focused,p1,,,
+QLearn,pro18_adf_p1,0.8,1.0,0.9,0.0,0.6,0,1.0476190476190477,0.05,Focused,p1,,,
+QLearn,pro17_ace_p1,0.8,0.0001,0.2,0.0,0.8181818181818182,0,1.0434782608695652,0.01,Focused,p1,,,
+QLearn,pro23_acf_p1,0.8,0.001,0.1,0.0,0.6363636363636364,0,1.0434782608695652,0.05,Focused,p1,,,
+QLearn,pro22_ade_p1,0.8,0.0001,0.2,0.0,1.0,0,1.0344827586206895,0.1,Focused,p1,,,
+QLearn,pro3_ace_p1,0.8,0.5,0.1,0.0,0.5714285714285714,0,1.0666666666666669,0.05,Focused,p1,,,
+QLearn,pro21_ade_p1,0.8,0.5,0.05,0.0,0.9444444444444444,0,1.027027027027027,0.05,Focused,p1,,,
+QLearn,pro31_adf_p1,0.8,0.5,0.2,0.0,0.8181818181818182,0,1.0434782608695652,0.05,Focused,p1,,,
+QLearn,stu11_adf_p1,0.8,0.1,0.5,0.0,0.6,0,1.0909090909090908,0.1,Focused,p1,,,
+QLearn,stu13_acf_p1,0.8,0.0001,0.1,0.0,0.75,0,1.111111111111111,0.05,Focused,p1,,,
+QLearn,pro9_acf_p1,0.8,0.0001,0.1,0.0,0.5,0,1.0588235294117647,0.1,Focused,p1,,,
+QLearn,stu17_ace_p1,0.8,0.1,0.2,0.0,0.5,0,1.2000000000000002,0.1,Focused,p1,,,
+QLearn,stu15_ade_p1,0.8,0.5,0.9,0.0,1.0,0,1.0666666666666669,0.1,Focused,p1,,,
+QLearn,pro5_adf_p1,0.8,0.001,0.2,0.0,0.7142857142857143,0,1.0344827586206895,0.05,Focused,p1,,,
+QLearn,pro29_ace_p1,0.8,0.0001,0.5,0.0,0.8,0,1.0243902439024386,0.1,Focused,p1,,,
+QLearn,stu10_acf_p1,0.8,0.5,0.2,0.0,0.5,0,1.04,0.05,Focused,p1,,,
+QLearn,stu21_ace_p1,0.8,0.01,0.8,0.0,0.8,0,1.0909090909090908,0.05,Focused,p1,,,
+QLearn,stu24_ace_p1,0.8,0.5,0.9,0.0,1.0,0,1.090909090909091,0.1,Focused,p1,,,
+QLearn,stu29_ade_p1,0.8,0.0001,0.99,0.0,1.0,0,1.111111111111111,0.05,Focused,p1,,,
+QLearn,stu30_adf_p1,0.8,1.0,0.9,0.0,1.0,0,1.1428571428571428,0.1,Focused,p1,,,
+QLearn,stu36_adf_p1,0.8,0.0001,0.9,0.0,1.0,0,1.0909090909090908,0.1,Focused,p1,,,
+QLearn,stu3_acf_p1,0.8,0.001,0.1,0.0,1.0,0,1.2000000000000002,0.1,Focused,p1,,,
+QLearn,pro8_acf_p1,0.8,0.5,0.5,0.0,0.782608695652174,0,1.0212765957446808,0.1,Focused,p1,,,
+QLearn,stu26_ace_p1,0.8,0.001,0.8,0.0,0.8,0,1.0476190476190472,0.01,Focused,p1,,,
+QLearn,stu37_adf_p1,0.8,1.0,0.2,0.0,1.0,0,1.0769230769230769,0.1,Focused,p1,,,
+QLearn,stu39_adf_p1,0.8,1.0,0.1,0.0,0.8,0,1.090909090909091,0.1,Focused,p1,,,
+QLearn,stu25_ace_p1,0.8,0.001,0.1,0.0,0.9090909090909092,0,1.0434782608695652,0.01,Focused,p1,,,
+QLearn,stu31_ade_p1,0.8,0.01,0.9,0.0,0.7,0,1.047619047619048,0.05,Focused,p1,,,
+QLearn,stu4_ade_p1,0.8,0.01,0.5,0.0,0.7142857142857143,0,1.0666666666666669,0.1,Focused,p1,,,
+QLearn,stu6_acf_p1,0.8,0.0001,0.1,0.0,0.8333333333333334,0,1.0769230769230766,0.1,Focused,p1,,,
+QLearn,stu38_acf_p1,0.8,0.0001,0.05,0.0,0.5384615384615384,0,1.0370370370370372,0.05,Focused,p1,,,
+QLearn,stu7_ade_p1,0.8,0.1,0.2,0.0,0.4782608695652174,0,1.021276595744681,0.1,Focused,p1,,,
+QLearnAligned-Individual-Model,pro25_acf_p1,0.8,0.0001,0.99,0.0,1.0,,,0.05,Focused,p1,"defaultdict(None, {'same': (2, 1.0)})","['same', 'same']","['same', 'same']"
+QLearnAligned-Individual-Model,pro13_ace_p1,0.8,0.0001,0.1,0.0,1.0,,,0.1,Focused,p1,"defaultdict(None, {'same': (5, 1.0)})","['same', 'same', 'same', 'same', 'same']","['same', 'same', 'same', 'same', 'same']"
+QLearnAligned-Individual-Model,pro15_ade_p1,0.8,0.01,0.5,0.0,0.8,,,0.1,Focused,p1,"defaultdict(None, {'modify-1': (2, 0.5), 'same': (3, 1.0)})","['modify-1', 'same', 'same', 'same', 'same']","['modify-1', 'same', 'modify-1', 'same', 'same']"
+QLearnAligned-Individual-Model,pro24_adf_p1,0.8,0.001,0.8,0.0,0.8571428571428571,,,0.05,Focused,p1,"defaultdict(None, {'modify-2': (2, 0.5), 'same': (5, 1.0)})","['same', 'modify-2', 'same', 'same', 'same', 'same', 'same']","['modify-2', 'modify-2', 'same', 'same', 'same', 'same', 'same']"
+QLearnAligned-Individual-Model,pro20_ade_p1,0.8,0.01,0.8,0.0,0.75,,,0.05,Focused,p1,"defaultdict(None, {'same': (6, 1.0), 'modify-1': (2, 0.0)})","['same', 'same', 'same', 'same', 'same', 'same', 'same', 'same']","['same', 'same', 'same', 'same', 'modify-1', 'same', 'modify-1', 'same']"
+QLearnAligned-Individual-Model,pro18_adf_p1,0.8,0.0001,0.05,0.0,0.7,,,0.01,Focused,p1,"defaultdict(None, {'modify-1': (4, 0.5), 'modify-2': (2, 0.5), 'same': (4, 1.0)})","['same', 'modify-1', 'modify-1', 'modify-2', 'same', 'same', 'same', 'same', 'modify-1', 'same']","['modify-1', 'modify-1', 'modify-2', 'modify-2', 'same', 'same', 'same', 'modify-1', 'modify-1', 'same']"
+QLearnAligned-Individual-Model,pro17_ace_p1,0.8,0.001,0.5,0.0,0.8181818181818182,,,0.1,Focused,p1,"defaultdict(None, {'same': (9, 1.0), 'modify-1': (2, 0.0)})","['same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same']","['same', 'modify-1', 'same', 'modify-1', 'same', 'same', 'same', 'same', 'same', 'same', 'same']"
+QLearnAligned-Individual-Model,pro23_acf_p1,0.8,0.01,0.1,0.0,0.7272727272727273,,,0.05,Focused,p1,"defaultdict(None, {'same': (8, 0.875), 'modify-2': (3, 0.3333333333333333)})","['same', 'same', 'same', 'same', 'modify-2', 'same', 'same', 'same', 'same', 'same', 'modify-2']","['same', 'same', 'same', 'modify-2', 'modify-2', 'same', 'same', 'same', 'same', 'modify-2', 'same']"
+QLearnAligned-Individual-Model,pro3_ace_p1,0.8,0.001,0.8,0.0,0.2857142857142857,,,0.05,Focused,p1,"defaultdict(None, {'same': (4, 0.0), 'modify-1': (3, 0.6666666666666666)})","['modify-1', 'modify-1', 'modify-1', 'same', 'modify-1', 'modify-1', 'modify-1']","['same', 'modify-1', 'same', 'modify-1', 'modify-1', 'same', 'same']"
+QLearnAligned-Individual-Model,pro22_ade_p1,0.8,0.0001,0.5,0.0,1.0,,,0.01,Focused,p1,"defaultdict(None, {'same': (14, 1.0)})","['same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same']","['same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same']"
+QLearnAligned-Individual-Model,pro31_adf_p1,0.8,0.01,0.8,0.0,0.7272727272727273,,,0.05,Focused,p1,"defaultdict(None, {'same': (8, 1.0), 'modify-1': (3, 0.0)})","['same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same']","['same', 'same', 'modify-1', 'modify-1', 'same', 'same', 'same', 'modify-1', 'same', 'same', 'same']"
+QLearnAligned-Individual-Model,stu13_acf_p1,0.8,0.0001,0.05,0.0,0.75,,,0.01,Focused,p1,"defaultdict(None, {'same': (3, 1.0), 'modify-2': (1, 0.0)})","['same', 'same', 'same', 'same']","['same', 'same', 'modify-2', 'same']"
+QLearnAligned-Individual-Model,stu11_adf_p1,0.8,0.0001,0.05,0.0,0.6,,,0.01,Focused,p1,"defaultdict(None, {'modify-1': (2, 0.0), 'same': (3, 1.0)})","['same', 'same', 'same', 'same', 'same']","['modify-1', 'same', 'same', 'modify-1', 'same']"
+QLearnAligned-Individual-Model,pro21_ade_p1,0.8,0.0001,0.1,0.0,0.9444444444444444,,,0.05,Focused,p1,"defaultdict(None, {'same': (17, 1.0), 'modify-1': (1, 0.0)})","['same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same']","['same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'modify-1', 'same', 'same', 'same', 'same', 'same', 'same', 'same']"
+QLearnAligned-Individual-Model,pro9_acf_p1,0.8,0.0001,0.5,0.0,0.5,,,0.1,Focused,p1,"defaultdict(None, {'same': (4, 1.0), 'modify-2': (3, 0.0), 'modify-1': (1, 0.0)})","['same', 'same', 'same', 'same', 'same', 'same', 'same', 'same']","['same', 'same', 'modify-2', 'modify-2', 'modify-2', 'same', 'modify-1', 'same']"
+QLearnAligned-Individual-Model,stu17_ace_p1,0.8,0.0001,0.05,0.0,1.0,,,0.01,Focused,p1,"defaultdict(None, {'modify-1': (1, 1.0), 'same': (1, 1.0)})","['modify-1', 'same']","['modify-1', 'same']"
+QLearnAligned-Individual-Model,stu15_ade_p1,0.8,0.001,0.5,0.0,1.0,,,0.05,Focused,p1,"defaultdict(None, {'same': (7, 1.0)})","['same', 'same', 'same', 'same', 'same', 'same', 'same']","['same', 'same', 'same', 'same', 'same', 'same', 'same']"
+QLearnAligned-Individual-Model,stu21_ace_p1,0.8,0.0001,0.2,0.0,1.0,,,0.05,Focused,p1,"defaultdict(None, {'modify-1': (1, 1.0), 'same': (4, 1.0)})","['modify-1', 'same', 'same', 'same', 'same']","['modify-1', 'same', 'same', 'same', 'same']"
+QLearnAligned-Individual-Model,pro29_ace_p1,0.8,0.0001,0.5,0.0,0.8,,,0.1,Focused,p1,"defaultdict(None, {'same': (16, 1.0), 'modify-1': (4, 0.0)})","['same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'modify-3', 'same', 'same']","['same', 'modify-1', 'same', 'modify-1', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'modify-1', 'same', 'same', 'modify-1', 'same', 'same']"
+QLearnAligned-Individual-Model,stu10_acf_p1,0.8,0.001,0.8,0.0,0.75,,,0.05,Focused,p1,"defaultdict(None, {'modify-1': (5, 0.6), 'modify-2': (3, 0.6666666666666666), 'same': (4, 1.0)})","['modify-1', 'modify-1', 'same', 'modify-1', 'same', 'same', 'same', 'same', 'same', 'modify-2', 'modify-2', 'same']","['modify-1', 'modify-1', 'modify-1', 'modify-1', 'modify-2', 'same', 'same', 'same', 'modify-1', 'modify-2', 'modify-2', 'same']"
+QLearnAligned-Individual-Model,stu24_ace_p1,0.8,0.01,0.5,0.0,1.0,,,0.05,Focused,p1,"defaultdict(None, {'same': (5, 1.0)})","['same', 'same', 'same', 'same', 'same']","['same', 'same', 'same', 'same', 'same']"
+QLearnAligned-Individual-Model,pro5_adf_p1,0.8,0.0001,0.9,0.0,0.7142857142857143,,,0.1,Focused,p1,"defaultdict(None, {'modify-2': (3, 0.0), 'same': (10, 1.0), 'modify-1': (1, 0.0)})","['same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same']","['modify-2', 'modify-2', 'modify-2', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'modify-1', 'same']"
+QLearnAligned-Individual-Model,stu29_ade_p1,0.8,0.001,0.05,0.0,1.0,,,0.05,Focused,p1,"defaultdict(None, {'same': (4, 1.0)})","['same', 'same', 'same', 'same']","['same', 'same', 'same', 'same']"
+QLearnAligned-Individual-Model,stu30_adf_p1,0.8,0.01,0.1,0.0,1.0,,,0.1,Focused,p1,"defaultdict(None, {'same': (3, 1.0)})","['same', 'same', 'same']","['same', 'same', 'same']"
+QLearnAligned-Individual-Model,stu3_acf_p1,0.8,0.0001,0.05,0.0,1.0,,,0.01,Focused,p1,"defaultdict(None, {'same': (2, 1.0)})","['same', 'same']","['same', 'same']"
+QLearnAligned-Individual-Model,stu36_adf_p1,0.8,0.0001,0.9,0.0,1.0,,,0.05,Focused,p1,"defaultdict(None, {'same': (5, 1.0)})","['same', 'same', 'same', 'same', 'same']","['same', 'same', 'same', 'same', 'same']"
+QLearnAligned-Individual-Model,stu39_adf_p1,0.8,0.001,0.9,0.0,0.6,,,0.05,Focused,p1,"defaultdict(None, {'modify-1': (1, 0.0), 'same': (2, 1.0), 'modify-2': (2, 0.5)})","['same', 'same', 'same', 'modify-2', 'same']","['modify-1', 'same', 'modify-2', 'modify-2', 'same']"
+QLearnAligned-Individual-Model,stu26_ace_p1,0.8,0.1,0.1,0.0,0.9,,,0.1,Focused,p1,"defaultdict(None, {'same': (8, 1.0), 'modify-1': (2, 0.5)})","['same', 'same', 'same', 'same', 'same', 'modify-1', 'same', 'same', 'same', 'same']","['same', 'same', 'same', 'same', 'modify-1', 'modify-1', 'same', 'same', 'same', 'same']"
+QLearnAligned-Individual-Model,stu37_adf_p1,0.8,0.0001,0.05,0.0,1.0,,,0.01,Focused,p1,"defaultdict(None, {'same': (6, 1.0)})","['same', 'same', 'same', 'same', 'same', 'same']","['same', 'same', 'same', 'same', 'same', 'same']"
+QLearnAligned-Individual-Model,stu25_ace_p1,0.8,0.0001,0.9,0.0,0.9090909090909092,,,0.1,Focused,p1,"defaultdict(None, {'same': (10, 1.0), 'modify-1': (1, 0.0)})","['same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same']","['same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'modify-1', 'same', 'same']"
+QLearnAligned-Individual-Model,pro8_acf_p1,0.8,0.01,0.9,0.0,0.5652173913043478,,,0.01,Focused,p1,"defaultdict(None, {'modify-2': (3, 0.0), 'same': (14, 0.8571428571428571), 'modify-1': (5, 0.2), 'modify-3': (1, 0.0)})","['same', 'modify-2', 'modify-2', 'modify-2', 'same', 'same', 'same', 'same', 'same', 'modify-1', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same']","['modify-2', 'same', 'same', 'modify-1', 'modify-2', 'same', 'same', 'modify-1', 'modify-2', 'modify-1', 'same', 'modify-1', 'same', 'same', 'modify-3', 'modify-1', 'same', 'same', 'same', 'same', 'same', 'same', 'same']"
+QLearnAligned-Individual-Model,stu31_ade_p1,0.8,0.5,0.9,0.0,0.7,,,0.01,Focused,p1,"defaultdict(None, {'same': (7, 1.0), 'modify-1': (3, 0.0)})","['same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same', 'same']","['same', 'same', 'same', 'modify-1', 'same', 'same', 'same', 'modify-1', 'modify-1', 'same']"
+QLearnAligned-Individual-Model,stu4_ade_p1,0.8,0.0001,0.05,0.0,0.7142857142857143,,,0.01,Focused,p1,"defaultdict(None, {'modify-1': (2, 0.0), 'same': (5, 1.0)})","['same', 'same', 'same', 'same', 'same', 'same', 'same']","['modify-1', 'same', 'same', 'same', 'modify-1', 'same', 'same']"
+QLearnAligned-Individual-Model,stu6_acf_p1,0.8,0.0001,0.05,0.0,0.8333333333333334,,,0.01,Focused,p1,"defaultdict(None, {'same': (5, 1.0), 'modify-2': (1, 0.0)})","['same', 'same', 'same', 'same', 'same', 'same']","['same', 'same', 'modify-2', 'same', 'same', 'same']"
+QLearnAligned-Individual-Model,stu38_acf_p1,0.8,0.01,0.2,0.0,0.6153846153846154,,,0.05,Focused,p1,"defaultdict(None, {'same': (7, 0.8571428571428571), 'modify-2': (3, 0.0), 'modify-1': (3, 0.6666666666666666)})","['same', 'same', 'modify-1', 'same', 'modify-1', 'modify-2', 'modify-1', 'same', 'same', 'same', 'modify-3', 'modify-1', 'same']","['same', 'modify-2', 'modify-2', 'same', 'modify-2', 'same', 'modify-1', 'same', 'same', 'same', 'modify-1', 'modify-1', 'same']"
+QLearnAligned-Individual-Model,stu7_ade_p1,0.8,0.01,0.8,0.0,0.6521739130434783,,,0.01,Focused,p1,"defaultdict(None, {'same': (9, 0.5555555555555556), 'modify-1': (12, 0.75), 'modify-2': (2, 0.5)})","['same', 'same', 'same', 'same', 'same', 'modify-1', 'modify-1', 'same', 'modify-1', 'modify-1', 'same', 'same', 'modify-1', 'modify-1', 'modify-1', 'modify-1', 'modify-1', 'modify-1', 'modify-1', 'modify-1', 'modify-2', 'modify-1', 'modify-1']","['same', 'same', 'same', 'same', 'modify-1', 'same', 'modify-1', 'modify-1', 'modify-1', 'modify-1', 'same', 'modify-1', 'modify-1', 'modify-1', 'modify-1', 'same', 'modify-2', 'modify-1', 'same', 'modify-1', 'modify-2', 'modify-1', 'same']"
+Random,pro13_ace_p1,0.8,,,,0.24,0,,,Focused,p1,,,
+Random,pro15_ade_p1,0.8,,,,0.24,0,,,Focused,p1,,,
+Random,pro17_ace_p1,0.8,,,,0.2909090909090909,0,,,Focused,p1,,,
+Random,pro18_adf_p1,0.8,,,,0.24,0,,,Focused,p1,,,
+Random,pro20_ade_p1,0.8,,,,0.2,0,,,Focused,p1,,,
+Random,pro21_ade_p1,0.8,,,,0.2999999999999999,0,,,Focused,p1,,,
+Random,pro22_ade_p1,0.8,,,,0.2285714285714285,0,,,Focused,p1,,,
+Random,pro23_acf_p1,0.8,,,,0.2363636363636363,0,,,Focused,p1,,,
+Random,pro24_adf_p1,0.8,,,,0.3428571428571428,0,,,Focused,p1,,,
+Random,pro25_acf_p1,0.8,,,,0.6,0,,,Focused,p1,,,
+Random,pro29_ace_p1,0.8,,,,0.21,0,,,Focused,p1,,,
+Random,pro31_adf_p1,0.8,,,,0.2,0,,,Focused,p1,,,
+Random,pro3_ace_p1,0.8,,,,0.2857142857142857,0,,,Focused,p1,,,
+Random,pro5_adf_p1,0.8,,,,0.1714285714285714,0,,,Focused,p1,,,
+Random,pro8_acf_p1,0.8,,,,0.2260869565217391,0,,,Focused,p1,,,
+Random,pro9_acf_p1,0.8,,,,0.125,0,,,Focused,p1,,,
+Random,stu10_acf_p1,0.8,,,,0.2833333333333333,0,,,Focused,p1,,,
+Random,stu11_adf_p1,0.8,,,,0.24,0,,,Focused,p1,,,
+Random,stu13_acf_p1,0.8,,,,0.35,0,,,Focused,p1,,,
+Random,stu15_ade_p1,0.8,,,,0.3142857142857142,0,,,Focused,p1,,,
+Random,stu17_ace_p1,0.8,,,,0.2,0,,,Focused,p1,,,
+Random,stu21_ace_p1,0.8,,,,0.2,0,,,Focused,p1,,,
+Random,stu24_ace_p1,0.8,,,,0.4,0,,,Focused,p1,,,
+Random,stu25_ace_p1,0.8,,,,0.2909090909090909,0,,,Focused,p1,,,
+Random,stu26_ace_p1,0.8,,,,0.26,0,,,Focused,p1,,,
+Random,stu29_ade_p1,0.8,,,,0.3,0,,,Focused,p1,,,
+Random,stu30_adf_p1,0.8,,,,0.2666666666666666,0,,,Focused,p1,,,
+Random,stu31_ade_p1,0.8,,,,0.36,0,,,Focused,p1,,,
+Random,stu36_adf_p1,0.8,,,,0.12,0,,,Focused,p1,,,
+Random,stu37_adf_p1,0.8,,,,0.2666666666666666,0,,,Focused,p1,,,
+Random,stu38_acf_p1,0.8,,,,0.2461538461538462,0,,,Focused,p1,,,
+Random,stu39_adf_p1,0.8,,,,0.2,0,,,Focused,p1,,,
+Random,stu3_acf_p1,0.8,,,,0.4,0,,,Focused,p1,,,
+Random,stu4_ade_p1,0.8,,,,0.2857142857142857,0,,,Focused,p1,,,
+Random,stu6_acf_p1,0.8,,,,0.1333333333333333,0,,,Focused,p1,,,
+Random,stu7_ade_p1,0.8,,,,0.2434782608695652,0,,,Focused,p1,,,
+Reinforce,pro25_acf_p1,0.8,0.01,0.5,,1.0,"[None, None, None]",0.0,,Focused,p1,,,
+Reinforce,pro13_ace_p1,0.8,0.1,0.99,,1.0,"[None, None, None]",0.0,,Focused,p1,,,
+Reinforce,pro15_ade_p1,0.8,0.01,0.05,,0.6,"[None, None, None]",0.0,,Focused,p1,,,
+Reinforce,pro24_adf_p1,0.8,0.01,0.5,,0.7142857142857143,"[None, None, None]",0.0,,Focused,p1,,,
+Reinforce,pro20_ade_p1,0.8,0.01,0.05,,0.75,"[None, None, None]",0.0,,Focused,p1,,,
+Reinforce,pro18_adf_p1,0.8,0.1,0.8,,0.3,"[None, None, None]",0.0,,Focused,p1,,,
+Reinforce,pro17_ace_p1,0.8,0.1,0.5,,0.8181818181818182,"[None, None, None]",0.0,,Focused,p1,,,
+Reinforce,pro23_acf_p1,0.8,0.01,0.05,,0.7272727272727273,"[None, None, None]",0.0,,Focused,p1,,,
+Reinforce,pro3_ace_p1,0.8,0.01,0.1,,0.2857142857142857,"[None, None, None]",0.0,,Focused,p1,,,
+Reinforce,pro22_ade_p1,0.8,0.01,0.5,,1.0,"[None, None, None]",0.0,,Focused,p1,,,
+Reinforce,pro31_adf_p1,0.8,0.01,0.1,,0.7272727272727273,"[None, None, None]",0.0,,Focused,p1,,,
+Reinforce,stu13_acf_p1,0.8,0.001,0.2,,1.0,"[None, None, None]",0.0,,Focused,p1,,,
+Reinforce,stu11_adf_p1,0.8,0.001,0.05,,0.6,"[None, None, None]",0.0,,Focused,p1,,,
+Reinforce,stu17_ace_p1,0.8,1.0,0.99,,0.5,"[None, None, None]",0.0,,Focused,p1,,,
+Reinforce,pro9_acf_p1,0.8,0.1,0.05,,0.5,"[None, None, None]",0.0,,Focused,p1,,,
+Reinforce,pro21_ade_p1,0.8,0.01,0.05,,0.9444444444444444,"[None, None, None]",0.0,,Focused,p1,,,
+Reinforce,stu15_ade_p1,0.8,0.001,0.2,,1.0,"[None, None, None]",0.0,,Focused,p1,,,
+Reinforce,pro5_adf_p1,0.8,0.01,0.2,,0.7142857142857143,"[None, None, None]",0.0,,Focused,p1,,,
+Reinforce,stu21_ace_p1,0.8,0.01,0.05,,0.2,"[None, None, None]",0.0,,Focused,p1,,,
+Reinforce,pro29_ace_p1,0.8,0.1,0.5,,0.8,"[None, None, None]",0.0,,Focused,p1,,,
+Reinforce,stu24_ace_p1,0.8,0.01,0.05,,1.0,"[None, None, None]",0.0,,Focused,p1,,,
+Reinforce,stu29_ade_p1,0.8,0.001,0.2,,1.0,"[None, None, None]",0.0,,Focused,p1,,,
+Reinforce,stu30_adf_p1,0.8,0.01,0.05,,1.0,"[None, None, None]",0.0,,Focused,p1,,,
+Reinforce,stu10_acf_p1,0.8,0.01,0.05,,0.3333333333333333,"[None, None, None]",0.0,,Focused,p1,,,
+Reinforce,stu3_acf_p1,0.8,0.01,0.05,,1.0,"[None, None, None]",0.0,,Focused,p1,,,
+Reinforce,stu36_adf_p1,0.8,0.01,0.2,,1.0,"[None, None, None]",0.0,,Focused,p1,,,
+Reinforce,stu37_adf_p1,0.8,0.01,0.05,,1.0,"[None, None, None]",0.0,,Focused,p1,,,
+Reinforce,stu26_ace_p1,0.8,0.01,0.05,,0.8,"[None, None, None]",0.0,,Focused,p1,,,
+Reinforce,stu39_adf_p1,0.8,0.01,0.05,,0.4,"[None, None, None]",0.0,,Focused,p1,,,
+Reinforce,pro8_acf_p1,0.8,0.01,0.2,,0.5652173913043478,"[None, None, None]",0.0,,Focused,p1,,,
+Reinforce,stu6_acf_p1,0.8,0.01,0.05,,0.8333333333333334,"[None, None, None]",0.0,,Focused,p1,,,
+Reinforce,stu31_ade_p1,0.8,0.01,0.05,,0.7,"[None, None, None]",0.0,,Focused,p1,,,
+Reinforce,stu25_ace_p1,0.8,0.01,0.05,,0.9090909090909092,"[None, None, None]",0.0,,Focused,p1,,,
+Reinforce,stu4_ade_p1,0.8,0.01,0.05,,0.7142857142857143,"[None, None, None]",0.0,,Focused,p1,,,
+Reinforce,stu38_acf_p1,0.8,0.01,0.05,,0.5384615384615384,"[None, None, None]",0.0,,Focused,p1,,,
+Reinforce,stu7_ade_p1,0.8,0.01,0.05,,0.5652173913043478,"[None, None, None]",0.0,,Focused,p1,,,
+SARSA,pro25_acf_p1,0.8,0.001,0.05,0.0,1.0,0,1.0,0.7,Focused,p1,,,
+SARSA,pro15_ade_p1,0.8,0.0001,0.2,0.0,0.6,0,1.0,0.1,Focused,p1,,,
+SARSA,pro13_ace_p1,0.8,0.0001,0.05,0.0,1.0,0,1.0,0.05,Focused,p1,,,
+SARSA,pro24_adf_p1,0.8,0.0001,0.5,0.0,0.7142857142857143,0,1.0,0.1,Focused,p1,,,
+SARSA,pro20_ade_p1,0.8,0.0001,0.2,0.0,0.75,0,1.0,0.05,Focused,p1,,,
+SARSA,pro18_adf_p1,0.8,0.5,0.9,0.0,0.5,0,1.0,0.01,Focused,p1,,,
+SARSA,pro17_ace_p1,0.8,0.001,0.9,0.0,0.8181818181818182,0,1.0,0.01,Focused,p1,,,
+SARSA,pro23_acf_p1,0.8,0.0001,0.1,0.0,0.6363636363636364,0,1.0,0.05,Focused,p1,,,
+SARSA,pro22_ade_p1,0.8,0.0001,0.05,0.0,1.0,0,1.0,0.05,Focused,p1,,,
+SARSA,pro3_ace_p1,0.8,0.5,0.1,0.0,0.5714285714285714,0,1.0,0.1,Focused,p1,,,
+SARSA,pro21_ade_p1,0.8,0.0001,0.05,0.0,0.9444444444444444,0,1.0,0.05,Focused,p1,,,
+SARSA,pro31_adf_p1,0.8,0.0001,0.1,0.0,0.7272727272727273,0,1.0,0.1,Focused,p1,,,
+SARSA,stu11_adf_p1,0.8,0.0001,0.05,0.0,0.6,0,1.0,0.05,Focused,p1,,,
+SARSA,pro9_acf_p1,0.8,0.5,0.1,0.0,0.5,0,1.0,0.1,Focused,p1,,,
+SARSA,stu13_acf_p1,0.8,0.0001,0.1,0.0,0.75,0,1.0,0.1,Focused,p1,,,
+SARSA,stu17_ace_p1,0.8,0.0001,0.05,0.0,0.5,0,1.0,0.01,Focused,p1,,,
+SARSA,stu15_ade_p1,0.8,0.5,0.1,0.0,1.0,0,1.0,0.1,Focused,p1,,,
+SARSA,pro5_adf_p1,0.8,0.5,0.1,0.0,0.7857142857142857,0,1.0,0.05,Focused,p1,,,
+SARSA,pro29_ace_p1,0.8,0.0001,0.5,0.0,0.85,0,1.0,0.1,Focused,p1,,,
+SARSA,stu10_acf_p1,0.8,0.0001,0.05,0.0,0.5,0,1.0,0.1,Focused,p1,,,
+SARSA,stu29_ade_p1,0.8,0.0001,0.05,0.0,1.0,0,1.0,0.05,Focused,p1,,,
+SARSA,stu24_ace_p1,0.8,0.01,0.2,0.0,0.8,0,1.0,0.5,Focused,p1,,,
+SARSA,stu21_ace_p1,0.8,1.0,0.2,0.0,0.8,0,1.0,0.05,Focused,p1,,,
+SARSA,stu30_adf_p1,0.8,0.0001,0.1,0.0,1.0,0,1.0,0.1,Focused,p1,,,
+SARSA,stu37_adf_p1,0.8,1.0,0.2,0.0,1.0,0,1.0,0.05,Focused,p1,,,
+SARSA,stu36_adf_p1,0.8,0.0001,0.05,0.0,1.0,0,1.0,0.05,Focused,p1,,,
+SARSA,stu25_ace_p1,0.8,0.0001,0.1,0.0,0.9090909090909092,0,1.0,0.05,Focused,p1,,,
+SARSA,stu3_acf_p1,0.8,0.0001,0.1,0.0,1.0,0,1.0,0.1,Focused,p1,,,
+SARSA,pro8_acf_p1,0.8,0.01,0.2,0.0,0.6086956521739131,0,1.0,0.05,Focused,p1,,,
+SARSA,stu39_adf_p1,0.8,0.0001,0.1,0.0,0.4,0,1.0,0.1,Focused,p1,,,
+SARSA,stu26_ace_p1,0.8,0.0001,0.05,0.0,0.9,0,1.0,0.01,Focused,p1,,,
+SARSA,stu31_ade_p1,0.8,0.0001,0.05,0.0,0.7,0,1.0,0.05,Focused,p1,,,
+SARSA,stu4_ade_p1,0.8,0.0001,0.2,0.0,0.7142857142857143,0,1.0,0.05,Focused,p1,,,
+SARSA,stu38_acf_p1,0.8,0.0001,0.99,0.0,0.5384615384615384,0,1.0,0.05,Focused,p1,,,
+SARSA,stu6_acf_p1,0.8,0.001,0.05,0.0,0.8333333333333334,0,1.0,0.05,Focused,p1,,,
+SARSA,stu7_ade_p1,0.8,0.1,0.05,0.0,0.4782608695652174,0,1.0,0.05,Focused,p1,,,
+WSLS,pro13_ace_p1,0.8,0.0,0.0,,0.4,"[None, None, None]",,,Focused,p1,,,
+WSLS,pro15_ade_p1,0.8,0.0,0.0,,0.6,"[None, None, None]",,,Focused,p1,,,
+WSLS,pro17_ace_p1,0.8,0.0,0.0,,0.2727272727272727,"[None, None, None]",,,Focused,p1,,,
+WSLS,pro18_adf_p1,0.8,0.0,0.0,,0.4,"[None, None, None]",,,Focused,p1,,,
+WSLS,pro20_ade_p1,0.8,0.0,0.0,,0.125,"[None, None, None]",,,Focused,p1,,,
+WSLS,pro21_ade_p1,0.8,0.0,0.0,,0.1666666666666666,"[None, None, None]",,,Focused,p1,,,
+WSLS,pro22_ade_p1,0.8,0.0,0.0,,0.1428571428571428,"[None, None, None]",,,Focused,p1,,,
+WSLS,pro23_acf_p1,0.8,0.0,0.0,,0.2727272727272727,"[None, None, None]",,,Focused,p1,,,
+WSLS,pro24_adf_p1,0.8,0.0,0.0,,0.1428571428571428,"[None, None, None]",,,Focused,p1,,,
+WSLS,pro25_acf_p1,0.8,0.0,0.0,,0.5,"[None, None, None]",,,Focused,p1,,,
+WSLS,pro29_ace_p1,0.8,0.0,0.0,,0.2,"[None, None, None]",,,Focused,p1,,,
+WSLS,pro31_adf_p1,0.8,0.0,0.0,,0.3636363636363636,"[None, None, None]",,,Focused,p1,,,
+WSLS,pro3_ace_p1,0.8,0.0,0.0,,0.1428571428571428,"[None, None, None]",,,Focused,p1,,,
+WSLS,pro5_adf_p1,0.8,0.0,0.0,,0.2142857142857142,"[None, None, None]",,,Focused,p1,,,
+WSLS,pro8_acf_p1,0.8,0.0,0.0,,0.217391304347826,"[None, None, None]",,,Focused,p1,,,
+WSLS,pro9_acf_p1,0.8,0.0,0.0,,0.125,"[None, None, None]",,,Focused,p1,,,
+WSLS,stu10_acf_p1,0.8,0.0,0.0,,0.3333333333333333,"[None, None, None]",,,Focused,p1,,,
+WSLS,stu11_adf_p1,0.8,0.0,0.0,,0.4,"[None, None, None]",,,Focused,p1,,,
+WSLS,stu13_acf_p1,0.8,0.0,0.0,,0.0,"[None, None, None]",,,Focused,p1,,,
+WSLS,stu15_ade_p1,0.8,0.0,0.0,,0.2857142857142857,"[None, None, None]",,,Focused,p1,,,
+WSLS,stu17_ace_p1,0.8,0.0,0.0,,0.0,"[None, None, None]",,,Focused,p1,,,
+WSLS,stu21_ace_p1,0.8,0.0,0.0,,0.4,"[None, None, None]",,,Focused,p1,,,
+WSLS,stu24_ace_p1,0.8,0.0,0.0,,0.4,"[None, None, None]",,,Focused,p1,,,
+WSLS,stu25_ace_p1,0.8,0.0,0.0,,0.2727272727272727,"[None, None, None]",,,Focused,p1,,,
+WSLS,stu26_ace_p1,0.8,0.0,0.0,,0.1,"[None, None, None]",,,Focused,p1,,,
+WSLS,stu29_ade_p1,0.8,0.0,0.0,,0.5,"[None, None, None]",,,Focused,p1,,,
+WSLS,stu30_adf_p1,0.8,0.0,0.0,,0.3333333333333333,"[None, None, None]",,,Focused,p1,,,
+WSLS,stu31_ade_p1,0.8,0.0,0.0,,0.1,"[None, None, None]",,,Focused,p1,,,
+WSLS,stu36_adf_p1,0.8,0.0,0.0,,0.0,"[None, None, None]",,,Focused,p1,,,
+WSLS,stu37_adf_p1,0.8,0.0,0.0,,0.5,"[None, None, None]",,,Focused,p1,,,
+WSLS,stu38_acf_p1,0.8,0.0,0.0,,0.3076923076923077,"[None, None, None]",,,Focused,p1,,,
+WSLS,stu39_adf_p1,0.8,0.0,0.0,,0.0,"[None, None, None]",,,Focused,p1,,,
+WSLS,stu3_acf_p1,0.8,0.0,0.0,,0.0,"[None, None, None]",,,Focused,p1,,,
+WSLS,stu4_ade_p1,0.8,0.0,0.0,,0.1428571428571428,"[None, None, None]",,,Focused,p1,,,
+WSLS,stu6_acf_p1,0.8,0.0,0.0,,0.1666666666666666,"[None, None, None]",,,Focused,p1,,,
+WSLS,stu7_ade_p1,0.8,0.0,0.0,,0.391304347826087,"[None, None, None]",,,Focused,p1,,,

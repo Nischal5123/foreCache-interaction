@@ -261,9 +261,8 @@ def run_experiment(user_list, algo, hyperparam_file,dataset,task):
             y_pred_all.extend(user_y_pred)
 
     # Define the output directory and file name
-    directory = f"Experiments_Folder/VizRec/{dataset}/{task}/Individual"
-    os.makedirs(directory, exist_ok=True)
-    output_file = f"{directory}/QLearnAligned-Individual-Model.csv"
+    directory = f"Experiments_Folder/Individual-Model/{dataset}/{task}"
+    output_file = f"{directory}/QLearn-Individual-Model.csv"
 
     result_dataframe.to_csv(output_file, index=False)
 
@@ -280,7 +279,7 @@ if __name__ == '__main__':
             user_list_name = sorted(env.get_user_list(dataset, task))
             run_experiment(user_list_name, 'QLearn', 'sampled-hyperparameters-config.json', dataset, task)
             #read csv and get the accuracy
-            df = pd.read_csv(f"Experiments_Folder/VizRec/{dataset}/{task}/Individual/QLearn-Individual-Model.csv")
+            df = pd.read_csv(f"Experiments_Folder/Individual-Model/{dataset}/{task}/QLearn-Individual-Model.csv")
             overall_accuracy.append(np.mean(df['Accuracy']))
 
 

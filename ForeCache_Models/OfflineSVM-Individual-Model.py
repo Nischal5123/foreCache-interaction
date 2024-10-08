@@ -251,7 +251,8 @@ def run_experiment(user_list, dataset, task):
                 'Algorithm': ['OfflineSVM-Individual-Model'],
                 'GranularPredictions': [str(granularPredictions)],
                 'Predictions': [str(pred)],
-                'GroundTruth': [str(ground_truth)]
+                'GroundTruth': [str(ground_truth)],
+                'Threshold': [thres]
 
             })], ignore_index=True)
 
@@ -279,13 +280,12 @@ def delete_files(filename):
               print(f"File not found: {filename}")
 
 if __name__ == "__main__":
-    # datasets = ['movies', 'birdstrikes']
-    # tasks = ['p1', 'p2','p3', 'p4']
-    # for dataset in datasets:
-    #     for task in tasks:
-    #         env = environment_vizrec()
-    #         user_list = env.get_user_list(dataset, task)
-    #         run_experiment(user_list, dataset, task)
-    #         print(f"Done with {dataset} {task}")
+    datasets = ['movies', 'birdstrikes']
+    tasks = ['p1', 'p2','p3', 'p4']
+    for dataset in datasets:
+        for task in tasks:
+            env = environment_vizrec()
+            user_list = env.get_user_list(dataset, task)
+            run_experiment(user_list, dataset, task)
+            print(f"Done with {dataset} {task}")
 
-    delete_files("OnlineSVM.csv")
