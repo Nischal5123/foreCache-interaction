@@ -85,7 +85,6 @@ def training(train_files, env, algorithm, epoch):
     for eps in epsilon_h:
         for alp in alpha_h:
             for dis in discount_h:
-                for eps in [20,30,50,70,100]:
                     accu = []
                     model = Qlearning()
                     Q = defaultdict(lambda: np.zeros(len(env.valid_actions)))

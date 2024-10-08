@@ -214,6 +214,7 @@ class environment_vizrec:
             # Return the next state, current reward, done status, prediction, and top reward
             return next_state, cur_reward, self.done, prediction, cur_action
 
+
     def get_user_list(self,dataset,task):
         if dataset == 'movies':
             if task == 'p1':

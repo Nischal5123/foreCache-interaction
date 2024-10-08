@@ -1,14 +1,4 @@
 import environment_vizrec as environment5
-import numpy as np
-import torch
-import torch.nn as nn
-import torch.nn.functional as F
-import torch.optim as optim
-from torch.distributions import Categorical
-# import plotting
-from collections import Counter
-# import pandas as pd
-import json
 import os
 from collections import defaultdict
 os.environ["KMP_DUPLICATE_LIB_OK"]="TRUE"
@@ -27,7 +17,6 @@ import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
 from torch.distributions import Categorical
-import environment_vizrec
 from collections import Counter,defaultdict
 import json
 import ast
@@ -38,12 +27,6 @@ class Policy(nn.Module):
     def __init__(self,learning_rate,gamma,tau,dataset):
         super(Policy, self).__init__()
         self.data = []
-        if dataset=='birdstrikes':
-            self.total_length=14
-        else:
-            self.total_length=16
-
-
         self.fc1 = nn.Linear(3, 128)
         self.fc2 = nn.Linear(128, 4)
         self.gamma=gamma
@@ -73,10 +56,6 @@ class Policy(nn.Module):
 class Reinforce():
     def __init__(self,env,learning_rate,gamma,tau,dataset, learned_policy=None):
         self.env = env
-        if dataset == 'birdstrikes':
-            self.total_length = 14
-        else:
-            self.total_length = 16
         self.learning_rate, self.gamma, self.temperature = learning_rate, gamma, tau
         if learned_policy is None:
             self.pi = Policy(learning_rate, gamma, tau, dataset)
@@ -84,27 +63,15 @@ class Reinforce():
             self.pi = learned_policy
 
     def convert_idx_state(self, state_idx):
-        #state = next((key for key, value in self.state_encoding.items() if np.array_equal(value, state_idx)), None)
-        converted_state = np.where(state_idx == 1)[0]
-        return str(converted_state)
+        # state = next((key for key, value in self.state_encoding.items() if np.array_equal(value, state_idx)), None)
+        return str(state_idx)
 
     def convert_state_idx(self, state):
-
-        #state_idx = self.state_encoding[state]
-        state_short=ast.literal_eval(state)
-        # # Create a one-hot array
-        # one_hot_array = np.zeros(self.total_length)
-        #
-        # # Set the values to 1 at the specified indices
-        # for index in state_short:
-        #     if index < self.total_length:
-        #         one_hot_array[index] = 1
-
-        return state_short
+        # state_idx = self.state_encoding[state]
+        return ast.literal_eval(state)
 
     def train(self):
         score=0.0
-        print_interval=50
         all_predictions=[]
         for n_epi in range(50):
             s = self.env.reset()
@@ -127,9 +94,10 @@ class Reinforce():
                 s = s_prime
 
                 score += r
+                if done:
+                    break
 
             self.pi.train_net()
-            all_predictions.append(np.mean(predictions))
        # print("############ Train Accuracy :{},".format(np.mean(all_predictions)))
         return self.pi, (np.mean(predictions)) #return last train_accuracy
 
@@ -137,6 +105,7 @@ class Reinforce():
     def test(self,policy,env):
         test_accuracies = []
         self.env = env
+        self.pi = policy
 
 
         for n_epi in range(1):
@@ -149,7 +118,7 @@ class Reinforce():
             insight = defaultdict(list)
 
             while not done:
-                prob = policy(torch.from_numpy(s).float())
+                prob = self.pi(torch.from_numpy(s).float())
                 m = Categorical(prob)
                 a = m.sample().item()
                 s_prime, r, done, info,_,ground_action, pred_action,_ = self.env.step(self.convert_idx_state(s), a, True)
@@ -161,7 +130,7 @@ class Reinforce():
                 #split_accuracy[self.convert_idx_state(s)].append(info)
 
 
-                policy.put_data((r, prob[a]))
+                self.pi.put_data((r, prob[a]))
 
                 s_prime = np.array(self.convert_state_idx(s_prime))
                 s = s_prime
@@ -173,13 +142,11 @@ class Reinforce():
                 self.pi.train_net()
 
             #print("TEST: # of episode :{}, accuracy : {}, actions: {}".format(n_epi, np.mean(predictions), Counter(actions)))
-
-            test_accuracies.append(np.mean(predictions))
             granular_prediction = defaultdict()
             for keys, values in insight.items():
                 granular_prediction[keys] = (len(values), np.mean(values))
 
-        return np.mean(test_accuracies),granular_prediction, predicted_action, all_ground_actions
+        return np.mean(predictions),granular_prediction, predicted_action, all_ground_actions
 
 def training(train_files, env, dataset, algorithm, epoch):
     # Load hyperparameters from JSON file
@@ -250,7 +217,7 @@ def process_user(user_data):
 if __name__ == "__main__":
     env = environment5.environment_vizrec()
     datasets = [ 'movies', 'birdstrikes']
-    tasks = ['p1', 'p2', 'p3', 'p4']
+    tasks = [ 'p1', 'p2', 'p3', 'p4']
     overall_accuracy = []
 
     for d in datasets:

@@ -38,10 +38,6 @@ class Policy(nn.Module):
     def __init__(self,learning_rate,gamma,tau,dataset):
         super(Policy, self).__init__()
         self.data = []
-        if dataset=='birdstrikes':
-            self.total_length=14
-        else:
-            self.total_length=16
 
 
         self.fc1 = nn.Linear(3, 128)
@@ -61,38 +57,18 @@ class Policy(nn.Module):
 
     def train_net(self):
         R = 0
-        loss_total = 0  # Initialize total loss
-        entropy_term_total = 0  # Initialize total entropy term
-
-        self.optimizer.zero_grad()  # Zero gradients before backward pass
-
+        self.optimizer.zero_grad()
         for r, prob in self.data[::-1]:
-            prob = torch.clamp(prob, min=1e-8, max=1e+8)
-
             R = r + self.gamma * R
             loss = -torch.log(prob) * R
-            loss_total += loss  # Accumulate loss over time steps
-
-            # Entropy regularization to encourage exploration
-            entropy_term = -(prob * torch.log(prob + 1e-8))
-            entropy_term_total += entropy_term
-
-        # Adding entropy regularization term to the total loss
-        loss_total = loss_total + 0.001 * entropy_term_total.mean()
-
-        loss_total.backward()  # Perform backward pass on total loss
-
-        self.optimizer.step()  # Update network parameters
-        self.data = []  # Clear stored data
+            loss.backward()
+        self.optimizer.step()
+        self.data = []
 
 
 class Reinforce():
     def __init__(self,env,learning_rate,gamma,tau,dataset, learned_policy=None):
         self.env = env
-        if dataset == 'birdstrikes':
-            self.total_length = 14
-        else:
-            self.total_length = 16
         self.learning_rate, self.gamma, self.temperature = learning_rate, gamma, tau
         if learned_policy is None:
             self.pi = Policy(learning_rate, gamma, tau, dataset)
@@ -100,21 +76,13 @@ class Reinforce():
             self.pi = learned_policy
 
     def convert_idx_state(self, state_idx):
-        #state = next((key for key, value in self.state_encoding.items() if np.array_equal(value, state_idx)), None)
-        converted_state = np.where(state_idx == 1)[0]
-        return str(converted_state)
+        state_idx=state_idx.tolist()
+        return str(state_idx)
 
     def convert_state_idx(self, state):
 
-        #state_idx = self.state_encoding[state]
-        state_short=ast.literal_eval(state)
-        # # Create a one-hot array
-        # one_hot_array = np.zeros(self.total_length)
-        #
-        # # Set the values to 1 at the specified indices
-        # for index in state_short:
-        #     if index < self.total_length:
-        #         one_hot_array[index] = 1
+        # state_idx = self.state_encoding[state]
+        state_short = ast.literal_eval(state)
 
         return state_short
 
@@ -147,7 +115,7 @@ class Reinforce():
             self.pi.train_net()
             all_predictions.append(np.mean(predictions))
        # print("############ Train Accuracy :{},".format(np.mean(all_predictions)))
-        return self.pi, (np.mean(predictions)) #return last train_accuracy
+        return self.pi, (np.mean(all_predictions)) #return last train_accuracy
 
 
     def test(self,policy,env):
@@ -296,8 +264,7 @@ if __name__ == "__main__":
                     final_output.append([test_user_log, best_accu, best_granular_acc,str(best_predicted_actions), str(best_ground_actions)])
 
             # Convert the final output into a DataFrame
-            df = pd.DataFrame(final_output,
-                              columns=['User', 'Accuracy', 'GranularPredictions', 'Predictions', 'GroundTruth'])
+            df = pd.DataFrame(final_output, columns=['User', 'Accuracy', 'GranularPredictions', 'Predictions', 'GroundTruth'])
 
             # Convert nested structures (if needed)
             df['GranularPredictions'] = df['GranularPredictions'].apply(lambda x: str(x))

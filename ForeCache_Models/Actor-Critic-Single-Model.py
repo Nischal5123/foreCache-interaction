@@ -283,8 +283,8 @@ def process_user(user_data):
 
 if __name__ == "__main__":
     env = environment5.environment_vizrec()
-    datasets = ['movies', 'birdstrikes']
-    tasks = [ 'p1', 'p2', 'p3', 'p4']
+    datasets = ['movies']
+    tasks = [ 'p3']
     overall_accuracy = []
 
     for d in datasets:

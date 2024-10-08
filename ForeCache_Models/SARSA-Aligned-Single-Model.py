@@ -67,16 +67,14 @@ class SARSA:
                 stats.append(prediction)
                 insight[ground_action].append(prediction)
                 next_action = policy(next_state)
-                if prediction == 0:
-                    td_target = reward*prediction + discount_factor * Q[next_state][next_action]
-                    td_delta = td_target - Q[state][action]
-                    Q[state][action] += alpha * (td_delta)
 
-                else:
-                    # updating based on ground action
-                    td_target = reward + discount_factor * Q[next_state][next_action]
-                    td_delta = td_target - Q[state][env.valid_actions.index(ground_action)]
-                    Q[state][env.valid_actions.index(ground_action)] += alpha * (td_delta)
+                td_target = reward*prediction + discount_factor * Q[next_state][next_action]
+                td_delta = td_target - Q[state][action]
+                Q[state][action] += alpha * (td_delta)
+
+                td_target = reward + discount_factor * Q[next_state][next_action]
+                td_delta = td_target - Q[state][env.valid_actions.index(ground_action)]
+                Q[state][env.valid_actions.index(ground_action)] += alpha * (td_delta)
 
                 action = next_action
                 state = next_state
