@@ -1,5 +1,9 @@
 # How Does User Behavior Evolve During Exploratory Visual Analysis?
 
+
+![image](https://github.com/user-attachments/assets/de60b4ce-0b65-49dc-8771-b8942bb5eaa4)
+
+
 ## ForeCache Models
 
 This repository contains implementations of various algorithms for FORECACHE USER STUDY, as well as scripts for experiments, data analysis, and visualization. Below is the folder structure and a brief description of each directory:
@@ -99,3 +103,24 @@ To run the Actor-Critic algorithm, execute the following command in your termina
 ```bash
 python ActorCritic.py
 ```
+## 📄 Citation
+
+If you find this work useful, please cite:
+
+```bibtex
+@INPROCEEDINGS {10597889,
+author = { Saha, Sanad and Aryal, Nischal and Battle, Leilani and Termehchy, Arash },
+booktitle = { 2024 IEEE 40th International Conference on Data Engineering (ICDE) },
+title = {{ User Learning In Interactive Data Exploration }},
+year = {2024},
+volume = {},
+ISSN = {},
+pages = {5660-5661},
+abstract = { Users explore large, complex datasets to find interesting hypotheses and previously unseen insights. In this process, known as data exploration, users often generate database queries without any precise goals or concrete information need, posing challenges for database systems that assume the user has a clear intent a priori. In response, system developers often model users' exploration strategies over time, which could enable the system to predict and adapt to users' subsequent actions. However, current models generally treat users' exploration behavior as static, whereas in reality, users dynamically change their behavior in response to what they learn during exploration. In this paper, we present an analysis of existing data exploration logs to quantify shifts in users' data exploration strategies over time. Our analysis confirms that users shift their behavior over time, and state-of-the-art learning algorithms struggle to adapt to this evolution, revealing new avenues for building more accurate models of user exploration behavior within data exploration systems. },
+keywords = {Adaptation models;Analytical models;Accuracy;Heuristic algorithms;Buildings;Predictive models;Data engineering},
+doi = {10.1109/ICDE60146.2024.00460},
+url = {https://doi.ieeecomputersociety.org/10.1109/ICDE60146.2024.00460},
+publisher = {IEEE Computer Society},
+address = {Los Alamitos, CA, USA},
+month =May}
+
